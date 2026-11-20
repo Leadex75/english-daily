@@ -1,0 +1,229 @@
+# Source catalogue. Loaded into the `sources` table at startup (upsert by id).
+# level_min/level_max may be "computed" for a full-range, pure readability level.
+# license/attribution travel with each ingested item so static exports can label them.
+sources:
+  - id: bbc_6min_english
+    name: BBC 6 Minute English
+    feed_url: https://podcasts.files.bbci.co.uk/p02pc9tn.rss
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: B2
+    enabled: true
+    license: proprietary
+
+  # Additional current BBC Learning English feeds (VOA's feeds are stale).
+  - id: bbc_learning_easy_english_text
+    name: BBC Learning Easy English (text)
+    feed_url: https://podcasts.files.bbci.co.uk/p0hsrwv5.rss
+    category: culture
+    kind: text
+    level_min: A2
+    level_max: A2
+    enabled: true
+    license: proprietary
+
+  - id: bbc_learning_easy_english
+    name: BBC Learning Easy English
+    feed_url: https://podcasts.files.bbci.co.uk/p0hsrwv5.rss
+    category: culture
+    kind: audio
+    level_min: A2
+    level_max: A2
+    enabled: true
+    license: proprietary
+
+  - id: bbc_learning_english_from_the_news_text
+    name: BBC Learning English from the News (text)
+    feed_url: https://podcasts.files.bbci.co.uk/p05hw4bq.rss
+    category: news
+    kind: text
+    level_min: B1
+    level_max: B1
+    enabled: true
+    license: proprietary
+
+  - id: bbc_learning_english_from_the_news
+    name: BBC Learning English from the News
+    feed_url: https://podcasts.files.bbci.co.uk/p05hw4bq.rss
+    category: news
+    kind: audio
+    level_min: B1
+    level_max: B1
+    enabled: true
+    license: proprietary
+
+  # VOA Learning English RSS URLs were discovered on
+  # https://learningenglish.voanews.com/rssfeeds (and its podcast tab).
+  # The site has no feeds literally named "Beginning/Intermediate/Advanced";
+  # these level-appropriate programmes are used instead (see README).
+  - id: voa_learning_english_beginning_text
+    name: VOA All About America (text)
+    feed_url: https://learningenglish.voanews.com/api/zbmroml-vomx-tpeqboo_
+    category: culture
+    kind: text
+    level_min: A1
+    level_max: A2
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: voa_learning_english_beginning_audio
+    name: VOA All About America (audio)
+    feed_url: https://learningenglish.voanews.com/podcast/?zoneId=8133
+    category: culture
+    kind: audio
+    level_min: A1
+    level_max: A2
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: voa_learning_english_intermediate_text
+    name: VOA Health & Lifestyle (text)
+    feed_url: https://learningenglish.voanews.com/api/zmmpql-vomx-tpey-_q
+    category: culture
+    kind: text
+    level_min: B1
+    level_max: B1
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: voa_learning_english_intermediate_audio
+    name: VOA Health & Lifestyle (audio)
+    feed_url: https://learningenglish.voanews.com/podcast/?zoneId=955
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: B1
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: voa_learning_english_advanced_text
+    name: VOA As It Is (text)
+    feed_url: https://learningenglish.voanews.com/api/zkm-ql-vomx-tpej-rqi
+    category: news
+    kind: text
+    level_min: B2
+    level_max: B2
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: voa_learning_english_advanced_audio
+    name: VOA As It Is (audio)
+    feed_url: https://learningenglish.voanews.com/podcast/?zoneId=3521
+    category: news
+    kind: audio
+    level_min: B2
+    level_max: B2
+    enabled: true
+    license: public_domain_us_gov
+    attribution: "VOA Learning English"
+
+  - id: npr_news_now
+    name: NPR News Now
+    feed_url: https://feeds.npr.org/500005/podcast.xml
+    category: news
+    kind: audio
+    level_min: B2
+    level_max: C1
+    enabled: true
+    license: proprietary
+
+  - id: npr_up_first
+    name: NPR Up First
+    feed_url: https://feeds.npr.org/510318/podcast.xml
+    category: news
+    kind: audio
+    level_min: B2
+    level_max: C1
+    enabled: true
+    license: proprietary
+
+  - id: npr_short_wave
+    name: NPR Short Wave
+    feed_url: https://feeds.npr.org/510351/podcast.xml
+    category: culture
+    kind: audio
+    level_min: B2
+    level_max: C1
+    enabled: true
+    license: proprietary
+
+  - id: bbc_news_world
+    name: BBC News - World
+    feed_url: http://feeds.bbci.co.uk/news/world/rss.xml
+    category: news
+    kind: text
+    level_min: computed
+    level_max: computed
+    enabled: true
+    license: proprietary
+
+  - id: guardian_world
+    name: The Guardian - World news
+    feed_url: https://www.theguardian.com/world/rss
+    category: news
+    kind: text
+    level_min: computed
+    level_max: computed
+    enabled: true
+    license: proprietary
+
+  - id: guardian_culture
+    name: The Guardian - Culture
+    feed_url: https://www.theguardian.com/culture/rss
+    category: culture
+    kind: text
+    level_min: computed
+    level_max: computed
+    enabled: true
+    license: proprietary
+
+  - id: guardian_science
+    name: The Guardian - Science
+    feed_url: https://www.theguardian.com/science/rss
+    category: culture
+    kind: text
+    level_min: computed
+    level_max: computed
+    enabled: true
+    license: proprietary
+
+  - id: wikipedia_simple
+    name: Simple English Wikipedia
+    feed_url: https://simple.wikipedia.org/w/api.php
+    category: culture
+    kind: text
+    level_min: A2
+    level_max: B1
+    enabled: true
+    type: wikipedia_simple
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"
+
+  - id: wikipedia_featured
+    name: Wikipedia - Featured article
+    feed_url: https://en.wikipedia.org/api/rest_v1/feed/featured
+    category: culture
+    kind: text
+    level_min: C1
+    level_max: C2
+    enabled: true
+    type: wikipedia_featured
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"
+
+  - id: bbc_in_our_time
+    name: BBC In Our Time
+    feed_url: https://podcasts.files.bbci.co.uk/b006qykl.rss
+    category: culture
+    kind: audio
+    level_min: C1
+    level_max: C2
+    enabled: true
+    max_duration_sec: 3300  # documented exception: episodes are ~50 min
+    license: proprietary

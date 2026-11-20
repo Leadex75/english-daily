@@ -1,0 +1,30 @@
+# english-daily configuration (all paths relative to this project unless absolute)
+data_dir: ./data            # can point to a Nextcloud-synced folder
+host: 127.0.0.1             # set 0.0.0.0 for LAN/phone access
+port: 8000
+audio_min_sec: 180
+audio_max_sec: 1200
+lookback_days: 7
+retention_days: 90          # 0 = keep forever; prune deletes old MP3 files, keeps text rows
+reencode_audio: false       # if true and ffmpeg exists: mono, bitrate below
+audio_bitrate_kbps: 48
+auto_ingest_on_start: true  # run ingestion in a background thread at startup if today's date is not yet ingested
+user_agent: "english-daily/1.0 (personal use)"
+request_timeout_sec: 30
+max_entries_per_source: 10     # cap per feed to keep a daily run bounded
+
+timezone: Europe/Paris          # "today" is computed in this timezone (zoneinfo)
+audio_mode: local               # local | hotlink  (CI uses hotlink; ENGLISH_DAILY_AUDIO_MODE overrides)
+public_mode: true               # true = never publish full text of proprietary sources
+excerpt_words: 60               # sentence-boundary excerpt length in public static mode
+static_retention_days: 365      # prune site/data/<date> folders older than this
+noindex: true                   # adds <meta name="robots" content="noindex,nofollow"> in the static site
+
+# Upper bounds of the deterministic readability score for each level.
+# score < A1 -> A1, < A2 -> A2, ... otherwise C2.
+level_thresholds:
+  A1: 0.15
+  A2: 0.28
+  B1: 0.42
+  B2: 0.58
+  C1: 0.75
