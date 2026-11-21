@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-21",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 30,
+        "title": "Haitians excited but uneasy as El Salvador troops fight gangs",
+        "source": "The Guardian - World news",
+        "url": "https://www.theguardian.com/world/2026/nov/21/excitement-unease-haiti-el-salvador-troops-gangs-war-bukele",
+        "published_at": "2026-11-21T11:00:57",
+        "level": "C1",
+        "word_count": 1329,
+        "duration_sec": null,
+        "body_text": "A bullet-peppered mural of the Haitian striker Emmanuel Sanon covers the facade of Port-au-Prince’s main football ground. But more than two years have passed since any sports stars graced the pitch. In 2024, as the surrounding city was almost entirely captured by heavily armed gangs, Sylvio Cator stadium – where football greats including Brazil’s Ronaldo and Roberto Carlos once played…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "e99e115c16a65cba2e94ab1daa6e613cec859812",
+        "summary": "Foreign combatants in Port-au-Prince welcomed by many after years of gang control but some fear offensive could exacerbate volatile situation A bullet-peppered mural of the Haitian striker Emmanuel Sanon covers the facade of Port-au-Prince’s main football ground. But more than two years have passed since any sports stars graced the pitch. In 2024, as the surrounding city was almost entirely captured by heavily armed gangs , Sylvio Cator stadium – where football greats including Brazil’s Ronaldo and Roberto Carlos once played – also fell under criminal control, its dilapidated red and blue stands used as an outpost by fighters working for a gang boss called Izo. Haiti’s national team, the Grenadiers, found itself homeless and was forced to play its World Cup qualifying games abroad . Continue reading..."
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 36,
+        "title": "In a Sydney gallery, Philippe Parreno’s art is powered by a desert 17,000km away",
+        "source": "The Guardian - Culture",
+        "url": "https://www.theguardian.com/artanddesign/2026/nov/21/in-a-sydney-gallery-philippe-parrenos-art-is-powered-by-a-desert-17000km-away",
+        "published_at": "2026-11-21T01:00:43",
+        "level": "C1",
+        "word_count": 831,
+        "duration_sec": null,
+        "body_text": "I’m standing in a massive white-cube space, staring at a perplexing assortment of objects. There are several expensive looking lamps; a massive industrial fan; a couple of speakers; marquee-style lights; a glowing assemblage of power adapters. At the back of the gallery, a silvery light slides up and down a pole. The bulbs are flickering erratically, and there’s a low…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "e75b5ef2d4b8c040d002e10bf651f297bc101fa6",
+        "summary": "In the Museum of Contemporary Art, the French artist’s first major Australian show is truly unpredictable – influenced by real-time data coming from a Spanish farm I’m standing in a massive white-cube space, staring at a perplexing assortment of objects. There are several expensive looking lamps; a massive industrial fan; a couple of speakers; marquee-style lights; a glowing assemblage of power adapters. At the back of the gallery, a silvery light slides up and down a pole. The bulbs are flickering erratically, and there’s a low hum of machine noise, overlaid with bird song and distant barking. As an installation, taken by itself, it’s deceptively underwhelming – a spectacle without a story. Continue reading..."
+      },
+      "audio": null
+    }
+  }
+}

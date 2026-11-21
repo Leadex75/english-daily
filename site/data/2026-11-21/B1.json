@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-21",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 53,
+        "title": "Eugenie Clark",
+        "source": "Simple English Wikipedia",
+        "url": "https://simple.wikipedia.org/wiki/Eugenie_Clark",
+        "published_at": "2026-11-21T12:45:00",
+        "level": "B1",
+        "word_count": 205,
+        "duration_sec": null,
+        "body_text": "Eugenie Clark (May 4, 1922 – February 25, 2015), sometimes called The Shark Lady, was a Japanese American ichthyologist. Ichthyologists study fish. Clark was known for her research on poisonous fish of the tropical seas and on the behavior of sharks. She was also one of the first people to scuba dive (CAP) for research purposes. Clark has found four fish species and brought much knowledge to our world. Her books about her life, Lady with a Spear (1953) and The Lady and the Sharks 1969) were bestsellers. People worldwide did not have much knowledge on sharks in the 1950s. Clark brought them the knowledge that they lacked. She countered many myths, fears, and stereotypes about sharks. She was a professor, and gave lectures at more than sixty universities worldwide. Clark has also received many awards, honors, and citations for her research. Clark was one of the first people to explore the Red Sea and other ocean areas. Her work has been shown in lots of media including National Geographic and Science Digest. She found a lab called “Mote Marine”. Young women can find many opportunities there to learn about marine life. Clark was born in New York City, New York. == References == == Other websites == Media related to Eugenie Clark at Wikimedia Commons",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "7f1d3864e7cf21e1edfc79621a3fc083025560f1",
+        "summary": "Eugenie Clark (May 4, 1922 – February 25, 2015), sometimes called The Shark Lady, was a Japanese American ichthyologist. Ichthyologists study fish. Clark was known for her research on poisonous fish of the tropical seas and on the behavior of sharks. She was also one of the first people to scuba dive (CAP) for research purposes. Clark has found four fish species and brought much knowledge to our w"
+      },
+      "audio": null
+    }
+  }
+}

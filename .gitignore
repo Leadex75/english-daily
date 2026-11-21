@@ -1,8 +1,9 @@
 .venv/
 .ci-data/
-data/
+/data/
 __pycache__/
 *.pyc
 *.db
 *.sqlite3
 *.mp3
+*.log

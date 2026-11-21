@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-21",
+  "level": "C2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 28,
+        "title": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
+        "source": "The Guardian - World news",
+        "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+        "published_at": "2026-11-18T09:58:28",
+        "level": "C2",
+        "word_count": 773,
+        "duration_sec": null,
+        "body_text": "Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay, if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "66161840705cea9bcc0d7888654f2fb2bf542c3e",
+        "summary": "A ruling against Myanmar could set precedent for court’s judgment on Israel’s actions in Gaza Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay , if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya. The ICJ has never found a state responsible for committing genocide, and a significant factor in previous cases has been how to prove “intent” in a crime defined as acts committed with the “intent to destroy, in whole or in part” a national, ethnical, racial or religious group. Continue reading..."
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 39,
+        "title": "From I Am Helen to You Can See Everything: the week in rave reviews",
+        "source": "The Guardian - Culture",
+        "url": "https://www.theguardian.com/culture/2026/nov/21/from-i-am-helen-to-you-can-see-everything-the-week-in-rave-reviews",
+        "published_at": "2026-11-21T06:00:51",
+        "level": "C2",
+        "word_count": 1458,
+        "duration_sec": null,
+        "body_text": "TV If you only watch one, make it … I Am Helen Channel 4, available now Summed up in a sentence Nicola Coughlan and Joe Cole are brilliant in Dominic Savage’s latest in the I Am anthology series about a relationship affected by toxic masculinity.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "3c517d15ac500a8b8fc17c2d37c0907c2685ae73",
+        "summary": "Nicola Coughlan shines in Dominic Savage’s stark tale, while Nathan Fielder peeks into the fascinating world of fraudster Elizabeth Holmes. Here’s the pick of the week’s culture, taken from the Guardian’s best-rated reviews Continue reading..."
+      },
+      "audio": null
+    }
+  }
+}
