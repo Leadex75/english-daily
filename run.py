@@ -22,8 +22,10 @@ from app.db import (
     upsert_sources,
 )
 from ingest.export_static import export_static
+from ingest.fetch_text import clean_text, word_count
 from ingest.picker import choose_picks
 from ingest.pipeline import _candidates, run_ingest
+from ingest.pool import pool_dir, write_json
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 from ingest.state import import_site_state, load_entries
 
@@ -248,6 +250,111 @@ def _stats_markdown(summary: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+_CLEAN_TEXT_FIELDS = {
+    "title", "summary", "body_text", "body", "description", "text", "snippet",
+    "meaning", "example", "front", "back",
+}
+
+
+def _clean_scalar(value: Any, config: dict[str, Any], field: str) -> tuple[Any, bool]:
+    if not isinstance(value, str):
+        return value, False
+    cleaned = clean_text(value, config)
+    if field == "body_text":
+        cleaned = cleaned.strip()
+    return cleaned, cleaned != value
+
+
+def _clean_payload(payload: Any, config: dict[str, Any]) -> tuple[Any, bool]:
+    changed = False
+    if isinstance(payload, dict):
+        for key, value in list(payload.items()):
+            if key in _CLEAN_TEXT_FIELDS and isinstance(value, str):
+                cleaned, updated = _clean_scalar(value, config, key)
+                if updated:
+                    payload[key] = cleaned
+                    changed = True
+            else:
+                cleaned, updated = _clean_payload(value, config)
+                if updated:
+                    payload[key] = cleaned
+                    changed = True
+    elif isinstance(payload, list):
+        for index, value in enumerate(payload):
+            cleaned, updated = _clean_payload(value, config)
+            if updated:
+                payload[index] = cleaned
+                changed = True
+    return payload, changed
+
+
+def _clean_existing(
+    config: dict[str, Any],
+    site_dir: str | Path = "site",
+    state_dir: str | Path | None = None,
+    lang: str | None = None,
+) -> dict[str, Any]:
+    counts = {"items": 0, "pool_files": 0, "site_files": 0}
+    conn = connect(config)
+    try:
+        rows = conn.execute(
+            "SELECT id, kind, title, summary, body_text, transcript_text, word_count FROM items"
+        ).fetchall()
+        for row in rows:
+            updates: dict[str, Any] = {}
+            for field in ("title", "summary", "body_text", "transcript_text"):
+                cleaned, changed = _clean_scalar(row[field], config, field)
+                if changed:
+                    updates[field] = cleaned
+            body = updates.get("body_text", row["body_text"])
+            if row["kind"] == "text" and body is not None:
+                words = word_count(str(body))
+                if words != row["word_count"]:
+                    updates["word_count"] = words
+            if updates:
+                assignments = ", ".join(f"{name}=?" for name in updates)
+                conn.execute(
+                    f"UPDATE items SET {assignments} WHERE id=?",
+                    (*updates.values(), row["id"]),
+                )
+                counts["items"] += 1
+        conn.commit()
+    finally:
+        conn.close()
+
+    root = Path(state_dir) if state_dir else PROJECT_ROOT / "state"
+    for language in _languages(config, lang):
+        for path in sorted(pool_dir(root, config, language).glob("*.json")):
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            cleaned, changed = _clean_payload(payload, config)
+            if changed:
+                write_json(path, cleaned)
+                counts["pool_files"] += 1
+
+    site = Path(site_dir)
+    if not site.is_absolute():
+        site = PROJECT_ROOT / site
+    if site.is_dir():
+        for path in sorted(site.rglob("*.json")):
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            cleaned, changed = _clean_payload(payload, config)
+            if changed:
+                write_json(path, cleaned)
+                counts["site_files"] += 1
+
+    summary = export_static(
+        site_dir, config, public_mode=bool(config.get("public_mode", True)), lang=lang
+    )
+    counts["export"] = summary
+    return counts
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="english-daily")
     sub = parser.add_subparsers(dest="command")
@@ -293,6 +400,10 @@ def main() -> int:
     doctor_cmd = sub.add_parser("doctor", help="check all enabled sources")
     doctor_cmd.add_argument("--json", dest="json_output", action="store_true")
     doctor_cmd.add_argument("--lang", default=None)
+    clean_cmd = sub.add_parser("clean-existing", help="clean stored text and rebuild the static site")
+    clean_cmd.add_argument("--site-dir", default="site")
+    clean_cmd.add_argument("--state-dir", default=None)
+    clean_cmd.add_argument("--lang", default=None)
     sub.add_parser("prune", help="delete expired MP3 files")
 
     args = parser.parse_args()
@@ -356,6 +467,15 @@ def main() -> int:
     if command == "stats":
         for language in _languages(config, args.lang):
             print(_stats_markdown(_stats(config, int(args.days), language)))
+        return 0
+
+    if command == "clean-existing":
+        summary = _clean_existing(config, args.site_dir, args.state_dir, args.lang)
+        print(
+            f"Cleaned {summary['items']} item(s), {summary['pool_files']} pool file(s), "
+            f"{summary['site_files']} site JSON file(s)."
+        )
+        print(f"Static site written to {summary['export']['out']}")
         return 0
 
     if command == "prune":

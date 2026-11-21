@@ -30,6 +30,8 @@ from fastapi.testclient import TestClient
 
 from ingest.doctor import check_sources, run_doctor
 from ingest.export_static import export_static
+from ingest.fetch_text import clean_text, extract_article
+from ingest.pool import pool_dir
 from ingest.paths import (
     languages_path,
     migrate_legacy_site,
@@ -103,6 +105,105 @@ class BankTests(unittest.TestCase):
             self.assertEqual(first[level]["history"]["level"], level)
             self.assertEqual(first[level]["word"]["dictionary"], {})
             self.assertEqual(first[level]["expression"]["audio"], None)
+
+
+class TextCleaningTests(unittest.TestCase):
+    def test_clean_text_removes_publisher_boilerplate_and_broken_ellipses(self):
+        config = dict(DEFAULTS)
+        raw = "- Published The council approved the plan. Continue reading..."
+        self.assertEqual(clean_text(raw, config), "The council approved the plan.")
+        promotional = (
+            "Food sources... but the effects are unclear. Sign up for our email newsletter "
+            "for tips. Follow us on social media @bbc"
+        )
+        cleaned = clean_text(promotional, config)
+        self.assertEqual(cleaned, "Food sources… but the effects are unclear.")
+        self.assertNotIn("...", cleaned)
+        self.assertNotIn(".…", cleaned)
+
+    def test_extract_article_cleans_trafilatura_output(self):
+        class Response:
+            text = "<html><body>article</body></html>"
+
+            def raise_for_status(self):
+                return None
+
+        raw = "- Published The council approved the plan. Continue reading..."
+        with patch("ingest.fetch_text.http_get", return_value=Response()), patch(
+            "ingest.fetch_text.trafilatura.extract", return_value=raw
+        ):
+            cleaned = extract_article("https://example.org/article", dict(DEFAULTS))
+        self.assertEqual(cleaned, "The council approved the plan.")
+
+    def test_clean_existing_updates_database_pool_and_site(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            config = dict(DEFAULTS)
+            config["languages"] = ["en"]
+            config["data_dir"] = str(root / "data")
+            init_db(config)
+            conn = connect(config)
+            try:
+                conn.execute(
+                    """INSERT INTO sources
+                       (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?)""",
+                    ("source", "Source", "https://example.org/feed", "news", "text",
+                     "computed", "computed", 1, "en"),
+                )
+                conn.execute(
+                    """INSERT INTO items
+                       (guid_hash, source_id, kind, category, title, url, summary, body_text,
+                        word_count, level, origin, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (
+                        "clean-hash", "source", "text", "news", "- Published Council plan",
+                        "https://example.org/article", "Summary Continue reading...",
+                        "- Published The council approved the plan. Continue reading...",
+                        999, "B1", "fresh", "en",
+                    ),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            state = root / "state"
+            pool = pool_dir(state, config, "en")
+            pool.mkdir(parents=True, exist_ok=True)
+            pool_file = pool / "clean-hash.json"
+            pool_file.write_text(
+                json.dumps({"guid_hash": "clean-hash", "body_text": "Old text Continue reading..."}),
+                encoding="utf-8",
+            )
+            site = root / "site"
+            site_file = site / "data" / "en" / "index.json"
+            site_file.parent.mkdir(parents=True, exist_ok=True)
+            site_file.write_text(
+                json.dumps({"title": "- Published Council plan", "body": "Old body Continue reading..."}),
+                encoding="utf-8",
+            )
+            with patch("run.export_static", return_value={"out": str(site)}) as export:
+                summary = run._clean_existing(config, site, state)
+
+            conn = connect(config)
+            try:
+                row = conn.execute(
+                    "SELECT title, summary, body_text, word_count FROM items WHERE guid_hash=?",
+                    ("clean-hash",),
+                ).fetchone()
+            finally:
+                conn.close()
+            self.assertEqual(row["title"], "Council plan")
+            self.assertEqual(row["body_text"], "The council approved the plan.")
+            self.assertEqual(row["word_count"], 5)
+            self.assertEqual(
+                json.loads(pool_file.read_text(encoding="utf-8"))["body_text"], "Old text"
+            )
+            cleaned_site = json.loads(site_file.read_text(encoding="utf-8"))
+            self.assertEqual(cleaned_site["title"], "Council plan")
+            self.assertEqual(cleaned_site["body"], "Old body")
+            self.assertEqual(summary["items"], 1)
+            export.assert_called_once()
 
 
 class PickerTests(unittest.TestCase):
@@ -715,7 +816,8 @@ class DocsTests(unittest.TestCase):
             "python desktop/main.py", "python tools/build_desktop.py",
             "/api/search", "site/data/<lang>/search/YYYY-MM-DD.json",
             "Actions → daily → Run workflow", "contract_version: 2",
-            "static/lib/", "no LLM",
+            "static/lib/", "no LLM", "python run.py clean-existing",
+            "text_cleaning.patterns",
         ):
             self.assertIn(marker, readme)
 

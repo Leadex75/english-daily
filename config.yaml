@@ -34,6 +34,17 @@ timezone: Europe/Paris
 audio_mode: local             # local | hotlink  (CI uses hotlink; ENGLISH_DAILY_AUDIO_MODE overrides)
 public_mode: true             # true = never publish full text of proprietary sources
 excerpt_words: 60             # sentence-boundary excerpt length in public static mode
+text_cleaning:
+  patterns:
+    - '^\s*[-–—]?\s*Published\s+'
+    - '\bContinue reading\s*(?:\.{3,}|…)?\s*$'
+    - '\bSign up for our email newsletter\b.*$'
+    - '\bFollow us on social media\b.*$'
+    - '\bWatch this podcast here\b.*$'
+    - '\bGet a free worksheet for this episode here:\b.*$'
+    - '\bLet us know what you think\b.*$'
+    - '\bSupport public media with NPR\+\b.*$'
+    - '\bLearn more about the standards of our journalism\b.*$'
 static_retention_days: 365
 noindex: true                 # adds <meta name="robots" content="noindex,nofollow"> in the static site
 

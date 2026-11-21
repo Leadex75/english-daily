@@ -182,6 +182,10 @@ it happens, re-enable the schedule from the Actions tab.
 
 ## Static export and publishing
 
+- `text_cleaning.patterns` in `config.yaml` removes publisher boilerplate, malformed ellipses and
+  trailing "Continue reading" text after extraction, before scoring, word counts and excerpts.
+- `python run.py clean-existing` applies those rules to stored items, pool JSON and exported site
+  JSON, recomputes text word counts, then rebuilds the public static site.
 - `public_mode: true` publishes proprietary text only as a sentence-boundary excerpt with a link to
   the original; open-license items keep full text and attribution. Override with `--public` or
   `--private`. **Never publish a `--private` export on a public site.**

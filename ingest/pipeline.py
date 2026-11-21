@@ -68,10 +68,12 @@ def _insert_fresh_items(
 
                 body = body_for_entry(entry, config)
                 words = word_count(body)
+                title = clean_text(entry.get("title"), config)
+                summary = clean_text(entry.get("summary"), config)
                 kind = str(source["kind"])
                 annotated = annotate_history({
-                    "title": entry.get("title"),
-                    "summary": entry.get("summary"),
+                    "title": title,
+                    "summary": summary,
                     "body_text": body,
                     "category": source.get("category"),
                 }, config, language)
@@ -80,7 +82,7 @@ def _insert_fresh_items(
 
                 low = str(source.get("level_min") or "computed")
                 high = str(source.get("level_max") or "computed")
-                text_for_score = body if kind == "text" else clean_text(entry.get("summary"))
+                text_for_score = body if kind == "text" else summary
                 minimum_words = 120 if kind == "text" else 60
                 values, level, method = level_for_source(
                     text_for_score, low, high, thresholds, minimum_words, language
@@ -106,13 +108,13 @@ def _insert_fresh_items(
                         str(source["id"]),
                         kind,
                         str(source["category"]),
-                        clean_text(entry.get("title")),
+                        title,
                         entry.get("url"),
-                        clean_text(entry.get("summary"))[:2000],
+                        summary[:2000],
                         entry.get("published_at"),
                         dt.datetime.now().isoformat(timespec="seconds"),
                         body if kind == "text" else None,
-                        words if kind == "text" else word_count(entry.get("summary")),
+                        words if kind == "text" else word_count(summary),
                         audio_info["duration_sec"] if audio_info else None,
                         audio_info["audio_path"] if audio_info else None,
                         audio_info["audio_bytes"] if audio_info else None,

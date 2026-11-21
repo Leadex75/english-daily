@@ -43,6 +43,19 @@ DEFAULTS: dict[str, Any] = {
     "audio_mode": "local",
     "public_mode": True,
     "excerpt_words": 60,
+    "text_cleaning": {
+        "patterns": [
+            r"^\s*[-–—]?\s*Published\s+",
+            r"\bContinue reading\s*(?:\.{3,}|…)?\s*$",
+            r"\bSign up for our email newsletter\b.*$",
+            r"\bFollow us on social media\b.*$",
+            r"\bWatch this podcast here\b.*$",
+            r"\bGet a free worksheet for this episode here:\b.*$",
+            r"\bLet us know what you think\b.*$",
+            r"\bSupport public media with NPR\+\b.*$",
+            r"\bLearn more about the standards of our journalism\b.*$",
+        ]
+    },
     "static_retention_days": 365,
     "noindex": True,
     "pool_cap_per_bucket": 12,
@@ -151,6 +164,11 @@ def load_config() -> dict[str, Any]:
     config = {**DEFAULTS, **raw}
     config["level_thresholds"] = {**DEFAULTS["level_thresholds"], **(raw.get("level_thresholds") or {})}
     config["word_bands"] = {**DEFAULTS.get("word_bands", {}), **(raw.get("word_bands") or {})}
+    text_cleaning = {**DEFAULTS["text_cleaning"], **(raw.get("text_cleaning") or {})}
+    text_cleaning["patterns"] = list(
+        text_cleaning.get("patterns") or DEFAULTS["text_cleaning"]["patterns"]
+    )
+    config["text_cleaning"] = text_cleaning
     levels = dict(DEFAULTS.get("levels") or {})
     for language, values in (raw.get("levels") or {}).items():
         if isinstance(values, dict):
