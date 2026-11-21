@@ -54,3 +54,13 @@
 - Dry-run mode is the default; `--write` replaces stored picks and marks them `reconstructed=1` without touching state ledgers, phrases or network sources.
 - Tests: 16 unit tests passed, including reconstruct match detection and write-back flag behavior.
 - Verification: Python modules compile; CLI JSON smoke succeeded in an isolated temp data directory.
+- Phase 5 committed as `7edde9e`.
+
+## Phase 6 — history terms and bilingual phrase bank (done)
+
+- Added `bank/en/history_terms.yaml` with 36 CEFR-leveled, bilingual (EN/FR) history terms tagged by period, theme and aliases.
+- Phrase generation now selects one level-matched history term per level per day, along with the existing word and expression.
+- History items are annotated in fresh ingest and reserve generation with matched periods, themes and term details.
+- Added `items.history_terms` to the SQLite schema with an idempotent migration; serialized day items now expose `periods`, `themes` and `history_terms`.
+- Tests: 17 unit tests passed, including history bank shape, annotation, phrase history payload, migration and static export contract.
+- Verification: Python modules compile; `node --check` passes; live stats command migrated the database and returned 200-equivalent CLI output with a fresh backup.

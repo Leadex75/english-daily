@@ -149,8 +149,8 @@ def hydrate_db(
                (id, guid_hash, source_id, kind, category, title, url, summary, published_at,
                 fetched_at, body_text, word_count, duration_sec, audio_remote_url, score,
                 fk_grade, avg_sentence_len, rare_word_ratio, level, level_method, license,
-                attribution, origin, lang, periods, themes, transcript_url, transcript_text)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'reserve', ?,?,?,?,?)""",
+                 attribution, origin, lang, periods, themes, history_terms, transcript_url, transcript_text)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'reserve', ?,?,?,?,?,?)""",
             (
                 item_id(guid), guid, source_id, str(item.get("kind") or "text"),
                 str(item.get("category") or "culture"), str(item.get("title") or "Untitled"),
@@ -162,6 +162,7 @@ def hydrate_db(
                 str(item.get("level") or "B1"), item.get("level_method") or "computed",
                 str(item.get("license") or "public_domain"), item.get("attribution"),
                 language, json.dumps(item.get("periods") or []), json.dumps(item.get("themes") or []),
+                json.dumps(item.get("history_terms") or []),
                 item.get("transcript_url"), item.get("transcript_text"),
             ),
         )
@@ -197,6 +198,7 @@ def _row_to_item(row: Any) -> dict[str, Any]:
         "lang": row["lang"] if "lang" in row.keys() else "en",
         "periods": json.loads(row["periods"] or "[]") if "periods" in row.keys() else [],
         "themes": json.loads(row["themes"] or "[]") if "themes" in row.keys() else [],
+        "history_terms": json.loads(row["history_terms"] or "[]") if "history_terms" in row.keys() else [],
         "transcript_url": row["transcript_url"] if "transcript_url" in row.keys() else None,
         "transcript_text": row["transcript_text"] if "transcript_text" in row.keys() else None,
     }

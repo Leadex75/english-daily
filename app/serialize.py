@@ -30,6 +30,14 @@ def _badges(row: Any) -> list[str]:
     return [str(item) for item in value] if isinstance(value, list) else []
 
 
+def _json_array(value: Any) -> list[Any]:
+    try:
+        payload = json.loads(str(value or "[]"))
+    except (TypeError, ValueError):
+        return []
+    return payload if isinstance(payload, list) else []
+
+
 def serialize_item(
     row: Any,
     kind: str,
@@ -84,6 +92,9 @@ def serialize_item(
         "summary": row["summary"],
         "origin": row["pick_origin"] or row["origin"] or "fresh",
         "badges": _badges(row),
+        "periods": _json_array(row["periods"] if "periods" in row.keys() else "[]"),
+        "themes": _json_array(row["themes"] if "themes" in row.keys() else "[]"),
+        "history_terms": _json_array(row["history_terms"] if "history_terms" in row.keys() else "[]"),
     }
 
 

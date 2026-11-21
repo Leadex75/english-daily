@@ -35,7 +35,7 @@ from ingest.paths import (
     state_lang_dir,
     write_languages,
 )
-from ingest.phrases import generate_phrases, load_bank
+from ingest.phrases import annotate_history, generate_phrases, load_bank, load_history_terms
 from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
 from ingest.readability import band_center
@@ -59,6 +59,27 @@ class BankTests(unittest.TestCase):
             self.assertTrue(str(item.get("meaning_fr") or "").strip())
         for item in expressions:
             self.assertTrue(str(item.get("meaning_fr") or "").strip())
+        terms = load_history_terms()
+        self.assertEqual(len(terms), 36)
+        self.assertEqual({str(item["level"]) for item in terms}, set(expected_words))
+        for item in terms:
+            self.assertTrue(str(item.get("meaning_fr") or "").strip())
+            self.assertTrue(str(item.get("period") or "").strip())
+            self.assertTrue(str(item.get("theme") or "").strip())
+            self.assertTrue(list(item.get("aliases") or []))
+
+    def test_history_terms_annotate_history_items(self):
+        config = dict(DEFAULTS)
+        item = annotate_history({
+            "category": "history",
+            "title": "Renaissance art and reformation",
+            "summary": "A museum exhibition about the renaissance.",
+            "body_text": "The reformation changed culture.",
+        }, config, "en")
+        self.assertIn("Early modern", item["periods"])
+        self.assertIn("Culture", item["themes"])
+        self.assertIn("Religion", item["themes"])
+        self.assertTrue(any(term["text"] == "renaissance" for term in item["history_terms"]))
 
     def test_phrases_are_deterministic_and_offline(self):
         config = {"phrase_offline": True, "phrase_history_days": 400}
@@ -70,6 +91,8 @@ class BankTests(unittest.TestCase):
         for level in first:
             self.assertEqual(first[level]["word"]["key"], second[level]["word"]["key"])
             self.assertEqual(first[level]["expression"]["key"], second[level]["expression"]["key"])
+            self.assertEqual(first[level]["history"]["key"], second[level]["history"]["key"])
+            self.assertEqual(first[level]["history"]["level"], level)
             self.assertEqual(first[level]["word"]["dictionary"], {})
             self.assertEqual(first[level]["expression"]["audio"], None)
 
@@ -369,6 +392,7 @@ class MigrationAndExportTests(unittest.TestCase):
                 phrase_columns = {row["name"] for row in check.execute("PRAGMA table_info(phrases)")}
                 self.assertIn("lang", item_columns)
                 self.assertIn("periods", item_columns)
+                self.assertIn("history_terms", item_columns)
                 self.assertIn("lang", pick_columns)
                 self.assertIn("reconstructed", pick_columns)
                 self.assertIn("lang", source_columns)
@@ -431,7 +455,18 @@ class MigrationAndExportTests(unittest.TestCase):
             out = root / "site"
             result = export_static(out, config, public_mode=True)
             self.assertIn(day, result["days"])
-            self.assertTrue(site_level_path(out, day, "B1", "en").is_file())
+            level_path = site_level_path(out, day, "B1", "en")
+            self.assertTrue(level_path.is_file())
+            level_payload = json.loads(level_path.read_text(encoding="utf-8"))
+            for category in ("news", "culture", "history"):
+                for kind in ("text", "audio"):
+                    item = level_payload["slots"][category][kind]
+                    if item:
+                        self.assertIn("periods", item)
+                        self.assertIn("themes", item)
+                        self.assertIn("history_terms", item)
+            phrase_payload = json.loads(site_phrase_path(out, day, "en").read_text(encoding="utf-8"))
+            self.assertIn("history", phrase_payload["B1"])
             self.assertTrue(site_phrase_path(out, day, "en").is_file())
             self.assertTrue((site_lang_dir(out, "en") / "index.json").is_file())
             self.assertTrue(languages_path(out).is_file())

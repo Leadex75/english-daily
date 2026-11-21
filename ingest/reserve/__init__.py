@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Any, Callable
 
 from app.db import default_language, load_sources
+from ingest.phrases import annotate_history
 from ingest.pool import save_pool
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 from ingest.reserve.common import Budget
@@ -71,7 +72,8 @@ def generate_reserves(
             print(f"[reserve] {name}: {len(produced)} candidate(s)")
             for candidate in produced:
                 candidate["lang"] = language
-            all_items.extend(produced)
+                all_items.append(annotate_history(candidate, scoring_config, language))
+            continue
         if budget.requests == before:
             break
     return save_pool(state_dir, all_items, config, lang=language)

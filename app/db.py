@@ -107,6 +107,7 @@ CREATE_ITEMS = """CREATE TABLE items (
     lang TEXT NOT NULL DEFAULT 'en',
     periods TEXT DEFAULT '[]',
     themes TEXT DEFAULT '[]',
+    history_terms TEXT DEFAULT '[]',
     transcript_url TEXT,
     transcript_text TEXT
 )"""
@@ -316,6 +317,7 @@ def _needs_migration(conn: sqlite3.Connection) -> bool:
             "'phrase'" not in items,
             "lang" not in items.lower(),
             "periods" not in items,
+            "history_terms" not in items,
             "origin" not in picks,
             "lang" not in picks.lower(),
             "reconstructed" not in picks,
@@ -374,7 +376,7 @@ def init_db(config: dict[str, Any]) -> Path:
             conn.execute(CREATE_ITEMS)
         elif any(
             column not in _columns(conn, "items")
-            for column in ("origin", "lang", "periods", "themes", "transcript_url", "transcript_text")
+            for column in ("origin", "lang", "periods", "themes", "history_terms", "transcript_url", "transcript_text")
         ) or "'phrase'" not in items_sql:
             _rebuild(
                 conn,
@@ -384,8 +386,8 @@ def init_db(config: dict[str, Any]) -> Path:
                  "published_at", "fetched_at", "body_text", "word_count", "duration_sec",
                  "audio_path", "audio_bytes", "fk_grade", "avg_sentence_len", "rare_word_ratio",
                  "score", "level", "level_method", "audio_remote_url", "license", "attribution",
-                 "origin", "lang", "periods", "themes", "transcript_url", "transcript_text"],
-                {"origin": "'fresh'", "lang": "'en'", "periods": "'[]'", "themes": "'[]'"},
+                  "origin", "lang", "periods", "themes", "history_terms", "transcript_url", "transcript_text"],
+                 {"origin": "'fresh'", "lang": "'en'", "periods": "'[]'", "themes": "'[]'", "history_terms": "'[]'"},
             )
 
         picks_sql = _table_sql(conn, "daily_picks")

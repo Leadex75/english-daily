@@ -40,6 +40,53 @@ def load_bank(name: str, lang: str | None = None) -> list[dict[str, Any]]:
     return [dict(item) for item in (data.get(name) or []) if isinstance(item, dict)]
 
 
+def load_history_terms(lang: str | None = None) -> list[dict[str, Any]]:
+    path = bank_dir(lang) / "history_terms.yaml"
+    if not path.is_file():
+        return []
+    with path.open("r", encoding="utf-8") as handle:
+        data = yaml.safe_load(handle) or {}
+    return [dict(item) for item in (data.get("terms") or []) if isinstance(item, dict)]
+
+
+def annotate_history(
+    item: dict[str, Any], config: dict[str, Any], lang: str | None = None
+) -> dict[str, Any]:
+    payload = dict(item)
+    if str(payload.get("category") or "") != "history":
+        return payload
+    haystack = " ".join(
+        str(payload.get(key) or "")
+        for key in ("title", "summary", "body_text")
+    ).lower()
+    if not haystack.strip():
+        return payload
+    matched: list[dict[str, Any]] = []
+    periods: list[str] = []
+    themes: list[str] = []
+    for term in load_history_terms(lang):
+        aliases = list(term.get("aliases") or [])
+        aliases.append(str(term.get("text") or ""))
+        patterns = [
+            rf"\b{re.escape(str(alias).lower())}\b"
+            for alias in aliases if str(alias).strip()
+        ]
+        if not any(re.search(pattern, haystack) for pattern in patterns):
+            continue
+        matched.append(dict(term))
+        period = str(term.get("period") or "")
+        theme = str(term.get("theme") or "")
+        if period and period not in periods:
+            periods.append(period)
+        if theme and theme not in themes:
+            themes.append(theme)
+    if matched:
+        payload["history_terms"] = matched[:8]
+        payload["periods"] = list(dict.fromkeys(list(payload.get("periods") or []) + periods))
+        payload["themes"] = list(dict.fromkeys(list(payload.get("themes") or []) + themes))
+    return payload
+
+
 def phrase_key(item: dict[str, Any], kind: str) -> str:
     value = str(item.get("text") or item.get("expression") or "")
     return hashlib.sha1(f"{kind}:{value}".encode("utf-8")).hexdigest()
@@ -260,7 +307,8 @@ def generate_phrases(
     used = {str(entry["key"]) for entry in state}
     words = load_bank("words", language)
     expressions = load_bank("expressions", language)
-    if not words or not expressions:
+    history_terms = load_history_terms(language)
+    if not words or not expressions or not history_terms:
         return {}
     offline_value = bool(config.get("phrase_offline")) if offline is None else bool(offline)
     result: dict[str, dict[str, Any]] = {}
@@ -268,14 +316,18 @@ def generate_phrases(
     for level in LEVELS:
         word = enrich(_choose(words, "word", day, level, used), config, offline_value, language)
         expression = enrich(_choose(expressions, "expression", day, level, used), config, offline_value, language)
+        term = dict(_choose(history_terms, "history", day, level, used))
+        term["kind"] = "history"
         newly_used.append({"key": str(word["key"]), "date": day})
         newly_used.append({"key": str(expression["key"]), "date": day})
-        used.update({str(word["key"]), str(expression["key"])})
+        newly_used.append({"key": str(term["key"]), "date": day})
+        used.update({str(word["key"]), str(expression["key"]), str(term["key"])})
         result[level] = {
             "date": day,
             "level": level,
             "word": word,
             "expression": expression,
+            "history": term,
         }
     save_phrase_state(root, state + newly_used, config, language)
     return result

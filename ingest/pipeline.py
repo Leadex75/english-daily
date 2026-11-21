@@ -11,7 +11,7 @@ from app.db import PROJECT_ROOT, connect, default_language, level_config, load_s
 from ingest.fetch_audio import download_audio
 from ingest.fetch_feeds import fetch_source, is_reserve_source
 from ingest.fetch_text import body_for_entry, clean_text, word_count
-from ingest.phrases import generate_phrases, store_phrases
+from ingest.phrases import annotate_history, generate_phrases, store_phrases
 from ingest.picker import choose_picks
 from ingest.pool import hydrate_db, load_pool, writeback_db
 from ingest.readability import CATEGORIES, KINDS, LEVELS, level_for_source
@@ -69,6 +69,12 @@ def _insert_fresh_items(
                 body = body_for_entry(entry, config)
                 words = word_count(body)
                 kind = str(source["kind"])
+                annotated = annotate_history({
+                    "title": entry.get("title"),
+                    "summary": entry.get("summary"),
+                    "body_text": body,
+                    "category": source.get("category"),
+                }, config, language)
                 if kind == "text" and not text_low <= words <= text_high:
                     continue
 
@@ -92,8 +98,9 @@ def _insert_fresh_items(
                         published_at, fetched_at, body_text, word_count, duration_sec,
                         audio_path, audio_bytes, fk_grade, avg_sentence_len,
                          rare_word_ratio, score, level, level_method,
-                         audio_remote_url, license, attribution, origin, lang)
-                        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'fresh', ?)""",
+                         audio_remote_url, license, attribution, origin, lang,
+                         periods, themes, history_terms)
+                          VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'fresh', ?,?,?,?)""",
                     (
                         guid_hash,
                         str(source["id"]),
@@ -119,6 +126,9 @@ def _insert_fresh_items(
                         license_name,
                         attribution,
                         language,
+                        json.dumps(annotated.get("periods") or [], ensure_ascii=False),
+                        json.dumps(annotated.get("themes") or [], ensure_ascii=False),
+                        json.dumps(annotated.get("history_terms") or [], ensure_ascii=False),
                     )
                 )
                 source_items += 1
