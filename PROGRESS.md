@@ -91,3 +91,12 @@
 - Added keyboard tab navigation, skip link, focus-visible outlines, dialog focus handling and reduced-motion support.
 - Tests: 22 unit tests passed, including asset/module presence and service-worker cache coverage.
 - Verification: `node --check` passes for all JavaScript assets; static export smoke copied all new modules into the generated site.
+- Phase 9 committed as `2affa27`.
+
+## Phase 10 — PWA and offline polish (done)
+
+- Manifest now provides standalone display, shortcuts, categories, relative scope/start URLs and install metadata.
+- Service worker adds navigation fallback, message-based `SKIP_WAITING`, and caches the new PWA module; exported builds still receive a generated cache version.
+- Added offline status UI and an update flow backed by `lib/pwa.js`.
+- Tests: 22 unit tests passed, including manifest relative paths, service-worker fallback/update markers and offline UI presence.
+- Verification: `node --check` passes; static export smoke confirmed versioned cache, PWA module, navigation fallback and manifest in the generated site.

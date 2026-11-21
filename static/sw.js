@@ -9,6 +9,7 @@ var APP_SHELL = [
   './lib/exercises.js',
   './lib/tour.js',
   './lib/search.js',
+  './lib/pwa.js',
   './vendor/alpine.min.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
@@ -33,12 +34,23 @@ self.addEventListener('activate', function (event) {
   }).then(function () { return self.clients.claim(); }));
 });
 
+self.addEventListener('message', function (event) {
+  if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
+});
+
 self.addEventListener('fetch', function (event) {
   var request = event.request;
   if (request.method !== 'GET') return;
   var url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
   if (url.pathname.toLowerCase().endsWith('.mp3') || url.pathname.indexOf('/api/') !== -1) return;
+
+  if (request.mode === 'navigate') {
+    event.respondWith(fetch(request).catch(function () {
+      return caches.match(assetUrl('./index.html'));
+    }));
+    return;
+  }
 
   if (url.pathname.indexOf('/data/') !== -1) {
     event.respondWith(fetch(request).then(function (response) {

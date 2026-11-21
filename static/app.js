@@ -76,6 +76,8 @@ function app() {
     answerTick: 0,
     tourIndex: 0,
     tourOpenFlag: false,
+    online: true,
+    updateAvailable: false,
 
     async init() {
       const goal = document.querySelector('meta[name="eds-goal"]');
@@ -83,9 +85,7 @@ function app() {
       this.theme = Store.get('english-daily:theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.dataset.theme = this.theme;
-      if (this.mode === 'static' && 'serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').catch(() => {});
-      }
+      if (this.mode === 'static') await this.initPwa();
       try {
         if (this.mode === 'static') {
           const languagesResponse = await fetch('./data/languages.json');
@@ -504,6 +504,20 @@ function app() {
     clearSearch() {
       this.searchQuery = '';
       this.searchResults = [];
+    },
+
+    async initPwa() {
+      if (!window.EDPwa) return;
+      this.online = window.EDPwa.isOnline();
+      window.EDPwa.onStatus((value) => { this.online = value; });
+      window.EDPwa.onUpdate((value) => { this.updateAvailable = Boolean(value); });
+      await window.EDPwa.register();
+      this.updateAvailable = await window.EDPwa.checkUpdate();
+    },
+    async applyUpdate() {
+      if (!window.EDPwa) return;
+      const applied = await window.EDPwa.applyUpdate();
+      if (applied) this.updateAvailable = false;
     },
 
     resetPlayer() {

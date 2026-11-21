@@ -93,6 +93,10 @@ body {
 
 .notice { color: var(--muted); font-size: 14px; }
 .notice.error { color: var(--accent); }
+.offline-banner {
+  margin: 0 0 12px; padding: 8px 12px; border: 1px solid var(--line);
+  border-radius: 4px; background: var(--accent-soft); color: var(--ink);
+}
 
 .reading { display: flex; flex-direction: column; gap: 28px; padding-top: 32px; }
 .block { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 28px 32px; box-shadow: var(--shadow); }

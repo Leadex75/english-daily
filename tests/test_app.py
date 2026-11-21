@@ -709,7 +709,7 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "exercises.js", "tour.js", "search.js", "anki.js"):
+        for name in ("store.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
@@ -719,6 +719,15 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertIn(marker, script)
         for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog"):
             self.assertIn(marker, styles)
+        manifest = json.loads((static / "manifest.webmanifest").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["display"], "standalone")
+        self.assertEqual(manifest["start_url"], "./")
+        self.assertEqual(manifest["scope"], "./")
+        self.assertTrue(manifest["shortcuts"][0]["url"].startswith("./"))
+        self.assertIn("SKIP_WAITING", worker)
+        self.assertIn("request.mode === 'navigate'", worker)
+        self.assertIn("offline-banner", index)
+        self.assertIn("EDPwa", script)
 
 
 class SourcesApiTests(unittest.TestCase):
