@@ -5,28 +5,35 @@
   "slots": {
     "news": {
       "text": {
-        "id": 20,
-        "title": "Gérard Depardieu and French author investigated over sexual allegations",
+        "id": 24,
+        "title": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/c9ly43pj10mvo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-20T19:45:20",
+        "url": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T19:27:49",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 394,
+        "word_count": 685,
         "duration_sec": null,
-        "body_text": "- Published Warning: this story contains graphic content French authorities are investigating disgraced actor Gérard Depardieu and the author Michel Houellebecq over \"allegations of a sexual nature\", a source with knowledge of the investigation says.…",
+        "body_text": "- Published A federal judge sentenced an Indian man to 235 months, more than 19 years, in an attempted plot to kill a leading Sikh political figure in the US.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "1bc081a3a0426b957416035d7780434a8bda0d91",
-        "summary": "A judicial investigation was launched after a complaint was filed last year over \"allegations of a sexual nature\".",
+        "guid_hash": "25ecedcd4330497b0855434233582cc96b3ddb6f",
+        "summary": "Nikhil Gupta pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February.",
         "origin": "fresh",
-        "badges": []
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 4
       },
       "audio": null
     },
@@ -53,7 +60,14 @@
         "guid_hash": "c05c9818eeaf1ab9f3b55951c39fa06f55411ff9",
         "summary": "\"Talking to Yourself\" is a song by Canadian singer Carly Rae Jepsen from her sixth studio album, The Loneliest Time (2022). Jepsen wrote it with songwriter Simon Wilcox and its producers, Benjamin Berger and Ryan Rabin from the production team Captain Cuts. School Boy and Interscope Records released it as the album's third single on September 16, 2022. \"Talking to Yourself\" is a dance-pop and synt",
         "origin": "fresh",
-        "badges": []
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Talking_to_Yourself — Wikipedia - Featured article",
+        "duration_formatted": "",
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/featured",
+        "reading_time_min": 5
       },
       "audio": null
     },
@@ -62,12 +76,463 @@
       "audio": null
     }
   },
-  "phrase": null,
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "C1",
+    "word": {
+      "text": "coherent",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/koʊˈhɪrənt/",
+      "meaning": "clear and logically connected",
+      "meaning_fr": "cohérent",
+      "example": "She gave a coherent account.",
+      "anki_answer": "cohérent",
+      "tags": [
+        "communication"
+      ],
+      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/koːˈhiɹənt/",
+        "definitions": [
+          "Unified; sticking together; making up a whole.",
+          "Orderly, logical and consistent.",
+          "Aesthetically ordered.",
+          "Having a natural or due agreement of parts; harmonious: a coherent design."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/coherent-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/unified\" title=\"unified\">Unified</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/sticking\" title=\"sticking\">sticking</a> <a rel=\"mw:WikiLink\" href=\"/wiki/together\" title=\"together\">together</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/making_up\" title=\"making up\">making up</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/whole\" title=\"whole\">whole</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/orderly\" title=\"orderly\">Orderly</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/logical\" title=\"logical\">logical</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/consistent\" title=\"consistent\">consistent</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/aesthetic\" title=\"aesthetic\">Aesthetically</a> ordered.",
+          "Having a natural or due agreement of parts; harmonious: a coherent design."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "set the record straight",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "correct a false impression",
+      "meaning_fr": "remettre les choses à plat",
+      "example": "Let me set the record straight.",
+      "anki_answer": "remettre à plat",
+      "tags": [
+        "truth"
+      ],
+      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/correct\" title=\"correct\">correct</a> a previous <a rel=\"mw:WikiLink\" href=\"/wiki/error\" title=\"error\">error</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/misunderstanding\" title=\"misunderstanding\">misunderstanding</a>, especially one <a rel=\"mw:WikiLink\" href=\"/wiki/in_print\" title=\"in print\">in print</a>."
+        ]
+      },
+      "audio": null
+    }
+  },
+  "glossary": [
+    {
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "level": "A1",
+      "text": "teacher",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "phonetic": "/ˈtiːtʃər/",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "level": "A1",
+      "text": "be late",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "phonetic": "",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "kind": "word",
+      "level": "A2",
+      "text": "bridge",
+      "meaning": "a structure crossing a river or road",
+      "meaning_fr": "pont",
+      "example": "The bridge crosses the river.",
+      "phonetic": "/brɪdʒ/",
+      "anki_answer": "pont",
+      "tags": [
+        "places"
+      ]
+    },
+    {
+      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be different from",
+      "meaning": "not the same as",
+      "meaning_fr": "être différent de",
+      "example": "This one is different from that one.",
+      "phonetic": "",
+      "anki_answer": "différent",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "kind": "word",
+      "level": "B1",
+      "text": "behavior",
+      "meaning": "the way a person acts",
+      "meaning_fr": "comportement",
+      "example": "His behavior surprised everyone.",
+      "phonetic": "/bɪˈheɪvjər/",
+      "anki_answer": "comportement",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "kind": "expression",
+      "level": "B1",
+      "text": "by the way",
+      "meaning": "used to add a new topic",
+      "meaning_fr": "au fait",
+      "example": "By the way, the meeting moved to ten.",
+      "phonetic": "",
+      "anki_answer": "au fait",
+      "tags": [
+        "discourse"
+      ]
+    },
+    {
+      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "kind": "word",
+      "level": "B2",
+      "text": "prevent",
+      "meaning": "stop something from happening",
+      "meaning_fr": "empêcher",
+      "example": "Vaccines prevent disease.",
+      "phonetic": "/prɪˈvent/",
+      "anki_answer": "empêcher",
+      "tags": [
+        "prevention"
+      ]
+    },
+    {
+      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "kind": "expression",
+      "level": "B2",
+      "text": "let the cat out of the bag",
+      "meaning": "reveal a secret by accident",
+      "meaning_fr": "divulguer le secret",
+      "example": "He let the cat out of the bag about the party.",
+      "phonetic": "",
+      "anki_answer": "divulguer secret",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "kind": "word",
+      "level": "C1",
+      "text": "coherent",
+      "meaning": "clear and logically connected",
+      "meaning_fr": "cohérent",
+      "example": "She gave a coherent account.",
+      "phonetic": "/koʊˈhɪrənt/",
+      "anki_answer": "cohérent",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "kind": "expression",
+      "level": "C1",
+      "text": "set the record straight",
+      "meaning": "correct a false impression",
+      "meaning_fr": "remettre les choses à plat",
+      "example": "Let me set the record straight.",
+      "phonetic": "",
+      "anki_answer": "remettre à plat",
+      "tags": [
+        "truth"
+      ]
+    },
+    {
+      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "kind": "word",
+      "level": "C2",
+      "text": "vituperative",
+      "meaning": "using harsh and abusive language",
+      "meaning_fr": "injurieux",
+      "example": "His vituperative review surprised readers.",
+      "phonetic": "/vaɪˈtuːpərətɪv/",
+      "anki_answer": "injurieux",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "kind": "expression",
+      "level": "C2",
+      "text": "throw down the gauntlet",
+      "meaning": "issue a direct challenge",
+      "meaning_fr": "jeter le gant",
+      "example": "The article threw down the gauntlet to regulators.",
+      "phonetic": "",
+      "anki_answer": "jeter gant",
+      "tags": [
+        "challenge"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “teacher” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "professeur",
+      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: be ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "late",
+      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “bridge” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "pont",
+      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: be ____ from",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "different",
+      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “behavior” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "comportement",
+      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: by the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "way",
+      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “prevent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "empêcher",
+      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "out",
+      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “coherent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "cohérent",
+      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: set the record ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "straight",
+      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “vituperative” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "injurieux",
+      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: throw down the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "gauntlet",
+      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+    }
+  ],
+  "tour": [
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
   "meta": {
+    "contract_version": 2,
     "filled": 2,
     "total": 6,
     "origins": {
       "fresh": 2
-    }
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 12,
+    "exercise_count": 12,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-21.json"
   }
 }

@@ -124,3 +124,12 @@
 - README now documents multilingual layout, reconstruction/backfill, enriched contract, search, exercises/tour, PWA, desktop launcher/build, all three workflows, source resilience and publishing rules.
 - Tests: 26 unit tests passed, including documentation coverage of current commands, paths and APIs.
 - Verification: `compileall` and all JavaScript syntax checks pass.
+- Phase 13 committed as `c06fa7f`.
+
+## Phase 14 — final verification and release (done)
+
+- Final test suite: 26 unit tests passed; `compileall` and all JavaScript syntax checks passed.
+- Source health: `python run.py doctor --json` checked 28 sources with 28 OK and 0 failures.
+- API smoke: all eight public endpoints returned HTTP 200 against the live database.
+- Reconstruction: `run.py reconstruct --write` aligned today's stored picks with the deterministic cascade; the regenerated static site exposes contract v2, 12 exercises, 12 glossary entries, 5 tour steps, per-day search indexes and six versioned JS modules.
+- Static site regenerated in public mode with a fresh versioned service worker cache.

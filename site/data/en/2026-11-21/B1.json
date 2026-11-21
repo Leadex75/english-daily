@@ -4,7 +4,39 @@
   "level": "B1",
   "slots": {
     "news": {
-      "text": null,
+      "text": {
+        "id": 69,
+        "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T22:42:47",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 687,
+        "duration_sec": null,
+        "body_text": "- Published Anthropic's shares have dropped back towards their initial price after a soaring first day on the stock market, as a wider tech sell-off dragged markets down. The sell-off comes as concerns remain over the speed and size of artificial intelligence investment, but also as some large companies including Nvidia and SpaceX faced specific issues that worried investors. Those…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "49f4d43ed1aa2b1acb7039b2dcad792a45ffea7e",
+        "summary": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Tech stock sell-off drags markets down as Anthropic shares slide — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 4
+      },
       "audio": null
     },
     "culture": {
@@ -30,7 +62,14 @@
         "guid_hash": "bd68d2c44875d3877ff8c31db6fa8a988a671c0d",
         "summary": "Malvin Greston Whitfield (October 11, 1924 – November 18, 2015) was an American former athlete and goodwill ambassador. He was the Olympic champion in the 800 metres at the 1948 and 1952 Summer Olympics. Overall, he is a five-time Olympic medalist (three gold, one silver, one bronze). Whitfield was born in Bay City, Texas. He moved at age 4 to Watts, Los Angeles. He joined the United States Army A",
         "origin": "fresh",
-        "badges": []
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Mal Whitfield — Simple English Wikipedia",
+        "duration_formatted": "",
+        "source_url": "https://simple.wikipedia.org/w/api.php",
+        "reading_time_min": 1
       },
       "audio": null
     },
@@ -39,12 +78,465 @@
       "audio": null
     }
   },
-  "phrase": null,
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "B1",
+    "word": {
+      "text": "behavior",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/bɪˈheɪvjər/",
+      "meaning": "the way a person acts",
+      "meaning_fr": "comportement",
+      "example": "His behavior surprised everyone.",
+      "anki_answer": "comportement",
+      "tags": [
+        "people"
+      ],
+      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "[bɪˈheɪvjə]",
+        "definitions": [
+          "Human conduct relative to social norms.",
+          "The way a living creature behaves or acts generally.",
+          "A state of probation about one's conduct.",
+          "An instance of the way a living creature behaves."
+        ],
+        "audio_url": null
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> Human conduct relative to social norms.",
+          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> An inappropriate or forbidden action.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> The way or manner a living creature <a rel=\"mw:WikiLink\" href=\"/wiki/behave\" title=\"behave\">behaves</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/act\" title=\"act\">acts</a> generally.",
+          "<span class=\"usage-label-sense\" about=\"#mwt39\" typeof=\"mw:Transclusion\"></span> A state of probation about one's conduct."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "by the way",
+      "level": "B1",
+      "type": "everyday phrase",
+      "meaning": "used to add a new topic",
+      "meaning_fr": "au fait",
+      "example": "By the way, the meeting moved to ten.",
+      "anki_answer": "au fait",
+      "tags": [
+        "discourse"
+      ],
+      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt11\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/incidentally\" title=\"incidentally\">Incidentally</a>; used in referencing a parenthetical statement not timely, central, or <a rel=\"mw:WikiLink\" href=\"/wiki/crucial\" title=\"crucial\">crucial</a> to the topic at hand; foregone, passed by, something that has already happened.",
+          "<span class=\"usage-label-sense\" about=\"#mwt155\" typeof=\"mw:Transclusion\"></span> <span class=\"Latn\" lang=\"en\" about=\"#mwt156\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/by_the_way#English\" class=\"mw-selflink-fragment\">by the way</a></span>"
+        ]
+      },
+      "audio": null
+    }
+  },
+  "glossary": [
+    {
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "level": "A1",
+      "text": "teacher",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "phonetic": "/ˈtiːtʃər/",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "level": "A1",
+      "text": "be late",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "phonetic": "",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "kind": "word",
+      "level": "A2",
+      "text": "bridge",
+      "meaning": "a structure crossing a river or road",
+      "meaning_fr": "pont",
+      "example": "The bridge crosses the river.",
+      "phonetic": "/brɪdʒ/",
+      "anki_answer": "pont",
+      "tags": [
+        "places"
+      ]
+    },
+    {
+      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be different from",
+      "meaning": "not the same as",
+      "meaning_fr": "être différent de",
+      "example": "This one is different from that one.",
+      "phonetic": "",
+      "anki_answer": "différent",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "kind": "word",
+      "level": "B1",
+      "text": "behavior",
+      "meaning": "the way a person acts",
+      "meaning_fr": "comportement",
+      "example": "His behavior surprised everyone.",
+      "phonetic": "/bɪˈheɪvjər/",
+      "anki_answer": "comportement",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "kind": "expression",
+      "level": "B1",
+      "text": "by the way",
+      "meaning": "used to add a new topic",
+      "meaning_fr": "au fait",
+      "example": "By the way, the meeting moved to ten.",
+      "phonetic": "",
+      "anki_answer": "au fait",
+      "tags": [
+        "discourse"
+      ]
+    },
+    {
+      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "kind": "word",
+      "level": "B2",
+      "text": "prevent",
+      "meaning": "stop something from happening",
+      "meaning_fr": "empêcher",
+      "example": "Vaccines prevent disease.",
+      "phonetic": "/prɪˈvent/",
+      "anki_answer": "empêcher",
+      "tags": [
+        "prevention"
+      ]
+    },
+    {
+      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "kind": "expression",
+      "level": "B2",
+      "text": "let the cat out of the bag",
+      "meaning": "reveal a secret by accident",
+      "meaning_fr": "divulguer le secret",
+      "example": "He let the cat out of the bag about the party.",
+      "phonetic": "",
+      "anki_answer": "divulguer secret",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "kind": "word",
+      "level": "C1",
+      "text": "coherent",
+      "meaning": "clear and logically connected",
+      "meaning_fr": "cohérent",
+      "example": "She gave a coherent account.",
+      "phonetic": "/koʊˈhɪrənt/",
+      "anki_answer": "cohérent",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "kind": "expression",
+      "level": "C1",
+      "text": "set the record straight",
+      "meaning": "correct a false impression",
+      "meaning_fr": "remettre les choses à plat",
+      "example": "Let me set the record straight.",
+      "phonetic": "",
+      "anki_answer": "remettre à plat",
+      "tags": [
+        "truth"
+      ]
+    },
+    {
+      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "kind": "word",
+      "level": "C2",
+      "text": "vituperative",
+      "meaning": "using harsh and abusive language",
+      "meaning_fr": "injurieux",
+      "example": "His vituperative review surprised readers.",
+      "phonetic": "/vaɪˈtuːpərətɪv/",
+      "anki_answer": "injurieux",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "kind": "expression",
+      "level": "C2",
+      "text": "throw down the gauntlet",
+      "meaning": "issue a direct challenge",
+      "meaning_fr": "jeter le gant",
+      "example": "The article threw down the gauntlet to regulators.",
+      "phonetic": "",
+      "anki_answer": "jeter gant",
+      "tags": [
+        "challenge"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “teacher” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "professeur",
+      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: be ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "late",
+      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “bridge” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "pont",
+      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: be ____ from",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "different",
+      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “behavior” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "comportement",
+      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: by the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "way",
+      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “prevent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "empêcher",
+      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "out",
+      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “coherent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "cohérent",
+      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: set the record ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "straight",
+      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “vituperative” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "injurieux",
+      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: throw down the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "gauntlet",
+      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+    }
+  ],
+  "tour": [
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
   "meta": {
-    "filled": 1,
+    "contract_version": 2,
+    "filled": 2,
     "total": 6,
     "origins": {
-      "fresh": 1
-    }
+      "fresh": 1,
+      "adjacent": 1
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 12,
+    "exercise_count": 12,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-21.json"
   }
 }

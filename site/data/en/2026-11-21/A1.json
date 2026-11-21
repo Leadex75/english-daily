@@ -8,7 +8,39 @@
       "audio": null
     },
     "culture": {
-      "text": null,
+      "text": {
+        "id": 71,
+        "title": "Christoph Leitgeb",
+        "source": "Simple English Wikipedia",
+        "source_id": "wikipedia_simple",
+        "category": "culture",
+        "url": "https://simple.wikipedia.org/wiki/Christoph_Leitgeb",
+        "published_at": "2026-11-21T00:12:13",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 196,
+        "duration_sec": null,
+        "body_text": "Christoph Leitgeb (born 14 April 1985 in Graz) is a former Austrian football player. He played in the Austrian Bundesliga for F. C. Red Bull Salzburg and Sturm Graz as a midfielder. He also played in the national team and was a member of Austria's team at Euro 2008. == Career == He started playing football in the youth teams of SK Sturm Graz in his hometown. In the 2005–06 season he played his first match in the first team of Sturm Graz. The first goal he scored was on 22 April 2006 against Red Bull Salzburg. After two seasons with Sturm Graz he signed with FC Red Bull Salzburg. In his first year he played regularly, but in his second year he had problems with his knees. The following years he came back and played very often from the beginning. After spending 12 years in Salzburg he went back to SK Sturm Graz. In 2020 he ended his career and works now as scout for SK Sturm. == International career == His first international match was in a friendly against Croatia on 23 June 2006. (1–4). He played 41 times for Austria. == Career statistics == As of matches played on 7 May 2018. === International === == Honours == Red Bull Salzburg Austrian Football Bundesliga: 2008–09, 2009–10, 2011–12, 2013–14, 2014–15, 2015–16 Austrian Cup: 2011–12, 2013–14, 2014–15, 2015–16 == References ==",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "a40cd299be1d143d27de92981f3c24d14eaa2a3d",
+        "summary": "Christoph Leitgeb (born 14 April 1985 in Graz) is a former Austrian football player. He played in the Austrian Bundesliga for F. C. Red Bull Salzburg and Sturm Graz as a midfielder. He also played in the national team and was a member of Austria's team at Euro 2008. == Career == He started playing football in the youth teams of SK Sturm Graz in his hometown. In the 2005–06 season he played his fir",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: A2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Christoph Leitgeb — Simple English Wikipedia",
+        "duration_formatted": "",
+        "source_url": "https://simple.wikipedia.org/w/api.php",
+        "reading_time_min": 1
+      },
       "audio": null
     },
     "history": {
@@ -16,10 +48,464 @@
       "audio": null
     }
   },
-  "phrase": null,
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "A1",
+    "word": {
+      "text": "teacher",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈtiːtʃər/",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ],
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈtiːt͡ʃə/",
+        "definitions": [
+          "A person who teaches, especially one employed in a school.",
+          "The index finger; the forefinger.",
+          "An indication; a lesson.",
+          "The second highest office in the Aaronic priesthood, held by priesthood holders of at least the age of 14."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/teacher-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A person who <a rel=\"mw:WikiLink\" href=\"/wiki/teach\" title=\"teach\">teaches</a>, especially one employed in a <a rel=\"mw:WikiLink\" href=\"/wiki/school\" title=\"school\">school</a>; preceptor.",
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/index_finger\" title=\"index finger\">index finger</a>; the <a rel=\"mw:WikiLink\" href=\"/wiki/forefinger\" title=\"forefinger\">forefinger</a>.",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/indication\" title=\"indication\">indication</a>; a <a rel=\"mw:WikiLink\" href=\"/wiki/lesson\" title=\"lesson\">lesson</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> The second highest office in the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Aaronic%20priesthood\" title=\"w:Aaronic priesthood\" class=\"extiw\">Aaronic priesthood</a>, held by priesthood holders of at least the age of 14."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be late",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ],
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt3\" typeof=\"mw:Transclusion\">(This entry is a <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#translation_hub\" title=\"Appendix:Glossary\">translation hub</a>.)</span><link rel=\"mw:PageProp/Category\" href=\"./Category:English_translation_hubs\" about=\"#mwt3\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/one\" title=\"one\">one</a>’s <a rel=\"mw:WikiLink\" href=\"/wiki/menstrual\" title=\"menstrual\">menstrual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discharge\" title=\"discharge\">discharge</a> late, implying <a rel=\"mw:WikiLink\" href=\"/wiki/successful\" title=\"successful\">successful</a>&nbsp;<a rel=\"mw:WikiLink\" href=\"/wiki/nidation\" title=\"nidation\">nidation</a> <a rel=\"mw:WikiLink\" href=\"/wiki/suspect\" title=\"suspect\">suspected</a>."
+        ]
+      },
+      "audio": null
+    }
+  },
+  "glossary": [
+    {
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "level": "A1",
+      "text": "teacher",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "phonetic": "/ˈtiːtʃər/",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "level": "A1",
+      "text": "be late",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "phonetic": "",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "kind": "word",
+      "level": "A2",
+      "text": "bridge",
+      "meaning": "a structure crossing a river or road",
+      "meaning_fr": "pont",
+      "example": "The bridge crosses the river.",
+      "phonetic": "/brɪdʒ/",
+      "anki_answer": "pont",
+      "tags": [
+        "places"
+      ]
+    },
+    {
+      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be different from",
+      "meaning": "not the same as",
+      "meaning_fr": "être différent de",
+      "example": "This one is different from that one.",
+      "phonetic": "",
+      "anki_answer": "différent",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "kind": "word",
+      "level": "B1",
+      "text": "behavior",
+      "meaning": "the way a person acts",
+      "meaning_fr": "comportement",
+      "example": "His behavior surprised everyone.",
+      "phonetic": "/bɪˈheɪvjər/",
+      "anki_answer": "comportement",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "kind": "expression",
+      "level": "B1",
+      "text": "by the way",
+      "meaning": "used to add a new topic",
+      "meaning_fr": "au fait",
+      "example": "By the way, the meeting moved to ten.",
+      "phonetic": "",
+      "anki_answer": "au fait",
+      "tags": [
+        "discourse"
+      ]
+    },
+    {
+      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "kind": "word",
+      "level": "B2",
+      "text": "prevent",
+      "meaning": "stop something from happening",
+      "meaning_fr": "empêcher",
+      "example": "Vaccines prevent disease.",
+      "phonetic": "/prɪˈvent/",
+      "anki_answer": "empêcher",
+      "tags": [
+        "prevention"
+      ]
+    },
+    {
+      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "kind": "expression",
+      "level": "B2",
+      "text": "let the cat out of the bag",
+      "meaning": "reveal a secret by accident",
+      "meaning_fr": "divulguer le secret",
+      "example": "He let the cat out of the bag about the party.",
+      "phonetic": "",
+      "anki_answer": "divulguer secret",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "kind": "word",
+      "level": "C1",
+      "text": "coherent",
+      "meaning": "clear and logically connected",
+      "meaning_fr": "cohérent",
+      "example": "She gave a coherent account.",
+      "phonetic": "/koʊˈhɪrənt/",
+      "anki_answer": "cohérent",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "kind": "expression",
+      "level": "C1",
+      "text": "set the record straight",
+      "meaning": "correct a false impression",
+      "meaning_fr": "remettre les choses à plat",
+      "example": "Let me set the record straight.",
+      "phonetic": "",
+      "anki_answer": "remettre à plat",
+      "tags": [
+        "truth"
+      ]
+    },
+    {
+      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "kind": "word",
+      "level": "C2",
+      "text": "vituperative",
+      "meaning": "using harsh and abusive language",
+      "meaning_fr": "injurieux",
+      "example": "His vituperative review surprised readers.",
+      "phonetic": "/vaɪˈtuːpərətɪv/",
+      "anki_answer": "injurieux",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "kind": "expression",
+      "level": "C2",
+      "text": "throw down the gauntlet",
+      "meaning": "issue a direct challenge",
+      "meaning_fr": "jeter le gant",
+      "example": "The article threw down the gauntlet to regulators.",
+      "phonetic": "",
+      "anki_answer": "jeter gant",
+      "tags": [
+        "challenge"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “teacher” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "professeur",
+      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: be ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "late",
+      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “bridge” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "pont",
+      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: be ____ from",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "different",
+      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “behavior” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "comportement",
+      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: by the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "way",
+      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “prevent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "empêcher",
+      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "out",
+      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “coherent” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "cohérent",
+      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: set the record ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "straight",
+      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “vituperative” mean?",
+      "options": [
+        "cohérent",
+        "comportement",
+        "empêcher",
+        "injurieux"
+      ],
+      "answer": "injurieux",
+      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: throw down the ____",
+      "options": [
+        "bag",
+        "cat",
+        "different",
+        "down"
+      ],
+      "answer": "gauntlet",
+      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+    }
+  ],
+  "tour": [
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
   "meta": {
-    "filled": 0,
+    "contract_version": 2,
+    "filled": 1,
     "total": 6,
-    "origins": {}
+    "origins": {
+      "adjacent": 1
+    },
+    "source_count": 1,
+    "phrase_count": 6,
+    "glossary_count": 12,
+    "exercise_count": 12,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-21.json"
   }
 }
