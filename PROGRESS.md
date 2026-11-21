@@ -82,3 +82,12 @@
 - Static exports point to per-day relative search indexes; the server payload points to `/api/search`.
 - Tests: 21 unit tests passed, including serialization, API reuse of the enriched contract, static export fields and provenance metadata.
 - Verification: `compileall` passes; `node --check` passes; API smoke returned HTTP 200 with the enriched contract; static export smoke produced 12 exercises, 12 glossary entries, 5 tour steps and the relative search path.
+- Phase 8 committed as `acce3cf`.
+
+## Phase 9 — modular accessible frontend (done)
+
+- Split the frontend into browser-native modules for storage, exercises, guided tour and search; all modules are cached by the service worker.
+- The day UI now renders history terms, daily exercises, archive search and a guided tour from the enriched contract.
+- Added keyboard tab navigation, skip link, focus-visible outlines, dialog focus handling and reduced-motion support.
+- Tests: 22 unit tests passed, including asset/module presence and service-worker cache coverage.
+- Verification: `node --check` passes for all JavaScript assets; static export smoke copied all new modules into the generated site.

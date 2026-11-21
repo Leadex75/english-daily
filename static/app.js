@@ -1,5 +1,31 @@
 const API_SEGMENT = 'ap' + 'i';
 
+const Store = {
+  get(key, fallback = null) {
+    if (window.EDStore) return window.EDStore.get(key, fallback);
+    const raw = localStorage.getItem(key);
+    if (raw === null) return fallback;
+    try { return JSON.parse(raw); } catch (err) { return raw; }
+  },
+  set(key, value) {
+    if (window.EDStore) return window.EDStore.set(key, value);
+    localStorage.setItem(key, typeof value === 'string' ? value : JSON.stringify(value));
+  },
+  remove(key) {
+    if (window.EDStore) return window.EDStore.remove(key);
+    localStorage.removeItem(key);
+  },
+  keys(prefix = '') {
+    if (window.EDStore) return window.EDStore.keys(prefix || window.EDStore.PREFIX);
+    const result = [];
+    for (let i = 0; i < localStorage.length; i += 1) {
+      const key = localStorage.key(i);
+      if (key && (!prefix || key.startsWith(prefix))) result.push(key);
+    }
+    return result;
+  },
+};
+
 function appMode() {
   const meta = document.querySelector('meta[name="eds-mode"]');
   return meta && meta.getAttribute('content') === 'static' ? 'static' : 'server';
@@ -43,11 +69,18 @@ function app() {
     weeklyGoal: 5,
     lang: 'en',
     languages: ['en'],
+    searchQuery: '',
+    searchResults: [],
+    searching: false,
+    storeTick: 0,
+    answerTick: 0,
+    tourIndex: 0,
+    tourOpenFlag: false,
 
     async init() {
       const goal = document.querySelector('meta[name="eds-goal"]');
       this.weeklyGoal = Number(goal && goal.getAttribute('content')) || 5;
-      this.theme = localStorage.getItem('english-daily:theme') ||
+      this.theme = Store.get('english-daily:theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.dataset.theme = this.theme;
       if (this.mode === 'static' && 'serviceWorker' in navigator) {
@@ -59,7 +92,7 @@ function app() {
           const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
           this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
           this.lang = normalizeLanguage(
-            requestedLanguage() || localStorage.getItem('english-daily:lang') || languagesPayload.default,
+            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
             this.languages,
           );
           const response = await fetch(`./data/${encodeURIComponent(this.lang)}/index.json`);
@@ -72,7 +105,7 @@ function app() {
           const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
           this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
           this.lang = normalizeLanguage(
-            requestedLanguage() || localStorage.getItem('english-daily:lang') || languagesPayload.default,
+            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
             this.languages,
           );
           const response = await fetch(`./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`);
@@ -81,13 +114,14 @@ function app() {
           const today = new Date().toISOString().slice(0, 10);
           if (!this.days.includes(today)) this.days.unshift(today);
         }
-        localStorage.setItem('english-daily:lang', this.lang);
+        Store.set('english-daily:lang', this.lang);
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
       }
       this.observeReading();
+      this.syncTour();
     },
 
     observeReading() {
@@ -110,7 +144,7 @@ function app() {
     toggleTheme() {
       this.theme = this.theme === 'dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = this.theme;
-      localStorage.setItem('english-daily:theme', this.theme);
+      Store.set('english-daily:theme', this.theme);
     },
 
     canShift(direction) {
@@ -196,15 +230,17 @@ function app() {
     },
 
     isDone(item, kind) {
+      void this.storeTick;
       if (!item) return false;
-      return localStorage.getItem(`english-daily:${kind}:${item.id}`) === '1';
+      return String(Store.get(`english-daily:${kind}:${item.id}`, '0')) === '1';
     },
     isRead(item) { return this.isDone(item, 'read'); },
     isListened(item) { return this.isDone(item, 'listened'); },
     markDone(item, kind) {
       if (!item) return;
-      localStorage.setItem(`english-daily:${kind}:${item.id}`, '1');
-      localStorage.setItem(`english-daily:done-date:${kind}:${item.id}`, this.selectedDate);
+      Store.set(`english-daily:${kind}:${item.id}`, '1');
+      Store.set(`english-daily:done-date:${kind}:${item.id}`, this.selectedDate);
+      this.storeTick += 1;
     },
     markRead(item) { this.markDone(item, 'read'); },
     markListened(item) {
@@ -238,18 +274,19 @@ function app() {
 
     phraseKey(item) { return item && item.key ? String(item.key) : ''; },
     isLearned(item) {
+      void this.storeTick;
       const key = this.phraseKey(item);
-      return Boolean(key && localStorage.getItem(`english-daily:phrase:${key}`));
+      return Boolean(key && Store.get(`english-daily:phrase:${key}`));
     },
     toggleLearned(item) {
       const key = this.phraseKey(item);
       if (!key) return;
       const prefix = `english-daily:phrase:${key}`;
-      if (localStorage.getItem(prefix)) {
-        localStorage.removeItem(prefix);
+      if (Store.get(prefix)) {
+        Store.remove(prefix);
         return;
       }
-      localStorage.setItem(prefix, JSON.stringify({
+      Store.set(prefix, {
         key,
         text: item.text || item.expression || '',
         meaning: item.meaning || '',
@@ -257,18 +294,26 @@ function app() {
         example: item.example || '',
         type: item.type || item.kind || '',
         learned_at: this.selectedDate,
-      }));
+      });
+      this.storeTick += 1;
     },
-    forgetPhrase(key) { localStorage.removeItem(`english-daily:phrase:${key}`); },
+    forgetPhrase(key) {
+      Store.remove(`english-daily:phrase:${key}`);
+      this.storeTick += 1;
+    },
     glossary() {
+      void this.storeTick;
       const result = [];
-      for (let i = 0; i < localStorage.length; i += 1) {
-        const key = localStorage.key(i);
-        if (!key || !key.startsWith('english-daily:phrase:')) continue;
-        try {
-          result.push(JSON.parse(localStorage.getItem(key)));
-        } catch (err) {
-          continue;
+      for (const key of Store.keys('english-daily:phrase:')) {
+        const value = Store.get(key);
+        if (typeof value === 'string') {
+          try {
+            result.push(JSON.parse(value));
+          } catch (err) {
+            continue;
+          }
+        } else if (value && typeof value === 'object') {
+          result.push(value);
         }
       }
       return result.sort((a, b) => String(b.learned_at || '').localeCompare(String(a.learned_at || '')));
@@ -276,7 +321,7 @@ function app() {
     phraseDone() {
       const payload = this.phrase();
       if (!payload) return false;
-      return this.isLearned(payload.word) && this.isLearned(payload.expression);
+      return ['word', 'expression', 'history'].every((kind) => this.isLearned(payload[kind]));
     },
 
     ankiItem(item) {
@@ -306,11 +351,13 @@ function app() {
             if (item) items.push(item);
           }
         }
-        if (payload.phrase) items.push(payload.phrase.word, payload.phrase.expression);
+        if (payload.phrase) {
+          items.push(payload.phrase.word, payload.phrase.expression, payload.phrase.history);
+        }
       }
-      return items;
+      return items.filter(Boolean);
     },
-    todayTotal() { return 48; },
+    todayTotal() { return this.levels.length * 9; },
     todayCount() {
       let count = 0;
       for (const item of this.allItems()) {
@@ -330,12 +377,12 @@ function app() {
       cutoff.setHours(0, 0, 0, 0);
       cutoff.setDate(cutoff.getDate() - 6);
       const dates = new Set();
-      for (let i = 0; i < localStorage.length; i += 1) {
-        const key = localStorage.key(i) || '';
-        if (key.startsWith('english-daily:done-date:')) dates.add(localStorage.getItem(key));
+      for (const key of Store.keys('english-daily:')) {
+        const value = Store.get(key);
+        if (key.startsWith('english-daily:done-date:')) dates.add(value);
         if (key.startsWith('english-daily:phrase:')) {
           try {
-            const entry = JSON.parse(localStorage.getItem(key));
+            const entry = typeof value === 'string' ? JSON.parse(value) : value;
             if (entry && entry.learned_at) dates.add(entry.learned_at);
           } catch (err) {
             continue;
@@ -347,6 +394,116 @@ function app() {
     weekCount() { return this.weekDates().length; },
     weekPercent() {
       return Math.min(100, Math.round((this.weekCount() / this.weeklyGoal) * 100));
+    },
+
+    payload() { return this.all[this.level] || null; },
+    exercises() {
+      const payload = this.payload();
+      if (window.EDExercises) return window.EDExercises.forLevel(payload, this.level);
+      return (payload && payload.exercises) || [];
+    },
+    exerciseAnswer(exercise) {
+      void this.answerTick;
+      return window.EDExercises ? window.EDExercises.answer(exercise) : null;
+    },
+    exerciseProgress() {
+      const exercises = this.exercises();
+      if (window.EDExercises) return window.EDExercises.progress(exercises);
+      return { done: 0, total: exercises.length, percent: 0 };
+    },
+    answerExercise(exercise, option) {
+      if (window.EDExercises) window.EDExercises.record(exercise, option);
+      this.answerTick += 1;
+      this.storeTick += 1;
+    },
+
+    cycleTab(direction) {
+      const index = this.tabs.indexOf(this.tab);
+      const next = this.tabs[(index + direction + this.tabs.length) % this.tabs.length];
+      this.setTab(next);
+      this.$nextTick(() => {
+        const button = document.getElementById(`tab-${next}`);
+        if (button) button.focus();
+      });
+    },
+
+    tourSteps() {
+      return window.EDTour ? window.EDTour.steps(this.payload()) : ((this.payload() && this.payload().tour) || []);
+    },
+    tourStep() {
+      const steps = this.tourSteps();
+      return steps[Math.min(this.tourIndex, Math.max(0, steps.length - 1))] || null;
+    },
+    tourState() { return { index: this.tourIndex, open: this.tourOpenFlag }; },
+    syncTour() {
+      const state = window.EDTour ? window.EDTour.state() : { index: 0, open: false };
+      this.tourIndex = state.index || 0;
+      this.tourOpenFlag = Boolean(state.open) && this.tourSteps().length > 0;
+      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+    },
+    tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
+    startTour() {
+      const state = window.EDTour ? window.EDTour.start(0) : { index: 0, open: true };
+      this.tourIndex = state.index;
+      this.tourOpenFlag = state.open && this.tourSteps().length > 0;
+      this.$nextTick(() => this.focusTour());
+    },
+    nextTour() {
+      const steps = this.tourSteps();
+      const state = window.EDTour ? window.EDTour.advance(steps.length) : { index: this.tourIndex + 1, open: false };
+      this.tourIndex = state.index;
+      this.tourOpenFlag = state.open && steps.length > 0;
+      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+    },
+    endTour() {
+      if (window.EDTour) window.EDTour.end();
+      this.tourIndex = 0;
+      this.tourOpenFlag = false;
+    },
+    focusTour() {
+      const step = this.tourStep();
+      const target = step && step.target ? document.querySelector(step.target) : null;
+      if (target && typeof target.focus === 'function') {
+        target.setAttribute('tabindex', '-1');
+        target.focus();
+        return;
+      }
+      if (this.$refs.tourDialog) this.$refs.tourDialog.focus();
+    },
+
+    async runSearch() {
+      const term = this.searchQuery.trim();
+      this.searchResults = [];
+      if (!term) return;
+      this.searching = true;
+      this.error = '';
+      try {
+        if (this.mode === 'static') {
+          const path = window.EDSearch
+            ? window.EDSearch.path(this.payload())
+            : `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`;
+          const response = await fetch(path || `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`);
+          const index = response.ok ? await response.json() : { items: [] };
+          this.searchResults = window.EDSearch
+            ? window.EDSearch.query(index, term, this.level, 20)
+            : [];
+        } else {
+          const response = await fetch(
+            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&day=${encodeURIComponent(this.selectedDate)}` +
+            `&level=${encodeURIComponent(this.level)}&lang=${encodeURIComponent(this.lang)}`,
+          );
+          const payload = response.ok ? await response.json() : { results: [] };
+          this.searchResults = Array.isArray(payload.results) ? payload.results : [];
+        }
+      } catch (err) {
+        this.error = String(err.message || err);
+      } finally {
+        this.searching = false;
+      }
+    },
+    clearSearch() {
+      this.searchQuery = '';
+      this.searchResults = [];
     },
 
     resetPlayer() {

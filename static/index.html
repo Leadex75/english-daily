@@ -12,11 +12,16 @@
   <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <link rel="stylesheet" href="./style.css">
+  <script defer src="./lib/store.js"></script>
   <script defer src="./lib/anki.js"></script>
+  <script defer src="./lib/exercises.js"></script>
+  <script defer src="./lib/tour.js"></script>
+  <script defer src="./lib/search.js"></script>
   <script defer src="./app.js"></script>
   <script defer src="./vendor/alpine.min.js"></script>
 </head>
-<body x-data="app()" x-init="init()" x-cloak>
+<body x-data="app()" x-init="init()" x-cloak @keydown.escape.window="endTour()">
+  <a class="skip-link" href="#reading-panel">Skip to content</a>
   <div class="shell">
     <header class="masthead">
       <div class="brand">
@@ -24,6 +29,7 @@
         <span class="tagline">A little English, every day.</span>
       </div>
       <div class="header-actions">
+        <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
         <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
         <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length" aria-label="Export learned words to Anki">Anki</button>
       </div>
@@ -38,11 +44,30 @@
         </select>
         <button class="icon-button" type="button" @click="shiftDate(1)" aria-label="Next day" :disabled="!canShift(1)">&#8594;</button>
       </div>
-      <div class="levels" role="group" aria-label="CEFR level">
+      <div class="levels" role="group" aria-label="CEFR level" data-eds-level>
         <template x-for="l in levels" :key="l">
           <button type="button" class="level-button" :class="{ active: level === l, done: levelDone(l) }" :aria-pressed="level === l" @click="setLevel(l)" x-text="l"></button>
         </template>
       </div>
+    </section>
+
+    <section class="search-panel" aria-label="Search the archive">
+      <form @submit.prevent="runSearch()" role="search">
+        <label class="sr-only" for="search-input">Search titles, phrases and history terms</label>
+        <input id="search-input" type="search" x-model="searchQuery" placeholder="Search the archive" autocomplete="off">
+        <button class="pill" type="submit" :disabled="!searchQuery.trim() || searching">Search</button>
+        <button class="link-button" type="button" x-show="searchResults.length" @click="clearSearch()">Clear</button>
+      </form>
+      <p class="notice" x-show="searching" aria-live="polite">Searching…</p>
+      <ul class="search-results" x-show="searchResults.length" aria-live="polite">
+        <template x-for="result in searchResults" :key="result.guid_hash + result.title">
+          <li>
+            <a :href="result.url || '#'" target="_blank" rel="noopener noreferrer" x-text="result.title"></a>
+            <span x-text="[result.date, result.level, result.source].filter(Boolean).join(' · ')"></span>
+            <p x-text="result.snippet"></p>
+          </li>
+        </template>
+      </ul>
     </section>
 
     <section class="progress-panel" aria-label="Progress">
@@ -58,17 +83,18 @@
       </div>
     </section>
 
-    <nav class="tabs" role="tablist" aria-label="Category">
-      <button type="button" role="tab" :aria-selected="tab === 'news'" :class="{ active: tab === 'news' }" @click="setTab('news')">
+    <nav class="tabs" role="tablist" aria-label="Category" data-eds-tabs
+         @keydown.arrow-right.prevent="cycleTab(1)" @keydown.arrow-left.prevent="cycleTab(-1)">
+      <button id="tab-news" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'news'" :tabindex="tab === 'news' ? 0 : -1" :class="{ active: tab === 'news' }" @click="setTab('news')">
         News <span class="check" x-show="categoryDone('news')" aria-label="completed">&#10003;</span>
       </button>
-      <button type="button" role="tab" :aria-selected="tab === 'culture'" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
+      <button id="tab-culture" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'culture'" :tabindex="tab === 'culture' ? 0 : -1" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
         Culture <span class="check" x-show="categoryDone('culture')" aria-label="completed">&#10003;</span>
       </button>
-      <button type="button" role="tab" :aria-selected="tab === 'history'" :class="{ active: tab === 'history' }" @click="setTab('history')">
+      <button id="tab-history" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'history'" :tabindex="tab === 'history' ? 0 : -1" :class="{ active: tab === 'history' }" @click="setTab('history')">
         History <span class="check" x-show="categoryDone('history')" aria-label="completed">&#10003;</span>
       </button>
-      <button type="button" role="tab" :aria-selected="tab === 'phrase'" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
+      <button id="tab-phrase" type="button" role="tab" aria-controls="phrase-panel" :aria-selected="tab === 'phrase'" :tabindex="tab === 'phrase' ? 0 : -1" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
         Phrase <span class="check" x-show="phraseDone()" aria-label="completed">&#10003;</span>
       </button>
     </nav>
@@ -76,7 +102,7 @@
     <p class="notice" x-show="loading" aria-live="polite">Loading…</p>
     <p class="notice error" x-show="error" x-text="error" aria-live="polite"></p>
 
-    <main class="reading" x-show="tab !== 'phrase'">
+    <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="tab !== 'phrase'">
       <article class="block text-block" x-show="currentText()">
         <div class="block-head">
           <div>
@@ -139,7 +165,7 @@
       <div class="block empty" x-show="!currentAudio() && !loading">No audio for this slot today.</div>
     </main>
 
-    <main class="reading phrase-reading" x-show="tab === 'phrase'">
+    <main id="phrase-panel" class="reading phrase-reading" role="tabpanel" aria-labelledby="tab-phrase" x-show="tab === 'phrase'" data-eds-phrase>
       <template x-if="phrase()">
         <div class="phrase-grid">
           <article class="block phrase-card">
@@ -177,12 +203,53 @@
               <button class="pill" type="button" @click="exportAnki([phrase()?.expression])">Anki</button>
             </div>
           </article>
+          <article class="block phrase-card history-card" x-show="phrase()?.history">
+            <div class="block-head">
+              <h2 x-text="phrase()?.history?.text"></h2>
+              <span class="badge" x-text="phrase()?.history?.period || 'history'"></span>
+            </div>
+            <p class="phrase-fr" x-text="phrase()?.history?.theme || ''"></p>
+            <p x-text="phrase()?.history?.meaning"></p>
+            <p class="phrase-fr" x-text="phrase()?.history?.meaning_fr"></p>
+            <blockquote x-text="phrase()?.history?.example"></blockquote>
+            <div class="block-foot">
+              <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" x-text="isLearned(phrase()?.history) ? 'Learned ✓' : 'Mark learned'"></button>
+              <button class="pill" type="button" @click="exportAnki([phrase()?.history])">Anki</button>
+            </div>
+          </article>
         </div>
       </template>
       <div class="block empty" x-show="!phrase() && !loading">No phrase for this level today.</div>
     </main>
 
-    <section class="block glossary" x-show="glossary().length">
+    <section class="block exercises" x-show="tab === 'phrase' && exercises().length" data-eds-exercises aria-label="Daily exercises">
+      <div class="block-head">
+        <div>
+          <h2>Daily practice</h2>
+          <p class="byline" x-text="`${exerciseProgress().done} / ${exerciseProgress().total} answered`"></p>
+        </div>
+        <div class="progress-track exercise-progress"><div class="progress-fill" :style="`width: ${exerciseProgress().percent}%`"></div></div>
+      </div>
+      <ol class="exercise-list">
+        <template x-for="exercise in exercises()" :key="exercise.id">
+          <li>
+            <p class="exercise-prompt"><span class="badge" x-text="exercise.level"></span> <span x-text="exercise.prompt"></span></p>
+            <div class="exercise-options" role="group" :aria-label="exercise.prompt">
+              <template x-for="option in exercise.options" :key="option">
+                <button class="pill" type="button" @click="answerExercise(exercise, option)"
+                        :aria-pressed="exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option)"
+                        :class="{ correct: exerciseAnswer(exercise) && String(option) === String(exercise.answer), wrong: exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option) && !exerciseAnswer(exercise).correct }"
+                        x-text="option"></button>
+              </template>
+            </div>
+            <p class="exercise-feedback" x-show="exerciseAnswer(exercise)" aria-live="polite"
+               x-text="exerciseAnswer(exercise) && exerciseAnswer(exercise).correct ? 'Correct.' : 'Answer: ' + exercise.answer"></p>
+          </li>
+        </template>
+      </ol>
+    </section>
+
+    <section class="block glossary" x-show="glossary().length" data-eds-glossary>
       <div class="block-head">
         <h2>My glossary</h2>
         <button class="pill" type="button" @click="exportAllAnki()">Export all to Anki</button>
@@ -196,6 +263,19 @@
           </li>
         </template>
       </ul>
+    </section>
+
+    <section class="tour-dialog" role="dialog" aria-modal="true" aria-labelledby="tour-title"
+             x-show="tourOpen()" x-ref="tourDialog" tabindex="-1">
+      <div class="block">
+        <p class="eyebrow" x-text="`Tour ${tourState().index + 1} / ${tourSteps().length}`"></p>
+        <h2 id="tour-title" x-text="tourStep()?.title || 'Welcome'"></h2>
+        <p x-text="tourStep()?.body || ''"></p>
+        <div class="block-foot">
+          <button class="link-button" type="button" @click="endTour()">Skip tour</button>
+          <button class="pill" type="button" @click="nextTour()" x-text="tourState().index + 1 >= tourSteps().length ? 'Done' : 'Next'"></button>
+        </div>
+      </div>
     </section>
 
     <footer>

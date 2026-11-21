@@ -701,6 +701,26 @@ class SearchApiTests(unittest.TestCase):
         self.assertEqual(search.call_args.kwargs["level"], "B1")
 
 
+class FrontendAssetTests(unittest.TestCase):
+    def test_modular_accessible_frontend_assets_are_present(self):
+        root = Path(__file__).resolve().parents[1]
+        static = root / "static"
+        index = (static / "index.html").read_text(encoding="utf-8")
+        script = (static / "app.js").read_text(encoding="utf-8")
+        styles = (static / "style.css").read_text(encoding="utf-8")
+        worker = (static / "sw.js").read_text(encoding="utf-8")
+        for name in ("store.js", "exercises.js", "tour.js", "search.js", "anki.js"):
+            self.assertIn(f"./lib/{name}", index)
+            self.assertIn(f"./lib/{name}", worker)
+            self.assertTrue((static / "lib" / name).is_file())
+        for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
+            self.assertIn(marker, index)
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch"):
+            self.assertIn(marker, script)
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog"):
+            self.assertIn(marker, styles)
+
+
 class SourcesApiTests(unittest.TestCase):
     def test_sources_endpoint_filters_language(self):
         registry = [{"id": "en-1", "name": "Source", "lang": "en", "items": 4}]
