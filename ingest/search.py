@@ -60,7 +60,7 @@ def build_search_index(
         license_name = str(row["license"] or "proprietary")
         body = str(row["body_text"] or "") if str(row["kind"]) == "text" else str(row["summary"] or "")
         if public_mode and license_name not in open_licenses:
-            body = excerpt(body, int(config.get("excerpt_words", 120)))
+            body = excerpt(body, int(config.get("excerpt_words", 120)), config)
         terms = [str(term.get("text") or term) for term in _json_list(row["history_terms"]) if isinstance(term, dict)]
         items.append({
             "id": int(row["id"]),

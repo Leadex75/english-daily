@@ -182,6 +182,8 @@ it happens, re-enable the schedule from the Actions tab.
 
 ## Static export and publishing
 
+- `excerpt_words` and `excerpt_min_sentence_words` control sentence-boundary excerpts shared by day
+  payloads, search snippets and the static export.
 - `text_cleaning.patterns` in `config.yaml` removes publisher boilerplate, malformed ellipses and
   trailing "Continue reading" text after extraction, before scoring, word counts and excerpts.
 - `python run.py clean-existing` applies those rules to stored items, pool JSON and exported site

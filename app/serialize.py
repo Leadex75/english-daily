@@ -5,10 +5,12 @@ import re
 from pathlib import Path
 from typing import Any
 
+from ingest.fetch_text import clean_text
 from ingest.phrases import load_phrases
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 
-_SENTENCE_END_RE = re.compile(r"(?<=[.!?])\s+")
+_SENTENCE_END_RE = re.compile(r"(?:[.!?]|…)(?=\s|$)")
+_CLAUSE_END_RE = re.compile(r"[,;:—–](?=\s|$)")
 _CLOZE_STOPWORDS = {"a", "an", "and", "be", "for", "in", "is", "of", "on", "the", "to", "with"}
 _TOUR_STEPS = (
     {"id": "level", "title": "Choose your level", "body": "Start with a CEFR level, then switch any time.", "target": "[data-eds-level]"},
@@ -118,15 +120,39 @@ def _build_exercises(payloads: dict[str, dict[str, Any]]) -> list[dict[str, Any]
     return exercises
 
 
-def excerpt(text: str, limit: int) -> str:
-    words = (text or "").split()
-    if not words or limit <= 0:
+def excerpt(text: str | None, limit: int, config: dict[str, Any] | None = None) -> str:
+    try:
+        maximum = int(limit)
+    except (TypeError, ValueError):
         return ""
-    prefix = " ".join(words[:limit])
-    parts = _SENTENCE_END_RE.split(prefix)
-    if len(parts) > 1 and len(parts[0].split()) >= max(3, min(limit, limit // 2)):
-        prefix = parts[0]
-    return prefix.rstrip(" ,;:") + "…"
+    if maximum <= 0:
+        return ""
+    value = clean_text(str(text or ""), config)
+    value = re.sub(r"\s+", " ", value).strip()
+    if not value:
+        return ""
+    words = value.split(" ")
+    if len(words) <= maximum:
+        return value
+    prefix = " ".join(words[:maximum])
+    fallback_minimum = max(4, maximum // 3)
+    configured = int((config or {}).get("excerpt_min_sentence_words", fallback_minimum))
+    minimum = max(4, configured)
+    sentences = [
+        prefix[:match.start() + 1].strip()
+        for match in _SENTENCE_END_RE.finditer(prefix)
+        if len(prefix[:match.start() + 1].split()) >= minimum
+    ]
+    if sentences:
+        return sentences[-1].rstrip()
+    clauses = [
+        prefix[:match.start()].strip()
+        for match in _CLAUSE_END_RE.finditer(prefix)
+        if len(prefix[:match.start()].split()) >= minimum
+    ]
+    if clauses:
+        return clauses[-1].rstrip(" ,;:—–") + "…"
+    return prefix.rstrip(" ,;:—–") + "…"
 
 
 def _badges(row: Any) -> list[str]:
@@ -158,7 +184,7 @@ def serialize_item(
     body_text = row["body_text"] if kind == "text" else None
     truncated = False
     if kind == "text" and public_mode and license_name == "proprietary":
-        body_text = excerpt(str(body_text or ""), int(config["excerpt_words"]))
+        body_text = excerpt(str(body_text or ""), int(config["excerpt_words"]), config)
         truncated = True
 
     audio_remote_url = row["audio_remote_url"] or None

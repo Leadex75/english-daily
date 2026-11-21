@@ -24,7 +24,7 @@ from app.db import (
     upsert_sources,
 )
 from app.main import app
-from app.serialize import serialize_day
+from app.serialize import excerpt, serialize_day
 from desktop.main import resolve_site_dir
 from fastapi.testclient import TestClient
 
@@ -105,6 +105,65 @@ class BankTests(unittest.TestCase):
             self.assertEqual(first[level]["history"]["level"], level)
             self.assertEqual(first[level]["word"]["dictionary"], {})
             self.assertEqual(first[level]["expression"]["audio"], None)
+
+
+class ExcerptTests(unittest.TestCase):
+    def test_missing_empty_and_zero_limits_return_empty(self):
+        config = dict(DEFAULTS)
+        self.assertEqual(excerpt(None, 60, config), "")
+        self.assertEqual(excerpt("", 60, config), "")
+        self.assertEqual(excerpt("Any text", 0, config), "")
+
+    def test_short_and_exact_length_text_is_returned_unchanged(self):
+        config = dict(DEFAULTS)
+        text = "A short complete sentence."
+        self.assertEqual(excerpt(text, 60, config), text)
+        self.assertEqual(excerpt(text, 6, config), text)
+
+    def test_boilerplate_only_text_returns_empty(self):
+        config = dict(DEFAULTS)
+        raw = "- Published Continue reading... Sign up for our email newsletter for tips."
+        self.assertEqual(excerpt(raw, 60, config), "")
+
+    def test_boilerplate_tail_is_removed_from_excerpt(self):
+        config = dict(DEFAULTS)
+        text = "The government published a short statement today. More details will follow soon. Continue reading..."
+        result = excerpt(text, 60, config)
+        self.assertNotIn("Continue reading", result)
+        self.assertNotIn(".…", result)
+
+    def test_long_text_breaks_at_complete_sentences(self):
+        config = dict(DEFAULTS)
+        text = (
+            "The council approved the plan after a long meeting and several public comments. "
+            "It will start next month. More details will be published soon."
+        )
+        result = excerpt(text, 20, config)
+        self.assertTrue(result.endswith("next month."))
+        self.assertNotIn("…", result)
+
+    def test_clause_fallback_avoids_mid_word_and_dot_ellipsis(self):
+        config = dict(DEFAULTS)
+        text = (
+            "This is a long first clause, with several words and no terminal punctuation, "
+            "then it continues for much longer without stopping"
+        )
+        result = excerpt(text, 15, config)
+        self.assertEqual(result, "This is a long first clause, with several words and no terminal punctuation…")
+        self.assertNotIn(".…", result)
+
+    def test_minimum_sentence_words_is_configurable(self):
+        config = dict(DEFAULTS)
+        text = (
+            "The council approved the plan after a long meeting and several public comments. "
+            "It will start next month with a short ceremony. More details will follow."
+        )
+        self.assertTrue(excerpt(text, 24, config).endswith("ceremony."))
+        strict = dict(config)
+        strict["excerpt_min_sentence_words"] = 50
+        result = excerpt(text, 24, strict)
+        self.assertTrue(result.endswith("…"))
+        self.assertNotIn(".…", result)
 
 
 class TextCleaningTests(unittest.TestCase):

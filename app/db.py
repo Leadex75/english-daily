@@ -43,10 +43,9 @@ DEFAULTS: dict[str, Any] = {
     "audio_mode": "local",
     "public_mode": True,
     "excerpt_words": 60,
+    "excerpt_min_sentence_words": 8,
     "text_cleaning": {
         "patterns": [
-            r"^\s*[-–—]?\s*Published\s+",
-            r"\bContinue reading\s*(?:\.{3,}|…)?\s*$",
             r"\bSign up for our email newsletter\b.*$",
             r"\bFollow us on social media\b.*$",
             r"\bWatch this podcast here\b.*$",
@@ -54,6 +53,8 @@ DEFAULTS: dict[str, Any] = {
             r"\bLet us know what you think\b.*$",
             r"\bSupport public media with NPR\+\b.*$",
             r"\bLearn more about the standards of our journalism\b.*$",
+            r"\bContinue reading\s*(?:\.{3,}|…)?\s*$",
+            r"^\s*[-–—]?\s*Published\s+",
         ]
     },
     "static_retention_days": 365,
