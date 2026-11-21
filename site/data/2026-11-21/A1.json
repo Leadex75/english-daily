@@ -7,8 +7,105 @@
       "audio": null
     },
     "culture": {
+      "text": {
+        "id": 65,
+        "title": "Capetian dynasty",
+        "source": "Simple English Wikipedia",
+        "source_id": "wikipedia_simple",
+        "category": "culture",
+        "url": "https://simple.wikipedia.org/wiki/Capetian_dynasty",
+        "published_at": "2026-11-21T16:06:21",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 70,
+        "duration_sec": null,
+        "body_text": "The Capetian Dynasty includes any of the direct descendants of Hugh Capet of France. King Felipe VI of Spain and the grand duke of Luxembourg are members of this family, both through the Bourbon branch of the dynasty. The direct Capetians ruled France from the years 987–1328. After that the junior House of Valois ruled France until 1589, and the House of Bourbon ruled until the revolution of 1792. == Arms of cadet branches ==",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "36aaaa4176695e3d90cb50ec2ea1ee3937fd9c89",
+        "summary": "The Capetian Dynasty includes any of the direct descendants of Hugh Capet of France. King Felipe VI of Spain and the grand duke of Luxembourg are members of this family, both through the Bourbon branch of the dynasty. The direct Capetians ruled France from the years 987–1328. After that the junior House of Valois ruled France until 1589, and the House of Bourbon ruled until the revolution of 1792.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: A2"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
       "text": null,
       "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "A1",
+    "word": {
+      "text": "teacher",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈtiːtʃər/",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ],
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈtiːt͡ʃə/",
+        "definitions": [
+          "A person who teaches, especially one employed in a school.",
+          "The index finger; the forefinger.",
+          "An indication; a lesson.",
+          "The second highest office in the Aaronic priesthood, held by priesthood holders of at least the age of 14."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/teacher-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A person who <a rel=\"mw:WikiLink\" href=\"/wiki/teach\" title=\"teach\">teaches</a>, especially one employed in a <a rel=\"mw:WikiLink\" href=\"/wiki/school\" title=\"school\">school</a>; preceptor.",
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/index_finger\" title=\"index finger\">index finger</a>; the <a rel=\"mw:WikiLink\" href=\"/wiki/forefinger\" title=\"forefinger\">forefinger</a>.",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/indication\" title=\"indication\">indication</a>; a <a rel=\"mw:WikiLink\" href=\"/wiki/lesson\" title=\"lesson\">lesson</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> The second highest office in the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Aaronic%20priesthood\" title=\"w:Aaronic priesthood\" class=\"extiw\">Aaronic priesthood</a>, held by priesthood holders of at least the age of 14."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be late",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ],
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt3\" typeof=\"mw:Transclusion\">(This entry is a <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#translation_hub\" title=\"Appendix:Glossary\">translation hub</a>.)</span><link rel=\"mw:PageProp/Category\" href=\"./Category:English_translation_hubs\" about=\"#mwt3\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/one\" title=\"one\">one</a>’s <a rel=\"mw:WikiLink\" href=\"/wiki/menstrual\" title=\"menstrual\">menstrual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discharge\" title=\"discharge\">discharge</a> late, implying <a rel=\"mw:WikiLink\" href=\"/wiki/successful\" title=\"successful\">successful</a>&nbsp;<a rel=\"mw:WikiLink\" href=\"/wiki/nidation\" title=\"nidation\">nidation</a> <a rel=\"mw:WikiLink\" href=\"/wiki/suspect\" title=\"suspect\">suspected</a>."
+        ]
+      },
+      "audio": null
+    }
+  },
+  "meta": {
+    "filled": 1,
+    "total": 6,
+    "origins": {
+      "adjacent": 1
     }
   }
 }

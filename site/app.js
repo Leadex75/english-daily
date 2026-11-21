@@ -8,6 +8,7 @@ function appMode() {
 function app() {
   return {
     levels: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+    tabs: ['news', 'culture', 'history', 'phrase'],
     speeds: [0.8, 1, 1.25],
     days: [],
     counts: {},
@@ -25,11 +26,17 @@ function app() {
     observer: null,
     mode: appMode(),
     audioError: false,
+    weeklyGoal: 5,
 
     async init() {
+      const goal = document.querySelector('meta[name="eds-goal"]');
+      this.weeklyGoal = Number(goal && goal.getAttribute('content')) || 5;
       this.theme = localStorage.getItem('english-daily:theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.dataset.theme = this.theme;
+      if (this.mode === 'static' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      }
       try {
         if (this.mode === 'static') {
           const response = await fetch('./data/index.json');
@@ -44,22 +51,25 @@ function app() {
           const today = new Date().toISOString().slice(0, 10);
           if (!this.days.includes(today)) this.days.unshift(today);
         }
-        this.selectedDate = this.days[0] || '';
+        this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
       }
-      if (typeof IntersectionObserver !== 'undefined' && this.$refs.readSentinel) {
-        this.observer = new IntersectionObserver((entries) => {
-          if (entries.some((entry) => entry.isIntersecting) && this.currentText()) {
-            this.markRead(this.currentText());
-          }
-        });
-        this.observer.observe(this.$refs.readSentinel);
-      }
+      this.observeReading();
     },
 
-    async dayUrl(level) {
+    observeReading() {
+      if (typeof IntersectionObserver === 'undefined' || !this.$refs.readSentinel) return;
+      this.observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting) && this.currentText()) {
+          this.markRead(this.currentText());
+        }
+      });
+      this.observer.observe(this.$refs.readSentinel);
+    },
+
+    dayUrl(level) {
       if (this.mode === 'static') {
         return `./data/${encodeURIComponent(this.selectedDate)}/${encodeURIComponent(level)}.json`;
       }
@@ -91,8 +101,8 @@ function app() {
       this.stop();
       try {
         const results = await Promise.all(this.levels.map(async (level) => {
-          const response = await fetch(await this.dayUrl(level));
-          if (!response.ok) throw new Error(`Could not load ${level} content`);
+          const response = await fetch(this.dayUrl(level));
+          if (!response.ok) return [level, { date: this.selectedDate, level, slots: {}, meta: { filled: 0, total: 6, origins: {} } }];
           return [level, await response.json()];
         }));
         for (const [level, payload] of results) this.all[level] = payload;
@@ -101,6 +111,7 @@ function app() {
       } finally {
         this.loading = false;
         this.resetPlayer();
+        this.observeReading();
       }
     },
 
@@ -111,9 +122,8 @@ function app() {
       if (!this.all[level]) {
         this.loading = true;
         try {
-          const response = await fetch(await this.dayUrl(level));
-          if (!response.ok) throw new Error('Could not load level');
-          this.all[level] = await response.json();
+          const response = await fetch(this.dayUrl(level));
+          this.all[level] = response.ok ? await response.json() : { date: this.selectedDate, level, slots: {}, meta: { filled: 0, total: 6, origins: {} } };
         } catch (err) {
           this.error = String(err.message || err);
         } finally {
@@ -136,6 +146,10 @@ function app() {
     },
     currentText() { return this.current() ? this.current().text : null; },
     currentAudio() { return this.current() ? this.current().audio : null; },
+    phrase() {
+      const payload = this.all[this.level];
+      return payload ? payload.phrase : null;
+    },
     paragraphs(item) {
       return ((item && item.body_text) || '').split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
     },
@@ -150,22 +164,21 @@ function app() {
       return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
     },
 
-    progressKey(item) {
-      return item ? `english-daily:${item.kind || 'item'}:${item.id}` : '';
-    },
     isDone(item, kind) {
       if (!item) return false;
       return localStorage.getItem(`english-daily:${kind}:${item.id}`) === '1';
     },
     isRead(item) { return this.isDone(item, 'read'); },
     isListened(item) { return this.isDone(item, 'listened'); },
-    markRead(item) {
+    markDone(item, kind) {
       if (!item) return;
-      localStorage.setItem(`english-daily:read:${item.id}`, '1');
+      localStorage.setItem(`english-daily:${kind}:${item.id}`, '1');
+      localStorage.setItem(`english-daily:done-date:${kind}:${item.id}`, this.selectedDate);
     },
+    markRead(item) { this.markDone(item, 'read'); },
     markListened(item) {
       if (!item || this.isListened(item)) return;
-      localStorage.setItem(`english-daily:listened:${item.id}`, '1');
+      this.markDone(item, 'listened');
     },
     itemDone(item) {
       if (!item) return true;
@@ -183,7 +196,7 @@ function app() {
       const payload = this.all[level];
       if (!payload || !payload.slots) return false;
       const present = [];
-      for (const category of ['news', 'culture']) {
+      for (const category of this.tabs.filter((tab) => tab !== 'phrase')) {
         for (const kind of ['text', 'audio']) {
           const item = payload.slots[category] && payload.slots[category][kind];
           if (item) present.push(item);
@@ -192,13 +205,126 @@ function app() {
       return present.length > 0 && present.every((item) => this.itemDone(item));
     },
 
+    phraseKey(item) { return item && item.key ? String(item.key) : ''; },
+    isLearned(item) {
+      const key = this.phraseKey(item);
+      return Boolean(key && localStorage.getItem(`english-daily:phrase:${key}`));
+    },
+    toggleLearned(item) {
+      const key = this.phraseKey(item);
+      if (!key) return;
+      const prefix = `english-daily:phrase:${key}`;
+      if (localStorage.getItem(prefix)) {
+        localStorage.removeItem(prefix);
+        return;
+      }
+      localStorage.setItem(prefix, JSON.stringify({
+        key,
+        text: item.text || item.expression || '',
+        meaning: item.meaning || '',
+        meaning_fr: item.meaning_fr || '',
+        example: item.example || '',
+        type: item.type || item.kind || '',
+        learned_at: this.selectedDate,
+      }));
+    },
+    forgetPhrase(key) { localStorage.removeItem(`english-daily:phrase:${key}`); },
+    glossary() {
+      const result = [];
+      for (let i = 0; i < localStorage.length; i += 1) {
+        const key = localStorage.key(i);
+        if (!key || !key.startsWith('english-daily:phrase:')) continue;
+        try {
+          result.push(JSON.parse(localStorage.getItem(key)));
+        } catch (err) {
+          continue;
+        }
+      }
+      return result.sort((a, b) => String(b.learned_at || '').localeCompare(String(a.learned_at || '')));
+    },
+    phraseDone() {
+      const payload = this.phrase();
+      if (!payload) return false;
+      return this.isLearned(payload.word) && this.isLearned(payload.expression);
+    },
+
+    ankiItem(item) {
+      if (!item) return null;
+      const front = item.text || item.expression || '';
+      const meaning = [item.meaning_fr, item.meaning].filter(Boolean).join(' — ');
+      const back = [meaning, item.example].filter(Boolean).join('<br>');
+      return { front, back };
+    },
+    exportAnki(items) {
+      const cards = (items || []).map((item) => this.ankiItem(item)).filter(Boolean);
+      if (cards.length && window.AnkiExport) window.AnkiExport.download(cards, `english-daily-${this.selectedDate}.txt`);
+    },
+    exportAllAnki() {
+      const cards = this.glossary().map((item) => this.ankiItem(item)).filter(Boolean);
+      if (cards.length && window.AnkiExport) window.AnkiExport.download(cards, 'english-daily-glossary.txt');
+    },
+
+    allItems() {
+      const items = [];
+      for (const level of this.levels) {
+        const payload = this.all[level];
+        if (!payload || !payload.slots) continue;
+        for (const category of this.tabs.filter((tab) => tab !== 'phrase')) {
+          for (const kind of ['text', 'audio']) {
+            const item = payload.slots[category] && payload.slots[category][kind];
+            if (item) items.push(item);
+          }
+        }
+        if (payload.phrase) items.push(payload.phrase.word, payload.phrase.expression);
+      }
+      return items;
+    },
+    todayTotal() { return 48; },
+    todayCount() {
+      let count = 0;
+      for (const item of this.allItems()) {
+        if (item.key) {
+          if (this.isLearned(item)) count += 1;
+        } else if (this.itemDone(item)) {
+          count += 1;
+        }
+      }
+      return count;
+    },
+    todayPercent() {
+      return Math.min(100, Math.round((this.todayCount() / this.todayTotal()) * 100));
+    },
+    weekDates() {
+      const cutoff = new Date();
+      cutoff.setHours(0, 0, 0, 0);
+      cutoff.setDate(cutoff.getDate() - 6);
+      const dates = new Set();
+      for (let i = 0; i < localStorage.length; i += 1) {
+        const key = localStorage.key(i) || '';
+        if (key.startsWith('english-daily:done-date:')) dates.add(localStorage.getItem(key));
+        if (key.startsWith('english-daily:phrase:')) {
+          try {
+            const entry = JSON.parse(localStorage.getItem(key));
+            if (entry && entry.learned_at) dates.add(entry.learned_at);
+          } catch (err) {
+            continue;
+          }
+        }
+      }
+      return [...dates].filter((date) => date && new Date(date) >= cutoff);
+    },
+    weekCount() { return this.weekDates().length; },
+    weekPercent() {
+      return Math.min(100, Math.round((this.weekCount() / this.weeklyGoal) * 100));
+    },
+
     resetPlayer() {
       this.position = 0;
       this.duration = 0;
       this.playing = false;
       this.audioError = false;
       if (this.$refs.audio) {
-        try { this.$refs.audio.currentTime = 0; } catch (err) { /* not loaded yet */ }
+        try { this.$refs.audio.currentTime = 0; } catch (err) {}
       }
     },
     onMeta() {
@@ -231,6 +357,15 @@ function app() {
       } else {
         audio.pause();
         this.playing = false;
+      }
+    },
+    async playUrl(url) {
+      if (!url) return;
+      try {
+        const audio = new Audio(url);
+        await audio.play();
+      } catch (err) {
+        this.error = 'Audio playback is unavailable here.';
       }
     },
     stop() {

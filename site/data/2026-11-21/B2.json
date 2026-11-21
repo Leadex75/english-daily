@@ -4,79 +4,201 @@
   "slots": {
     "news": {
       "text": {
-        "id": 18,
-        "title": "FBI reportedly investigating apparent hack of its criminal database",
+        "id": 26,
+        "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
         "source": "BBC News - World",
-        "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-21T09:34:20",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-21T09:40:55",
         "level": "B2",
-        "word_count": 236,
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 855,
         "duration_sec": null,
-        "body_text": "- Published The FBI is investigating an apparent breach of its criminal information database, US media report citing two people briefed on the issue. The National Crime Information Center (NCIC) database is used by federal and local law enforcement to share information on warrants and background checks. The BBC has contacted the FBI for comment. This comes after string of…",
+        "body_text": "- Published A deal agreed between the UK and the European Union on Friday will come into force regardless of whether the two sides can negotiate a separate tuition fees agreement, Foreign Secretary Ed Miliband has told the BBC.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "04b611494d38cc84aed175ed9a3eb57e83533a5d",
-        "summary": "The National Crime Information Center database is used by federal and local law enforcement to share information."
+        "guid_hash": "d33d2911a95538bb2b835043e5d4289eac7913a9",
+        "summary": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
+        "origin": "fresh",
+        "badges": []
       },
       "audio": {
         "id": 3,
-        "title": "5am ET, November 21 | The latest headlines from NPR",
+        "title": "9am ET, November 21 | The latest headlines from NPR",
         "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
         "url": "",
-        "published_at": "2026-11-21T10:09:35",
+        "published_at": "2026-11-21T14:09:38",
         "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
         "word_count": 87,
-        "duration_sec": 304,
+        "duration_sec": 280,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/86d5555a-9c85-4429-bebc-e830ac09b122/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_5e4b1ff43e5887f0599c1569f31e34d4_4876363.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=86d5555a-9c85-4429-bebc-e830ac09b122&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-0500-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4876363&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__a10ef9dd8d5a147347509c67b136384932348124",
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/33e7469d-3967-4244-8024-9970b0ec4ce8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_11dcc8cfc4a29fc9cb7df2b6facb6aed_4875109.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=33e7469d-3967-4244-8024-9970b0ec4ce8&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-0900-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4875109&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__11fbbb82b6a83a1123053df61d0bbfc79f05df68",
         "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "db9507c411b565f97c3d3e64e0898313363ed13d",
-        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy"
+        "guid_hash": "461cf8f9cfc04f19763bce87d5c1b73d3b7ac7f5",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
       }
     },
     "culture": {
       "text": {
-        "id": 34,
-        "title": "Home Alone sequel reportedly in development with Macaulay Culkin returning",
+        "id": 46,
+        "title": "‘If they play dirty, we’ll be total and utter filth!’ Gasp-inducing sex-and-scandal drama War is here to stay",
         "source": "The Guardian - Culture",
-        "url": "https://www.theguardian.com/film/2026/nov/20/home-alone-sequel-macaulay-culkin",
-        "published_at": "2026-11-20T19:18:20",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/war-final-episode-dominic-west-sienna-miller-hbo-max-sky-atlantic-now",
+        "published_at": "2026-11-20T11:55:40",
         "level": "B2",
-        "word_count": 341,
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 861,
         "duration_sec": null,
-        "body_text": "A Home Alone sequel is reportedly in development with original star Macaulay Culkin set to return. According to Puck’s Matthew Belloni, Culkin met with Disney executives earlier this year with a pitch for a follow-up and now the project has been met with a green light. The new Home Alone film will bring the 46-year-old back to the franchise as…",
+        "body_text": "A tech titan is brought down by the oldest trick in the book: a honeytrap. In the week that Nvidia’s Jensen Huang, co-founder of the world’s most valuable chip company, worth a whopping $4tn (£3tn), resigned over revelations that he had an affair with a suspected Chinese spy, divorce drama War could hardly feel more timely. That’s also how the…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "cf26b5278a11b207f5a8db3256aee5bd7b455a61",
-        "summary": "Christmas comedy hit is set for a follow-up from the point of view of the father with Seth Rogen as writer and producer A Home Alone sequel is reportedly in development with original star Macaulay Culkin set to return. According to Puck’s Matthew Belloni , Culkin met with Disney executives earlier this year with a pitch for a follow-up and now the project has been met with a green light. The new Home Alone film will bring the 46-year-old back to the franchise as Kevin McCallister for a comedy that, according to Deadline , will be from the father’s point of view. Continue reading..."
+        "guid_hash": "75c95b2fb3ee3c654775aa8619e7c6c4aa4c0fea",
+        "summary": "Dominic West and Sienna Miller’s divorce battle has made for a rollicking potboiler in prestige drama clothing. As it approaches its explosive finale, expect the show to become a TV fixture A tech titan is brought down by the oldest trick in the book: a honeytrap. In the week that Nvidia’s Jensen Huang , co-founder of the world’s most valuable chip company, worth a whopping $4tn (£3tn), resigned over revelations that he had an affair with a suspected Chinese spy, divorce drama War could hardly feel more timely. That’s also how the HBO/Sky legal thriller begins. Billionaire social media mogul Morgan Henderson (Dominic West in textbook posh rotter mode) has a hotel tryst with an alluring stranger after an awards show. She turns out to be in cahoots with his wife, Hollywood star Carla Duval (played with icy glamour by Sienna Miller), to prove her husband’s infidelity. Mission most definitely accomplished. Continue reading...",
+        "origin": "fresh",
+        "badges": []
       },
       "audio": {
-        "id": 13,
-        "title": "How bird poop and manta rays sustain a pristine coral reef",
+        "id": 17,
+        "title": "Are your body clocks off? Meet ‘circadian depression’",
         "source": "NPR Short Wave",
-        "url": "https://www.npr.org/2026/11/17/nx-s1-5988269/coral-reefs-pacific-island-conservation",
-        "published_at": "2026-11-17T08:00:00",
+        "source_id": "npr_short_wave",
+        "category": "culture",
+        "url": "https://www.npr.org/2026/11/16/nx-s1-6035777/depression-daylight-sleep-circadian-rhythm",
+        "published_at": "2026-11-16T08:00:00",
         "level": "B2",
-        "word_count": 128,
-        "duration_sec": 960,
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 222,
+        "duration_sec": 703,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/72da6803-9aa4-4e2e-a973-3bc436f0e9fa/episodes/d844d8cb-7b7c-41d8-aa78-4d05df7f85fa/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_81385d188d8e1ebc9ae8971a15884087_15371755.mp3?awCollectionId=72da6803-9aa4-4e2e-a973-3bc436f0e9fa&awEpisodeId=d844d8cb-7b7c-41d8-aa78-4d05df7f85fa&feed=F0qJcgXZ&t=podcast&e=nx-s1-5988269&p=510351&d=834&size=13345085&hash_redirect=1&x-total-bytes=15371755&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__1e1b9aaa811da2109a5451e16cb8162dda7d30c0",
-        "description": "Coral reefs are at risk around the world . So how do they stay so healthy on the remote Pacific islands of Palmyra Atoll? The answer might be in bird poop, manta rays and tree saws. NPR’s Lauren Sommer recently visited the islands and takes Short Wave on a tour of its conservation secrets and lessons for the rest of the world. Interested in more science in the news? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "audio_url": "https://npr.simplecastaudio.com/72da6803-9aa4-4e2e-a973-3bc436f0e9fa/episodes/57726724-7480-485d-96ac-abe063f256ef/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_77159fdd7bca0edac8cff5d7af84db2b_13230944.mp3?awCollectionId=72da6803-9aa4-4e2e-a973-3bc436f0e9fa&awEpisodeId=57726724-7480-485d-96ac-abe063f256ef&feed=F0qJcgXZ&t=podcast&e=nx-s1-6035777&p=510351&d=703&size=11258193&hash_redirect=1&x-total-bytes=13230944&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__7a617ea9de74f7adaec407616b9b73bb3852b052",
+        "description": "What if depression is sometimes linked to your body’s internal sense of time? That’s what researchers from the University of Sydney’s Brain and Mind Centre wanted to know. In a new study, they surveyed patients with depression whose symptoms may reflect problems with their circadian rhythms – like their sleep schedule, how tired they feel in the morning and whether they’re a night owl. They found that about 1 in 4 qualified for what might be termed a circadian subtype of depression. And while there’s still a lot of research to be done, this could open up new pathways for mental health treatment. NPR health correspondent Will Stone walks us through the study and its implications. NOTE: an earlier version of this podcast had an audio issue at 1:20 — our apologies! if you’re not hearing Gina’s question, try redownloading the episode. If you liked this episode, check out our episode on whether or not we should dump Daylight Saving Time . Interested in more mental health stories? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "8e9f4858835dc3e513c009116e97629d86583988",
-        "summary": "Coral reefs are at risk around the world . So how do they stay so healthy on the remote Pacific islands of Palmyra Atoll? The answer might be in bird poop, manta rays and tree saws. NPR’s Lauren Sommer recently visited the islands and takes Short Wave on a tour of its conservation secrets and lessons for the rest of the world. Interested in more science in the news? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy"
+        "guid_hash": "87d706f732081cfef70cca258c2cf2d812331cd4",
+        "summary": "What if depression is sometimes linked to your body’s internal sense of time? That’s what researchers from the University of Sydney’s Brain and Mind Centre wanted to know. In a new study, they surveyed patients with depression whose symptoms may reflect problems with their circadian rhythms – like their sleep schedule, how tired they feel in the morning and whether they’re a night owl. They found that about 1 in 4 qualified for what might be termed a circadian subtype of depression. And while there’s still a lot of research to be done, this could open up new pathways for mental health treatment. NPR health correspondent Will Stone walks us through the study and its implications. NOTE: an earlier version of this podcast had an audio issue at 1:20 — our apologies! if you’re not hearing Gina’s question, try redownloading the episode. If you liked this episode, check out our episode on whether or not we should dump Daylight Saving Time . Interested in more mental health stories? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
       }
+    },
+    "history": {
+      "text": null,
+      "audio": {
+        "id": 67,
+        "title": "How WW2 pushed the world to the brink",
+        "source": "HistoryExtra podcast",
+        "source_id": "historyextra",
+        "category": "history",
+        "url": "",
+        "published_at": "2026-11-20T00:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 231,
+        "duration_sec": 1915,
+        "body_text": null,
+        "audio_url": "https://dcs-spotify.megaphone.fm/NSR3000814914.mp3?key=a05e7f493c2d8007429e078ba4067d0a&request_event_id=ff21f008-5091-405d-b9d3-f3b6f91daa5e&session_id=ff21f008-5091-405d-b9d3-f3b6f91daa5e&timetoken=1795284401_F33EB7DDBD834C472DAB0D3EDCAD9684",
+        "description": "In the 1930s, how did a world that many considered civilised collapse into barbarity? And how did ordinary people's hopes and fears across the globe help to drive the world towards catastrophe? Drawing on a trove of wartime letters and reports on morale from across international archives, historian Jonathan Fennell offers a remarkable new perspective on the Second World War. In today's episode, he explains to Elinor Evans why we should look beyond the usual 1939 to '45 narrative, and towards a much more global picture. ----- GO BEYOND THE PODCAST Hear more from Jonathan Fennell answering listener questions on the North African campaign in the Second World War here: https://bit.ly/4hlPEqP ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "6f117753544c56c2514a00aa985aacaa32f98f2b",
+        "summary": "In the 1930s, how did a world that many considered civilised collapse into barbarity? And how did ordinary people's hopes and fears across the globe help to drive the world towards catastrophe? Drawing on a trove of wartime letters and reports on morale from across international archives, historian Jonathan Fennell offers a remarkable new perspective on the Second World War. In today's episode, he explains to Elinor Evans why we should look beyond the usual 1939 to '45 narrative, and towards a much more global picture. ----- GO BEYOND THE PODCAST Hear more from Jonathan Fennell answering listener questions on the North African campaign in the Second World War here: https://bit.ly/4hlPEqP ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "origin": "fresh",
+        "badges": []
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "B2",
+    "word": {
+      "text": "prevent",
+      "level": "B2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/prɪˈvent/",
+      "meaning": "stop something from happening",
+      "meaning_fr": "empêcher",
+      "example": "Vaccines prevent disease.",
+      "anki_answer": "empêcher",
+      "tags": [
+        "prevention"
+      ],
+      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/pɹəˈvɛnt/",
+        "definitions": [
+          "To stop (an outcome); to keep from (doing something).",
+          "To take preventative measures.",
+          "To come before; to precede.",
+          "To outdo, surpass."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/prevent-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/stop\" title=\"stop\">stop</a> (an outcome); to <a rel=\"mw:WikiLink\" href=\"/wiki/keep_from\" title=\"keep from\">keep from</a> (doing something). <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt17\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To take <a rel=\"mw:WikiLink\" href=\"/wiki/preventative\" title=\"preventative\">preventative</a> measures. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt24\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt27\" typeof=\"mw:Transclusion\"></span> To come before; to <a rel=\"mw:WikiLink\" href=\"/wiki/precede\" title=\"precede\">precede</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt28\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/outdo\" title=\"outdo\">outdo</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/surpass\" title=\"surpass\">surpass</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt34\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "let the cat out of the bag",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "reveal a secret by accident",
+      "meaning_fr": "divulguer le secret",
+      "example": "He let the cat out of the bag about the party.",
+      "anki_answer": "divulguer secret",
+      "tags": [
+        "secrets"
+      ],
+      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/disclose\" title=\"disclose\">disclose</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/secret\" title=\"secret\">secret</a>; to let a secret be <a rel=\"mw:WikiLink\" href=\"/wiki/known\" title=\"known\">known</a>, often <a rel=\"mw:WikiLink\" href=\"/wiki/inadvertent\" title=\"inadvertent\">inadvertently</a>."
+        ]
+      },
+      "audio": {
+        "title": "To let the cat out of the bag",
+        "url": "http://www.bbc.co.uk/programmes/p02rsr7r",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02rsr7t.mp3"
+      }
+    }
+  },
+  "meta": {
+    "filled": 5,
+    "total": 6,
+    "origins": {
+      "fresh": 5
     }
   }
 }

@@ -1,0 +1,359 @@
+{
+  "A1": {
+    "date": "2026-11-21",
+    "level": "A1",
+    "word": {
+      "text": "teacher",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈtiːtʃər/",
+      "meaning": "a person whose job is to teach",
+      "meaning_fr": "professeur",
+      "example": "Our teacher is very kind.",
+      "anki_answer": "professeur",
+      "tags": [
+        "education"
+      ],
+      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈtiːt͡ʃə/",
+        "definitions": [
+          "A person who teaches, especially one employed in a school.",
+          "The index finger; the forefinger.",
+          "An indication; a lesson.",
+          "The second highest office in the Aaronic priesthood, held by priesthood holders of at least the age of 14."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/teacher-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A person who <a rel=\"mw:WikiLink\" href=\"/wiki/teach\" title=\"teach\">teaches</a>, especially one employed in a <a rel=\"mw:WikiLink\" href=\"/wiki/school\" title=\"school\">school</a>; preceptor.",
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/index_finger\" title=\"index finger\">index finger</a>; the <a rel=\"mw:WikiLink\" href=\"/wiki/forefinger\" title=\"forefinger\">forefinger</a>.",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/indication\" title=\"indication\">indication</a>; a <a rel=\"mw:WikiLink\" href=\"/wiki/lesson\" title=\"lesson\">lesson</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> The second highest office in the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Aaronic%20priesthood\" title=\"w:Aaronic priesthood\" class=\"extiw\">Aaronic priesthood</a>, held by priesthood holders of at least the age of 14."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be late",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "arrive after the right time",
+      "meaning_fr": "être en retard",
+      "example": "Do not be late for class.",
+      "anki_answer": "en retard",
+      "tags": [
+        "time"
+      ],
+      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt3\" typeof=\"mw:Transclusion\">(This entry is a <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#translation_hub\" title=\"Appendix:Glossary\">translation hub</a>.)</span><link rel=\"mw:PageProp/Category\" href=\"./Category:English_translation_hubs\" about=\"#mwt3\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/one\" title=\"one\">one</a>’s <a rel=\"mw:WikiLink\" href=\"/wiki/menstrual\" title=\"menstrual\">menstrual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discharge\" title=\"discharge\">discharge</a> late, implying <a rel=\"mw:WikiLink\" href=\"/wiki/successful\" title=\"successful\">successful</a>&nbsp;<a rel=\"mw:WikiLink\" href=\"/wiki/nidation\" title=\"nidation\">nidation</a> <a rel=\"mw:WikiLink\" href=\"/wiki/suspect\" title=\"suspect\">suspected</a>."
+        ]
+      },
+      "audio": null
+    }
+  },
+  "A2": {
+    "date": "2026-11-21",
+    "level": "A2",
+    "word": {
+      "text": "bridge",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/brɪdʒ/",
+      "meaning": "a structure crossing a river or road",
+      "meaning_fr": "pont",
+      "example": "The bridge crosses the river.",
+      "anki_answer": "pont",
+      "tags": [
+        "places"
+      ],
+      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/bɹɪd͡ʒ/",
+        "definitions": [
+          "A construction or natural feature that spans a divide.",
+          "An arch or superstructure.",
+          "A connection, real or abstract.",
+          "Any of several electrical devices that measure characteristics such as impedance and inductance by balancing different parts of a circuit"
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/bridge-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/construction\" title=\"construction\">construction</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/natural\" title=\"natural\">natural</a> <a rel=\"mw:WikiLink\" href=\"/wiki/feature\" title=\"feature\">feature</a> that <a rel=\"mw:WikiLink\" href=\"/wiki/span\" title=\"span\">spans</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/divide\" title=\"divide\">divide</a>.\n<ol><li class=\"senseid\" id=\"English:_Q12280\" data-lang=\"en\" data-id=\"Q12280\"> A construction spanning a <a rel=\"mw:WikiLink\" href=\"/wiki/waterway\" title=\"waterway\">waterway</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/ravine\" title=\"ravine\">ravine</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/valley\" title=\"valley\">valley</a> from a <a rel=\"mw:WikiLink\" href=\"/wiki/height\" title=\"height\">height</a>, allowing for the passage of <a rel=\"mw:WikiLink\" href=\"/wiki/vehicle\" title=\"vehicle\">vehicles</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/pedestrian\" title=\"pedestrian\">pedestrians</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/train\" title=\"train\">trains</a>, etc.",
+          "A construction spanning a <a rel=\"mw:WikiLink\" href=\"/wiki/waterway\" title=\"waterway\">waterway</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/ravine\" title=\"ravine\">ravine</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/valley\" title=\"valley\">valley</a> from a <a rel=\"mw:WikiLink\" href=\"/wiki/height\" title=\"height\">height</a>, allowing for the passage of <a rel=\"mw:WikiLink\" href=\"/wiki/vehicle\" title=\"vehicle\">vehicles</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/pedestrian\" title=\"pedestrian\">pedestrians</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/train\" title=\"train\">trains</a>, etc.",
+          "<span class=\"usage-label-sense\"></span> The <a rel=\"mw:WikiLink\" href=\"/wiki/upper\" title=\"upper\">upper</a> <a rel=\"mw:WikiLink\" href=\"/wiki/bony\" title=\"bony\">bony</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ridge\" title=\"ridge\">ridge</a> of the <a rel=\"mw:WikiLink\" href=\"/wiki/human\" title=\"human\">human</a> <a rel=\"mw:WikiLink\" href=\"/wiki/nose\" title=\"nose\">nose</a>.",
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/prosthesis\" title=\"prosthesis\">prosthesis</a> replacing one or several adjacent <a rel=\"mw:WikiLink\" href=\"/wiki/tooth\" title=\"tooth\">teeth</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be different from",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "not the same as",
+      "meaning_fr": "être différent de",
+      "example": "This one is different from that one.",
+      "anki_answer": "différent",
+      "tags": [
+        "comparison"
+      ],
+      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    }
+  },
+  "B1": {
+    "date": "2026-11-21",
+    "level": "B1",
+    "word": {
+      "text": "behavior",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/bɪˈheɪvjər/",
+      "meaning": "the way a person acts",
+      "meaning_fr": "comportement",
+      "example": "His behavior surprised everyone.",
+      "anki_answer": "comportement",
+      "tags": [
+        "people"
+      ],
+      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "[bɪˈheɪvjə]",
+        "definitions": [
+          "Human conduct relative to social norms.",
+          "The way a living creature behaves or acts generally.",
+          "A state of probation about one's conduct.",
+          "An instance of the way a living creature behaves."
+        ],
+        "audio_url": null
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> Human conduct relative to social norms.",
+          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> An inappropriate or forbidden action.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> The way or manner a living creature <a rel=\"mw:WikiLink\" href=\"/wiki/behave\" title=\"behave\">behaves</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/act\" title=\"act\">acts</a> generally.",
+          "<span class=\"usage-label-sense\" about=\"#mwt39\" typeof=\"mw:Transclusion\"></span> A state of probation about one's conduct."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "by the way",
+      "level": "B1",
+      "type": "everyday phrase",
+      "meaning": "used to add a new topic",
+      "meaning_fr": "au fait",
+      "example": "By the way, the meeting moved to ten.",
+      "anki_answer": "au fait",
+      "tags": [
+        "discourse"
+      ],
+      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt11\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/incidentally\" title=\"incidentally\">Incidentally</a>; used in referencing a parenthetical statement not timely, central, or <a rel=\"mw:WikiLink\" href=\"/wiki/crucial\" title=\"crucial\">crucial</a> to the topic at hand; foregone, passed by, something that has already happened.",
+          "<span class=\"usage-label-sense\" about=\"#mwt155\" typeof=\"mw:Transclusion\"></span> <span class=\"Latn\" lang=\"en\" about=\"#mwt156\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/by_the_way#English\" class=\"mw-selflink-fragment\">by the way</a></span>"
+        ]
+      },
+      "audio": null
+    }
+  },
+  "B2": {
+    "date": "2026-11-21",
+    "level": "B2",
+    "word": {
+      "text": "prevent",
+      "level": "B2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/prɪˈvent/",
+      "meaning": "stop something from happening",
+      "meaning_fr": "empêcher",
+      "example": "Vaccines prevent disease.",
+      "anki_answer": "empêcher",
+      "tags": [
+        "prevention"
+      ],
+      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/pɹəˈvɛnt/",
+        "definitions": [
+          "To stop (an outcome); to keep from (doing something).",
+          "To take preventative measures.",
+          "To come before; to precede.",
+          "To outdo, surpass."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/prevent-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/stop\" title=\"stop\">stop</a> (an outcome); to <a rel=\"mw:WikiLink\" href=\"/wiki/keep_from\" title=\"keep from\">keep from</a> (doing something). <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt17\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To take <a rel=\"mw:WikiLink\" href=\"/wiki/preventative\" title=\"preventative\">preventative</a> measures. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt24\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt27\" typeof=\"mw:Transclusion\"></span> To come before; to <a rel=\"mw:WikiLink\" href=\"/wiki/precede\" title=\"precede\">precede</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt28\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/outdo\" title=\"outdo\">outdo</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/surpass\" title=\"surpass\">surpass</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt34\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "let the cat out of the bag",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "reveal a secret by accident",
+      "meaning_fr": "divulguer le secret",
+      "example": "He let the cat out of the bag about the party.",
+      "anki_answer": "divulguer secret",
+      "tags": [
+        "secrets"
+      ],
+      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/disclose\" title=\"disclose\">disclose</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/secret\" title=\"secret\">secret</a>; to let a secret be <a rel=\"mw:WikiLink\" href=\"/wiki/known\" title=\"known\">known</a>, often <a rel=\"mw:WikiLink\" href=\"/wiki/inadvertent\" title=\"inadvertent\">inadvertently</a>."
+        ]
+      },
+      "audio": {
+        "title": "To let the cat out of the bag",
+        "url": "http://www.bbc.co.uk/programmes/p02rsr7r",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02rsr7t.mp3"
+      }
+    }
+  },
+  "C1": {
+    "date": "2026-11-21",
+    "level": "C1",
+    "word": {
+      "text": "coherent",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/koʊˈhɪrənt/",
+      "meaning": "clear and logically connected",
+      "meaning_fr": "cohérent",
+      "example": "She gave a coherent account.",
+      "anki_answer": "cohérent",
+      "tags": [
+        "communication"
+      ],
+      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/koːˈhiɹənt/",
+        "definitions": [
+          "Unified; sticking together; making up a whole.",
+          "Orderly, logical and consistent.",
+          "Aesthetically ordered.",
+          "Having a natural or due agreement of parts; harmonious: a coherent design."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/coherent-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/unified\" title=\"unified\">Unified</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/sticking\" title=\"sticking\">sticking</a> <a rel=\"mw:WikiLink\" href=\"/wiki/together\" title=\"together\">together</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/making_up\" title=\"making up\">making up</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/whole\" title=\"whole\">whole</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/orderly\" title=\"orderly\">Orderly</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/logical\" title=\"logical\">logical</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/consistent\" title=\"consistent\">consistent</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/aesthetic\" title=\"aesthetic\">Aesthetically</a> ordered.",
+          "Having a natural or due agreement of parts; harmonious: a coherent design."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "set the record straight",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "correct a false impression",
+      "meaning_fr": "remettre les choses à plat",
+      "example": "Let me set the record straight.",
+      "anki_answer": "remettre à plat",
+      "tags": [
+        "truth"
+      ],
+      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/correct\" title=\"correct\">correct</a> a previous <a rel=\"mw:WikiLink\" href=\"/wiki/error\" title=\"error\">error</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/misunderstanding\" title=\"misunderstanding\">misunderstanding</a>, especially one <a rel=\"mw:WikiLink\" href=\"/wiki/in_print\" title=\"in print\">in print</a>."
+        ]
+      },
+      "audio": null
+    }
+  },
+  "C2": {
+    "date": "2026-11-21",
+    "level": "C2",
+    "word": {
+      "text": "vituperative",
+      "level": "C2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/vaɪˈtuːpərətɪv/",
+      "meaning": "using harsh and abusive language",
+      "meaning_fr": "injurieux",
+      "example": "His vituperative review surprised readers.",
+      "anki_answer": "injurieux",
+      "tags": [
+        "speech"
+      ],
+      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/vaɪˈtjuːpɹətɪv/",
+        "definitions": [
+          "Marked by harsh, spoken, or written abuse; abusive, often with ranting or railing."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/vituperative-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "Marked by <a rel=\"mw:WikiLink\" href=\"/wiki/harsh\" title=\"harsh\">harsh</a> <a rel=\"mw:WikiLink\" href=\"/wiki/abuse\" title=\"abuse\">abuse</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abusive\" title=\"abusive\">abusive</a>, often with <a rel=\"mw:WikiLink\" href=\"/wiki/ranting\" title=\"ranting\">ranting</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/railing\" title=\"railing\">railing</a>.",
+          "<span class=\"form-of-definition use-with-mention\" about=\"#mwt56\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#gender\" title=\"Appendix:Glossary\">feminine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#plural_number\" title=\"Appendix:Glossary\">plural</a> of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"it\"><a rel=\"mw:WikiLink\" href=\"/wiki/vituperativo#Italian\" title=\"vituperativo\">vituperativo</a></i></span></span>"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "throw down the gauntlet",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "issue a direct challenge",
+      "meaning_fr": "jeter le gant",
+      "example": "The article threw down the gauntlet to regulators.",
+      "anki_answer": "jeter gant",
+      "tags": [
+        "challenge"
+      ],
+      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/issue\" title=\"issue\">issue</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/challenge\" title=\"challenge\">challenge</a>."
+        ]
+      },
+      "audio": null
+    }
+  }
+}

@@ -7,8 +7,125 @@
       "audio": null
     },
     "culture": {
+      "text": {
+        "id": 58,
+        "title": "Pyrenean Mastiff",
+        "source": "Simple English Wikipedia",
+        "source_id": "wikipedia_simple",
+        "category": "culture",
+        "url": "https://simple.wikipedia.org/wiki/Pyrenean_Mastiff",
+        "published_at": "2026-11-21T16:06:21",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "A2",
+        "word_count": 45,
+        "duration_sec": null,
+        "body_text": "Pyrenean Mastiff is a mastiff or livestock guardian-type dog that descends from the Great Pyrenees and the Spanish Mastiff. This dog is very fluffy. This dog does not descend from Newfoundland instead it descends from the Great Pyrenees and the Mastin Espanol (AKA Spanish Mastiff).",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "759b99e8ad4c4ef15836e7fb5d9aed27dfc2e6d0",
+        "summary": "Pyrenean Mastiff is a mastiff or livestock guardian-type dog that descends from the Great Pyrenees and the Spanish Mastiff. This dog is very fluffy. This dog does not descend from Newfoundland instead it descends from the Great Pyrenees and the Mastin Espanol (AKA Spanish Mastiff).",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 1491645696,
+        "title": "Rilla of Ingleside - Chapter 1 – Glen Notes and Other Matters",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/rilla-of-ingleside-by-lucy-maud-montgomery/",
+        "published_at": "2026-11-21T16:09:22",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "B1",
+        "word_count": 90,
+        "duration_sec": 1130,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/rilla_ingleside_librivox/rillaofingleside_01_montgomery_64kb.mp3",
+        "description": "Rilla of Ingleside by . Written in 1921, this is the final book in L. M. Montgomery's Anne of Green Gables series. Set during World War I, it shows the courage and endurance of the sisters, mothers and wives (and brothers and fathers) left to tend the home front. The main focus of the book is on Anne and Gilbert’s youngest daughter, Rilla. (Summary by Karen Savage) \nOther books in this series by t",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "a557bb5069cfcefcd5c66c953eb65b32fe7b13b1",
+        "summary": "Rilla of Ingleside by . Written in 1921, this is the final book in L. M. Montgomery's Anne of Green Gables series. Set during World War I, it shows the courage and endurance of the sisters, mothers and wives (and brothers and fathers) left to tend the home front. The main focus of the book is on Anne and Gilbert’s youngest daughter, Rilla. (Summary by Karen Savage) \nOther books in this series by t",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: B1"
+        ]
+      }
+    },
+    "history": {
       "text": null,
       "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-21",
+    "level": "A2",
+    "word": {
+      "text": "bridge",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/brɪdʒ/",
+      "meaning": "a structure crossing a river or road",
+      "meaning_fr": "pont",
+      "example": "The bridge crosses the river.",
+      "anki_answer": "pont",
+      "tags": [
+        "places"
+      ],
+      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/bɹɪd͡ʒ/",
+        "definitions": [
+          "A construction or natural feature that spans a divide.",
+          "An arch or superstructure.",
+          "A connection, real or abstract.",
+          "Any of several electrical devices that measure characteristics such as impedance and inductance by balancing different parts of a circuit"
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/bridge-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/construction\" title=\"construction\">construction</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/natural\" title=\"natural\">natural</a> <a rel=\"mw:WikiLink\" href=\"/wiki/feature\" title=\"feature\">feature</a> that <a rel=\"mw:WikiLink\" href=\"/wiki/span\" title=\"span\">spans</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/divide\" title=\"divide\">divide</a>.\n<ol><li class=\"senseid\" id=\"English:_Q12280\" data-lang=\"en\" data-id=\"Q12280\"> A construction spanning a <a rel=\"mw:WikiLink\" href=\"/wiki/waterway\" title=\"waterway\">waterway</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/ravine\" title=\"ravine\">ravine</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/valley\" title=\"valley\">valley</a> from a <a rel=\"mw:WikiLink\" href=\"/wiki/height\" title=\"height\">height</a>, allowing for the passage of <a rel=\"mw:WikiLink\" href=\"/wiki/vehicle\" title=\"vehicle\">vehicles</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/pedestrian\" title=\"pedestrian\">pedestrians</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/train\" title=\"train\">trains</a>, etc.",
+          "A construction spanning a <a rel=\"mw:WikiLink\" href=\"/wiki/waterway\" title=\"waterway\">waterway</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/ravine\" title=\"ravine\">ravine</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/valley\" title=\"valley\">valley</a> from a <a rel=\"mw:WikiLink\" href=\"/wiki/height\" title=\"height\">height</a>, allowing for the passage of <a rel=\"mw:WikiLink\" href=\"/wiki/vehicle\" title=\"vehicle\">vehicles</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/pedestrian\" title=\"pedestrian\">pedestrians</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/train\" title=\"train\">trains</a>, etc.",
+          "<span class=\"usage-label-sense\"></span> The <a rel=\"mw:WikiLink\" href=\"/wiki/upper\" title=\"upper\">upper</a> <a rel=\"mw:WikiLink\" href=\"/wiki/bony\" title=\"bony\">bony</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ridge\" title=\"ridge\">ridge</a> of the <a rel=\"mw:WikiLink\" href=\"/wiki/human\" title=\"human\">human</a> <a rel=\"mw:WikiLink\" href=\"/wiki/nose\" title=\"nose\">nose</a>.",
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/prosthesis\" title=\"prosthesis\">prosthesis</a> replacing one or several adjacent <a rel=\"mw:WikiLink\" href=\"/wiki/tooth\" title=\"tooth\">teeth</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be different from",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "not the same as",
+      "meaning_fr": "être différent de",
+      "example": "This one is different from that one.",
+      "anki_answer": "différent",
+      "tags": [
+        "comparison"
+      ],
+      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    }
+  },
+  "meta": {
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "adjacent": 1,
+      "fresh": 1
     }
   }
 }

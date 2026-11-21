@@ -133,12 +133,50 @@ footer span { display: block; }
 footer span + span { margin-top: 6px; }
 .notice.error a { color: var(--accent); }
 
+.header-actions { display: flex; align-items: center; gap: 8px; }
+.masthead { align-items: center; }
+.pill.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.badge-origin { border-color: var(--line); color: var(--muted); font-weight: 500; }
+
+.progress-panel { display: grid; gap: 8px; padding: 0 0 18px; }
+.progress-line { display: grid; grid-template-columns: 72px 1fr 64px; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; }
+.progress-track { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: inherit; transition: width 180ms ease; }
+
+.tabs { overflow-x: auto; gap: 28px; }
+.tabs button { white-space: nowrap; }
+
+.phrase-reading { padding-top: 32px; }
+.phrase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.phrase-card { display: flex; flex-direction: column; gap: 12px; }
+.phrase-card .block-head { margin-bottom: 0; }
+.phrase-card h2 { font-size: 28px; }
+.phrase-card blockquote {
+  margin: 4px 0; padding-left: 14px; border-left: 2px solid var(--accent-soft);
+  font-family: Georgia, Charter, "Times New Roman", serif; font-size: 17px; font-style: italic;
+}
+.phrase-card p, .phrase-card li { margin: 0; }
+.phrase-card p.phrase-fr { color: var(--muted); font-size: 14px; }
+.phonetic { color: var(--muted); font-size: 14px; }
+.definition-list { padding-left: 20px; color: var(--muted); font-size: 14px; }
+.phrase-card .block-foot { margin-top: auto; }
+
+.glossary { margin-top: 32px; }
+.glossary ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.glossary li { display: flex; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.glossary li span { color: var(--muted); font-size: 14px; }
+.link-button { margin-left: auto; border: 0; background: none; color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
+.link-button:hover { color: var(--accent); }
+
 @media (max-width: 640px) {
   .shell { padding: 0 16px 48px; }
   .masthead { padding-top: 24px; }
+  .header-actions { gap: 6px; }
   .controls { flex-direction: column; align-items: stretch; gap: 14px; }
   .levels { justify-content: space-between; }
   .level-button { padding: 6px 8px; }
+  .progress-line { grid-template-columns: 64px 1fr 52px; gap: 8px; }
+  .phrase-grid { grid-template-columns: 1fr; gap: 16px; }
   .block { padding: 20px 18px; }
   .block-head { flex-direction: column; gap: 8px; }
   .article-body { font-size: 17px; }
