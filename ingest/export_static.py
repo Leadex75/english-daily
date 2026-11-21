@@ -198,6 +198,7 @@ def export_static(
                         public_mode=publish_public,
                         audio_base="./audio/",
                         lang=language,
+                        data_base="./data/",
                     )
                     target = site_level_path(out, day, level, language)
                     target.parent.mkdir(parents=True, exist_ok=True)

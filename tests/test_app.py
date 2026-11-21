@@ -21,6 +21,7 @@ from app.db import (
     upsert_sources,
 )
 from app.main import app
+from app.serialize import serialize_day
 from fastapi.testclient import TestClient
 
 from ingest.doctor import check_sources, run_doctor
@@ -36,7 +37,7 @@ from ingest.paths import (
     state_lang_dir,
     write_languages,
 )
-from ingest.phrases import annotate_history, generate_phrases, load_bank, load_history_terms
+from ingest.phrases import annotate_history, generate_phrases, load_bank, load_history_terms, store_phrases
 from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
 from ingest.readability import band_center
@@ -467,6 +468,18 @@ class MigrationAndExportTests(unittest.TestCase):
                         self.assertIn("periods", item)
                         self.assertIn("themes", item)
                         self.assertIn("history_terms", item)
+                        self.assertIn("alt_text", item)
+                        self.assertIn("duration_formatted", item)
+                        self.assertIn("source_url", item)
+            self.assertEqual(level_payload["meta"]["contract_version"], 2)
+            self.assertEqual(
+                level_payload["meta"]["search_path"], f"./data/en/search/{day}.json"
+            )
+            self.assertGreater(level_payload["meta"]["glossary_count"], 0)
+            self.assertGreaterEqual(len(level_payload["exercises"]), 3)
+            self.assertEqual(len(level_payload["tour"]), 5)
+            exercise_ids = {exercise["id"] for exercise in level_payload["exercises"]}
+            self.assertIn("B1-word", exercise_ids)
             phrase_payload = json.loads(site_phrase_path(out, day, "en").read_text(encoding="utf-8"))
             self.assertIn("history", phrase_payload["B1"])
             self.assertTrue(site_phrase_path(out, day, "en").is_file())
@@ -545,6 +558,80 @@ class DoctorTests(unittest.TestCase):
             code = run_doctor(config, json_output=True)
         self.assertEqual(code, 0)
         self.assertEqual(json.loads(buffer.getvalue()), report)
+
+
+class ContractTests(unittest.TestCase):
+    def test_serialize_day_adds_glossary_exercises_tour_and_provenance(self):
+        with tempfile.TemporaryDirectory() as raw:
+            config = dict(DEFAULTS)
+            config["languages"] = ["en"]
+            config["data_dir"] = raw
+            init_db(config)
+            day = "2026-11-21"
+            conn = connect(config)
+            try:
+                conn.execute(
+                    """INSERT INTO sources
+                       (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?)""",
+                    ("contract-source", "Contract Source", "https://example.org/feed", "history", "text",
+                     "computed", "computed", 1, "en"),
+                )
+                conn.execute(
+                    """INSERT INTO items
+                       (guid_hash, source_id, kind, category, title, url, summary, published_at,
+                        fetched_at, body_text, word_count, score, level, origin, lang,
+                        periods, themes, history_terms)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (
+                        "contract-hash", "contract-source", "text", "history", "Renaissance art",
+                        "https://example.org/article", "A short summary", day, day,
+                        "Renaissance " + "word " * 200, 201, 0.5, "B1", "fresh", "en",
+                        json.dumps(["Early modern"]), json.dumps(["Culture"]),
+                        json.dumps([{"text": "renaissance"}]),
+                    ),
+                )
+                item_id = int(conn.execute("SELECT id FROM items WHERE guid_hash='contract-hash'").fetchone()[0])
+                conn.execute(
+                    """INSERT INTO daily_picks
+                       (date, level, category, kind, item_id, origin, badges, lang)
+                       VALUES (?,?,?,?,?,?,?,?)""",
+                    (day, "B1", "history", "text", item_id, "fresh", "[]", "en"),
+                )
+                conn.commit()
+                store_phrases(
+                    conn,
+                    day,
+                    generate_phrases(config, day, raw, offline=True, lang="en"),
+                    "en",
+                )
+                payload = serialize_day(conn, day, "B1", config, lang="en")
+            finally:
+                conn.close()
+            self.assertEqual(payload["meta"]["contract_version"], 2)
+            self.assertEqual(payload["meta"]["search_path"], f"/api/search?day={day}&lang=en")
+            self.assertEqual(payload["meta"]["history_periods"], ["Early modern"])
+            self.assertGreater(len(payload["glossary"]), 0)
+            self.assertEqual(len(payload["exercises"]), 18)
+            word_exercise = next(item for item in payload["exercises"] if item["id"] == "B1-word")
+            self.assertIn(word_exercise["answer"], word_exercise["options"])
+            self.assertEqual(payload["tour"][0]["id"], "level")
+            item = payload["slots"]["history"]["text"]
+            self.assertIn("Renaissance art", item["alt_text"])
+            self.assertEqual(item["source_url"], "https://example.org/feed")
+            self.assertEqual(item["reading_time_min"], 2)
+
+    def test_day_endpoint_uses_enriched_serializer(self):
+        client = TestClient(app)
+        config = {"languages": ["en"], "default_language": "en"}
+        payload = {"date": "2026-11-21", "level": "B1", "exercises": []}
+        with patch("app.main.load_config", return_value=config), patch(
+            "app.main.connect"
+        ), patch("app.main.serialize_day", return_value=payload) as serialize:
+            response = client.get("/api/day/2026-11-21?level=B1&lang=en")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), payload)
+        self.assertEqual(serialize.call_args.args[1:3], ("2026-11-21", "B1"))
 
 
 class SearchTests(unittest.TestCase):

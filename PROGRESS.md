@@ -73,3 +73,12 @@
 - Added server endpoint `GET /api/search?q=...&day=...&level=...&limit=...&lang=...` with validation and the same ranking logic.
 - Tests: 19 unit tests passed, including index building/query ranking, search API filtering and static search file export.
 - Verification: Python modules compile; `node --check` passes; API smoke returned HTTP 200 with an empty result set in an isolated temp data directory.
+- Phase 7 committed as `980ff23`.
+
+## Phase 8 — enriched day contract (done)
+
+- Day payloads now expose a versioned contract with `glossary`, `exercises`, `tour` and richer per-item provenance: alt text, source URL, formatted duration and reading time.
+- Exercise generation is deterministic, CEFR-scoped, and covers word meaning, expression cloze and history period questions with distractors drawn from the same day's phrase bank.
+- Static exports point to per-day relative search indexes; the server payload points to `/api/search`.
+- Tests: 21 unit tests passed, including serialization, API reuse of the enriched contract, static export fields and provenance metadata.
+- Verification: `compileall` passes; `node --check` passes; API smoke returned HTTP 200 with the enriched contract; static export smoke produced 12 exercises, 12 glossary entries, 5 tour steps and the relative search path.
