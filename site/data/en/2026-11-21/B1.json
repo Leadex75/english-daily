@@ -5,7 +5,7 @@
   "slots": {
     "news": {
       "text": {
-        "id": 69,
+        "id": 19,
         "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
@@ -15,7 +15,7 @@
         "level": "B1",
         "slot_level": "B1",
         "source_level": "B2",
-        "word_count": 687,
+        "word_count": 688,
         "duration_sec": null,
         "body_text": "- Published Anthropic's shares have dropped back towards their initial price after a soaring first day on the stock market, as a wider tech sell-off dragged markets down. The sell-off comes as concerns remain over the speed and size of artificial intelligence investment, but also as some large companies including Nvidia and SpaceX faced specific issues that worried investors. Those…",
         "audio_url": null,
@@ -23,7 +23,7 @@
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "49f4d43ed1aa2b1acb7039b2dcad792a45ffea7e",
+        "guid_hash": "962fbdfeea01cd3105ffe701cc89dcaf79d4d68b",
         "summary": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory.",
         "origin": "adjacent",
         "badges": [
@@ -37,275 +37,517 @@
         "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "reading_time_min": 4
       },
-      "audio": null
+      "audio": {
+        "id": 3,
+        "title": "12pm ET, November 21 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-21T17:09:38",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e0d24e37-456c-48d1-82a2-31f7d6c347ad/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_4c55c6c5a6f32a8d138fdc75e7911a66_5502884.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e0d24e37-456c-48d1-82a2-31f7d6c347ad&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1200-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5502884&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__8e6ceaf2c57aa84793e653519946d5751eb78850",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "048cb4c15852869abfdaa2ec45dd2fd94af2eb6f",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "12pm ET, November 21 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
     },
     "culture": {
       "text": {
-        "id": 70,
-        "title": "Mal Whitfield",
-        "source": "Simple English Wikipedia",
-        "source_id": "wikipedia_simple",
+        "id": 40,
+        "title": "Melania: the series review – so bad it robbed me of my capacity to discern time and space",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
         "category": "culture",
-        "url": "https://simple.wikipedia.org/wiki/Mal_Whitfield",
-        "published_at": "2026-11-21T00:12:13",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/melania-review-tv-documentary-prime",
+        "published_at": "2026-11-20T15:38:39",
         "level": "B1",
         "slot_level": "B1",
         "source_level": "B1",
-        "word_count": 126,
+        "word_count": 735,
         "duration_sec": null,
-        "body_text": "Malvin Greston Whitfield (October 11, 1924 – November 18, 2015) was an American former athlete and goodwill ambassador. He was the Olympic champion in the 800 metres at the 1948 and 1952 Summer Olympics. Overall, he is a five-time Olympic medalist (three gold, one silver, one bronze). Whitfield was born in Bay City, Texas. He moved at age 4 to Watts, Los Angeles. He joined the United States Army Air Forces in 1943 as a member of the Tuskegee Airmen. After World War II he remained in the military, but also enrolled at the Ohio State University. He served inn the Korean War. Whitfield died under hospice care in Washington, D.C. on the night of November 18, 2015 from heart failure, aged 91. == References == == Other websites == Mal Whitfield's profile at Sports Reference.com Archived 2020-04-17 at the Wayback Machine",
+        "body_text": "Previously on Melania: earlier this year – either because it found her a compelling subject, or because it wanted to flatter the president before a potentially destructive upcoming antitrust trial – Amazon spent $75m (£57m) to make and market a theatrically released documentary about Melania Trump.…",
         "audio_url": null,
         "description": null,
-        "license": "cc_by_sa",
-        "attribution": "Wikipedia, CC BY-SA 4.0",
-        "truncated": false,
-        "guid_hash": "bd68d2c44875d3877ff8c31db6fa8a988a671c0d",
-        "summary": "Malvin Greston Whitfield (October 11, 1924 – November 18, 2015) was an American former athlete and goodwill ambassador. He was the Olympic champion in the 800 metres at the 1948 and 1952 Summer Olympics. Overall, he is a five-time Olympic medalist (three gold, one silver, one bronze). Whitfield was born in Bay City, Texas. He moved at age 4 to Watts, Los Angeles. He joined the United States Army A",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "945c1e47137395f9f5927ff6531493be2724e5f2",
+        "summary": "The first lady’s two-part TV documentary is a dead-eyed advert that barely manages to masquerade as entertainment. Calling it thin gruel would be an insult to the gruel industry Previously on Melania: earlier this year – either because it found her a compelling subject, or because it wanted to flatter the president before a potentially destructive upcoming antitrust trial – Amazon spent $75m (£57m) to make and market a theatrically released documentary about Melania Trump. I’m telling you this for two reasons. First, because you didn’t watch the Melania film. Nobody did, except for journalists who sat in otherwise empty cinemas and (if reports are to believed) people who responded to Craigslist ads offering them $50 to see it. The second reason is because Melania is a series now. Continue reading...",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Mal Whitfield — Simple English Wikipedia",
+        "alt_text": "Melania: the series review – so bad it robbed me of my capacity to discern time and space — The Guardian - Culture",
         "duration_formatted": "",
-        "source_url": "https://simple.wikipedia.org/w/api.php",
-        "reading_time_min": 1
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
       },
-      "audio": null
+      "audio": {
+        "id": 1411012451,
+        "title": "Long Poems Collection 003 - Casting a Spell on the Cat",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/long-poems-collection-003/",
+        "published_at": "2026-11-21T18:28:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 18,
+        "duration_sec": 314,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/long_poems_003_librivox/casting_spell_cat_budge_ce_64kb.mp3",
+        "description": "Long Poems Collection 003 by . LibriVox’s Long Poems Collection 003: a collection of 8 public-domain poems longer than 5 minutes in length.",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "52085bacc938595040c2dbffe737889a516018ec",
+        "summary": "Long Poems Collection 003 by . LibriVox’s Long Poems Collection 003: a collection of 8 public-domain poems longer than 5 minutes in length.",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Long Poems Collection 003 - Casting a Spell on the Cat — LibriVox (culture)",
+        "duration_formatted": "5:14",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     },
     "history": {
       "text": null,
-      "audio": null
+      "audio": {
+        "id": 1108000114,
+        "title": "Amendments to the United States Constitution - Amendments 14 - 16",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/the-amendments-to-the-constitution-of-the-united-states-of-america/",
+        "published_at": "2026-11-21T18:26:51",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 114,
+        "duration_sec": 212,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/constitution_amendments_librivox/constitution_amendments_03_64kb.mp3",
+        "description": "Amendments to the United States Constitution by . The Amendments to the Constitution of the USA are a continuously modified document that attempts to secure all basic and other rights for American citizens. The most recent amendment was made in the early 1970's during the Vietnam war; this amendment lowered the voting age to 18. The first ten amendments (A.K.A. the Bill of Rights) was made by the ",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "b7dff07fa1ae0be47b2706fee0302b0785174d18",
+        "summary": "Amendments to the United States Constitution by . The Amendments to the Constitution of the USA are a continuously modified document that attempts to secure all basic and other rights for American citizens. The most recent amendment was made in the early 1970's during the Vietnam war; this amendment lowered the voting age to 18. The first ten amendments (A.K.A. the Bill of Rights) was made by the ",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (history & biography)"
+        ],
+        "periods": [
+          "General",
+          "18th century"
+        ],
+        "themes": [
+          "War",
+          "Politics"
+        ],
+        "history_terms": [
+          {
+            "text": "war",
+            "aliases": [
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "constitution",
+            "aliases": [
+              "constitution",
+              "charter"
+            ],
+            "level": "B2",
+            "meaning": "the main set of laws and principles of a state",
+            "meaning_fr": "constitution",
+            "period": "18th century",
+            "theme": "Politics",
+            "example": "The constitution protects citizens' rights.",
+            "tags": [
+              "law"
+            ]
+          }
+        ],
+        "alt_text": "Amendments to the United States Constitution - Amendments 14 - 16 — LibriVox (history & biography)",
+        "duration_formatted": "3:32",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     }
   },
   "phrase": {
     "date": "2026-11-21",
     "level": "B1",
     "word": {
-      "text": "behavior",
+      "text": "border",
       "level": "B1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/bɪˈheɪvjər/",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "anki_answer": "comportement",
+      "phonetic": "/ˈbɔːrdər/",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ],
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "dictionary": {
-        "phonetic": "[bɪˈheɪvjə]",
+        "phonetic": "/ˈbɔədə/",
         "definitions": [
-          "Human conduct relative to social norms.",
-          "The way a living creature behaves or acts generally.",
-          "A state of probation about one's conduct.",
-          "An instance of the way a living creature behaves."
+          "The outer edge of something.",
+          "A decorative strip around the edge of something.",
+          "A strip of ground in which ornamental plants are grown.",
+          "The line or frontier area separating political or geographical regions."
         ],
-        "audio_url": null
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/border-uk.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> Human conduct relative to social norms.",
-          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> An inappropriate or forbidden action.",
-          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> The way or manner a living creature <a rel=\"mw:WikiLink\" href=\"/wiki/behave\" title=\"behave\">behaves</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/act\" title=\"act\">acts</a> generally.",
-          "<span class=\"usage-label-sense\" about=\"#mwt39\" typeof=\"mw:Transclusion\"></span> A state of probation about one's conduct."
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/line\" title=\"line\">line</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/frontier\" title=\"frontier\">frontier</a> <a rel=\"mw:WikiLink\" href=\"/wiki/area\" title=\"area\">area</a> <a rel=\"mw:WikiLink\" href=\"/wiki/separating\" title=\"separating\">separating</a> <a rel=\"mw:WikiLink\" href=\"/wiki/political\" title=\"political\">political</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/geographical\" title=\"geographical\">geographical</a> <a rel=\"mw:WikiLink\" href=\"/wiki/region\" title=\"region\">regions</a>.",
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/outer\" title=\"outer\">outer</a> <a rel=\"mw:WikiLink\" href=\"/wiki/edge\" title=\"edge\">edge</a> of something.",
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/decorative\" title=\"decorative\">decorative</a> <a rel=\"mw:WikiLink\" href=\"/wiki/strip\" title=\"strip\">strip</a> around the edge of something.",
+          "A strip of <a rel=\"mw:WikiLink\" href=\"/wiki/ground\" title=\"ground\">ground</a> in which <a rel=\"mw:WikiLink\" href=\"/wiki/ornamental\" title=\"ornamental\">ornamental</a> <a rel=\"mw:WikiLink\" href=\"/wiki/plant\" title=\"plant\">plants</a> are <a rel=\"mw:WikiLink\" href=\"/wiki/grown\" title=\"grown\">grown</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "by the way",
+      "expression": "call it a day",
       "level": "B1",
-      "type": "everyday phrase",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
-      "anki_answer": "au fait",
+      "type": "idiom",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ],
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt11\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/incidentally\" title=\"incidentally\">Incidentally</a>; used in referencing a parenthetical statement not timely, central, or <a rel=\"mw:WikiLink\" href=\"/wiki/crucial\" title=\"crucial\">crucial</a> to the topic at hand; foregone, passed by, something that has already happened.",
-          "<span class=\"usage-label-sense\" about=\"#mwt155\" typeof=\"mw:Transclusion\"></span> <span class=\"Latn\" lang=\"en\" about=\"#mwt156\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/by_the_way#English\" class=\"mw-selflink-fragment\">by the way</a></span>"
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/cease\" title=\"cease\">cease</a> an <a rel=\"mw:WikiLink\" href=\"/wiki/activity\" title=\"activity\">activity</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt6\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/retire\" title=\"retire\">retire</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> To end a period of activity, either because it is unsuccessful or because enough has been done."
         ]
       },
-      "audio": null
+      "audio": {
+        "title": "Call it a day",
+        "url": "http://www.bbc.co.uk/programmes/p0dv3d21",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0dv3byj.mp3"
+      }
+    },
+    "history": {
+      "text": "dynasty",
+      "aliases": [
+        "dynasty",
+        "royal house"
+      ],
+      "level": "B1",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "period": "Middle Ages",
+      "theme": "Politics",
+      "example": "The dynasty ruled for two centuries.",
+      "tags": [
+        "politics"
+      ],
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "level": "A1",
-      "text": "teacher",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "phonetic": "/ˈtiːtʃər/",
-      "anki_answer": "professeur",
+      "text": "walk",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "phonetic": "/wɔːk/",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ]
     },
     {
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "level": "A1",
-      "text": "be late",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
+      "text": "be tired",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
       "phonetic": "",
-      "anki_answer": "en retard",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ]
     },
     {
-      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history",
+      "level": "A1",
+      "text": "war",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "example": "The war ended many years ago.",
+      "phonetic": "",
+      "anki_answer": "guerre",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
       "kind": "word",
       "level": "A2",
-      "text": "bridge",
-      "meaning": "a structure crossing a river or road",
-      "meaning_fr": "pont",
-      "example": "The bridge crosses the river.",
-      "phonetic": "/brɪdʒ/",
-      "anki_answer": "pont",
+      "text": "decide",
+      "meaning": "choose after thinking",
+      "meaning_fr": "décider",
+      "example": "You must decide today.",
+      "phonetic": "/dɪˈsaɪd/",
+      "anki_answer": "décider",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be excited about",
+      "meaning": "feel happy and eager about a future event",
+      "meaning_fr": "être impatient à l'idée de",
+      "example": "She is excited about the trip.",
+      "phonetic": "",
+      "anki_answer": "impatient",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "8391409731bf858babbdef8315d9bd81155e390c",
+      "kind": "history",
+      "level": "A2",
+      "text": "castle",
+      "meaning": "a strong building from the Middle Ages",
+      "meaning_fr": "château",
+      "example": "The castle stands on a hill.",
+      "phonetic": "",
+      "anki_answer": "château",
       "tags": [
         "places"
       ]
     },
     {
-      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be different from",
-      "meaning": "not the same as",
-      "meaning_fr": "être différent de",
-      "example": "This one is different from that one.",
-      "phonetic": "",
-      "anki_answer": "différent",
-      "tags": [
-        "comparison"
-      ]
-    },
-    {
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "level": "B1",
-      "text": "behavior",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "phonetic": "/bɪˈheɪvjər/",
-      "anki_answer": "comportement",
+      "text": "border",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "phonetic": "/ˈbɔːrdər/",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ]
     },
     {
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "level": "B1",
-      "text": "by the way",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
+      "text": "call it a day",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
       "phonetic": "",
-      "anki_answer": "au fait",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ]
     },
     {
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history",
+      "level": "B1",
+      "text": "dynasty",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "example": "The dynasty ruled for two centuries.",
+      "phonetic": "",
+      "anki_answer": "dynastie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "level": "B2",
-      "text": "prevent",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "phonetic": "/prɪˈvent/",
-      "anki_answer": "empêcher",
+      "text": "reasonable",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "phonetic": "/ˈriːznəbl/",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ]
     },
     {
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "level": "B2",
-      "text": "let the cat out of the bag",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
+      "text": "look on the bright side",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
       "phonetic": "",
-      "anki_answer": "divulguer secret",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ]
     },
     {
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history",
+      "level": "B2",
+      "text": "renaissance",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "example": "The renaissance produced great art.",
+      "phonetic": "",
+      "anki_answer": "renaissance",
+      "tags": [
+        "art"
+      ]
+    },
+    {
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "level": "C1",
-      "text": "coherent",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "phonetic": "/koʊˈhɪrənt/",
-      "anki_answer": "cohérent",
+      "text": "consensus",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "phonetic": "/kənˈsensəs/",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ]
     },
     {
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "level": "C1",
-      "text": "set the record straight",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
+      "text": "take something in stride",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
       "phonetic": "",
-      "anki_answer": "remettre à plat",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ]
     },
     {
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history",
+      "level": "C1",
+      "text": "suffrage",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "example": "Women's suffrage expanded democracy.",
+      "phonetic": "",
+      "anki_answer": "suffrage",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "level": "C2",
-      "text": "vituperative",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "anki_answer": "injurieux",
+      "text": "recondite",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "phonetic": "/ˈrekəndaɪt/",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ]
     },
     {
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "level": "C2",
-      "text": "throw down the gauntlet",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
+      "text": "tread water",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
       "phonetic": "",
-      "anki_answer": "jeter gant",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
+      ]
+    },
+    {
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history",
+      "level": "C2",
+      "text": "hegemony",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "example": "The empire maintained regional hegemony.",
+      "phonetic": "",
+      "anki_answer": "hégémonie",
+      "tags": [
+        "power"
       ]
     }
   ],
@@ -315,15 +557,15 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “teacher” mean?",
+      "prompt": "What does “walk” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "professeur",
-      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+      "answer": "marcher",
+      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
     },
     {
       "id": "A1-expression",
@@ -332,163 +574,253 @@
       "level": "A1",
       "prompt": "Complete the expression: be ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "late",
-      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+      "answer": "tired",
+      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “war” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “bridge” mean?",
+      "prompt": "What does “decide” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "pont",
-      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+      "answer": "décider",
+      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ from",
+      "prompt": "Complete the expression: be ____ about",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "different",
-      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+      "answer": "excited",
+      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “castle” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “behavior” mean?",
+      "prompt": "What does “border” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "comportement",
-      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+      "answer": "frontière",
+      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: by the ____",
+      "prompt": "Complete the expression: ____ it a day",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "way",
-      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+      "answer": "call",
+      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “dynasty” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “prevent” mean?",
+      "prompt": "What does “reasonable” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "empêcher",
-      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+      "answer": "raisonnable",
+      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "prompt": "Complete the expression: look on the ____ side",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "out",
-      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+      "answer": "bright",
+      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “renaissance” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “coherent” mean?",
+      "prompt": "What does “consensus” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "cohérent",
-      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+      "answer": "consensus",
+      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: set the record ____",
+      "prompt": "Complete the expression: take ____ in stride",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "straight",
-      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+      "answer": "something",
+      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “suffrage” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “vituperative” mean?",
+      "prompt": "What does “recondite” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "injurieux",
-      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+      "answer": "ésotérique",
+      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: throw down the ____",
+      "prompt": "Complete the expression: tread ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "gauntlet",
-      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+      "answer": "water",
+      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “hegemony” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Cold War",
+      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
     }
   ],
   "tour": [
@@ -525,18 +857,25 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 2,
+    "filled": 5,
     "total": 6,
     "origins": {
+      "reserve": 2,
       "fresh": 1,
-      "adjacent": 1
+      "adjacent": 2
     },
-    "source_count": 2,
+    "source_count": 5,
     "phrase_count": 6,
-    "glossary_count": 12,
-    "exercise_count": 12,
-    "history_periods": [],
-    "history_themes": [],
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "18th century",
+      "General"
+    ],
+    "history_themes": [
+      "Politics",
+      "War"
+    ],
     "search_path": "./data/en/search/2026-11-21.json"
   }
 }

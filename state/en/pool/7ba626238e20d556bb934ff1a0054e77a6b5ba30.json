@@ -1,0 +1,51 @@
+{
+  "guid_hash": "7ba626238e20d556bb934ff1a0054e77a6b5ba30",
+  "source_id": "librivox_history",
+  "kind": "audio",
+  "category": "history",
+  "title": "Amendments to the United States Constitution (version 2) - The Bill of Rights (Amendments 1-10)",
+  "url": "https://librivox.org/amendments-to-the-united-states-constitution-version-2/",
+  "summary": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
+  "published_at": "2026-11-21T18:26:51",
+  "added_at": "2026-11-21T18:26:51",
+  "body_text": null,
+  "word_count": 38,
+  "duration_sec": 228,
+  "audio_remote_url": "https://www.archive.org/download/amendments_2_librivox/amendments_1-10_64kb.mp3",
+  "score": 0.5859,
+  "fk_grade": 9.842,
+  "avg_sentence_len": 7.6,
+  "rare_word_ratio": 0.2581,
+  "level": "C1",
+  "level_method": "source",
+  "license": "public_domain",
+  "attribution": "LibriVox (public domain recording)",
+  "origin": "reserve",
+  "lang": "en",
+  "periods": [
+    "18th century"
+  ],
+  "themes": [
+    "Politics"
+  ],
+  "history_terms": [
+    {
+      "text": "constitution",
+      "aliases": [
+        "constitution",
+        "charter"
+      ],
+      "level": "B2",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "period": "18th century",
+      "theme": "Politics",
+      "example": "The constitution protects citizens' rights.",
+      "tags": [
+        "law"
+      ]
+    }
+  ],
+  "transcript_url": null,
+  "transcript_text": null
+}

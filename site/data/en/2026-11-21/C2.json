@@ -5,299 +5,475 @@
   "slots": {
     "news": {
       "text": {
-        "id": 30,
-        "title": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
+        "id": 33,
+        "title": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
         "source": "The Guardian - World news",
         "source_id": "guardian_world",
         "category": "news",
-        "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
-        "published_at": "2026-11-18T09:58:28",
+        "url": "https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested",
+        "published_at": "2026-11-21T17:46:55",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C2",
-        "word_count": 773,
+        "word_count": 421,
         "duration_sec": null,
-        "body_text": "Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay, if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya.…",
+        "body_text": "The Mexican military captured one of the FBI’s top 10 most wanted fugitives during a special forces raid in the Mexican state of Sinaloa on Friday night. Fausto Isidro Meza Flores, known as “El Chapo Isidro”, was arrested along with two other alleged leaders of his gang after a gun battle that sparked widespread panic in the city of Guasave.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "66161840705cea9bcc0d7888654f2fb2bf542c3e",
-        "summary": "A ruling against Myanmar could set precedent for court’s judgment on Israel’s actions in Gaza Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay , if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya. The ICJ has never found a state responsible for committing genocide, and a significant factor in previous cases has been how to prove “intent” in a crime defined as acts committed with the “intent to destroy, in whole or in part” a national, ethnical, racial or religious group. Continue reading...",
+        "guid_hash": "b6d7db70eb25de6a189c6899e0c8a1060de3bfb5",
+        "summary": "Fausto Isidro Meza Flores was one of FBI’s most wanted fugitives and evaded capture for more than a decade The Mexican military captured one of the FBI’s top 10 most wanted fugitives during a special forces raid in the Mexican state of Sinaloa on Friday night. Fausto Isidro Meza Flores, known as “El Chapo Isidro”, was arrested along with two other alleged leaders of his gang after a gun battle that sparked widespread panic in the city of Guasave. Continue reading...",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling — The Guardian - World news",
+        "alt_text": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid — The Guardian - World news",
         "duration_formatted": "",
         "source_url": "https://www.theguardian.com/world/rss",
-        "reading_time_min": 4
+        "reading_time_min": 3
       },
       "audio": null
     },
     "culture": {
       "text": {
-        "id": 51,
-        "title": "Body found in Derry bog decapitated more than 2,000 years ago, coroner finds",
+        "id": 49,
+        "title": "Pill to treat pancreatic cancer hailed as ‘biggest breakthrough in decades’",
         "source": "The Guardian - Science",
         "source_id": "guardian_science",
         "category": "culture",
-        "url": "https://www.theguardian.com/uk-news/2026/nov/18/ballymacombs-more-woman-derry-bog-decapitated-2000-years-ago",
-        "published_at": "2026-11-18T08:00:36",
+        "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+        "published_at": "2026-11-20T09:36:10",
         "level": "C2",
         "slot_level": "C2",
-        "source_level": "C2",
-        "word_count": 510,
+        "source_level": "C1",
+        "word_count": 521,
         "duration_sec": null,
-        "body_text": "A coroner’s investigation into Northern Ireland’s most venerable cold case has concluded that the victim was decapitated more than 2,000 years ago. The inquest-style inquiry determined that Ballymacombs More Woman – the name given to iron age remains found in a County Derry bog three years ago – was between 15 and 22 years old when she was beheaded from…",
+        "body_text": "A pill that can shrink and potentially eliminate pancreas tumours is being hailed as the biggest breakthrough treatment for the cancer in decades. In one in 12 of the patients given the drug, daraxonrasib, during a trial, the cancer became undetectable, and the tumours stopped growing in almost all of the 61 patients. The trial participants had recently been diagnosed…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "1f1c85de53b5f5463e5e771450537a9675f23639",
-        "summary": "Inquest-style inquiry concludes iron age remains are of 15- to 22-year-old female who may have been ritually sacrificed A coroner’s investigation into Northern Ireland ’s most venerable cold case has concluded that the victim was decapitated more than 2,000 years ago. The inquest-style inquiry determined that Ballymacombs More Woman – the name given to iron age remains found in a County Derry bog three years ago – was between 15 and 22 years old when she was beheaded from behind with a bladed weapon. Continue reading...",
-        "origin": "fresh",
-        "badges": [],
+        "guid_hash": "edb2f8093a7b0334c62ae2e83be197ef78e4ad83",
+        "summary": "Cancer undetectable for one in 12 patients in daraxonrasib trial, while nearly all participants’ tumours stopped growing A pill that can shrink and potentially eliminate pancreas tumours is being hailed as the biggest breakthrough treatment for the cancer in decades. In one in 12 of the patients given the drug, daraxonrasib , during a trial, the cancer became undetectable, and the tumours stopped growing in almost all of the 61 patients. The trial participants had recently been diagnosed with advanced pancreatic cancer that had spread to other parts of the body. Continue reading...",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Body found in Derry bog decapitated more than 2,000 years ago, coroner finds — The Guardian - Science",
+        "alt_text": "Pill to treat pancreatic cancer hailed as ‘biggest breakthrough in decades’ — The Guardian - Science",
         "duration_formatted": "",
         "source_url": "https://www.theguardian.com/science/rss",
         "reading_time_min": 3
       },
-      "audio": null
+      "audio": {
+        "id": 1792395147,
+        "title": "Lost World - \"TRY YOUR LUCK WITH PROFESSOR CHALLENGER\"",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/the-lost-world/",
+        "published_at": "2026-11-21T18:27:17",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 87,
+        "duration_sec": 942,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/lost_world_librivox/lostworld_02_doyle_64kb.mp3",
+        "description": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "6d847e8722b99a1f26f3af1a286263e26422ce09",
+        "summary": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Lost World - \"TRY YOUR LUCK WITH PROFESSOR CHALLENGER\" — LibriVox (culture)",
+        "duration_formatted": "15:42",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     },
     "history": {
       "text": null,
-      "audio": null
+      "audio": {
+        "id": 1176962143,
+        "title": "Our Island Story, Part 1 - Introduction",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/our-island-story-part-1-by-he-marshall/",
+        "published_at": "2026-11-21T16:08:26",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 161,
+        "duration_sec": 220,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/our_island_story_1_librivox/our_island_story_000_marshall_64kb.mp3",
+        "description": "Our Island Story, Part 1 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "a7906761a47aacb2ee3f872fab0d37fe3687f4fa",
+        "summary": "Our Island Story, Part 1 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (history & biography)",
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Our Island Story, Part 1 - Introduction — LibriVox (history & biography)",
+        "duration_formatted": "3:40",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     }
   },
   "phrase": {
     "date": "2026-11-21",
     "level": "C2",
     "word": {
-      "text": "vituperative",
+      "text": "recondite",
       "level": "C2",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "anki_answer": "injurieux",
+      "phonetic": "/ˈrekəndaɪt/",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ],
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/vaɪˈtjuːpɹətɪv/",
+        "phonetic": "/ɹɪˈkɒndaɪt/",
         "definitions": [
-          "Marked by harsh, spoken, or written abuse; abusive, often with ranting or railing."
+          "A recondite (hidden or obscure) person or thing.",
+          "A scholar or other person who is recondite, that is, who has mastery over his or her field, including its esoteric minutiae.",
+          "To conceal, cover up, hide.",
+          "Of areas of discussion or research: difficult, obscure."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/vituperative-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/recondite-uk.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "Marked by <a rel=\"mw:WikiLink\" href=\"/wiki/harsh\" title=\"harsh\">harsh</a> <a rel=\"mw:WikiLink\" href=\"/wiki/abuse\" title=\"abuse\">abuse</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abusive\" title=\"abusive\">abusive</a>, often with <a rel=\"mw:WikiLink\" href=\"/wiki/ranting\" title=\"ranting\">ranting</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/railing\" title=\"railing\">railing</a>.",
-          "<span class=\"form-of-definition use-with-mention\" about=\"#mwt56\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#gender\" title=\"Appendix:Glossary\">feminine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#plural_number\" title=\"Appendix:Glossary\">plural</a> of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"it\"><a rel=\"mw:WikiLink\" href=\"/wiki/vituperativo#Italian\" title=\"vituperativo\">vituperativo</a></i></span></span>"
+          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/difficult\" title=\"difficult\">Difficult</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/obscure\" title=\"obscure\">obscure</a>.\n<ol><li>Difficult to <a rel=\"mw:WikiLink\" href=\"/wiki/grasp#Verb\" title=\"grasp\">grasp</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abstruse\" title=\"abstruse\">abstruse</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/profound\" title=\"profound\">profound</a>.",
+          "Difficult to <a rel=\"mw:WikiLink\" href=\"/wiki/grasp#Verb\" title=\"grasp\">grasp</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abstruse\" title=\"abstruse\">abstruse</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/profound\" title=\"profound\">profound</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/little\" title=\"little\">Little</a> <a rel=\"mw:WikiLink\" href=\"/wiki/know\" title=\"know\">known</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/esoteric\" title=\"esoteric\">esoteric</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/secret#Adjective\" title=\"secret\">secret</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt51\" typeof=\"mw:Transclusion\"></span> Having <a rel=\"mw:WikiLink\" href=\"/wiki/mastery\" title=\"mastery\">mastery</a> over one's <a rel=\"mw:WikiLink\" href=\"/wiki/field#Noun\" title=\"field\">field</a>, including its esoteric <a rel=\"mw:WikiLink\" href=\"/wiki/minutia\" title=\"minutia\">minutiae</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/learned#Adjective\" title=\"learned\">learned</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "throw down the gauntlet",
+      "expression": "tread water",
       "level": "C2",
       "type": "idiom",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
-      "anki_answer": "jeter gant",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
       ],
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/issue\" title=\"issue\">issue</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/challenge\" title=\"challenge\">challenge</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/remain\" title=\"remain\">remain</a> <a rel=\"mw:WikiLink\" href=\"/wiki/afloat\" title=\"afloat\">afloat</a> in the water without use of any <a rel=\"mw:WikiLink\" href=\"/wiki/buoyancy\" title=\"buoyancy\">buoyancy</a> aid, by using <a rel=\"mw:WikiLink\" href=\"/wiki/kicking\" title=\"kicking\">kicking</a> <a rel=\"mw:WikiLink\" href=\"/wiki/motion\" title=\"motion\">motions</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/hand\" title=\"hand\">hand</a> <a rel=\"mw:WikiLink\" href=\"/wiki/motion\" title=\"motion\">motions</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/make\" title=\"make\">make</a> no <a rel=\"mw:WikiLink\" href=\"/wiki/progress\" title=\"progress\">progress</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/expending\" title=\"expending\">expending</a> <a rel=\"mw:WikiLink\" href=\"/wiki/effort\" title=\"effort\">effort</a> just enough to <a rel=\"mw:WikiLink\" href=\"/wiki/maintain\" title=\"maintain\">maintain</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/stable\" title=\"stable\">stable</a> <a rel=\"mw:WikiLink\" href=\"/wiki/position\" title=\"position\">position</a>."
         ]
       },
       "audio": null
+    },
+    "history": {
+      "text": "hegemony",
+      "aliases": [
+        "hegemony",
+        "dominance"
+      ],
+      "level": "C2",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "period": "Cold War",
+      "theme": "Empire",
+      "example": "The empire maintained regional hegemony.",
+      "tags": [
+        "power"
+      ],
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "level": "A1",
-      "text": "teacher",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "phonetic": "/ˈtiːtʃər/",
-      "anki_answer": "professeur",
+      "text": "walk",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "phonetic": "/wɔːk/",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ]
     },
     {
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "level": "A1",
-      "text": "be late",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
+      "text": "be tired",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
       "phonetic": "",
-      "anki_answer": "en retard",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ]
     },
     {
-      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history",
+      "level": "A1",
+      "text": "war",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "example": "The war ended many years ago.",
+      "phonetic": "",
+      "anki_answer": "guerre",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
       "kind": "word",
       "level": "A2",
-      "text": "bridge",
-      "meaning": "a structure crossing a river or road",
-      "meaning_fr": "pont",
-      "example": "The bridge crosses the river.",
-      "phonetic": "/brɪdʒ/",
-      "anki_answer": "pont",
+      "text": "decide",
+      "meaning": "choose after thinking",
+      "meaning_fr": "décider",
+      "example": "You must decide today.",
+      "phonetic": "/dɪˈsaɪd/",
+      "anki_answer": "décider",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be excited about",
+      "meaning": "feel happy and eager about a future event",
+      "meaning_fr": "être impatient à l'idée de",
+      "example": "She is excited about the trip.",
+      "phonetic": "",
+      "anki_answer": "impatient",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "8391409731bf858babbdef8315d9bd81155e390c",
+      "kind": "history",
+      "level": "A2",
+      "text": "castle",
+      "meaning": "a strong building from the Middle Ages",
+      "meaning_fr": "château",
+      "example": "The castle stands on a hill.",
+      "phonetic": "",
+      "anki_answer": "château",
       "tags": [
         "places"
       ]
     },
     {
-      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be different from",
-      "meaning": "not the same as",
-      "meaning_fr": "être différent de",
-      "example": "This one is different from that one.",
-      "phonetic": "",
-      "anki_answer": "différent",
-      "tags": [
-        "comparison"
-      ]
-    },
-    {
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "level": "B1",
-      "text": "behavior",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "phonetic": "/bɪˈheɪvjər/",
-      "anki_answer": "comportement",
+      "text": "border",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "phonetic": "/ˈbɔːrdər/",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ]
     },
     {
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "level": "B1",
-      "text": "by the way",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
+      "text": "call it a day",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
       "phonetic": "",
-      "anki_answer": "au fait",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ]
     },
     {
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history",
+      "level": "B1",
+      "text": "dynasty",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "example": "The dynasty ruled for two centuries.",
+      "phonetic": "",
+      "anki_answer": "dynastie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "level": "B2",
-      "text": "prevent",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "phonetic": "/prɪˈvent/",
-      "anki_answer": "empêcher",
+      "text": "reasonable",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "phonetic": "/ˈriːznəbl/",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ]
     },
     {
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "level": "B2",
-      "text": "let the cat out of the bag",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
+      "text": "look on the bright side",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
       "phonetic": "",
-      "anki_answer": "divulguer secret",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ]
     },
     {
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history",
+      "level": "B2",
+      "text": "renaissance",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "example": "The renaissance produced great art.",
+      "phonetic": "",
+      "anki_answer": "renaissance",
+      "tags": [
+        "art"
+      ]
+    },
+    {
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "level": "C1",
-      "text": "coherent",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "phonetic": "/koʊˈhɪrənt/",
-      "anki_answer": "cohérent",
+      "text": "consensus",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "phonetic": "/kənˈsensəs/",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ]
     },
     {
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "level": "C1",
-      "text": "set the record straight",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
+      "text": "take something in stride",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
       "phonetic": "",
-      "anki_answer": "remettre à plat",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ]
     },
     {
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history",
+      "level": "C1",
+      "text": "suffrage",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "example": "Women's suffrage expanded democracy.",
+      "phonetic": "",
+      "anki_answer": "suffrage",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "level": "C2",
-      "text": "vituperative",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "anki_answer": "injurieux",
+      "text": "recondite",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "phonetic": "/ˈrekəndaɪt/",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ]
     },
     {
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "level": "C2",
-      "text": "throw down the gauntlet",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
+      "text": "tread water",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
       "phonetic": "",
-      "anki_answer": "jeter gant",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
+      ]
+    },
+    {
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history",
+      "level": "C2",
+      "text": "hegemony",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "example": "The empire maintained regional hegemony.",
+      "phonetic": "",
+      "anki_answer": "hégémonie",
+      "tags": [
+        "power"
       ]
     }
   ],
@@ -307,15 +483,15 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “teacher” mean?",
+      "prompt": "What does “walk” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "professeur",
-      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+      "answer": "marcher",
+      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
     },
     {
       "id": "A1-expression",
@@ -324,163 +500,253 @@
       "level": "A1",
       "prompt": "Complete the expression: be ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "late",
-      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+      "answer": "tired",
+      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “war” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “bridge” mean?",
+      "prompt": "What does “decide” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "pont",
-      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+      "answer": "décider",
+      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ from",
+      "prompt": "Complete the expression: be ____ about",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "different",
-      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+      "answer": "excited",
+      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “castle” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “behavior” mean?",
+      "prompt": "What does “border” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "comportement",
-      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+      "answer": "frontière",
+      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: by the ____",
+      "prompt": "Complete the expression: ____ it a day",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "way",
-      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+      "answer": "call",
+      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “dynasty” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “prevent” mean?",
+      "prompt": "What does “reasonable” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "empêcher",
-      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+      "answer": "raisonnable",
+      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "prompt": "Complete the expression: look on the ____ side",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "out",
-      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+      "answer": "bright",
+      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “renaissance” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “coherent” mean?",
+      "prompt": "What does “consensus” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "cohérent",
-      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+      "answer": "consensus",
+      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: set the record ____",
+      "prompt": "Complete the expression: take ____ in stride",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "straight",
-      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+      "answer": "something",
+      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “suffrage” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “vituperative” mean?",
+      "prompt": "What does “recondite” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "injurieux",
-      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+      "answer": "ésotérique",
+      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: throw down the ____",
+      "prompt": "Complete the expression: tread ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "gauntlet",
-      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+      "answer": "water",
+      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “hegemony” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Cold War",
+      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
     }
   ],
   "tour": [
@@ -517,15 +783,16 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 2,
+    "filled": 4,
     "total": 6,
     "origins": {
-      "fresh": 2
+      "adjacent": 3,
+      "fresh": 1
     },
-    "source_count": 2,
+    "source_count": 4,
     "phrase_count": 6,
-    "glossary_count": 12,
-    "exercise_count": 12,
+    "glossary_count": 18,
+    "exercise_count": 18,
     "history_periods": [],
     "history_themes": [],
     "search_path": "./data/en/search/2026-11-21.json"

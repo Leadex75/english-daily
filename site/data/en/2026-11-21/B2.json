@@ -5,308 +5,521 @@
   "slots": {
     "news": {
       "text": {
-        "id": 17,
-        "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+        "id": 23,
+        "title": "French police officers sentenced for beating of music producer Michel Zecler",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-20T17:49:48",
+        "url": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T22:37:09",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 903,
+        "word_count": 466,
         "duration_sec": null,
-        "body_text": "- Published Andy Burnham said the UK will discuss possible options for even closer ties with the EU, after agreeing a deal covering British food exports, emissions trading and a youth experience scheme.…",
+        "body_text": "- Published Three French police officers have been convicted of beating up a black music producer six years ago in Paris in what the court upheld as an aggravated circumstance of racism.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "ad2a3c80dee2abeda1f43a683c7922e396fc9dfe",
-        "summary": "The UK-EU deal agreed on Friday covers British food exports, emissions trading and a youth experience scheme.",
+        "guid_hash": "45a4267bb577e615379243dfba2c0fe82c3e76c4",
+        "summary": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "UK to explore even closer ties with EU after agreeing deal, says Burnham — BBC News - World",
+        "alt_text": "French police officers sentenced for beating of music producer Michel Zecler — BBC News - World",
         "duration_formatted": "",
         "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 5
+        "reading_time_min": 3
       },
-      "audio": null
+      "audio": {
+        "id": 4,
+        "title": "11am ET, November 21 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-21T16:09:40",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4f4ef142-bf46-45c7-9113-f4465c61c40a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_a8b2cfabf5cf1d3e194a567427ef3ac0_5094119.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4f4ef142-bf46-45c7-9113-f4465c61c40a&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1100-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5094119&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__fb8be09749ac782982050eea79cb8630c0374dbf",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "79c69331191f2e6918f44c369195517471faaed1",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "11am ET, November 21 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
     },
     "culture": {
       "text": {
-        "id": 48,
-        "title": "IPCC report delay will threaten global effort to tackle climate crisis, says top scientist",
-        "source": "The Guardian - Science",
-        "source_id": "guardian_science",
+        "id": 47,
+        "title": "Grand Theft Auto fans skip work and pull all-nighters to play new instalment",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
         "category": "culture",
-        "url": "https://www.theguardian.com/science/2026/nov/19/ipcc-report-delay-climate-crisis-scientist",
-        "published_at": "2026-11-19T07:16:45",
+        "url": "https://www.theguardian.com/games/2026/nov/19/grand-theft-auto-six-fans-skip-work-pull-all-nighters",
+        "published_at": "2026-11-19T20:07:23",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 1248,
+        "word_count": 636,
         "duration_sec": null,
-        "body_text": "Climate science is “foundational” to the Paris agreement and worldwide progress on tackling global heating, and attempts to delay new scientific reports threaten global cooperation on tackling the crisis, one of the world’s leading climate scientists has warned.…",
+        "body_text": "Grand Theft Auto fans around the world pulled all-nighters, skipped work and school, and attended overnight launch parties to vicariously embark on police chases and coordinate robberies as the latest instalment of the eagerly anticipated series arrived.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "1b4f2c91b645b6537ec3c575415302d1cb08ba31",
-        "summary": "Johan Rockström, one of world’s leading climate experts, says slowing down scientific work puts cooperation at risk Climate science is “foundational” to the Paris agreement and worldwide progress on tackling global heating, and attempts to delay new scientific reports threaten global cooperation on tackling the crisis, one of the world’s leading climate scientists has warned. Johan Rockström, the director of the Potsdam Institute for Climate Impact Research, said the world’s leading body of climate scientists, the Intergovernmental Panel on Climate Change, must be allowed to work as quickly as possible on its next comprehensive assessment of global knowledge of the climate systems . Continue reading...",
+        "guid_hash": "b67092630d325ba84558c69489e68391541ce6a6",
+        "summary": "Hotly anticipated Bonnie and Clyde-inspired adventure GTA VI has gamers glued to their screens around the world Grand Theft Auto fans around the world pulled all-nighters, skipped work and school, and attended overnight launch parties to vicariously embark on police chases and coordinate robberies as the latest instalment of the eagerly anticipated series arrived. GTA VI, a Bonnie and Clyde-inspired crime adventure game set in the fictional US state of Leonida, was launched at midnight on Wednesday after a 13-year wait. Continue reading...",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "IPCC report delay will threaten global effort to tackle climate crisis, says top scientist — The Guardian - Science",
+        "alt_text": "Grand Theft Auto fans skip work and pull all-nighters to play new instalment — The Guardian - Culture",
         "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 7
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
       },
-      "audio": null
+      "audio": {
+        "id": 1757288874,
+        "title": "Enchanted Island of Yew - Chapter 4",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/the-enchanted-island-of-yew-by-l-frank-baum/",
+        "published_at": "2026-11-21T18:27:22",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 69,
+        "duration_sec": 835,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/enchanted_island_yew_librivox/isle_of_yew_04_baum_64kb.mp3",
+        "description": "Enchanted Island of Yew by . A fairy has become bored with her life, and convinces some young girls to transform her into a human boy so she can go on adventures. The adventures come fast and furious, as the newly-named Prince Marvel explores the surrounding kingdoms. A masochistic squire accompanies Marvel, helping him with assorted kings, knights, dragons, and other medieval menaces along the wa",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "441090fd5c3cb54d5ca9c3931aaf4c272a0454bd",
+        "summary": "Enchanted Island of Yew by . A fairy has become bored with her life, and convinces some young girls to transform her into a human boy so she can go on adventures. The adventures come fast and furious, as the newly-named Prince Marvel explores the surrounding kingdoms. A masochistic squire accompanies Marvel, helping him with assorted kings, knights, dragons, and other medieval menaces along the wa",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Enchanted Island of Yew - Chapter 4 — LibriVox (culture)",
+        "duration_formatted": "13:55",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     },
     "history": {
       "text": null,
-      "audio": null
+      "audio": {
+        "id": 62,
+        "title": "Depraved art: a disturbing history",
+        "source": "HistoryExtra podcast",
+        "source_id": "historyextra",
+        "category": "history",
+        "url": "",
+        "published_at": "2026-11-18T00:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 227,
+        "duration_sec": 2417,
+        "body_text": null,
+        "audio_url": "https://dcs-spotify.megaphone.fm/NSR3543667654.mp3?key=49c0e992335177a24bac1411f2889abe&request_event_id=21fa0b27-358b-40f1-9194-6c528a3c284e&session_id=21fa0b27-358b-40f1-9194-6c528a3c284e&timetoken=1795292766_310AA3645FD8E4C60A1C6666695B0231",
+        "description": "For millennia, humans have created art with the power to shock, disturb and offend. But what makes an artwork truly dangerous? And should it ever be censored? From Hitler’s paintings to the racist caricatures of Jim Crow America, Daisy Dixon takes Jon Bauckham on a tour of history’s most depraved art, revealing both its capacity for cruelty and its use as a tool of oppression. Please note, this episode does contain explicit discussions of themes including sexual violence and racism. Listener discretion is advised. ----- GO BEYOND THE PODCAST Discover more about slave trader Edward Colston in this episode featuring historian Richard Stone: https://bit.ly/4rd19W8 ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "80f7ebe2d8f6a63c80bb84d89418280f8b455668",
+        "summary": "For millennia, humans have created art with the power to shock, disturb and offend. But what makes an artwork truly dangerous? And should it ever be censored? From Hitler’s paintings to the racist caricatures of Jim Crow America, Daisy Dixon takes Jon Bauckham on a tour of history’s most depraved art, revealing both its capacity for cruelty and its use as a tool of oppression. Please note, this episode does contain explicit discussions of themes including sexual violence and racism. Listener discretion is advised. ----- GO BEYOND THE PODCAST Discover more about slave trader Edward Colston in this episode featuring historian Richard Stone: https://bit.ly/4rd19W8 ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "Culture"
+        ],
+        "history_terms": [
+          {
+            "text": "story",
+            "aliases": [
+              "story",
+              "tales"
+            ],
+            "level": "A1",
+            "meaning": "an account of past events",
+            "meaning_fr": "histoire, récit",
+            "period": "General",
+            "theme": "Culture",
+            "example": "She told us a story about the past.",
+            "tags": [
+              "culture"
+            ]
+          }
+        ],
+        "alt_text": "Depraved art: a disturbing history — HistoryExtra podcast",
+        "duration_formatted": "40:17",
+        "source_url": "https://feeds.megaphone.fm/GLT5697813216",
+        "reading_time_min": 0
+      }
     }
   },
   "phrase": {
     "date": "2026-11-21",
     "level": "B2",
     "word": {
-      "text": "prevent",
+      "text": "reasonable",
       "level": "B2",
       "type": "word",
-      "pos": "verb",
-      "phonetic": "/prɪˈvent/",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "anki_answer": "empêcher",
+      "pos": "adjective",
+      "phonetic": "/ˈriːznəbl/",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ],
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/pɹəˈvɛnt/",
+        "phonetic": "/ˈɹiː.zən.ə.bəl/",
         "definitions": [
-          "To stop (an outcome); to keep from (doing something).",
-          "To take preventative measures.",
-          "To come before; to precede.",
-          "To outdo, surpass."
+          "Having the faculty of reason; rational, reasoning.",
+          "Just; fair; agreeable to reason.",
+          "Not excessive or immoderate; within due limits; proper.",
+          "Not expensive; fairly priced."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/prevent-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/reasonable-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/stop\" title=\"stop\">stop</a> (an outcome); to <a rel=\"mw:WikiLink\" href=\"/wiki/keep_from\" title=\"keep from\">keep from</a> (doing something). <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt17\">.mw-parser-output .defdate{font-size:smaller}</style>",
-          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To take <a rel=\"mw:WikiLink\" href=\"/wiki/preventative\" title=\"preventative\">preventative</a> measures. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt24\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
-          "<span class=\"usage-label-sense\" about=\"#mwt27\" typeof=\"mw:Transclusion\"></span> To come before; to <a rel=\"mw:WikiLink\" href=\"/wiki/precede\" title=\"precede\">precede</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt28\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
-          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/outdo\" title=\"outdo\">outdo</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/surpass\" title=\"surpass\">surpass</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt34\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the faculty of reason; <a rel=\"mw:WikiLink\" href=\"/wiki/rational\" title=\"rational\">rational</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/reasoning\" title=\"reasoning\">reasoning</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/just\" title=\"just\">Just</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/fair\" title=\"fair\">fair</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/agreeable\" title=\"agreeable\">agreeable</a> to reason.",
+          "Not excessive or immoderate; within due limits; <a rel=\"mw:WikiLink\" href=\"/wiki/proper\" title=\"proper\">proper</a>.",
+          "Not <a rel=\"mw:WikiLink\" href=\"/wiki/expensive\" title=\"expensive\">expensive</a>; fairly priced."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "let the cat out of the bag",
+      "expression": "look on the bright side",
       "level": "B2",
       "type": "idiom",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
-      "anki_answer": "divulguer secret",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ],
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/disclose\" title=\"disclose\">disclose</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/secret\" title=\"secret\">secret</a>; to let a secret be <a rel=\"mw:WikiLink\" href=\"/wiki/known\" title=\"known\">known</a>, often <a rel=\"mw:WikiLink\" href=\"/wiki/inadvertent\" title=\"inadvertent\">inadvertently</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt3\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/examine\" title=\"examine\">examine</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/situation\" title=\"situation\">situation</a>, usually <a rel=\"mw:WikiLink\" href=\"/wiki/unfavorable\" title=\"unfavorable\">unfavorable</a>, from a <a rel=\"mw:WikiLink\" href=\"/wiki/positive\" title=\"positive\">positive</a> <a rel=\"mw:WikiLink\" href=\"/wiki/perspective\" title=\"perspective\">perspective</a>; to be <a rel=\"mw:WikiLink\" href=\"/wiki/cheerful\" title=\"cheerful\">cheerful</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/optimistic\" title=\"optimistic\">optimistic</a>."
         ]
       },
-      "audio": {
-        "title": "To let the cat out of the bag",
-        "url": "http://www.bbc.co.uk/programmes/p02rsr7r",
-        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02rsr7t.mp3"
-      }
+      "audio": null
+    },
+    "history": {
+      "text": "renaissance",
+      "aliases": [
+        "renaissance",
+        "rebirth"
+      ],
+      "level": "B2",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "period": "Early modern",
+      "theme": "Culture",
+      "example": "The renaissance produced great art.",
+      "tags": [
+        "art"
+      ],
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "level": "A1",
-      "text": "teacher",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "phonetic": "/ˈtiːtʃər/",
-      "anki_answer": "professeur",
+      "text": "walk",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "phonetic": "/wɔːk/",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ]
     },
     {
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "level": "A1",
-      "text": "be late",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
+      "text": "be tired",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
       "phonetic": "",
-      "anki_answer": "en retard",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ]
     },
     {
-      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history",
+      "level": "A1",
+      "text": "war",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "example": "The war ended many years ago.",
+      "phonetic": "",
+      "anki_answer": "guerre",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
       "kind": "word",
       "level": "A2",
-      "text": "bridge",
-      "meaning": "a structure crossing a river or road",
-      "meaning_fr": "pont",
-      "example": "The bridge crosses the river.",
-      "phonetic": "/brɪdʒ/",
-      "anki_answer": "pont",
+      "text": "decide",
+      "meaning": "choose after thinking",
+      "meaning_fr": "décider",
+      "example": "You must decide today.",
+      "phonetic": "/dɪˈsaɪd/",
+      "anki_answer": "décider",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be excited about",
+      "meaning": "feel happy and eager about a future event",
+      "meaning_fr": "être impatient à l'idée de",
+      "example": "She is excited about the trip.",
+      "phonetic": "",
+      "anki_answer": "impatient",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "8391409731bf858babbdef8315d9bd81155e390c",
+      "kind": "history",
+      "level": "A2",
+      "text": "castle",
+      "meaning": "a strong building from the Middle Ages",
+      "meaning_fr": "château",
+      "example": "The castle stands on a hill.",
+      "phonetic": "",
+      "anki_answer": "château",
       "tags": [
         "places"
       ]
     },
     {
-      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be different from",
-      "meaning": "not the same as",
-      "meaning_fr": "être différent de",
-      "example": "This one is different from that one.",
-      "phonetic": "",
-      "anki_answer": "différent",
-      "tags": [
-        "comparison"
-      ]
-    },
-    {
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "level": "B1",
-      "text": "behavior",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "phonetic": "/bɪˈheɪvjər/",
-      "anki_answer": "comportement",
+      "text": "border",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "phonetic": "/ˈbɔːrdər/",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ]
     },
     {
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "level": "B1",
-      "text": "by the way",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
+      "text": "call it a day",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
       "phonetic": "",
-      "anki_answer": "au fait",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ]
     },
     {
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history",
+      "level": "B1",
+      "text": "dynasty",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "example": "The dynasty ruled for two centuries.",
+      "phonetic": "",
+      "anki_answer": "dynastie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "level": "B2",
-      "text": "prevent",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "phonetic": "/prɪˈvent/",
-      "anki_answer": "empêcher",
+      "text": "reasonable",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "phonetic": "/ˈriːznəbl/",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ]
     },
     {
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "level": "B2",
-      "text": "let the cat out of the bag",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
+      "text": "look on the bright side",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
       "phonetic": "",
-      "anki_answer": "divulguer secret",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ]
     },
     {
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history",
+      "level": "B2",
+      "text": "renaissance",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "example": "The renaissance produced great art.",
+      "phonetic": "",
+      "anki_answer": "renaissance",
+      "tags": [
+        "art"
+      ]
+    },
+    {
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "level": "C1",
-      "text": "coherent",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "phonetic": "/koʊˈhɪrənt/",
-      "anki_answer": "cohérent",
+      "text": "consensus",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "phonetic": "/kənˈsensəs/",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ]
     },
     {
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "level": "C1",
-      "text": "set the record straight",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
+      "text": "take something in stride",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
       "phonetic": "",
-      "anki_answer": "remettre à plat",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ]
     },
     {
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history",
+      "level": "C1",
+      "text": "suffrage",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "example": "Women's suffrage expanded democracy.",
+      "phonetic": "",
+      "anki_answer": "suffrage",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "level": "C2",
-      "text": "vituperative",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "anki_answer": "injurieux",
+      "text": "recondite",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "phonetic": "/ˈrekəndaɪt/",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ]
     },
     {
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "level": "C2",
-      "text": "throw down the gauntlet",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
+      "text": "tread water",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
       "phonetic": "",
-      "anki_answer": "jeter gant",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
+      ]
+    },
+    {
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history",
+      "level": "C2",
+      "text": "hegemony",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "example": "The empire maintained regional hegemony.",
+      "phonetic": "",
+      "anki_answer": "hégémonie",
+      "tags": [
+        "power"
       ]
     }
   ],
@@ -316,15 +529,15 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “teacher” mean?",
+      "prompt": "What does “walk” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "professeur",
-      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+      "answer": "marcher",
+      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
     },
     {
       "id": "A1-expression",
@@ -333,163 +546,253 @@
       "level": "A1",
       "prompt": "Complete the expression: be ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "late",
-      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+      "answer": "tired",
+      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “war” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “bridge” mean?",
+      "prompt": "What does “decide” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "pont",
-      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+      "answer": "décider",
+      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ from",
+      "prompt": "Complete the expression: be ____ about",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "different",
-      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+      "answer": "excited",
+      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “castle” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “behavior” mean?",
+      "prompt": "What does “border” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "comportement",
-      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+      "answer": "frontière",
+      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: by the ____",
+      "prompt": "Complete the expression: ____ it a day",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "way",
-      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+      "answer": "call",
+      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “dynasty” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “prevent” mean?",
+      "prompt": "What does “reasonable” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "empêcher",
-      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+      "answer": "raisonnable",
+      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "prompt": "Complete the expression: look on the ____ side",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "out",
-      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+      "answer": "bright",
+      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “renaissance” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “coherent” mean?",
+      "prompt": "What does “consensus” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "cohérent",
-      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+      "answer": "consensus",
+      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: set the record ____",
+      "prompt": "Complete the expression: take ____ in stride",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "straight",
-      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+      "answer": "something",
+      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “suffrage” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “vituperative” mean?",
+      "prompt": "What does “recondite” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "injurieux",
-      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+      "answer": "ésotérique",
+      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: throw down the ____",
+      "prompt": "Complete the expression: tread ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "gauntlet",
-      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+      "answer": "water",
+      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “hegemony” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Cold War",
+      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
     }
   ],
   "tour": [
@@ -526,17 +829,22 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 2,
+    "filled": 5,
     "total": 6,
     "origins": {
-      "fresh": 2
+      "reserve": 1,
+      "fresh": 4
     },
-    "source_count": 2,
+    "source_count": 5,
     "phrase_count": 6,
-    "glossary_count": 12,
-    "exercise_count": 12,
-    "history_periods": [],
-    "history_themes": [],
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "General"
+    ],
+    "history_themes": [
+      "Culture"
+    ],
     "search_path": "./data/en/search/2026-11-21.json"
   }
 }
