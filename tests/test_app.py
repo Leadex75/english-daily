@@ -16,11 +16,13 @@ import yaml
 from app.db import (
     DEFAULTS,
     available_languages,
+    brand_for_language,
     connect,
     data_dir,
     db_path,
     default_language,
     init_db,
+    language_metadata_map,
     load_config,
     normalize_language,
     upsert_sources,
@@ -879,6 +881,48 @@ class SearchApiTests(unittest.TestCase):
         self.assertEqual(search.call_args.kwargs["level"], "B1")
 
 
+class PhaseOneBrandingAndLayoutTests(unittest.TestCase):
+    def test_language_brand_metadata_is_available_from_config(self):
+        config = load_config()
+        self.assertEqual(available_languages(config), ["en"])
+        self.assertEqual(brand_for_language(config, "en"), "English Daily")
+        metadata = language_metadata_map(config)
+        self.assertEqual(metadata["en"]["label"], "English")
+        self.assertEqual(metadata["en"]["tagline"], "A little English, every day.")
+
+    def test_languages_endpoint_exposes_brand_metadata(self):
+        config = load_config()
+        client = TestClient(app)
+        with patch("app.main.load_config", return_value=config):
+            response = client.get("/api/languages")
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertEqual(payload["languages"], ["en"])
+        self.assertEqual(payload["brands"]["en"], "English Daily")
+        self.assertEqual(payload["metadata"]["en"]["brand"], "English Daily")
+
+    def test_user_facing_brand_and_layout_markers_are_updated(self):
+        root = Path(__file__).resolve().parents[1]
+        index = (root / "static" / "index.html").read_text(encoding="utf-8")
+        manifest = json.loads((root / "static" / "manifest.webmanifest").read_text(encoding="utf-8"))
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        worker = (root / "static" / "sw.js").read_text(encoding="utf-8")
+        self.assertEqual(app.title, "English Daily")
+        self.assertIn("<title>English Daily</title>", index)
+        self.assertNotIn("english·daily", index)
+        self.assertNotIn("english·daily", manifest["name"])
+        self.assertEqual(manifest["short_name"], "English Daily")
+        self.assertTrue(readme.startswith("# English Daily\n"))
+        for marker in (
+            "data-eds-home", "class=\"main-nav\"", "id=\"today-view\"", "id=\"archive-view\"",
+            "id=\"glossary-view\"", "id=\"settings-view\"", "data-eds-settings", "data-eds-search",
+            "./lib/branding.js", "x-text=\"brand\"", "longDate(selectedDate)",
+        ):
+            self.assertIn(marker, index)
+        self.assertNotIn("class=\"progress-panel\"", index)
+        self.assertIn("./lib/branding.js", worker)
+
+
 class DocsTests(unittest.TestCase):
     def test_readme_documents_current_commands_and_features(self):
         root = Path(__file__).resolve().parents[1]
@@ -965,7 +1009,7 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "branding.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())

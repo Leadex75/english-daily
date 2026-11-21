@@ -69,6 +69,10 @@ function app() {
     weeklyGoal: 5,
     lang: 'en',
     languages: ['en'],
+    languagePayload: {},
+    brand: 'English Daily',
+    tagline: 'A little English, every day.',
+    route: 'today',
     searchQuery: '',
     searchResults: [],
     searching: false,
@@ -85,11 +89,14 @@ function app() {
       this.theme = Store.get('english-daily:theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.dataset.theme = this.theme;
+      this.syncRoute();
+      window.addEventListener('hashchange', () => this.syncRoute());
       if (this.mode === 'static') await this.initPwa();
       try {
+        let languagesPayload = {};
         if (this.mode === 'static') {
           const languagesResponse = await fetch('./data/languages.json');
-          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
+          languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
           this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
           this.lang = normalizeLanguage(
             requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
@@ -102,7 +109,7 @@ function app() {
           this.counts = index.counts || {};
         } else {
           const languagesResponse = await fetch(`./${API_SEGMENT}/languages`);
-          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
+          languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
           this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
           this.lang = normalizeLanguage(
             requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
@@ -114,6 +121,8 @@ function app() {
           const today = new Date().toISOString().slice(0, 10);
           if (!this.days.includes(today)) this.days.unshift(today);
         }
+        this.languagePayload = languagesPayload;
+        this.applyBranding();
         Store.set('english-daily:lang', this.lang);
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         if (this.selectedDate) await this.loadDay();
@@ -122,6 +131,32 @@ function app() {
       }
       this.observeReading();
       this.syncTour();
+    },
+
+    applyBranding() {
+      this.brand = window.EDBrand ? window.EDBrand.brand(this.languagePayload, this.lang) : 'English Daily';
+      this.tagline = window.EDBrand ? window.EDBrand.tagline(this.languagePayload, this.lang) : 'A little English, every day.';
+      document.title = this.brand;
+      const description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute('content', this.tagline);
+    },
+
+    syncRoute() {
+      const raw = String(window.location.hash || '').replace(/^#\/?/, '').split(/[?&]/)[0];
+      this.route = window.EDBrand ? window.EDBrand.route(window.location.hash) : (
+        ['today', 'archive', 'glossary', 'settings'].includes(raw) ? raw : 'today'
+      );
+      if (raw !== this.route && window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', `#${this.route}`);
+      }
+    },
+
+    navigate(route) {
+      window.location.hash = `#${window.EDBrand ? window.EDBrand.route(route) : route}`;
+    },
+
+    longDate(value) {
+      return window.EDBrand ? window.EDBrand.formatLongDate(value) : String(value || '');
     },
 
     observeReading() {

@@ -61,6 +61,20 @@ body {
 .accent { color: var(--accent); }
 .tagline { color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
 
+.brand { color: var(--ink); text-decoration: none; }
+.brand:hover .brand-mark { color: var(--accent); }
+.main-nav { display: flex; align-items: center; gap: 18px; }
+.main-nav a { color: var(--muted); font-size: 14px; text-decoration: none; border-bottom: 2px solid transparent; padding: 4px 0; }
+.main-nav a:hover { color: var(--accent); }
+.main-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.view { display: block; }
+.view-head { padding: 36px 0 24px; border-bottom: 1px solid var(--line); }
+.view-head h1, .hero h1 { font-family: Georgia, Charter, "Times New Roman", serif; font-size: clamp(30px, 5vw, 44px); line-height: 1.12; letter-spacing: -0.02em; margin: 6px 0 10px; }
+.view-head p:last-child, .hero-copy { color: var(--muted); max-width: 62ch; margin: 0; }
+.eyebrow { margin: 0; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 28px; padding: 42px 0 28px; border-bottom: 1px solid var(--line); }
+.practice-summary { display: grid; gap: 4px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+
 .icon-button, .level-button, .tabs button, .pill, .play, .speeds button {
   font: inherit; color: var(--ink); background: transparent;
   border: 1px solid var(--line); border-radius: 4px; cursor: pointer;
@@ -184,8 +198,11 @@ footer span + span { margin-top: 6px; }
 
 @media (max-width: 640px) {
   .shell { padding: 0 16px 48px; }
-  .masthead { padding-top: 24px; }
-  .header-actions { gap: 6px; }
+  .masthead { padding-top: 24px; flex-wrap: wrap; gap: 14px; }
+  .header-actions { gap: 6px; flex-wrap: wrap; }
+  .main-nav { order: 3; width: 100%; gap: 14px; overflow-x: auto; }
+  .hero { grid-template-columns: 1fr; align-items: start; padding-top: 28px; }
+  .practice-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); justify-self: start; }
   .controls { flex-direction: column; align-items: stretch; gap: 14px; }
   .levels { justify-content: space-between; }
   .level-button { padding: 6px 8px; }

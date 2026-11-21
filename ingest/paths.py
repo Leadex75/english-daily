@@ -7,15 +7,20 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from app.db import PROJECT_ROOT, load_sources
+from app.db import (
+    PROJECT_ROOT,
+    available_languages as configured_languages,
+    language_metadata_map,
+    load_sources,
+)
 
 _DAY_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def available_languages(config: dict[str, Any] | None = None) -> list[str]:
     config = config or {}
-    languages = [str(value) for value in (config.get("languages") or []) if str(value).strip()]
-    if not languages:
+    languages = configured_languages(config)
+    if not config.get("languages"):
         source_languages = {str(src.get("lang") or "en") for src in load_sources()}
         languages = sorted(source_languages) or ["en"]
     return list(dict.fromkeys(languages))
@@ -121,10 +126,15 @@ def migrate_legacy_site(site_dir: str | Path, lang: str | None = None) -> list[s
 def write_languages(site_dir: str | Path, config: dict[str, Any]) -> Path:
     path = languages_path(site_dir)
     languages = available_languages(config)
+    metadata = language_metadata_map(config)
     payload = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "default": default_language(config),
         "languages": languages,
+        "brands": {code: values["brand"] for code, values in metadata.items()},
+        "labels": {code: values["label"] for code, values in metadata.items()},
+        "taglines": {code: values["tagline"] for code, values in metadata.items()},
+        "metadata": metadata,
     }
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(".tmp")

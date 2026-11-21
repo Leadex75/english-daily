@@ -20,7 +20,7 @@ def resolve_site_dir(root, explicit=None):
 
 
 def parse_args(argv=None):
-    parser = argparse.ArgumentParser(prog="english-daily-desktop")
+    parser = argparse.ArgumentParser(prog="English Daily Desktop")
     parser.add_argument("--site", default=None, help="serve an exported static site instead of the API")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
@@ -49,7 +49,7 @@ def main(argv=None):
     url = f"http://{args.host}:{args.port}/"
     if not args.no_browser:
         threading.Timer(0.6, lambda: webbrowser.open(url)).start()
-    print(f"english-daily running at {url}")
+    print(f"English Daily running at {url}")
     print("Press Ctrl+C to quit.")
     try:
         if site:

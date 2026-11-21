@@ -17,6 +17,7 @@ from app.db import (
     data_dir,
     default_language,
     init_db,
+    language_metadata_map,
     load_config,
     load_sources,
     normalize_language,
@@ -31,7 +32,7 @@ from ingest.pipeline import run_ingest
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 from ingest.search import build_search_index, search_index
 
-app = FastAPI(title="english-daily", docs_url=None, redoc_url=None)
+app = FastAPI(title="English Daily", docs_url=None, redoc_url=None)
 _ingest_lock = threading.Lock()
 
 
@@ -85,7 +86,7 @@ def health(lang: str | None = None) -> dict[str, Any]:
         conn.close()
     return {
         "status": "ok",
-        "name": "english-daily",
+        "name": "English Daily",
         "lang": language,
         "languages": available_languages(config),
         "enabled_sources": sources,
@@ -114,9 +115,14 @@ def days(lang: str | None = None) -> list[str]:
 @app.get("/api/languages")
 def languages() -> dict[str, Any]:
     config = load_config()
+    metadata = language_metadata_map(config)
     return {
         "default": default_language(config),
         "languages": available_languages(config),
+        "brands": {code: values["brand"] for code, values in metadata.items()},
+        "labels": {code: values["label"] for code, values in metadata.items()},
+        "taglines": {code: values["tagline"] for code, values in metadata.items()},
+        "metadata": metadata,
     }
 
 

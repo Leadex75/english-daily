@@ -1,5 +1,9 @@
-# english-daily configuration (all paths relative to this project unless absolute)
-languages: [en]              # add another code only when banks/sources exist for it
+# English Daily configuration (all paths relative to this project unless absolute)
+languages:
+  en:
+    brand: English Daily
+    label: English
+    tagline: A little English, every day.
 default_language: en
 online_site_url: https://leadex75.github.io/english-daily/
 data_dir: ./data            # can point to a Nextcloud-synced folder

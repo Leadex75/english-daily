@@ -15,7 +15,7 @@ CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 SOURCES_PATH = PROJECT_ROOT / "sources.yaml"
 
 DEFAULTS: dict[str, Any] = {
-    "languages": ["en"],
+    "languages": {"en": {"brand": "English Daily", "label": "English"}},
     "default_language": "en",
     "online_site_url": "https://leadex75.github.io/english-daily/",
     "data_dir": "./data",
@@ -197,10 +197,51 @@ def load_config() -> dict[str, Any]:
 
 
 def available_languages(config: dict[str, Any]) -> list[str]:
-    languages = [str(value) for value in (config.get("languages") or []) if str(value).strip()]
+    raw = config.get("languages")
+    languages: list[str] = []
+    if isinstance(raw, dict):
+        for code, settings in raw.items():
+            name = str(code or "").strip()
+            if not name:
+                continue
+            if isinstance(settings, dict) and settings.get("enabled") is False:
+                continue
+            languages.append(name)
+    else:
+        languages = [str(value) for value in (raw or []) if str(value).strip()]
     if not languages:
         languages = [str(config.get("default_language") or "en")]
     return list(dict.fromkeys(languages))
+
+
+def language_metadata(config: dict[str, Any], lang: str | None = None) -> dict[str, str]:
+    language = normalize_language(config, lang)
+    raw = config.get("languages")
+    metadata: dict[str, Any] = {}
+    if isinstance(raw, dict):
+        entry = raw.get(language) or {}
+        if isinstance(entry, dict):
+            metadata = dict(entry)
+        elif entry:
+            metadata = {"label": str(entry)}
+    fallback_brands = {"en": "English Daily", "es": "Spanish Daily"}
+    brand = str(metadata.get("brand") or (config.get("brands") or {}).get(language) or "")
+    if not brand:
+        brand = fallback_brands.get(language, f"{language.title()} Daily")
+    return {
+        "code": language,
+        "brand": brand,
+        "label": str(metadata.get("label") or language.upper()),
+        "tagline": str(metadata.get("tagline") or f"A little {language.upper()}, every day."),
+    }
+
+
+def language_metadata_map(config: dict[str, Any]) -> dict[str, dict[str, str]]:
+    return {language: language_metadata(config, language) for language in available_languages(config)}
+
+
+def brand_for_language(config: dict[str, Any], lang: str | None = None) -> str:
+    return language_metadata(config, lang)["brand"]
 
 
 def default_language(config: dict[str, Any]) -> str:

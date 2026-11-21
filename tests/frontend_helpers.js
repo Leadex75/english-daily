@@ -1,13 +1,24 @@
 const assert = require('assert');
 
 global.window = {};
+require('../static/lib/branding.js');
 require('../static/lib/links.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
 
+const EDBrand = global.window.EDBrand;
 const EDLinks = global.window.EDLinks;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
+
+assert.strictEqual(EDBrand.brand({ default: 'en' }, 'en'), 'English Daily');
+assert.strictEqual(EDBrand.brand({ default: 'en' }, 'es'), 'Spanish Daily');
+assert.strictEqual(EDBrand.brand({ brands: { en: 'English Daily' }, default: 'en' }, 'en'), 'English Daily');
+assert.strictEqual(EDBrand.route('#archive'), 'archive');
+assert.strictEqual(EDBrand.route('settings'), 'settings');
+assert.strictEqual(EDBrand.route('#unknown'), 'today');
+assert.strictEqual(EDBrand.formatLongDate('2026-11-21'), 'Saturday 21 November 2026');
+assert.strictEqual(EDBrand.formatLongDate('bad-date'), '');
 
 assert.strictEqual(EDLinks.label('text'), 'Read the full text');
 assert.strictEqual(EDLinks.label('audio'), 'Listen to the original audio');

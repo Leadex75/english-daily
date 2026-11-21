@@ -141,3 +141,15 @@
 - Verified baseline: 41 unit tests passed in `.venv`; Python compile check passed; all JavaScript syntax checks and `tests/frontend_helpers.js` passed; contrast audit passed with light/dark definitions matching.
 - Decision: use the project `.venv` for Python tests because the system Python has no PyYAML.
 - Remaining: Phases 1–8; no implementation or migration was performed in this audit phase.
+
+## New brief — Phase 1 — branding and main layout (done)
+
+- Changed all user-facing brand strings to `English Daily`: document title, manifest, API metadata, CLI output, stats heading, desktop banner and README title; repository slug, URLs, DB filename, storage keys and cache seeds remain `english-daily`.
+- Added `languages.<code>.brand`, `label` and `tagline` metadata to `config.yaml`; `available_languages()` now accepts either mapping or list config, and `/api/languages` plus `site/data/languages.json` expose brand metadata.
+- Added `static/lib/branding.js` for deterministic route/brand/date helpers and cached it in the service worker.
+- Reworked `static/index.html` into hash-based Today, Archive, Glossary and Settings views with a primary nav, home brand link, editorial hero, compact practice summary, and no progress bars in the main reading view; existing reading, phrase, exercise, glossary, Anki and tour controls were preserved.
+- Updated CSS for the new masthead navigation, hero, view headings and responsive layout; contrast audit still passes.
+- Tests: 44 unit tests passed in `.venv`; frontend helper checks, all JavaScript syntax checks, Python compile check and contrast audit passed.
+- Verification: public static export to a temp directory succeeded with 2 days, 12 level files, 5 audio slots, `English Daily` title, branding module and brand metadata in `languages.json`.
+- Decision: prepare Archive/Settings view shells now so later phases can fill them without another structural rewrite.
+- Remaining: Phases 2–8.

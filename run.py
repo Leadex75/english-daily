@@ -233,7 +233,7 @@ def _stats(config: dict[str, Any], days: int, lang: str | None = None) -> dict[s
 
 def _stats_markdown(summary: dict[str, Any]) -> str:
     lines = [
-        f"## english-daily stats ({summary['days']} days, {summary['lang']})",
+        f"## English Daily stats ({summary['days']} days, {summary['lang']})",
         "",
         "| Level | Picks | Days with content | Capacity |",
         "| --- | ---: | ---: | ---: |",
@@ -356,7 +356,7 @@ def _clean_existing(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="english-daily")
+    parser = argparse.ArgumentParser(description="English Daily")
     sub = parser.add_subparsers(dest="command")
 
     serve = sub.add_parser("serve", help="start the web app (default command)")
@@ -492,7 +492,7 @@ def main() -> int:
 
     host = args.host or str(config["host"])
     port = args.port or int(config["port"])
-    print(f"Starting english-daily at http://{host}:{port}/")
+    print(f"Starting English Daily at http://{host}:{port}/")
     uvicorn.run("app.main:app", host=host, port=port, log_level="info")
     return 0
 

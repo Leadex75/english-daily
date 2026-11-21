@@ -1,4 +1,4 @@
-# english-daily
+# English Daily
 
 A local, account-free English practice app organised by CEFR level (A1–C2). A Python ingester pulls
 real RSS/podcast/Wikipedia/history content into SQLite, a FastAPI backend serves an offline-capable
@@ -9,6 +9,12 @@ accounts, no telemetry**.
 From Phase 6 onward the app also carries a bilingual history-term bank, per-day exercises, an
 offline search index, a guided tour, language-aware paths, deterministic reconstruction, and a
 small local desktop launcher.
+
+## Brand and navigation
+
+The app is branded `English Daily` in the interface, manifest, API metadata and CLI output. The repository, URL slug, data paths and local storage keys stay `english-daily` for compatibility. Per-language display names come from `languages.<code>.brand` in `config.yaml`.
+
+The interface has four hash-based views: `#today` for the day's reading, `#archive` for search and history, `#glossary` for learned phrases, and `#settings` for preferences. All view links are relative, so the same build works from a domain root or a GitHub Pages subdirectory.
 
 ## Quick start
 
