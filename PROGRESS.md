@@ -45,3 +45,12 @@
 - `run_ingest()` summaries expose a 36-slot cascade trace for future reconstruct reporting.
 - Tests: 15 unit tests passed, including language-specific threshold use in picker and reserve, and backfill skip/force behavior.
 - Verification: Python modules compile; `node --check` passes; CLI backfill smoke succeeded in an isolated temp data directory.
+- Phase 4 committed as `1efd1ff`.
+
+## Phase 5 — deterministic reconstruction (done)
+
+- Added `run.py reconstruct [--date] [--lang] [--state-dir] [--write] [--json]` to rebuild a day offline from stored DB candidates using the same pure cascade.
+- Reconstruction excludes prior state hashes dated before the target day, compares rebuilt picks against stored picks, and reports matched/mismatched/missing/extra/empty slots.
+- Dry-run mode is the default; `--write` replaces stored picks and marks them `reconstructed=1` without touching state ledgers, phrases or network sources.
+- Tests: 16 unit tests passed, including reconstruct match detection and write-back flag behavior.
+- Verification: Python modules compile; CLI JSON smoke succeeded in an isolated temp data directory.

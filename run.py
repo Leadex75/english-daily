@@ -2,10 +2,13 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import sys
+from pathlib import Path
 from typing import Any
 
 from app.db import (
+    PROJECT_ROOT,
     available_languages,
     connect,
     default_language,
@@ -19,9 +22,10 @@ from app.db import (
     upsert_sources,
 )
 from ingest.export_static import export_static
-from ingest.pipeline import run_ingest
-from ingest.readability import LEVELS
-from ingest.state import import_site_state
+from ingest.picker import choose_picks
+from ingest.pipeline import _candidates, run_ingest
+from ingest.readability import CATEGORIES, KINDS, LEVELS
+from ingest.state import import_site_state, load_entries
 
 
 def _languages(config: dict[str, Any], lang: str | None) -> list[str]:
@@ -57,6 +61,133 @@ def _backfill(
             processed += 1
             print(summary["report"])
     return {"days": max(1, int(days)), "processed": processed, "skipped": skipped, "filled": total_filled}
+
+
+def _reconstruct(
+    config: dict[str, Any],
+    day: str,
+    lang: str | None = None,
+    state_dir: str | None = None,
+    write: bool = False,
+) -> dict[str, Any]:
+    language = normalize_language(config, lang)
+    root = Path(state_dir) if state_dir else PROJECT_ROOT / "state"
+    entries = load_entries(root, config, language)
+    try:
+        cutoff = (dt.date.fromisoformat(day) - dt.timedelta(days=30)).isoformat()
+    except ValueError:
+        cutoff = ""
+    excluded = {
+        str(entry["guid_hash"])
+        for entry in entries
+        if cutoff <= str(entry.get("date") or "")[:10] < day
+    }
+    conn = connect(config)
+    try:
+        candidates = _candidates(conn, language)
+        scoring_config = dict(config)
+        scoring_config["_lang"] = language
+        trace: list[dict[str, Any]] = []
+        picks, _, _ = choose_picks(
+            candidates, day, scoring_config, excluded_hashes=excluded, trace=trace
+        )
+        rows = conn.execute(
+            """SELECT dp.level, dp.category, dp.kind, dp.item_id, dp.origin, dp.badges,
+                      i.guid_hash
+               FROM daily_picks dp LEFT JOIN items i ON i.id=dp.item_id
+               WHERE dp.date=? AND dp.lang=?""",
+            (day, language),
+        ).fetchall()
+        stored = {
+            (str(row["level"]), str(row["category"]), str(row["kind"])): dict(row)
+            for row in rows
+        }
+        details: list[dict[str, Any]] = []
+        matched = mismatched = missing = 0
+        for level in LEVELS:
+            for category in CATEGORIES:
+                for kind in KINDS:
+                    key = (level, category, kind)
+                    expected = str(picks[key]["guid_hash"]) if key in picks else ""
+                    actual = str(stored[key]["guid_hash"] or "") if key in stored else ""
+                    if expected and actual and expected == actual:
+                        status = "matched"
+                        matched += 1
+                    elif expected and actual:
+                        status = "mismatched"
+                        mismatched += 1
+                    elif expected:
+                        status = "missing"
+                        missing += 1
+                    elif actual:
+                        status = "extra"
+                    else:
+                        status = "empty"
+                    details.append({
+                        "level": level,
+                        "category": category,
+                        "kind": kind,
+                        "status": status,
+                        "expected_guid_hash": expected or None,
+                        "actual_guid_hash": actual or None,
+                    })
+        if write:
+            conn.execute("DELETE FROM daily_picks WHERE date=? AND lang=?", (day, language))
+            for (level, category, kind), item in picks.items():
+                conn.execute(
+                    """INSERT INTO daily_picks
+                       (date, level, category, kind, item_id, origin, badges, reconstructed, lang)
+                       VALUES (?,?,?,?,?,?,?,1,?)""",
+                    (
+                        day,
+                        level,
+                        category,
+                        kind,
+                        int(item["id"]),
+                        str(item.get("origin") or "fresh"),
+                        json.dumps(item.get("badges") or [], ensure_ascii=False),
+                        language,
+                    ),
+                )
+            conn.commit()
+    finally:
+        conn.close()
+    return {
+        "date": day,
+        "lang": language,
+        "written": bool(write),
+        "total_slots": len(LEVELS) * len(CATEGORIES) * len(KINDS),
+        "matched": matched,
+        "mismatched": mismatched,
+        "missing": missing,
+        "reconstructed_filled": len(picks),
+        "stored_picks": len(stored),
+        "excluded_prior_hashes": len(excluded),
+        "details": details,
+        "trace": trace,
+    }
+
+
+def _reconstruct_report(summary: dict[str, Any]) -> str:
+    lines = [
+        f"Reconstruction {summary['date']} ({summary['lang']})",
+        f"Slots: {summary['reconstructed_filled']}/{summary['total_slots']} reconstructed, "
+        f"{summary['stored_picks']} stored, {summary['excluded_prior_hashes']} prior hash(es) excluded",
+        f"Comparison: {summary['matched']} matched, {summary['mismatched']} mismatched, "
+        f"{summary['missing']} missing",
+        f"Mode: {'write' if summary['written'] else 'dry run'}",
+    ]
+    problems = [item for item in summary["details"] if item["status"] in {"mismatched", "missing"}]
+    lines.append(
+        "Problem slots: " + (
+            ", ".join(
+                f"{item['level']}/{item['category']}/{item['kind']}"
+                for item in problems
+            )
+            if problems else "none"
+        )
+    )
+    return "\n".join(lines)
 
 
 def _stats(config: dict[str, Any], days: int, lang: str | None = None) -> dict[str, Any]:
@@ -136,6 +267,13 @@ def main() -> int:
     backfill.add_argument("--lang", default=None)
     backfill.add_argument("--force", action="store_true", help="re-pick days that already have an ingest run")
 
+    reconstruct = sub.add_parser("reconstruct", help="rebuild a day from stored candidates")
+    reconstruct.add_argument("--date", default=None, help="YYYY-MM-DD (default: today)")
+    reconstruct.add_argument("--state-dir", default=None)
+    reconstruct.add_argument("--lang", default=None)
+    reconstruct.add_argument("--write", action="store_true", help="replace stored picks with reconstructed ones")
+    reconstruct.add_argument("--json", dest="json_output", action="store_true")
+
     export = sub.add_parser("export-static", help="write a GitHub-Pages-ready site")
     export.add_argument("--out", default="site")
     export.add_argument("--lang", default=None)
@@ -181,6 +319,17 @@ def main() -> int:
             f"Backfill complete: {summary['filled']} slot(s) filled across "
             f"{summary['processed']} day/language pair(s); {summary['skipped']} skipped."
         )
+        return 0
+
+    if command == "reconstruct":
+        day = args.date or today(config)
+        summary = _reconstruct(
+            config, day, lang=args.lang, state_dir=args.state_dir, write=args.write
+        )
+        if args.json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
+        else:
+            print(_reconstruct_report(summary))
         return 0
 
     if command == "export-static":

@@ -176,6 +176,68 @@ class PickerTests(unittest.TestCase):
         self.assertIn("Outside preferred window", chosen["badges"])
 
 
+class ReconstructTests(unittest.TestCase):
+    def test_reconstruct_matches_and_can_write_stored_picks(self):
+        with tempfile.TemporaryDirectory() as raw:
+            config = dict(DEFAULTS)
+            config["languages"] = ["en"]
+            config["data_dir"] = raw
+            init_db(config)
+            day = "2026-11-21"
+            conn = connect(config)
+            try:
+                conn.execute(
+                    """INSERT INTO sources
+                       (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?)""",
+                    ("source", "Source", "https://example.org/feed", "news", "text", "computed", "computed", 1, "en"),
+                )
+                cursor = conn.execute(
+                    """INSERT INTO items
+                       (guid_hash, source_id, kind, category, title, url, summary, published_at,
+                        fetched_at, body_text, word_count, score, level, origin, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (
+                        "reconstruct-hash", "source", "text", "news", "Sample",
+                        "https://example.org/sample", "Summary", day, day,
+                        "word " * 200, 200, 0.55, "A1", "fresh", "en",
+                    ),
+                )
+                item_id = int(cursor.lastrowid)
+                conn.execute(
+                    """INSERT INTO daily_picks
+                       (date, level, category, kind, item_id, origin, badges, reconstructed, lang)
+                       VALUES (?,?,?,?,?,?,?,0,?)""",
+                    (day, "A1", "news", "text", item_id, "fresh", "[]", "en"),
+                )
+                conn.commit()
+            finally:
+                conn.close()
+            with patch("run.load_entries", return_value=[]):
+                summary = run._reconstruct(config, day, "en")
+                written = run._reconstruct(config, day, "en", write=True)
+            self.assertEqual(summary["matched"], 1)
+            self.assertEqual(summary["reconstructed_filled"], 1)
+            self.assertEqual(summary["mismatched"], 0)
+            self.assertEqual(summary["missing"], 0)
+            slot = next(
+                item for item in summary["details"]
+                if item["level"] == "A1" and item["category"] == "news" and item["kind"] == "text"
+            )
+            self.assertEqual(slot["status"], "matched")
+            self.assertTrue(written["written"])
+            conn = connect(config)
+            try:
+                row = conn.execute(
+                    """SELECT reconstructed FROM daily_picks
+                       WHERE date=? AND level='A1' AND category='news' AND kind='text' AND lang='en'""",
+                    (day,),
+                ).fetchone()
+                self.assertEqual(int(row["reconstructed"]), 1)
+            finally:
+                conn.close()
+
+
 class ReserveBackfillTests(unittest.TestCase):
     def test_picker_uses_language_specific_thresholds(self):
         config = dict(DEFAULTS)
