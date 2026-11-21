@@ -100,3 +100,11 @@
 - Added offline status UI and an update flow backed by `lib/pwa.js`.
 - Tests: 22 unit tests passed, including manifest relative paths, service-worker fallback/update markers and offline UI presence.
 - Verification: `node --check` passes; static export smoke confirmed versioned cache, PWA module, navigation fallback and manifest in the generated site.
+- Phase 10 committed as `5d64463`.
+
+## Phase 11 — desktop launcher and packaging (done)
+
+- Added a local desktop launcher that serves the exported static site when available and otherwise starts the FastAPI app on localhost.
+- Added a stdlib zipapp builder plus an optional PyInstaller path with `desktop/EnglishDaily.spec`; no new runtime dependencies were introduced.
+- Tests: 24 unit tests passed, including site resolution and zipapp contents.
+- Verification: desktop CLI help works; zipapp build smoke produced a runnable artifact containing runtime source and static assets.

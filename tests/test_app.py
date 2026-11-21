@@ -2,6 +2,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+import zipfile
 from collections import Counter
 from contextlib import redirect_stdout
 from io import StringIO
@@ -22,6 +23,7 @@ from app.db import (
 )
 from app.main import app
 from app.serialize import serialize_day
+from desktop.main import resolve_site_dir
 from fastapi.testclient import TestClient
 
 from ingest.doctor import check_sources, run_doctor
@@ -44,6 +46,7 @@ from ingest.readability import band_center
 from ingest.reserve.common import make_candidate
 from ingest.search import build_search_index, search_index
 import run
+from tools.build_desktop import build_zipapp
 
 
 class BankTests(unittest.TestCase):
@@ -699,6 +702,26 @@ class SearchApiTests(unittest.TestCase):
         self.assertEqual(payload["results"], results)
         self.assertEqual(build.call_args.args[2], "en")
         self.assertEqual(search.call_args.kwargs["level"], "B1")
+
+
+class DesktopTests(unittest.TestCase):
+    def test_resolve_site_dir_requires_exported_index(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            self.assertIsNone(resolve_site_dir(root))
+            (root / "site").mkdir()
+            self.assertIsNone(resolve_site_dir(root))
+            (root / "site" / "index.html").write_text("ok", encoding="utf-8")
+            self.assertEqual(resolve_site_dir(root), root / "site")
+
+    def test_zipapp_build_contains_runtime_assets(self):
+        with tempfile.TemporaryDirectory() as raw:
+            artifact = build_zipapp(Path(raw) / "EnglishDaily.pyz")
+            self.assertTrue(artifact.is_file())
+            with zipfile.ZipFile(artifact) as archive:
+                names = set(archive.namelist())
+            for expected in ("__main__.py", "desktop/main.py", "app/main.py", "static/index.html", "config.yaml"):
+                self.assertIn(expected, names)
 
 
 class FrontendAssetTests(unittest.TestCase):
