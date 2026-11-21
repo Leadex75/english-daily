@@ -32,6 +32,7 @@ from ingest.paths import (
     site_lang_dir,
     site_level_path,
     site_phrase_path,
+    site_search_path,
     state_lang_dir,
     write_languages,
 )
@@ -40,6 +41,7 @@ from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
 from ingest.readability import band_center
 from ingest.reserve.common import make_candidate
+from ingest.search import build_search_index, search_index
 import run
 
 
@@ -470,6 +472,7 @@ class MigrationAndExportTests(unittest.TestCase):
             self.assertTrue(site_phrase_path(out, day, "en").is_file())
             self.assertTrue((site_lang_dir(out, "en") / "index.json").is_file())
             self.assertTrue(languages_path(out).is_file())
+            self.assertTrue(site_search_path(out, day, "en").is_file())
             self.assertTrue((out / "index.html").is_file())
             self.assertTrue((out / "manifest.webmanifest").is_file())
             self.assertTrue((out / "sw.js").is_file())
@@ -542,6 +545,73 @@ class DoctorTests(unittest.TestCase):
             code = run_doctor(config, json_output=True)
         self.assertEqual(code, 0)
         self.assertEqual(json.loads(buffer.getvalue()), report)
+
+
+class SearchTests(unittest.TestCase):
+    def test_search_index_and_query(self):
+        with tempfile.TemporaryDirectory() as raw:
+            config = dict(DEFAULTS)
+            config["languages"] = ["en"]
+            config["data_dir"] = raw
+            init_db(config)
+            day = "2026-11-21"
+            conn = connect(config)
+            try:
+                conn.execute(
+                    """INSERT INTO sources
+                       (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?)""",
+                    ("source", "Source", "https://example.org/feed", "history", "text", "computed", "computed", 1, "en"),
+                )
+                cursor = conn.execute(
+                    """INSERT INTO items
+                       (guid_hash, source_id, kind, category, title, url, summary, published_at,
+                        fetched_at, body_text, word_count, score, level, origin, lang,
+                        periods, themes, history_terms)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (
+                        "search-hash", "source", "text", "history", "Renaissance art",
+                        "https://example.org/article", "A Renaissance exhibition", day, day,
+                        "Renaissance " + "word " * 200, 201, 0.5, "B1", "fresh", "en",
+                        json.dumps(["Early modern"]), json.dumps(["Culture"]),
+                        json.dumps([{"text": "renaissance", "meaning_fr": "renaissance"}]),
+                    ),
+                )
+                item_id = int(cursor.lastrowid)
+                conn.execute(
+                    """INSERT INTO daily_picks
+                       (date, level, category, kind, item_id, origin, badges, lang)
+                       VALUES (?,?,?,?,?,?,?,?)""",
+                    (day, "B1", "history", "text", item_id, "fresh", "[]", "en"),
+                )
+                conn.commit()
+                index = build_search_index(conn, config, "en", day=day, public_mode=True)
+            finally:
+                conn.close()
+            results = search_index(index, "renaissance", day=day, level="B1")
+            self.assertEqual(len(results), 1)
+            self.assertEqual(results[0]["title"], "Renaissance art")
+            self.assertIn("renaissance", results[0]["matched_terms"])
+
+
+class SearchApiTests(unittest.TestCase):
+    def test_search_endpoint_filters_and_returns_results(self):
+        client = TestClient(app)
+        config = {"languages": ["en"], "default_language": "en"}
+        results = [{"title": "Renaissance art"}]
+        with patch("app.main.load_config", return_value=config), patch(
+            "app.main.connect"
+        ), patch("app.main.build_search_index", return_value={"items": []}) as build, patch(
+            "app.main.search_index", return_value=results
+        ) as search:
+            response = client.get("/api/search?q=renaissance&day=2026-11-21&level=B1&lang=en")
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertEqual(payload["query"], "renaissance")
+        self.assertEqual(payload["lang"], "en")
+        self.assertEqual(payload["results"], results)
+        self.assertEqual(build.call_args.args[2], "en")
+        self.assertEqual(search.call_args.kwargs["level"], "B1")
 
 
 class SourcesApiTests(unittest.TestCase):

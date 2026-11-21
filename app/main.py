@@ -29,6 +29,7 @@ from app.serialize import serialize_day
 from ingest.phrases import load_phrases
 from ingest.pipeline import run_ingest
 from ingest.readability import CATEGORIES, KINDS, LEVELS
+from ingest.search import build_search_index, search_index
 
 app = FastAPI(title="english-daily", docs_url=None, redoc_url=None)
 _ingest_lock = threading.Lock()
@@ -196,6 +197,36 @@ def stats(days: int = 30, lang: str | None = None) -> dict[str, Any]:
         "by_level": by_level,
         "phrase_days": phrase_days,
         "items": item_total,
+    }
+
+
+@app.get("/api/search")
+def search(
+    q: str = "",
+    day: str | None = None,
+    level: str | None = None,
+    limit: int = 20,
+    lang: str | None = None,
+) -> dict[str, Any]:
+    if day:
+        day = _valid_day(day)
+    if level and level not in LEVELS:
+        raise HTTPException(status_code=400, detail=f"level must be one of {', '.join(LEVELS)}")
+    config = load_config()
+    language = _language(config, lang)
+    conn = connect(config)
+    try:
+        index = build_search_index(conn, config, language, day=day)
+    finally:
+        conn.close()
+    results = search_index(index, q, day=day, level=level, limit=limit)
+    return {
+        "query": q,
+        "lang": language,
+        "day": day,
+        "level": level,
+        "total": len(results),
+        "results": results,
     }
 
 

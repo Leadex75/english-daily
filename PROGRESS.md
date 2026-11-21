@@ -64,3 +64,12 @@
 - Added `items.history_terms` to the SQLite schema with an idempotent migration; serialized day items now expose `periods`, `themes` and `history_terms`.
 - Tests: 17 unit tests passed, including history bank shape, annotation, phrase history payload, migration and static export contract.
 - Verification: Python modules compile; `node --check` passes; live stats command migrated the database and returned 200-equivalent CLI output with a fresh backup.
+- Phase 6 committed as `5d0ab25`.
+
+## Phase 7 — search indexes and search API (done)
+
+- Added `ingest/search.py` with deterministic, dependency-free index building and weighted term matching over titles, phrases, history terms, summaries, bodies and sources.
+- Static export now writes one search index per language and day to `site/data/<lang>/search/<day>.json`, respecting public-mode excerpt rules.
+- Added server endpoint `GET /api/search?q=...&day=...&level=...&limit=...&lang=...` with validation and the same ranking logic.
+- Tests: 19 unit tests passed, including index building/query ranking, search API filtering and static search file export.
+- Verification: Python modules compile; `node --check` passes; API smoke returned HTTP 200 with an empty result set in an isolated temp data directory.

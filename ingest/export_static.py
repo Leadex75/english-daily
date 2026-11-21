@@ -15,9 +15,11 @@ from ingest.paths import (
     site_lang_dir,
     site_level_path,
     site_phrase_path,
+    site_search_path,
     write_languages,
 )
 from ingest.readability import CATEGORIES, KINDS, LEVELS
+from ingest.search import build_search_index
 
 _DAY_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -167,6 +169,7 @@ def export_static(
     days: list[str] = []
     written = 0
     audios = 0
+    search_written = 0
     pruned: list[str] = []
     indexes: dict[str, dict[str, Any]] = {}
     try:
@@ -217,6 +220,15 @@ def export_static(
                     site_phrase_path(out, day, language).write_text(
                         json.dumps(phrases, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
                     )
+                search_index = build_search_index(
+                    conn, config, lang=language, day=day, public_mode=publish_public
+                )
+                search_path = site_search_path(out, day, language)
+                search_path.parent.mkdir(parents=True, exist_ok=True)
+                search_path.write_text(
+                    json.dumps(search_index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+                )
+                search_written += 1
             pruned.extend(_prune_old_days(out, config, language))
             indexes[language] = _write_index(out, config, language)
     finally:
@@ -229,6 +241,7 @@ def export_static(
         "days": sorted(days, reverse=True),
         "written": written,
         "audios": audios,
+        "search_indexes": search_written,
         "pruned": pruned,
         "public_mode": publish_public,
         "root": str(root),

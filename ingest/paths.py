@@ -66,6 +66,10 @@ def site_search_dir(site_dir: str | Path, lang: str | None = None) -> Path:
     return site_lang_dir(site_dir, lang) / "search"
 
 
+def site_search_path(site_dir: str | Path, day: str, lang: str | None = None) -> Path:
+    return site_search_dir(site_dir, lang) / f"{day}.json"
+
+
 def languages_path(site_dir: str | Path) -> Path:
     return Path(site_dir) / "data" / "languages.json"
 
