@@ -180,3 +180,15 @@
 - Verification: exported HTML contains `./lib/archive.js`, `data-eds-calendar`, `calendar().label` and `Open edition`; the exported service worker caches `./lib/archive.js`.
 - Decision: cap static archive search at the first 120 saved day indexes and skip unreadable indexes so offline search stays responsive and never crashes.
 - Remaining: Phases 4–8.
+
+## New brief — Phase 4 — Anki notes and AnkiConnect (done)
+
+- Added `app/anki.py` with a persistent `English Daily Phrase` model, escaped deterministic fields, stable tags/GUIDs, AnkiConnect payloads and a `genanki`-backed `.apkg` writer.
+- Added `anki-notes` and `anki-build` CLI commands that turn a JSON list of learned entries into deterministic note JSON/AnkiConnect payloads or a reusable package; added `genanki` to `requirements.txt`.
+- Extended `static/lib/anki.js` with browser-side note building that matches the Python GUID/fields, an AnkiConnect v6 client, no-duplicate note options and a persisted export ledger under `english-daily:anki-notes`.
+- Added Settings control for the AnkiConnect URL and glossary controls to check AnkiConnect and send learned notes, with accessible status messages and the TSV download kept as an offline fallback.
+- Added Python/JavaScript cross-language note-equivalence tests, CLI JSON/package tests, AnkiConnect client tests and frontend asset markers.
+- Tests: 51 unit tests passed in `.venv`; frontend helper checks, all JavaScript syntax checks, Python compile check, palette generation check, contrast audit and temp public static export passed.
+- Verification: exported HTML contains the AnkiConnect URL setting and check/send controls; `anki-build` produced a valid ZIP-based `.apkg` in a temp directory.
+- Decision: use FNV-1a GUID generation in both Python and JavaScript so browser and backend notes share stable identities without async Web Crypto.
+- Remaining: Phases 5–8.

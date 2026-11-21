@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from app.anki import DECK_NAME, MODEL_NAME, anki_connect_note, build_notes, load_entries_file, write_apkg
 from app.db import (
     PROJECT_ROOT,
     available_languages,
@@ -381,6 +382,20 @@ def main() -> int:
     reconstruct.add_argument("--write", action="store_true", help="replace stored picks with reconstructed ones")
     reconstruct.add_argument("--json", dest="json_output", action="store_true")
 
+    notes = sub.add_parser("anki-notes", help="build deterministic Anki notes from learned entries")
+    notes.add_argument("--entries", required=True, help="JSON file with glossary entries")
+    notes.add_argument("--day", default="")
+    notes.add_argument("--deck", default=DECK_NAME)
+    notes.add_argument("--lang", default=None)
+    notes.add_argument("--json", dest="json_output", action="store_true")
+
+    anki_build = sub.add_parser("anki-build", help="write an Anki package from learned entries")
+    anki_build.add_argument("--entries", required=True, help="JSON file with glossary entries")
+    anki_build.add_argument("--out", required=True, help="output .apkg path")
+    anki_build.add_argument("--day", default="")
+    anki_build.add_argument("--deck", default=DECK_NAME)
+    anki_build.add_argument("--lang", default=None)
+
     export = sub.add_parser("export-static", help="write a GitHub-Pages-ready site")
     export.add_argument("--out", default="site")
     export.add_argument("--lang", default=None)
@@ -441,6 +456,27 @@ def main() -> int:
             print(json.dumps(summary, ensure_ascii=False, indent=2))
         else:
             print(_reconstruct_report(summary))
+        return 0
+
+    if command in ("anki-notes", "anki-build"):
+        language = normalize_language(config, args.lang)
+        entries = load_entries_file(args.entries)
+        notes = build_notes(entries, lang=language, day=args.day)
+        if command == "anki-notes":
+            payload = {
+                "lang": language,
+                "deck": args.deck,
+                "model": MODEL_NAME,
+                "notes": notes,
+                "ankiconnect": [anki_connect_note(note, args.deck) for note in notes],
+            }
+            if args.json_output:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print(f"Built {len(notes)} Anki note(s) for {language}.")
+            return 0
+        target = write_apkg(notes, args.out, lang=language, deck_name=args.deck)
+        print(f"Wrote {len(notes)} Anki note(s) to {target}")
         return 0
 
     if command == "export-static":

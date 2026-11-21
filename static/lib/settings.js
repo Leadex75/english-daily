@@ -12,10 +12,22 @@ window.EDSettings = (() => {
     showFeedback: true,
     autoMarkRead: true,
     reduceMotion: false,
+    ankiConnectUrl: 'http://127.0.0.1:8765',
   };
 
   function oneOf(value, allowed, fallback) {
     return allowed.includes(value) ? value : fallback;
+  }
+
+  function ankiUrl(value) {
+    const raw = typeof value === 'string' && value.trim() ? value.trim() : DEFAULTS.ankiConnectUrl;
+    try {
+      const parsed = new URL(raw);
+      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return DEFAULTS.ankiConnectUrl;
+      return raw;
+    } catch (err) {
+      return DEFAULTS.ankiConnectUrl;
+    }
   }
 
   function normalize(value) {
@@ -29,6 +41,7 @@ window.EDSettings = (() => {
       showFeedback: raw.showFeedback === undefined ? DEFAULTS.showFeedback : Boolean(raw.showFeedback),
       autoMarkRead: raw.autoMarkRead === undefined ? DEFAULTS.autoMarkRead : Boolean(raw.autoMarkRead),
       reduceMotion: raw.reduceMotion === undefined ? DEFAULTS.reduceMotion : Boolean(raw.reduceMotion),
+      ankiConnectUrl: ankiUrl(raw.ankiConnectUrl),
     };
   }
 

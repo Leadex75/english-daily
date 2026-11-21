@@ -332,8 +332,13 @@
       <section class="block glossary" x-show="glossary().length" data-eds-glossary>
         <div class="block-head">
           <h2>Saved phrases</h2>
-          <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable()" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
+          <div class="anki-actions">
+            <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable() || !glossary().length" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
+            <button class="pill" type="button" data-eds-anki-connect-check :disabled="!glossary().length || ankiConnectBusy" @click="checkAnkiConnect()">Check AnkiConnect</button>
+            <button class="pill" type="button" data-eds-anki-connect :disabled="!glossary().length || ankiConnectBusy" @click="sendAnkiConnect()">Send to AnkiConnect</button>
+          </div>
         </div>
+        <p class="anki-status" data-eds-anki-connect-status aria-live="polite" x-text="ankiConnectStatus"></p>
         <ul>
           <template x-for="entry in glossary()" :key="entry.key">
             <li>
@@ -386,6 +391,8 @@
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.showFeedback" @change="setPreference('showFeedback', $event.target.checked)"> Show exercise answers immediately</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.autoMarkRead" @change="setPreference('autoMarkRead', $event.target.checked)"> Mark texts as read while scrolling</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.reduceMotion" @change="setPreference('reduceMotion', $event.target.checked)"> Reduce motion</label>
+          <label class="setting-label" for="anki-connect-url">AnkiConnect URL</label>
+          <input id="anki-connect-url" class="setting-input" type="url" inputmode="url" spellcheck="false" :value="prefs.ankiConnectUrl" @change="setPreference('ankiConnectUrl', $event.target.value)">
           <div class="block-foot">
             <span class="anki-status" aria-live="polite">Saved in this browser.</span>
             <button class="pill" type="button" @click="resetPreferences()">Reset settings</button>

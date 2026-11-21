@@ -61,7 +61,7 @@ function app() {
     theme: 'system',
     prefs: window.EDSettings ? window.EDSettings.load() : {
       theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
-      showFeedback: true, autoMarkRead: true, reduceMotion: false,
+      showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
     },
     themePresets: [
       { value: 'system', label: 'System' },
@@ -99,6 +99,8 @@ function app() {
     searchQuery: '',
     searchResults: [],
     searching: false,
+    ankiConnectBusy: false,
+    ankiConnectStatus: 'AnkiConnect is not checked yet.',
     storeTick: 0,
     answerTick: 0,
     tourIndex: 0,
@@ -177,7 +179,7 @@ function app() {
     resetPreferences() {
       this.prefs = window.EDSettings ? window.EDSettings.normalize(null) : {
         theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
-        showFeedback: true, autoMarkRead: true, reduceMotion: false,
+        showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
       };
       if (window.EDSettings) window.EDSettings.save(this.prefs);
       this.applyPreferences();
@@ -524,6 +526,63 @@ function app() {
       const cards = this.exportableAnkiItems(this.glossary());
       if (cards.length && this.ankiAvailable()) {
         window.AnkiExport.download(cards, 'english-daily-glossary.txt');
+      }
+    },
+
+    ankiNotes() {
+      if (!window.AnkiExport || typeof window.AnkiExport.buildNotes !== 'function') return [];
+      return window.AnkiExport.buildNotes(this.glossary(), { lang: this.lang, day: this.selectedDate });
+    },
+
+    ankiConnectClient() {
+      if (!window.AnkiConnect) return null;
+      return window.AnkiConnect(this.prefs.ankiConnectUrl, window.fetch ? window.fetch.bind(window) : null);
+    },
+
+    async checkAnkiConnect() {
+      const client = this.ankiConnectClient();
+      if (!client) {
+        this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        return false;
+      }
+      this.ankiConnectBusy = true;
+      this.ankiConnectStatus = 'Checking AnkiConnect…';
+      try {
+        const version = await client.check();
+        this.ankiConnectStatus = `AnkiConnect ${version} is ready.`;
+        return true;
+      } catch (err) {
+        this.ankiConnectStatus = `AnkiConnect unavailable: ${String(err.message || err)}`;
+        return false;
+      } finally {
+        this.ankiConnectBusy = false;
+      }
+    },
+
+    async sendAnkiConnect() {
+      const notes = this.ankiNotes();
+      if (!notes.length) {
+        this.ankiConnectStatus = 'Mark a phrase as learned first.';
+        return;
+      }
+      const client = this.ankiConnectClient();
+      if (!client) {
+        this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        return;
+      }
+      this.ankiConnectBusy = true;
+      this.ankiConnectStatus = 'Sending notes to AnkiConnect…';
+      try {
+        await client.check();
+        const result = await client.addNotes(notes);
+        window.AnkiExport.recordExport(notes, window.EDStore, result);
+        const added = (result || []).filter(Boolean).length;
+        const skipped = notes.length - added;
+        this.ankiConnectStatus = `AnkiConnect added ${added} note(s); ${skipped} already present.`;
+      } catch (err) {
+        this.ankiConnectStatus = `AnkiConnect export failed: ${String(err.message || err)}`;
+      } finally {
+        this.ankiConnectBusy = false;
       }
     },
 

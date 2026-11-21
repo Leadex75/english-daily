@@ -64,6 +64,8 @@ python run.py reconstruct --json              # offline rebuild check for today
 python run.py reconstruct --date 2026-11-21 --write
 python run.py stats --days 90 --lang en
 python run.py doctor --json                   # structured source health report
+python run.py anki-notes --entries state/anki-entries.json --lang en --json
+python run.py anki-build --entries state/anki-entries.json --out english-daily.apkg --lang en
 python run.py export-static --out site --public
 python run.py import-state --site-dir site --state-dir state
 python run.py prune
@@ -105,7 +107,10 @@ unless `--force` is used.
 - Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
   links in a responsive two-column source footer.
 - Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
-  Anki help button reopens the Anki tour step.
+  Anki help button reopens the Anki tour step. Notes use a persistent `English Daily Phrase` model,
+  deterministic GUIDs, field escaping and stable tags; Settings stores the AnkiConnect URL, and the
+  glossary can check the connection and send notes without using a browser download. `anki-notes`
+  and `anki-build` expose the same note model as JSON or a reusable `.apkg` (via `genanki`).
 - `tools/palette_build.py` generates `static/css/themes.css` from audited palette definitions;
   `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
   High contrast and both System modes.

@@ -8,3 +8,4 @@ textstat
 wordfreq
 pyyaml
 tzdata
+genanki

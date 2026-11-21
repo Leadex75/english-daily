@@ -16,6 +16,7 @@ const EDSearch = global.window.EDSearch;
 const EDArchive = global.window.EDArchive;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
+const AnkiConnect = global.window.AnkiConnect;
 
 assert.strictEqual(EDBrand.brand({ default: 'en' }, 'en'), 'English Daily');
 assert.strictEqual(EDBrand.brand({ default: 'en' }, 'es'), 'Spanish Daily');
@@ -30,6 +31,7 @@ assert.strictEqual(EDSettings.KEY, 'english-daily:settings');
 assert.strictEqual(EDSettings.normalize({ theme: 'bogus' }).theme, 'system');
 assert.strictEqual(EDSettings.normalize({ speed: 1.25 }).speed, 1.25);
 assert.strictEqual(EDSettings.normalize({ showFeedback: false }).showFeedback, false);
+assert.strictEqual(EDSettings.normalize({ ankiConnectUrl: 'ftp://bad' }).ankiConnectUrl, 'http://127.0.0.1:8765');
 const settingsStore = new Map();
 const fakeSettingsStore = {
   get: (key, fallback) => settingsStore.has(key) ? settingsStore.get(key) : fallback,
@@ -98,6 +100,48 @@ assert.deepStrictEqual(
 );
 assert.strictEqual(AnkiExport.toTsv([{ front: 'word', back: 'mot' }]), 'word\tmot');
 
+const ankiEntry = {
+  key: 'en-word-bridge',
+  text: 'bridge <a>',
+  meaning_fr: 'pont',
+  example: 'We crossed the bridge.',
+  level: 'B1',
+  learned_at: '2026-11-21',
+};
+const ankiOptions = { lang: 'en', day: '2026-11-21' };
+const ankiNote = AnkiExport.buildNote(ankiEntry, ankiOptions);
+assert.strictEqual(ankiNote.guid.length, 32);
+assert.deepStrictEqual(ankiNote.fields.Front, 'bridge &lt;a&gt;');
+assert.strictEqual(ankiNote.fields.Back, 'pont');
+assert.deepStrictEqual(AnkiExport.buildNote(ankiEntry, ankiOptions), ankiNote);
+assert.strictEqual(AnkiExport.buildNotes([ankiEntry, ankiEntry], ankiOptions).length, 1);
+assert.strictEqual(AnkiExport.ankiConnectNote(ankiNote).options.duplicateScope, 'deck');
+const ankiStore = new Map();
+const fakeAnkiStore = {
+  get: (key, fallback) => ankiStore.has(key) ? ankiStore.get(key) : fallback,
+  set: (key, value) => ankiStore.set(key, value),
+};
+AnkiExport.recordExport([ankiNote], fakeAnkiStore, [true]);
+assert.strictEqual(AnkiExport.exportStatus(ankiNote, fakeAnkiStore).added, 1);
+
+async function testAnkiConnect() {
+  const calls = [];
+  const client = AnkiConnect('http://127.0.0.1:8765/', function (url, init) {
+    const payload = JSON.parse(init.body);
+    calls.push({ url, action: payload.action, version: payload.version, notes: payload.params.notes });
+    return Promise.resolve({
+      ok: true,
+      status: 200,
+      json: () => Promise.resolve({ result: payload.action === 'version' ? 6 : [true, false] }),
+    });
+  });
+  assert.strictEqual(await client.check(), 6);
+  assert.deepStrictEqual(await client.addNotes([ankiNote]), [true, false]);
+  assert.deepStrictEqual(calls.map((call) => call.action), ['version', 'addNotes']);
+  assert.strictEqual(calls[1].url, 'http://127.0.0.1:8765');
+  assert.strictEqual(calls[1].notes[0].fields.Front, 'bridge &lt;a&gt;');
+}
+
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const categories = ['news', 'culture', 'history', 'phrase'];
 const slotOrder = [];
@@ -144,4 +188,9 @@ assert.deepStrictEqual(
 );
 assert.strictEqual(EDProgress.weekCount(practiced, '2026-11-21', 7), 3);
 
-console.log('frontend helper checks passed');
+testAnkiConnect().then(function () {
+  console.log('frontend helper checks passed');
+}).catch(function (err) {
+  console.error(err);
+  process.exit(1);
+});

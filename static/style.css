@@ -127,6 +127,7 @@ footer span + span { margin-top: 6px; }
 .anki-button.anki-ready:disabled { opacity: 1; }
 .anki-status { color: var(--muted); font-size: 12px; }
 .anki-help { font-size: 12px; }
+.anki-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
 
 .progress-panel { display: grid; gap: 8px; padding: 0 0 18px; }
 .progress-line { display: grid; grid-template-columns: 72px 1fr 64px; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; }
@@ -165,6 +166,7 @@ footer span + span { margin-top: 6px; }
 .setting-label { margin: 18px 0 0; color: var(--muted); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
 .setting-toggle { display: flex; align-items: flex-start; gap: 10px; margin: 14px 0 0; font-size: 14px; }
 .setting-toggle input { margin: 3px 0 0; accent-color: var(--accent); }
+.setting-input { width: 100%; margin-top: 8px; padding: 7px 10px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; font: inherit; font-size: 13px; }
 .settings-card .block-foot { margin-top: 20px; }
 
 html[data-text-size="small"] .article-body { font-size: 16px; }

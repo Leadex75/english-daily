@@ -13,6 +13,7 @@ from unittest.mock import patch
 
 import yaml
 
+from app.anki import anki_connect_note, build_note, build_notes, write_apkg
 from app.db import (
     DEFAULTS,
     available_languages,
@@ -977,6 +978,85 @@ class DesktopTests(unittest.TestCase):
                 self.assertIn(expected, names)
 
 
+class AnkiTests(unittest.TestCase):
+    def test_note_builder_is_deterministic_and_escaped(self):
+        entry = {
+            "key": "en-bridge",
+            "text": "bridge <a>",
+            "meaning_fr": "pont",
+            "example": "We crossed the bridge.",
+            "level": "B1",
+            "learned_at": "2026-11-21",
+        }
+        note = build_note(entry, lang="en", day="2026-11-21")
+        self.assertEqual(note, build_note(entry, lang="en", day="2026-11-21"))
+        self.assertEqual(len(note["guid"]), 32)
+        self.assertEqual(note["fields"]["Front"], "bridge &lt;a&gt;")
+        self.assertEqual(note["fields"]["Back"], "pont")
+        self.assertIn("lang-en", note["tags"])
+        self.assertIn("level-b1", note["tags"])
+        self.assertEqual(anki_connect_note(note)["options"]["duplicateScope"], "deck")
+        self.assertEqual(build_notes([entry, entry], lang="en"), [note])
+
+    def test_python_and_javascript_note_builders_match(self):
+        root = Path(__file__).resolve().parents[1]
+        entry = {
+            "key": "en-bridge-2",
+            "text": "bridge",
+            "meaning_fr": "pont",
+            "meaning": "a structure over water",
+            "example": "We crossed the bridge.",
+            "level": "B1",
+            "learned_at": "2026-11-21",
+        }
+        options = {"lang": "en", "day": "2026-11-21"}
+        python_note = build_note(entry, lang="en", day="2026-11-21")
+        result = subprocess.run(
+            ["node", str(root / "tests" / "anki_bridge.js"), json.dumps(entry), json.dumps(options)],
+            capture_output=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8", errors="replace"))
+        javascript_note = json.loads(result.stdout.decode("utf-8"))
+        self.assertEqual(javascript_note["guid"], python_note["guid"])
+        self.assertEqual(javascript_note["fields"], python_note["fields"])
+        self.assertEqual(javascript_note["tags"], python_note["tags"])
+
+    def test_anki_notes_cli_emits_deterministic_json(self):
+        root = Path(__file__).resolve().parents[1]
+        entries = [{"key": "cli-1", "text": "word", "meaning_fr": "mot"}]
+        with tempfile.TemporaryDirectory() as raw:
+            source = Path(raw) / "entries.json"
+            source.write_text(json.dumps(entries), encoding="utf-8")
+            command = [
+                sys.executable, str(root / "run.py"), "anki-notes", "--entries", str(source),
+                "--lang", "en", "--json",
+            ]
+            first = subprocess.run(command, capture_output=True, text=True)
+            second = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(first.returncode, 0, first.stderr)
+        self.assertEqual(first.stdout, second.stdout)
+        payload = json.loads(first.stdout)
+        self.assertEqual(payload["lang"], "en")
+        self.assertEqual(len(payload["notes"]), 1)
+        self.assertEqual(payload["ankiconnect"][0]["fields"]["Front"], "word")
+
+    def test_anki_build_cli_writes_reusable_package(self):
+        root = Path(__file__).resolve().parents[1]
+        entries = [{"key": "apkg-1", "text": "word", "meaning_fr": "mot"}]
+        with tempfile.TemporaryDirectory() as raw:
+            source = Path(raw) / "entries.json"
+            output = Path(raw) / "deck.apkg"
+            source.write_text(json.dumps(entries), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(root / "run.py"), "anki-build", "--entries", str(source), "--out", str(output), "--lang", "en"],
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertTrue(output.is_file())
+            self.assertTrue(zipfile.is_zipfile(output))
+
+
 class ContrastTests(unittest.TestCase):
     def test_contrast_ratio_math(self):
         self.assertAlmostEqual(contrast_ratio("#000000", "#ffffff"), 21.0, places=3)
@@ -1044,15 +1124,17 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertTrue((static / "css" / "themes.css").is_file())
         for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus"):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
             self.assertIn(marker, index)
         for marker in ("data-eds-settings-controls", "Theme preset", "Text size", "Reading font", "Default audio speed", "Show exercise answers immediately", "Mark texts as read while scrolling", "Reduce motion", "Reset settings"):
             self.assertIn(marker, index)
         for marker in ("data-eds-calendar", "Previous month", "Next month", "Recent editions", "Open edition", 'x-text="calendar().label"'):
+            self.assertIn(marker, index)
+        for marker in ("AnkiConnect URL", "data-eds-anki-connect", "data-eds-anki-connect-check", "data-eds-anki-connect-status", "Send to AnkiConnect", "Check AnkiConnect"):
             self.assertIn(marker, index)
         links = (static / "lib" / "links.js").read_text(encoding="utf-8")
         for marker in ("Read the full text", "Listen to the original audio"):
