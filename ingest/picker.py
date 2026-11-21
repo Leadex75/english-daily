@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 from typing import Any
 
+from app.db import default_language, level_config
 from ingest.readability import CATEGORIES, KINDS, LEVELS, band_center
 
 STAGES: tuple[dict[str, Any], ...] = (
@@ -115,6 +116,13 @@ def choose_picks(
     filled: list[str] = []
     empty: list[str] = []
 
+    lang = str(
+        config.get("_lang")
+        or (candidates[0].get("lang") if candidates else None)
+        or default_language(config)
+    )
+    thresholds, _ = level_config(config, lang)
+
     def select(pool: list[dict[str, Any]], center: float, level: str, target_level: str) -> dict[str, Any] | None:
         ordered = sorted(pool, key=lambda item: _sort_key(item, center))
         limited = [
@@ -148,7 +156,7 @@ def choose_picks(
         return None
 
     for target_level in LEVELS:
-        center = band_center(target_level, config["level_thresholds"])
+        center = band_center(target_level, thresholds)
         index = LEVELS.index(target_level)
         neighbors = [target_level]
         if index > 0:

@@ -34,24 +34,26 @@ def generate_reserves(
     lang: str | None = None,
 ) -> list[dict[str, Any]]:
     """One sampling pass per round, shared budget, fills every deficient bucket."""
-    budget = Budget(config, scale=scale)
     all_items = list(pool)
     language = str(lang or default_language(config))
+    scoring_config = dict(config)
+    scoring_config["_lang"] = language
+    budget = Budget(scoring_config, scale=scale)
     sources = load_sources(config, language)
     librivox_sources = [source for source in sources if source.get("type") == "librivox"
                         and source.get("enabled", True)]
     generators: list[tuple[str, Callable[[], list[dict[str, Any]]]]] = []
     if language == "en":
         generators.extend([
-            ("wikipedia", lambda: sample_wikipedia(config, budget)),
-            ("simple wikipedia", lambda: sample_wikipedia(config, budget, host="simple.wikipedia.org")),
-            ("wikipedia history", lambda: sample_history(config, budget, state_dir, lang=language)),
-            ("wikinews", lambda: sample_wikinews(config, budget)),
-            ("gutenberg", lambda: sample_gutenberg(config, budget, state_dir, lang=language)),
+            ("wikipedia", lambda: sample_wikipedia(scoring_config, budget)),
+            ("simple wikipedia", lambda: sample_wikipedia(scoring_config, budget, host="simple.wikipedia.org")),
+            ("wikipedia history", lambda: sample_history(scoring_config, budget, state_dir, lang=language)),
+            ("wikinews", lambda: sample_wikinews(scoring_config, budget)),
+            ("gutenberg", lambda: sample_gutenberg(scoring_config, budget, state_dir, lang=language)),
         ])
     for source in librivox_sources:
         generators.append((f"librivox {source['id']}", lambda source=source: sample_librivox(
-            config, budget, state_dir, source, int(config.get("new_books_per_run", 25)), lang=language
+            scoring_config, budget, state_dir, source, int(config.get("new_books_per_run", 25)), lang=language
         )))
 
     for _ in range(3):

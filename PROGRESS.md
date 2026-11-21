@@ -35,3 +35,13 @@
 - Selections prefer soft-window candidates first, keep source/audio caps where possible, and badge outside-preferred picks alongside existing archive/reserve/adjacent badges.
 - Tests: 12 unit tests passed, including explicit stage tracing, adjacent audio/text split and outside-preferred badges.
 - Verification: Python modules compile; `node --check` passes for frontend scripts.
+- Phase 3 committed as `617effb`.
+
+## Phase 4 — reserve and backfill refinements (done)
+
+- Reserve sampling, readability classification and the picker now use per-language `levels.<lang>.thresholds` instead of the global English thresholds.
+- Reserve candidates and pool items carry their language explicitly; `generate_reserves()` builds a language-scoped scoring config for all built-in and LibriVox generators.
+- `run.py backfill` is now idempotent: days with an existing successful ingest are skipped unless `--force` is passed, with processed/skipped counts in the summary.
+- `run_ingest()` summaries expose a 36-slot cascade trace for future reconstruct reporting.
+- Tests: 15 unit tests passed, including language-specific threshold use in picker and reserve, and backfill skip/force behavior.
+- Verification: Python modules compile; `node --check` passes; CLI backfill smoke succeeded in an isolated temp data directory.

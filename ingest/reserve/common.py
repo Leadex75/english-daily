@@ -7,6 +7,7 @@ import time
 from typing import Any
 from urllib.parse import urlencode
 
+from app.db import level_config
 from ingest.fetch_feeds import _wiki_headers, http_get, plain_text
 from ingest.fetch_text import clean_text, word_count
 from ingest.readability import classify, clamp_level, metrics
@@ -120,7 +121,8 @@ def make_candidate(
         if duration_sec is None:
             return None
     values = metrics(body[:4000])
-    level = clamp_level(classify(values["score"], config["level_thresholds"]), level_min, level_max)
+    thresholds, _ = level_config(config, config.get("_lang"))
+    level = clamp_level(classify(values["score"], thresholds), level_min, level_max)
     guid_seed = f"{source_id}:{title}:{url}:{published_at or ''}:{duration_sec or ''}"
     import hashlib
     guid = hashlib.sha1(guid_seed.encode("utf-8", "ignore")).hexdigest()
@@ -149,6 +151,7 @@ def make_candidate(
         "attribution": attribution,
         "origin": "reserve",
         "origin_kind": "reserve",
+        "lang": str(config.get("_lang") or "en"),
     }
     if extra:
         candidate.update(extra)

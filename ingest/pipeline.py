@@ -232,9 +232,11 @@ def run_ingest(
         candidates = _candidates(conn, language)
     finally:
         conn.close()
+    scoring_config = dict(config)
+    scoring_config["_lang"] = language
     cascade_trace: list[dict[str, Any]] = []
     picks, filled, empty = choose_picks(
-        candidates, day, config, excluded_hashes=excluded, trace=cascade_trace
+        candidates, day, scoring_config, excluded_hashes=excluded, trace=cascade_trace
     )
 
     phrases_count = 0

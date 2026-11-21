@@ -5,6 +5,7 @@ import random
 import re
 from typing import Any
 
+from app.db import level_config
 from ingest.fetch_audio import _https_candidate
 from ingest.pool import load_books, save_books
 from ingest.readability import classify, clamp_level, metrics
@@ -42,6 +43,7 @@ def gutenberg_text(gid: str, config: dict[str, Any], budget: Budget) -> str:
 
 
 def _book_level(text: str, fallback: str, config: dict[str, Any]) -> tuple[str, float, str]:
+    thresholds, _ = level_config(config, config.get("_lang"))
     words = text.split()
     if len(words) >= 400:
         scores = []
@@ -52,9 +54,9 @@ def _book_level(text: str, fallback: str, config: dict[str, Any]) -> tuple[str, 
                 scores.append(metrics(chunk)["score"])
         if scores:
             score = round(sum(scores) / len(scores), 4)
-            return clamp_level(classify(score, config["level_thresholds"]), "A1", "C2"), score, "computed"
+            return clamp_level(classify(score, thresholds), "A1", "C2"), score, "computed"
     values = metrics(fallback[:3000])
-    return clamp_level(classify(values["score"], config["level_thresholds"]), "A1", "C2"), values["score"], "source"
+    return clamp_level(classify(values["score"], thresholds), "A1", "C2"), values["score"], "source"
 
 
 def sample_librivox(

@@ -39,6 +39,8 @@ from ingest.phrases import generate_phrases, load_bank
 from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
 from ingest.readability import band_center
+from ingest.reserve.common import make_candidate
+import run
 
 
 class BankTests(unittest.TestCase):
@@ -172,6 +174,55 @@ class PickerTests(unittest.TestCase):
         picks, _, _ = choose_picks(candidates, day, config)
         chosen = next(item for item in picks.values() if item["guid_hash"] == "long-audio")
         self.assertIn("Outside preferred window", chosen["badges"])
+
+
+class ReserveBackfillTests(unittest.TestCase):
+    def test_picker_uses_language_specific_thresholds(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en", "fr"]
+        config["_lang"] = "fr"
+        with patch("ingest.picker.level_config", return_value=(dict(DEFAULTS["level_thresholds"]), {})) as mocked:
+            choose_picks([], "2026-11-21", config)
+        mocked.assert_called_once()
+        self.assertEqual(mocked.call_args.args[1], "fr")
+
+    def test_reserve_candidate_uses_language_specific_thresholds(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en", "fr"]
+        config["_lang"] = "fr"
+        with patch("ingest.reserve.common.level_config", return_value=(dict(DEFAULTS["level_thresholds"]), {})) as mocked:
+            candidate = make_candidate(
+                title="Sample",
+                text="word " * 200,
+                source_id="source",
+                source_name="Source",
+                category="news",
+                kind="text",
+                license_name="CC BY",
+                attribution="Source",
+                config=config,
+                url="https://example.org/sample",
+                published_at="2026-11-21",
+            )
+        mocked.assert_called_once_with(config, "fr")
+        self.assertIsNotNone(candidate)
+        self.assertEqual(candidate["lang"], "fr")
+
+    def test_backfill_skips_existing_days_unless_forced(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en"]
+        with patch("run.successful_ingest_exists", return_value=True), patch("run.run_ingest") as ingest:
+            summary = run._backfill(config, 3, None, None)
+            ingest.assert_not_called()
+            self.assertEqual(summary["skipped"], 3)
+            self.assertEqual(summary["processed"], 0)
+        with patch("run.successful_ingest_exists", return_value=True), patch(
+            "run.run_ingest", return_value={"filled": 4, "report": "ok"}
+        ) as ingest:
+            summary = run._backfill(config, 3, None, None, force=True)
+            self.assertEqual(ingest.call_count, 3)
+            self.assertEqual(summary["filled"], 12)
+            self.assertEqual(summary["skipped"], 0)
 
 
 class LanguagePathTests(unittest.TestCase):

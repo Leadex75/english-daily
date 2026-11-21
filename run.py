@@ -14,6 +14,7 @@ from app.db import (
     load_sources,
     normalize_language,
     prune_audio,
+    successful_ingest_exists,
     today,
     upsert_sources,
 )
@@ -27,6 +28,35 @@ def _languages(config: dict[str, Any], lang: str | None) -> list[str]:
     if lang:
         return [normalize_language(config, lang)]
     return available_languages(config)
+
+
+def _backfill(
+    config: dict[str, Any],
+    days: int,
+    state_dir: str | None,
+    lang: str | None,
+    force: bool = False,
+) -> dict[str, int]:
+    offline = dict(config)
+    offline["ingest_offline"] = True
+    offline["reserve_offline"] = True
+    offline["phrase_offline"] = True
+    languages = _languages(config, lang)
+    end = dt.date.fromisoformat(today(config))
+    total_filled = 0
+    skipped = 0
+    processed = 0
+    for offset in range(max(1, int(days)) - 1, -1, -1):
+        day = (end - dt.timedelta(days=offset)).isoformat()
+        for language in languages:
+            if not force and successful_ingest_exists(day, config, language):
+                skipped += 1
+                continue
+            summary = run_ingest(day, offline, state_dir=state_dir, lang=language)
+            total_filled += int(summary["filled"])
+            processed += 1
+            print(summary["report"])
+    return {"days": max(1, int(days)), "processed": processed, "skipped": skipped, "filled": total_filled}
 
 
 def _stats(config: dict[str, Any], days: int, lang: str | None = None) -> dict[str, Any]:
@@ -104,6 +134,7 @@ def main() -> int:
     backfill.add_argument("--days", type=int, default=90)
     backfill.add_argument("--state-dir", default=None)
     backfill.add_argument("--lang", default=None)
+    backfill.add_argument("--force", action="store_true", help="re-pick days that already have an ingest run")
 
     export = sub.add_parser("export-static", help="write a GitHub-Pages-ready site")
     export.add_argument("--out", default="site")
@@ -145,21 +176,11 @@ def main() -> int:
         return 0
 
     if command == "backfill":
-        offline = dict(config)
-        offline["ingest_offline"] = True
-        offline["reserve_offline"] = True
-        offline["phrase_offline"] = True
-        count = max(1, int(args.days))
-        languages = _languages(config, args.lang)
-        end = dt.date.fromisoformat(today(config))
-        total_filled = 0
-        for offset in range(count - 1, -1, -1):
-            day = (end - dt.timedelta(days=offset)).isoformat()
-            for language in languages:
-                summary = run_ingest(day, offline, state_dir=args.state_dir, lang=language)
-                total_filled += int(summary["filled"])
-                print(summary["report"])
-        print(f"Backfill complete: {total_filled} slot(s) filled across {count} day(s).")
+        summary = _backfill(config, int(args.days), args.state_dir, args.lang, force=args.force)
+        print(
+            f"Backfill complete: {summary['filled']} slot(s) filled across "
+            f"{summary['processed']} day/language pair(s); {summary['skipped']} skipped."
+        )
         return 0
 
     if command == "export-static":
