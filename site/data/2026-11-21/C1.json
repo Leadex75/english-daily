@@ -4,43 +4,43 @@
   "slots": {
     "news": {
       "text": {
-        "id": 30,
-        "title": "Haitians excited but uneasy as El Salvador troops fight gangs",
-        "source": "The Guardian - World news",
-        "url": "https://www.theguardian.com/world/2026/nov/21/excitement-unease-haiti-el-salvador-troops-gangs-war-bukele",
-        "published_at": "2026-11-21T11:00:57",
+        "id": 17,
+        "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+        "source": "BBC News - World",
+        "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-21T09:52:11",
         "level": "C1",
-        "word_count": 1329,
+        "word_count": 716,
         "duration_sec": null,
-        "body_text": "A bullet-peppered mural of the Haitian striker Emmanuel Sanon covers the facade of Port-au-Prince’s main football ground. But more than two years have passed since any sports stars graced the pitch. In 2024, as the surrounding city was almost entirely captured by heavily armed gangs, Sylvio Cator stadium – where football greats including Brazil’s Ronaldo and Roberto Carlos once played…",
+        "body_text": "- Published Negotiations at the COP31 UN climate summit in Turkey are in deadlock, having run through the night, as countries remain unable to agree on a new global climate deal.…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "e99e115c16a65cba2e94ab1daa6e613cec859812",
-        "summary": "Foreign combatants in Port-au-Prince welcomed by many after years of gang control but some fear offensive could exacerbate volatile situation A bullet-peppered mural of the Haitian striker Emmanuel Sanon covers the facade of Port-au-Prince’s main football ground. But more than two years have passed since any sports stars graced the pitch. In 2024, as the surrounding city was almost entirely captured by heavily armed gangs , Sylvio Cator stadium – where football greats including Brazil’s Ronaldo and Roberto Carlos once played – also fell under criminal control, its dilapidated red and blue stands used as an outpost by fighters working for a gang boss called Izo. Haiti’s national team, the Grenadiers, found itself homeless and was forced to play its World Cup qualifying games abroad . Continue reading..."
+        "guid_hash": "7e0d3766c1c763fe768501928e9f9224133241dc",
+        "summary": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
       },
       "audio": null
     },
     "culture": {
       "text": {
-        "id": 36,
-        "title": "In a Sydney gallery, Philippe Parreno’s art is powered by a desert 17,000km away",
+        "id": 37,
+        "title": "Delays mean Robert Pattinson doesn’t have to do a third Batman movie. DC Studios had better persuade him – and fast",
         "source": "The Guardian - Culture",
-        "url": "https://www.theguardian.com/artanddesign/2026/nov/21/in-a-sydney-gallery-philippe-parrenos-art-is-powered-by-a-desert-17000km-away",
-        "published_at": "2026-11-21T01:00:43",
+        "url": "https://www.theguardian.com/film/2026/nov/20/robert-pattinson-batman-james-bond-third-movie-delays-dc",
+        "published_at": "2026-11-20T15:35:15",
         "level": "C1",
-        "word_count": 831,
+        "word_count": 702,
         "duration_sec": null,
-        "body_text": "I’m standing in a massive white-cube space, staring at a perplexing assortment of objects. There are several expensive looking lamps; a massive industrial fan; a couple of speakers; marquee-style lights; a glowing assemblage of power adapters. At the back of the gallery, a silvery light slides up and down a pole. The bulbs are flickering erratically, and there’s a low…",
+        "body_text": "Can one actor play both Batman and James Bond? This is the question many have been asking since Robert Pattinson was announced as the new 007. The obvious answer is yes: the 40-year-old Englishman has the poise, charisma and steel to join His Majesty’s Secret Service, and saving Gotham could soon become something he fits in between assignments. Among all…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "e75b5ef2d4b8c040d002e10bf651f297bc101fa6",
-        "summary": "In the Museum of Contemporary Art, the French artist’s first major Australian show is truly unpredictable – influenced by real-time data coming from a Spanish farm I’m standing in a massive white-cube space, staring at a perplexing assortment of objects. There are several expensive looking lamps; a massive industrial fan; a couple of speakers; marquee-style lights; a glowing assemblage of power adapters. At the back of the gallery, a silvery light slides up and down a pole. The bulbs are flickering erratically, and there’s a low hum of machine noise, overlaid with bird song and distant barking. As an installation, taken by itself, it’s deceptively underwhelming – a spectacle without a story. Continue reading..."
+        "guid_hash": "b6fc19de9411d5272060f237f8405224dd13b5b0",
+        "summary": "The actor’s new role as James Bond could be bad news for DC, as a new owner, new chief and new director already threaten to shake and stir Gotham’s distinctive hero Can one actor play both Batman and James Bond? This is the question many have been asking since Robert Pattinson was announced as the new 007 . The obvious answer is yes: the 40-year-old Englishman has the poise, charisma and steel to join His Majesty’s Secret Service, and saving Gotham could soon become something he fits in between assignments. Among all the furore over Pattinson’s appointment, it would have been easy to miss some rather less cheering news for the citizens of Gotham. According to the Wrap , delays to The Batman: Part II have freed the actor from his contractual obligation to make a third film. The sequel is now due in February 2028, almost six years after the first instalment. He could still sign a new deal, of course, but Warner Bros will have to persuade its caped crusader to stick around. Continue reading..."
       },
       "audio": null
     }
