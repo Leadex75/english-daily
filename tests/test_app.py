@@ -706,6 +706,20 @@ class SearchApiTests(unittest.TestCase):
         self.assertEqual(search.call_args.kwargs["level"], "B1")
 
 
+class DocsTests(unittest.TestCase):
+    def test_readme_documents_current_commands_and_features(self):
+        root = Path(__file__).resolve().parents[1]
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        for marker in (
+            "python run.py reconstruct", "python run.py doctor --json",
+            "python desktop/main.py", "python tools/build_desktop.py",
+            "/api/search", "site/data/<lang>/search/YYYY-MM-DD.json",
+            "Actions → daily → Run workflow", "contract_version: 2",
+            "static/lib/", "no LLM",
+        ):
+            self.assertIn(marker, readme)
+
+
 class WorkflowTests(unittest.TestCase):
     def test_workflows_are_valid_and_wire_required_commands(self):
         root = Path(__file__).resolve().parents[1]

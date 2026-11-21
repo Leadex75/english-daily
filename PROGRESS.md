@@ -117,3 +117,10 @@
 - Added a manual/tag desktop workflow that builds zipapps on Linux, Windows and macOS plus an optional Windows executable artifact.
 - Tests: 25 unit tests passed, including YAML validity and required workflow commands.
 - Verification: `compileall` and all JavaScript syntax checks pass.
+- Phase 12 committed as `40ad251`.
+
+## Phase 13 — documentation refresh (done)
+
+- README now documents multilingual layout, reconstruction/backfill, enriched contract, search, exercises/tour, PWA, desktop launcher/build, all three workflows, source resilience and publishing rules.
+- Tests: 26 unit tests passed, including documentation coverage of current commands, paths and APIs.
+- Verification: `compileall` and all JavaScript syntax checks pass.
