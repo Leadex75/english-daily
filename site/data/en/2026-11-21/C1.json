@@ -5,304 +5,501 @@
   "slots": {
     "news": {
       "text": {
-        "id": 24,
-        "title": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
+        "id": 22,
+        "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-20T19:27:49",
+        "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-21T13:15:21",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 684,
+        "word_count": 483,
         "duration_sec": null,
-        "body_text": "A federal judge sentenced an Indian man to 235 months, more than 19 years, in an attempted plot to kill a leading Sikh political figure in the US. Nikhil Gupta, an Indian national, pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February.",
+        "body_text": "A Mexican drug lord who was on the FBI's 10 most wanted list has been arrested following a shoot-out with Mexican authorities. Fausto Isidro \"Chapo Isidro\" Meza Flores and seven others were detained by Mexican special forces in Guasave, Sinaloa on Friday, Mexico's defence secretariat said.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "25ecedcd4330497b0855434233582cc96b3ddb6f",
-        "summary": "Nikhil Gupta pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February.",
+        "guid_hash": "115014a6f9e88a22c655b88cc22f1241ef5f0b59",
+        "summary": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader — BBC News - World",
+        "alt_text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out — BBC News - World",
         "duration_formatted": "",
         "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 4
+        "reading_time_min": 3
       },
-      "audio": null
+      "audio": {
+        "id": 6,
+        "title": "Government Funding Pressure On Iran War, National Security & Tech, Iowa Detonation",
+        "source": "NPR Up First",
+        "source_id": "npr_up_first",
+        "category": "news",
+        "url": "https://www.npr.org/2026/11/20/nx-s1-6048392/government-funding-pressure-on-iran-war-national-security-tech-iowa-detonation",
+        "published_at": "2026-11-20T10:54:51",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "B2",
+        "word_count": 242,
+        "duration_sec": 771,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/7f325634-ed4b-4332-8204-e74e770ac411/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_7833a76b26103f0a5eb96242e6b69fa1_15034858.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=7f325634-ed4b-4332-8204-e74e770ac411&feed=HMwRVgVt&t=podcast&e=nx-s1-6048392&p=510318&d=771&size=12349902&hash_redirect=1&x-total-bytes=15034858&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__b6480dc18d440a2a4e9998e1f665b0787bc1cc3f",
+        "description": "Democrats are weighing whether to use the government funding deadline to cut off money for the war in Iran, exposing divisions over how quickly the party should act. The Trump administration approved sales of advanced U.S. chips to Chinese companies, including some the Pentagon has linked to China’s military, fueling a debate over whether those sales help America compete or create new security risks. The Army delayed plans to destroy thousands of pounds of unstable bomb-making material in Iowa after public pressure and a lawsuit, even as officials warn colder weather could make it more dangerous.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "5e034a2b56359c0015551db8e58893dfc6937667",
+        "summary": "Democrats are weighing whether to use the government funding deadline to cut off money for the war in Iran, exposing divisions over how quickly the party should act. The Trump administration approved sales of advanced U.S. chips to Chinese companies, including some the Pentagon has linked to China’s military, fueling a debate over whether those sales help America compete or create new security risks. The Army delayed plans to destroy thousands of pounds of unstable bomb-making material in Iowa after public pressure and a lawsuit, even as officials warn colder weather could make it more dangerous.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Government Funding Pressure On Iran War, National Security & Tech, Iowa Detonation — NPR Up First",
+        "duration_formatted": "12:51",
+        "source_url": "https://feeds.npr.org/510318/podcast.xml",
+        "reading_time_min": 0
+      }
     },
     "culture": {
       "text": {
-        "id": 73,
-        "title": "Talking_to_Yourself",
-        "source": "Wikipedia - Featured article",
-        "source_id": "wikipedia_featured",
+        "id": 48,
+        "title": "International UN talks on controlling use of autonomous weapons collapse",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
         "category": "culture",
-        "url": "https://en.wikipedia.org/wiki/Talking_to_Yourself",
-        "published_at": "2026-11-21T00:00:00",
+        "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+        "published_at": "2026-11-21T16:36:11",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 971,
+        "word_count": 663,
         "duration_sec": null,
-        "body_text": "\"Talking to Yourself\" is a song by Canadian singer Carly Rae Jepsen from her sixth studio album, The Loneliest Time (2022). Jepsen wrote it with songwriter Simon Wilcox and its producers, Benjamin Berger and Ryan Rabin from the production team Captain Cuts. School Boy and Interscope Records released it as the album's third single on September 16, 2022. \"Talking to Yourself\" is a dance-pop and synth-pop song, in which Jepsen recalls a relationship with an ex-lover and wonders if he still has feelings for her. \"Talking to Yourself\" received generally positive reviews from critics, who praised its production as catchy, comparing its lyrical themes to Jepsen's other music. It peaked at number eight on the Billboard Japan Hot Overseas Songs chart. The music video for \"Talking to Yourself\" was released alongside it. She included the song on the set list of her 2022–2023 concert tour, the So Nice Tour, and performed it at the Glastonbury Festival 2023. == Background and release == While on the Dedicated Tour, which ran from May 2019 to February 2020, Carly Rae Jepsen began collecting ideas for her sixth studio album in February. Her creativity was stimulated by lockdowns during the COVID-19 pandemic, and she transformed an old office space that was a part of her Los Angeles residence into a home studio. Jepsen endured problems in her personal life, being unable to join her family in Canada due to travelling restrictions, dealing with the death of her grandmother, and being newly single. She created more than 100 songs, eventually deciding on a track list of just 13. On August 1, 2022, Jepsen announced that the album, titled The Loneliest Time, would be released on October 21, 2022. It was preceded by the singles \"Western Wind\" and \"Beach House\" (both 2022), which were included on it. Jepsen wrote \"Talking to Yourself\" alongside songwriter Simon Wilcox, and Benjamin Berger and Ryan Rabin from the production team Captain Cuts. On September 13, 2022, she shared a 17-second snippet of the song on social media and wrote that it would come out the following Friday so her fans could memorize the words before the So Nice Tour began. School Boy and Interscope Records released it along with a music video as the album's third single three days later. \"Talking to Yourself\" peaked at number eight on the Billboard Japan Hot Overseas Songs chart. The song was included on the set list of the So Nice Tour, and Jepsen performed it at the Glastonbury Festival 2023. == Composition == \"Talking to Yourself\" is two minutes and 53 seconds long. Captain Cuts produced the song and recorded it at their namesake studio in Los Angeles, also handling engineering with Rob Kinelski and Eli Heisler; Berger and Wilcox provided programming. Trevor Rabin plays the guitar. Emily Lazar and Chris Allgood mastered it at the Lodge in New York City and Kinelski handled mixing at the Fortress of Amplitude in Los Angeles. A dance-pop and synth-pop song with a strong beat and influences from 1980s music, \"Talking to Yourself\" includes a guitar solo, which \"battles synth\" according to Clash's Gem Stokes. Entertainment Weekly's Maura Johnston observed that warped 1980s guitar weaves through Jepsen's persistent vocals, succeeded by a piercing bass line and unwavering beat. Chris DeVille of Stereogum thought it kept with the 1980s pastiche of Jepsen's albums Emotion (2015) and Dedicated (2019), and Jeffrey Davies of PopMatters said it continued the shimmering and buoyant pop of her previous music. Peter Piatkowski from the same website described the style of \"Talking to Yourself\" as new wave. In the lyrics of \"Talking to Yourself\", Jepsen recalls a relationship with an ex-lover and wonders if he still has feelings for her. She obsesses over him and thinks about the possibility that he is unable to sleep at night without her. Consequence's Mary Siroky believed the song's lyrics were ambiguous about whether the topic was a serious relationship, friends-with-benefits, or just an infatuation. According to Ben Kaye of the same website, it is \"for those who come out on the winning side of a breakup\". == Critical reception == The song's production received generally positive reviews. Critics like Siroky and The A.V. Club's Gabrielle Sanchez believed \"Talking to Yourself\" has a catchy chorus. The former picked the track as \"Song of the Week\". Rolling Stone's Emily Zemler described it as a sanguine track and a \"dance-pop anthem\". American Songwriter critic Alli Patton and Kaye thought \"Talking to Yourself\" was suitable to dance to; Patton believed it complemented Jepsen's lively vocals, and Kaye said it struck the perfect balance between seductive and dance-floor-ready. Ben Devlin of MusicOMH named it the \"first big hit\" on The Loneliest Time's tracklist and compared its topline to the work of Divinyls. Writing for The Line of Best Fit, Sam Franzini cited \"Talking to Yourself\" among the pop treasures on the album and named it as one of Jepsen's most high-energy songs. On the other hand, Pitchfork's Olivia Horn wrote that the song sounds like \"two different Dua Lipa outtakes cut-and-pasted together\", using some diverting production flourishes. Some critics commented on the lyrics of \"Talking to Yourself\", comparing its lyrical themes to Jepsen's other music. Siroky called the song unashamedly compulsive, and she opined it gives a voice to the \"delightfully unhinged\" while demonstrating Jepsen's pop sensibilities. Todd Dedman of Beats Per Minute thought it shared its concept of inconspicuousness in relationships with the Emotion track \"When I Needed You\". Writing for AllMusic, Heather Phares believed \"Talking to Yourself\" demonstrated feeling both detached and attached simultaneously, a running motif on The Loneliest Time, and Patton thought the lyrics realized the album's general theme of loneliness. == Credits and personnel == Credits are adapted from the liner notes of The Loneliest Time. Captain Cuts – producer, engineering Carly Rae Jepsen – songwriter Simon Wilcox – songwriter, programming Benjamin Berger – songwriter, programming Ryan Rabin – songwriter Eli Heisler – engineering Trevor Rabin – guitar Emily Lazar – mastering Chris Allgood – mastering Rob Kinelski – mixing, engineering == Charts == == Note == == References ==",
+        "body_text": "Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am after all-night talks failed to overcome Russian objections.",
         "audio_url": null,
         "description": null,
-        "license": "cc_by_sa",
-        "attribution": "Wikipedia, CC BY-SA 4.0",
-        "truncated": false,
-        "guid_hash": "c05c9818eeaf1ab9f3b55951c39fa06f55411ff9",
-        "summary": "\"Talking to Yourself\" is a song by Canadian singer Carly Rae Jepsen from her sixth studio album, The Loneliest Time (2022). Jepsen wrote it with songwriter Simon Wilcox and its producers, Benjamin Berger and Ryan Rabin from the production team Captain Cuts. School Boy and Interscope Records released it as the album's third single on September 16, 2022. \"Talking to Yourself\" is a dance-pop and synt",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "5398e2d2fae545cae42b97f658f3a6300bbf0660",
+        "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am after all-night talks failed to overcome Russian objections. Despite an overwhelming majority of states at the UN’s Convention on Certain Conventional Weapons (CCW) in Geneva wanting to agree a negotiating mandate leading to a legally binding treaty, the need for consensus forced the conference to adopt a much weaker option.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Talking_to_Yourself — Wikipedia - Featured article",
+        "alt_text": "International UN talks on controlling use of autonomous weapons collapse — The Guardian - Science",
         "duration_formatted": "",
-        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/featured",
-        "reading_time_min": 5
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 4
       },
-      "audio": null
+      "audio": {
+        "id": 1475926658,
+        "title": "Lost World - \"HE IS A PERFECTLY IMPOSSIBLE PERSON\"",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/the-lost-world/",
+        "published_at": "2026-11-21T18:27:17",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 87,
+        "duration_sec": 951,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/lost_world_librivox/lostworld_03_doyle_64kb.mp3",
+        "description": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "07507b0aa59932652a653eb7667ad6cef28225d4",
+        "summary": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Lost World - \"HE IS A PERFECTLY IMPOSSIBLE PERSON\" — LibriVox (culture)",
+        "duration_formatted": "15:51",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     },
     "history": {
       "text": null,
-      "audio": null
+      "audio": {
+        "id": 1107837937,
+        "title": "Our Island Story, Part 2 - The Red Rose and the White",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/our-island-story-part-2-by-he-marshall/",
+        "published_at": "2026-11-21T16:08:26",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 213,
+        "duration_sec": 681,
+        "body_text": null,
+        "audio_url": "https://archive.org/download/our_island_story_2_librivox/our_island_story_055_marshall_64kb.mp3",
+        "description": "Our Island Story, Part 2 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "7130c3a4ff77a9dfe5863d7448a1393f36ae849d",
+        "summary": "Our Island Story, Part 2 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (history & biography)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Our Island Story, Part 2 - The Red Rose and the White — LibriVox (history & biography)",
+        "duration_formatted": "11:21",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     }
   },
   "phrase": {
     "date": "2026-11-21",
     "level": "C1",
     "word": {
-      "text": "coherent",
+      "text": "consensus",
       "level": "C1",
       "type": "word",
-      "pos": "adjective",
-      "phonetic": "/koʊˈhɪrənt/",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "anki_answer": "cohérent",
+      "pos": "noun",
+      "phonetic": "/kənˈsensəs/",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ],
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/koːˈhiɹənt/",
+        "phonetic": null,
         "definitions": [
-          "Unified; sticking together; making up a whole.",
-          "Orderly, logical and consistent.",
-          "Aesthetically ordered.",
-          "Having a natural or due agreement of parts; harmonious: a coherent design."
+          "A process of decision-making that seeks widespread agreement among group members.",
+          "General agreement among the members of a given group or community, each of which exercises some discretion in decision-making and follow-up action.",
+          "Average projected value."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/coherent-au.mp3"
+        "audio_url": null
       },
       "wiktionary": {
         "definitions": [
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/unified\" title=\"unified\">Unified</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/sticking\" title=\"sticking\">sticking</a> <a rel=\"mw:WikiLink\" href=\"/wiki/together\" title=\"together\">together</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/making_up\" title=\"making up\">making up</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/whole\" title=\"whole\">whole</a>.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/orderly\" title=\"orderly\">Orderly</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/logical\" title=\"logical\">logical</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/consistent\" title=\"consistent\">consistent</a>.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/aesthetic\" title=\"aesthetic\">Aesthetically</a> ordered.",
-          "Having a natural or due agreement of parts; harmonious: a coherent design."
+          "A process of <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Group%20decision-making#Decision-making_in_social_settings\" title=\"w:Group decision-making\" class=\"extiw\">decision-making</a> that seeks widespread agreement among group members.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/general#Adjective\" title=\"general\">General</a> agreement among the members of a given group or community, each member of which exercises some <a rel=\"mw:WikiLink\" href=\"/wiki/discretion\" title=\"discretion\">discretion</a> in decision-making and follow-up action.",
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a> on some data value that is needed during <a rel=\"mw:WikiLink\" href=\"/wiki/computation\" title=\"computation\">computation</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Average projected value."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "set the record straight",
+      "expression": "take something in stride",
       "level": "C1",
       "type": "idiom",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
-      "anki_answer": "remettre à plat",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ],
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/correct\" title=\"correct\">correct</a> a previous <a rel=\"mw:WikiLink\" href=\"/wiki/error\" title=\"error\">error</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/misunderstanding\" title=\"misunderstanding\">misunderstanding</a>, especially one <a rel=\"mw:WikiLink\" href=\"/wiki/in_print\" title=\"in print\">in print</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/cope\" title=\"cope\">cope</a> with something unfortunate without much <a rel=\"mw:WikiLink\" href=\"/wiki/effort\" title=\"effort\">effort</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/accept\" title=\"accept\">accept</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/manage\" title=\"manage\">manage</a> difficulties well."
         ]
       },
       "audio": null
+    },
+    "history": {
+      "text": "suffrage",
+      "aliases": [
+        "suffrage",
+        "voting rights"
+      ],
+      "level": "C1",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "period": "19th century",
+      "theme": "Society",
+      "example": "Women's suffrage expanded democracy.",
+      "tags": [
+        "rights"
+      ],
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "level": "A1",
-      "text": "teacher",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "phonetic": "/ˈtiːtʃər/",
-      "anki_answer": "professeur",
+      "text": "walk",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "phonetic": "/wɔːk/",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ]
     },
     {
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "level": "A1",
-      "text": "be late",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
+      "text": "be tired",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
       "phonetic": "",
-      "anki_answer": "en retard",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ]
     },
     {
-      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history",
+      "level": "A1",
+      "text": "war",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "example": "The war ended many years ago.",
+      "phonetic": "",
+      "anki_answer": "guerre",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
       "kind": "word",
       "level": "A2",
-      "text": "bridge",
-      "meaning": "a structure crossing a river or road",
-      "meaning_fr": "pont",
-      "example": "The bridge crosses the river.",
-      "phonetic": "/brɪdʒ/",
-      "anki_answer": "pont",
+      "text": "decide",
+      "meaning": "choose after thinking",
+      "meaning_fr": "décider",
+      "example": "You must decide today.",
+      "phonetic": "/dɪˈsaɪd/",
+      "anki_answer": "décider",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be excited about",
+      "meaning": "feel happy and eager about a future event",
+      "meaning_fr": "être impatient à l'idée de",
+      "example": "She is excited about the trip.",
+      "phonetic": "",
+      "anki_answer": "impatient",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "8391409731bf858babbdef8315d9bd81155e390c",
+      "kind": "history",
+      "level": "A2",
+      "text": "castle",
+      "meaning": "a strong building from the Middle Ages",
+      "meaning_fr": "château",
+      "example": "The castle stands on a hill.",
+      "phonetic": "",
+      "anki_answer": "château",
       "tags": [
         "places"
       ]
     },
     {
-      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be different from",
-      "meaning": "not the same as",
-      "meaning_fr": "être différent de",
-      "example": "This one is different from that one.",
-      "phonetic": "",
-      "anki_answer": "différent",
-      "tags": [
-        "comparison"
-      ]
-    },
-    {
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "level": "B1",
-      "text": "behavior",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "phonetic": "/bɪˈheɪvjər/",
-      "anki_answer": "comportement",
+      "text": "border",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "phonetic": "/ˈbɔːrdər/",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ]
     },
     {
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "level": "B1",
-      "text": "by the way",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
+      "text": "call it a day",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
       "phonetic": "",
-      "anki_answer": "au fait",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ]
     },
     {
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history",
+      "level": "B1",
+      "text": "dynasty",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "example": "The dynasty ruled for two centuries.",
+      "phonetic": "",
+      "anki_answer": "dynastie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "level": "B2",
-      "text": "prevent",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "phonetic": "/prɪˈvent/",
-      "anki_answer": "empêcher",
+      "text": "reasonable",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "phonetic": "/ˈriːznəbl/",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ]
     },
     {
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "level": "B2",
-      "text": "let the cat out of the bag",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
+      "text": "look on the bright side",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
       "phonetic": "",
-      "anki_answer": "divulguer secret",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ]
     },
     {
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history",
+      "level": "B2",
+      "text": "renaissance",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "example": "The renaissance produced great art.",
+      "phonetic": "",
+      "anki_answer": "renaissance",
+      "tags": [
+        "art"
+      ]
+    },
+    {
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "level": "C1",
-      "text": "coherent",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "phonetic": "/koʊˈhɪrənt/",
-      "anki_answer": "cohérent",
+      "text": "consensus",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "phonetic": "/kənˈsensəs/",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ]
     },
     {
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "level": "C1",
-      "text": "set the record straight",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
+      "text": "take something in stride",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
       "phonetic": "",
-      "anki_answer": "remettre à plat",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ]
     },
     {
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history",
+      "level": "C1",
+      "text": "suffrage",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "example": "Women's suffrage expanded democracy.",
+      "phonetic": "",
+      "anki_answer": "suffrage",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "level": "C2",
-      "text": "vituperative",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "anki_answer": "injurieux",
+      "text": "recondite",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "phonetic": "/ˈrekəndaɪt/",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ]
     },
     {
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "level": "C2",
-      "text": "throw down the gauntlet",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
+      "text": "tread water",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
       "phonetic": "",
-      "anki_answer": "jeter gant",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
+      ]
+    },
+    {
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history",
+      "level": "C2",
+      "text": "hegemony",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "example": "The empire maintained regional hegemony.",
+      "phonetic": "",
+      "anki_answer": "hégémonie",
+      "tags": [
+        "power"
       ]
     }
   ],
@@ -312,15 +509,15 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “teacher” mean?",
+      "prompt": "What does “walk” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "professeur",
-      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+      "answer": "marcher",
+      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
     },
     {
       "id": "A1-expression",
@@ -329,163 +526,253 @@
       "level": "A1",
       "prompt": "Complete the expression: be ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "late",
-      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+      "answer": "tired",
+      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “war” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “bridge” mean?",
+      "prompt": "What does “decide” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "pont",
-      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+      "answer": "décider",
+      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ from",
+      "prompt": "Complete the expression: be ____ about",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "different",
-      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+      "answer": "excited",
+      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “castle” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “behavior” mean?",
+      "prompt": "What does “border” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "comportement",
-      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+      "answer": "frontière",
+      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: by the ____",
+      "prompt": "Complete the expression: ____ it a day",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "way",
-      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+      "answer": "call",
+      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “dynasty” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “prevent” mean?",
+      "prompt": "What does “reasonable” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "empêcher",
-      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+      "answer": "raisonnable",
+      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "prompt": "Complete the expression: look on the ____ side",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "out",
-      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+      "answer": "bright",
+      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “renaissance” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “coherent” mean?",
+      "prompt": "What does “consensus” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "cohérent",
-      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+      "answer": "consensus",
+      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: set the record ____",
+      "prompt": "Complete the expression: take ____ in stride",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "straight",
-      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+      "answer": "something",
+      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “suffrage” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “vituperative” mean?",
+      "prompt": "What does “recondite” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "injurieux",
-      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+      "answer": "ésotérique",
+      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: throw down the ____",
+      "prompt": "Complete the expression: tread ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "gauntlet",
-      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+      "answer": "water",
+      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “hegemony” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Cold War",
+      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
     }
   ],
   "tour": [
@@ -528,15 +815,17 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 2,
+    "filled": 5,
     "total": 6,
     "origins": {
-      "fresh": 2
+      "reserve": 2,
+      "fresh": 2,
+      "adjacent": 1
     },
-    "source_count": 2,
+    "source_count": 5,
     "phrase_count": 6,
-    "glossary_count": 12,
-    "exercise_count": 12,
+    "glossary_count": 18,
+    "exercise_count": 18,
     "history_periods": [],
     "history_themes": [],
     "search_path": "./data/en/search/2026-11-21.json"

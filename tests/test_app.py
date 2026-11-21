@@ -184,6 +184,14 @@ class TextCleaningTests(unittest.TestCase):
         self.assertNotIn("...", cleaned)
         self.assertNotIn(".…", cleaned)
 
+    def test_clean_text_removes_npr_podcast_boilerplate(self):
+        raw = (
+            "The headlines are here. Want more analysis? Subscribe to the Up First newsletter. "
+            "Support public media with NPR+ and enjoy perks for over 25 podcasts. This show’s "
+            "perks include sponsor-free listening. Learn more at plus.npr.org . NPR Privacy Policy"
+        )
+        self.assertEqual(clean_text(raw, dict(DEFAULTS)), "The headlines are here.")
+
     def test_extract_article_cleans_trafilatura_output(self):
         class Response:
             text = "<html><body>article</body></html>"

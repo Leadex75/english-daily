@@ -9,39 +9,74 @@
     },
     "culture": {
       "text": {
-        "id": 71,
-        "title": "Christoph Leitgeb",
+        "id": 59,
+        "title": "21st German Bundestag",
         "source": "Simple English Wikipedia",
         "source_id": "wikipedia_simple",
         "category": "culture",
-        "url": "https://simple.wikipedia.org/wiki/Christoph_Leitgeb",
-        "published_at": "2026-11-21T00:12:13",
+        "url": "https://simple.wikipedia.org/wiki/21st_German_Bundestag",
+        "published_at": "2026-11-21T18:25:45",
         "level": "A1",
         "slot_level": "A1",
         "source_level": "A2",
-        "word_count": 196,
+        "word_count": 77,
         "duration_sec": null,
-        "body_text": "Christoph Leitgeb (born 14 April 1985 in Graz) is a former Austrian football player. He played in the Austrian Bundesliga for F. C. Red Bull Salzburg and Sturm Graz as a midfielder. He also played in the national team and was a member of Austria's team at Euro 2008. == Career == He started playing football in the youth teams of SK Sturm Graz in his hometown. In the 2005–06 season he played his first match in the first team of Sturm Graz. The first goal he scored was on 22 April 2006 against Red Bull Salzburg. After two seasons with Sturm Graz he signed with FC Red Bull Salzburg. In his first year he played regularly, but in his second year he had problems with his knees. The following years he came back and played very often from the beginning. After spending 12 years in Salzburg he went back to SK Sturm Graz. In 2020 he ended his career and works now as scout for SK Sturm. == International career == His first international match was in a friendly against Croatia on 23 June 2006. (1–4). He played 41 times for Austria. == Career statistics == As of matches played on 7 May 2018. === International === == Honours == Red Bull Salzburg Austrian Football Bundesliga: 2008–09, 2009–10, 2011–12, 2013–14, 2014–15, 2015–16 Austrian Cup: 2011–12, 2013–14, 2014–15, 2015–16 == References ==",
+        "body_text": "The 21st Bundestag of Germany was elected on 23 February 2025. The President of the Bundestag is currently Julia Klöckner (CDU). It has 630 members (down from 733 in the previous Bundestag). On 6 May 2025 Friedrich Merz (CDU) was chosen as Chancellor of Germany and sworn in. He failed to win enough support in a first round of voting – a first in German history for a chancellor candidate. == Parties == This is the composition of the 21st Bundestag as of May 2025: == References ==",
         "audio_url": null,
         "description": null,
         "license": "cc_by_sa",
         "attribution": "Wikipedia, CC BY-SA 4.0",
         "truncated": false,
-        "guid_hash": "a40cd299be1d143d27de92981f3c24d14eaa2a3d",
-        "summary": "Christoph Leitgeb (born 14 April 1985 in Graz) is a former Austrian football player. He played in the Austrian Bundesliga for F. C. Red Bull Salzburg and Sturm Graz as a midfielder. He also played in the national team and was a member of Austria's team at Euro 2008. == Career == He started playing football in the youth teams of SK Sturm Graz in his hometown. In the 2005–06 season he played his fir",
+        "guid_hash": "776c2911a586d01cbc44264895ef69fdefb32b98",
+        "summary": "The 21st Bundestag of Germany was elected on 23 February 2025. The President of the Bundestag is currently Julia Klöckner (CDU). It has 630 members (down from 733 in the previous Bundestag). On 6 May 2025 Friedrich Merz (CDU) was chosen as Chancellor of Germany and sworn in. He failed to win enough support in a first round of voting – a first in German history for a chancellor candidate. == Partie",
         "origin": "adjacent",
         "badges": [
-          "Closest level: A2"
+          "Closest level: A2",
+          "Outside preferred window"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Christoph Leitgeb — Simple English Wikipedia",
+        "alt_text": "21st German Bundestag — Simple English Wikipedia",
         "duration_formatted": "",
         "source_url": "https://simple.wikipedia.org/w/api.php",
         "reading_time_min": 1
       },
-      "audio": null
+      "audio": {
+        "id": 1454688059,
+        "title": "Voice of the Ancient Bard - Version 1",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/voice-of-the-ancient-bard-by-william-blake/",
+        "published_at": "2026-11-21T18:27:57",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 33,
+        "duration_sec": 70,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/bard_librivox/ancient_bard_blake_hm_64kb.mp3",
+        "description": "Voice of the Ancient Bard by . LibriVox volunteers bring you six different readings of The Voice of the Ancient Bard , by William Blake. This is a weekly poetry project. (Summary by Annie Coleman)",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "1a36a2d31c5f3d9ad4026650b9cd80546c27dd45",
+        "summary": "Voice of the Ancient Bard by . LibriVox volunteers bring you six different readings of The Voice of the Ancient Bard , by William Blake. This is a weekly poetry project. (Summary by Annie Coleman)",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: A2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Voice of the Ancient Bard - Version 1 — LibriVox (culture)",
+        "duration_formatted": "1:10",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
     },
     "history": {
       "text": null,
@@ -52,230 +87,327 @@
     "date": "2026-11-21",
     "level": "A1",
     "word": {
-      "text": "teacher",
+      "text": "walk",
       "level": "A1",
       "type": "word",
-      "pos": "noun",
-      "phonetic": "/ˈtiːtʃər/",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "anki_answer": "professeur",
+      "pos": "verb",
+      "phonetic": "/wɔːk/",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ],
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ˈtiːt͡ʃə/",
+        "phonetic": "/wɔːk/",
         "definitions": [
-          "A person who teaches, especially one employed in a school.",
-          "The index finger; the forefinger.",
-          "An indication; a lesson.",
-          "The second highest office in the Aaronic priesthood, held by priesthood holders of at least the age of 14."
+          "To move on the feet by alternately setting each foot (or pair or group of feet, in the case of animals with four or more feet) forward, with at least one foot on the ground at all times. Compare run.",
+          "To \"walk free\", i.e. to win, or avoid, a criminal court case, particularly when actually guilty.",
+          "Of an object, to go missing or be stolen.",
+          "(of a batsman) To walk off the field, as if given out, after the fielding side appeals and before the umpire has ruled; done as a matter of sportsmanship when the batsman believes he is out."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/teacher-uk.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/walk-au.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "A person who <a rel=\"mw:WikiLink\" href=\"/wiki/teach\" title=\"teach\">teaches</a>, especially one employed in a <a rel=\"mw:WikiLink\" href=\"/wiki/school\" title=\"school\">school</a>; preceptor.",
-          "The <a rel=\"mw:WikiLink\" href=\"/wiki/index_finger\" title=\"index finger\">index finger</a>; the <a rel=\"mw:WikiLink\" href=\"/wiki/forefinger\" title=\"forefinger\">forefinger</a>.",
-          "An <a rel=\"mw:WikiLink\" href=\"/wiki/indication\" title=\"indication\">indication</a>; a <a rel=\"mw:WikiLink\" href=\"/wiki/lesson\" title=\"lesson\">lesson</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> The second highest office in the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Aaronic%20priesthood\" title=\"w:Aaronic priesthood\" class=\"extiw\">Aaronic priesthood</a>, held by priesthood holders of at least the age of 14."
+          "<span class=\"usage-label-sense\" about=\"#mwt51\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/move\" title=\"move\">move</a> on the <a rel=\"mw:WikiLink\" href=\"/wiki/feet\" title=\"feet\">feet</a> by <a rel=\"mw:WikiLink\" href=\"/wiki/alternately\" title=\"alternately\">alternately</a> <a rel=\"mw:WikiLink\" href=\"/wiki/setting\" title=\"setting\">setting</a> each <a rel=\"mw:WikiLink\" href=\"/wiki/foot\" title=\"foot\">foot</a> (or pair or group of feet: in the case of some non-human <a rel=\"mw:WikiLink\" href=\"/wiki/animals\" title=\"animals\">animals</a> with four or more feet) <a rel=\"mw:WikiLink\" href=\"/wiki/forward\" title=\"forward\">forward</a>, with at least one foot on the <a rel=\"mw:WikiLink\" href=\"/wiki/ground\" title=\"ground\">ground</a> at all times. Compare <b><a rel=\"mw:WikiLink\" href=\"/wiki/run\" title=\"run\">run</a></b>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> To \"<a rel=\"mw:WikiLink\" href=\"/wiki/walk_free\" title=\"walk free\">walk free</a>\", i.e. to win, or avoid, a criminal court case, particularly when <a rel=\"mw:WikiLink\" href=\"/wiki/actually\" title=\"actually\">actually</a> <a rel=\"mw:WikiLink\" href=\"/wiki/guilty\" title=\"guilty\">guilty</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt57\" typeof=\"mw:Transclusion\"></span> Of an object, to go <a rel=\"mw:WikiLink\" href=\"/wiki/missing\" title=\"missing\">missing</a> or be <a rel=\"mw:WikiLink\" href=\"/wiki/stolen\" title=\"stolen\">stolen</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt59\" typeof=\"mw:Transclusion\"></span> To walk off the field, as if <a rel=\"mw:WikiLink\" href=\"/wiki/given\" title=\"given\">given</a> <a rel=\"mw:WikiLink\" href=\"/wiki/out\" title=\"out\">out</a>, after the <a rel=\"mw:WikiLink\" href=\"/wiki/fielding\" title=\"fielding\">fielding</a> <a rel=\"mw:WikiLink\" href=\"/wiki/side\" title=\"side\">side</a> <a rel=\"mw:WikiLink\" href=\"/wiki/appeal\" title=\"appeal\">appeals</a> and before the <a rel=\"mw:WikiLink\" href=\"/wiki/umpire\" title=\"umpire\">umpire</a> has <a rel=\"mw:WikiLink\" href=\"/wiki/ruled\" title=\"ruled\">ruled</a>; done as a matter of <a rel=\"mw:WikiLink\" href=\"/wiki/sportsmanship\" title=\"sportsmanship\">sportsmanship</a> when the batsman believes he is out."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "be late",
+      "expression": "be tired",
       "level": "A1",
       "type": "collocation",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
-      "anki_answer": "en retard",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ],
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {
-        "definitions": [
-          "<span class=\"use-with-mention\" about=\"#mwt3\" typeof=\"mw:Transclusion\">(This entry is a <a rel=\"mw:WikiLink\" href=\"/wiki/Appendix:Glossary#translation_hub\" title=\"Appendix:Glossary\">translation hub</a>.)</span><link rel=\"mw:PageProp/Category\" href=\"./Category:English_translation_hubs\" about=\"#mwt3\">",
-          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/one\" title=\"one\">one</a>’s <a rel=\"mw:WikiLink\" href=\"/wiki/menstrual\" title=\"menstrual\">menstrual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discharge\" title=\"discharge\">discharge</a> late, implying <a rel=\"mw:WikiLink\" href=\"/wiki/successful\" title=\"successful\">successful</a>&nbsp;<a rel=\"mw:WikiLink\" href=\"/wiki/nidation\" title=\"nidation\">nidation</a> <a rel=\"mw:WikiLink\" href=\"/wiki/suspect\" title=\"suspect\">suspected</a>."
-        ]
-      },
+      "wiktionary": {},
       "audio": null
+    },
+    "history": {
+      "text": "war",
+      "aliases": [
+        "war",
+        "wars"
+      ],
+      "level": "A1",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "period": "General",
+      "theme": "War",
+      "example": "The war ended many years ago.",
+      "tags": [
+        "conflict"
+      ],
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d",
+      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
       "kind": "word",
       "level": "A1",
-      "text": "teacher",
-      "meaning": "a person whose job is to teach",
-      "meaning_fr": "professeur",
-      "example": "Our teacher is very kind.",
-      "phonetic": "/ˈtiːtʃər/",
-      "anki_answer": "professeur",
+      "text": "walk",
+      "meaning": "move on foot",
+      "meaning_fr": "marcher",
+      "example": "We walk to the station.",
+      "phonetic": "/wɔːk/",
+      "anki_answer": "marcher",
       "tags": [
-        "education"
+        "movement"
       ]
     },
     {
-      "key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa",
+      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
       "kind": "expression",
       "level": "A1",
-      "text": "be late",
-      "meaning": "arrive after the right time",
-      "meaning_fr": "être en retard",
-      "example": "Do not be late for class.",
+      "text": "be tired",
+      "meaning": "need rest or sleep",
+      "meaning_fr": "être fatigué",
+      "example": "I am tired after the walk.",
       "phonetic": "",
-      "anki_answer": "en retard",
+      "anki_answer": "fatigué",
       "tags": [
-        "time"
+        "feelings"
       ]
     },
     {
-      "key": "7755305373a281a2c91bfb28401bc158fb264590",
+      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "kind": "history",
+      "level": "A1",
+      "text": "war",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "example": "The war ended many years ago.",
+      "phonetic": "",
+      "anki_answer": "guerre",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
       "kind": "word",
       "level": "A2",
-      "text": "bridge",
-      "meaning": "a structure crossing a river or road",
-      "meaning_fr": "pont",
-      "example": "The bridge crosses the river.",
-      "phonetic": "/brɪdʒ/",
-      "anki_answer": "pont",
+      "text": "decide",
+      "meaning": "choose after thinking",
+      "meaning_fr": "décider",
+      "example": "You must decide today.",
+      "phonetic": "/dɪˈsaɪd/",
+      "anki_answer": "décider",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be excited about",
+      "meaning": "feel happy and eager about a future event",
+      "meaning_fr": "être impatient à l'idée de",
+      "example": "She is excited about the trip.",
+      "phonetic": "",
+      "anki_answer": "impatient",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "8391409731bf858babbdef8315d9bd81155e390c",
+      "kind": "history",
+      "level": "A2",
+      "text": "castle",
+      "meaning": "a strong building from the Middle Ages",
+      "meaning_fr": "château",
+      "example": "The castle stands on a hill.",
+      "phonetic": "",
+      "anki_answer": "château",
       "tags": [
         "places"
       ]
     },
     {
-      "key": "a754658384223bb60568fe9a8b7e153bfb480b7d",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be different from",
-      "meaning": "not the same as",
-      "meaning_fr": "être différent de",
-      "example": "This one is different from that one.",
-      "phonetic": "",
-      "anki_answer": "différent",
-      "tags": [
-        "comparison"
-      ]
-    },
-    {
-      "key": "1557106117e20a5a480385a47005fff85c1e5bb4",
+      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
       "kind": "word",
       "level": "B1",
-      "text": "behavior",
-      "meaning": "the way a person acts",
-      "meaning_fr": "comportement",
-      "example": "His behavior surprised everyone.",
-      "phonetic": "/bɪˈheɪvjər/",
-      "anki_answer": "comportement",
+      "text": "border",
+      "meaning": "the line separating two countries",
+      "meaning_fr": "frontière",
+      "example": "They crossed the border at night.",
+      "phonetic": "/ˈbɔːrdər/",
+      "anki_answer": "frontière",
       "tags": [
-        "people"
+        "travel"
       ]
     },
     {
-      "key": "b98c558cfe792354317f9ec46182098430a2a6aa",
+      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
       "kind": "expression",
       "level": "B1",
-      "text": "by the way",
-      "meaning": "used to add a new topic",
-      "meaning_fr": "au fait",
-      "example": "By the way, the meeting moved to ten.",
+      "text": "call it a day",
+      "meaning": "stop working on something",
+      "meaning_fr": "arrêter pour la journée",
+      "example": "We are tired, let us call it a day.",
       "phonetic": "",
-      "anki_answer": "au fait",
+      "anki_answer": "arrêter journée",
       "tags": [
-        "discourse"
+        "work"
       ]
     },
     {
-      "key": "b6e963d7227b68f4b22b78db34842cfae32f6dff",
+      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
+      "kind": "history",
+      "level": "B1",
+      "text": "dynasty",
+      "meaning": "a family of rulers from the same line",
+      "meaning_fr": "dynastie",
+      "example": "The dynasty ruled for two centuries.",
+      "phonetic": "",
+      "anki_answer": "dynastie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
       "kind": "word",
       "level": "B2",
-      "text": "prevent",
-      "meaning": "stop something from happening",
-      "meaning_fr": "empêcher",
-      "example": "Vaccines prevent disease.",
-      "phonetic": "/prɪˈvent/",
-      "anki_answer": "empêcher",
+      "text": "reasonable",
+      "meaning": "based on good sense",
+      "meaning_fr": "raisonnable",
+      "example": "That is a reasonable price.",
+      "phonetic": "/ˈriːznəbl/",
+      "anki_answer": "raisonnable",
       "tags": [
-        "prevention"
+        "judgement"
       ]
     },
     {
-      "key": "c3a6d83c8b4cfa8928781040053196f64aa1279e",
+      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
       "kind": "expression",
       "level": "B2",
-      "text": "let the cat out of the bag",
-      "meaning": "reveal a secret by accident",
-      "meaning_fr": "divulguer le secret",
-      "example": "He let the cat out of the bag about the party.",
+      "text": "look on the bright side",
+      "meaning": "think about the positive part",
+      "meaning_fr": "voir le bon côté",
+      "example": "Look on the bright side: the train was late, not cancelled.",
       "phonetic": "",
-      "anki_answer": "divulguer secret",
+      "anki_answer": "bon côté",
       "tags": [
-        "secrets"
+        "optimism"
       ]
     },
     {
-      "key": "3c845f7dbda5819abe2d2ab8458bd1a876183292",
+      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "kind": "history",
+      "level": "B2",
+      "text": "renaissance",
+      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
+      "meaning_fr": "renaissance",
+      "example": "The renaissance produced great art.",
+      "phonetic": "",
+      "anki_answer": "renaissance",
+      "tags": [
+        "art"
+      ]
+    },
+    {
+      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
       "kind": "word",
       "level": "C1",
-      "text": "coherent",
-      "meaning": "clear and logically connected",
-      "meaning_fr": "cohérent",
-      "example": "She gave a coherent account.",
-      "phonetic": "/koʊˈhɪrənt/",
-      "anki_answer": "cohérent",
+      "text": "consensus",
+      "meaning": "general agreement among a group",
+      "meaning_fr": "consensus",
+      "example": "The committee reached a consensus.",
+      "phonetic": "/kənˈsensəs/",
+      "anki_answer": "consensus",
       "tags": [
-        "communication"
+        "agreement"
       ]
     },
     {
-      "key": "c9954b63493f5bc2aa9cfe951385dde835634d23",
+      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
       "kind": "expression",
       "level": "C1",
-      "text": "set the record straight",
-      "meaning": "correct a false impression",
-      "meaning_fr": "remettre les choses à plat",
-      "example": "Let me set the record straight.",
+      "text": "take something in stride",
+      "meaning": "deal calmly with a difficulty",
+      "meaning_fr": "prendre avec calme",
+      "example": "She took the delay in stride.",
       "phonetic": "",
-      "anki_answer": "remettre à plat",
+      "anki_answer": "calme, difficulté",
       "tags": [
-        "truth"
+        "calm"
       ]
     },
     {
-      "key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd",
+      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "kind": "history",
+      "level": "C1",
+      "text": "suffrage",
+      "meaning": "the right to vote in elections",
+      "meaning_fr": "suffrage",
+      "example": "Women's suffrage expanded democracy.",
+      "phonetic": "",
+      "anki_answer": "suffrage",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
       "kind": "word",
       "level": "C2",
-      "text": "vituperative",
-      "meaning": "using harsh and abusive language",
-      "meaning_fr": "injurieux",
-      "example": "His vituperative review surprised readers.",
-      "phonetic": "/vaɪˈtuːpərətɪv/",
-      "anki_answer": "injurieux",
+      "text": "recondite",
+      "meaning": "dealing with difficult or obscure subjects",
+      "meaning_fr": "ésotérique",
+      "example": "He has recondite knowledge of manuscripts.",
+      "phonetic": "/ˈrekəndaɪt/",
+      "anki_answer": "ésotérique",
       "tags": [
-        "speech"
+        "knowledge"
       ]
     },
     {
-      "key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5",
+      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
       "kind": "expression",
       "level": "C2",
-      "text": "throw down the gauntlet",
-      "meaning": "issue a direct challenge",
-      "meaning_fr": "jeter le gant",
-      "example": "The article threw down the gauntlet to regulators.",
+      "text": "tread water",
+      "meaning": "make no progress while staying active",
+      "meaning_fr": "nager entre deux eaux, stagner",
+      "example": "The economy is merely treading water.",
       "phonetic": "",
-      "anki_answer": "jeter gant",
+      "anki_answer": "stagner",
       "tags": [
-        "challenge"
+        "stagnation"
+      ]
+    },
+    {
+      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "kind": "history",
+      "level": "C2",
+      "text": "hegemony",
+      "meaning": "leadership or dominance by one state or group",
+      "meaning_fr": "hégémonie",
+      "example": "The empire maintained regional hegemony.",
+      "phonetic": "",
+      "anki_answer": "hégémonie",
+      "tags": [
+        "power"
       ]
     }
   ],
@@ -285,15 +417,15 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “teacher” mean?",
+      "prompt": "What does “walk” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "professeur",
-      "item_key": "ae34bcee08e0dc85d0e1373cd6e5b8d23b4b844d"
+      "answer": "marcher",
+      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
     },
     {
       "id": "A1-expression",
@@ -302,163 +434,253 @@
       "level": "A1",
       "prompt": "Complete the expression: be ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "late",
-      "item_key": "7be9bc66a0285ee1f6b8e084fd6251440c308ffa"
+      "answer": "tired",
+      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “war” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “bridge” mean?",
+      "prompt": "What does “decide” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "pont",
-      "item_key": "7755305373a281a2c91bfb28401bc158fb264590"
+      "answer": "décider",
+      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ from",
+      "prompt": "Complete the expression: be ____ about",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "different",
-      "item_key": "a754658384223bb60568fe9a8b7e153bfb480b7d"
+      "answer": "excited",
+      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “castle” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “behavior” mean?",
+      "prompt": "What does “border” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "comportement",
-      "item_key": "1557106117e20a5a480385a47005fff85c1e5bb4"
+      "answer": "frontière",
+      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: by the ____",
+      "prompt": "Complete the expression: ____ it a day",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "way",
-      "item_key": "b98c558cfe792354317f9ec46182098430a2a6aa"
+      "answer": "call",
+      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “dynasty” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “prevent” mean?",
+      "prompt": "What does “reasonable” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "empêcher",
-      "item_key": "b6e963d7227b68f4b22b78db34842cfae32f6dff"
+      "answer": "raisonnable",
+      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: let the cat ____ of the bag",
+      "prompt": "Complete the expression: look on the ____ side",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "out",
-      "item_key": "c3a6d83c8b4cfa8928781040053196f64aa1279e"
+      "answer": "bright",
+      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “renaissance” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “coherent” mean?",
+      "prompt": "What does “consensus” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "cohérent",
-      "item_key": "3c845f7dbda5819abe2d2ab8458bd1a876183292"
+      "answer": "consensus",
+      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: set the record ____",
+      "prompt": "Complete the expression: take ____ in stride",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "straight",
-      "item_key": "c9954b63493f5bc2aa9cfe951385dde835634d23"
+      "answer": "something",
+      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “suffrage” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “vituperative” mean?",
+      "prompt": "What does “recondite” mean?",
       "options": [
-        "cohérent",
-        "comportement",
-        "empêcher",
-        "injurieux"
+        "consensus",
+        "décider",
+        "frontière",
+        "marcher"
       ],
-      "answer": "injurieux",
-      "item_key": "5904fd7948462213fa01a4de62ddc6bc80bf90fd"
+      "answer": "ésotérique",
+      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: throw down the ____",
+      "prompt": "Complete the expression: tread ____",
       "options": [
-        "bag",
-        "cat",
-        "different",
-        "down"
+        "about",
+        "bright",
+        "call",
+        "day"
       ],
-      "answer": "gauntlet",
-      "item_key": "03a4de65cd82ebaf115282a2465eeb9cf868a5b5"
+      "answer": "water",
+      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “hegemony” belong to?",
+      "options": [
+        "19th century",
+        "Cold War",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Cold War",
+      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
     }
   ],
   "tour": [
@@ -501,15 +723,15 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 1,
+    "filled": 2,
     "total": 6,
     "origins": {
-      "adjacent": 1
+      "adjacent": 2
     },
-    "source_count": 1,
+    "source_count": 2,
     "phrase_count": 6,
-    "glossary_count": 12,
-    "exercise_count": 12,
+    "glossary_count": 18,
+    "exercise_count": 18,
     "history_periods": [],
     "history_themes": [],
     "search_path": "./data/en/search/2026-11-21.json"

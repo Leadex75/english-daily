@@ -20,5 +20,11 @@
   "level_method": "source",
   "license": "public_domain",
   "attribution": "LibriVox (public domain recording)",
-  "origin": "reserve"
+  "origin": "reserve",
+  "lang": "en",
+  "periods": [],
+  "themes": [],
+  "history_terms": [],
+  "transcript_url": null,
+  "transcript_text": null
 }
