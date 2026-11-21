@@ -22,8 +22,9 @@ from app.db import (
     upsert_sources,
 )
 from app.serialize import serialize_day
+from ingest.phrases import load_phrases
 from ingest.pipeline import run_ingest
-from ingest.readability import LEVELS
+from ingest.readability import CATEGORIES, KINDS, LEVELS
 
 app = FastAPI(title="english-daily", docs_url=None, redoc_url=None)
 _ingest_lock = threading.Lock()
@@ -73,7 +74,11 @@ def health() -> dict[str, Any]:
 def days() -> list[str]:
     conn = connect(load_config())
     try:
-        rows = conn.execute("SELECT DISTINCT date FROM ingest_runs ORDER BY date DESC").fetchall()
+        rows = conn.execute(
+            """SELECT date FROM (
+                 SELECT date FROM ingest_runs UNION SELECT date FROM phrases
+               ) ORDER BY date DESC"""
+        ).fetchall()
         return [str(row[0]) for row in rows]
     finally:
         conn.close()
@@ -90,6 +95,53 @@ def day(day: str, level: str = "B1") -> dict[str, Any]:
         return serialize_day(conn, day, level, config)
     finally:
         conn.close()
+
+
+@app.get("/api/phrase/{day}")
+def phrase(day: str, level: str = "B1") -> dict[str, Any]:
+    day = _valid_day(day)
+    if level not in LEVELS:
+        raise HTTPException(status_code=400, detail=f"level must be one of {', '.join(LEVELS)}")
+    conn = connect(load_config())
+    try:
+        payload = load_phrases(conn, day).get(level)
+    finally:
+        conn.close()
+    if not payload:
+        raise HTTPException(status_code=404, detail="no phrase for this date and level")
+    return payload
+
+
+@app.get("/api/stats")
+def stats(days: int = 30) -> dict[str, Any]:
+    days = max(1, min(365, int(days)))
+    config = load_config()
+    conn = connect(config)
+    try:
+        rows = conn.execute(
+            """SELECT level, category, kind, COUNT(*) AS total
+               FROM daily_picks WHERE date >= date('now', ?)
+               GROUP BY level, category, kind""",
+            (f"-{days} days",),
+        ).fetchall()
+        by_level: dict[str, dict[str, int]] = {
+            level: {"filled": 0, "total": len(CATEGORIES) * len(KINDS)} for level in LEVELS
+        }
+        for row in rows:
+            level = str(row["level"])
+            if level in by_level:
+                by_level[level]["filled"] += int(row["total"])
+        phrase_days = int(conn.execute("SELECT COUNT(DISTINCT date) FROM phrases").fetchone()[0])
+        item_total = int(conn.execute("SELECT COUNT(*) FROM items").fetchone()[0])
+    finally:
+        conn.close()
+    return {
+        "days": days,
+        "weekly_goal": int(config.get("weekly_goal_default", 5)),
+        "by_level": by_level,
+        "phrase_days": phrase_days,
+        "items": item_total,
+    }
 
 
 @app.get("/audio/{day}/{filename}")

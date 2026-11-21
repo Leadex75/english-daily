@@ -220,10 +220,95 @@ sources:
   - id: bbc_in_our_time
     name: BBC In Our Time
     feed_url: https://podcasts.files.bbci.co.uk/b006qykl.rss
-    category: culture
+    category: history
     kind: audio
     level_min: C1
     level_max: C2
     enabled: true
     max_duration_sec: 3300  # documented exception: episodes are ~50 min
+    type: history_keywords
+    license: proprietary
+
+  - id: historyextra
+    name: HistoryExtra podcast
+    feed_url: https://feeds.megaphone.fm/GLT5697813216
+    category: history
+    kind: audio
+    level_min: B1
+    level_max: C1
+    enabled: true
+    type: history_keywords
+    license: proprietary
+
+  - id: wikipedia_onthisday
+    name: Wikipedia On this day
+    feed_url: https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/MM/DD
+    category: history
+    kind: text
+    level_min: B1
+    level_max: C2
+    enabled: true
+    type: wikipedia_onthisday
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"
+
+  - id: wikinews
+    name: Wikinews
+    feed_url: https://en.wikinews.org/w/api.php
+    category: news
+    kind: text
+    level_min: B1
+    level_max: C2
+    enabled: true
+    type: wikinews
+    license: cc_by
+    attribution: "Wikinews, CC BY 2.5"
+
+  - id: librivox_culture
+    name: LibriVox (culture)
+    feed_url: https://librivox.org/api/feed/audiobooks/
+    category: culture
+    kind: audio
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: librivox
+    genres: [Literary Fiction, Adventure, Science Fiction, Poetry, Drama, Music, Children]
+    license: public_domain
+    attribution: "LibriVox (public domain recording)"
+
+  - id: librivox_history
+    name: LibriVox (history & biography)
+    feed_url: https://librivox.org/api/feed/audiobooks/
+    category: history
+    kind: audio
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: librivox
+    genres: [History, Biography, Autobiography, Historical Fiction, Military]
+    license: public_domain
+    attribution: "LibriVox (public domain recording)"
+
+  - id: gutenberg_text
+    name: Project Gutenberg
+    feed_url: https://www.gutenberg.org/cache/epub/
+    category: culture
+    kind: text
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: gutenberg
+    license: public_domain
+    attribution: "Project Gutenberg"
+
+  - id: tews
+    name: BBC Learning English - The English We Speak
+    feed_url: https://podcasts.files.bbci.co.uk/p02pc9zn.rss
+    category: phrase
+    kind: audio
+    level_min: B1
+    level_max: B2
+    enabled: true
+    type: phrase_audio
     license: proprietary

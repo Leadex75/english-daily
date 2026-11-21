@@ -1,10 +1,12 @@
 # english-daily
 
 A local, account-free English practice app organised by CEFR level (A1–C2). A standalone Python
-ingester pulls real free RSS/podcast/Wikipedia content into SQLite plus local MP3 files; a FastAPI
-backend serves a small offline frontend. The same frontend can also be exported as a static
-GitHub Pages site refreshed daily by GitHub Actions. Level classification is deterministic
-(`textstat` + `wordfreq`) — **no LLM, no API keys, no accounts, no telemetry**.
+ingester pulls real free RSS/podcast/Wikipedia content into SQLite plus hotlinked or local MP3
+audio; a FastAPI backend serves a small offline frontend. The same frontend can also be exported as
+a static GitHub Pages site refreshed daily by GitHub Actions. Each day is filled by a deterministic
+A→B→C→D→E cascade, a committed reserve pool, and a curated word/expression bank. Level
+classification is deterministic (`textstat` + `wordfreq`) — **no LLM, no API keys, no accounts,
+no telemetry**.
 
 ## One-command start
 
@@ -28,17 +30,36 @@ immediately; the first day's content appears within a minute or two.
 Other commands:
 
 ```bash
-python run.py ingest                 # fetch/score/download/pick for today
+python run.py ingest                 # fetch/score/pick today + reserve pool + phrases
 python run.py ingest --date 2026-11-20
-python run.py doctor                 # check every enabled source
-python run.py prune                  # delete expired MP3s (text rows stay)
+python run.py backfill --days 90      # re-pick recent days from the local database
+python run.py stats --days 90         # coverage report (Markdown)
+python run.py doctor                  # check every enabled source
+python run.py prune                   # delete expired MP3s (text rows stay)
 python run.py export-static --out site --public   # GitHub-Pages-ready site
 python run.py import-state --site-dir site --state-dir state
-python -m ingest.readability         # readability self-test
+python -m unittest discover -s tests -v
+python -m ingest.readability          # readability self-test
 ```
 
 `ffmpeg` is optional: `shutil.which("ffmpeg")` is checked, and re-encoding only happens when
 `reencode_audio: true` and ffmpeg is installed. Otherwise MP3s are kept exactly as downloaded.
+
+## Reading experience
+
+- Each level has 36 slots: 12 text and 12 audio across the **news**, **culture** and **history**
+  tabs, plus one word and one expression per level on the **phrase** tab.
+- Daily picks follow five deterministic stages: exact-level fresh, exact-level any audio state,
+  exact-level reserve/archive, adjacent-level with audio, adjacent-level text only.
+- The **history** tab is backed by dedicated public-domain and openly licensed sources; the
+  **phrase** tab is backed by `bank/words.yaml` and `bank/expressions.yaml`, deduplicated through
+  `state/phrase_used.json`.
+- Progress bars, read/listened markers, the glossary, theme and the learned-phrase list are stored
+  only in browser `localStorage`; no account or server-side profile is needed.
+- **Anki** export downloads a UTF-8 tab-separated file with `#separator:tab` and `#html:true`, using
+  the learned glossary or the selected day's phrase cards.
+- In static mode a service worker caches the app shell and viewed day files; audio is always
+  streamed from the publisher, never cached or re-hosted.
 
 ## Daily scheduling
 
@@ -80,19 +101,22 @@ The same codebase has two modes selected by `<meta name="eds-mode">` in `static/
 - **server** (default): the FastAPI app keeps serving `/api/...` and local MP3s exactly as before.
 - **static**: a generated site fetches only `./data/index.json` and `./data/<date>/<level>.json`; there are no API calls and no server.
 
-`.github/workflows/daily.yml` runs ingestion every day at **05:00 UTC** (`timezone: Europe/Paris` in
-`config.yaml` is used to compute the published date), then exports `site/`, commits the changed
-`site/data/` history and `state/used.json`, and deploys with GitHub Actions. Trigger it manually from
-the **Actions → daily → Run workflow** tab. The workflow only fails when **zero** items are fetched
-from all sources; individual dead feeds, bad audio URLs and timeouts are logged and skipped.
+`.github/workflows/daily.yml` runs unit tests, Python/JavaScript syntax checks, ingestion, a coverage
+summary in the GitHub Actions job summary, static export, and deployment every day at **05:00 UTC**
+(`timezone: Europe/Paris` in `config.yaml` is used to compute the published date). It commits the
+changed `site/data/` history and `state/` ledger, then deploys with GitHub Actions. Trigger it
+manually from the **Actions → daily → Run workflow** tab. The ingestion step only fails when **zero** slots
+are filled for the day; individual dead feeds, bad audio URLs and timeouts are logged and skipped.
 
 - `state/used.json` is the committed dedup ledger. Each entry is `{"guid_hash": ..., "date": ...}`;
-  entries older than 30 days are pruned. The SQLite database in CI (`ENGLISH_DAILY_DATA_DIR=./.ci-data`)
-  is disposable; `site/data/` is the real history. If history exists but state is missing, run
-  `python run.py import-state --site-dir site --state-dir state`.
-- `site/data/YYYY-MM-DD/*.json` holds one file per CEFR level, plus `index.json` (days and per-day
-  slot counts). `static_retention_days: 365` prunes old date folders. `site/.nojekyll` and
-  `site/404.html` are generated. `noindex: true` adds `noindex,nofollow` to the static site.
+  entries older than 30 days are pruned. `state/phrase_used.json` deduplicates bank phrases, and
+  `state/pool/` stores the committed reserve pool plus Wikipedia/history caches. The SQLite database
+  in CI (`ENGLISH_DAILY_DATA_DIR=./.ci-data`) is disposable; `site/data/` is the real history. If
+  history exists but state is missing, run `python run.py import-state --site-dir site --state-dir state`.
+- `site/data/YYYY-MM-DD/*.json` holds one file per CEFR level plus `phrases.json`, and the root
+  `index.json` contains days and per-day slot counts. `static_retention_days: 365` prunes old date
+  folders. `site/.nojekyll`, `site/404.html`, `manifest.webmanifest`, PWA icons and a versioned
+  `sw.js` are generated. `noindex: true` adds `noindex,nofollow` to the static site.
 - Audio is never re-hosted in CI: `ENGLISH_DAILY_AUDIO_MODE=hotlink` verifies the publisher URL with a
   ranged GET, downloads the MP3 only transiently to measure its real duration with `mutagen`, stores
   the original HTTPS enclosure URL, and deletes the temp file. The browser streams from the publisher,
@@ -120,7 +144,7 @@ sources:
   - id: my_podcast
     name: My Podcast
     feed_url: https://example.org/feed.xml
-    category: news          # news | culture
+    category: history       # news | culture | history
     kind: audio             # text | audio
     level_min: B1           # A1..C2, or "computed" for pure readability scoring
     level_max: B2
@@ -148,12 +172,25 @@ then measured with `mutagen`. One dead feed or bad MP3 is logged and skipped, ne
   to cover levels that the seed sources cannot supply today.
 - BBC In Our Time has `max_duration_sec: 3300` (documented exception); many episodes are 55–60 min
   and are skipped by the real-duration check.
-- Thresholds, audio window, lookback/retention and request settings are all in `config.yaml`.
+- Reserve content is generated lazily into `state/pool/`: Wikipedia extracts, Wikipedia "on this day"
+  linked articles, Wikinews current-month categories, LibriVox chapters with Gutenberg-derived level
+  estimates, and Gutenberg passages. Reserve-source rows are skipped during normal RSS ingestion and
+  only the generator writes them.
+- Gutenberg.org may return `503 Temporarily Down for Maintenance`; the reserve generator then falls
+  back to source-description level scoring. Wikinews' `list=recentchanges` can return an empty list;
+  the generator falls back to current-month category members.
+- Offline/deterministic runs: set `ingest_offline: true`, `reserve_offline: true` and
+  `phrase_offline: true`, or use `ENGLISH_DAILY_RESERVE_OFFLINE=1` /
+  `ENGLISH_DAILY_PHRASE_OFFLINE=1`. This is used by `run.py backfill` and tests.
+- Thresholds, audio window, lookback/retention, bank sizes, reserve budgets and request settings are
+  all in `config.yaml`.
 
 ## API
 
 - `GET /api/health`
 - `GET /api/days`
 - `GET /api/day/YYYY-MM-DD?level=B1`
+- `GET /api/phrase/YYYY-MM-DD?level=B1`
+- `GET /api/stats?days=30`
 - `GET /audio/YYYY-MM-DD/<sha1>.mp3` (HTTP Range supported for seeking)
 - `/` serves `static/` (Alpine.js is vendored; no CDN requests)

@@ -105,7 +105,7 @@ def import_site_state(
         if not isinstance(payload, dict):
             continue
         date = str(payload.get("date") or path.parent.name)[:10]
-        for category in ("news", "culture"):
+        for category in ("news", "culture", "history"):
             for kind in ("text", "audio"):
                 item = ((payload.get("slots") or {}).get(category) or {}).get(kind)
                 if not isinstance(item, dict):

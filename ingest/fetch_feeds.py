@@ -36,25 +36,40 @@ def _client_for(config: dict[str, Any]) -> httpx.Client:
     return _client
 
 
+RESERVE_TYPES = {"librivox", "gutenberg", "wikinews", "wikipedia_history", "phrase_audio"}
+WIKIMEDIA_HOSTS = ("wikipedia.org", "wikimedia.org", "wikinews.org", "wiktionary.org", "wikisource.org")
+
+
+def is_reserve_source(source: dict[str, Any]) -> bool:
+    return str(source.get("type") or "") in RESERVE_TYPES
+
+
 def _polite(url: str) -> None:
     host = urlparse(url).netloc
+    interval = 1.0 if any(name in host for name in WIKIMEDIA_HOSTS) else 0.3
     now = time.monotonic()
-    wait = 1.0 - (now - _last_hit[host]) if host in _last_hit else 0.0
+    wait = interval - (now - _last_hit[host]) if host in _last_hit else 0.0
     if wait > 0:
         time.sleep(wait)
     _last_hit[host] = time.monotonic()
 
 
 def http_get(url: str, config: dict[str, Any], headers: dict[str, str] | None = None) -> httpx.Response:
-    """GET with the configured user agent and a 1s delay per host."""
-    _polite(url)
-    return _client_for(config).get(url, headers=headers)
+    """GET with the configured UA, polite host rate and one retry."""
+    last_error: Exception | None = None
+    for attempt in range(2):
+        _polite(url)
+        try:
+            return _client_for(config).get(url, headers=headers)
+        except Exception as exc:
+            last_error = exc
+            if attempt == 0:
+                time.sleep(0.6)
+    raise last_error if last_error else RuntimeError("request failed")
 
 
 def _wiki_headers(config: dict[str, Any]) -> dict[str, str]:
-    # Wikimedia blocks generic agents; keep the configured UA but add contact info.
-    ua = str(config["user_agent"]).rstrip(")")
-    return {"User-Agent": ua + "; contact: english-daily@example.org)", "Accept": "application/json"}
+    return {"User-Agent": str(config["user_agent"]), "Accept": "application/json"}
 
 
 @contextmanager
@@ -64,11 +79,20 @@ def http_stream(
     headers: dict[str, str] | None = None,
     raise_for_status: bool = True,
 ) -> Iterator[httpx.Response]:
-    _polite(url)
-    with _client_for(config).stream("GET", url, headers=headers) as response:
-        if raise_for_status:
-            response.raise_for_status()
-        yield response
+    last_error: Exception | None = None
+    for attempt in range(2):
+        _polite(url)
+        try:
+            with _client_for(config).stream("GET", url, headers=headers) as response:
+                if raise_for_status:
+                    response.raise_for_status()
+                yield response
+            return
+        except Exception as exc:
+            last_error = exc
+            if attempt == 0:
+                time.sleep(0.6)
+    raise last_error if last_error else RuntimeError("stream failed")
 
 
 def _published(entry: Any) -> str:
@@ -209,16 +233,69 @@ def _wikipedia_featured(config: dict[str, Any], day: str) -> list[dict[str, Any]
     ]
 
 
+def _wikipedia_onthisday(config: dict[str, Any], day: str) -> list[dict[str, Any]]:
+    try:
+        target = dt.date.fromisoformat(day)
+    except ValueError:
+        target = dt.date.today()
+    url = (
+        "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/"
+        f"{target.month:02d}/{target.day:02d}"
+    )
+    response = http_get(url, config, headers=_wiki_headers(config))
+    response.raise_for_status()
+    events = list(response.json().get("events") or [])[:5]
+    lines = [f"{int(event.get('year', 0))} — {plain_text(event.get('text'))}" for event in events]
+    lines = [line for line in lines if len(line) > 20]
+    if not lines:
+        return []
+    body = "\n\n".join(lines)
+    linked: list[str] = []
+    for event in events:
+        for page in (event.get("pages") or [])[:2]:
+            title = str((page.get("titles") or {}).get("normalized") or "")
+            if title and title not in linked:
+                linked.append(title)
+    return [
+        {
+            "guid": f"wikipedia_onthisday:{target.isoformat()}",
+            "title": f"On this day: {target.strftime('%d %B')}",
+            "url": f"https://en.wikipedia.org/wiki/{target.strftime('%B_%d')}",
+            "summary": lines[0][:400],
+            "published_at": target.isoformat() + "T00:00:00",
+            "enclosure_url": None,
+            "itunes_duration": None,
+            "body_text": body,
+            "linked_pages": linked,
+            "source_id": "wikipedia_onthisday",
+        }
+    ]
+
+
+def _matches_history(entry: dict[str, Any], config: dict[str, Any]) -> bool:
+    keywords = [str(word).lower() for word in (config.get("history_keywords") or [])]
+    if not keywords:
+        return True
+    haystack = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
+    return any(word in haystack for word in keywords)
+
+
 def fetch_source(source: dict[str, Any], config: dict[str, Any], day: str) -> list[dict[str, Any]]:
     """Fetch and normalize entries from one source; raises on network/parse failure."""
     kind = source.get("type") or "rss"
     limit = int(config.get("max_entries_per_source", 10))
+    if is_reserve_source(source):
+        return []
     if kind == "wikipedia_simple":
         return _wikipedia_simple(config)[:limit]
     if kind == "wikipedia_featured":
         return _wikipedia_featured(config, day)[:limit]
+    if kind == "wikipedia_onthisday":
+        return _wikipedia_onthisday(config, day)[:limit]
     response = http_get(str(source["feed_url"]), config)
     response.raise_for_status()
     parsed = feedparser.parse(response.content)
     entries = [_entry(source, item) for item in parsed.entries[:limit]]
+    if kind == "history_keywords":
+        entries = [entry for entry in entries if _matches_history(entry, config)]
     return entries

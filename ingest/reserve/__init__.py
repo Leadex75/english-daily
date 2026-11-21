@@ -1,0 +1,65 @@
+from __future__ import annotations
+
+from typing import Any, Callable
+
+from app.db import load_sources
+from ingest.pool import save_pool
+from ingest.readability import CATEGORIES, KINDS, LEVELS
+from ingest.reserve.common import Budget
+from ingest.reserve.gutenberg import sample_gutenberg
+from ingest.reserve.history import sample_history
+from ingest.reserve.librivox import sample_librivox
+from ingest.reserve.wikipedia import sample_wikipedia
+from ingest.reserve.wikinews import sample_wikinews
+
+
+def _deficient(items: list[dict[str, Any]], config: dict[str, Any]) -> int:
+    counts: dict[tuple[str, str, str], int] = {}
+    for item in items:
+        level = str(item.get("level") or "B1")
+        category = str(item.get("category") or "culture")
+        kind = str(item.get("kind") or "text")
+        if level in LEVELS and category in CATEGORIES and kind in KINDS:
+            counts[(level, category, kind)] = counts.get((level, category, kind), 0) + 1
+    minimum = int(config.get("pool_min_per_bucket", 4))
+    return sum(1 for bucket in ((l, c, k) for l in LEVELS for c in CATEGORIES for k in KINDS)
+               if counts.get(bucket, 0) < minimum)
+
+
+def generate_reserves(
+    config: dict[str, Any], state_dir: str, pool: list[dict[str, Any]], scale: float = 1.0
+) -> list[dict[str, Any]]:
+    """One sampling pass per round, shared budget, fills every deficient bucket."""
+    budget = Budget(config, scale=scale)
+    all_items = list(pool)
+    librivox_sources = [source for source in load_sources() if source.get("type") == "librivox"
+                        and source.get("enabled", True)]
+    generators: list[tuple[str, Callable[[], list[dict[str, Any]]]]] = [
+        ("wikipedia", lambda: sample_wikipedia(config, budget)),
+        ("simple wikipedia", lambda: sample_wikipedia(config, budget, host="simple.wikipedia.org")),
+        ("wikipedia history", lambda: sample_history(config, budget, state_dir)),
+        ("wikinews", lambda: sample_wikinews(config, budget)),
+        ("gutenberg", lambda: sample_gutenberg(config, budget, state_dir)),
+    ]
+    for source in librivox_sources:
+        generators.append((f"librivox {source['id']}", lambda source=source: sample_librivox(
+            config, budget, state_dir, source, int(config.get("new_books_per_run", 25))
+        )))
+
+    for _ in range(3):
+        if not budget.ok or _deficient(all_items, config) == 0:
+            break
+        before = budget.requests
+        for name, generator in generators:
+            if not budget.ok:
+                break
+            try:
+                produced = generator()
+            except Exception as exc:
+                print(f"[reserve] {name}: {type(exc).__name__}: {exc}")
+                continue
+            print(f"[reserve] {name}: {len(produced)} candidate(s)")
+            all_items.extend(produced)
+        if budget.requests == before:
+            break
+    return save_pool(state_dir, all_items, config)

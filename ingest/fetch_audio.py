@@ -29,11 +29,18 @@ def parse_itunes_duration(value: Any) -> int | None:
 
 
 def audio_window(source: dict[str, Any], config: dict[str, Any], hotlink: bool = False) -> tuple[int, int]:
-    minimum = int(config["audio_min_sec"])
-    maximum = int(config["audio_max_sec"]) if hotlink else int(
-        source.get("max_duration_sec") or config["audio_max_sec"]
-    )
-    return minimum, max(minimum, maximum)
+    """Hard sanity bounds only. Preferred bounds are applied later by the cascade."""
+    minimum = config.get("audio_hard_min_sec")
+    maximum = config.get("audio_hard_max_sec")
+    low = 0 if minimum is None else int(minimum)
+    high = 10**9 if maximum is None else int(maximum)
+    return low, max(low, high)
+
+
+def preferred_audio(duration: int | None, config: dict[str, Any]) -> bool:
+    if duration is None:
+        return False
+    return int(config["audio_pref_min_sec"]) <= duration <= int(config["audio_pref_max_sec"])
 
 
 def _https_candidate(url: str) -> str:
@@ -70,6 +77,7 @@ def _hotlink_audio(
     guid_hash: str,
     minimum: int,
     maximum: int,
+    announced: int | None,
 ) -> dict[str, Any] | None:
     url = entry.get("enclosure_url")
     if not url:
@@ -77,22 +85,25 @@ def _hotlink_audio(
     public_url = _verify_public_audio(str(url), config)
     if not public_url:
         return None
-    try:
-        root = data_dir(config)
-        root.mkdir(parents=True, exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=str(root)) as temporary_dir:
-            temporary = Path(temporary_dir) / f"{guid_hash}.mp3"
-            with http_stream(public_url, config) as response:
-                with temporary.open("wb") as handle:
-                    for chunk in response.iter_bytes(16_384):
-                        handle.write(chunk)
-            if temporary.stat().st_size == 0:
-                return None
-            measured = MutagenFile(str(temporary))
-            duration = int(measured.info.length) if measured and measured.info.length else None
-            if duration is None or not minimum <= duration <= maximum:
-                return None
-    except Exception:
+    duration = announced
+    if duration is None or bool(config.get("verify_audio_download")):
+        try:
+            root = data_dir(config)
+            root.mkdir(parents=True, exist_ok=True)
+            with tempfile.TemporaryDirectory(dir=str(root)) as temporary_dir:
+                temporary = Path(temporary_dir) / f"{guid_hash}.mp3"
+                with http_stream(public_url, config) as response:
+                    with temporary.open("wb") as handle:
+                        for chunk in response.iter_bytes(16_384):
+                            handle.write(chunk)
+                if temporary.stat().st_size == 0:
+                    return None
+                measured = MutagenFile(str(temporary))
+                measured_duration = int(measured.info.length) if measured and measured.info.length else None
+                duration = measured_duration or duration
+        except Exception:
+            duration = announced
+    if duration is None or not minimum <= duration <= maximum:
         return None
     return {
         "duration_sec": duration,
@@ -113,12 +124,14 @@ def download_audio(
     hotlink = str(config.get("audio_mode") or "local") == "hotlink"
     minimum, maximum = audio_window(source, config, hotlink=hotlink)
     feed_duration = parse_itunes_duration(entry.get("itunes_duration"))
+    if feed_duration is None:
+        feed_duration = parse_itunes_duration(entry.get("playtime"))
     if feed_duration is not None and not minimum <= feed_duration <= maximum:
         return None
     if not entry.get("enclosure_url"):
         return None
     if hotlink:
-        return _hotlink_audio(entry, config, guid_hash, minimum, maximum)
+        return _hotlink_audio(entry, config, guid_hash, minimum, maximum, feed_duration)
 
     target_dir = data_dir(config) / "audio" / day
     try:

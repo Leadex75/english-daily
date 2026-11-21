@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>english-daily</title>
   <meta name="eds-mode" content="server">
+  <meta name="eds-goal" content="5">
+  <meta name="theme-color" content="#9b422c">
+  <meta name="description" content="A little English, every day.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <link rel="stylesheet" href="./style.css">
+  <script defer src="./lib/anki.js"></script>
   <script defer src="./app.js"></script>
   <script defer src="./vendor/alpine.min.js"></script>
 </head>
@@ -16,7 +23,10 @@
         <span class="brand-mark">english<span class="accent">·</span>daily</span>
         <span class="tagline">A little English, every day.</span>
       </div>
-      <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
+      <div class="header-actions">
+        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
+        <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length" aria-label="Export learned words to Anki">Anki</button>
+      </div>
     </header>
 
     <section class="controls" aria-label="Reading controls">
@@ -35,6 +45,19 @@
       </div>
     </section>
 
+    <section class="progress-panel" aria-label="Progress">
+      <div class="progress-line">
+        <span>Today</span>
+        <div class="progress-track"><div class="progress-fill" :style="`width: ${todayPercent()}%`"></div></div>
+        <span x-text="`${todayCount()} / ${todayTotal()}`"></span>
+      </div>
+      <div class="progress-line">
+        <span>This week</span>
+        <div class="progress-track"><div class="progress-fill" :style="`width: ${weekPercent()}%`"></div></div>
+        <span x-text="`${weekCount()} / ${weeklyGoal}`"></span>
+      </div>
+    </section>
+
     <nav class="tabs" role="tablist" aria-label="Category">
       <button type="button" role="tab" :aria-selected="tab === 'news'" :class="{ active: tab === 'news' }" @click="setTab('news')">
         News <span class="check" x-show="categoryDone('news')" aria-label="completed">&#10003;</span>
@@ -42,12 +65,18 @@
       <button type="button" role="tab" :aria-selected="tab === 'culture'" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
         Culture <span class="check" x-show="categoryDone('culture')" aria-label="completed">&#10003;</span>
       </button>
+      <button type="button" role="tab" :aria-selected="tab === 'history'" :class="{ active: tab === 'history' }" @click="setTab('history')">
+        History <span class="check" x-show="categoryDone('history')" aria-label="completed">&#10003;</span>
+      </button>
+      <button type="button" role="tab" :aria-selected="tab === 'phrase'" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
+        Phrase <span class="check" x-show="phraseDone()" aria-label="completed">&#10003;</span>
+      </button>
     </nav>
 
     <p class="notice" x-show="loading" aria-live="polite">Loading…</p>
     <p class="notice error" x-show="error" x-text="error" aria-live="polite"></p>
 
-    <main class="reading">
+    <main class="reading" x-show="tab !== 'phrase'">
       <article class="block text-block" x-show="currentText()">
         <div class="block-head">
           <div>
@@ -57,6 +86,7 @@
           <div class="badges">
             <span class="badge" x-text="currentText()?.level || '—'"></span>
             <span class="meta" x-text="(currentText()?.word_count || 0) + ' words'"></span>
+            <template x-for="badge in currentText()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
             <span class="check" x-show="isRead(currentText())" title="Read">&#10003;</span>
           </div>
         </div>
@@ -73,7 +103,7 @@
         </div>
         <div x-ref="readSentinel" class="sentinel" aria-hidden="true"></div>
       </article>
-      <div class="block empty" x-show="!currentText() && !loading">No content for this slot today.</div>
+      <div class="block empty" x-show="!currentText() && !loading">No text for this slot today.</div>
 
       <section class="block audio-block" x-show="currentAudio()">
         <div class="block-head">
@@ -84,6 +114,7 @@
           <div class="badges">
             <span class="badge" x-text="currentAudio()?.level || '—'"></span>
             <span class="meta" x-text="formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
+            <template x-for="badge in currentAudio()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
             <span class="check" x-show="isListened(currentAudio())" title="Listened">&#10003;</span>
           </div>
         </div>
@@ -105,8 +136,67 @@
         </div>
         <p class="hint" x-text="isListened(currentAudio()) ? 'Listened' : 'Listens are saved locally once you reach 90%.'"></p>
       </section>
-      <div class="block empty" x-show="!currentAudio() && !loading">No content for this slot today.</div>
+      <div class="block empty" x-show="!currentAudio() && !loading">No audio for this slot today.</div>
     </main>
+
+    <main class="reading phrase-reading" x-show="tab === 'phrase'">
+      <template x-if="phrase()">
+        <div class="phrase-grid">
+          <article class="block phrase-card">
+            <div class="block-head">
+              <h2 x-text="phrase()?.word?.text"></h2>
+              <span class="badge" x-text="phrase()?.word?.pos"></span>
+            </div>
+            <p class="phonetic" x-text="phrase()?.word?.phonetic || phrase()?.word?.dictionary?.phonetic || ''"></p>
+            <button class="pill" type="button" x-show="phrase()?.word?.dictionary?.audio_url" @click="playUrl(phrase()?.word?.dictionary?.audio_url)">Hear it</button>
+            <p x-text="phrase()?.word?.meaning"></p>
+            <p class="phrase-fr" x-text="phrase()?.word?.meaning_fr"></p>
+            <blockquote x-text="phrase()?.word?.example"></blockquote>
+            <ul class="definition-list" x-show="(phrase()?.word?.dictionary?.definitions || []).length">
+              <template x-for="(definition, i) in phrase()?.word?.dictionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
+            </ul>
+            <div class="block-foot">
+              <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" x-text="isLearned(phrase()?.word) ? 'Learned ✓' : 'Mark learned'"></button>
+              <button class="pill" type="button" @click="exportAnki([phrase()?.word])">Anki</button>
+            </div>
+          </article>
+          <article class="block phrase-card">
+            <div class="block-head">
+              <h2 x-text="phrase()?.expression?.expression"></h2>
+              <span class="badge" x-text="phrase()?.expression?.type"></span>
+            </div>
+            <p x-text="phrase()?.expression?.meaning"></p>
+            <p class="phrase-fr" x-text="phrase()?.expression?.meaning_fr"></p>
+            <blockquote x-text="phrase()?.expression?.example"></blockquote>
+            <button class="pill" type="button" x-show="phrase()?.expression?.audio?.audio_url" @click="playUrl(phrase()?.expression?.audio?.audio_url)">Hear it</button>
+            <ul class="definition-list" x-show="(phrase()?.expression?.wiktionary?.definitions || []).length">
+              <template x-for="(definition, i) in phrase()?.expression?.wiktionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
+            </ul>
+            <div class="block-foot">
+              <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" x-text="isLearned(phrase()?.expression) ? 'Learned ✓' : 'Mark learned'"></button>
+              <button class="pill" type="button" @click="exportAnki([phrase()?.expression])">Anki</button>
+            </div>
+          </article>
+        </div>
+      </template>
+      <div class="block empty" x-show="!phrase() && !loading">No phrase for this level today.</div>
+    </main>
+
+    <section class="block glossary" x-show="glossary().length">
+      <div class="block-head">
+        <h2>My glossary</h2>
+        <button class="pill" type="button" @click="exportAllAnki()">Export all to Anki</button>
+      </div>
+      <ul>
+        <template x-for="entry in glossary()" :key="entry.key">
+          <li>
+            <strong x-text="entry.text"></strong>
+            <span x-text="entry.meaning_fr"></span>
+            <button class="link-button" type="button" @click="forgetPhrase(entry.key)">remove</button>
+          </li>
+        </template>
+      </ul>
+    </section>
 
     <footer>
       <span>Local, account-free, and readable offline. Progress is stored only in this browser.</span>

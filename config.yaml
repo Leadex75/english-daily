@@ -2,23 +2,73 @@
 data_dir: ./data            # can point to a Nextcloud-synced folder
 host: 127.0.0.1             # set 0.0.0.0 for LAN/phone access
 port: 8000
-audio_min_sec: 180
-audio_max_sec: 1200
-lookback_days: 7
-retention_days: 90          # 0 = keep forever; prune deletes old MP3 files, keeps text rows
-reencode_audio: false       # if true and ffmpeg exists: mono, bitrate below
-audio_bitrate_kbps: 48
-auto_ingest_on_start: true  # run ingestion in a background thread at startup if today's date is not yet ingested
-user_agent: "english-daily/1.0 (personal use)"
-request_timeout_sec: 30
-max_entries_per_source: 10     # cap per feed to keep a daily run bounded
 
-timezone: Europe/Paris          # "today" is computed in this timezone (zoneinfo)
-audio_mode: local               # local | hotlink  (CI uses hotlink; ENGLISH_DAILY_AUDIO_MODE overrides)
-public_mode: true               # true = never publish full text of proprietary sources
-excerpt_words: 60               # sentence-boundary excerpt length in public static mode
-static_retention_days: 365      # prune site/data/<date> folders older than this
-noindex: true                   # adds <meta name="robots" content="noindex,nofollow"> in the static site
+# ---- Scoring and windows -------------------------------------------------
+# Preferred windows are soft: items outside them are still accepted when they
+# fit the hard bounds, but the cascade ranks them below preferred items.
+audio_pref_min_sec: 180
+audio_pref_max_sec: 1200
+audio_hard_min_sec: 30        # sanity bounds only; null = no bound
+audio_hard_max_sec: 5400
+text_pref_min_words: 120
+text_pref_max_words: 1500
+text_hard_min_words: 40
+text_hard_max_words: 4000     # longer open texts are cut at a paragraph boundary near text_pref_max_words
+verify_audio_download: false  # true = always download an MP3 transiently to measure it with mutagen
+
+lookback_days: 7              # "fresh" window for the cascade
+retention_days: 90            # 0 = keep forever; prune deletes old MP3 files, keeps text rows
+archive_days: 90              # age limit for unused candidates kept in state/pool/
+reencode_audio: false         # if true and ffmpeg exists: mono, bitrate below
+audio_bitrate_kbps: 48
+auto_ingest_on_start: true    # local server only; CI runs `run.py ingest` explicitly
+
+user_agent: "english-daily/1.0 (+https://github.com/Leadex75/english-daily)"
+request_timeout_sec: 30
+max_entries_per_source: 10
+timezone: Europe/Paris
+
+audio_mode: local             # local | hotlink  (CI uses hotlink; ENGLISH_DAILY_AUDIO_MODE overrides)
+public_mode: true             # true = never publish full text of proprietary sources
+excerpt_words: 60             # sentence-boundary excerpt length in public static mode
+static_retention_days: 365
+noindex: true                 # adds <meta name="robots" content="noindex,nofollow"> in the static site
+
+# ---- Persistent pool / reserve budget ------------------------------------
+pool_cap_per_bucket: 12       # max stored UNUSED candidates per (level, category, kind)
+pool_min_per_bucket: 4        # lazy reserve generation stops when all buckets reach this
+reserve_time_budget_sec: 420
+reserve_max_requests: 400
+reserve_offline: false
+ingest_offline: false
+new_books_per_run: 25
+weekly_goal_default: 5
+
+# ---- History generator ---------------------------------------------------
+history_keywords: [ancient, medieval, century, war, empire, revolution, dynasty, campaign,
+  treaty, king, queen, emperor, battle, archaeology, historian, civilisation, civilization,
+  Renaissance, Victorian, Soviet, Roman, Ottoman, Viking, Napoleon, independence]
+# Category names verified against the live English Wikipedia API (2026-11-21).
+history_categories: [Ancient history, Modern history, Military history, Empires, Revolutions,
+  Ancient Rome, Ancient Greece, Byzantine Empire, Ottoman Empire, British Empire, World War I,
+  World War II, Cold War, Renaissance, Industrial Revolution, History of science, Archaeology,
+  Ancient civilizations, Medieval Europe, Military history by war, Biographies, People]
+
+# ---- Phrase of the day ---------------------------------------------------
+word_bands:
+  A1: [5.3, 99.0]
+  A2: [4.8, 5.3]
+  B1: [4.3, 4.8]
+  B2: [3.8, 4.3]
+  C1: [3.3, 3.8]
+  C2: [2.5, 3.3]
+phrase_history_days: 400
+phrase_offline: false
+
+# Content blocklist: skip random Wikipedia / Gutenberg / Wiktionary candidates
+# for a general-audience site. Conservative, short, case-insensitive substring list.
+content_blocklist: [porn, sexual, erotic, nude, orgasm, rape, murder, massacre, torture, gore,
+  mutilation, execution, suicide, genocide, hate speech, extremism]
 
 # Upper bounds of the deterministic readability score for each level.
 # score < A1 -> A1, < A2 -> A2, ... otherwise C2.

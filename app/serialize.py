@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 from typing import Any
+
+from ingest.phrases import load_phrases
+from ingest.readability import CATEGORIES, KINDS
 
 _SENTENCE_END_RE = re.compile(r"(?<=[.!?])\s+")
 
@@ -16,6 +20,14 @@ def excerpt(text: str, limit: int) -> str:
     if len(parts) > 1 and len(parts[0].split()) >= max(3, min(limit, limit // 2)):
         prefix = parts[0]
     return prefix.rstrip(" ,;:") + "…"
+
+
+def _badges(row: Any) -> list[str]:
+    try:
+        value = json.loads(str(row["pick_badges"] or "[]"))
+    except (TypeError, ValueError):
+        return []
+    return [str(item) for item in value] if isinstance(value, list) else []
 
 
 def serialize_item(
@@ -53,9 +65,13 @@ def serialize_item(
         "id": int(row["id"]),
         "title": str(row["title"]),
         "source": str(row["source_name"] or row["source_id"]),
+        "source_id": row["source_id"],
+        "category": row["category"],
         "url": row["url"],
         "published_at": row["published_at"],
-        "level": row["level"],
+        "level": row["slot_level"] or row["level"],
+        "slot_level": row["slot_level"] or row["level"],
+        "source_level": row["level"],
         "word_count": row["word_count"],
         "duration_sec": row["duration_sec"],
         "body_text": body_text,
@@ -66,6 +82,8 @@ def serialize_item(
         "truncated": truncated,
         "guid_hash": row["guid_hash"],
         "summary": row["summary"],
+        "origin": row["pick_origin"] or row["origin"] or "fresh",
+        "badges": _badges(row),
     }
 
 
@@ -78,7 +96,9 @@ def serialize_day(
     audio_base: str | None = None,
 ) -> dict[str, Any]:
     rows = conn.execute(
-        """SELECT p.category, p.kind, i.*, s.name AS source_name
+        """SELECT p.category AS pick_category, p.kind AS pick_kind, p.level AS slot_level,
+                  p.origin AS pick_origin, p.badges AS pick_badges,
+                  i.*, s.name AS source_name
            FROM daily_picks p
            JOIN items i ON i.id = p.item_id
            LEFT JOIN sources s ON s.id = i.source_id
@@ -86,15 +106,32 @@ def serialize_day(
         (day, level),
     ).fetchall()
     slots: dict[str, dict[str, Any]] = {
-        "news": {"text": None, "audio": None},
-        "culture": {"text": None, "audio": None},
+        category: {"text": None, "audio": None} for category in CATEGORIES
     }
+    origins: dict[str, int] = {}
     for row in rows:
-        category = str(row["category"])
-        kind = str(row["kind"])
+        category = str(row["pick_category"])
+        kind = str(row["pick_kind"])
         if category not in slots or kind not in slots[category]:
             continue
-        slots[category][kind] = serialize_item(
+        item = serialize_item(
             row, kind, day, config, public_mode=public_mode, audio_base=audio_base
         )
-    return {"date": day, "level": level, "slots": slots}
+        slots[category][kind] = item
+        origin = str(item["origin"])
+        origins[origin] = origins.get(origin, 0) + 1
+
+    filled = sum(
+        1 for category in CATEGORIES for kind in KINDS if slots[category][kind] is not None
+    )
+    return {
+        "date": day,
+        "level": level,
+        "slots": slots,
+        "phrase": load_phrases(conn, day).get(level),
+        "meta": {
+            "filled": filled,
+            "total": len(CATEGORIES) * len(KINDS),
+            "origins": origins,
+        },
+    }

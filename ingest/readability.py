@@ -10,7 +10,7 @@ import wordfreq
 from app.db import load_config
 
 LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"]
-CATEGORIES = ["news", "culture"]
+CATEGORIES = ["news", "culture", "history"]
 KINDS = ["text", "audio"]
 _WORD_RE = re.compile(r"[A-Za-z]+(?:['\u2019-][A-Za-z]+)*")
 _SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
