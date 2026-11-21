@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
-from app.db import load_sources
+from app.db import default_language, load_sources
 from ingest.pool import save_pool
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 from ingest.reserve.common import Budget
@@ -27,23 +27,31 @@ def _deficient(items: list[dict[str, Any]], config: dict[str, Any]) -> int:
 
 
 def generate_reserves(
-    config: dict[str, Any], state_dir: str, pool: list[dict[str, Any]], scale: float = 1.0
+    config: dict[str, Any],
+    state_dir: str,
+    pool: list[dict[str, Any]],
+    scale: float = 1.0,
+    lang: str | None = None,
 ) -> list[dict[str, Any]]:
     """One sampling pass per round, shared budget, fills every deficient bucket."""
     budget = Budget(config, scale=scale)
     all_items = list(pool)
-    librivox_sources = [source for source in load_sources() if source.get("type") == "librivox"
+    language = str(lang or default_language(config))
+    sources = load_sources(config, language)
+    librivox_sources = [source for source in sources if source.get("type") == "librivox"
                         and source.get("enabled", True)]
-    generators: list[tuple[str, Callable[[], list[dict[str, Any]]]]] = [
-        ("wikipedia", lambda: sample_wikipedia(config, budget)),
-        ("simple wikipedia", lambda: sample_wikipedia(config, budget, host="simple.wikipedia.org")),
-        ("wikipedia history", lambda: sample_history(config, budget, state_dir)),
-        ("wikinews", lambda: sample_wikinews(config, budget)),
-        ("gutenberg", lambda: sample_gutenberg(config, budget, state_dir)),
-    ]
+    generators: list[tuple[str, Callable[[], list[dict[str, Any]]]]] = []
+    if language == "en":
+        generators.extend([
+            ("wikipedia", lambda: sample_wikipedia(config, budget)),
+            ("simple wikipedia", lambda: sample_wikipedia(config, budget, host="simple.wikipedia.org")),
+            ("wikipedia history", lambda: sample_history(config, budget, state_dir, lang=language)),
+            ("wikinews", lambda: sample_wikinews(config, budget)),
+            ("gutenberg", lambda: sample_gutenberg(config, budget, state_dir, lang=language)),
+        ])
     for source in librivox_sources:
         generators.append((f"librivox {source['id']}", lambda source=source: sample_librivox(
-            config, budget, state_dir, source, int(config.get("new_books_per_run", 25))
+            config, budget, state_dir, source, int(config.get("new_books_per_run", 25)), lang=language
         )))
 
     for _ in range(3):
@@ -59,7 +67,9 @@ def generate_reserves(
                 print(f"[reserve] {name}: {type(exc).__name__}: {exc}")
                 continue
             print(f"[reserve] {name}: {len(produced)} candidate(s)")
+            for candidate in produced:
+                candidate["lang"] = language
             all_items.extend(produced)
         if budget.requests == before:
             break
-    return save_pool(state_dir, all_items, config)
+    return save_pool(state_dir, all_items, config, lang=language)

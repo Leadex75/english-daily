@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-20",
+  "lang": "en",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 22,
+        "title": "Trump threatens ban on US firms building AI data centres overseas",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T20:54:12",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 611,
+        "duration_sec": null,
+        "body_text": "- Published Donald Trump has said he will ban US companies from building AI data centres overseas, threatening a \"tremendous tax\" for tech firms who do so. \"We're going to keep it all in this country,\" the US president said, while providing little detail on the potential policy he said others in his cabinet were hearing about for the first…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "5d5f0f6da5ba8dbe6f89dee2e3b4828a511f468c",
+        "summary": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time.",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 2,
+        "title": "5pm ET, November 20 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-20T22:09:32",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": 304,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-20/f349bdfd6b910b95c8930eeb53b248d758d7c0d3.mp3",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "f349bdfd6b910b95c8930eeb53b248d758d7c0d3",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 48,
+        "title": "IPCC report delay will threaten global effort to tackle climate crisis, says top scientist",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/science/2026/nov/19/ipcc-report-delay-climate-crisis-scientist",
+        "published_at": "2026-11-19T07:16:45",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 1248,
+        "duration_sec": null,
+        "body_text": "Climate science is “foundational” to the Paris agreement and worldwide progress on tackling global heating, and attempts to delay new scientific reports threaten global cooperation on tackling the crisis, one of the world’s leading climate scientists has warned.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "1b4f2c91b645b6537ec3c575415302d1cb08ba31",
+        "summary": "Johan Rockström, one of world’s leading climate experts, says slowing down scientific work puts cooperation at risk Climate science is “foundational” to the Paris agreement and worldwide progress on tackling global heating, and attempts to delay new scientific reports threaten global cooperation on tackling the crisis, one of the world’s leading climate scientists has warned. Johan Rockström, the director of the Potsdam Institute for Climate Impact Research, said the world’s leading body of climate scientists, the Intergovernmental Panel on Climate Change, must be allowed to work as quickly as possible on its next comprehensive assessment of global knowledge of the climate systems . Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 12,
+        "title": "This gas station drug acts like opioids. It’s getting harder to buy",
+        "source": "NPR Short Wave",
+        "source_id": "npr_short_wave",
+        "category": "culture",
+        "url": "https://www.npr.org/2026/11/20/nx-s1-6045648/kratom-opioid-addiction-7-oh",
+        "published_at": "2026-11-20T08:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 52,
+        "duration_sec": 1019,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-20/630b6af9ff82bbf787534c91cea7758b080f797d.mp3",
+        "description": "Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "630b6af9ff82bbf787534c91cea7758b080f797d",
+        "summary": "Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "fresh": 4
+    }
+  }
+}

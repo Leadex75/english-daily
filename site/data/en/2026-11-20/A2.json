@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-20",
+  "lang": "en",
+  "level": "A2",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 56,
+        "title": "Talking about the countryside",
+        "source": "BBC Learning Easy English (text)",
+        "source_id": "bbc_learning_easy_english_text",
+        "category": "culture",
+        "url": "http://www.bbc.co.uk/programmes/p0pmsm9x",
+        "published_at": "2026-11-13T10:36:00",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "A2",
+        "word_count": 139,
+        "duration_sec": null,
+        "body_text": "Georgie and Neil have a real conversation in easy English about weddings – he countryside – the area outside the cities, where there are more green spaces, plants and wildlife.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "44b80e369073f9a8cdefaa0e54eab29acb729e91",
+        "summary": "Georgie and Neil have a real conversation in easy English about the countryside – the area outside the cities, where there are more green spaces, plants and wildlife. Learn which word describes somewhere that is full of green, healthy plants and find out Neil and Georgie's favourite countryside locations in the UK. Get the video version of this podcast, plus a free worksheet and transcript here: https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/261113 Sign up to our email newsletter! It comes out weekly out Wednesdays: https://www.bbc.co.uk/send/u178220599 And improve your English with more programmes at your level: https://www.bbc.co.uk/learningenglish/easy_course",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 57,
+        "title": "Talking about the countryside",
+        "source": "BBC Learning Easy English",
+        "source_id": "bbc_learning_easy_english",
+        "category": "culture",
+        "url": "http://www.bbc.co.uk/programmes/p0pmsm9x",
+        "published_at": "2026-11-13T10:36:00",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "A2",
+        "word_count": 111,
+        "duration_sec": 496,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-20/88f28fcdd7dfbffb142eec704edc12519a9c31ab.mp3",
+        "description": "Georgie and Neil have a real conversation in easy English about the countryside – the area outside the cities, where there are more green spaces, plants and wildlife. Learn which word describes somewhere that is full of green, healthy plants and find out Neil and Georgie's favourite countryside locations in the UK. Get the video version of this podcast, plus a free worksheet and transcript here: https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/261113 Sign up to our email newsletter! It comes out weekly out Wednesdays: https://www.bbc.co.uk/send/u178220599 And improve your English with more programmes at your level: https://www.bbc.co.uk/learningenglish/easy_course",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "88f28fcdd7dfbffb142eec704edc12519a9c31ab",
+        "summary": "Georgie and Neil have a real conversation in easy English about the countryside – the area outside the cities, where there are more green spaces, plants and wildlife. Learn which word describes somewhere that is full of green, healthy plants and find out Neil and Georgie's favourite countryside locations in the UK. Get the video version of this podcast, plus a free worksheet and transcript here: https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/261113 Sign up to our email newsletter! It comes out weekly out Wednesdays: https://www.bbc.co.uk/send/u178220599 And improve your English with more programmes at your level: https://www.bbc.co.uk/learningenglish/easy_course",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "fresh": 2
+    }
+  }
+}

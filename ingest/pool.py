@@ -6,13 +6,34 @@ import json
 from pathlib import Path
 from typing import Any, Iterable
 
+from app.db import default_language
+from ingest.paths import state_lang_dir
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 
 OPEN_LICENSES = {"cc_by", "cc_by_sa", "public_domain", "public_domain_us_gov"}
 
 
-def pool_dir(state_dir: str | Path) -> Path:
-    return Path(state_dir) / "pool"
+def _language(config: dict[str, Any] | None, lang: str | None) -> str:
+    return str(lang or (default_language(config) if config else "en"))
+
+
+def pool_dir(
+    state_dir: str | Path, config: dict[str, Any] | None = None, lang: str | None = None
+) -> Path:
+    from ingest.state import load_entries, save_entries
+
+    root = Path(state_dir)
+    language = _language(config, lang)
+    legacy = root / "used.json"
+    if legacy.is_file() and not (state_lang_dir(root, language) / "used.json").exists():
+        entries = []
+        try:
+            entries = json.loads(legacy.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            entries = []
+        if config is not None:
+            save_entries(root, entries, config, language)
+    return state_lang_dir(root, language) / "pool"
 
 
 def item_id(guid_hash: str) -> int:
@@ -42,8 +63,10 @@ def write_json(path: Path, payload: Any) -> None:
     temporary.replace(path)
 
 
-def load_pool(state_dir: str | Path, config: dict[str, Any] | None = None) -> list[dict[str, Any]]:
-    root = pool_dir(state_dir)
+def load_pool(
+    state_dir: str | Path, config: dict[str, Any] | None = None, lang: str | None = None
+) -> list[dict[str, Any]]:
+    root = pool_dir(state_dir, config, lang)
     if not root.is_dir():
         return []
     items: list[dict[str, Any]] = []
@@ -70,8 +93,8 @@ def save_pool(
     items: Iterable[dict[str, Any]],
     config: dict[str, Any],
     reference: dt.date | None = None,
+    lang: str | None = None,
 ) -> list[dict[str, Any]]:
-    """Keep the best/newest items per bucket, drop picked and expired ones."""
     reference = reference or dt.date.today()
     cap = int(config.get("pool_cap_per_bucket", 12))
     by_bucket: dict[tuple[str, str, str], list[dict[str, Any]]] = {}
@@ -80,7 +103,6 @@ def save_pool(
         if not guid or _expired(item, config, reference):
             continue
         by_bucket.setdefault(bucket(item), []).append(item)
-
     kept: dict[str, dict[str, Any]] = {}
     for group in by_bucket.values():
         unique = {str(item["guid_hash"]): item for item in group}
@@ -91,8 +113,7 @@ def save_pool(
         )[:cap]
         for item in ranked:
             kept[str(item["guid_hash"])] = item
-
-    root = pool_dir(state_dir)
+    root = pool_dir(state_dir, config, lang)
     root.mkdir(parents=True, exist_ok=True)
     for path in root.glob("*.json"):
         if path.stem not in kept:
@@ -102,7 +123,13 @@ def save_pool(
     return list(kept.values())
 
 
-def hydrate_db(conn: Any, items: Iterable[dict[str, Any]]) -> int:
+def hydrate_db(
+    conn: Any,
+    items: Iterable[dict[str, Any]],
+    config: dict[str, Any] | None = None,
+    lang: str | None = None,
+) -> int:
+    language = _language(config, lang)
     inserted = 0
     for item in items:
         guid = str(item.get("guid_hash") or "")
@@ -111,19 +138,19 @@ def hydrate_db(conn: Any, items: Iterable[dict[str, Any]]) -> int:
         source_id = str(item.get("source_id") or "reserve")
         conn.execute(
             """INSERT OR IGNORE INTO sources
-               (id, name, feed_url, category, kind, level_min, level_max, enabled)
-               VALUES (?,?,?,?,?,?,?,1)""",
+               (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
+               VALUES (?,?,?,?,?,?,?,1,?)""",
             (source_id, str(item.get("source_name") or source_id), "generated",
              str(item.get("category") or "culture"), str(item.get("kind") or "text"),
-             str(item.get("level") or "B1"), str(item.get("level") or "B1")),
+             str(item.get("level") or "B1"), str(item.get("level") or "B1"), language),
         )
         conn.execute(
             """INSERT OR IGNORE INTO items
                (id, guid_hash, source_id, kind, category, title, url, summary, published_at,
                 fetched_at, body_text, word_count, duration_sec, audio_remote_url, score,
                 fk_grade, avg_sentence_len, rare_word_ratio, level, level_method, license,
-                attribution, origin)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'reserve')""",
+                attribution, origin, lang, periods, themes, transcript_url, transcript_text)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'reserve', ?,?,?,?,?)""",
             (
                 item_id(guid), guid, source_id, str(item.get("kind") or "text"),
                 str(item.get("category") or "culture"), str(item.get("title") or "Untitled"),
@@ -134,6 +161,8 @@ def hydrate_db(conn: Any, items: Iterable[dict[str, Any]]) -> int:
                 item.get("avg_sentence_len", 0), item.get("rare_word_ratio", 0),
                 str(item.get("level") or "B1"), item.get("level_method") or "computed",
                 str(item.get("license") or "public_domain"), item.get("attribution"),
+                language, json.dumps(item.get("periods") or []), json.dumps(item.get("themes") or []),
+                item.get("transcript_url"), item.get("transcript_text"),
             ),
         )
         inserted += 1
@@ -165,6 +194,11 @@ def _row_to_item(row: Any) -> dict[str, Any]:
         "license": row["license"],
         "attribution": row["attribution"],
         "origin": "reserve",
+        "lang": row["lang"] if "lang" in row.keys() else "en",
+        "periods": json.loads(row["periods"] or "[]") if "periods" in row.keys() else [],
+        "themes": json.loads(row["themes"] or "[]") if "themes" in row.keys() else [],
+        "transcript_url": row["transcript_url"] if "transcript_url" in row.keys() else None,
+        "transcript_text": row["transcript_text"] if "transcript_text" in row.keys() else None,
     }
 
 
@@ -174,32 +208,53 @@ def writeback_db(
     config: dict[str, Any],
     picked_hashes: set[str],
     used_hashes: set[str],
+    lang: str | None = None,
 ) -> list[dict[str, Any]]:
-    existing = {str(item["guid_hash"]): item for item in load_pool(state_dir, config)}
+    existing = {str(item["guid_hash"]): item for item in load_pool(state_dir, config, lang)}
     for guid in picked_hashes | used_hashes:
         existing.pop(guid, None)
+    language = _language(config, lang)
     rows = conn.execute(
-        """SELECT * FROM items WHERE origin='reserve' AND guid_hash IS NOT NULL"""
+        """SELECT * FROM items WHERE origin='reserve' AND guid_hash IS NOT NULL AND lang=?""",
+        (language,),
     ).fetchall()
     for row in rows:
         guid = str(row["guid_hash"])
         if guid in picked_hashes or guid in used_hashes:
             continue
         existing[guid] = _row_to_item(row)
-    return save_pool(state_dir, existing.values(), config)
+    return save_pool(state_dir, existing.values(), config, lang=lang)
 
 
-def load_books(state_dir: str | Path) -> dict[str, Any]:
-    return read_json(Path(state_dir) / "books.json", {})
+def load_books(
+    state_dir: str | Path, config: dict[str, Any] | None = None, lang: str | None = None
+) -> dict[str, Any]:
+    language = _language(config, lang)
+    return read_json(state_lang_dir(state_dir, language) / "books.json", {})
 
 
-def save_books(state_dir: str | Path, books: dict[str, Any]) -> None:
-    write_json(Path(state_dir) / "books.json", books)
+def save_books(
+    state_dir: str | Path,
+    books: dict[str, Any],
+    config: dict[str, Any] | None = None,
+    lang: str | None = None,
+) -> None:
+    language = _language(config, lang)
+    write_json(state_lang_dir(state_dir, language) / "books.json", books)
 
 
-def load_wiki_cache(state_dir: str | Path) -> dict[str, Any]:
-    return read_json(Path(state_dir) / "wiki_cache.json", {})
+def load_wiki_cache(
+    state_dir: str | Path, config: dict[str, Any] | None = None, lang: str | None = None
+) -> dict[str, Any]:
+    language = _language(config, lang)
+    return read_json(state_lang_dir(state_dir, language) / "wiki_cache.json", {})
 
 
-def save_wiki_cache(state_dir: str | Path, cache: dict[str, Any]) -> None:
-    write_json(Path(state_dir) / "wiki_cache.json", cache)
+def save_wiki_cache(
+    state_dir: str | Path,
+    cache: dict[str, Any],
+    config: dict[str, Any] | None = None,
+    lang: str | None = None,
+) -> None:
+    language = _language(config, lang)
+    write_json(state_lang_dir(state_dir, language) / "wiki_cache.json", cache)

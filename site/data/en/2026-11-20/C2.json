@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-20",
+  "lang": "en",
+  "level": "C2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 34,
+        "title": "Hegseth uses Venezuela visit to boast of Maduro’s capture by US military",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
+        "category": "news",
+        "url": "https://www.theguardian.com/world/2026/nov/18/pete-hegseth-venezuela-nicolas-maduro-military",
+        "published_at": "2026-11-18T20:24:19",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C2",
+        "word_count": 921,
+        "duration_sec": null,
+        "body_text": "Pete Hegseth has used his first visit to Venezuela since US special forces abducted its former president, Nicolás Maduro, to boast of the dictator’s capture during what he called “the single most sophisticated military operation in the history of Latin America”.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "042678c5fda7eee8d0ef548b969599a1b40e3340",
+        "summary": "Defense secretary asserts US dominance on trip that would have seemed ‘impossible, almost unbelievable’ a year ago Pete Hegseth has used his first visit to Venezuela since US special forces abducted its former president, Nicolás Maduro, to boast of the dictator’s capture during what he called “the single most sophisticated military operation in the history of Latin America”. Maduro was controversially seized by Delta Force operatives in the early hours of 3 January, setting in motion an improbable rapprochement between Washington and Venezuela’s anti-imperialist “Chavista” regime, which has ruled since 1999. Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 51,
+        "title": "Body found in Derry bog decapitated more than 2,000 years ago, coroner finds",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/18/ballymacombs-more-woman-derry-bog-decapitated-2000-years-ago",
+        "published_at": "2026-11-18T08:00:36",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C2",
+        "word_count": 510,
+        "duration_sec": null,
+        "body_text": "A coroner’s investigation into Northern Ireland’s most venerable cold case has concluded that the victim was decapitated more than 2,000 years ago. The inquest-style inquiry determined that Ballymacombs More Woman – the name given to iron age remains found in a County Derry bog three years ago – was between 15 and 22 years old when she was beheaded from…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "1f1c85de53b5f5463e5e771450537a9675f23639",
+        "summary": "Inquest-style inquiry concludes iron age remains are of 15- to 22-year-old female who may have been ritually sacrificed A coroner’s investigation into Northern Ireland ’s most venerable cold case has concluded that the victim was decapitated more than 2,000 years ago. The inquest-style inquiry determined that Ballymacombs More Woman – the name given to iron age remains found in a County Derry bog three years ago – was between 15 and 22 years old when she was beheaded from behind with a bladed weapon. Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "fresh": 2
+    }
+  }
+}

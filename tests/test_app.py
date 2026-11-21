@@ -1,11 +1,33 @@
+import json
 import sqlite3
 import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
 
-from app.db import DEFAULTS, connect, data_dir, db_path, init_db, load_config, upsert_sources
+from app.db import (
+    DEFAULTS,
+    available_languages,
+    connect,
+    data_dir,
+    db_path,
+    default_language,
+    init_db,
+    load_config,
+    normalize_language,
+    upsert_sources,
+)
 from ingest.export_static import export_static
+from ingest.paths import (
+    languages_path,
+    migrate_legacy_site,
+    migrate_legacy_state,
+    site_lang_dir,
+    site_level_path,
+    site_phrase_path,
+    state_lang_dir,
+    write_languages,
+)
 from ingest.phrases import generate_phrases, load_bank
 from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
@@ -46,6 +68,7 @@ class BankTests(unittest.TestCase):
 class PickerTests(unittest.TestCase):
     def test_adjacent_level_fallback_is_tagged(self):
         config = dict(DEFAULTS)
+        config["languages"] = ["en"]
         day = "2026-11-21"
         body = "word " * 200
         candidates = []
@@ -74,10 +97,45 @@ class PickerTests(unittest.TestCase):
         self.assertIn("Closest level: B1", chosen["badges"])
 
 
+class LanguagePathTests(unittest.TestCase):
+    def test_language_helpers_and_migration(self):
+        config = {
+            "languages": ["en", "xx"],
+            "default_language": "xx",
+            "levels": {"en": {}},
+        }
+        self.assertEqual(available_languages(config), ["en", "xx"])
+        self.assertEqual(default_language(config), "xx")
+        self.assertEqual(normalize_language(config, "es"), "xx")
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            state_dir = root / "state"
+            site_dir = root / "site"
+            state_dir.mkdir()
+            (site_dir / "data").mkdir(parents=True)
+            (state_dir / "used.json").write_text("[]", encoding="utf-8")
+            (site_dir / "data" / "index.json").write_text("{}", encoding="utf-8")
+
+            self.assertEqual(migrate_legacy_state(state_dir, "en"), ["used.json"])
+            self.assertEqual(migrate_legacy_site(site_dir, "en"), ["index.json"])
+            self.assertTrue((state_lang_dir(state_dir, "en") / "used.json").is_file())
+            self.assertTrue((site_lang_dir(site_dir, "en") / "index.json").is_file())
+
+            path = write_languages(site_dir, config)
+            self.assertEqual(path, languages_path(site_dir))
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(payload["default"], "xx")
+            self.assertEqual(payload["languages"], ["en", "xx"])
+            self.assertEqual(site_level_path(site_dir, "2026-11-21", "B1", "en").parts[-3:],
+                             ("en", "2026-11-21", "B1.json"))
+            self.assertEqual(site_phrase_path(site_dir, "2026-11-21", "en").name, "phrases.json")
+
+
 class MigrationAndExportTests(unittest.TestCase):
-    def test_old_database_migrates_with_backup(self):
+    def test_old_database_migrates_twice_with_backup(self):
         with tempfile.TemporaryDirectory() as temp:
             config = dict(DEFAULTS)
+            config["languages"] = ["en"]
             config["data_dir"] = temp
             root = data_dir(config)
             path = db_path(config)
@@ -112,17 +170,23 @@ class MigrationAndExportTests(unittest.TestCase):
             conn.close()
 
             init_db(config)
+            init_db(config)
             check = connect(config)
             try:
                 item_columns = {row["name"] for row in check.execute("PRAGMA table_info(items)")}
                 pick_columns = {row["name"] for row in check.execute("PRAGMA table_info(daily_picks)")}
-                self.assertIn("origin", item_columns)
+                source_columns = {row["name"] for row in check.execute("PRAGMA table_info(sources)")}
+                phrase_columns = {row["name"] for row in check.execute("PRAGMA table_info(phrases)")}
+                self.assertIn("lang", item_columns)
+                self.assertIn("periods", item_columns)
+                self.assertIn("lang", pick_columns)
+                self.assertIn("reconstructed", pick_columns)
+                self.assertIn("lang", source_columns)
+                self.assertIn("lang", phrase_columns)
                 source_sql = check.execute(
                     "SELECT sql FROM sqlite_master WHERE type='table' AND name='sources'"
                 ).fetchone()[0]
                 self.assertIn("'phrase'", source_sql)
-                self.assertIn("origin", pick_columns)
-                self.assertIn("badges", pick_columns)
                 self.assertEqual(check.execute("SELECT COUNT(*) FROM items").fetchone()[0], 1)
                 self.assertEqual(check.execute("SELECT COUNT(*) FROM daily_picks").fetchone()[0], 1)
             finally:
@@ -133,6 +197,8 @@ class MigrationAndExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             config = dict(load_config())
+            config["languages"] = ["en"]
+            config["default_language"] = "en"
             config["data_dir"] = str(root / "data")
             config["ingest_offline"] = True
             config["reserve_offline"] = True
@@ -150,34 +216,66 @@ class MigrationAndExportTests(unittest.TestCase):
                 conn.execute(
                     """INSERT INTO items
                        (guid_hash, source_id, kind, category, title, url, published_at,
-                        fetched_at, body_text, word_count, score, level, level_method, origin)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        fetched_at, body_text, word_count, score, level, level_method, origin, lang)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     ("test-1", "test_source", "text", "history", "A test article",
                      "https://example.org/article", day, day, "word " * 200, 200, 0.5,
-                     "B1", "computed", "fresh"),
+                     "B1", "computed", "fresh", "en"),
                 )
                 conn.commit()
             finally:
                 conn.close()
 
-            summary = run_ingest(day, config, state_dir=str(root / "state"))
+            summary = run_ingest(day, config, state_dir=str(root / "state"), lang="en")
             self.assertGreaterEqual(summary["filled"], 1)
             self.assertEqual(summary["phrases"], 6)
             conn = connect(config)
             try:
-                self.assertEqual(conn.execute("SELECT COUNT(*) FROM phrases").fetchone()[0], 6)
-                self.assertGreaterEqual(conn.execute("SELECT COUNT(*) FROM daily_picks").fetchone()[0], 1)
+                self.assertEqual(conn.execute("SELECT COUNT(*) FROM phrases WHERE lang='en'").fetchone()[0], 6)
+                self.assertGreaterEqual(conn.execute(
+                    "SELECT COUNT(*) FROM daily_picks WHERE lang='en'"
+                ).fetchone()[0], 1)
             finally:
                 conn.close()
 
             out = root / "site"
             result = export_static(out, config, public_mode=True)
             self.assertIn(day, result["days"])
-            self.assertTrue((out / "data" / day / "B1.json").is_file())
-            self.assertTrue((out / "data" / day / "phrases.json").is_file())
+            self.assertTrue(site_level_path(out, day, "B1", "en").is_file())
+            self.assertTrue(site_phrase_path(out, day, "en").is_file())
+            self.assertTrue((site_lang_dir(out, "en") / "index.json").is_file())
+            self.assertTrue(languages_path(out).is_file())
             self.assertTrue((out / "index.html").is_file())
             self.assertTrue((out / "manifest.webmanifest").is_file())
             self.assertTrue((out / "sw.js").is_file())
+
+    def test_second_language_without_sources_is_isolated(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = dict(load_config())
+            config["languages"] = ["en", "xx"]
+            config["default_language"] = "en"
+            config["data_dir"] = str(root / "data")
+            config["ingest_offline"] = True
+            config["reserve_offline"] = True
+            config["phrase_offline"] = True
+            day = "2026-11-21"
+            init_db(config)
+            summary = run_ingest(day, config, state_dir=str(root / "state"), lang="xx")
+            self.assertEqual(summary["lang"], "xx")
+            self.assertEqual(summary["filled"], 0)
+            self.assertEqual(summary["phrases"], 0)
+            self.assertTrue((state_lang_dir(root / "state", "xx") / "used.json").is_file())
+            conn = connect(config)
+            try:
+                self.assertEqual(conn.execute(
+                    "SELECT COUNT(*) FROM daily_picks WHERE lang='xx'"
+                ).fetchone()[0], 0)
+                self.assertEqual(conn.execute(
+                    "SELECT COUNT(*) FROM phrases WHERE lang='xx'"
+                ).fetchone()[0], 0)
+            finally:
+                conn.close()
 
 
 if __name__ == "__main__":

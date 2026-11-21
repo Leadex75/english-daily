@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-20",
+  "lang": "en",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 23,
+        "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T21:57:07",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 436,
+        "duration_sec": null,
+        "body_text": "- Published Denmark has accused Russian intelligence services of plotting to assassinate a Ukrainian-American near Copenhagen, saying they had \"planned\" and \"initiated\" the attempt. Denmark's security and intelligence agency said it had stopped individuals who were intending to kill the person, named by Danish media as rapper Kyivstoner, at a concert in September. Two people were charged with attempted murder…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "7e18ea75d4e31468e6c24e2376b6166bfff9ade7",
+        "summary": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled.",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 37,
+        "title": "Roll up, roll up! Marc Chagall’s Circus is the most mesmerising big top you’ve ever seen – review",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/artanddesign/2026/nov/20/marc-chagall-the-circus-review-hepworth-wakefield-west-yorkshire",
+        "published_at": "2026-11-20T17:16:10",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 897,
+        "duration_sec": null,
+        "body_text": "At the opening of The Circus, a self-portrait of Marc Chagall is placed next to a lithograph of a clown. The portrait is small and sketched simply in a blue crayon, as if Chagall had quickly dashed it out to pacify an inquisitive fan. In contrast, the clown is rich in colour and texture, with a heavily detailed backdrop of…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "c5261fc299a5af603c01d106d05fb8a312e0a758",
+        "summary": "Hepworth Wakefield, West Yorkshire He spent over 60 years painting clowns, ringmasters and acrobats – and the results transport you to a dazzling magical world At the opening of The Circus, a self-portrait of Marc Chagall is placed next to a lithograph of a clown. The portrait is small and sketched simply in a blue crayon, as if Chagall had quickly dashed it out to pacify an inquisitive fan. In contrast, the clown is rich in colour and texture, with a heavily detailed backdrop of musicians, spectators and performers. But there is something uncanny about this pairing, created more than 40 years apart. They both wear small, brimmed hats with hair springing out from underneath, and their facial expressions are somewhat inscrutable. It is the perfect introduction to an exhibition that explores Chagall’s lifelong fascination with the circus, both as a subject and as a symbolic motif. In placing Chagall and the clown side by side, we understand this immediately – the clown is both a clown and a metaphor for the artist. In his 1967 art book Cirque, Chagall writes: “This clown – he is he and I.” Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "fresh": 2
+    }
+  }
+}

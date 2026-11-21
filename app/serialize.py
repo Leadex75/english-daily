@@ -94,7 +94,11 @@ def serialize_day(
     config: dict[str, Any],
     public_mode: bool = False,
     audio_base: str | None = None,
+    lang: str | None = None,
 ) -> dict[str, Any]:
+    from app.db import default_language
+
+    language = str(lang or default_language(config))
     rows = conn.execute(
         """SELECT p.category AS pick_category, p.kind AS pick_kind, p.level AS slot_level,
                   p.origin AS pick_origin, p.badges AS pick_badges,
@@ -102,8 +106,8 @@ def serialize_day(
            FROM daily_picks p
            JOIN items i ON i.id = p.item_id
            LEFT JOIN sources s ON s.id = i.source_id
-           WHERE p.date=? AND p.level=?""",
-        (day, level),
+           WHERE p.date=? AND p.level=? AND p.lang=?""",
+        (day, level, language),
     ).fetchall()
     slots: dict[str, dict[str, Any]] = {
         category: {"text": None, "audio": None} for category in CATEGORIES
@@ -126,9 +130,10 @@ def serialize_day(
     )
     return {
         "date": day,
+        "lang": language,
         "level": level,
         "slots": slots,
-        "phrase": load_phrases(conn, day).get(level),
+        "phrase": load_phrases(conn, day, language).get(level),
         "meta": {
             "filled": filled,
             "total": len(CATEGORIES) * len(KINDS),

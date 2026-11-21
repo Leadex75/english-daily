@@ -5,6 +5,20 @@ function appMode() {
   return meta && meta.getAttribute('content') === 'static' ? 'static' : 'server';
 }
 
+function requestedLanguage() {
+  try {
+    return new URLSearchParams(window.location.search).get('lang') || '';
+  } catch (err) {
+    return '';
+  }
+}
+
+function normalizeLanguage(value, languages) {
+  const list = Array.isArray(languages) && languages.length ? languages : ['en'];
+  const wanted = String(value || '');
+  return list.includes(wanted) ? wanted : (list.includes('en') ? 'en' : list[0]);
+}
+
 function app() {
   return {
     levels: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
@@ -27,6 +41,8 @@ function app() {
     mode: appMode(),
     audioError: false,
     weeklyGoal: 5,
+    lang: 'en',
+    languages: ['en'],
 
     async init() {
       const goal = document.querySelector('meta[name="eds-goal"]');
@@ -39,18 +55,33 @@ function app() {
       }
       try {
         if (this.mode === 'static') {
-          const response = await fetch('./data/index.json');
+          const languagesResponse = await fetch('./data/languages.json');
+          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
+          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
+          this.lang = normalizeLanguage(
+            requestedLanguage() || localStorage.getItem('english-daily:lang') || languagesPayload.default,
+            this.languages,
+          );
+          const response = await fetch(`./data/${encodeURIComponent(this.lang)}/index.json`);
           if (!response.ok) throw new Error('Could not load index');
           const index = await response.json();
           this.days = Array.isArray(index.days) ? index.days : [];
           this.counts = index.counts || {};
         } else {
-          const response = await fetch(`./${API_SEGMENT}/days`);
+          const languagesResponse = await fetch(`./${API_SEGMENT}/languages`);
+          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
+          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
+          this.lang = normalizeLanguage(
+            requestedLanguage() || localStorage.getItem('english-daily:lang') || languagesPayload.default,
+            this.languages,
+          );
+          const response = await fetch(`./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`);
           if (!response.ok) throw new Error('Could not load dates');
           this.days = await response.json();
           const today = new Date().toISOString().slice(0, 10);
           if (!this.days.includes(today)) this.days.unshift(today);
         }
+        localStorage.setItem('english-daily:lang', this.lang);
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
@@ -71,9 +102,9 @@ function app() {
 
     dayUrl(level) {
       if (this.mode === 'static') {
-        return `./data/${encodeURIComponent(this.selectedDate)}/${encodeURIComponent(level)}.json`;
+        return `./data/${encodeURIComponent(this.lang)}/${encodeURIComponent(this.selectedDate)}/${encodeURIComponent(level)}.json`;
       }
-      return `./${API_SEGMENT}/day/${encodeURIComponent(this.selectedDate)}?level=${level}`;
+      return `./${API_SEGMENT}/day/${encodeURIComponent(this.selectedDate)}?level=${level}&lang=${encodeURIComponent(this.lang)}`;
     },
 
     toggleTheme() {

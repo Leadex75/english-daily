@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-21",
+  "lang": "en",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 69,
+        "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-20T22:42:47",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 687,
+        "duration_sec": null,
+        "body_text": "- Published Anthropic's shares have dropped back towards their initial price after a soaring first day on the stock market, as a wider tech sell-off dragged markets down. The sell-off comes as concerns remain over the speed and size of artificial intelligence investment, but also as some large companies including Nvidia and SpaceX faced specific issues that worried investors. Those…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "49f4d43ed1aa2b1acb7039b2dcad792a45ffea7e",
+        "summary": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory.",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 67,
+        "title": "6pm ET, November 20 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-20T23:09:35",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": 310,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-21/cb1c18d9f6e3f3326a057d2900ff31c4eb9c88d8.mp3",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "cb1c18d9f6e3f3326a057d2900ff31c4eb9c88d8",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 52,
+        "title": "£10m ‘once-in-a-generation’ study to explore effects of children’s social media ban",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/18/social-media-ban-once-in-a-generation-study",
+        "published_at": "2026-11-18T07:00:36",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 594,
+        "duration_sec": null,
+        "body_text": "Countries around the world are considering social media bans for children, but whether this would work in practice has been hotly debated. Now researchers are seeking answers through a major scientific study led by Wellcome, which will be the first of its kind. Ten research projects will explore topics ranging from children’s mental health to their sleep and physical activity…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d1f3acf113bc560bed092effb1594c6ee23b5628",
+        "summary": "Research to look at whether ban can make meaningful change in mental health and wellbeing for under-16s Countries around the world are considering social media bans for children, but whether this would work in practice has been hotly debated. Now researchers are seeking answers through a major scientific study led by Wellcome, which will be the first of its kind. Ten research projects will explore topics ranging from children’s mental health to their sleep and physical activity, comparing factors before and after the social media ban for children under 16 is introduced in the UK in spring 2027. Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 13,
+        "title": "How a viral video gave a huge boost to new gene therapy",
+        "source": "NPR Short Wave",
+        "source_id": "npr_short_wave",
+        "category": "culture",
+        "url": "https://www.npr.org/2026/11/18/nx-s1-6034426/sanfilippo-syndrome-gene-therapy",
+        "published_at": "2026-11-18T08:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 166,
+        "duration_sec": 1059,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-21/5665e97f602a8ee19c675f4e881b29ec9f21e5d8.mp3",
+        "description": "Sanfilippo syndrome is a rare and degenerative disease that can be fatal by the time someone reaches their teens. So the O’Neill family knew they didn’t have much time after learning their 4-year old daughter, Eliza, had it. At the time no treatment existed, and the world of drug development had its eyes on more common illnesses. So the family took an all hands on deck, unusual approach to directly raise money and boost medical research. NPR pharmaceutical correspondent Sydney Lupkin shares what happened next, and what she learned from the O’Neills story about the promises and challenges of drug development. Interested in more medical science? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "5665e97f602a8ee19c675f4e881b29ec9f21e5d8",
+        "summary": "Sanfilippo syndrome is a rare and degenerative disease that can be fatal by the time someone reaches their teens. So the O’Neill family knew they didn’t have much time after learning their 4-year old daughter, Eliza, had it. At the time no treatment existed, and the world of drug development had its eyes on more common illnesses. So the family took an all hands on deck, unusual approach to directly raise money and boost medical research. NPR pharmaceutical correspondent Sydney Lupkin shares what happened next, and what she learned from the O’Neills story about the promises and challenges of drug development. Interested in more medical science? Email us your question at shortwave@npr.org . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "fresh": 4
+    }
+  }
+}

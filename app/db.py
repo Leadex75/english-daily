@@ -15,6 +15,9 @@ CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 SOURCES_PATH = PROJECT_ROOT / "sources.yaml"
 
 DEFAULTS: dict[str, Any] = {
+    "languages": ["en"],
+    "default_language": "en",
+    "online_site_url": "https://leadex75.github.io/english-daily/",
     "data_dir": "./data",
     "host": "127.0.0.1",
     "port": 8000,
@@ -52,7 +55,10 @@ DEFAULTS: dict[str, Any] = {
     "weekly_goal_default": 5,
     "history_keywords": [],
     "history_categories": [],
+    "history_periods": {},
+    "history_themes": {},
     "word_bands": {},
+    "levels": {},
     "phrase_history_days": 400,
     "phrase_offline": False,
     "content_blocklist": [],
@@ -68,7 +74,8 @@ CREATE_SOURCES = """CREATE TABLE sources (
     level_min TEXT NOT NULL,
     level_max TEXT NOT NULL,
     max_duration_sec INTEGER NULL,
-    enabled INTEGER DEFAULT 1
+    enabled INTEGER DEFAULT 1,
+    lang TEXT NOT NULL DEFAULT 'en'
 )"""
 
 CREATE_ITEMS = """CREATE TABLE items (
@@ -96,7 +103,12 @@ CREATE_ITEMS = """CREATE TABLE items (
     audio_remote_url TEXT,
     license TEXT,
     attribution TEXT,
-    origin TEXT DEFAULT 'fresh'
+    origin TEXT DEFAULT 'fresh',
+    lang TEXT NOT NULL DEFAULT 'en',
+    periods TEXT DEFAULT '[]',
+    themes TEXT DEFAULT '[]',
+    transcript_url TEXT,
+    transcript_text TEXT
 )"""
 
 CREATE_PICKS = """CREATE TABLE daily_picks (
@@ -107,19 +119,26 @@ CREATE_PICKS = """CREATE TABLE daily_picks (
     item_id INTEGER REFERENCES items(id),
     origin TEXT,
     badges TEXT,
-    PRIMARY KEY (date, level, category, kind)
+    reconstructed INTEGER DEFAULT 0,
+    lang TEXT NOT NULL DEFAULT 'en',
+    PRIMARY KEY (lang, date, level, category, kind)
 )"""
+
+CREATE_PHRASES = """CREATE TABLE phrases (
+    lang TEXT NOT NULL DEFAULT 'en', date TEXT NOT NULL, level TEXT NOT NULL,
+    payload TEXT NOT NULL, PRIMARY KEY (lang, date, level))"""
 
 CREATE_EXTRA = [
     """CREATE TABLE IF NOT EXISTS ingest_runs (
-        id INTEGER PRIMARY KEY, date TEXT NOT NULL, started_at TEXT NOT NULL,
-        finished_at TEXT, status TEXT NOT NULL, log TEXT)""",
+        id INTEGER PRIMARY KEY, date TEXT NOT NULL, lang TEXT NOT NULL DEFAULT 'en',
+        started_at TEXT NOT NULL, finished_at TEXT, status TEXT NOT NULL, log TEXT)""",
     """CREATE TABLE IF NOT EXISTS phrases (
-        date TEXT NOT NULL, level TEXT NOT NULL, payload TEXT NOT NULL,
-        PRIMARY KEY (date, level))""",
+        lang TEXT NOT NULL DEFAULT 'en', date TEXT NOT NULL, level TEXT NOT NULL,
+        payload TEXT NOT NULL, PRIMARY KEY (lang, date, level))""",
     """CREATE TABLE IF NOT EXISTS books (
-        librivox_id TEXT PRIMARY KEY, title TEXT, author TEXT, gutenberg_id TEXT,
-        genre TEXT, level TEXT, score REAL, url_rss TEXT, fetched_at TEXT)""",
+        librivox_id TEXT PRIMARY KEY, lang TEXT NOT NULL DEFAULT 'en', title TEXT,
+        author TEXT, gutenberg_id TEXT, genre TEXT, level TEXT, score REAL,
+        url_rss TEXT, fetched_at TEXT)""",
 ]
 
 
@@ -131,6 +150,14 @@ def load_config() -> dict[str, Any]:
     config = {**DEFAULTS, **raw}
     config["level_thresholds"] = {**DEFAULTS["level_thresholds"], **(raw.get("level_thresholds") or {})}
     config["word_bands"] = {**DEFAULTS.get("word_bands", {}), **(raw.get("word_bands") or {})}
+    levels = dict(DEFAULTS.get("levels") or {})
+    for language, values in (raw.get("levels") or {}).items():
+        if isinstance(values, dict):
+            levels[str(language)] = {
+                **levels.get(str(language), {}),
+                **values,
+            }
+    config["levels"] = levels
     env_data_dir = os.environ.get("ENGLISH_DAILY_DATA_DIR")
     if env_data_dir:
         config["data_dir"] = env_data_dir
@@ -142,6 +169,40 @@ def load_config() -> dict[str, Any]:
     return config
 
 
+def available_languages(config: dict[str, Any]) -> list[str]:
+    languages = [str(value) for value in (config.get("languages") or []) if str(value).strip()]
+    if not languages:
+        languages = [str(config.get("default_language") or "en")]
+    return list(dict.fromkeys(languages))
+
+
+def default_language(config: dict[str, Any]) -> str:
+    default = str(config.get("default_language") or "en")
+    languages = available_languages(config)
+    return default if default in languages else (languages[0] if languages else "en")
+
+
+def normalize_language(config: dict[str, Any], lang: str | None) -> str:
+    value = str(lang or default_language(config))
+    return value if value in available_languages(config) else default_language(config)
+
+
+def level_config(config: dict[str, Any], lang: str | None = None) -> tuple[dict[str, float], dict[str, Any]]:
+    language = normalize_language(config, lang)
+    entry = (config.get("levels") or {}).get(language) or {}
+    english = (config.get("levels") or {}).get("en") or {}
+    thresholds = dict(entry.get("thresholds") or english.get("thresholds") or config.get("level_thresholds") or {})
+    bands = dict(entry.get("word_bands") or english.get("word_bands") or config.get("word_bands") or {})
+    return thresholds, bands
+
+
+def sources_for_language(
+    sources: list[dict[str, Any]], config: dict[str, Any], lang: str | None = None
+) -> list[dict[str, Any]]:
+    language = normalize_language(config, lang)
+    return [src for src in sources if str(src.get("lang") or "en") == language]
+
+
 def today(config: dict[str, Any]) -> str:
     try:
         zone = ZoneInfo(str(config.get("timezone") or "Europe/Paris"))
@@ -150,10 +211,13 @@ def today(config: dict[str, Any]) -> str:
     return dt.datetime.now(zone).date().isoformat()
 
 
-def load_sources() -> list[dict[str, Any]]:
+def load_sources(config: dict[str, Any] | None = None, lang: str | None = None) -> list[dict[str, Any]]:
     with SOURCES_PATH.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle) or {}
-    return list(data.get("sources") or [])
+    sources = list(data.get("sources") or [])
+    if config is None:
+        return sources
+    return sources_for_language(sources, config, lang)
 
 
 def data_dir(config: dict[str, Any]) -> Path:
@@ -208,9 +272,26 @@ def _needs_migration(conn: sqlite3.Connection) -> bool:
     sources = _table_sql(conn, "sources")
     items = _table_sql(conn, "items")
     picks = _table_sql(conn, "daily_picks")
+    phrases = _table_sql(conn, "phrases")
+    books = _table_sql(conn, "books")
+    runs = _table_sql(conn, "ingest_runs")
     if not sources or not items:
         return False
-    return "'phrase'" not in sources or "'phrase'" not in items or "origin" not in picks
+    return any(
+        (
+            "'phrase'" not in sources,
+            "lang" not in sources.lower(),
+            "'phrase'" not in items,
+            "lang" not in items.lower(),
+            "periods" not in items,
+            "origin" not in picks,
+            "lang" not in picks.lower(),
+            "reconstructed" not in picks,
+            bool(phrases) and "lang" not in phrases.lower(),
+            bool(books) and "lang" not in books.lower(),
+            bool(runs) and "lang" not in runs.lower(),
+        )
+    )
 
 
 def _backup_before_migration(path: Path) -> None:
@@ -243,49 +324,66 @@ def init_db(config: dict[str, Any]) -> Path:
     try:
         conn.execute("PRAGMA foreign_keys=OFF")
         conn.execute("BEGIN")
-        if not _table_sql(conn, "sources"):
+        sources_sql = _table_sql(conn, "sources")
+        if not sources_sql:
             conn.execute(CREATE_SOURCES)
-        elif "'phrase'" not in _table_sql(conn, "sources"):
+        elif "'phrase'" not in sources_sql or "lang" not in sources_sql.lower():
             _rebuild(
                 conn,
                 "sources",
                 CREATE_SOURCES,
-                ["id", "name", "feed_url", "category", "kind", "level_min", "level_max", "max_duration_sec", "enabled"],
+                ["id", "name", "feed_url", "category", "kind", "level_min", "level_max",
+                 "max_duration_sec", "enabled", "lang"],
+                {"lang": "'en'"},
             )
 
-        if not _table_sql(conn, "items"):
+        items_sql = _table_sql(conn, "items")
+        if not items_sql:
             conn.execute(CREATE_ITEMS)
-        else:
-            old_columns = _columns(conn, "items")
-            for column, declaration in {
-                "audio_remote_url": "TEXT", "license": "TEXT", "attribution": "TEXT",
-                "origin": "TEXT DEFAULT 'fresh'",
-            }.items():
-                if column not in old_columns:
-                    conn.execute(f"ALTER TABLE items ADD COLUMN {column} {declaration}")
-            if "'phrase'" not in _table_sql(conn, "items"):
-                _rebuild(
-                    conn,
-                    "items",
-                    CREATE_ITEMS,
-                    ["id", "guid_hash", "source_id", "kind", "category", "title", "url", "summary",
-                     "published_at", "fetched_at", "body_text", "word_count", "duration_sec",
-                     "audio_path", "audio_bytes", "fk_grade", "avg_sentence_len", "rare_word_ratio",
-                     "score", "level", "level_method", "audio_remote_url", "license", "attribution", "origin"],
-                    {"origin": "'fresh'"},
-                )
+        elif any(
+            column not in _columns(conn, "items")
+            for column in ("origin", "lang", "periods", "themes", "transcript_url", "transcript_text")
+        ) or "'phrase'" not in items_sql:
+            _rebuild(
+                conn,
+                "items",
+                CREATE_ITEMS,
+                ["id", "guid_hash", "source_id", "kind", "category", "title", "url", "summary",
+                 "published_at", "fetched_at", "body_text", "word_count", "duration_sec",
+                 "audio_path", "audio_bytes", "fk_grade", "avg_sentence_len", "rare_word_ratio",
+                 "score", "level", "level_method", "audio_remote_url", "license", "attribution",
+                 "origin", "lang", "periods", "themes", "transcript_url", "transcript_text"],
+                {"origin": "'fresh'", "lang": "'en'", "periods": "'[]'", "themes": "'[]'"},
+            )
 
-        if not _table_sql(conn, "daily_picks"):
+        picks_sql = _table_sql(conn, "daily_picks")
+        if not picks_sql:
             conn.execute(CREATE_PICKS)
-        elif "origin" not in _columns(conn, "daily_picks"):
+        elif "lang" not in picks_sql.lower() or "reconstructed" not in picks_sql:
             _rebuild(
                 conn, "daily_picks", CREATE_PICKS,
-                ["date", "level", "category", "kind", "item_id", "origin", "badges"],
-                {"origin": "'fresh'", "badges": "'[]'"},
+                ["date", "level", "category", "kind", "item_id", "origin", "badges",
+                 "reconstructed", "lang"],
+                {"origin": "'fresh'", "badges": "'[]'", "reconstructed": "0", "lang": "'en'"},
+            )
+
+        phrases_sql = _table_sql(conn, "phrases")
+        if not phrases_sql:
+            conn.execute(CREATE_PHRASES)
+        elif "lang" not in phrases_sql.lower():
+            _rebuild(
+                conn, "phrases", CREATE_PHRASES,
+                ["date", "level", "payload", "lang"],
+                {"lang": "'en'"},
             )
         for statement in CREATE_EXTRA:
             conn.execute(statement)
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_daily_picks_date ON daily_picks(date)")
+        for table in ("books", "ingest_runs"):
+            if table in {row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}:
+                columns = _columns(conn, table)
+                if "lang" not in columns:
+                    conn.execute(f"ALTER TABLE {table} ADD COLUMN lang TEXT NOT NULL DEFAULT 'en'")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_daily_picks_date ON daily_picks(date, lang)")
         conn.commit()
     except Exception:
         conn.rollback()
@@ -296,19 +394,23 @@ def init_db(config: dict[str, Any]) -> Path:
     return path
 
 
-def upsert_sources(sources: list[dict[str, Any]], config: dict[str, Any]) -> None:
+def upsert_sources(
+    sources: list[dict[str, Any]], config: dict[str, Any], lang: str | None = None
+) -> None:
+    selected = sources if lang is None else sources_for_language(sources, config, lang)
     conn = connect(config)
     try:
-        for src in sources:
+        for src in selected:
             conn.execute(
                 """INSERT INTO sources
-                   (id, name, feed_url, category, kind, level_min, level_max, max_duration_sec, enabled)
-                   VALUES (?,?,?,?,?,?,?,?,?)
+                   (id, name, feed_url, category, kind, level_min, level_max, max_duration_sec, enabled, lang)
+                   VALUES (?,?,?,?,?,?,?,?,?,?)
                    ON CONFLICT(id) DO UPDATE SET
                      name=excluded.name, feed_url=excluded.feed_url,
                      category=excluded.category, kind=excluded.kind,
                      level_min=excluded.level_min, level_max=excluded.level_max,
-                     max_duration_sec=excluded.max_duration_sec, enabled=excluded.enabled""",
+                     max_duration_sec=excluded.max_duration_sec, enabled=excluded.enabled,
+                     lang=excluded.lang""",
                 (
                     str(src["id"]),
                     str(src.get("name") or src["id"]),
@@ -319,6 +421,7 @@ def upsert_sources(sources: list[dict[str, Any]], config: dict[str, Any]) -> Non
                     str(src.get("level_max") or "computed"),
                     src.get("max_duration_sec"),
                     int(bool(src.get("enabled", True))),
+                    str(src.get("lang") or "en"),
                 ),
             )
         conn.commit()
@@ -326,11 +429,13 @@ def upsert_sources(sources: list[dict[str, Any]], config: dict[str, Any]) -> Non
         conn.close()
 
 
-def successful_ingest_exists(day: str, config: dict[str, Any]) -> bool:
+def successful_ingest_exists(day: str, config: dict[str, Any], lang: str | None = None) -> bool:
+    language = normalize_language(config, lang)
     conn = connect(config)
     try:
         row = conn.execute(
-            "SELECT 1 FROM ingest_runs WHERE date=? AND status IN ('ok','partial') LIMIT 1", (day,)
+            "SELECT 1 FROM ingest_runs WHERE date=? AND lang=? AND status IN ('ok','partial') LIMIT 1",
+            (day, language),
         ).fetchone()
         return row is not None
     finally:

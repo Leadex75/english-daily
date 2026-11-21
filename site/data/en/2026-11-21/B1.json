@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-21",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 70,
+        "title": "Mal Whitfield",
+        "source": "Simple English Wikipedia",
+        "source_id": "wikipedia_simple",
+        "category": "culture",
+        "url": "https://simple.wikipedia.org/wiki/Mal_Whitfield",
+        "published_at": "2026-11-21T00:12:13",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 126,
+        "duration_sec": null,
+        "body_text": "Malvin Greston Whitfield (October 11, 1924 – November 18, 2015) was an American former athlete and goodwill ambassador. He was the Olympic champion in the 800 metres at the 1948 and 1952 Summer Olympics. Overall, he is a five-time Olympic medalist (three gold, one silver, one bronze). Whitfield was born in Bay City, Texas. He moved at age 4 to Watts, Los Angeles. He joined the United States Army Air Forces in 1943 as a member of the Tuskegee Airmen. After World War II he remained in the military, but also enrolled at the Ohio State University. He served inn the Korean War. Whitfield died under hospice care in Washington, D.C. on the night of November 18, 2015 from heart failure, aged 91. == References == == Other websites == Mal Whitfield's profile at Sports Reference.com Archived 2020-04-17 at the Wayback Machine",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "bd68d2c44875d3877ff8c31db6fa8a988a671c0d",
+        "summary": "Malvin Greston Whitfield (October 11, 1924 – November 18, 2015) was an American former athlete and goodwill ambassador. He was the Olympic champion in the 800 metres at the 1948 and 1952 Summer Olympics. Overall, he is a five-time Olympic medalist (three gold, one silver, one bronze). Whitfield was born in Bay City, Texas. He moved at age 4 to Watts, Los Angeles. He joined the United States Army A",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 1,
+    "total": 6,
+    "origins": {
+      "fresh": 1
+    }
+  }
+}

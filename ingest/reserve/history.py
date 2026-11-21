@@ -12,8 +12,10 @@ from ingest.reserve.wikipedia import _extracts
 MAX_TITLES = 800
 
 
-def _refresh_title_cache(config: dict[str, Any], state_dir: str, budget: Budget) -> list[str]:
-    cache = load_wiki_cache(state_dir)
+def _refresh_title_cache(
+    config: dict[str, Any], state_dir: str, budget: Budget, lang: str | None = None
+) -> list[str]:
+    cache = load_wiki_cache(state_dir, config, lang)
     month = dt.date.today().strftime("%Y-%m")
     history_cache = cache.get("history") or {}
     if history_cache.get("month") == month and history_cache.get("titles"):
@@ -35,12 +37,18 @@ def _refresh_title_cache(config: dict[str, Any], state_dir: str, budget: Budget)
     random.shuffle(titles)
     titles = titles[:MAX_TITLES]
     cache["history"] = {"month": month, "titles": titles, "refreshed_at": dt.datetime.now().isoformat(timespec="seconds")}
-    save_wiki_cache(state_dir, cache)
+    save_wiki_cache(state_dir, cache, config, lang)
     return titles
 
 
-def sample_history(config: dict[str, Any], budget: Budget, state_dir: str, batches: int = 2) -> list[dict[str, Any]]:
-    titles = _refresh_title_cache(config, state_dir, budget)
+def sample_history(
+    config: dict[str, Any],
+    budget: Budget,
+    state_dir: str,
+    batches: int = 2,
+    lang: str | None = None,
+) -> list[dict[str, Any]]:
+    titles = _refresh_title_cache(config, state_dir, budget, lang)
     if not titles:
         return []
     candidates: list[dict[str, Any]] = []

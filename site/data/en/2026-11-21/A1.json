@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-21",
+  "lang": "en",
+  "level": "A1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 0,
+    "total": 6,
+    "origins": {}
+  }
+}

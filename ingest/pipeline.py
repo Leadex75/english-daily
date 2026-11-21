@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-from app.db import PROJECT_ROOT, connect, load_sources, prune_audio
+from app.db import PROJECT_ROOT, connect, default_language, level_config, load_sources, prune_audio
 from ingest.fetch_audio import download_audio
 from ingest.fetch_feeds import fetch_source, is_reserve_source
 from ingest.fetch_text import body_for_entry, clean_text, word_count
@@ -35,13 +35,16 @@ def _insert_fresh_items(
     audios_kept: int,
     sources_report: dict[str, str],
     errors: dict[str, str],
+    lang: str | None = None,
 ) -> tuple[int, int, int]:
     cutoff = (
         dt.date.fromisoformat(day) - dt.timedelta(days=int(config["lookback_days"]))
     ).isoformat()
     text_low = int(config["text_hard_min_words"])
     text_high = int(config["text_hard_max_words"])
-    for source in load_sources():
+    language = str(lang or default_language(config))
+    thresholds, _ = level_config(config, language)
+    for source in load_sources(config, language):
         if not source.get("enabled", True) or is_reserve_source(source):
             continue
         name = str(source.get("name") or source["id"])
@@ -74,7 +77,7 @@ def _insert_fresh_items(
                 text_for_score = body if kind == "text" else clean_text(entry.get("summary"))
                 minimum_words = 120 if kind == "text" else 60
                 values, level, method = level_for_source(
-                    text_for_score, low, high, config["level_thresholds"], minimum_words
+                    text_for_score, low, high, thresholds, minimum_words, language
                 )
 
                 audio_info: dict[str, Any] | None = None
@@ -88,9 +91,9 @@ def _insert_fresh_items(
                        (guid_hash, source_id, kind, category, title, url, summary,
                         published_at, fetched_at, body_text, word_count, duration_sec,
                         audio_path, audio_bytes, fk_grade, avg_sentence_len,
-                        rare_word_ratio, score, level, level_method,
-                        audio_remote_url, license, attribution, origin)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'fresh')""",
+                         rare_word_ratio, score, level, level_method,
+                         audio_remote_url, license, attribution, origin, lang)
+                        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, 'fresh', ?)""",
                     (
                         guid_hash,
                         str(source["id"]),
@@ -115,7 +118,8 @@ def _insert_fresh_items(
                         audio_info["audio_remote_url"] if audio_info else None,
                         license_name,
                         attribution,
-                    ),
+                        language,
+                    )
                 )
                 source_items += 1
                 items_added += 1
@@ -129,11 +133,12 @@ def _insert_fresh_items(
     return items_added, duplicates, audios_kept
 
 
-def _candidates(conn: Any) -> list[dict[str, Any]]:
+def _candidates(conn: Any, lang: str | None = None) -> list[dict[str, Any]]:
     rows = conn.execute(
         """SELECT i.*, s.name AS source_name
            FROM items i LEFT JOIN sources s ON s.id=i.source_id
-           WHERE i.category IN ('news','culture','history')"""
+           WHERE i.category IN ('news','culture','history') AND i.lang=?""",
+        (str(lang or "en"),),
     ).fetchall()
     candidates: list[dict[str, Any]] = []
     for row in rows:
@@ -144,13 +149,19 @@ def _candidates(conn: Any) -> list[dict[str, Any]]:
     return candidates
 
 
-def _store_picks(conn: Any, day: str, picks: dict[tuple[str, str, str], dict[str, Any]]) -> None:
-    conn.execute("DELETE FROM daily_picks WHERE date=?", (day,))
+def _store_picks(
+    conn: Any,
+    day: str,
+    picks: dict[tuple[str, str, str], dict[str, Any]],
+    lang: str | None = None,
+) -> None:
+    language = str(lang or "en")
+    conn.execute("DELETE FROM daily_picks WHERE date=? AND lang=?", (day, language))
     for (level, category, kind), item in picks.items():
         conn.execute(
             """INSERT INTO daily_picks
-               (date, level, category, kind, item_id, origin, badges)
-               VALUES (?,?,?,?,?,?,?)""",
+               (date, level, category, kind, item_id, origin, badges, lang)
+               VALUES (?,?,?,?,?,?,?,?)""",
             (
                 day,
                 str(level),
@@ -159,19 +170,26 @@ def _store_picks(conn: Any, day: str, picks: dict[tuple[str, str, str], dict[str
                 int(item["id"]),
                 str(item.get("origin") or "fresh"),
                 json.dumps(item.get("badges") or [], ensure_ascii=False),
+                language,
             ),
         )
     conn.commit()
 
 
-def run_ingest(day: str, config: dict[str, Any], state_dir: str | None = None) -> dict[str, Any]:
+def run_ingest(
+    day: str,
+    config: dict[str, Any],
+    state_dir: str | None = None,
+    lang: str | None = None,
+) -> dict[str, Any]:
     """Fetch, score, reserve, pick and persist one day of content."""
     root = Path(state_dir) if state_dir else PROJECT_ROOT / "state"
+    language = str(lang or default_language(config))
     conn = connect(config)
     try:
         cursor = conn.execute(
-            "INSERT INTO ingest_runs (date, started_at, status) VALUES (?,?, 'running')",
-            (day, dt.datetime.now().isoformat(timespec="seconds")),
+            "INSERT INTO ingest_runs (date, lang, started_at, status) VALUES (?,?,?, 'running')",
+            (day, language, dt.datetime.now().isoformat(timespec="seconds")),
         )
         run_id = int(cursor.lastrowid)
         conn.commit()
@@ -190,18 +208,18 @@ def run_ingest(day: str, config: dict[str, Any], state_dir: str | None = None) -
         conn = connect(config)
         try:
             items_added, duplicates, audios_kept = _insert_fresh_items(
-                conn, day, config, items_added, duplicates, audios_kept, sources_report, errors
+                conn, day, config, items_added, duplicates, audios_kept, sources_report, errors, language
             )
         finally:
             conn.close()
 
-    excluded = used_hashes(root, config)
-    pool = load_pool(root, config)
+    excluded = used_hashes(root, config, language)
+    pool = load_pool(root, config, language)
     reserve_before = len(pool)
     reserve_offline = bool(config.get("reserve_offline")) or bool(os.environ.get("ENGLISH_DAILY_RESERVE_OFFLINE"))
     if not reserve_offline:
         try:
-            pool = generate_reserves(config, root, pool)
+            pool = generate_reserves(config, root, pool, lang=language)
         except Exception as exc:
             errors["reserve pool"] = f"{type(exc).__name__}: {exc}"
             sources_report["reserve pool"] = "ERROR"
@@ -210,18 +228,18 @@ def run_ingest(day: str, config: dict[str, Any], state_dir: str | None = None) -
 
     conn = connect(config)
     try:
-        hydrate_db(conn, pool)
-        candidates = _candidates(conn)
+        hydrate_db(conn, pool, config, language)
+        candidates = _candidates(conn, language)
     finally:
         conn.close()
     picks, filled, empty = choose_picks(candidates, day, config, excluded_hashes=excluded)
 
     phrases_count = 0
     try:
-        phrases = generate_phrases(config, day, root)
+        phrases = generate_phrases(config, day, root, lang=language)
         conn = connect(config)
         try:
-            store_phrases(conn, day, phrases)
+            store_phrases(conn, day, phrases, language)
         finally:
             conn.close()
         phrases_count = len(phrases)
@@ -232,12 +250,12 @@ def run_ingest(day: str, config: dict[str, Any], state_dir: str | None = None) -
 
     conn = connect(config)
     try:
-        _store_picks(conn, day, picks)
+        _store_picks(conn, day, picks, language)
         picked_hashes = {str(item["guid_hash"]) for item in picks.values()}
-        writeback_db(conn, root, config, picked_hashes, excluded)
+        writeback_db(conn, root, config, picked_hashes, excluded, language)
     finally:
         conn.close()
-    state_entries = record_picks(root, config, day, picked_hashes)
+    state_entries = record_picks(root, config, day, picked_hashes, language)
     pruned = prune_audio(config) if int(config["retention_days"]) > 0 else 0
 
     status = "partial" if errors else "ok"
@@ -272,6 +290,7 @@ def run_ingest(day: str, config: dict[str, Any], state_dir: str | None = None) -
     )
     return {
         "date": day,
+        "lang": language,
         "status": status,
         "items": items_added,
         "duplicates": duplicates,

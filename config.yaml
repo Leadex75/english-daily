@@ -1,4 +1,7 @@
 # english-daily configuration (all paths relative to this project unless absolute)
+languages: [en]              # add another code only when banks/sources exist for it
+default_language: en
+online_site_url: https://leadex75.github.io/english-daily/
 data_dir: ./data            # can point to a Nextcloud-synced folder
 host: 127.0.0.1             # set 0.0.0.0 for LAN/phone access
 port: 8000
@@ -62,8 +65,45 @@ word_bands:
   B2: [3.8, 4.3]
   C1: [3.3, 3.8]
   C2: [2.5, 3.3]
+levels:
+  en:
+    thresholds:
+      A1: 0.15
+      A2: 0.28
+      B1: 0.42
+      B2: 0.58
+      C1: 0.75
+    word_bands:
+      A1: [5.3, 99.0]
+      A2: [4.8, 5.3]
+      B1: [4.3, 4.8]
+      B2: [3.8, 4.3]
+      C1: [3.3, 3.8]
+      C2: [2.5, 3.3]
 phrase_history_days: 400
 phrase_offline: false
+
+# ---- History enrichment ---------------------------------------------------
+history_periods:
+  Antiquity: [ancient, roman, greek, egypt, byzantine, antiquity, bce]
+  Middle Ages: [medieval, middle ages, feudal, crusade, viking, dynasty]
+  Early modern: [renaissance, reformation, renaissance, 1500, 1600, 1700, colonial]
+  19th century: [1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880, 1890, victorian]
+  World War I: [1914, 1915, 1916, 1917, 1918, wwi, first world war]
+  Interwar: [1919, 1920, 1930, 1938, interwar, weimar]
+  World War II: [1939, 1940, 1941, 1942, 1943, 1944, 1945, wwii, second world war]
+  Cold War: [1947, 1950, 1960, 1970, 1980, 1991, cold war, soviet, nato, warsaw]
+  Contemporary: [1992, 2000, 2010, 2020, contemporary, modern, today]
+history_themes:
+  Empire: [empire, imperial, colonial, colonization, empire]
+  Revolution: [revolution, revolt, uprising, rebellion]
+  War: [war, battle, campaign, army, navy, treaty, armistice]
+  Religion: [church, religion, religious, pope, caliph, temple]
+  Science: [science, scientific, discovery, invention, technology]
+  Economy: [economy, economic, trade, industry, industrial, market]
+  Society: [society, social, class, culture, education, family]
+  Politics: [politics, political, government, parliament, sovereignty, election]
+  Culture: [art, literature, music, architecture, philosophy]
 
 # Content blocklist: skip random Wikipedia / Gutenberg / Wiktionary candidates
 # for a general-audience site. Conservative, short, case-insensitive substring list.

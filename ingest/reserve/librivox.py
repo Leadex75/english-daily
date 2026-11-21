@@ -58,9 +58,14 @@ def _book_level(text: str, fallback: str, config: dict[str, Any]) -> tuple[str, 
 
 
 def sample_librivox(
-    config: dict[str, Any], budget: Budget, state_dir: str, source: dict[str, Any], max_books: int
+    config: dict[str, Any],
+    budget: Budget,
+    state_dir: str,
+    source: dict[str, Any],
+    max_books: int,
+    lang: str | None = None,
 ) -> list[dict[str, Any]]:
-    books = load_books(state_dir)
+    books = load_books(state_dir, config, lang)
     wanted = [str(name).lower() for name in source.get("genres") or []]
     params = {"format": "json", "extended": 1, "limit": 20, "offset": random.randint(0, 400)}
     payload = api_get("librivox.org", "/api/feed/audiobooks/", params, config, budget)
@@ -75,7 +80,12 @@ def sample_librivox(
         book_id = str(book.get("id") or "")
         if not book_id or book_id in books:
             continue
-        if "english" not in str(book.get("language") or "").lower():
+        book_language = str(book.get("language") or "").lower()
+        wanted_language = str(lang or "en").lower()
+        if wanted_language == "en":
+            if "english" not in book_language:
+                continue
+        elif wanted_language not in book_language and wanted_language[:2] not in book_language:
             continue
         genres = [str(item.get("name") or "") for item in book.get("genres") or []]
         if wanted and not any(any(word in genre.lower() for word in wanted) for genre in genres):
@@ -122,5 +132,5 @@ def sample_librivox(
                 candidate["level_method"] = method
                 candidate["score"] = score
                 candidates.append(candidate)
-    save_books(state_dir, books)
+    save_books(state_dir, books, config, lang)
     return candidates

@@ -13,10 +13,13 @@ from fastapi.staticfiles import StaticFiles
 from app.db import (
     PROJECT_ROOT,
     connect,
+    available_languages,
     data_dir,
+    default_language,
     init_db,
     load_config,
     load_sources,
+    normalize_language,
     successful_ingest_exists,
     today,
     upsert_sources,
@@ -30,14 +33,22 @@ app = FastAPI(title="english-daily", docs_url=None, redoc_url=None)
 _ingest_lock = threading.Lock()
 
 
+def _language(config: dict[str, Any], lang: str | None = None) -> str:
+    return normalize_language(config, lang)
+
+
 def _auto_ingest() -> None:
     config = load_config()
     day = today(config)
-    if not config.get("auto_ingest_on_start") or successful_ingest_exists(day, config):
+    if not config.get("auto_ingest_on_start") or all(
+        successful_ingest_exists(day, config, language)
+        for language in available_languages(config)
+    ):
         return
     with _ingest_lock:
-        if not successful_ingest_exists(day, config):
-            run_ingest(day, config)
+        for language in available_languages(config):
+            if not successful_ingest_exists(day, config, language):
+                run_ingest(day, config, lang=language)
 
 
 @app.on_event("startup")
@@ -60,51 +71,77 @@ def _valid_day(day: str) -> str:
 
 
 @app.get("/api/health")
-def health() -> dict[str, Any]:
+def health(lang: str | None = None) -> dict[str, Any]:
     config = load_config()
+    language = _language(config, lang)
     conn = connect(config)
     try:
-        sources = int(conn.execute("SELECT COUNT(*) FROM sources WHERE enabled=1").fetchone()[0])
+        sources = int(conn.execute(
+            "SELECT COUNT(*) FROM sources WHERE enabled=1 AND lang=?", (language,)
+        ).fetchone()[0])
     finally:
         conn.close()
-    return {"status": "ok", "name": "english-daily", "enabled_sources": sources, "ffmpeg": bool(shutil.which("ffmpeg"))}
+    return {
+        "status": "ok",
+        "name": "english-daily",
+        "lang": language,
+        "languages": available_languages(config),
+        "enabled_sources": sources,
+        "ffmpeg": bool(shutil.which("ffmpeg")),
+    }
 
 
 @app.get("/api/days")
-def days() -> list[str]:
-    conn = connect(load_config())
+def days(lang: str | None = None) -> list[str]:
+    config = load_config()
+    language = _language(config, lang)
+    conn = connect(config)
     try:
         rows = conn.execute(
             """SELECT date FROM (
-                 SELECT date FROM ingest_runs UNION SELECT date FROM phrases
-               ) ORDER BY date DESC"""
+                 SELECT date FROM ingest_runs WHERE lang=?
+                 UNION SELECT date FROM phrases WHERE lang=?
+               ) ORDER BY date DESC""",
+            (language, language),
         ).fetchall()
         return [str(row[0]) for row in rows]
     finally:
         conn.close()
 
 
+@app.get("/api/languages")
+def languages() -> dict[str, Any]:
+    config = load_config()
+    return {
+        "default": default_language(config),
+        "languages": available_languages(config),
+    }
+
+
 @app.get("/api/day/{day}")
-def day(day: str, level: str = "B1") -> dict[str, Any]:
+def day(day: str, level: str = "B1", lang: str | None = None) -> dict[str, Any]:
     day = _valid_day(day)
     if level not in LEVELS:
         raise HTTPException(status_code=400, detail=f"level must be one of {', '.join(LEVELS)}")
     config = load_config()
+    language = _language(config, lang)
     conn = connect(config)
     try:
-        return serialize_day(conn, day, level, config)
+        return serialize_day(conn, day, level, config, lang=language)
     finally:
         conn.close()
 
 
 @app.get("/api/phrase/{day}")
-def phrase(day: str, level: str = "B1") -> dict[str, Any]:
+def phrase(day: str, level: str = "B1", lang: str | None = None) -> dict[str, Any]:
     day = _valid_day(day)
     if level not in LEVELS:
         raise HTTPException(status_code=400, detail=f"level must be one of {', '.join(LEVELS)}")
-    conn = connect(load_config())
+    config = load_config()
+    language = _language(config, lang)
+    conn = connect(config)
     try:
-        payload = load_phrases(conn, day).get(level)
+        payload = load_phrases(conn, day, language).get(level)
     finally:
         conn.close()
     if not payload:
@@ -113,16 +150,17 @@ def phrase(day: str, level: str = "B1") -> dict[str, Any]:
 
 
 @app.get("/api/stats")
-def stats(days: int = 30) -> dict[str, Any]:
+def stats(days: int = 30, lang: str | None = None) -> dict[str, Any]:
     days = max(1, min(365, int(days)))
     config = load_config()
+    language = _language(config, lang)
     conn = connect(config)
     try:
         rows = conn.execute(
             """SELECT level, category, kind, COUNT(*) AS total
-               FROM daily_picks WHERE date >= date('now', ?)
+               FROM daily_picks WHERE date >= date('now', ?) AND lang=?
                GROUP BY level, category, kind""",
-            (f"-{days} days",),
+            (f"-{days} days", language),
         ).fetchall()
         by_level: dict[str, dict[str, int]] = {
             level: {"filled": 0, "total": len(CATEGORIES) * len(KINDS)} for level in LEVELS
@@ -131,12 +169,17 @@ def stats(days: int = 30) -> dict[str, Any]:
             level = str(row["level"])
             if level in by_level:
                 by_level[level]["filled"] += int(row["total"])
-        phrase_days = int(conn.execute("SELECT COUNT(DISTINCT date) FROM phrases").fetchone()[0])
-        item_total = int(conn.execute("SELECT COUNT(*) FROM items").fetchone()[0])
+        phrase_days = int(conn.execute(
+            "SELECT COUNT(DISTINCT date) FROM phrases WHERE lang=?", (language,)
+        ).fetchone()[0])
+        item_total = int(conn.execute(
+            "SELECT COUNT(*) FROM items WHERE lang=?", (language,)
+        ).fetchone()[0])
     finally:
         conn.close()
     return {
         "days": days,
+        "lang": language,
         "weekly_goal": int(config.get("weekly_goal_default", 5)),
         "by_level": by_level,
         "phrase_days": phrase_days,

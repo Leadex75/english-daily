@@ -10,9 +10,11 @@ from ingest.reserve.librivox import gutenberg_text
 CURATED_IDS = ["1184", "1342", "11", "2701", "1661", "84", "174", "98", "1400", "2600", "345", "1260"]
 
 
-def sample_gutenberg(config: dict[str, Any], budget: Budget, state_dir: str) -> list[dict[str, Any]]:
+def sample_gutenberg(
+    config: dict[str, Any], budget: Budget, state_dir: str, lang: str | None = None
+) -> list[dict[str, Any]]:
     ids = list(CURATED_IDS)
-    cached = [str(item.get("gutenberg_id") or "") for item in load_books(state_dir).values()]
+    cached = [str(item.get("gutenberg_id") or "") for item in load_books(state_dir, config, lang).values()]
     ids.extend(gid for gid in cached if gid and gid not in ids)
     random.shuffle(ids)
     candidates: list[dict[str, Any]] = []

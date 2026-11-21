@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-21",
+  "lang": "en",
+  "level": "C2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 30,
+        "title": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
+        "category": "news",
+        "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+        "published_at": "2026-11-18T09:58:28",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C2",
+        "word_count": 773,
+        "duration_sec": null,
+        "body_text": "Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay, if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya.…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "66161840705cea9bcc0d7888654f2fb2bf542c3e",
+        "summary": "A ruling against Myanmar could set precedent for court’s judgment on Israel’s actions in Gaza Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay , if the court rules on Thursday that the Myanmar government committed genocide against the Rohingya. The ICJ has never found a state responsible for committing genocide, and a significant factor in previous cases has been how to prove “intent” in a crime defined as acts committed with the “intent to destroy, in whole or in part” a national, ethnical, racial or religious group. Continue reading...",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 1,
+    "total": 6,
+    "origins": {
+      "fresh": 1
+    }
+  }
+}

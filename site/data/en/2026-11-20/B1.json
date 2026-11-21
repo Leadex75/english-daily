@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-20",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 61,
+        "title": "AI exam cheat confesses",
+        "source": "BBC Learning English from the News (text)",
+        "source_id": "bbc_learning_english_from_the_news_text",
+        "category": "news",
+        "url": "http://www.bbc.co.uk/programmes/p0pnmptx",
+        "published_at": "2026-11-18T14:27:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 171,
+        "duration_sec": null,
+        "body_text": "South Korean student Wan Han-Seok admitted this week that he had used smart glasses and AI to cheat in a university entrance exam. South Korean student Han Won-seok admitted this week that he had used a concealed camera and AI to cheat in a university entrance exam. His device took pictures of the questions, which were then sent to an…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d7b0996df3b93d8e454e4163bf96240696777a0c",
+        "summary": "South Korean student Han Won-seok admitted this week that he had used a concealed camera and AI to cheat in a university entrance exam. His device took pictures of the questions, which were then sent to an AI program, which could send back the correct answer. Get a free worksheet for this episode here: https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261118 Sign up for our email newsletter: https://www.bbc.co.uk/send/u178220599 Practise your language skills here: https://www.bbc.co.uk/learningenglish/english/skills Come back next week for another episode of Learning English from the News Note: This podcast uses the wrong name for the accountancy student and also incorrectly states that the student used smart glasses, when he in fact admitted using a concealed camera. The name should be 'Han Won-seok'. The above description has been amended to correct these details.",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 62,
+        "title": "AI exam cheat confesses",
+        "source": "BBC Learning English from the News",
+        "source_id": "bbc_learning_english_from_the_news",
+        "category": "news",
+        "url": "http://www.bbc.co.uk/programmes/p0pnmptx",
+        "published_at": "2026-11-18T14:27:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 148,
+        "duration_sec": 519,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-20/19cbef29f72d5cf8ccae5411202cdcf9a04cbbd7.mp3",
+        "description": "South Korean student Han Won-seok admitted this week that he had used a concealed camera and AI to cheat in a university entrance exam. His device took pictures of the questions, which were then sent to an AI program, which could send back the correct answer. Get a free worksheet for this episode here: https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261118 Sign up for our email newsletter: https://www.bbc.co.uk/send/u178220599 Practise your language skills here: https://www.bbc.co.uk/learningenglish/english/skills Come back next week for another episode of Learning English from the News Note: This podcast uses the wrong name for the accountancy student and also incorrectly states that the student used smart glasses, when he in fact admitted using a concealed camera. The name should be 'Han Won-seok'. The above description has been amended to correct these details.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "19cbef29f72d5cf8ccae5411202cdcf9a04cbbd7",
+        "summary": "South Korean student Han Won-seok admitted this week that he had used a concealed camera and AI to cheat in a university entrance exam. His device took pictures of the questions, which were then sent to an AI program, which could send back the correct answer. Get a free worksheet for this episode here: https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/261118 Sign up for our email newsletter: https://www.bbc.co.uk/send/u178220599 Practise your language skills here: https://www.bbc.co.uk/learningenglish/english/skills Come back next week for another episode of Learning English from the News Note: This podcast uses the wrong name for the accountancy student and also incorrectly states that the student used smart glasses, when he in fact admitted using a concealed camera. The name should be 'Han Won-seok'. The above description has been amended to correct these details.",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 65,
+        "title": "Jan Mayensfield",
+        "source": "Simple English Wikipedia",
+        "source_id": "wikipedia_simple",
+        "category": "culture",
+        "url": "https://simple.wikipedia.org/wiki/Jan_Mayensfield",
+        "published_at": "2026-11-20T23:38:57",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 358,
+        "duration_sec": null,
+        "body_text": "Jan Mayensfield ((ICAO: ENJA)) is an aerodrome or airfield in Jan Mayen, Norway. It is run by the Norwegian Armed Forces. The aerodrome serves both the civilians and the military on the island. The airfield was opened in 1960. The runway is made of dirt and is 1,500-meter (4,921 ft) long. The runway is labeled 06-24. Eight times a year…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "7186f94b4668a7e461462e087dc2b5895a80f1d9",
+        "summary": "Jan Mayensfield ((ICAO: ENJA)) is an aerodrome or airfield in Jan Mayen, Norway. It is run by the Norwegian Armed Forces. The aerodrome serves both the civilians and the military on the island. The airfield was opened in 1960. The runway is made of dirt and is 1,500-meter (4,921 ft) long. The runway is labeled 06-24. Eight times a year, a Lockheed C-130 Hercules from the 335 Squadron from Bodø Mai",
+        "origin": "fresh",
+        "badges": []
+      },
+      "audio": {
+        "id": 1,
+        "title": "Are microplastics harming us?",
+        "source": "BBC 6 Minute English",
+        "source_id": "bbc_6min_english",
+        "category": "culture",
+        "url": "http://www.bbc.co.uk/programmes/p0pnt62q",
+        "published_at": "2026-11-19T10:07:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 152,
+        "duration_sec": 403,
+        "body_text": null,
+        "audio_url": "./audio/2026-11-20/b3f950ebb88452e7fa8c94d604c4bc9ef35855cc.mp3",
+        "description": "How much plastic do you use on a daily basis? And how much of it is used to package or prepare food? Recently, scientists are becoming increasingly concerned that microplastics, tiny bits of plastic invisible to the naked eye, are entering our bodies through these food sources... but it is unclear exactly what the long-term health effects will be. Becca and Phil discuss this and teach you some new vocabulary. 6 Minute English now has a VIDEO VERSION! It's the same programme that you know and love, but now you can see us! Watch this podcast here (and find a free worksheet): https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261119 Let us know what you think of the new version of 6 Minute English at learningenglish@bbc.co.uk Sign up for our email newsletter for tips and updates: https://www.bbc.co.uk/send/u178220599 Follow us on social media @bbclearningenglish",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "b3f950ebb88452e7fa8c94d604c4bc9ef35855cc",
+        "summary": "How much plastic do you use on a daily basis? And how much of it is used to package or prepare food? Recently, scientists are becoming increasingly concerned that microplastics, tiny bits of plastic invisible to the naked eye, are entering our bodies through these food sources... but it is unclear exactly what the long-term health effects will be. Becca and Phil discuss this and teach you some new vocabulary. 6 Minute English now has a VIDEO VERSION! It's the same programme that you know and love, but now you can see us! Watch this podcast here (and find a free worksheet): https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-261119 Let us know what you think of the new version of 6 Minute English at learningenglish@bbc.co.uk Sign up for our email newsletter for tips and updates: https://www.bbc.co.uk/send/u178220599 Follow us on social media @bbclearningenglish",
+        "origin": "fresh",
+        "badges": []
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": null,
+  "meta": {
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "fresh": 4
+    }
+  }
+}
