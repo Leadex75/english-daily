@@ -5,60 +5,26 @@
   "slots": {
     "news": {
       "text": {
-        "id": 33,
-        "title": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
+        "id": 29,
+        "title": "Race to replant five South African baobabs after export blocked",
         "source": "The Guardian - World news",
         "source_id": "guardian_world",
         "category": "news",
-        "url": "https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested",
-        "published_at": "2026-11-21T17:46:55",
-        "level": "C2",
-        "slot_level": "C2",
-        "source_level": "C2",
-        "word_count": 421,
-        "duration_sec": null,
-        "body_text": "The Mexican military captured one of the FBI’s top 10 most wanted fugitives during a special forces raid in the Mexican state of Sinaloa on Friday night. Fausto Isidro Meza Flores, known as “El Chapo Isidro”, was arrested along with two other alleged leaders of his gang after a gun battle that triggered widespread panic in the city of Guasave.",
-        "audio_url": null,
-        "description": null,
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": true,
-        "guid_hash": "b6d7db70eb25de6a189c6899e0c8a1060de3bfb5",
-        "summary": "Fausto Isidro Meza Flores was one of FBI’s most wanted fugitives and evaded capture for more than a decade The Mexican military captured one of the FBI’s top 10 most wanted fugitives during a special forces raid in the Mexican state of Sinaloa on Friday night. Fausto Isidro Meza Flores, known as “El Chapo Isidro”, was arrested along with two other alleged leaders of his gang after a gun battle that sparked widespread panic in the city of Guasave.",
-        "origin": "fresh",
-        "badges": [],
-        "periods": [],
-        "themes": [],
-        "history_terms": [],
-        "alt_text": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid — The Guardian - World news",
-        "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/world/rss",
-        "reading_time_min": 3
-      },
-      "audio": null
-    },
-    "culture": {
-      "text": {
-        "id": 49,
-        "title": "Pill to treat pancreatic cancer hailed as ‘biggest breakthrough in decades’",
-        "source": "The Guardian - Science",
-        "source_id": "guardian_science",
-        "category": "culture",
-        "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
-        "published_at": "2026-11-20T09:36:10",
+        "url": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe",
+        "published_at": "2026-11-19T11:03:24",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C1",
-        "word_count": 521,
+        "word_count": 654,
         "duration_sec": null,
-        "body_text": "A pill that can shrink and potentially eliminate pancreas tumours is being hailed as the biggest breakthrough treatment for the cancer in decades. In one in 12 of the patients given the drug, daraxonrasib, during a trial, the cancer became undetectable, and the tumours stopped growing in almost all of the 61 patients.",
+        "body_text": "Environmentalists in South Africa are racing to replant five centuries-old baobabs after the 20-tonne trees were dug up by an exporter, who tried to ship them thousands of miles to Georgia. The baobabs arrived at a reserve in Timbavati, in north-eastern South Africa, on Wednesday, where they will be replanted and supported by cables to help them recover.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "edb2f8093a7b0334c62ae2e83be197ef78e4ad83",
-        "summary": "Cancer undetectable for one in 12 patients in daraxonrasib trial, while nearly all participants’ tumours stopped growing A pill that can shrink and potentially eliminate pancreas tumours is being hailed as the biggest breakthrough treatment for the cancer in decades. In one in 12 of the patients given the drug, daraxonrasib , during a trial, the cancer became undetectable, and the tumours stopped growing in almost all of the 61 patients. The trial participants had recently been diagnosed with advanced pancreatic cancer that had spread to other parts of the body.",
+        "guid_hash": "11053f67c20e8976d599c54bb79fe545476c3419",
+        "summary": "The trees, intended for an unnamed buyer in Georgia, were reportedly dug up without the necessary permits Environmentalists in South Africa are racing to replant five centuries-old baobabs after the 20-tonne trees were dug up by an exporter, who tried to ship them thousands of miles to Georgia. The baobabs arrived at a reserve in Timbavati, in north-eastern South Africa, on Wednesday, where they will be replanted and supported by cables to help them recover. The trees had been stranded at a warehouse in Durban since July, when they were intercepted by authorities who said they had been moved without the necessary permissions.",
         "origin": "adjacent",
         "badges": [
           "Closest level: C1"
@@ -66,32 +32,100 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Pill to treat pancreatic cancer hailed as ‘biggest breakthrough in decades’ — The Guardian - Science",
+        "alt_text": "Race to replant five South African baobabs after export blocked — The Guardian - World news",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/world/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 9,
+        "title": "Trump-Xi-Putin Meeting, Nvidia Board Rejects Haung's Return, Computer System Outages",
+        "source": "NPR Up First",
+        "source_id": "npr_up_first",
+        "category": "news",
+        "url": "https://www.npr.org/2026/11/18/nx-s1-6045399/trump-xi-putin-meeting-nvidia-board-rejects-haungs-return-computer-system-outages",
+        "published_at": "2026-11-18T10:55:31",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 102,
+        "duration_sec": 807,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/207319f2-4e0d-45f8-b821-5b8f59592950/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_ac5791d29e552f7dd9dbdf311107ab03_12919988.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=207319f2-4e0d-45f8-b821-5b8f59592950&feed=HMwRVgVt&t=podcast&e=nx-s1-6045399&p=510318&d=807&size=12919581&hash_redirect=1&x-total-bytes=12919988&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__0da68476a86eb742fa14b38a58cc478734215a6f",
+        "description": "President Trump meets Xi Jinping in China as the two countries remain locked in disputes over trade, rare earths and advanced technology, before Vladimir Putin joins them for a three-way summit aimed partly at projecting global leadership. Nvidia's board says Jensen Huang will not return as CEO, even as the company posts another huge quarter and its interim leadership tries to reassure investors that the chipmaker can stay on top without its founder. Apple, the National Security Agency, the FAA and major banks have all suffered recent computer outages, raising questions about why so many critical systems are breaking down at once.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "b1a6729f2ad14d54aea9787359cccedc955dd62f",
+        "summary": "President Trump meets Xi Jinping in China as the two countries remain locked in disputes over trade, rare earths and advanced technology, before Vladimir Putin joins them for a three-way summit aimed partly at projecting global leadership. Nvidia's board says Jensen Huang will not return as CEO, even as the company posts another huge quarter and its interim leadership tries to reassure investors that the chipmaker can stay on top without its founder. Apple, the National Security Agency, the FAA and major banks have all suffered recent computer outages, raising questions about why so many critical systems are breaking down at once.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Trump-Xi-Putin Meeting, Nvidia Board Rejects Haung's Return, Computer System Outages — NPR Up First",
+        "duration_formatted": "13:27",
+        "source_url": "https://feeds.npr.org/510318/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 50,
+        "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
+        "published_at": "2026-11-20T00:01:15",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 545,
+        "duration_sec": null,
+        "body_text": "After a voyage of more than eight years and 6bn miles, a joint European-Japanese space mission has arrived at Mercury and is preparing to swing into orbit around the tiny, barely explored world.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "dfdf9519a4809038ea2f58b7325e8c30e345bae1",
+        "summary": "BepiColombo double probe will map planet’s surface and study its interior to shed light on its unusually large core After a voyage of more than eight years and 6bn miles, a joint European-Japanese space mission has arrived at Mercury and is preparing to swing into orbit around the tiny, barely explored world. The BepiColombo mission will become only the second in history to circle the first rock from the sun and the smallest planet in the solar system when flight controllers fire the spacecraft’s thrusters on Saturday and send it into orbit.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Spacecraft reaches Mercury on second-ever mission to enter its orbit — The Guardian - Science",
         "duration_formatted": "",
         "source_url": "https://www.theguardian.com/science/rss",
         "reading_time_min": 3
       },
       "audio": {
-        "id": 1792395147,
-        "title": "Lost World - \"TRY YOUR LUCK WITH PROFESSOR CHALLENGER\"",
+        "id": 1548479937,
+        "title": "Prince and the Pauper - 06 – Tom receives instructions",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/the-lost-world/",
-        "published_at": "2026-11-21T18:27:17",
+        "url": "https://librivox.org/the-prince-and-the-pauper-by-mark-twain/",
+        "published_at": "2026-11-21T21:54:46",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C1",
-        "word_count": 87,
-        "duration_sec": 942,
+        "word_count": 156,
+        "duration_sec": 943,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/lost_world_librivox/lostworld_02_doyle_64kb.mp3",
-        "description": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "audio_url": "https://www.archive.org/download/prince_and_pauper_librivox/Prince_06_twain_64kb.mp3",
+        "description": "Prince and the Pauper by . The Prince and the Pauper (1882) represents Mark Twain's first attempt at historical fiction. The book, set in 1547, tells the story of two young boys who are identical in appearance: Tom Canty, a pauper who lives with his abusive father in Offal Court, London, and Prince Edward son of Henry VIII of England. Due to a series of circumstances, the boys accidentally replace",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "6d847e8722b99a1f26f3af1a286263e26422ce09",
-        "summary": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "guid_hash": "a692bd8d7b3fd300b9aada9c8f9f2dabd68b375d",
+        "summary": "Prince and the Pauper by . The Prince and the Pauper (1882) represents Mark Twain's first attempt at historical fiction. The book, set in 1547, tells the story of two young boys who are identical in appearance: Tom Canty, a pauper who lives with his abusive father in Offal Court, London, and Prince Edward son of Henry VIII of England. Due to a series of circumstances, the boys accidentally replace",
         "origin": "adjacent",
         "badges": [
           "Reserve · LibriVox (culture)",
@@ -100,8 +134,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Lost World - \"TRY YOUR LUCK WITH PROFESSOR CHALLENGER\" — LibriVox (culture)",
-        "duration_formatted": "15:42",
+        "alt_text": "Prince and the Pauper - 06 – Tom receives instructions — LibriVox (culture)",
+        "duration_formatted": "15:43",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -109,8 +143,8 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1176962143,
-        "title": "Our Island Story, Part 1 - Introduction",
+        "id": 1840636057,
+        "title": "Our Island Story, Part 1 - The Stories of Albion and Brutus",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
@@ -120,14 +154,14 @@
         "slot_level": "C2",
         "source_level": "C1",
         "word_count": 161,
-        "duration_sec": 220,
+        "duration_sec": 437,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/our_island_story_1_librivox/our_island_story_000_marshall_64kb.mp3",
+        "audio_url": "https://www.archive.org/download/our_island_story_1_librivox/our_island_story_001_marshall_64kb.mp3",
         "description": "Our Island Story, Part 1 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "a7906761a47aacb2ee3f872fab0d37fe3687f4fa",
+        "guid_hash": "cd5b64929fa1acaf18a3dbc0a65c0586ac8f32ee",
         "summary": "Our Island Story, Part 1 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
         "origin": "adjacent",
         "badges": [
@@ -137,8 +171,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Our Island Story, Part 1 - Introduction — LibriVox (history & biography)",
-        "duration_formatted": "3:40",
+        "alt_text": "Our Island Story, Part 1 - The Stories of Albion and Brutus — LibriVox (history & biography)",
+        "duration_formatted": "7:17",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -148,332 +182,331 @@
     "date": "2026-11-21",
     "level": "C2",
     "word": {
-      "text": "recondite",
+      "text": "soporific",
       "level": "C2",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/ˈrekəndaɪt/",
-      "meaning": "dealing with difficult or obscure subjects",
-      "meaning_fr": "ésotérique",
-      "example": "He has recondite knowledge of manuscripts.",
-      "anki_answer": "ésotérique",
+      "phonetic": "/ˌsɑːpəˈrɪfɪk/",
+      "meaning": "making you feel sleepy",
+      "meaning_fr": "soporifique",
+      "example": "The lecture was soporific.",
+      "anki_answer": "soporifique",
       "tags": [
-        "knowledge"
+        "sleep"
       ],
-      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
+      "key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ɹɪˈkɒndaɪt/",
+        "phonetic": "/ˌsoʊ.pəˈɹɪf.ɪk/",
         "definitions": [
-          "A recondite (hidden or obscure) person or thing.",
-          "A scholar or other person who is recondite, that is, who has mastery over his or her field, including its esoteric minutiae.",
-          "To conceal, cover up, hide.",
-          "Of areas of discussion or research: difficult, obscure."
+          "Something inducing sleep, especially a drug.",
+          "Something boring or dull.",
+          "(pharmaceutical effect) Tending to induce sleep.",
+          "Boring, dull."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/recondite-uk.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/soporific-uk.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/difficult\" title=\"difficult\">Difficult</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/obscure\" title=\"obscure\">obscure</a>.\n<ol><li>Difficult to <a rel=\"mw:WikiLink\" href=\"/wiki/grasp#Verb\" title=\"grasp\">grasp</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abstruse\" title=\"abstruse\">abstruse</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/profound\" title=\"profound\">profound</a>.",
-          "Difficult to <a rel=\"mw:WikiLink\" href=\"/wiki/grasp#Verb\" title=\"grasp\">grasp</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/abstruse\" title=\"abstruse\">abstruse</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/profound\" title=\"profound\">profound</a>.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/little\" title=\"little\">Little</a> <a rel=\"mw:WikiLink\" href=\"/wiki/know\" title=\"know\">known</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/esoteric\" title=\"esoteric\">esoteric</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/secret#Adjective\" title=\"secret\">secret</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt51\" typeof=\"mw:Transclusion\"></span> Having <a rel=\"mw:WikiLink\" href=\"/wiki/mastery\" title=\"mastery\">mastery</a> over one's <a rel=\"mw:WikiLink\" href=\"/wiki/field#Noun\" title=\"field\">field</a>, including its esoteric <a rel=\"mw:WikiLink\" href=\"/wiki/minutia\" title=\"minutia\">minutiae</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/learned#Adjective\" title=\"learned\">learned</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/sleep\" title=\"sleep\">sleep</a>-<a rel=\"mw:WikiLink\" href=\"/wiki/induce\" title=\"induce\">inducing</a> <a rel=\"mw:WikiLink\" href=\"/wiki/agent\" title=\"agent\">agent</a>, especially a <a rel=\"mw:WikiLink\" href=\"/wiki/drug\" title=\"drug\">drug</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Something <a rel=\"mw:WikiLink\" href=\"/wiki/boring\" title=\"boring\">boring</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/dull\" title=\"dull\">dull</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt64\" typeof=\"mw:Transclusion\"></span> Tending to <a rel=\"mw:WikiLink\" href=\"/wiki/induce\" title=\"induce\">induce</a> <a rel=\"mw:WikiLink\" href=\"/wiki/sleep\" title=\"sleep\">sleep</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt69\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/boring\" title=\"boring\">Boring</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/dull\" title=\"dull\">dull</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "tread water",
+      "expression": "turn the tide",
       "level": "C2",
       "type": "idiom",
-      "meaning": "make no progress while staying active",
-      "meaning_fr": "nager entre deux eaux, stagner",
-      "example": "The economy is merely treading water.",
-      "anki_answer": "stagner",
+      "meaning": "reverse a situation",
+      "meaning_fr": "inverser la tendance",
+      "example": "A late goal turned the tide of the match.",
+      "anki_answer": "inverser tendance",
       "tags": [
-        "stagnation"
+        "change"
       ],
-      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
+      "key": "2db99174a912758ed955baa3b5dd53518d0c33e8",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/remain\" title=\"remain\">remain</a> <a rel=\"mw:WikiLink\" href=\"/wiki/afloat\" title=\"afloat\">afloat</a> in the water without use of any <a rel=\"mw:WikiLink\" href=\"/wiki/buoyancy\" title=\"buoyancy\">buoyancy</a> aid, by using <a rel=\"mw:WikiLink\" href=\"/wiki/kicking\" title=\"kicking\">kicking</a> <a rel=\"mw:WikiLink\" href=\"/wiki/motion\" title=\"motion\">motions</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/hand\" title=\"hand\">hand</a> <a rel=\"mw:WikiLink\" href=\"/wiki/motion\" title=\"motion\">motions</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/make\" title=\"make\">make</a> no <a rel=\"mw:WikiLink\" href=\"/wiki/progress\" title=\"progress\">progress</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/expending\" title=\"expending\">expending</a> <a rel=\"mw:WikiLink\" href=\"/wiki/effort\" title=\"effort\">effort</a> just enough to <a rel=\"mw:WikiLink\" href=\"/wiki/maintain\" title=\"maintain\">maintain</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/stable\" title=\"stable\">stable</a> <a rel=\"mw:WikiLink\" href=\"/wiki/position\" title=\"position\">position</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/undergo\" title=\"undergo\">undergo</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/change\" title=\"change\">change</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/reversal\" title=\"reversal\">reversal</a> of a <a rel=\"mw:WikiLink\" href=\"/wiki/general\" title=\"general\">general</a> <a rel=\"mw:WikiLink\" href=\"/wiki/trend\" title=\"trend\">trend</a>."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "hegemony",
+      "text": "historiography",
       "aliases": [
-        "hegemony",
-        "dominance"
+        "historiography",
+        "history writing"
       ],
       "level": "C2",
-      "meaning": "leadership or dominance by one state or group",
-      "meaning_fr": "hégémonie",
-      "period": "Cold War",
-      "theme": "Empire",
-      "example": "The empire maintained regional hegemony.",
+      "meaning": "the study of how history is written and interpreted",
+      "meaning_fr": "historiographie",
+      "period": "Contemporary",
+      "theme": "Culture",
+      "example": "Historiography re-examined old sources.",
       "tags": [
-        "power"
+        "academic"
       ],
-      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
+      "key": "4281452816c6514f9de206484d0dcd0b2395120a",
       "kind": "word",
       "level": "A1",
-      "text": "walk",
-      "meaning": "move on foot",
-      "meaning_fr": "marcher",
-      "example": "We walk to the station.",
-      "phonetic": "/wɔːk/",
-      "anki_answer": "marcher",
+      "text": "water",
+      "meaning": "a clear liquid used for drinking",
+      "meaning_fr": "eau",
+      "example": "Can I have a glass of water?",
+      "phonetic": "/ˈwɔːtər/",
+      "anki_answer": "eau",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "da54f7f224abe062797d08a80f76586ca53cfc11",
+      "kind": "expression",
+      "level": "A1",
+      "text": "come back",
+      "meaning": "return to a place",
+      "meaning_fr": "revenir",
+      "example": "Please come back tomorrow.",
+      "phonetic": "",
+      "anki_answer": "revenir",
       "tags": [
         "movement"
       ]
     },
     {
-      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
-      "kind": "expression",
+      "key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a",
+      "kind": "history",
       "level": "A1",
-      "text": "be tired",
-      "meaning": "need rest or sleep",
-      "meaning_fr": "être fatigué",
-      "example": "I am tired after the walk.",
+      "text": "temple",
+      "meaning": "a building used for religious worship",
+      "meaning_fr": "temple",
+      "example": "The temple is very old.",
       "phonetic": "",
-      "anki_answer": "fatigué",
+      "anki_answer": "temple",
       "tags": [
-        "feelings"
+        "religion"
       ]
     },
     {
-      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
-      "kind": "history",
-      "level": "A1",
-      "text": "war",
-      "meaning": "fighting between countries or groups",
-      "meaning_fr": "guerre",
-      "example": "The war ended many years ago.",
+      "key": "5db4828b4e314ed059567d1f1d17f1b123594a58",
+      "kind": "word",
+      "level": "A2",
+      "text": "early",
+      "meaning": "before the usual or expected time",
+      "meaning_fr": "tôt",
+      "example": "We took an early train.",
+      "phonetic": "/ˈɜːrli/",
+      "anki_answer": "tôt",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "9d58a99b72c50e9829fc16112f63e3e948a9b619",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be famous for",
+      "meaning": "known because of something",
+      "meaning_fr": "être célèbre pour",
+      "example": "The city is famous for its bridge.",
       "phonetic": "",
-      "anki_answer": "guerre",
+      "anki_answer": "célèbre",
+      "tags": [
+        "fame"
+      ]
+    },
+    {
+      "key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d",
+      "kind": "history",
+      "level": "A2",
+      "text": "century",
+      "meaning": "a period of one hundred years",
+      "meaning_fr": "siècle",
+      "example": "This bridge is from the nineteenth century.",
+      "phonetic": "",
+      "anki_answer": "siècle",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169",
+      "kind": "word",
+      "level": "B1",
+      "text": "compare",
+      "meaning": "examine how things are similar or different",
+      "meaning_fr": "comparer",
+      "example": "Compare the two answers.",
+      "phonetic": "/kəmˈper/",
+      "anki_answer": "comparer",
+      "tags": [
+        "thinking"
+      ]
+    },
+    {
+      "key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff",
+      "kind": "expression",
+      "level": "B1",
+      "text": "come up with",
+      "meaning": "think of an idea or solution",
+      "meaning_fr": "trouver, proposer",
+      "example": "She came up with a good plan.",
+      "phonetic": "",
+      "anki_answer": "trouver, idée",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "0825841f5f069e376bd5f2dc513cab364fea263e",
+      "kind": "history",
+      "level": "B1",
+      "text": "invasion",
+      "meaning": "an attack by an army entering another land",
+      "meaning_fr": "invasion",
+      "example": "The invasion began in spring.",
+      "phonetic": "",
+      "anki_answer": "invasion",
       "tags": [
         "conflict"
       ]
     },
     {
-      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
-      "kind": "word",
-      "level": "A2",
-      "text": "decide",
-      "meaning": "choose after thinking",
-      "meaning_fr": "décider",
-      "example": "You must decide today.",
-      "phonetic": "/dɪˈsaɪd/",
-      "anki_answer": "décider",
-      "tags": [
-        "choices"
-      ]
-    },
-    {
-      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be excited about",
-      "meaning": "feel happy and eager about a future event",
-      "meaning_fr": "être impatient à l'idée de",
-      "example": "She is excited about the trip.",
-      "phonetic": "",
-      "anki_answer": "impatient",
-      "tags": [
-        "feelings"
-      ]
-    },
-    {
-      "key": "8391409731bf858babbdef8315d9bd81155e390c",
-      "kind": "history",
-      "level": "A2",
-      "text": "castle",
-      "meaning": "a strong building from the Middle Ages",
-      "meaning_fr": "château",
-      "example": "The castle stands on a hill.",
-      "phonetic": "",
-      "anki_answer": "château",
-      "tags": [
-        "places"
-      ]
-    },
-    {
-      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
-      "kind": "word",
-      "level": "B1",
-      "text": "border",
-      "meaning": "the line separating two countries",
-      "meaning_fr": "frontière",
-      "example": "They crossed the border at night.",
-      "phonetic": "/ˈbɔːrdər/",
-      "anki_answer": "frontière",
-      "tags": [
-        "travel"
-      ]
-    },
-    {
-      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
-      "kind": "expression",
-      "level": "B1",
-      "text": "call it a day",
-      "meaning": "stop working on something",
-      "meaning_fr": "arrêter pour la journée",
-      "example": "We are tired, let us call it a day.",
-      "phonetic": "",
-      "anki_answer": "arrêter journée",
-      "tags": [
-        "work"
-      ]
-    },
-    {
-      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
-      "kind": "history",
-      "level": "B1",
-      "text": "dynasty",
-      "meaning": "a family of rulers from the same line",
-      "meaning_fr": "dynastie",
-      "example": "The dynasty ruled for two centuries.",
-      "phonetic": "",
-      "anki_answer": "dynastie",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
+      "key": "8707e3915e27316ae35eea420a01aa8e578b9862",
       "kind": "word",
       "level": "B2",
-      "text": "reasonable",
-      "meaning": "based on good sense",
-      "meaning_fr": "raisonnable",
-      "example": "That is a reasonable price.",
-      "phonetic": "/ˈriːznəbl/",
-      "anki_answer": "raisonnable",
+      "text": "recognise",
+      "meaning": "identify someone or something you know",
+      "meaning_fr": "reconnaître",
+      "example": "I recognised her voice.",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "anki_answer": "reconnaître",
       "tags": [
-        "judgement"
+        "seeing"
       ]
     },
     {
-      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
+      "key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70",
       "kind": "expression",
       "level": "B2",
-      "text": "look on the bright side",
-      "meaning": "think about the positive part",
-      "meaning_fr": "voir le bon côté",
-      "example": "Look on the bright side: the train was late, not cancelled.",
+      "text": "make ends meet",
+      "meaning": "have enough money to live",
+      "meaning_fr": "joindre les deux bouts",
+      "example": "Many families struggle to make ends meet.",
       "phonetic": "",
-      "anki_answer": "bon côté",
+      "anki_answer": "joindre bouts",
       "tags": [
-        "optimism"
+        "money"
       ]
     },
     {
-      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "key": "00cf0339fcb37038453f314f05ee8e72dbe3908b",
       "kind": "history",
       "level": "B2",
-      "text": "renaissance",
-      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
-      "meaning_fr": "renaissance",
-      "example": "The renaissance produced great art.",
+      "text": "constitution",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "example": "The constitution protects citizens' rights.",
       "phonetic": "",
-      "anki_answer": "renaissance",
+      "anki_answer": "constitution",
       "tags": [
-        "art"
+        "law"
       ]
     },
     {
-      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
+      "key": "caa42870f26eb49d6711faced35756753063dd75",
       "kind": "word",
       "level": "C1",
-      "text": "consensus",
-      "meaning": "general agreement among a group",
-      "meaning_fr": "consensus",
-      "example": "The committee reached a consensus.",
-      "phonetic": "/kənˈsensəs/",
-      "anki_answer": "consensus",
+      "text": "constraint",
+      "meaning": "a limitation on what can be done",
+      "meaning_fr": "contrainte",
+      "example": "Time is our main constraint.",
+      "phonetic": "/kənˈstreɪnt/",
+      "anki_answer": "contrainte",
       "tags": [
-        "agreement"
+        "limits"
       ]
     },
     {
-      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
+      "key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc",
       "kind": "expression",
       "level": "C1",
-      "text": "take something in stride",
-      "meaning": "deal calmly with a difficulty",
-      "meaning_fr": "prendre avec calme",
-      "example": "She took the delay in stride.",
+      "text": "the tip of the iceberg",
+      "meaning": "a small visible part of a larger problem",
+      "meaning_fr": "la pointe de l'iceberg",
+      "example": "These complaints are just the tip of the iceberg.",
       "phonetic": "",
-      "anki_answer": "calme, difficulté",
+      "anki_answer": "pointe iceberg",
       "tags": [
-        "calm"
+        "problems"
       ]
     },
     {
-      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "key": "a11f17fe48a90899c8912981c2dc94f62b21335f",
       "kind": "history",
       "level": "C1",
-      "text": "suffrage",
-      "meaning": "the right to vote in elections",
-      "meaning_fr": "suffrage",
-      "example": "Women's suffrage expanded democracy.",
+      "text": "absolutism",
+      "meaning": "a system where a ruler has unlimited power",
+      "meaning_fr": "absolutisme",
+      "example": "Absolutism shaped the French state.",
       "phonetic": "",
-      "anki_answer": "suffrage",
+      "anki_answer": "absolutisme",
       "tags": [
-        "rights"
+        "government"
       ]
     },
     {
-      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
+      "key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96",
       "kind": "word",
       "level": "C2",
-      "text": "recondite",
-      "meaning": "dealing with difficult or obscure subjects",
-      "meaning_fr": "ésotérique",
-      "example": "He has recondite knowledge of manuscripts.",
-      "phonetic": "/ˈrekəndaɪt/",
-      "anki_answer": "ésotérique",
+      "text": "soporific",
+      "meaning": "making you feel sleepy",
+      "meaning_fr": "soporifique",
+      "example": "The lecture was soporific.",
+      "phonetic": "/ˌsɑːpəˈrɪfɪk/",
+      "anki_answer": "soporifique",
       "tags": [
-        "knowledge"
+        "sleep"
       ]
     },
     {
-      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
+      "key": "2db99174a912758ed955baa3b5dd53518d0c33e8",
       "kind": "expression",
       "level": "C2",
-      "text": "tread water",
-      "meaning": "make no progress while staying active",
-      "meaning_fr": "nager entre deux eaux, stagner",
-      "example": "The economy is merely treading water.",
+      "text": "turn the tide",
+      "meaning": "reverse a situation",
+      "meaning_fr": "inverser la tendance",
+      "example": "A late goal turned the tide of the match.",
       "phonetic": "",
-      "anki_answer": "stagner",
+      "anki_answer": "inverser tendance",
       "tags": [
-        "stagnation"
+        "change"
       ]
     },
     {
-      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26",
       "kind": "history",
       "level": "C2",
-      "text": "hegemony",
-      "meaning": "leadership or dominance by one state or group",
-      "meaning_fr": "hégémonie",
-      "example": "The empire maintained regional hegemony.",
+      "text": "historiography",
+      "meaning": "the study of how history is written and interpreted",
+      "meaning_fr": "historiographie",
+      "example": "Historiography re-examined old sources.",
       "phonetic": "",
-      "anki_answer": "hégémonie",
+      "anki_answer": "historiographie",
       "tags": [
-        "power"
+        "academic"
       ]
     }
   ],
@@ -483,270 +516,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “walk” mean?",
+      "prompt": "What does “water” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "marcher",
-      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
+      "answer": "eau",
+      "item_key": "4281452816c6514f9de206484d0dcd0b2395120a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: be ____",
+      "prompt": "Complete the expression: ____ back",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "tired",
-      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+      "answer": "come",
+      "item_key": "da54f7f224abe062797d08a80f76586ca53cfc11"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “war” belong to?",
+      "prompt": "Which period does “temple” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "General",
-      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
+      "answer": "Antiquity",
+      "item_key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “decide” mean?",
+      "prompt": "What does “early” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "décider",
-      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
+      "answer": "tôt",
+      "item_key": "5db4828b4e314ed059567d1f1d17f1b123594a58"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ about",
+      "prompt": "Complete the expression: be ____ for",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "excited",
-      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+      "answer": "famous",
+      "item_key": "9d58a99b72c50e9829fc16112f63e3e948a9b619"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “castle” belong to?",
+      "prompt": "Which period does “century” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
+      "answer": "General",
+      "item_key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “border” mean?",
+      "prompt": "What does “compare” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "frontière",
-      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
+      "answer": "comparer",
+      "item_key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ it a day",
+      "prompt": "Complete the expression: ____ up with",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "call",
-      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+      "answer": "come",
+      "item_key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “dynasty” belong to?",
+      "prompt": "Which period does “invasion” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
+      "answer": "General",
+      "item_key": "0825841f5f069e376bd5f2dc513cab364fea263e"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “reasonable” mean?",
+      "prompt": "What does “recognise” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "raisonnable",
-      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
+      "answer": "reconnaître",
+      "item_key": "8707e3915e27316ae35eea420a01aa8e578b9862"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: look on the ____ side",
+      "prompt": "Complete the expression: make ends ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "bright",
-      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+      "answer": "meet",
+      "item_key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “renaissance” belong to?",
+      "prompt": "Which period does “constitution” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Early modern",
-      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
+      "answer": "18th century",
+      "item_key": "00cf0339fcb37038453f314f05ee8e72dbe3908b"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “consensus” mean?",
+      "prompt": "What does “constraint” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "consensus",
-      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
+      "answer": "contrainte",
+      "item_key": "caa42870f26eb49d6711faced35756753063dd75"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: take ____ in stride",
+      "prompt": "Complete the expression: the tip of the ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "something",
-      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+      "answer": "iceberg",
+      "item_key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “suffrage” belong to?",
+      "prompt": "Which period does “absolutism” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "19th century",
-      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
+      "answer": "Early modern",
+      "item_key": "a11f17fe48a90899c8912981c2dc94f62b21335f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “recondite” mean?",
+      "prompt": "What does “soporific” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "ésotérique",
-      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
+      "answer": "soporifique",
+      "item_key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: tread ____",
+      "prompt": "Complete the expression: ____ the tide",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "water",
-      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+      "answer": "turn",
+      "item_key": "2db99174a912758ed955baa3b5dd53518d0c33e8"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “hegemony” belong to?",
+      "prompt": "Which period does “historiography” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Cold War",
-      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
+      "answer": "Contemporary",
+      "item_key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26"
     }
   ],
   "tour": [
@@ -789,13 +822,12 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 4,
+    "filled": 5,
     "total": 6,
     "origins": {
-      "adjacent": 3,
-      "fresh": 1
+      "adjacent": 5
     },
-    "source_count": 4,
+    "source_count": 5,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,

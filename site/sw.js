@@ -1,4 +1,4 @@
-var CACHE_NAME = 'english-daily-20261121222707';
+var CACHE_NAME = 'english-daily-20261121215519';
 var APP_SHELL = [
   './',
   './index.html',

@@ -1,0 +1,68 @@
+{
+  "guid_hash": "f030c8d10b9fd7eee5d85d3494ed3a08caf98727",
+  "source_id": "librivox_history",
+  "kind": "audio",
+  "category": "history",
+  "title": "Art of War - 01 - Laying Plans / 02 - Waging War",
+  "url": "https://librivox.org/the-art-of-war-by-sun-tzu/",
+  "summary": "Art of War by . \"The Art of War is a Chinese military treatise written during the 6th century BC by Sun Tzu. Composed of 13 chapters, each of which is devoted to one aspect of warfare, it has long been praised as the definitive work on military strategies and tactics of its time. The Art of War is one of the oldest and most famous studies of strategy and has had a huge influence on both military p",
+  "published_at": "2026-11-21T21:54:26",
+  "added_at": "2026-11-21T21:54:26",
+  "body_text": null,
+  "word_count": 98,
+  "duration_sec": 506,
+  "audio_remote_url": "https://www.archive.org/download/art_of_war_librivox/art_of_war_01-02_sun_tzu_64kb.mp3",
+  "score": 0.3472,
+  "fk_grade": 8.366,
+  "avg_sentence_len": 16.333,
+  "rare_word_ratio": 0.0353,
+  "level": "B1",
+  "level_method": "source",
+  "license": "public_domain",
+  "attribution": "LibriVox (public domain recording)",
+  "origin": "reserve",
+  "lang": "en",
+  "periods": [
+    "General"
+  ],
+  "themes": [
+    "War",
+    "Society"
+  ],
+  "history_terms": [
+    {
+      "text": "war",
+      "aliases": [
+        "war",
+        "wars"
+      ],
+      "level": "A1",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "period": "General",
+      "theme": "War",
+      "example": "The war ended many years ago.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "century",
+      "aliases": [
+        "century",
+        "centuries"
+      ],
+      "level": "A2",
+      "meaning": "a period of one hundred years",
+      "meaning_fr": "siècle",
+      "period": "General",
+      "theme": "Society",
+      "example": "This bridge is from the nineteenth century.",
+      "tags": [
+        "time"
+      ]
+    }
+  ],
+  "transcript_url": null,
+  "transcript_text": null
+}

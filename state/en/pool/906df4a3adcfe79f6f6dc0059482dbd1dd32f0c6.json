@@ -1,0 +1,69 @@
+{
+  "guid_hash": "906df4a3adcfe79f6f6dc0059482dbd1dd32f0c6",
+  "source_id": "librivox_history",
+  "kind": "audio",
+  "category": "history",
+  "title": "History of Holland - General Preface, Prologue",
+  "url": "https://librivox.org/history-of-holland/",
+  "summary": "History of Holland by . The title, \"History of Holland,\" given to this volume is fully justified by the predominant part which the great maritime province of Holland took in the War of Independence and throughout the whole of the subsequent history of the Dutch state and people.(Summary from book prologue)",
+  "published_at": "2026-11-21T21:54:59",
+  "added_at": "2026-11-21T21:54:59",
+  "body_text": null,
+  "word_count": 51,
+  "duration_sec": 404,
+  "audio_remote_url": "https://www.archive.org/download/history_of_holland__0707_librivox/historyofholland_00_gedmundson_64kb.mp3",
+  "score": 0.4568,
+  "fk_grade": 10.262,
+  "avg_sentence_len": 17.0,
+  "rare_word_ratio": 0.0698,
+  "level": "B2",
+  "level_method": "source",
+  "license": "public_domain",
+  "attribution": "LibriVox (public domain recording)",
+  "origin": "reserve",
+  "lang": "en",
+  "periods": [
+    "General",
+    "20th century"
+  ],
+  "themes": [
+    "War",
+    "Politics"
+  ],
+  "history_terms": [
+    {
+      "text": "war",
+      "aliases": [
+        "war",
+        "wars"
+      ],
+      "level": "A1",
+      "meaning": "fighting between countries or groups",
+      "meaning_fr": "guerre",
+      "period": "General",
+      "theme": "War",
+      "example": "The war ended many years ago.",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "text": "independence",
+      "aliases": [
+        "independence",
+        "freedom"
+      ],
+      "level": "B2",
+      "meaning": "the state of governing oneself",
+      "meaning_fr": "indépendance",
+      "period": "20th century",
+      "theme": "Politics",
+      "example": "Independence came after a long struggle.",
+      "tags": [
+        "politics"
+      ]
+    }
+  ],
+  "transcript_url": null,
+  "transcript_text": null
+}
