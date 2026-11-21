@@ -133,3 +133,11 @@
 - API smoke: all eight public endpoints returned HTTP 200 against the live database.
 - Reconstruction: `run.py reconstruct --write` aligned today's stored picks with the deterministic cascade; the regenerated static site exposes contract v2, 12 exercises, 12 glossary entries, 5 tour steps, per-day search indexes and six versioned JS modules.
 - Static site regenerated in public mode with a fresh versioned service worker cache.
+
+## New brief — Phase 0 — audit (done)
+
+- Audited the whole codebase with four parallel passes (pipeline/backend, frontend/UI, content/state, workflows/docs) and verified the findings against source files.
+- Added `AUDIT.md` with present/partial/missing status for B1–B9, new-spec gaps by phase, a complete current UI control inventory, architecture/data findings, and decisions.
+- Verified baseline: 41 unit tests passed in `.venv`; Python compile check passed; all JavaScript syntax checks and `tests/frontend_helpers.js` passed; contrast audit passed with light/dark definitions matching.
+- Decision: use the project `.venv` for Python tests because the system Python has no PyYAML.
+- Remaining: Phases 1–8; no implementation or migration was performed in this audit phase.
