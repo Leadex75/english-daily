@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="system" data-text-size="medium" data-reading-font="serif" data-motion="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +13,11 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/themes.css">
   <link rel="stylesheet" href="./style.css">
   <script defer src="./lib/store.js"></script>
   <script defer src="./lib/branding.js"></script>
+  <script defer src="./lib/settings.js"></script>
   <script defer src="./lib/links.js"></script>
   <script defer src="./lib/progress.js"></script>
   <script defer src="./lib/anki.js"></script>
@@ -43,7 +45,7 @@
       <div class="header-actions">
         <button class="icon-button" type="button" x-show="updateAvailable" @click="applyUpdate()" aria-label="Install updated app">Update</button>
         <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
-        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
+        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="prefersDark() ? 'Use light theme' : 'Use dark theme'" x-text="prefersDark() ? 'Light' : 'Dark'"></button>
         <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length || !ankiAvailable()" aria-label="Export learned words to Anki">Anki</button>
         <button class="icon-button anki-help" type="button" data-eds-anki @click="openAnkiHelp()" aria-label="Anki help">Anki help</button>
       </div>
@@ -247,13 +249,13 @@
               <div class="exercise-options" role="group" :aria-label="exercise.prompt">
                 <template x-for="option in exercise.options" :key="option">
                   <button class="pill" type="button" @click="answerExercise(exercise, option)"
-                          :aria-pressed="exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option)"
-                          :class="{ correct: exerciseAnswer(exercise) && String(option) === String(exercise.answer), wrong: exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option) && !exerciseAnswer(exercise).correct }"
+                          :aria-pressed="visibleExerciseAnswer(exercise) && String(visibleExerciseAnswer(exercise).option) === String(option)"
+                          :class="{ correct: visibleExerciseAnswer(exercise) && String(option) === String(exercise.answer), wrong: visibleExerciseAnswer(exercise) && String(visibleExerciseAnswer(exercise).option) === String(option) && !visibleExerciseAnswer(exercise).correct }"
                           x-text="option"></button>
                 </template>
               </div>
-              <p class="exercise-feedback" x-show="exerciseAnswer(exercise)" aria-live="polite"
-                 x-text="exerciseAnswer(exercise) && exerciseAnswer(exercise).correct ? 'Correct.' : 'Answer: ' + exercise.answer"></p>
+              <p class="exercise-feedback" x-show="visibleExerciseAnswer(exercise)" aria-live="polite"
+                 x-text="visibleExerciseAnswer(exercise) && visibleExerciseAnswer(exercise).correct ? 'Correct.' : 'Answer: ' + exercise.answer"></p>
             </li>
           </template>
         </ol>
@@ -316,7 +318,45 @@
         <h1 id="settings-title">Settings</h1>
         <p>Appearance, reading and export preferences live here.</p>
       </div>
-      <div class="block empty">Settings are being prepared.</div>
+      <div class="settings-grid" data-eds-settings-controls>
+        <fieldset class="block settings-card">
+          <legend>Appearance</legend>
+          <p class="byline">Choose a palette. System follows your device setting.</p>
+          <div class="setting-options" role="group" aria-label="Theme preset">
+            <template x-for="preset in themePresets" :key="preset.value">
+              <button class="pill" type="button" :class="{ active: prefs.theme === preset.value }" :aria-pressed="prefs.theme === preset.value" @click="setPreference('theme', preset.value)" x-text="preset.label"></button>
+            </template>
+          </div>
+          <p class="setting-label">Text size</p>
+          <div class="setting-options" role="group" aria-label="Text size">
+            <template x-for="size in textSizes" :key="size.value">
+              <button class="pill" type="button" :class="{ active: prefs.textSize === size.value }" :aria-pressed="prefs.textSize === size.value" @click="setPreference('textSize', size.value)" x-text="size.label"></button>
+            </template>
+          </div>
+          <p class="setting-label">Reading font</p>
+          <div class="setting-options" role="group" aria-label="Reading font">
+            <template x-for="font in readingFonts" :key="font.value">
+              <button class="pill" type="button" :class="{ active: prefs.readingFont === font.value }" :aria-pressed="prefs.readingFont === font.value" @click="setPreference('readingFont', font.value)" x-text="font.label"></button>
+            </template>
+          </div>
+        </fieldset>
+        <fieldset class="block settings-card">
+          <legend>Reading and practice</legend>
+          <p class="setting-label">Default audio speed</p>
+          <div class="setting-options" role="group" aria-label="Default audio speed">
+            <template x-for="option in speedOptions" :key="option">
+              <button class="pill" type="button" :class="{ active: prefs.speed === option }" :aria-pressed="prefs.speed === option" @click="setPreference('speed', option)" x-text="option + 'x'"></button>
+            </template>
+          </div>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.showFeedback" @change="setPreference('showFeedback', $event.target.checked)"> Show exercise answers immediately</label>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.autoMarkRead" @change="setPreference('autoMarkRead', $event.target.checked)"> Mark texts as read while scrolling</label>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.reduceMotion" @change="setPreference('reduceMotion', $event.target.checked)"> Reduce motion</label>
+          <div class="block-foot">
+            <span class="anki-status" aria-live="polite">Saved in this browser.</span>
+            <button class="pill" type="button" @click="resetPreferences()">Reset settings</button>
+          </div>
+        </fieldset>
+      </div>
     </section>
 
     <section class="tour-dialog" role="dialog" aria-modal="true" aria-labelledby="tour-title"

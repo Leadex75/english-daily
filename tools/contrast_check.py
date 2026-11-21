@@ -19,12 +19,18 @@ PAIRS = (
     ("page border", "line", "paper", 3.0),
     ("card border", "line", "surface", 3.0),
 )
+_THEME_RE = re.compile(r':root\[data-theme="([a-z-]+)"\]\s*\{(?P<body>.*?)\}', re.DOTALL)
+_SYSTEM_RE = re.compile(
+    r'@media\s*\(prefers-color-scheme:\s*(light|dark)\)\s*\{\s*:root\[data-theme="system"\]\s*\{(?P<body>.*?)\}',
+    re.DOTALL,
+)
 _ROOT_RE = re.compile(r":root\s*\{(?P<body>.*?)\}", re.DOTALL)
 _DARK_RE = re.compile(r':root\[data-theme="dark"\]\s*\{(?P<body>.*?)\}', re.DOTALL)
 _PREFERS_RE = re.compile(
     r"@media\s*\(prefers-color-scheme:\s*dark\)\s*\{\s*:root:not\(\[data-theme=\"light\"\]\)\s*\{(?P<body>.*?)\}",
     re.DOTALL,
 )
+AUDIT_THEME_ORDER = ("paper", "sepia", "ink", "contrast", "system_light", "system_dark")
 
 
 def parse_hex(value: str) -> tuple[float, float, float]:
@@ -59,11 +65,22 @@ def _tokens_from_block(block: str) -> dict[str, str]:
 
 
 def parse_theme_tokens(css: str) -> dict[str, dict[str, str]]:
+    themes: dict[str, dict[str, str]] = {}
+    for match in _THEME_RE.finditer(css):
+        themes[match.group(1)] = _tokens_from_block(match.group("body"))
+    for match in _SYSTEM_RE.finditer(css):
+        themes[f"system_{match.group(1)}"] = _tokens_from_block(match.group("body"))
+    required = set(AUDIT_THEME_ORDER)
+    if required.issubset(themes):
+        themes["light"] = themes["paper"]
+        themes["dark"] = themes["ink"]
+        themes["dark_prefers"] = themes["system_dark"]
+        return themes
     root = _ROOT_RE.search(css)
     dark = _DARK_RE.search(css)
     prefers = _PREFERS_RE.search(css)
     if not root or not dark or not prefers:
-        raise ValueError("CSS must define root, explicit dark and prefers-dark token blocks")
+        raise ValueError("CSS must define named theme token blocks")
     return {
         "light": _tokens_from_block(root.group("body")),
         "dark": _tokens_from_block(dark.group("body")),
@@ -92,11 +109,12 @@ def audit_tokens(tokens: dict[str, str]) -> list[dict[str, Any]]:
 
 def audit_css(css: str) -> dict[str, Any]:
     themes = parse_theme_tokens(css)
+    names = [name for name in AUDIT_THEME_ORDER if name in themes] or ["light", "dark"]
     rows = []
-    for theme in ("light", "dark"):
+    for theme in names:
         for row in audit_tokens(themes[theme]):
             rows.append({"theme": theme, **row})
-    dark_matches = themes["dark"] == themes["dark_prefers"]
+    dark_matches = themes.get("system_dark", themes.get("dark_prefers")) == themes.get("dark")
     return {
         "ok": dark_matches and all(row["pass"] for row in rows),
         "dark_definitions_match": dark_matches,
@@ -106,13 +124,13 @@ def audit_css(css: str) -> dict[str, Any]:
 
 
 def _format_table(report: dict[str, Any]) -> str:
-    lines = ["theme  pair                     fg/bg                  ratio  min    result"]
+    lines = ["theme        pair                     fg/bg                  ratio  min    result"]
     for row in report["rows"]:
         pair = f"{row['pair']:<24}"
         colours = f"{row['foreground_colour']}/{row['background_colour']:<16}"
         result = "PASS" if row["pass"] else "FAIL"
         lines.append(
-            f"{row['theme']:<6} {pair} {colours} {row['ratio']:>5.2f}  {row['minimum']:>4.2f}  {result}"
+            f"{row['theme']:<12} {pair} {colours} {row['ratio']:>5.2f}  {row['minimum']:>4.2f}  {result}"
         )
     status = "PASS" if report["ok"] else "FAIL"
     match = "yes" if report["dark_definitions_match"] else "no"
@@ -124,7 +142,7 @@ def _format_table(report: dict[str, Any]) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Audit WCAG contrast for theme custom properties")
-    parser.add_argument("--css", default="static/style.css", help="CSS file to audit")
+    parser.add_argument("--css", default="static/css/themes.css", help="CSS file to audit")
     parser.add_argument("--json", action="store_true", help="Emit a JSON report")
     args = parser.parse_args(argv)
 

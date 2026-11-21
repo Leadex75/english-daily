@@ -37,6 +37,7 @@ from ingest.export_static import export_static
 from ingest.fetch_text import clean_text, extract_article
 from ingest.pool import pool_dir
 from tools.contrast_check import audit_css, contrast_ratio
+from tools.palette_build import audit_palettes, build_css
 
 from ingest.paths import (
     languages_path,
@@ -982,23 +983,48 @@ class ContrastTests(unittest.TestCase):
         self.assertAlmostEqual(contrast_ratio("#77736a", "#fbfaf7"), 4.53, places=2)
 
     def test_css_theme_contrast_audit_passes(self):
-        css = (Path(__file__).resolve().parents[1] / "static" / "style.css").read_text(encoding="utf-8")
+        css = (Path(__file__).resolve().parents[1] / "static" / "css" / "themes.css").read_text(encoding="utf-8")
         report = audit_css(css)
         self.assertTrue(report["ok"])
         self.assertTrue(report["dark_definitions_match"])
-        self.assertEqual(len(report["rows"]), 18)
+        self.assertEqual(len(report["rows"]), 54)
         self.assertTrue(all(row["pass"] for row in report["rows"]))
 
     def test_contrast_check_cli_emits_json(self):
         root = Path(__file__).resolve().parents[1]
         result = subprocess.run(
-            [sys.executable, str(root / "tools" / "contrast_check.py"), "--css", str(root / "static" / "style.css"), "--json"],
+            [sys.executable, str(root / "tools" / "contrast_check.py"), "--css", str(root / "static" / "css" / "themes.css"), "--json"],
             capture_output=True,
             text=True,
         )
         self.assertEqual(result.returncode, 0, result.stderr)
         report = json.loads(result.stdout)
         self.assertTrue(report["ok"])
+
+
+class PaletteBuildTests(unittest.TestCase):
+    def test_generated_css_matches_committed_file(self):
+        root = Path(__file__).resolve().parents[1]
+        css = (root / "static" / "css" / "themes.css").read_text(encoding="utf-8")
+        self.assertEqual(css, build_css())
+        for preset in ("paper", "sepia", "ink", "contrast", "system"):
+            self.assertIn(f':root[data-theme="{preset}"]', css)
+        self.assertIn("@media (prefers-color-scheme: dark)", css)
+
+    def test_palette_build_check_command_passes(self):
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [sys.executable, str(root / "tools" / "palette_build.py"), "--check", "--out", str(root / "static" / "css" / "themes.css")],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("theme palette check: PASS", result.stdout)
+
+    def test_all_palette_tokens_pass_accessibility_audit(self):
+        report = audit_palettes()
+        self.assertTrue(report["ok"])
+        self.assertEqual(len(report["rows"]), 54)
 
 
 class FrontendAssetTests(unittest.TestCase):
@@ -1009,17 +1035,22 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "branding.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "branding.js", "settings.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
+        self.assertIn("./css/themes.css", index)
+        self.assertIn("./css/themes.css", worker)
+        self.assertTrue((static / "css" / "themes.css").is_file())
         for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer"):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
+            self.assertIn(marker, index)
+        for marker in ("data-eds-settings-controls", "Theme preset", "Text size", "Reading font", "Default audio speed", "Show exercise answers immediately", "Mark texts as read while scrolling", "Reduce motion", "Reset settings"):
             self.assertIn(marker, index)
         links = (static / "lib" / "links.js").read_text(encoding="utf-8")
         for marker in ("Read the full text", "Listen to the original audio"):

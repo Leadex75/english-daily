@@ -2,11 +2,13 @@ const assert = require('assert');
 
 global.window = {};
 require('../static/lib/branding.js');
+require('../static/lib/settings.js');
 require('../static/lib/links.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
 
 const EDBrand = global.window.EDBrand;
+const EDSettings = global.window.EDSettings;
 const EDLinks = global.window.EDLinks;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
@@ -19,6 +21,25 @@ assert.strictEqual(EDBrand.route('settings'), 'settings');
 assert.strictEqual(EDBrand.route('#unknown'), 'today');
 assert.strictEqual(EDBrand.formatLongDate('2026-11-21'), 'Saturday 21 November 2026');
 assert.strictEqual(EDBrand.formatLongDate('bad-date'), '');
+
+assert.strictEqual(EDSettings.KEY, 'english-daily:settings');
+assert.strictEqual(EDSettings.normalize({ theme: 'bogus' }).theme, 'system');
+assert.strictEqual(EDSettings.normalize({ speed: 1.25 }).speed, 1.25);
+assert.strictEqual(EDSettings.normalize({ showFeedback: false }).showFeedback, false);
+const settingsStore = new Map();
+const fakeSettingsStore = {
+  get: (key, fallback) => settingsStore.has(key) ? settingsStore.get(key) : fallback,
+  set: (key, value) => settingsStore.set(key, value),
+};
+const savedSettings = EDSettings.save({
+  theme: 'sepia', textSize: 'large', readingFont: 'sans', speed: 0.8, reduceMotion: true,
+}, fakeSettingsStore);
+assert.deepStrictEqual(EDSettings.load(fakeSettingsStore), savedSettings);
+const settingsRoot = { dataset: {} };
+EDSettings.apply(savedSettings, settingsRoot);
+assert.deepStrictEqual(settingsRoot.dataset, {
+  theme: 'sepia', textSize: 'large', readingFont: 'sans', motion: 'reduce',
+});
 
 assert.strictEqual(EDLinks.label('text'), 'Read the full text');
 assert.strictEqual(EDLinks.label('audio'), 'Listen to the original audio');

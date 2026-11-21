@@ -153,3 +153,18 @@
 - Verification: public static export to a temp directory succeeded with 2 days, 12 level files, 5 audio slots, `English Daily` title, branding module and brand metadata in `languages.json`.
 - Decision: prepare Archive/Settings view shells now so later phases can fill them without another structural rewrite.
 - Remaining: Phases 2–8.
+
+## New brief — Phase 2 — themes and settings (done)
+
+- Added `tools/palette_build.py` as the single source for audited palettes; it generates `static/css/themes.css` and supports `--check` for committed-file and contrast verification.
+- Added five selectable theme presets: System (light/dark media queries), Paper, Sepia, Ink and High contrast; every palette uses CSS custom properties only, with `color-scheme` metadata.
+- Extended `tools/contrast_check.py` to audit all named palettes including System light/dark; 54 text/border checks pass, and System dark matches Ink.
+- Removed hard-coded token blocks from `static/style.css` and added text-size, reading-font, reduced-motion and settings-view styles.
+- Added `static/lib/settings.js` for deterministic defaults, validation, persistence under `english-daily:settings`, and applying settings to `data-theme`, `data-text-size`, `data-reading-font` and `data-motion`.
+- Replaced the Settings placeholder with accessible controls for theme, text size, font, default playback speed, immediate exercise feedback, auto-marking while reading, reduced motion and reset.
+- Wired `static/app.js` to load/save settings, keep the header light/dark toggle working across presets, persist playback speed, hide exercise answers when feedback is disabled, and honour the auto-marking preference.
+- Added the new CSS/JS assets to the service worker APP_SHELL and documented the palette/settings workflow in `README.md`.
+- Tests: 47 unit tests passed in `.venv`; frontend helper checks, all JavaScript syntax checks, Python compile check, palette generation check and contrast audit passed.
+- Verification: public static export to a temp directory succeeded with 2 days, 12 level files, 5 audio slots, `./css/themes.css`, `./lib/settings.js`, the settings controls and `data-theme="system"`.
+- Decision: keep the existing `english-daily:theme` key untouched for backward safety and store the expanded settings object separately under `english-daily:settings`.
+- Remaining: Phases 3–8.

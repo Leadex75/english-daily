@@ -2,10 +2,12 @@ var CACHE_NAME = '__CACHE_VERSION__';
 var APP_SHELL = [
   './',
   './index.html',
+  './css/themes.css',
   './style.css',
   './app.js',
   './lib/store.js',
   './lib/branding.js',
+  './lib/settings.js',
   './lib/links.js',
   './lib/progress.js',
   './lib/anki.js',

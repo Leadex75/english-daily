@@ -69,7 +69,8 @@ python run.py import-state --site-dir site --state-dir state
 python run.py prune
 python -m unittest discover -s tests -v
 python -m compileall -q app ingest desktop tools run.py tests
-python tools/contrast_check.py --css static/style.css
+python tools/contrast_check.py --css static/css/themes.css
+python tools/palette_build.py --check --out static/css/themes.css
 python -m ingest.readability
 ```
 
@@ -99,22 +100,25 @@ unless `--force` is used.
   `bank/<lang>/words.yaml`, `expressions.yaml` and `history_terms.yaml`.
 - Daily exercises cover word meaning, expression cloze and history period, with distractors drawn
   from the same day's phrase bank.
-- A guided tour, archive search, glossary, Anki export, theme switch and progress bars are all
-  driven by the versioned day contract (`meta.contract_version: 2`).
+- A guided tour, archive search, glossary, Anki export and theme switch are all driven by the
+  versioned day contract (`meta.contract_version: 2`).
 - Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
   links in a responsive two-column source footer.
 - Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
   Anki help button reopens the Anki tour step.
-- Theme custom properties are audited by `tools/contrast_check.py`; light and dark text meet WCAG
-  4.5:1 and borders meet 3:1 in both explicit and prefers-dark themes.
+- `tools/palette_build.py` generates `static/css/themes.css` from audited palette definitions;
+  `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
+  High contrast and both System modes.
+- The Settings view stores the theme preset, text size, reading font, default audio speed, exercise
+  feedback, auto-marking and reduced-motion preference in browser `localStorage`.
 - Today's progress counts only available text/audio slots; this week's progress counts unique
   practiced days from read, listened, learned and exercised markers.
-- Read/listened markers, learned phrases, exercise answers, theme, language and tour position live
+- Read/listened markers, learned phrases, exercise answers, settings, language and tour position live
   only in browser `localStorage`.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
   never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
-- The frontend is split into browser-native modules under `static/lib/`: `store`, `links`,
-  `progress`, `exercises`, `tour`, `search`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
+- The frontend is split into browser-native modules under `static/lib/`: `store`, `branding`,
+  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
   dialog focus handling and reduced-motion support are included.
 
 ## Multilingual layout

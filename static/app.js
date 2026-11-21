@@ -58,7 +58,28 @@ function app() {
     all: {},
     loading: false,
     error: '',
-    theme: 'light',
+    theme: 'system',
+    prefs: window.EDSettings ? window.EDSettings.load() : {
+      theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
+      showFeedback: true, autoMarkRead: true, reduceMotion: false,
+    },
+    themePresets: [
+      { value: 'system', label: 'System' },
+      { value: 'paper', label: 'Paper' },
+      { value: 'sepia', label: 'Sepia' },
+      { value: 'ink', label: 'Ink' },
+      { value: 'contrast', label: 'High contrast' },
+    ],
+    textSizes: [
+      { value: 'small', label: 'Small' },
+      { value: 'medium', label: 'Medium' },
+      { value: 'large', label: 'Large' },
+    ],
+    readingFonts: [
+      { value: 'serif', label: 'Serif' },
+      { value: 'sans', label: 'Sans' },
+    ],
+    speedOptions: [0.8, 1, 1.25],
     position: 0,
     duration: 0,
     playing: false,
@@ -86,9 +107,7 @@ function app() {
     async init() {
       const goal = document.querySelector('meta[name="eds-goal"]');
       this.weeklyGoal = Number(goal && goal.getAttribute('content')) || 5;
-      this.theme = Store.get('english-daily:theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.dataset.theme = this.theme;
+      this.loadPreferences();
       this.syncRoute();
       window.addEventListener('hashchange', () => this.syncRoute());
       if (this.mode === 'static') await this.initPwa();
@@ -133,6 +152,44 @@ function app() {
       this.syncTour();
     },
 
+    loadPreferences() {
+      this.prefs = window.EDSettings ? window.EDSettings.load() : this.prefs;
+      this.applyPreferences();
+    },
+
+    applyPreferences() {
+      if (window.EDSettings) window.EDSettings.apply(this.prefs, document.documentElement);
+      this.theme = this.prefs.theme;
+      this.speed = this.prefs.speed;
+    },
+
+    setPreference(name, value) {
+      this.prefs = window.EDSettings
+        ? window.EDSettings.normalize({ ...this.prefs, [name]: value })
+        : { ...this.prefs, [name]: value };
+      if (window.EDSettings) window.EDSettings.save(this.prefs);
+      this.applyPreferences();
+    },
+
+    resetPreferences() {
+      this.prefs = window.EDSettings ? window.EDSettings.normalize(null) : {
+        theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
+        showFeedback: true, autoMarkRead: true, reduceMotion: false,
+      };
+      if (window.EDSettings) window.EDSettings.save(this.prefs);
+      this.applyPreferences();
+    },
+
+    prefersDark() {
+      if (this.prefs.theme === 'ink') return true;
+      if (this.prefs.theme === 'system' && window.matchMedia) {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      return false;
+    },
+
+    showFeedback() { return this.prefs.showFeedback !== false; },
+
     applyBranding() {
       this.brand = window.EDBrand ? window.EDBrand.brand(this.languagePayload, this.lang) : 'English Daily';
       this.tagline = window.EDBrand ? window.EDBrand.tagline(this.languagePayload, this.lang) : 'A little English, every day.';
@@ -162,6 +219,7 @@ function app() {
     observeReading() {
       if (typeof IntersectionObserver === 'undefined' || !this.$refs.readSentinel) return;
       this.observer = new IntersectionObserver((entries) => {
+        if (this.prefs.autoMarkRead === false) return;
         if (entries.some((entry) => entry.isIntersecting) && this.currentText()) {
           this.markRead(this.currentText());
         }
@@ -177,9 +235,7 @@ function app() {
     },
 
     toggleTheme() {
-      this.theme = this.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = this.theme;
-      Store.set('english-daily:theme', this.theme);
+      this.setPreference('theme', this.prefersDark() ? 'paper' : 'ink');
     },
 
     canShift(direction) {
@@ -502,6 +558,9 @@ function app() {
       void this.answerTick;
       return window.EDExercises ? window.EDExercises.answer(exercise) : null;
     },
+    visibleExerciseAnswer(exercise) {
+      return this.showFeedback() ? this.exerciseAnswer(exercise) : null;
+    },
     exerciseProgress() {
       const exercises = this.exercises();
       if (window.EDExercises) return window.EDExercises.progress(exercises);
@@ -688,8 +747,8 @@ function app() {
       this.position = value;
     },
     setSpeed(speed) {
-      this.speed = speed;
-      if (this.$refs.audio) this.$refs.audio.playbackRate = speed;
+      this.setPreference('speed', Number(speed));
+      if (this.$refs.audio) this.$refs.audio.playbackRate = this.speed;
     }
   };
 }
