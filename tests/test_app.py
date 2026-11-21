@@ -928,13 +928,13 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "links.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
         for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates"):
             self.assertIn(marker, script)
         for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label"):
             self.assertIn(marker, styles)

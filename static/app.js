@@ -350,6 +350,9 @@ function app() {
     },
 
     allItems() {
+      if (window.EDProgress) {
+        return window.EDProgress.contentItems(this.all, this.levels, this.tabs);
+      }
       const items = [];
       for (const level of this.levels) {
         const payload = this.all[level];
@@ -360,49 +363,58 @@ function app() {
             if (item) items.push(item);
           }
         }
-        if (payload.phrase) {
-          items.push(payload.phrase.word, payload.phrase.expression, payload.phrase.history);
-        }
       }
       return items.filter(Boolean);
     },
-    todayTotal() { return this.levels.length * 9; },
+    todayTotal() {
+      return window.EDProgress
+        ? window.EDProgress.dailyTotal(this.all, this.levels, this.tabs)
+        : this.allItems().length;
+    },
     todayCount() {
-      let count = 0;
-      for (const item of this.allItems()) {
-        if (item.key) {
-          if (this.isLearned(item)) count += 1;
-        } else if (this.itemDone(item)) {
-          count += 1;
-        }
+      if (window.EDProgress) {
+        return window.EDProgress.dailyDone(this.all, this.levels, this.tabs, (item) => this.itemDone(item));
       }
-      return count;
+      return this.allItems().filter((item) => this.itemDone(item)).length;
     },
     todayPercent() {
-      return Math.min(100, Math.round((this.todayCount() / this.todayTotal()) * 100));
+      return window.EDProgress
+        ? window.EDProgress.percent(this.todayCount(), this.todayTotal())
+        : Math.min(100, Math.round((this.todayCount() / this.todayTotal()) * 100));
+    },
+    localDateString() {
+      const now = new Date();
+      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     },
     weekDates() {
-      const cutoff = new Date();
-      cutoff.setHours(0, 0, 0, 0);
-      cutoff.setDate(cutoff.getDate() - 6);
-      const dates = new Set();
+      const entries = [];
       for (const key of Store.keys('english-daily:')) {
         const value = Store.get(key);
-        if (key.startsWith('english-daily:done-date:')) dates.add(value);
-        if (key.startsWith('english-daily:phrase:')) {
+        if (key.startsWith('english-daily:done-date:')) entries.push(value);
+        if (key.startsWith('english-daily:phrase:') || key.startsWith('english-daily:exercise:')) {
           try {
             const entry = typeof value === 'string' ? JSON.parse(value) : value;
-            if (entry && entry.learned_at) dates.add(entry.learned_at);
+            if (entry && entry.learned_at) entries.push({ date: entry.learned_at });
+            if (entry && entry.answered_at) entries.push({ date: entry.answered_at });
           } catch (err) {
             continue;
           }
         }
       }
-      return [...dates].filter((date) => date && new Date(date) >= cutoff);
+      if (window.EDProgress) {
+        return window.EDProgress.practicedDates(entries, this.localDateString(), 7);
+      }
+      const cutoff = new Date();
+      cutoff.setHours(0, 0, 0, 0);
+      cutoff.setDate(cutoff.getDate() - 6);
+      const dates = new Set(entries.map((entry) => (typeof entry === 'string' ? entry : entry.date)).filter(Boolean));
+      return [...dates].filter((date) => new Date(date) >= cutoff);
     },
     weekCount() { return this.weekDates().length; },
     weekPercent() {
-      return Math.min(100, Math.round((this.weekCount() / this.weeklyGoal) * 100));
+      return window.EDProgress
+        ? window.EDProgress.percent(this.weekCount(), this.weeklyGoal)
+        : Math.min(100, Math.round((this.weekCount() / this.weeklyGoal) * 100));
     },
 
     payload() { return this.all[this.level] || null; },

@@ -96,12 +96,14 @@ unless `--force` is used.
   driven by the versioned day contract (`meta.contract_version: 2`).
 - Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
   links in a responsive two-column source footer.
+- Today's progress counts only available text/audio slots; this week's progress counts unique
+  practiced days from read, listened, learned and exercised markers.
 - Read/listened markers, learned phrases, exercise answers, theme, language and tour position live
   only in browser `localStorage`.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
-  never cached or re-hosted; an "Audio unavailable here / Open original" fallback is always shown.
-- The frontend is split into browser-native modules under `static/lib/`: `store`, `exercises`,
-  `tour`, `search`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
+  never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
+- The frontend is split into browser-native modules under `static/lib/`: `store`, `links`,
+  `progress`, `exercises`, `tour`, `search`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
   dialog focus handling and reduced-motion support are included.
 
 ## Multilingual layout

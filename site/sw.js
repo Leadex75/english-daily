@@ -1,4 +1,4 @@
-var CACHE_NAME = 'english-daily-20261121211600';
+var CACHE_NAME = 'english-daily-20261121211851';
 var APP_SHELL = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ var APP_SHELL = [
   './app.js',
   './lib/store.js',
   './lib/links.js',
+  './lib/progress.js',
   './lib/anki.js',
   './lib/exercises.js',
   './lib/tour.js',
