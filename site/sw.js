@@ -1,10 +1,11 @@
-var CACHE_NAME = 'english-daily-20261121211312';
+var CACHE_NAME = 'english-daily-20261121211600';
 var APP_SHELL = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './lib/store.js',
+  './lib/links.js',
   './lib/anki.js',
   './lib/exercises.js',
   './lib/tour.js',

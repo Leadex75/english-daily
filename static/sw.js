@@ -5,6 +5,7 @@ var APP_SHELL = [
   './style.css',
   './app.js',
   './lib/store.js',
+  './lib/links.js',
   './lib/anki.js',
   './lib/exercises.js',
   './lib/tour.js',

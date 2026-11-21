@@ -94,6 +94,8 @@ unless `--force` is used.
   from the same day's phrase bank.
 - A guided tour, archive search, glossary, Anki export, theme switch and progress bars are all
   driven by the versioned day contract (`meta.contract_version: 2`).
+- Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
+  links in a responsive two-column source footer.
 - Read/listened markers, learned phrases, exercise answers, theme, language and tour position live
   only in browser `localStorage`.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is

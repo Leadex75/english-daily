@@ -1,5 +1,6 @@
 import json
 import sqlite3
+import subprocess
 import tempfile
 import unittest
 import zipfile
@@ -927,7 +928,7 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "links.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
@@ -935,8 +936,14 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertIn(marker, index)
         for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch"):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label"):
             self.assertIn(marker, styles)
+        links = (static / "lib" / "links.js").read_text(encoding="utf-8")
+        for marker in ("Read the full text", "Listen to the original audio"):
+            self.assertIn(marker, links)
+        for marker in ("sourceLabel(", "hasSourceUrl("):
+            self.assertIn(marker, index)
+            self.assertIn(marker, script)
         manifest = json.loads((static / "manifest.webmanifest").read_text(encoding="utf-8"))
         self.assertEqual(manifest["display"], "standalone")
         self.assertEqual(manifest["start_url"], "./")
@@ -946,6 +953,15 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertIn("request.mode === 'navigate'", worker)
         self.assertIn("offline-banner", index)
         self.assertIn("EDPwa", script)
+
+    def test_frontend_helpers_run_without_browser(self):
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            ["node", str(root / "tests" / "frontend_helpers.js")],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
 
 
 class SourcesApiTests(unittest.TestCase):

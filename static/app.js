@@ -228,6 +228,15 @@ function app() {
       const total = Math.max(0, Math.floor(Number(seconds) || 0));
       return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, '0')}`;
     },
+    sourceLabel(kind) {
+      return window.EDLinks ? window.EDLinks.label(kind) : (kind === 'audio' ? 'Listen to the original audio' : 'Read the full text');
+    },
+    sourceName(item) {
+      return window.EDLinks ? window.EDLinks.source(item) : ((item && item.source) || 'the publisher');
+    },
+    hasSourceUrl(item) {
+      return window.EDLinks ? window.EDLinks.hasUrl(item) : Boolean(item && item.url);
+    },
 
     isDone(item, kind) {
       void this.storeTick;
