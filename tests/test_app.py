@@ -1,6 +1,7 @@
 import json
 import sqlite3
 import subprocess
+import sys
 import tempfile
 import unittest
 import zipfile
@@ -33,6 +34,8 @@ from ingest.doctor import check_sources, run_doctor
 from ingest.export_static import export_static
 from ingest.fetch_text import clean_text, extract_article
 from ingest.pool import pool_dir
+from tools.contrast_check import audit_css, contrast_ratio
+
 from ingest.paths import (
     languages_path,
     migrate_legacy_site,
@@ -878,7 +881,7 @@ class DocsTests(unittest.TestCase):
             "/api/search", "site/data/<lang>/search/YYYY-MM-DD.json",
             "Actions → daily → Run workflow", "contract_version: 2",
             "static/lib/", "no LLM", "python run.py clean-existing",
-            "text_cleaning.patterns",
+            "python tools/contrast_check.py", "text_cleaning.patterns",
         ):
             self.assertIn(marker, readme)
 
@@ -919,6 +922,31 @@ class DesktopTests(unittest.TestCase):
                 names = set(archive.namelist())
             for expected in ("__main__.py", "desktop/main.py", "app/main.py", "static/index.html", "config.yaml"):
                 self.assertIn(expected, names)
+
+
+class ContrastTests(unittest.TestCase):
+    def test_contrast_ratio_math(self):
+        self.assertAlmostEqual(contrast_ratio("#000000", "#ffffff"), 21.0, places=3)
+        self.assertAlmostEqual(contrast_ratio("#77736a", "#fbfaf7"), 4.53, places=2)
+
+    def test_css_theme_contrast_audit_passes(self):
+        css = (Path(__file__).resolve().parents[1] / "static" / "style.css").read_text(encoding="utf-8")
+        report = audit_css(css)
+        self.assertTrue(report["ok"])
+        self.assertTrue(report["dark_definitions_match"])
+        self.assertEqual(len(report["rows"]), 18)
+        self.assertTrue(all(row["pass"] for row in report["rows"]))
+
+    def test_contrast_check_cli_emits_json(self):
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [sys.executable, str(root / "tools" / "contrast_check.py"), "--css", str(root / "static" / "style.css"), "--json"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        report = json.loads(result.stdout)
+        self.assertTrue(report["ok"])
 
 
 class FrontendAssetTests(unittest.TestCase):

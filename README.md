@@ -63,6 +63,7 @@ python run.py import-state --site-dir site --state-dir state
 python run.py prune
 python -m unittest discover -s tests -v
 python -m compileall -q app ingest desktop tools run.py tests
+python tools/contrast_check.py --css static/style.css
 python -m ingest.readability
 ```
 
@@ -98,6 +99,8 @@ unless `--force` is used.
   links in a responsive two-column source footer.
 - Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
   Anki help button reopens the Anki tour step.
+- Theme custom properties are audited by `tools/contrast_check.py`; light and dark text meet WCAG
+  4.5:1 and borders meet 3:1 in both explicit and prefers-dark themes.
 - Today's progress counts only available text/audio slots; this week's progress counts unique
   practiced days from read, listened, learned and exercised markers.
 - Read/listened markers, learned phrases, exercise answers, theme, language and tour position live
