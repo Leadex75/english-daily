@@ -14,6 +14,7 @@ var APP_SHELL = [
   './lib/exercises.js',
   './lib/tour.js',
   './lib/search.js',
+  './lib/archive.js',
   './lib/pwa.js',
   './vendor/alpine.min.js',
   './manifest.webmanifest',

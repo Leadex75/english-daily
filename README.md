@@ -14,7 +14,7 @@ small local desktop launcher.
 
 The app is branded `English Daily` in the interface, manifest, API metadata and CLI output. The repository, URL slug, data paths and local storage keys stay `english-daily` for compatibility. Per-language display names come from `languages.<code>.brand` in `config.yaml`.
 
-The interface has four hash-based views: `#today` for the day's reading, `#archive` for search and history, `#glossary` for learned phrases, and `#settings` for preferences. All view links are relative, so the same build works from a domain root or a GitHub Pages subdirectory.
+The interface has four hash-based views: `#today` for the day's reading, `#archive` for the month calendar, recent editions and archive-wide search, `#glossary` for learned phrases, and `#settings` for preferences. All view links are relative, so the same build works from a domain root or a GitHub Pages subdirectory.
 
 ## Quick start
 
@@ -118,7 +118,7 @@ unless `--force` is used.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
   never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
 - The frontend is split into browser-native modules under `static/lib/`: `store`, `branding`,
-  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
+  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
   dialog focus handling and reduced-motion support are included.
 
 ## Multilingual layout
@@ -145,8 +145,9 @@ CLI commands without `--lang` process all configured languages.
 
 `ingest/search.py` builds a pure local index from stored picks and phrase banks. Static builds write
 one search file per language and day; the server exposes the same ranking through `/api/search`.
-Search matches titles, phrases, history terms, summaries, bodies and sources, and returns snippets
-plus matched terms.
+The archive view merges the static day indexes into one archive-wide search, and the server query
+omits day/level filters for the same behavior. Search matches titles, phrases, history terms,
+summaries, bodies and sources, and returns snippets plus matched terms.
 
 Day payloads include:
 

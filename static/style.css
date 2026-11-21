@@ -219,6 +219,22 @@ html[data-reading-font="sans"] .article-body { font-family: Arial, Helvetica, sa
 .search-results span { color: var(--muted); font-size: 12px; margin-left: 8px; }
 .search-results p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
 
+.archive-calendar, .archive-list { margin-bottom: 16px; }
+.calendar-head { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.calendar-head h2 { margin: 0 auto 0 0; font-size: 20px; }
+.calendar-weekdays, .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.calendar-weekdays { margin-bottom: 6px; }
+.calendar-weekdays span { color: var(--muted); font-size: 11px; font-weight: 700; text-align: center; text-transform: uppercase; }
+.calendar-day { min-height: 38px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--muted); font: inherit; font-size: 13px; }
+.calendar-day:disabled { cursor: not-allowed; opacity: 0.35; }
+.calendar-day.available { border-color: var(--accent); color: var(--accent); cursor: pointer; font-weight: 600; }
+.calendar-day.selected { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+.calendar-day.today:not(.selected) { box-shadow: inset 0 0 0 2px var(--accent); }
+.archive-list { padding-bottom: 12px; }
+.archive-days { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
+.archive-day { width: 100%; margin: 0; padding: 7px 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.archive-day.active { color: var(--accent); font-weight: 700; }
+
 .exercise-progress { width: 120px; }
 .exercise-progress .progress-fill { transition: none; }
 .exercise-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }

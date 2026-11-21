@@ -94,6 +94,8 @@ function app() {
     brand: 'English Daily',
     tagline: 'A little English, every day.',
     route: 'today',
+    archiveMonth: '',
+    weekdays: window.EDArchive ? window.EDArchive.WEEKDAYS : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     searchQuery: '',
     searchResults: [],
     searching: false,
@@ -144,6 +146,7 @@ function app() {
         this.applyBranding();
         Store.set('english-daily:lang', this.lang);
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
+        this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
@@ -238,6 +241,49 @@ function app() {
       this.setPreference('theme', this.prefersDark() ? 'paper' : 'ink');
     },
 
+    todayKey() {
+      return new Date().toISOString().slice(0, 10);
+    },
+
+    calendar() {
+      if (!window.EDArchive) {
+        return { label: this.archiveMonth, cells: [], availableCount: 0 };
+      }
+      return window.EDArchive.buildMonth(this.archiveMonth, this.days, this.selectedDate, this.todayKey());
+    },
+
+    archiveDates() {
+      return window.EDArchive ? window.EDArchive.recentDates(this.days, 7) : this.days.slice(0, 7);
+    },
+
+    canShiftMonth(direction) {
+      if (!window.EDArchive || !this.archiveMonth) return false;
+      const target = window.EDArchive.shiftMonth(this.archiveMonth, direction);
+      return window.EDArchive.months(this.days).includes(target);
+    },
+
+    shiftArchiveMonth(direction) {
+      if (!this.canShiftMonth(direction)) return;
+      this.archiveMonth = window.EDArchive.shiftMonth(this.archiveMonth, direction);
+    },
+
+    async selectArchiveDate(date) {
+      if (!date || !this.days.includes(date)) return;
+      this.selectedDate = date;
+      this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(date) : date.slice(0, 7);
+      await this.loadDay();
+      this.navigate('today');
+    },
+
+    goToday() {
+      const today = this.todayKey();
+      return this.selectArchiveDate(this.days.includes(today) ? today : this.days[0] || today);
+    },
+
+    openSearchResult(result) {
+      return result && result.date ? this.selectArchiveDate(result.date) : Promise.resolve();
+    },
+
     canShift(direction) {
       const index = this.days.indexOf(this.selectedDate);
       return index >= 0 && index + direction >= 0 && index + direction < this.days.length;
@@ -254,6 +300,7 @@ function app() {
       this.loading = true;
       this.error = '';
       this.all = {};
+      this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
       this.stop();
       try {
         const results = await Promise.all(this.levels.map(async (level) => {
@@ -643,18 +690,22 @@ function app() {
       this.error = '';
       try {
         if (this.mode === 'static') {
-          const path = window.EDSearch
-            ? window.EDSearch.path(this.payload())
-            : `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`;
-          const response = await fetch(path || `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`);
-          const index = response.ok ? await response.json() : { items: [] };
-          this.searchResults = window.EDSearch
-            ? window.EDSearch.query(index, term, this.level, 20)
-            : [];
+          const paths = this.days.slice(0, 120).map((date) => (
+            `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(date)}.json`
+          ));
+          const indexes = await Promise.all(paths.map(async (path) => {
+            try {
+              const response = await fetch(path);
+              return response.ok ? await response.json() : null;
+            } catch (err) {
+              return null;
+            }
+          }));
+          const index = window.EDSearch ? window.EDSearch.merge(indexes.filter(Boolean)) : { items: [] };
+          this.searchResults = window.EDSearch ? window.EDSearch.query(index, term, null, 50) : [];
         } else {
           const response = await fetch(
-            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&day=${encodeURIComponent(this.selectedDate)}` +
-            `&level=${encodeURIComponent(this.level)}&lang=${encodeURIComponent(this.lang)}`,
+            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&lang=${encodeURIComponent(this.lang)}&limit=50`,
           );
           const payload = response.ok ? await response.json() : { results: [] };
           this.searchResults = Array.isArray(payload.results) ? payload.results : [];

@@ -1035,7 +1035,7 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "branding.js", "settings.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "branding.js", "settings.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "archive.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
@@ -1044,13 +1044,15 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertTrue((static / "css" / "themes.css").is_file())
         for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult"):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
             self.assertIn(marker, index)
         for marker in ("data-eds-settings-controls", "Theme preset", "Text size", "Reading font", "Default audio speed", "Show exercise answers immediately", "Mark texts as read while scrolling", "Reduce motion", "Reset settings"):
+            self.assertIn(marker, index)
+        for marker in ("data-eds-calendar", "Previous month", "Next month", "Recent editions", "Open edition", 'x-text="calendar().label"'):
             self.assertIn(marker, index)
         links = (static / "lib" / "links.js").read_text(encoding="utf-8")
         for marker in ("Read the full text", "Listen to the original audio"):

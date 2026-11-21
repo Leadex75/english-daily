@@ -24,6 +24,7 @@
   <script defer src="./lib/exercises.js"></script>
   <script defer src="./lib/tour.js"></script>
   <script defer src="./lib/search.js"></script>
+  <script defer src="./lib/archive.js"></script>
   <script defer src="./lib/pwa.js"></script>
   <script defer src="./app.js"></script>
   <script defer src="./vendor/alpine.min.js"></script>
@@ -268,6 +269,39 @@
         <h1 id="archive-title">Archive</h1>
         <p>Browse saved days, search titles, phrases and history terms, and jump back into any edition.</p>
       </div>
+      <section class="block archive-calendar" aria-label="Edition calendar" data-eds-calendar>
+        <div class="calendar-head">
+          <button class="icon-button" type="button" @click="shiftArchiveMonth(-1)" aria-label="Previous month" :disabled="!canShiftMonth(-1)">&#8592;</button>
+          <h2 x-text="calendar().label" aria-live="polite"></h2>
+          <button class="icon-button" type="button" @click="shiftArchiveMonth(1)" aria-label="Next month" :disabled="!canShiftMonth(1)">&#8594;</button>
+          <button class="pill" type="button" @click="goToday()">Today</button>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <template x-for="name in weekdays" :key="name"><span x-text="name"></span></template>
+        </div>
+        <div class="calendar-grid" role="grid" :aria-label="calendar().label + ' editions'">
+          <template x-for="(cell, index) in calendar().cells" :key="cell.date || 'blank-' + index">
+            <button class="calendar-day" type="button" role="gridcell" :class="{ available: cell.available, selected: cell.selected, today: cell.today }" :disabled="!cell.available" :aria-label="cell.ariaLabel" :aria-selected="cell.selected" @click="selectArchiveDate(cell.date)" x-text="cell.day"></button>
+          </template>
+        </div>
+        <p class="notice" x-show="!calendar().availableCount">No editions in this month.</p>
+      </section>
+      <section class="block archive-list" aria-label="Recent editions">
+        <div class="block-head">
+          <h2>Recent editions</h2>
+          <span class="meta" x-text="days.length + ' saved days'"></span>
+        </div>
+        <ul class="archive-days">
+          <template x-for="date in archiveDates()" :key="date">
+            <li>
+              <button class="link-button archive-day" type="button" @click="selectArchiveDate(date)" :class="{ active: date === selectedDate }">
+                <span x-text="longDate(date)"></span>
+                <span class="badge" x-show="date === todayKey()">Today</span>
+              </button>
+            </li>
+          </template>
+        </ul>
+      </section>
       <section class="block search-panel" aria-label="Search the archive" data-eds-search>
         <form @submit.prevent="runSearch()" role="search">
           <label class="sr-only" for="search-input">Search titles, phrases and history terms</label>
@@ -282,6 +316,7 @@
               <a :href="result.url || '#'" target="_blank" rel="noopener noreferrer" x-text="result.title"></a>
               <span x-text="[result.date, result.level, result.source].filter(Boolean).join(' · ')"></span>
               <p x-text="result.snippet"></p>
+              <button class="link-button" type="button" x-show="result.date" @click="openSearchResult(result)">Open edition</button>
             </li>
           </template>
         </ul>

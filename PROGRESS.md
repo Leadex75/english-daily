@@ -168,3 +168,15 @@
 - Verification: public static export to a temp directory succeeded with 2 days, 12 level files, 5 audio slots, `./css/themes.css`, `./lib/settings.js`, the settings controls and `data-theme="system"`.
 - Decision: keep the existing `english-daily:theme` key untouched for backward safety and store the expanded settings object separately under `english-daily:settings`.
 - Remaining: Phases 3–8.
+
+## New brief — Phase 3 — archive and current-day history (done)
+
+- Added `static/lib/archive.js` with deterministic UTC month keys, month labels, calendar grids, available-day detection, selected/today markers, month shifting and recent-day helpers.
+- Reworked the Archive view with a month calendar, previous/next month buttons, a Today button, weekday headers, keyboard-focusable day buttons and a recent editions list; available dates jump directly back into that day.
+- Added current-day indicators in the calendar and recent list, and kept the archive month synchronized with date changes from the Today controls.
+- Expanded archive search to query all saved day indexes in static mode and all days/levels through `/api/search`; added merged-index helpers and an "Open edition" action on results.
+- Added the archive module to the service worker app shell and documented the calendar/archive-wide search behavior in `README.md`.
+- Tests: 47 unit tests passed in `.venv`; frontend helper checks, all JavaScript syntax checks, Python compile check, palette generation check, contrast audit and temp public static export passed.
+- Verification: exported HTML contains `./lib/archive.js`, `data-eds-calendar`, `calendar().label` and `Open edition`; the exported service worker caches `./lib/archive.js`.
+- Decision: cap static archive search at the first 120 saved day indexes and skip unreadable indexes so offline search stays responsive and never crashes.
+- Remaining: Phases 4–8.

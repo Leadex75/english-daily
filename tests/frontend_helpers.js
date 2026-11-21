@@ -4,12 +4,16 @@ global.window = {};
 require('../static/lib/branding.js');
 require('../static/lib/settings.js');
 require('../static/lib/links.js');
+require('../static/lib/search.js');
+require('../static/lib/archive.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
 
 const EDBrand = global.window.EDBrand;
 const EDSettings = global.window.EDSettings;
 const EDLinks = global.window.EDLinks;
+const EDSearch = global.window.EDSearch;
+const EDArchive = global.window.EDArchive;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
 
@@ -40,6 +44,30 @@ EDSettings.apply(savedSettings, settingsRoot);
 assert.deepStrictEqual(settingsRoot.dataset, {
   theme: 'sepia', textSize: 'large', readingFont: 'sans', motion: 'reduce',
 });
+
+assert.strictEqual(EDArchive.monthKey('2026-11-21'), '2026-11');
+assert.strictEqual(EDArchive.shiftMonth('2026-01', -1), '2025-12');
+assert.deepStrictEqual(EDArchive.months(['2026-11-21', '2026-10-05', '2026-11-20']), ['2026-10', '2026-11']);
+const archiveDays = ['2026-11-21', '2026-11-20', '2026-10-05'];
+const november = EDArchive.buildMonth('2026-11', archiveDays, '2026-11-21', '2026-11-21');
+assert.strictEqual(november.label, 'November 2026');
+assert.strictEqual(november.availableCount, 2);
+assert.strictEqual(november.cells.length % 7, 0);
+assert.deepStrictEqual(november.cells.filter((cell) => cell.available).map((cell) => cell.date), ['2026-11-20', '2026-11-21']);
+assert.strictEqual(november.cells.filter((cell) => cell.selected).length, 1);
+assert.strictEqual(november.cells.filter((cell) => cell.today).length, 1);
+assert.deepStrictEqual(EDArchive.recentDates(archiveDays, 2), ['2026-11-21', '2026-11-20']);
+
+const mergedSearch = EDSearch.merge([
+  { items: [{ date: '2026-11-20', guid_hash: 'a', title: 'Earlier', body: 'alpha' }] },
+  { items: [
+    { date: '2026-11-21', guid_hash: 'b', title: 'Later', body: 'alpha' },
+    { date: '2026-11-20', guid_hash: 'a', title: 'Earlier', body: 'alpha' },
+  ] },
+]);
+assert.strictEqual(mergedSearch.items.length, 2);
+assert.strictEqual(mergedSearch.items[0].date, '2026-11-21');
+assert.strictEqual(EDSearch.query(mergedSearch, 'alpha', null, 10).length, 2);
 
 assert.strictEqual(EDLinks.label('text'), 'Read the full text');
 assert.strictEqual(EDLinks.label('audio'), 'Listen to the original audio');
