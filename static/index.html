@@ -37,7 +37,8 @@
         <button class="icon-button" type="button" x-show="updateAvailable" @click="applyUpdate()" aria-label="Install updated app">Update</button>
         <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
         <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
-        <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length" aria-label="Export learned words to Anki">Anki</button>
+        <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length || !ankiAvailable()" aria-label="Export learned words to Anki">Anki</button>
+        <button class="icon-button anki-help" type="button" data-eds-anki @click="openAnkiHelp()" aria-label="Anki help">Anki help</button>
       </div>
     </header>
 
@@ -201,7 +202,8 @@
             </ul>
             <div class="block-foot">
               <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" x-text="isLearned(phrase()?.word) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill" type="button" @click="exportAnki([phrase()?.word])">Anki</button>
+              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.word)" :disabled="!canExportAnki(phrase()?.word)" :title="ankiStatus(phrase()?.word)" :aria-label="ankiStatus(phrase()?.word)" @click="exportAnki([phrase()?.word])" x-text="ankiLabel(phrase()?.word)"></button>
+              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.word)"></span>
             </div>
           </article>
           <article class="block phrase-card">
@@ -218,7 +220,8 @@
             </ul>
             <div class="block-foot">
               <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" x-text="isLearned(phrase()?.expression) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill" type="button" @click="exportAnki([phrase()?.expression])">Anki</button>
+              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.expression)" :disabled="!canExportAnki(phrase()?.expression)" :title="ankiStatus(phrase()?.expression)" :aria-label="ankiStatus(phrase()?.expression)" @click="exportAnki([phrase()?.expression])" x-text="ankiLabel(phrase()?.expression)"></button>
+              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.expression)"></span>
             </div>
           </article>
           <article class="block phrase-card history-card" x-show="phrase()?.history">
@@ -232,7 +235,8 @@
             <blockquote x-text="phrase()?.history?.example"></blockquote>
             <div class="block-foot">
               <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" x-text="isLearned(phrase()?.history) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill" type="button" @click="exportAnki([phrase()?.history])">Anki</button>
+              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.history)" :disabled="!canExportAnki(phrase()?.history)" :title="ankiStatus(phrase()?.history)" :aria-label="ankiStatus(phrase()?.history)" @click="exportAnki([phrase()?.history])" x-text="ankiLabel(phrase()?.history)"></button>
+              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.history)"></span>
             </div>
           </article>
         </div>
@@ -270,7 +274,7 @@
     <section class="block glossary" x-show="glossary().length" data-eds-glossary>
       <div class="block-head">
         <h2>My glossary</h2>
-        <button class="pill" type="button" @click="exportAllAnki()">Export all to Anki</button>
+        <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable()" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
       </div>
       <ul>
         <template x-for="entry in glossary()" :key="entry.key">

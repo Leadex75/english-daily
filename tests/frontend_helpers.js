@@ -3,9 +3,11 @@ const assert = require('assert');
 global.window = {};
 require('../static/lib/links.js');
 require('../static/lib/progress.js');
+require('../static/lib/anki.js');
 
 const EDLinks = global.window.EDLinks;
 const EDProgress = global.window.EDProgress;
+const AnkiExport = global.window.AnkiExport;
 
 assert.strictEqual(EDLinks.label('text'), 'Read the full text');
 assert.strictEqual(EDLinks.label('audio'), 'Listen to the original audio');
@@ -18,6 +20,23 @@ assert.deepStrictEqual(
   EDLinks.describe({ source: 'The Guardian', url: 'https://example.org/audio' }, 'audio'),
   { label: 'Listen to the original audio', source: 'The Guardian', url: 'https://example.org/audio' }
 );
+
+assert.strictEqual(AnkiExport.available(), true);
+assert.strictEqual(AnkiExport.status({ learned: true }, (item) => item.learned, true), 'Ready for Anki');
+assert.strictEqual(
+  AnkiExport.status({ learned: false }, (item) => item.learned, true),
+  'Mark learned before exporting to Anki'
+);
+assert.strictEqual(AnkiExport.status({}, () => true, false), 'Anki export unavailable offline');
+assert.deepStrictEqual(
+  AnkiExport.select(
+    [{ text: 'learned', learned: true }, { text: 'new', learned: false }],
+    (item) => item.learned,
+    (item) => item.text
+  ),
+  ['learned']
+);
+assert.strictEqual(AnkiExport.toTsv([{ front: 'word', back: 'mot' }]), 'word\tmot');
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const categories = ['news', 'culture', 'history', 'phrase'];

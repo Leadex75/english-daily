@@ -96,6 +96,8 @@ unless `--force` is used.
   driven by the versioned day contract (`meta.contract_version: 2`).
 - Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
   links in a responsive two-column source footer.
+- Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
+  Anki help button reopens the Anki tour step.
 - Today's progress counts only available text/audio slots; this week's progress counts unique
   practiced days from read, listened, learned and exercised markers.
 - Read/listened markers, learned phrases, exercise answers, theme, language and tour position live

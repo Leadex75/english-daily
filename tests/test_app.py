@@ -643,7 +643,8 @@ class MigrationAndExportTests(unittest.TestCase):
             )
             self.assertGreater(level_payload["meta"]["glossary_count"], 0)
             self.assertGreaterEqual(len(level_payload["exercises"]), 3)
-            self.assertEqual(len(level_payload["tour"]), 5)
+            self.assertEqual(len(level_payload["tour"]), 6)
+            self.assertIn("anki", {step["id"] for step in level_payload["tour"]})
             exercise_ids = {exercise["id"] for exercise in level_payload["exercises"]}
             self.assertIn("B1-word", exercise_ids)
             phrase_payload = json.loads(site_phrase_path(out, day, "en").read_text(encoding="utf-8"))
@@ -934,10 +935,12 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertTrue((static / "lib" / name).is_file())
         for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems"):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status"):
             self.assertIn(marker, styles)
+        for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
+            self.assertIn(marker, index)
         links = (static / "lib" / "links.js").read_text(encoding="utf-8")
         for marker in ("Read the full text", "Listen to the original audio"):
             self.assertIn(marker, links)

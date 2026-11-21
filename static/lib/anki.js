@@ -32,5 +32,23 @@
     return navigator.clipboard.writeText(toTsv(cards)).then(function () { return true; }, function () { return false; });
   }
 
-  window.AnkiExport = { toTsv: toTsv, download: download, copy: copy };
+  function available() {
+    return Boolean(window.AnkiExport && typeof window.AnkiExport.download === 'function');
+  }
+
+  function select(items, isLearned, toCard) {
+    return (Array.isArray(items) ? items : []).filter(function (item) {
+      return typeof isLearned !== 'function' || isLearned(item);
+    }).map(function (item) {
+      return typeof toCard === 'function' ? toCard(item) : item;
+    }).filter(Boolean);
+  }
+
+  function status(item, isLearned, isAvailable) {
+    if (!isAvailable) return 'Anki export unavailable offline';
+    if (typeof isLearned === 'function' && !isLearned(item)) return 'Mark learned before exporting to Anki';
+    return 'Ready for Anki';
+  }
+
+  window.AnkiExport = { toTsv: toTsv, download: download, copy: copy, available: available, select: select, status: status };
 }());

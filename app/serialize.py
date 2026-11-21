@@ -17,6 +17,7 @@ _TOUR_STEPS = (
     {"id": "tabs", "title": "Browse the day", "body": "Read news, culture and history in both text and audio.", "target": "[data-eds-tabs]"},
     {"id": "phrase", "title": "Learn the phrase", "body": "Each level has one word, expression and history term.", "target": "[data-eds-phrase]"},
     {"id": "exercises", "title": "Practise actively", "body": "Answer three short exercises to review what you learned.", "target": "[data-eds-exercises]"},
+    {"id": "anki", "title": "Export learned items", "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.", "target": "[data-eds-anki]"},
     {"id": "glossary", "title": "Build your glossary", "body": "Star items, export them to Anki, and keep your progress.", "target": "[data-eds-glossary]"},
 )
 

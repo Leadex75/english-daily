@@ -340,13 +340,53 @@ function app() {
       const back = [meaning, item.example].filter(Boolean).join('<br>');
       return { front, back };
     },
+    ankiAvailable() {
+      if (!window.AnkiExport) return false;
+      if (typeof window.AnkiExport.available === 'function') return window.AnkiExport.available();
+      return typeof window.AnkiExport.download === 'function';
+    },
+    ankiStatus(item) {
+      if (window.AnkiExport && typeof window.AnkiExport.status === 'function') {
+        return window.AnkiExport.status(item, (candidate) => this.isLearned(candidate), this.ankiAvailable());
+      }
+      if (!this.ankiAvailable()) return 'Anki export unavailable offline';
+      return this.isLearned(item) ? 'Ready for Anki' : 'Mark learned before exporting to Anki';
+    },
+    ankiLabel(item) {
+      if (!this.ankiAvailable()) return 'Anki unavailable';
+      return this.isLearned(item) ? 'Anki ✓' : 'Anki: learn first';
+    },
+    ankiClass(item) {
+      if (!this.ankiAvailable()) return 'anki-unavailable';
+      return this.isLearned(item) ? 'anki-ready' : 'anki-unlearned';
+    },
+    canExportAnki(item) {
+      return this.ankiAvailable() && this.isLearned(item);
+    },
+    exportableAnkiItems(items) {
+      if (window.AnkiExport && typeof window.AnkiExport.select === 'function') {
+        return window.AnkiExport.select(
+          items,
+          (item) => this.isLearned(item),
+          (item) => this.ankiItem(item)
+        );
+      }
+      return (items || [])
+        .filter((item) => this.isLearned(item))
+        .map((item) => this.ankiItem(item))
+        .filter(Boolean);
+    },
     exportAnki(items) {
-      const cards = (items || []).map((item) => this.ankiItem(item)).filter(Boolean);
-      if (cards.length && window.AnkiExport) window.AnkiExport.download(cards, `english-daily-${this.selectedDate}.txt`);
+      const cards = this.exportableAnkiItems(items);
+      if (cards.length && this.ankiAvailable()) {
+        window.AnkiExport.download(cards, `english-daily-${this.selectedDate}.txt`);
+      }
     },
     exportAllAnki() {
-      const cards = this.glossary().map((item) => this.ankiItem(item)).filter(Boolean);
-      if (cards.length && window.AnkiExport) window.AnkiExport.download(cards, 'english-daily-glossary.txt');
+      const cards = this.exportableAnkiItems(this.glossary());
+      if (cards.length && this.ankiAvailable()) {
+        window.AnkiExport.download(cards, 'english-daily-glossary.txt');
+      }
     },
 
     allItems() {
@@ -467,6 +507,15 @@ function app() {
       const state = window.EDTour ? window.EDTour.start(0) : { index: 0, open: true };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && this.tourSteps().length > 0;
+      this.$nextTick(() => this.focusTour());
+    },
+    openAnkiHelp() {
+      const steps = this.tourSteps();
+      const found = steps.findIndex((step) => step && step.id === 'anki');
+      const index = found >= 0 ? found : 0;
+      const state = window.EDTour ? window.EDTour.go(index) : { index, open: true };
+      this.tourIndex = state.index;
+      this.tourOpenFlag = state.open && steps.length > 0;
       this.$nextTick(() => this.focusTour());
     },
     nextTour() {
