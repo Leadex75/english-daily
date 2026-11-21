@@ -103,6 +103,76 @@ class PickerTests(unittest.TestCase):
         self.assertEqual(chosen["slot_level"], "B2")
         self.assertIn("Closest level: B1", chosen["badges"])
 
+    def test_trace_reports_explicit_cascade_stages(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en"]
+        day = "2026-11-21"
+        center = band_center("B1", config["level_thresholds"])
+        candidates = [
+            {
+                "guid_hash": "adjacent-audio",
+                "source_id": "audio-source",
+                "source_name": "Audio Source",
+                "kind": "audio",
+                "category": "news",
+                "title": "Audio",
+                "url": "https://example.org/audio",
+                "published_at": day,
+                "audio_url": "https://example.org/a.mp3",
+                "duration_sec": 200,
+                "score": center,
+                "level": "B1",
+                "origin": "fresh",
+            },
+            {
+                "guid_hash": "adjacent-text",
+                "source_id": "text-source",
+                "source_name": "Text Source",
+                "kind": "text",
+                "category": "news",
+                "title": "Text",
+                "url": "https://example.org/text",
+                "published_at": day,
+                "body_text": "word " * 200,
+                "word_count": 200,
+                "score": center,
+                "level": "B1",
+                "origin": "fresh",
+            },
+        ]
+        trace: list[dict[str, object]] = []
+        picks, filled, empty = choose_picks(candidates, day, config, trace=trace)
+        self.assertEqual(len(filled), 2)
+        stages = {entry["guid_hash"]: entry["stage"] for entry in trace if entry["guid_hash"]}
+        self.assertEqual(stages["adjacent-audio"], "adjacent-audio")
+        self.assertEqual(stages["adjacent-text"], "adjacent-text")
+        self.assertEqual(len(trace), 36)
+        selected = {item["guid_hash"] for item in picks.values()}
+        self.assertEqual(selected, {"adjacent-audio", "adjacent-text"})
+
+    def test_outside_preferred_window_is_badged(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en"]
+        day = "2026-11-21"
+        candidates = [{
+            "guid_hash": "long-audio",
+            "source_id": "long-source",
+            "source_name": "Long Source",
+            "kind": "audio",
+            "category": "culture",
+            "title": "Long audio",
+            "url": "https://example.org/long",
+            "published_at": day,
+            "audio_url": "https://example.org/long.mp3",
+            "duration_sec": 3000,
+            "score": 0.5,
+            "level": "B1",
+            "origin": "fresh",
+        }]
+        picks, _, _ = choose_picks(candidates, day, config)
+        chosen = next(item for item in picks.values() if item["guid_hash"] == "long-audio")
+        self.assertIn("Outside preferred window", chosen["badges"])
+
 
 class LanguagePathTests(unittest.TestCase):
     def test_language_helpers_and_migration(self):

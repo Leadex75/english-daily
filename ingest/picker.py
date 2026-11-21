@@ -5,6 +5,14 @@ from typing import Any
 
 from ingest.readability import CATEGORIES, KINDS, LEVELS, band_center
 
+STAGES: tuple[dict[str, Any], ...] = (
+    {"name": "exact-fresh-preferred", "distance": "exact", "origins": ("fresh",), "preferred": True, "kinds": None},
+    {"name": "exact-fresh-other", "distance": "exact", "origins": ("fresh",), "preferred": False, "kinds": None},
+    {"name": "exact-reserve-archive", "distance": "exact", "origins": ("reserve", "archive"), "preferred": None, "kinds": None},
+    {"name": "adjacent-audio", "distance": "adjacent", "origins": ("fresh", "archive", "reserve"), "preferred": None, "kinds": ("audio",)},
+    {"name": "adjacent-text", "distance": "adjacent", "origins": ("fresh", "archive", "reserve"), "preferred": None, "kinds": ("text",)},
+)
+
 
 def _date(value: Any) -> dt.date:
     try:
@@ -44,7 +52,7 @@ def _hard_ok(candidate: dict[str, Any], config: dict[str, Any]) -> bool:
         if duration is not None:
             if low is not None and int(duration) < int(low):
                 return False
-            if high is not None and int(duration) > int(high):
+            if high is not None and int(high) > 0 and int(duration) > int(high):
                 return False
         return True
     if not candidate.get("body_text"):
@@ -71,6 +79,7 @@ def _origin(candidate: dict[str, Any], day: str, config: dict[str, Any]) -> str:
 def _sort_key(candidate: dict[str, Any], center: float) -> tuple[Any, ...]:
     score = float(candidate.get("score") or 0)
     return (
+        0 if candidate.get("_preferred") else 1,
         -_date(candidate.get("published_at")).toordinal(),
         abs(score - center),
         str(candidate.get("guid_hash")),
@@ -82,8 +91,9 @@ def choose_picks(
     day: str,
     config: dict[str, Any],
     excluded_hashes: set[str] | None = None,
+    trace: list[dict[str, Any]] | None = None,
 ) -> tuple[dict[tuple[str, str, str], dict[str, Any]], list[str], list[str]]:
-    """Pure cascade over candidates: A -> B -> C -> D -> E, 36 slots."""
+    """Pure deterministic cascade over candidates: A -> B -> C -> D -> E."""
     excluded = {str(value) for value in (excluded_hashes or ())}
     day_date = _date(day)
     archive_cutoff = day_date - dt.timedelta(days=int(config.get("archive_days", 90)))
@@ -125,6 +135,8 @@ def choose_picks(
             )
             if level != target_level:
                 badges.append(f"Closest level: {level}")
+            if not item["_preferred"]:
+                badges.append("Outside preferred window")
             chosen["origin"] = origin
             chosen["badges"] = badges
             picked_hashes.add(str(item.get("guid_hash")))
@@ -135,13 +147,6 @@ def choose_picks(
             return chosen
         return None
 
-    stages = [
-        ("exact", ("fresh",), True),
-        ("exact", ("fresh",), False),
-        ("exact", ("reserve", "archive"), None),
-        ("adjacent", ("fresh", "archive", "reserve"), True),
-        ("adjacent", ("fresh", "archive", "reserve"), False),
-    ]
     for target_level in LEVELS:
         center = band_center(target_level, config["level_thresholds"])
         index = LEVELS.index(target_level)
@@ -155,17 +160,20 @@ def choose_picks(
             for kind in KINDS:
                 key = (target_level, category, kind)
                 chosen: dict[str, Any] | None = None
-                for distance, origins, preferred in stages:
-                    levels = (target_level,) if distance == "exact" else tuple(
+                chosen_stage = "empty"
+                for stage in STAGES:
+                    levels = (target_level,) if stage["distance"] == "exact" else tuple(
                         level for level in neighbors if level != target_level
                     )
                     if not levels:
                         continue
+                    if stage["kinds"] and kind not in stage["kinds"]:
+                        continue
                     pool = [
                         item for item in prepared
                         if item.get("category") == category and item.get("kind") == kind
-                        and item.get("level") in levels and item["_origin"] in origins
-                        and (preferred is None or item["_preferred"] == preferred)
+                        and item.get("level") in levels and item["_origin"] in stage["origins"]
+                        and (stage["preferred"] is None or item["_preferred"] == stage["preferred"])
                         and str(item.get("guid_hash")) not in excluded
                     ]
                     if not pool:
@@ -179,13 +187,25 @@ def choose_picks(
                     )
                     neighbor_level = str(nearest[0]["level"])
                     stage_pool = [item for item in pool if item.get("level") == neighbor_level]
-                    chosen = select(stage_pool, center, neighbor_level, target_level)
-                    if chosen:
+                    candidate = select(stage_pool, center, neighbor_level, target_level)
+                    if candidate:
+                        chosen = candidate
+                        chosen_stage = str(stage["name"])
                         break
-                slot = f"{target_level}/{category}/{kind}"
                 if chosen:
                     picks[key] = chosen
-                    filled.append(slot)
+                    filled.append(f"{target_level}/{category}/{kind}")
                 else:
-                    empty.append(slot)
+                    empty.append(f"{target_level}/{category}/{kind}")
+                if trace is not None:
+                    trace.append({
+                        "level": target_level,
+                        "category": category,
+                        "kind": kind,
+                        "stage": chosen_stage,
+                        "status": "filled" if chosen else "empty",
+                        "selected_level": chosen.get("level") if chosen else None,
+                        "guid_hash": chosen.get("guid_hash") if chosen else None,
+                        "origin": chosen.get("origin") if chosen else None,
+                    })
     return picks, filled, empty

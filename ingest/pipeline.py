@@ -232,7 +232,10 @@ def run_ingest(
         candidates = _candidates(conn, language)
     finally:
         conn.close()
-    picks, filled, empty = choose_picks(candidates, day, config, excluded_hashes=excluded)
+    cascade_trace: list[dict[str, Any]] = []
+    picks, filled, empty = choose_picks(
+        candidates, day, config, excluded_hashes=excluded, trace=cascade_trace
+    )
 
     phrases_count = 0
     try:
@@ -305,5 +308,6 @@ def run_ingest(
         "pruned": pruned,
         "state_entries": state_entries,
         "errors": errors,
+        "trace": cascade_trace,
         "report": report,
     }

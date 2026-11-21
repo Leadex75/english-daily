@@ -26,3 +26,12 @@
 - Added `/api/sources?lang=...` backed by `source_registry()` in `app/db.py`, including source metadata, license, type and stored item counts; 28 English sources are returned without network calls.
 - Tests: 10 unit tests passed, including structured doctor results, JSON flag output and language-filtered sources API.
 - Verification: Python modules compile; CLI JSON smoke printed valid JSON; API smoke returned 200 with 28 sources.
+- Phase 2 committed as `f3e3f0e`.
+
+## Phase 3 — pure cascade refinements (done)
+
+- Cascade stages are now explicit and deterministic: exact fresh preferred, exact fresh other, exact reserve/archive, adjacent audio, adjacent text.
+- Added an optional `trace` to `choose_picks()` and exposed it on `run_ingest()` summaries for later reconstruct reporting.
+- Selections prefer soft-window candidates first, keep source/audio caps where possible, and badge outside-preferred picks alongside existing archive/reserve/adjacent badges.
+- Tests: 12 unit tests passed, including explicit stage tracing, adjacent audio/text split and outside-preferred badges.
+- Verification: Python modules compile; `node --check` passes for frontend scripts.
