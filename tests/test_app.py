@@ -9,6 +9,8 @@ from io import StringIO
 from pathlib import Path
 from unittest.mock import patch
 
+import yaml
+
 from app.db import (
     DEFAULTS,
     available_languages,
@@ -702,6 +704,24 @@ class SearchApiTests(unittest.TestCase):
         self.assertEqual(payload["results"], results)
         self.assertEqual(build.call_args.args[2], "en")
         self.assertEqual(search.call_args.kwargs["level"], "B1")
+
+
+class WorkflowTests(unittest.TestCase):
+    def test_workflows_are_valid_and_wire_required_commands(self):
+        root = Path(__file__).resolve().parents[1]
+        workflows = root / ".github" / "workflows"
+        daily = (workflows / "daily.yml").read_text(encoding="utf-8")
+        health = (workflows / "health.yml").read_text(encoding="utf-8")
+        desktop = (workflows / "desktop.yml").read_text(encoding="utf-8")
+        for name, text in (("daily", daily), ("health", health), ("desktop", desktop)):
+            parsed = yaml.safe_load(text)
+            self.assertTrue(parsed.get("jobs"), name)
+        for marker in ('cron: "0 5 * * *"', "workflow_dispatch", "unittest discover", "static/lib/*.js", "reconstruct --json", "export-static --out site --public", "deploy-pages@v4"):
+            self.assertIn(marker, daily)
+        for marker in ("cron:", "workflow_dispatch", "doctor --json", "upload-artifact@v4"):
+            self.assertIn(marker, health)
+        for marker in ("workflow_dispatch", "matrix:", "build_desktop.py", "upload-artifact@v4"):
+            self.assertIn(marker, desktop)
 
 
 class DesktopTests(unittest.TestCase):

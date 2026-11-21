@@ -56,7 +56,7 @@ def build_pyinstaller(output):
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "PyInstaller failed")
     built = target.parent / ("EnglishDaily.exe" if os.name == "nt" else "EnglishDaily")
-    if built.is_file():
+    if built.is_file() and built.resolve() != target.resolve():
         shutil.move(str(built), str(target))
     return target if target.is_file() else None
 

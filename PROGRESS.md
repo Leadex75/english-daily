@@ -108,3 +108,12 @@
 - Added a stdlib zipapp builder plus an optional PyInstaller path with `desktop/EnglishDaily.spec`; no new runtime dependencies were introduced.
 - Tests: 24 unit tests passed, including site resolution and zipapp contents.
 - Verification: desktop CLI help works; zipapp build smoke produced a runnable artifact containing runtime source and static assets.
+- Phase 11 committed as `dce5bac`.
+
+## Phase 12 — GitHub Actions workflows (done)
+
+- Daily workflow now compiles Python, checks every JavaScript module, verifies deterministic reconstruction and retains Pages deployment.
+- Added a scheduled/manual health workflow that runs `doctor --json` and uploads the source report.
+- Added a manual/tag desktop workflow that builds zipapps on Linux, Windows and macOS plus an optional Windows executable artifact.
+- Tests: 25 unit tests passed, including YAML validity and required workflow commands.
+- Verification: `compileall` and all JavaScript syntax checks pass.

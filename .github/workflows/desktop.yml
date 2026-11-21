@@ -1,0 +1,69 @@
+name: desktop
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  zipapp:
+    name: zipapp (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Build desktop zipapp
+        run: python tools/build_desktop.py --out dist/EnglishDaily.pyz
+
+      - name: Upload desktop zipapp
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-daily-zipapp-${{ matrix.os }}
+          path: dist/EnglishDaily.pyz
+          retention-days: 30
+
+  executable:
+    name: executable (windows-latest)
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install pyinstaller
+
+      - name: Build Windows executable
+        run: python tools/build_desktop.py --out dist/EnglishDaily.exe --pyinstaller
+
+      - name: Upload Windows executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-daily-windows
+          path: dist/EnglishDaily.exe
+          retention-days: 30

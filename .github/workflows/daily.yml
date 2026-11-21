@@ -44,14 +44,20 @@ jobs:
       - name: Run tests
         run: python -m unittest discover -s tests -v
 
+      - name: Python compile check
+        run: python -m compileall -q app ingest desktop tools run.py tests
+
       - name: Static checks
         run: |
           node --check static/app.js
-          node --check static/lib/anki.js
           node --check static/sw.js
+          for file in static/lib/*.js; do node --check "$file"; done
 
       - name: Ingest (hotlink audio, disposable database)
         run: python run.py ingest --state-dir state
+
+      - name: Verify deterministic reconstruction
+        run: python run.py reconstruct --json
 
       - name: Write stats to job summary
         run: python run.py stats --days 90 >> "$GITHUB_STEP_SUMMARY"

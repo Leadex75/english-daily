@@ -1,0 +1,42 @@
+name: health
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: health
+  cancel-in-progress: true
+
+jobs:
+  check-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ENGLISH_DAILY_DATA_DIR: ./.ci-data
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Check source registry
+        run: python run.py doctor --json | tee source-health.json
+
+      - name: Upload health report
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-health
+          path: source-health.json
+          retention-days: 14
