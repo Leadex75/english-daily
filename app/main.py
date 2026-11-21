@@ -20,6 +20,7 @@ from app.db import (
     load_config,
     load_sources,
     normalize_language,
+    source_registry,
     successful_ingest_exists,
     today,
     upsert_sources,
@@ -115,6 +116,17 @@ def languages() -> dict[str, Any]:
     return {
         "default": default_language(config),
         "languages": available_languages(config),
+    }
+
+
+@app.get("/api/sources")
+def sources(lang: str | None = None) -> dict[str, Any]:
+    config = load_config()
+    language = _language(config, lang)
+    return {
+        "lang": language,
+        "languages": available_languages(config),
+        "sources": source_registry(config, language),
     }
 
 

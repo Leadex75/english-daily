@@ -121,7 +121,9 @@ def main() -> int:
     stats_cmd.add_argument("--days", type=int, default=90)
     stats_cmd.add_argument("--lang", default=None)
 
-    sub.add_parser("doctor", help="check all enabled sources")
+    doctor_cmd = sub.add_parser("doctor", help="check all enabled sources")
+    doctor_cmd.add_argument("--json", dest="json_output", action="store_true")
+    doctor_cmd.add_argument("--lang", default=None)
     sub.add_parser("prune", help="delete expired MP3 files")
 
     args = parser.parse_args()
@@ -194,7 +196,7 @@ def main() -> int:
     if command == "doctor":
         from ingest.doctor import run_doctor
 
-        return run_doctor(config)
+        return run_doctor(config, json_output=args.json_output, lang=args.lang)
 
     import uvicorn
 

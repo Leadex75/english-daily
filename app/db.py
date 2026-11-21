@@ -220,6 +220,38 @@ def load_sources(config: dict[str, Any] | None = None, lang: str | None = None) 
     return sources_for_language(sources, config, lang)
 
 
+def source_registry(config: dict[str, Any], lang: str | None = None) -> list[dict[str, Any]]:
+    selected = load_sources() if lang is None else sources_for_language(load_sources(), config, lang)
+    counts: dict[str, int] = {}
+    try:
+        conn = connect(config)
+        try:
+            for row in conn.execute("SELECT source_id, COUNT(*) AS total FROM items GROUP BY source_id"):
+                counts[str(row["source_id"])] = int(row["total"])
+        finally:
+            conn.close()
+    except sqlite3.Error:
+        counts = {}
+    registry: list[dict[str, Any]] = []
+    for src in selected:
+        item = {
+            "id": str(src.get("id") or ""),
+            "name": str(src.get("name") or src.get("id") or ""),
+            "lang": str(src.get("lang") or "en"),
+            "category": str(src.get("category") or ""),
+            "kind": str(src.get("kind") or ""),
+            "level_min": str(src.get("level_min") or "computed"),
+            "level_max": str(src.get("level_max") or "computed"),
+            "enabled": bool(src.get("enabled", True)),
+            "license": str(src.get("license") or "proprietary"),
+            "attribution": src.get("attribution"),
+            "type": str(src.get("type") or "feed"),
+            "items": counts.get(str(src.get("id") or ""), 0),
+        }
+        registry.append(item)
+    return registry
+
+
 def data_dir(config: dict[str, Any]) -> Path:
     path = Path(str(config["data_dir"]))
     return path if path.is_absolute() else PROJECT_ROOT / path

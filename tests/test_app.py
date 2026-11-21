@@ -3,7 +3,10 @@ import sqlite3
 import tempfile
 import unittest
 from collections import Counter
+from contextlib import redirect_stdout
+from io import StringIO
 from pathlib import Path
+from unittest.mock import patch
 
 from app.db import (
     DEFAULTS,
@@ -17,6 +20,10 @@ from app.db import (
     normalize_language,
     upsert_sources,
 )
+from app.main import app
+from fastapi.testclient import TestClient
+
+from ingest.doctor import check_sources, run_doctor
 from ingest.export_static import export_static
 from ingest.paths import (
     languages_path,
@@ -276,6 +283,61 @@ class MigrationAndExportTests(unittest.TestCase):
                 ).fetchone()[0], 0)
             finally:
                 conn.close()
+
+
+class DoctorTests(unittest.TestCase):
+    def test_check_sources_returns_structured_report(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en"]
+        sources = [
+            {"id": "good", "name": "Good", "lang": "en", "category": "news",
+             "kind": "audio", "enabled": True},
+            {"id": "bad", "name": "Bad", "lang": "en", "category": "culture",
+             "kind": "text", "enabled": True},
+        ]
+        entries = [{
+            "enclosure_url": "https://example.org/a.mp3",
+            "itunes_duration": "03:20",
+        }]
+        with patch("ingest.doctor.load_sources", return_value=sources), patch(
+            "ingest.doctor.fetch_source", side_effect=[entries, RuntimeError("offline")]
+        ):
+            report = check_sources(config, day="2026-11-21")
+        self.assertEqual(report["day"], "2026-11-21")
+        self.assertEqual(report["checked"], 2)
+        self.assertEqual(report["ok"], 1)
+        self.assertEqual(report["failures"], 1)
+        good, bad = report["sources"]
+        self.assertEqual(good["status"], "ok")
+        self.assertEqual(good["entries"], 1)
+        self.assertEqual(good["enclosures"], 1)
+        self.assertEqual(good["durations_sec"], [200])
+        self.assertEqual(bad["status"], "error")
+        self.assertIn("offline", bad["error"])
+
+    def test_doctor_json_flag_prints_json(self):
+        config = dict(DEFAULTS)
+        config["languages"] = ["en"]
+        report = {"checked": 0, "failures": 0, "sources": []}
+        buffer = StringIO()
+        with patch("ingest.doctor.check_sources", return_value=report), redirect_stdout(buffer):
+            code = run_doctor(config, json_output=True)
+        self.assertEqual(code, 0)
+        self.assertEqual(json.loads(buffer.getvalue()), report)
+
+
+class SourcesApiTests(unittest.TestCase):
+    def test_sources_endpoint_filters_language(self):
+        registry = [{"id": "en-1", "name": "Source", "lang": "en", "items": 4}]
+        client = TestClient(app)
+        with patch("app.main.source_registry", return_value=registry) as mocked:
+            response = client.get("/api/sources?lang=en")
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertEqual(payload["lang"], "en")
+        self.assertEqual(payload["sources"], registry)
+        mocked.assert_called_once()
+        self.assertEqual(mocked.call_args.args[1], "en")
 
 
 if __name__ == "__main__":
