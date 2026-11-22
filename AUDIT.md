@@ -123,3 +123,11 @@
 - Back up `data/english-daily.sqlite3` before any schema or data migration.
 - Add runtime dependencies only where required by the brief (`genanki`); keep Playwright in dev requirements.
 - Do not add Pillow or any LLM/API-key service.
+
+## Addendum Phase 10 resolution
+
+- Root cause: the previous AnkiConnect client posted `application/json`, which triggers a browser CORS preflight; AnkiConnect's default `webCorsOriginList` only allows `http://localhost`, so the GitHub Pages origin is rejected and the old UI gave no diagnosis.
+- Resolution: direct requests now use `text/plain` without a preflight, provide explicit origin/permission/connection guidance, and fall back to a loopback-only same-origin proxy in the desktop launcher. The FastAPI server also exposes the same allowlisted proxy.
+- The proxy permits only `version`, `requestPermission`, `modelFieldNames`, `createModel` and `addNotes`; it caps request size and timeout, validates local Host/Origin/Referer, and never logs bodies or keys.
+- Notes are verified against `bank/anki_models.json` before sending; model fields can be created when absent, and added/duplicate/failed counts are surfaced in the Anki view.
+- Manual diagnosis uses `tools/fake_ankiconnect.py` with `ok`, `origin-not-allowed`, `not-running`, `slow`, `permission-denied` and `duplicate notes` modes.

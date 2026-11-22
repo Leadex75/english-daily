@@ -9,6 +9,7 @@ require('../static/lib/search.js');
 require('../static/lib/archive.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
+require('../static/js/ankiconnect.js');
 require('../static/lib/exercises.js');
 require('../static/lib/tour.js');
 
@@ -21,6 +22,7 @@ const EDArchive = global.window.EDArchive;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
 const AnkiConnect = global.window.AnkiConnect;
+const EDAnkiConnect = global.window.EDAnkiConnect;
 const EDExercises = global.window.EDExercises;
 const EDTour = global.window.EDTour;
 
@@ -174,6 +176,76 @@ async function testAnkiConnect() {
   assert.strictEqual(calls[1].notes[0].fields.Front, 'bridge &lt;a&gt;');
 }
 
+async function testAddendumAnkiConnect() {
+  const calls = [];
+  const directClient = EDAnkiConnect.createClient({
+    url: 'http://127.0.0.1:8765/',
+    proxyUrl: null,
+    fetchImpl: function (url, init) {
+      const payload = JSON.parse(init.body);
+      calls.push({ url, action: payload.action, headers: init.headers, params: payload.params });
+      const results = {
+        version: 6,
+        requestPermission: null,
+        modelFieldNames: ['Front', 'Back', 'Example', 'Source', 'Level', 'Language', 'Date', 'Guid'],
+        createModel: null,
+        addNotes: [11, null, false],
+      };
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        json: () => Promise.resolve({ result: results[payload.action], error: null }),
+      });
+    },
+  });
+  const details = await directClient.check();
+  assert.strictEqual(details.version, 6);
+  assert.strictEqual(details.mode, 'direct');
+  await directClient.requestPermission();
+  const models = await directClient.verifyModels([{ modelName: 'English Daily Phrase' }]);
+  assert.deepStrictEqual(models[0].missing, []);
+  const summary = await directClient.addNotes([{}, {}, {}]);
+  assert.deepStrictEqual(summary, { total: 3, added: 1, duplicates: 2, failed: 0, results: [11, null, false] });
+  assert.strictEqual(calls[0].headers['Content-Type'], 'text/plain');
+  assert.deepStrictEqual(calls.map((call) => call.action), [
+    'version', 'requestPermission', 'modelFieldNames', 'addNotes',
+  ]);
+
+  const proxyCalls = [];
+  let modelsFetched = false;
+  const proxyClient = EDAnkiConnect.createClient({
+    fetchImpl: function (url, init) {
+      if (init.method === 'GET') {
+        modelsFetched = true;
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          json: () => Promise.resolve({ models: [{ modelName: 'English Daily Phrase', inOrderFields: ['Front', 'Back'] }] }),
+        });
+      }
+      const payload = JSON.parse(init.body);
+      proxyCalls.push({ url, action: payload.action, contentType: init.headers['Content-Type'] });
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        json: () => Promise.resolve({
+          result: payload.action === 'version' ? 6 : payload.action === 'modelFieldNames' ? ['Front'] : null,
+          error: null,
+        }),
+      });
+    },
+  });
+  const proxyDetails = await proxyClient.check();
+  assert.strictEqual(proxyDetails.mode, 'proxy');
+  assert.strictEqual(proxyCalls[0].url, './api/ankiconnect');
+  assert.strictEqual(proxyCalls[0].contentType, 'application/json');
+  await proxyClient.verifyModels([{ modelName: 'English Daily Phrase' }]);
+  assert.strictEqual(modelsFetched, true);
+  assert.strictEqual(proxyCalls.some((call) => call.action === 'createModel'), true);
+  assert.ok(EDAnkiConnect.diagnostic({ status: 403 }).includes('webCorsOriginList'));
+  assert.ok(EDAnkiConnect.diagnostic(new Error('AnkiConnect permission not granted')).includes('AnkiConnect'));
+}
+
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const categories = ['news', 'culture', 'history', 'phrase'];
 const slotOrder = [];
@@ -255,7 +327,7 @@ assert.deepStrictEqual(
 );
 assert.strictEqual(EDProgress.weekCount(practiced, '2026-11-21', 7), 3);
 
-testAnkiConnect().then(function () {
+testAnkiConnect().then(testAddendumAnkiConnect).then(function () {
   console.log('frontend helper checks passed');
 }).catch(function (err) {
   console.error(err);

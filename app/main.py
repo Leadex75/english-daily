@@ -6,10 +6,11 @@ import shutil
 import threading
 from typing import Any
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from app.anki_connect import MAX_BODY_BYTES, AnkiConnectError, parse_body, proxy_request
 from app.db import (
     PROJECT_ROOT,
     connect,
@@ -250,6 +251,29 @@ def audio(day: str, filename: str) -> FileResponse:
     if not target.is_file():
         raise HTTPException(status_code=404, detail="not found")
     return FileResponse(target, media_type="audio/mpeg")
+
+
+@app.post("/api/ankiconnect")
+async def ankiconnect(request: Request) -> JSONResponse:
+    try:
+        try:
+            content_length = int(request.headers.get("content-length") or "0")
+        except ValueError:
+            raise AnkiConnectError("Invalid content length", "validation")
+        if content_length < 0 or content_length > MAX_BODY_BYTES:
+            raise AnkiConnectError("Request body is too large", "validation", 413)
+        payload = parse_body(await request.body())
+        result = proxy_request(
+            payload,
+            dict(request.headers),
+            expected_origin=str(request.base_url).rstrip("/"),
+        )
+        return JSONResponse(result)
+    except AnkiConnectError as exc:
+        return JSONResponse(
+            {"error": exc.message, "kind": exc.kind},
+            status_code=exc.status,
+        )
 
 
 app.mount("/", StaticFiles(directory=str(PROJECT_ROOT / "static"), html=True), name="static")

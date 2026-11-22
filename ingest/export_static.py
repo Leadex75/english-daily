@@ -160,6 +160,10 @@ def export_static(
     shutil.copytree(PROJECT_ROOT / "static", out, dirs_exist_ok=True)
     _prepare_index(out, config)
     _prepare_service_worker(out)
+    models = PROJECT_ROOT / "bank" / "anki_models.json"
+    if models.is_file():
+        (out / "data").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(models, out / "data" / "anki_models.json")
     migrate_legacy_site(out, default_language(config))
     write_languages(out, config)
 

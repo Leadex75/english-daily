@@ -105,6 +105,9 @@ function app() {
     searchToken: 0,
     ankiConnectBusy: false,
     ankiConnectStatus: 'AnkiConnect is not checked yet.',
+    ankiConnectDiagnostic: '',
+    ankiConnectCounts: { total: 0, added: 0, duplicates: 0, failed: 0 },
+    ankiConnectMode: 'not checked',
     storeTick: 0,
     answerTick: 0,
     tourIndex: 0,
@@ -605,24 +608,38 @@ function app() {
     },
 
     ankiConnectClient() {
-      if (!window.AnkiConnect) return null;
-      return window.AnkiConnect(this.prefs.ankiConnectUrl, window.fetch ? window.fetch.bind(window) : null);
+      if (!window.EDAnkiConnect || typeof window.EDAnkiConnect.createClient !== 'function') return null;
+      return window.EDAnkiConnect.createClient({
+        url: this.prefs.ankiConnectUrl,
+        proxyUrl: './api/ankiconnect',
+        modelUrl: './data/anki_models.json',
+      });
+    },
+
+    ankiConnectError(err) {
+      this.ankiConnectDiagnostic = window.EDAnkiConnect
+        ? window.EDAnkiConnect.diagnostic(err)
+        : String((err && err.message) || err || '');
+      return `${String((err && err.message) || err || '')}${this.ankiConnectDiagnostic ? ` — ${this.ankiConnectDiagnostic}` : ''}`;
     },
 
     async checkAnkiConnect() {
       const client = this.ankiConnectClient();
       if (!client) {
         this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        this.ankiConnectDiagnostic = 'Reload the app to load the AnkiConnect client.';
         return false;
       }
       this.ankiConnectBusy = true;
+      this.ankiConnectDiagnostic = '';
       this.ankiConnectStatus = 'Checking AnkiConnect…';
       try {
-        const version = await client.check();
-        this.ankiConnectStatus = `AnkiConnect ${version} is ready.`;
+        const details = await client.check();
+        this.ankiConnectMode = details.mode;
+        this.ankiConnectStatus = `AnkiConnect ${details.version} is ready via ${details.mode}.`;
         return true;
       } catch (err) {
-        this.ankiConnectStatus = `AnkiConnect unavailable: ${String(err.message || err)}`;
+        this.ankiConnectStatus = `AnkiConnect unavailable: ${this.ankiConnectError(err)}`;
         return false;
       } finally {
         this.ankiConnectBusy = false;
@@ -633,24 +650,36 @@ function app() {
       const notes = this.ankiNotes();
       if (!notes.length) {
         this.ankiConnectStatus = 'Mark a phrase as learned first.';
+        this.ankiConnectDiagnostic = '';
         return;
       }
       const client = this.ankiConnectClient();
       if (!client) {
         this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        this.ankiConnectDiagnostic = 'Reload the app to load the AnkiConnect client.';
         return;
       }
       this.ankiConnectBusy = true;
+      this.ankiConnectDiagnostic = '';
       this.ankiConnectStatus = 'Sending notes to AnkiConnect…';
       try {
-        await client.check();
-        const result = await client.addNotes(notes);
-        window.AnkiExport.recordExport(notes, window.EDStore, result);
-        const added = (result || []).filter(Boolean).length;
-        const skipped = notes.length - added;
-        this.ankiConnectStatus = `AnkiConnect added ${added} note(s); ${skipped} already present.`;
+        const details = await client.check();
+        this.ankiConnectMode = details.mode;
+        await client.requestPermission();
+        const targetNotes = notes.map((note) => window.AnkiExport.ankiConnectNote(note));
+        await client.verifyModels(targetNotes);
+        const result = await client.addNotes(targetNotes);
+        window.AnkiExport.recordExport(notes, window.EDStore, result.results);
+        this.ankiConnectCounts = {
+          total: result.total,
+          added: result.added,
+          duplicates: result.duplicates,
+          failed: result.failed,
+        };
+        this.ankiConnectStatus = `AnkiConnect added ${result.added} note(s); ${result.duplicates} already present.`;
+        if (result.failed) this.ankiConnectDiagnostic = `${result.failed} note(s) were not accepted by AnkiConnect.`;
       } catch (err) {
-        this.ankiConnectStatus = `AnkiConnect export failed: ${String(err.message || err)}`;
+        this.ankiConnectStatus = `AnkiConnect export failed: ${this.ankiConnectError(err)}`;
       } finally {
         this.ankiConnectBusy = false;
       }

@@ -15,14 +15,15 @@ class AnkiConnectSpec(E2EHarness):
 
         self.page.locator("[data-eds-anki-connect-check]").click()
         expect(self.page.locator("[data-eds-anki-connect-status]")).to_have_text(
-            "AnkiConnect 6 is ready."
+            "AnkiConnect 6 is ready via direct."
         )
 
         self.route_anki_failure(True)
         self.page.locator("[data-eds-anki-connect]").click()
         expect(self.page.locator("[data-eds-anki-connect-status]")).to_contain_text(
-            "AnkiConnect export failed: stubbed failure"
+            "AnkiConnect export failed: AnkiConnect permission not granted"
         )
+        expect(self.page.locator("[data-eds-anki-connect-diagnostic]")).to_contain_text("grant access")
 
         self.route_anki_failure(False)
         self.page.locator("[data-eds-anki-connect]").click()

@@ -11,6 +11,7 @@ var APP_SHELL = [
   './lib/links.js',
   './lib/progress.js',
   './lib/anki.js',
+  './js/ankiconnect.js',
   './lib/exercises.js',
   './lib/tour.js',
   './lib/search.js',
@@ -20,7 +21,8 @@ var APP_SHELL = [
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './data/languages.json'
+  './data/languages.json',
+  './data/anki_models.json'
 ];
 
 function assetUrl(path) {

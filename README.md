@@ -13,7 +13,7 @@ guided tour, language-aware paths, deterministic reconstruction, and a small loc
 
 The app is branded `English Daily` in the interface, manifest, API metadata and CLI output. The repository, URL slug, data paths and local storage keys stay `english-daily` for compatibility. Per-language display names come from `languages.<code>.brand` in `config.yaml`.
 
-The interface has four hash-based views: `#today` for the day's reading, `#archive` for the month calendar, recent editions and archive-wide search, `#glossary` for learned phrases, and `#settings` for preferences. All view links are relative, so the same build works from a domain root or a GitHub Pages subdirectory.
+The interface has four hash-based views: `#today` for the day's reading, `#archive` for the month calendar, recent editions and archive-wide search, `#anki` for learned phrases and Anki export, and `#settings` for preferences. All view links are relative, so the same build works from a domain root or a GitHub Pages subdirectory.
 
 ## Quick start
 
@@ -39,7 +39,8 @@ Run the desktop launcher (serves the exported `site/` when it exists, otherwise 
 
 ```bash
 python desktop/main.py
-python desktop/main.py --no-browser --port 8765
+python desktop/main.py --no-browser --port 8731
+python desktop/main.py --no-browser --site site --port 8731 --anki-url http://127.0.0.1:8765
 ```
 
 Build a distributable desktop artifact:
@@ -48,6 +49,11 @@ Build a distributable desktop artifact:
 python tools/build_desktop.py --out dist/EnglishDaily.pyz
 python tools/build_desktop.py --out dist/EnglishDaily.exe --pyinstaller
 ```
+
+The desktop launcher uses port 8731 by default, moves to the next free port if it is occupied, and
+provides a same-origin `POST /api/ankiconnect` proxy to the local AnkiConnect endpoint. The proxy is
+loopback-only, accepts an explicit action allowlist, caps body size and timeout, validates
+Host/Origin/Referer, and never logs API keys or request bodies.
 
 `Pillow` is intentionally absent. Icons already exist under `static/icons/`, and no image dependency
 is required.
@@ -79,6 +85,7 @@ python run.py demo-data --out demo-site --data-dir demo-data --state-dir demo-st
 python run.py backup-db --out english-daily.sqlite3.bak
 python run.py restore-db --from english-daily.sqlite3.bak --force
 python run.py calibrate --json
+python tools/fake_ankiconnect.py --mode ok --port 8765
 python -m unittest discover -s tests -v
 python -m compileall -q app ingest desktop tools run.py tests
 python tools/contrast_check.py --css static/css/themes.css
@@ -95,7 +102,10 @@ python -m unittest discover -s tests/e2e -v
 ```
 
 The E2E suite exports a deterministic static site, serves it on localhost, blocks external requests and
-stubs AnkiConnect. Results are recorded in `TEST_REPORT.md`.
+stubs AnkiConnect. Results are recorded in `TEST_REPORT.md`. For manual AnkiConnect diagnosis,
+`python tools/fake_ankiconnect.py` serves a stdlib fake on port 8765 with modes `ok`,
+`origin-not-allowed`, `not-running`, `slow`, `permission-denied` and `duplicate notes`; use
+`--origin http://127.0.0.1:8731` to emulate the AnkiConnect origin allowlist.
 
 `validate-config` checks required keys, language metadata, CEFR thresholds and polite-network settings.
 `demo-data` builds a two-day bilingual offline preview without touching the live database. `backup-db`
@@ -141,11 +151,15 @@ unless `--force` is used.
   text keeps a plain Source link.
 - Anki buttons show ready, learn-first and unavailable states and export only saved items. The tour
   overlays a keyboard-safe spotlight on the current target, reveals hidden views before highlighting
-  them, traps Tab focus inside the dialog and restores focus on exit. Notes use a persistent
-  `English Daily Phrase` model, deterministic GUIDs, field escaping and stable tags; Settings stores
-  the AnkiConnect URL, and the Anki page can check the connection and send notes without a browser
-  download. `anki-notes` and `anki-build` expose the same note model as JSON or a reusable `.apkg`
-  (via `genanki`).
+  them, traps Tab focus inside the dialog and restores focus on exit. Notes use persistent
+  `English Daily Phrase` and `English Daily Cloze` models defined in `bank/anki_models.json`,
+  deterministic GUIDs, field escaping and stable tags; Settings stores the AnkiConnect URL, and the
+  Anki page can check the connection, grant permission, verify/create model fields and send notes
+  without a browser download. Direct browser calls use `text/plain` to avoid a CORS preflight, and
+  the client reports actionable diagnoses when Anki is closed, the origin is not in
+  `webCorsOriginList`, permission is denied, or notes are duplicates. Added/duplicate/failed counts
+  are shown separately. `anki-notes` and `anki-build` expose the same note model as JSON or a
+  reusable `.apkg` (via `genanki`).
 - `tools/palette_build.py` generates `static/css/themes.css` from audited palette definitions;
   `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
   High contrast and both System modes.
@@ -157,9 +171,11 @@ unless `--force` is used.
   the first-visit tour flag live only in browser `localStorage`.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
   never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
-- The frontend is split into browser-native modules under `static/lib/`: `store`, `branding`,
-   `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
-   tour spotlight/highlight, dialog focus trapping and reduced-motion support are included.
+- The frontend is split into browser-native modules under `static/lib/` (`store`, `branding`,
+  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`) plus
+  `static/js/ankiconnect.js` for the resilient AnkiConnect client. Keyboard tab navigation, skip
+  link, focus-visible outlines, tour spotlight/highlight, dialog focus trapping and reduced-motion
+  support are included.
 
 ## Multilingual layout
 
@@ -227,6 +243,7 @@ GET /api/phrase/YYYY-MM-DD?level=B1&lang=en
 GET /api/stats?days=30&lang=en
 GET /api/sources?lang=en
 GET /api/search?q=term&day=YYYY-MM-DD&level=B1&lang=en
+POST /api/ankiconnect              (loopback-only AnkiConnect proxy; allowlisted actions)
 GET /audio/YYYY-MM-DD/<sha1>.mp3   (HTTP Range supported)
 ```
 

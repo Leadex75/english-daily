@@ -3,6 +3,7 @@ from __future__ import annotations
 import http.server
 import json
 import tempfile
+import time
 import threading
 import unittest
 from pathlib import Path
@@ -160,6 +161,8 @@ class E2EHarness(unittest.TestCase):
 
     def setUp(self) -> None:
         self.anki_connect_fail = False
+        self.anki_mode = "ok"
+        self.anki_proxy = False
         self.context: BrowserContext = self.browser.new_context(
             viewport=VIEWPORT,
             locale="en-US",
@@ -208,13 +211,21 @@ class E2EHarness(unittest.TestCase):
 
     def route_anki_failure(self, failed: bool) -> None:
         self.anki_connect_fail = failed
+        self.anki_mode = "error" if failed else "ok"
+
+    def route_anki_mode(self, mode: str, proxy: bool = False) -> None:
+        self.anki_mode = mode
+        self.anki_proxy = proxy
 
     def _route_request(self, route: Any) -> None:
         url = route.request.url
+        path = url.split("?", 1)[0].lower()
         if "127.0.0.1:8765" in url:
             self._fulfill_anki(route)
             return
-        path = url.split("?", 1)[0].lower()
+        if self.anki_proxy and path.endswith("/api/ankiconnect"):
+            self._fulfill_anki(route)
+            return
         if path.endswith(AUDIO_EXTENSIONS):
             route.abort()
             return
@@ -229,18 +240,38 @@ class E2EHarness(unittest.TestCase):
         except ValueError:
             payload = {}
         action = payload.get("action")
+        params = payload.get("params") or {}
+        status = 200
+        if self.anki_mode == "not-running":
+            route.abort("failed")
+            return
+        if self.anki_mode == "origin-not-allowed":
+            status = 403
+            body = {"result": None, "error": "origin is not in webCorsOriginList"}
+            route.fulfill(status=status, content_type="application/json", body=json.dumps(body))
+            return
+        if self.anki_mode == "slow":
+            time.sleep(6)
         if action == "version":
             body = {"result": 6, "error": None}
-        elif action == "addNotes":
-            if self.anki_connect_fail:
-                body = {"result": None, "error": "stubbed failure"}
+        elif action == "requestPermission":
+            body = {"result": None, "error": None}
+        elif action == "modelFieldNames":
+            if params.get("modelName") == "English Daily Cloze":
+                fields = ["Text", "Extra", "Source", "Level", "Language", "Date", "Guid"]
             else:
-                notes = (payload.get("params") or {}).get("notes") or []
+                fields = ["Front", "Back", "Example", "Source", "Level", "Language", "Date", "Guid"]
+            body = {"result": fields, "error": None}
+        elif action == "createModel":
+            body = {"result": {"name": params.get("modelName")}, "error": None}
+        elif action == "addNotes":
+            notes = params.get("notes") or []
+            if self.anki_mode in ("error", "permission-denied"):
+                body = {"result": None, "error": "AnkiConnect permission not granted for this origin"}
+            elif self.anki_mode == "duplicate notes":
+                body = {"result": [None for _ in notes], "error": None}
+            else:
                 body = {"result": list(range(1, len(notes) + 1)), "error": None}
         else:
             body = {"result": None, "error": None}
-        route.fulfill(
-            status=200,
-            content_type="application/json",
-            body=json.dumps(body),
-        )
+        route.fulfill(status=status, content_type="application/json", body=json.dumps(body))

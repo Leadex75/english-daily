@@ -23,6 +23,7 @@
   <script defer src="./lib/links.js"></script>
   <script defer src="./lib/progress.js"></script>
   <script defer src="./lib/anki.js"></script>
+  <script defer src="./js/ankiconnect.js"></script>
   <script defer src="./lib/exercises.js"></script>
   <script defer src="./lib/tour.js"></script>
   <script defer src="./lib/search.js"></script>
@@ -320,6 +321,8 @@
           </div>
         </div>
         <p class="anki-status" data-eds-anki-connect-status aria-live="polite" x-text="ankiConnectStatus"></p>
+        <p class="hint" data-eds-anki-connect-diagnostic x-show="ankiConnectDiagnostic" x-text="ankiConnectDiagnostic"></p>
+        <p class="meta" data-eds-anki-connect-counts x-show="ankiConnectCounts.total" x-text="`Added ${ankiConnectCounts.added}, duplicates ${ankiConnectCounts.duplicates}, failed ${ankiConnectCounts.failed} of ${ankiConnectCounts.total} note(s).`"></p>
         <ul>
           <template x-for="entry in glossary()" :key="entry.key">
             <li>

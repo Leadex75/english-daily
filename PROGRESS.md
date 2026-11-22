@@ -258,3 +258,14 @@
 - Verification: `compileall`, all JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
 - Decision: keep legacy `english-daily:*` storage keys during this UI phase; the new `eds.<lang>.*` storage layer is reserved for Phase 11.
 - Remaining: Phases 10–13.
+
+## Addendum Phase 10 — AnkiConnect CORS fix and diagnostics (done)
+
+- Done: found the root cause of the AnkiConnect failure: JSON requests trigger a browser preflight, and AnkiConnect's default `webCorsOriginList` rejects the GitHub Pages origin.
+- Done: switched direct browser calls to `text/plain`, added a same-origin loopback proxy for the desktop launcher (`POST /api/ankiconnect`, default port 8731) and the FastAPI server, and exposed actionable origin/permission/connection guidance in the Anki view.
+- Done: added an action-allowlisted, size-capped, timeout-bounded proxy with Host/Origin/Referer validation and no key/body logging; added `bank/anki_models.json` with standard and cloze models, field verification/creation, `requestPermission`, and added/duplicate/failed counts.
+- Done: added `tools/fake_ankiconnect.py` with `ok`, `origin-not-allowed`, `not-running`, `slow`, `permission-denied` and `duplicate notes` modes, plus unit and Playwright coverage for diagnostics, proxy detection and duplicate handling.
+- Done: static export copies `data/anki_models.json`, the service worker caches the new client/data, and README/TEST_REPORT/AUDIT document the diagnosis and workflow.
+- Tests: 75 unit tests and 12 Playwright E2E tests passed; compileall, all JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
+- Remaining: Phases 11–13; local commit for Phase 10, then final push only after the last phase.
+- Decisions: keep the existing deterministic note builders and `english-daily:*` storage keys; use `text/plain` for direct browser calls and reserve the proxy for loopback desktop/server usage so no secrets or remote API keys are introduced.

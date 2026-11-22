@@ -3,6 +3,7 @@ import sqlite3
 import subprocess
 import sys
 import tempfile
+import threading
 import unittest
 import zipfile
 from collections import Counter
@@ -14,6 +15,15 @@ from unittest.mock import patch
 import yaml
 
 from app.anki import anki_connect_note, build_note, build_notes, write_apkg
+from app.anki_connect import (
+    DEFAULT_ENDPOINT,
+    AnkiConnectError,
+    call_anki_connect,
+    normalize_endpoint,
+    parse_body,
+    proxy_request,
+    validate_local_request,
+)
 from app.db import (
     DEFAULTS,
     available_languages,
@@ -44,6 +54,7 @@ from ingest.fetch_text import clean_text, extract_article, word_count
 from ingest.pool import pool_dir
 from tools.contrast_check import audit_css, contrast_ratio
 from tools.palette_build import audit_palettes, build_css
+from tools.fake_ankiconnect import build_server
 from tools.project_ops import (
     backup_database,
     build_demo_data,
@@ -552,11 +563,13 @@ class LanguagePathTests(unittest.TestCase):
             (site_dir / "data").mkdir(parents=True)
             (state_dir / "used.json").write_text("[]", encoding="utf-8")
             (site_dir / "data" / "index.json").write_text("{}", encoding="utf-8")
+            (site_dir / "data" / "anki_models.json").write_text("{}", encoding="utf-8")
 
             self.assertEqual(migrate_legacy_state(state_dir, "en"), ["used.json"])
             self.assertEqual(migrate_legacy_site(site_dir, "en"), ["index.json"])
             self.assertTrue((state_lang_dir(state_dir, "en") / "used.json").is_file())
             self.assertTrue((site_lang_dir(site_dir, "en") / "index.json").is_file())
+            self.assertTrue((site_dir / "data" / "anki_models.json").is_file())
 
             path = write_languages(site_dir, config)
             self.assertEqual(path, languages_path(site_dir))
@@ -712,6 +725,8 @@ class MigrationAndExportTests(unittest.TestCase):
             self.assertTrue((out / "index.html").is_file())
             self.assertTrue((out / "manifest.webmanifest").is_file())
             self.assertTrue((out / "sw.js").is_file())
+            self.assertTrue((out / "js" / "ankiconnect.js").is_file())
+            self.assertTrue((out / "data" / "anki_models.json").is_file())
 
     def test_second_language_without_sources_is_isolated(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -1104,6 +1119,9 @@ class DocsTests(unittest.TestCase):
             "python run.py validate-config", "python run.py demo-data",
             "python run.py backup-db", "python run.py restore-db",
             "python run.py calibrate", "Actions → ci → Run workflow",
+            "python tools/fake_ankiconnect.py", "webCorsOriginList", "POST /api/ankiconnect",
+            "static/js/ankiconnect.js", "bank/anki_models.json", "permission is denied",
+            "Added/duplicate/failed counts", "port 8731", "text/plain",
         ):
             self.assertIn(marker, readme)
 
@@ -1228,6 +1246,124 @@ class AnkiTests(unittest.TestCase):
             self.assertTrue(zipfile.is_zipfile(output))
 
 
+class AnkiConnectProxyTests(unittest.TestCase):
+    def test_endpoint_and_payload_validation(self):
+        self.assertEqual(normalize_endpoint(''), DEFAULT_ENDPOINT)
+        self.assertEqual(normalize_endpoint('http://localhost:8765/'), 'http://localhost:8765')
+        for bad in ('https://example.org', 'ftp://127.0.0.1:8765', 'http://user@127.0.0.1:8765'):
+            with self.assertRaises(AnkiConnectError):
+                normalize_endpoint(bad)
+        with self.assertRaises(AnkiConnectError) as denied:
+            parse_body(json.dumps({'action': 'deleteNotes'}).encode('utf-8'))
+        self.assertEqual(denied.exception.status, 403)
+        with self.assertRaises(AnkiConnectError):
+            parse_body(json.dumps({'action': 'version', 'version': 5}).encode('utf-8'))
+        with self.assertRaises(AnkiConnectError):
+            parse_body(b'x' * 70000)
+
+    def test_local_request_validation(self):
+        validate_local_request({'host': '127.0.0.1:8731'}, 'http://127.0.0.1:8731')
+        validate_local_request({'host': '127.0.0.1:8731', 'referer': 'http://127.0.0.1:8731/'}, 'http://127.0.0.1:8731')
+        with self.assertRaises(AnkiConnectError) as host_error:
+            validate_local_request({'host': 'example.org:8731'}, 'http://example.org:8731')
+        self.assertEqual(host_error.exception.status, 403)
+        with self.assertRaises(AnkiConnectError) as origin_error:
+            validate_local_request({'host': '127.0.0.1:8731', 'origin': 'https://leadex75.github.io'}, 'http://127.0.0.1:8731')
+        self.assertEqual(origin_error.exception.kind, 'origin')
+
+    def test_call_uses_text_plain_and_maps_connection_errors(self):
+        captured = {}
+
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self, limit=None):
+                return b'{"result":6,"error":null}'
+
+        def opener(request, timeout):
+            captured['url'] = request.full_url
+            captured['headers'] = dict(request.headers)
+            captured['timeout'] = timeout
+            return Response()
+
+        result = call_anki_connect({'action': 'version'}, opener=opener)
+        self.assertEqual(result, {'result': 6})
+        self.assertEqual(captured['url'], DEFAULT_ENDPOINT)
+        self.assertEqual(captured['headers']['Content-type'], 'text/plain')
+        self.assertEqual(captured['timeout'], 5)
+
+        def failing_opener(request, timeout):
+            raise OSError('not running')
+
+        with self.assertRaises(AnkiConnectError) as failure:
+            call_anki_connect({'action': 'version'}, opener=failing_opener)
+        self.assertEqual(failure.exception.kind, 'connection')
+        self.assertEqual(failure.exception.status, 502)
+
+    def test_proxy_rejects_cross_site_and_disallowed_actions(self):
+        with self.assertRaises(AnkiConnectError):
+            proxy_request(
+                {'action': 'version'},
+                {'host': '127.0.0.1:8731', 'origin': 'https://elsewhere.example'},
+                expected_origin='http://127.0.0.1:8731',
+            )
+        with self.assertRaises(AnkiConnectError):
+            proxy_request({'action': 'sync'}, {'host': '127.0.0.1:8731'})
+
+    def test_fastapi_proxy_allowlist_and_error_shape(self):
+        client = TestClient(app)
+        with patch('app.main.proxy_request', return_value={'result': 6}) as mocked:
+            response = client.post('/api/ankiconnect', json={'action': 'version'})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), {'result': 6})
+        self.assertEqual(mocked.call_args.args[0]['action'], 'version')
+        self.assertTrue(mocked.call_args.kwargs['expected_origin'].startswith('http://testserver'))
+        with patch('app.main.proxy_request', side_effect=AnkiConnectError('blocked', 'origin', 403)):
+            blocked = client.post('/api/ankiconnect', json={'action': 'version'})
+        self.assertEqual(blocked.status_code, 403)
+        self.assertEqual(blocked.json(), {'error': 'blocked', 'kind': 'origin'})
+
+    def test_model_definitions_cover_standard_and_cloze_notes(self):
+        root = Path(__file__).resolve().parents[1]
+        payload = json.loads((root / 'bank' / 'anki_models.json').read_text(encoding='utf-8'))
+        models = {model['modelName']: model for model in payload['models']}
+        self.assertIn('English Daily Phrase', models)
+        self.assertIn('English Daily Cloze', models)
+        self.assertFalse(models['English Daily Phrase']['isCloze'])
+        self.assertTrue(models['English Daily Cloze']['isCloze'])
+        self.assertIn('{{cloze:Text}}', models['English Daily Cloze']['cardTemplates'][0]['Back'])
+        self.assertEqual(models['English Daily Phrase']['inOrderFields'][0], 'Front')
+
+    def test_fake_server_supports_duplicate_and_permission_modes(self):
+        for mode, expected in (
+            ('duplicate notes', {'result': [None, None], 'error': None}),
+            ('permission-denied', {'result': None, 'error': 'AnkiConnect permission not granted for this origin'}),
+        ):
+            server = build_server(mode, 0)
+            thread = threading.Thread(target=server.serve_forever, daemon=True)
+            thread.start()
+            try:
+                endpoint = f'http://127.0.0.1:{server.server_address[1]}'
+                if mode == 'duplicate notes':
+                    payload = {'action': 'addNotes', 'params': {'notes': [{}, {}]}}
+                    self.assertEqual(call_anki_connect(payload, endpoint=endpoint), {'result': [None, None]})
+                else:
+                    payload = {'action': 'addNotes', 'params': {'notes': [{}]}}
+                    with self.assertRaises(AnkiConnectError) as failure:
+                        call_anki_connect(payload, endpoint=endpoint)
+                    self.assertEqual(failure.exception.kind, 'anki')
+                    self.assertIn('permission', failure.exception.message)
+                self.assertTrue(expected)
+            finally:
+                server.shutdown()
+                server.server_close()
+                thread.join(timeout=2)
+
+
 class ContrastTests(unittest.TestCase):
     def test_contrast_ratio_math(self):
         self.assertAlmostEqual(contrast_ratio("#000000", "#ffffff"), 21.0, places=3)
@@ -1290,12 +1426,17 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
+        self.assertIn("./js/ankiconnect.js", index)
+        self.assertIn("./js/ankiconnect.js", worker)
+        self.assertTrue((static / "js" / "ankiconnect.js").is_file())
+        self.assertIn("./data/anki_models.json", worker)
+        self.assertTrue((root / "bank" / "anki_models.json").is_file())
         self.assertIn("./css/themes.css", index)
         self.assertIn("./css/themes.css", worker)
         self.assertTrue((static / "css" / "themes.css").is_file())
         for marker in ("data-eds-today", "data-eds-level", "data-eds-tabs", "data-eds-tab-archive", "data-eds-phrase", "data-eds-exercises", "data-eds-source-link", "data-eds-mark-read", "data-eds-anki", "data-eds-glossary", "data-eds-settings-open", "role=\"dialog\"", "tour-spotlight"):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen("):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "EDAnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "ankiConnectDiagnostic", "ankiConnectCounts", "requestPermission(", "verifyModels(", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen("):
             self.assertIn(marker, script)
         for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
             self.assertIn(marker, styles)
@@ -1307,8 +1448,11 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertIn(marker, index)
         for marker in ("data-eds-calendar", "Previous month", "Next month", "Recent editions", "Open edition", 'x-text="calendar().label"'):
             self.assertIn(marker, index)
-        for marker in ("AnkiConnect URL", "data-eds-anki-connect", "data-eds-anki-connect-check", "data-eds-anki-connect-status", "Send to AnkiConnect", "Check AnkiConnect"):
+        for marker in ("AnkiConnect URL", "data-eds-anki-connect", "data-eds-anki-connect-check", "data-eds-anki-connect-status", "data-eds-anki-connect-diagnostic", "data-eds-anki-connect-counts", "Send to AnkiConnect", "Check AnkiConnect"):
             self.assertIn(marker, index)
+        client_source = (static / "js" / "ankiconnect.js").read_text(encoding="utf-8")
+        for marker in ("text/plain", "webCorsOriginList", "modelFieldNames", "createModel", "requestPermission", "duplicates", "failed", "DEFAULT_PROXY"):
+            self.assertIn(marker, client_source)
         links = (static / "lib" / "links.js").read_text(encoding="utf-8")
         for marker in ("Read the full text", "Listen to the original audio"):
             self.assertIn(marker, links)
@@ -1400,6 +1544,7 @@ class PhaseSevenE2ETests(unittest.TestCase):
             "test_themes_settings.py",
             "test_archive_search.py",
             "test_anki_connect.py",
+            "test_anki_diagnostics.py",
             "test_spanish_switch.py",
             "test_tour_home_highlight.py",
             "test_screenshots.py",
@@ -1408,7 +1553,7 @@ class PhaseSevenE2ETests(unittest.TestCase):
             self.assertTrue((e2e_dir / name).is_file(), name)
 
         harness = (e2e_dir / "e2e_harness.py").read_text(encoding="utf-8")
-        for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort"):
+        for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort", "route_anki_mode", "/api/ankiconnect", "duplicate notes", "webCorsOriginList"):
             self.assertIn(marker, harness)
 
         screenshots_ignore = (root / "tests" / "screenshots" / ".gitignore").read_text(encoding="utf-8")
@@ -1467,6 +1612,26 @@ class PhaseEightWorkflowsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         payload = json.loads(result.stdout)
         self.assertTrue(payload["ok"], payload["issues"])
+
+
+class AddendumPhaseTenTests(unittest.TestCase):
+    def test_fake_server_cli_documents_diagnostic_modes(self):
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [sys.executable, str(root / "tools" / "fake_ankiconnect.py"), "--help"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for mode in ("ok", "origin-not-allowed", "not-running", "slow", "permission-denied", "duplicate notes"):
+            self.assertIn(mode, result.stdout)
+
+    def test_proxy_allowlist_excludes_mutating_anki_actions(self):
+        from app.anki_connect import ALLOWED_ACTIONS
+        self.assertEqual(
+            ALLOWED_ACTIONS,
+            frozenset({"version", "requestPermission", "modelFieldNames", "createModel", "addNotes"}),
+        )
 
 
 if __name__ == "__main__":

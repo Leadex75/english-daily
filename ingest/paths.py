@@ -112,7 +112,7 @@ def migrate_legacy_site(site_dir: str | Path, lang: str | None = None) -> list[s
     if not root.is_dir():
         return moved
     for child in sorted(root.iterdir()):
-        if child.name == language or child.name == "languages.json":
+        if child.name in (language, "languages.json", "anki_models.json"):
             continue
         if child.is_dir() and not _DAY_RE.fullmatch(child.name):
             continue
