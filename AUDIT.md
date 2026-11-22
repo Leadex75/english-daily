@@ -35,7 +35,7 @@
 | 3 | Archive and current-day history | partial | Date select and previous/next buttons use available days; no true calendar, no month grouping, no visible archive navigation, no current-day indicator beyond `days[0]`. |
 | 4 | Anki | partial | Browser TSV download, learned-only gating, status labels and Anki tour step exist. Missing persistent note model, deterministic note fields/tags, AnkiConnect client, backend note builder/export path, and dedicated tests. |
 | 5 | Spanish | missing | `languages: [en]`, 28 English-only sources, `site/data/languages.json` only `en`; no `bank/es`, `state/es`, or `site/data/es`; no Spanish source registry, brands, history config, or live source verification. |
-| 6 | Guided tour / home highlight | partial | Six serialized tour steps, modal, focus handling, and Anki-help reopen exist. No home step, no spotlight overlay/positioning, no highlighted target treatment, and no first-visit behavior tied to the new home shell. |
+| 6 | Guided tour / home highlight | done | Seven serialized tour steps begin at the home hero; the tour has a positioned spotlight, highlighted target treatment, hidden-view preparation, focus trapping/restoration, Anki-help reopen and first-visit auto-start. |
 | 7 | Tests and E2E | partial | 41 Python tests, frontend helper Node checks, contrast audit and static checks exist. No `tests/requirements-dev.txt`, no Playwright dependency/config, no `tests/e2e/`, no `TEST_REPORT.md`. |
 | 8 | Workflows and docs | partial | Daily, health and desktop workflows exist; daily runs 05:00 UTC with manual dispatch, has no timeout or push path filters, and commits site/state directly. No `ci.yml`; docs still describe old brand/UI. `demo-data`, `calibrate`, backup/restore and config validation commands are absent. |
 
@@ -103,7 +103,7 @@
 ### Status and non-interactive controls
 
 - Offline banner, loading notice, error notice, audio-error notice, search status, exercise feedback, Anki status and tour counter are live regions only.
-- No language selector, home button, calendar grid, month selector, settings dialog, theme preset buttons, AnkiConnect status button, or active tour spotlight exists.
+- The language selector, home link, calendar grid, month selector, settings controls, theme preset buttons and AnkiConnect status button are live controls; the tour spotlight is a visual-only `aria-hidden` layer.
 
 ## Architecture and data findings
 

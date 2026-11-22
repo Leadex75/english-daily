@@ -109,6 +109,10 @@ function app() {
     answerTick: 0,
     tourIndex: 0,
     tourOpenFlag: false,
+    spotlightTick: 0,
+    tourHighlighted: null,
+    tourFocusTarget: null,
+    tourReturnFocus: null,
     online: true,
     updateAvailable: false,
 
@@ -137,6 +141,7 @@ function app() {
       }
       this.observeReading();
       this.syncTour();
+      this.$nextTick(() => this.maybeStartTour());
     },
 
     languageUrl() {
@@ -761,49 +766,157 @@ function app() {
       return steps[Math.min(this.tourIndex, Math.max(0, steps.length - 1))] || null;
     },
     tourState() { return { index: this.tourIndex, open: this.tourOpenFlag }; },
+    tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
+    maybeStartTour() {
+      if (!window.EDTour || this.tourOpen() || this.route !== 'today' || window.EDTour.seen()) return;
+      window.EDTour.markSeen();
+      const steps = this.tourSteps();
+      if (!steps.length) return;
+      const state = window.EDTour.start(0);
+      this.tourIndex = state.index;
+      this.tourOpenFlag = state.open && steps.length > 0;
+      this.updateTour();
+    },
+    prepareTourTarget(step) {
+      const id = step && step.id;
+      const route = id === 'glossary' ? 'glossary' : 'today';
+      if (this.route !== route) {
+        this.route = route;
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${route}`);
+        }
+      }
+      if (route === 'today') {
+        const tab = (id === 'phrase' || id === 'exercises') ? 'phrase' : 'news';
+        if (this.tab !== tab) this.tab = tab;
+      }
+    },
+    applyTourHighlight() {
+      this.clearTourHighlight();
+      const step = this.tourStep();
+      const target = step && step.target ? document.querySelector(step.target) : null;
+      if (!target) return null;
+      target.classList.add('tour-highlight');
+      this.tourHighlighted = target;
+      if (!target.hasAttribute('tabindex')) {
+        target.setAttribute('tabindex', '-1');
+        target.setAttribute('data-eds-tour-tabindex', '1');
+        this.tourFocusTarget = target;
+      }
+      return target;
+    },
+    clearTourHighlight() {
+      if (this.tourHighlighted) this.tourHighlighted.classList.remove('tour-highlight');
+      this.tourHighlighted = null;
+      if (this.tourFocusTarget && this.tourFocusTarget.getAttribute('data-eds-tour-tabindex') === '1') {
+        this.tourFocusTarget.removeAttribute('tabindex');
+        this.tourFocusTarget.removeAttribute('data-eds-tour-tabindex');
+      }
+      this.tourFocusTarget = null;
+    },
+    tourSpotlightStyle() {
+      void this.spotlightTick;
+      if (!this.tourOpen()) return 'display:none';
+      const step = this.tourStep();
+      const target = step && step.target ? document.querySelector(step.target) : null;
+      if (!target || typeof target.getBoundingClientRect !== 'function') return 'opacity:0';
+      const rect = target.getBoundingClientRect();
+      const pad = 8;
+      const maxWidth = Math.max(0, window.innerWidth - 16);
+      const maxHeight = Math.max(0, window.innerHeight - 16);
+      const width = Math.min(Math.max(rect.width + pad * 2, 48), maxWidth || 48);
+      const height = Math.min(Math.max(rect.height + pad * 2, 32), maxHeight || 32);
+      const left = Math.max(8, Math.min(rect.left - pad, Math.max(8, window.innerWidth - width - 8)));
+      const top = Math.max(8, Math.min(rect.top - pad, Math.max(8, window.innerHeight - height - 8)));
+      return `left:${left}px;top:${top}px;width:${width}px;height:${height}px;`;
+    },
+    updateTour() {
+      this.prepareTourTarget(this.tourStep());
+      this.$nextTick(() => {
+        this.focusTour();
+        this.spotlightTick += 1;
+      });
+    },
     syncTour() {
       const state = window.EDTour ? window.EDTour.state() : { index: 0, open: false };
       this.tourIndex = state.index || 0;
       this.tourOpenFlag = Boolean(state.open) && this.tourSteps().length > 0;
-      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+      if (this.tourOpenFlag) this.updateTour();
+      else this.clearTourHighlight();
     },
-    tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
     startTour() {
+      if (window.EDTour) window.EDTour.markSeen();
+      this.tourReturnFocus = document.activeElement;
       const state = window.EDTour ? window.EDTour.start(0) : { index: 0, open: true };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && this.tourSteps().length > 0;
-      this.$nextTick(() => this.focusTour());
+      this.updateTour();
     },
     openAnkiHelp() {
+      if (window.EDTour) window.EDTour.markSeen();
+      this.tourReturnFocus = document.activeElement;
       const steps = this.tourSteps();
       const found = steps.findIndex((step) => step && step.id === 'anki');
       const index = found >= 0 ? found : 0;
       const state = window.EDTour ? window.EDTour.go(index) : { index, open: true };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && steps.length > 0;
-      this.$nextTick(() => this.focusTour());
+      this.updateTour();
     },
     nextTour() {
       const steps = this.tourSteps();
       const state = window.EDTour ? window.EDTour.advance(steps.length) : { index: this.tourIndex + 1, open: false };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && steps.length > 0;
-      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+      if (this.tourOpenFlag) this.updateTour();
+      else this.endTour();
     },
     endTour() {
       if (window.EDTour) window.EDTour.end();
       this.tourIndex = 0;
       this.tourOpenFlag = false;
+      this.clearTourHighlight();
+      this.spotlightTick += 1;
+      const restore = this.tourReturnFocus;
+      this.tourReturnFocus = null;
+      if (restore && typeof restore.focus === 'function') this.$nextTick(() => restore.focus());
     },
     focusTour() {
-      const step = this.tourStep();
-      const target = step && step.target ? document.querySelector(step.target) : null;
+      const target = this.applyTourHighlight();
       if (target && typeof target.focus === 'function') {
-        target.setAttribute('tabindex', '-1');
         target.focus();
         return;
       }
       if (this.$refs.tourDialog) this.$refs.tourDialog.focus();
+    },
+    trapTourTab(event) {
+      if (!this.tourOpen()) return;
+      const dialog = this.$refs.tourDialog;
+      if (!dialog) return;
+      const focusable = Array.from(dialog.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter((node) => node.offsetParent !== null || node === document.activeElement);
+      if (!focusable.length) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!dialog.contains(document.activeElement)) {
+        event.preventDefault();
+        first.focus();
+        return;
+      }
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+        return;
+      }
+      if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     },
 
     async runSearch() {

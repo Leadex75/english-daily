@@ -31,6 +31,7 @@ _EXERCISE_PROMPTS = {
     },
 }
 _TOUR_STEPS = (
+    {"id": "home", "title": "Start at home", "body": "Today is your home base: choose a level, read, listen and practise.", "target": "[data-eds-hero]"},
     {"id": "level", "title": "Choose your level", "body": "Start with a CEFR level, then switch any time.", "target": "[data-eds-level]"},
     {"id": "tabs", "title": "Browse the day", "body": "Read news, culture and history in both text and audio.", "target": "[data-eds-tabs]"},
     {"id": "phrase", "title": "Learn the phrase", "body": "Each level has one word, expression and history term.", "target": "[data-eds-phrase]"},
@@ -39,6 +40,7 @@ _TOUR_STEPS = (
     {"id": "glossary", "title": "Build your glossary", "body": "Star items, export them to Anki, and keep your progress.", "target": "[data-eds-glossary]"},
 )
 _TOUR_STEPS_ES = (
+    {"id": "home", "title": "Empieza desde casa", "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.", "target": "[data-eds-hero]"},
     {"id": "level", "title": "Elige tu nivel", "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.", "target": "[data-eds-level]"},
     {"id": "tabs", "title": "Explora el día", "body": "Lee noticias, cultura e historia en texto y audio.", "target": "[data-eds-tabs]"},
     {"id": "phrase", "title": "Aprende la frase", "body": "Cada nivel tiene una palabra, una expresión y un término histórico.", "target": "[data-eds-phrase]"},

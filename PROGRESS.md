@@ -207,3 +207,14 @@
 - Verification: Python compile check passed; `node --check` passed for all JavaScript files; `tests/frontend_helpers.js`, palette check and contrast audit passed; temp public static export confirmed `en`/`es` languages and Spanish index; `run.py reconstruct --lang es --json` returned 36 slots and `run.py doctor --json --lang es` reported 17 sources with 17 OK.
 - Decision: keep repository slug, data paths and storage prefixes as `english-daily`; only user-visible brand/tagline and generated content become Spanish for `es`.
 - Remaining: Phases 6–8.
+
+## New brief — Phase 6 — guided tour / home highlight (done)
+
+- Added a seventh localized `home` step to both EN and ES tour contracts, targeting the Today hero via `[data-eds-hero]`; existing step order and four-field schema are preserved.
+- Added `EDTour.seen()` and `EDTour.markSeen()` under the existing `english-daily:tour` prefix, and a first-visit auto-start that only fires on the Today route when no saved tour state is open.
+- Added a positioned `.tour-spotlight` overlay and `.tour-highlight` target treatment; the tour now switches route/tab before measuring hidden targets such as phrases, exercises and glossary.
+- Added temporary `tabindex="-1"` cleanup, focus restoration to the invoking button, Tab containment inside the tour dialog, Escape-to-close retention and reduced-motion-friendly transitions.
+- Tests: 62 unit tests passed in `.venv`, including the new home-step schema test, updated 7-step contract assertions and expanded asset markers; `tests/frontend_helpers.js` now covers the full `EDTour` API and first-visit flag.
+- Verification: Python compile check, all JavaScript syntax checks, palette check and contrast audit passed; temp public static export confirmed `data-eds-hero`, the spotlight element and the cached tour module.
+- Decision: keep `english-daily:tour` state compatible; store the first-visit flag separately as `english-daily:tour:seen` so older sessions resume normally.
+- Remaining: Phases 7–8.

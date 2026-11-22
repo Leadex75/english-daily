@@ -31,7 +31,7 @@
   <script defer src="./app.js"></script>
   <script defer src="./vendor/alpine.min.js"></script>
 </head>
-<body x-data="app()" x-init="init()" x-cloak @keydown.escape.window="endTour()">
+<body x-data="app()" x-init="init()" x-cloak @keydown.escape.window="endTour()" @keydown.tab.window="trapTourTab($event)">
   <a class="skip-link" href="#reading-panel">Skip to content</a>
   <div class="shell" data-eds-route>
     <header class="masthead">
@@ -65,7 +65,7 @@
     <p class="notice error" x-show="error" x-text="error" aria-live="polite"></p>
 
     <section id="today-view" class="view" x-show="route === 'today'" aria-labelledby="hero-title">
-      <div class="hero">
+      <div class="hero" data-eds-hero>
         <div>
           <p class="eyebrow" x-text="longDate(selectedDate)"></p>
           <h1 id="hero-title" x-text="tagline">A little English, every day.</h1>
@@ -409,8 +409,9 @@
       </div>
     </section>
 
+    <div class="tour-spotlight" aria-hidden="true" x-show="tourOpen()" x-ref="tourSpotlight" :style="tourSpotlightStyle()"></div>
     <section class="tour-dialog" role="dialog" aria-modal="true" aria-labelledby="tour-title"
-             x-show="tourOpen()" x-ref="tourDialog" tabindex="-1">
+             x-show="tourOpen()" x-ref="tourDialog" tabindex="-1" @keydown.tab.stop="trapTourTab($event)">
       <div class="block">
         <p class="eyebrow" x-text="`Tour ${tourState().index + 1} / ${tourSteps().length}`"></p>
         <h2 id="tour-title" x-text="tourStep()?.title || 'Welcome'"></h2>

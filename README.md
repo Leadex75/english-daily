@@ -107,12 +107,15 @@ unless `--force` is used.
   `bank/<lang>/words.yaml`, `expressions.yaml` and `history_terms.yaml`.
 - Daily exercises cover word meaning, expression cloze and history period, with distractors drawn
   from the same day's phrase bank.
-- A guided tour, archive search, glossary, Anki export and theme switch are all driven by the
-  versioned day contract (`meta.contract_version: 2`).
+- A seven-step guided tour starts on the first visit at the home hero, then moves through levels,
+  tabs, phrases, exercises, Anki and the glossary; archive search, glossary, Anki export and theme
+  switch are driven by the versioned day contract (`meta.contract_version: 2`).
 - Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
   links in a responsive two-column source footer.
 - Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
-  Anki help button reopens the Anki tour step. Notes use a persistent `English Daily Phrase` model,
+  Anki help button reopens the Anki tour step. The tour overlays a keyboard-safe spotlight on the
+  current target, reveals hidden views before highlighting them, traps Tab focus inside the dialog
+  and restores focus on exit. Notes use a persistent `English Daily Phrase` model,
   deterministic GUIDs, field escaping and stable tags; Settings stores the AnkiConnect URL, and the
   glossary can check the connection and send notes without using a browser download. `anki-notes`
   and `anki-build` expose the same note model as JSON or a reusable `.apkg` (via `genanki`).
@@ -123,13 +126,13 @@ unless `--force` is used.
   feedback, auto-marking and reduced-motion preference in browser `localStorage`.
 - Today's progress counts only available text/audio slots; this week's progress counts unique
   practiced days from read, listened, learned and exercised markers.
-- Read/listened markers, learned phrases, exercise answers, settings, language and tour position live
-  only in browser `localStorage`.
+- Read/listened markers, learned phrases, exercise answers, settings, language, tour position and
+  the first-visit tour flag live only in browser `localStorage`.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
   never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
 - The frontend is split into browser-native modules under `static/lib/`: `store`, `branding`,
-  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
-  dialog focus handling and reduced-motion support are included.
+   `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`. Keyboard tab navigation, skip link, focus-visible outlines,
+   tour spotlight/highlight, dialog focus trapping and reduced-motion support are included.
 
 ## Multilingual layout
 
@@ -180,7 +183,7 @@ Day payloads include:
 - `phrase`: word, expression and history term for the selected level
 - `glossary`: all bank entries for the day
 - `exercises`: deterministic CEFR-scoped practice items
-- `tour`: guided tour steps targeting frontend landmarks
+- `tour`: seven guided steps targeting frontend landmarks, beginning with the home hero
 - `meta`: contract version, filled counts, origins, provenance counts, periods, themes and search path
 
 Serialized items include `periods`, `themes`, `history_terms`, `alt_text`, `duration_formatted`,

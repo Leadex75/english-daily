@@ -266,6 +266,14 @@ html[data-reading-font="sans"] .article-body { font-family: Arial, Helvetica, sa
 .exercise-options .pill.wrong { border-color: #a33030; color: #a33030; background: rgba(163, 48, 48, 0.08); }
 .exercise-feedback { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 
+.tour-spotlight {
+  position: fixed; z-index: 22; border: 2px solid var(--accent); border-radius: 12px;
+  box-shadow: 0 0 0 9999px rgba(11, 18, 26, 0.55), 0 12px 32px var(--shadow);
+  pointer-events: none; transition: left 140ms ease, top 140ms ease, width 140ms ease, height 140ms ease;
+}
+.tour-highlight {
+  position: relative; z-index: 23; outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px;
+}
 .tour-dialog {
   position: fixed; inset: auto 16px 24px auto; z-index: 30; width: min(360px, calc(100vw - 32px));
 }

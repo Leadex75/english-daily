@@ -10,6 +10,7 @@ require('../static/lib/archive.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
 require('../static/lib/exercises.js');
+require('../static/lib/tour.js');
 
 const EDStore = global.window.EDStore;
 const EDBrand = global.window.EDBrand;
@@ -21,6 +22,7 @@ const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
 const AnkiConnect = global.window.AnkiConnect;
 const EDExercises = global.window.EDExercises;
+const EDTour = global.window.EDTour;
 
 const payload = {
   default: 'en',
@@ -215,6 +217,20 @@ const fakeLocalStorage = {
 global.window.localStorage = fakeLocalStorage;
 global.localStorage = fakeLocalStorage;
 EDStore.keys(EDStore.PREFIX).forEach((key) => EDStore.remove(key));
+
+const tourSteps = [{ id: 'home', target: '[data-eds-hero]' }, { id: 'level', target: '[data-eds-level]' }];
+assert.deepStrictEqual(EDTour.steps({ tour: tourSteps }), tourSteps);
+assert.deepStrictEqual(EDTour.state(), { index: 0, open: false });
+assert.deepStrictEqual(EDTour.start(1), { index: 1, open: true });
+assert.deepStrictEqual(EDTour.advance(2), { index: 2, open: false });
+assert.deepStrictEqual(EDTour.go(0), { index: 0, open: true });
+assert.deepStrictEqual(EDTour.end(), { index: 0, open: false });
+assert.strictEqual(EDTour.seen(), false);
+assert.strictEqual(EDTour.markSeen(), true);
+assert.strictEqual(EDTour.seen(), true);
+assert.strictEqual(EDStore.get('english-daily:tour:seen'), true);
+EDStore.keys(EDStore.PREFIX).forEach((key) => EDStore.remove(key));
+
 const ex = { id: 'ex-1', answer: 'yes' };
 EDExercises.record(ex, 'yes', 'en');
 assert.strictEqual(EDExercises.storageKey(ex, 'en'), 'english-daily:exercise:ex-1');

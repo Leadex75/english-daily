@@ -691,7 +691,8 @@ class MigrationAndExportTests(unittest.TestCase):
             )
             self.assertGreater(level_payload["meta"]["glossary_count"], 0)
             self.assertGreaterEqual(len(level_payload["exercises"]), 3)
-            self.assertEqual(len(level_payload["tour"]), 6)
+            self.assertEqual(len(level_payload["tour"]), 7)
+            self.assertEqual(level_payload["tour"][0]["id"], "home")
             self.assertIn("anki", {step["id"] for step in level_payload["tour"]})
             exercise_ids = {exercise["id"] for exercise in level_payload["exercises"]}
             self.assertIn("B1-word", exercise_ids)
@@ -830,7 +831,8 @@ class ContractTests(unittest.TestCase):
             self.assertEqual(len(payload["exercises"]), 18)
             word_exercise = next(item for item in payload["exercises"] if item["id"] == "B1-word")
             self.assertIn(word_exercise["answer"], word_exercise["options"])
-            self.assertEqual(payload["tour"][0]["id"], "level")
+            self.assertEqual(payload["tour"][0]["id"], "home")
+            self.assertEqual(payload["tour"][0]["target"], "[data-eds-hero]")
             item = payload["slots"]["history"]["text"]
             self.assertIn("Renaissance art", item["alt_text"])
             self.assertEqual(item["source_url"], "https://example.org/feed")
@@ -1060,7 +1062,8 @@ class PhaseFiveSpanishTests(unittest.TestCase):
         self.assertIn("¿Qué significa “casa”?", prompts)
         self.assertIn("Completa la expresión:", " ".join(prompts))
         self.assertIn("¿A qué período pertenece", " ".join(prompts))
-        self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Elige tu nivel")
+        self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Empieza desde casa")
+        self.assertEqual(_TOUR_STEPS_BY_LANG["es"][1]["title"], "Elige tu nivel")
 
     def test_export_static_writes_spanish_language_index(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -1275,11 +1278,11 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertIn("./css/themes.css", index)
         self.assertIn("./css/themes.css", worker)
         self.assertTrue((static / "css" / "themes.css").is_file())
-        for marker in ("data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\""):
+        for marker in ("data-eds-hero", "data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\"", "tour-spotlight"):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus"):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen("):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
             self.assertIn(marker, index)
@@ -1349,6 +1352,20 @@ class SourcesApiTests(unittest.TestCase):
         self.assertEqual(payload["sources"], registry)
         mocked.assert_called_once()
         self.assertEqual(mocked.call_args.args[1], "en")
+
+
+class PhaseSixTourTests(unittest.TestCase):
+    def test_tour_steps_include_home_for_both_languages(self):
+        expected = ["home", "level", "tabs", "phrase", "exercises", "anki", "glossary"]
+        for lang in ("en", "es"):
+            steps = list(_TOUR_STEPS_BY_LANG[lang])
+            self.assertEqual([step["id"] for step in steps], expected)
+            for step in steps:
+                self.assertEqual(set(step), {"id", "title", "body", "target"})
+                self.assertTrue(step["target"].startswith("[data-eds-"))
+        self.assertEqual(_TOUR_STEPS_BY_LANG["en"][0]["title"], "Start at home")
+        self.assertEqual(_TOUR_STEPS_BY_LANG["en"][0]["target"], "[data-eds-hero]")
+        self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Empieza desde casa")
 
 
 if __name__ == "__main__":
