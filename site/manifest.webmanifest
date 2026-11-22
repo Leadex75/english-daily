@@ -1,6 +1,6 @@
 {
-  "name": "english-daily — a little English, every day",
-  "short_name": "english-daily",
+  "name": "English Daily — a little English, every day",
+  "short_name": "English Daily",
   "description": "Daily CEFR reading, audio, phrases, exercises and offline glossary.",
   "id": "./",
   "start_url": "./",

@@ -1,5 +1,6 @@
 window.EDTour = (() => {
   const STATE_KEY = `${window.EDStore.PREFIX}tour`;
+  const SEEN_KEY = `${window.EDStore.PREFIX}tour:seen`;
 
   function steps(payload) {
     return payload && Array.isArray(payload.tour) ? payload.tour : [];
@@ -33,5 +34,14 @@ window.EDTour = (() => {
     return save(0, false);
   }
 
-  return { steps, state, start, advance, go, end };
+  function seen() {
+    return Boolean(window.EDStore.get(SEEN_KEY, false));
+  }
+
+  function markSeen() {
+    window.EDStore.set(SEEN_KEY, true);
+    return true;
+  }
+
+  return { steps, state, start, advance, go, end, seen, markSeen };
 })();

@@ -1,0 +1,350 @@
+{
+  "A1": {
+    "date": "2026-11-22",
+    "level": "A1",
+    "word": {
+      "text": "pan",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/pan/",
+      "meaning": "un alimento común hecho con harina",
+      "meaning_fr": "pain",
+      "example": "Compramos pan y queso.",
+      "anki_answer": "pan",
+      "tags": [
+        "comida"
+      ],
+      "key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "buenos días",
+      "level": "A1",
+      "type": "everyday phrase",
+      "meaning": "saludo de la mañana",
+      "meaning_fr": "bonjour",
+      "example": "Buenos días, señora.",
+      "anki_answer": "buenos días",
+      "tags": [
+        "saludos"
+      ],
+      "key": "0fc6740b3909b29e62bfab123cf943384ebf9df9",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "año",
+      "aliases": [
+        "año",
+        "años"
+      ],
+      "level": "A1",
+      "meaning": "un período de doce meses",
+      "meaning_fr": "année",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "El tratado duró solo un año.",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-22",
+    "level": "A2",
+    "word": {
+      "text": "tranquilo",
+      "level": "A2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/tɾanˈkilo/",
+      "meaning": "que hace poco ruido",
+      "meaning_fr": "calme",
+      "example": "La calle estaba tranquila por la noche.",
+      "anki_answer": "tranquilo",
+      "tags": [
+        "sonido"
+      ],
+      "key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "despertarse",
+      "level": "A2",
+      "type": "phrasal verb",
+      "meaning": "dejar de dormir",
+      "meaning_fr": "se réveiller",
+      "example": "Me despierto temprano los lunes.",
+      "anki_answer": "despertarse",
+      "tags": [
+        "diario"
+      ],
+      "key": "59fb8bc8302c53d48641d3365995ac18b10d667b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "mapa",
+      "aliases": [
+        "mapa",
+        "mapas"
+      ],
+      "level": "A2",
+      "meaning": "un dibujo de una zona de tierra",
+      "meaning_fr": "carte",
+      "period": "Edad Moderna",
+      "theme": "Ciencia",
+      "example": "El mapa mostraba las nuevas colonias.",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "358e1c0087cc872f08043c24da5712741f4e0112",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-22",
+    "level": "B1",
+    "word": {
+      "text": "costa",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈkosta/",
+      "meaning": "la tierra junto al mar",
+      "meaning_fr": "côte",
+      "example": "El ejército marchó por la costa.",
+      "anki_answer": "costa",
+      "tags": [
+        "naturaleza"
+      ],
+      "key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "ganar terreno",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "avanzar frente a otros",
+      "meaning_fr": "gagner du terrain",
+      "example": "La idea ganó terreno.",
+      "anki_answer": "ganar terreno",
+      "tags": [
+        "competencia"
+      ],
+      "key": "1712defdced250ad491ef25cac21fe72dfed9fce",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "colono",
+      "aliases": [
+        "colono",
+        "colonos"
+      ],
+      "level": "B1",
+      "meaning": "una persona que se establece en una tierra nueva",
+      "meaning_fr": "colon",
+      "period": "Siglo XIX",
+      "theme": "Imperio",
+      "example": "El colono construyó una casa pequeña.",
+      "tags": [
+        "imperio"
+      ],
+      "key": "579105cb6487909caee03df8eb9a0640c242e250",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-22",
+    "level": "B2",
+    "word": {
+      "text": "industria",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/indusˈtɾja/",
+      "meaning": "la actividad de fabricar bienes a gran escala",
+      "meaning_fr": "industrie",
+      "example": "La industria textil creció deprisa.",
+      "anki_answer": "industria",
+      "tags": [
+        "economía"
+      ],
+      "key": "879f8be55f177153a930d661897dbc7ea575a7f6",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "ejercer presión",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "presionar para lograr algo",
+      "meaning_fr": "exercer une pression",
+      "example": "Los vecinos ejercieron presión.",
+      "anki_answer": "ejercer presión",
+      "tags": [
+        "influencia"
+      ],
+      "key": "642d73d7e808ebf212804f5eea912fe62d086fa3",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "censo",
+      "aliases": [
+        "censo",
+        "censos"
+      ],
+      "level": "B2",
+      "meaning": "un recuento oficial de la población",
+      "meaning_fr": "recensement",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "El censo registró cada hogar.",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-22",
+    "level": "C1",
+    "word": {
+      "text": "mercantilismo",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/meɾkantiˈlismo/",
+      "meaning": "una teoría económica basada en el comercio y la riqueza",
+      "meaning_fr": "mercantilisme",
+      "example": "El mercantilismo orientó la política colonial.",
+      "anki_answer": "mercantilismo",
+      "tags": [
+        "economía"
+      ],
+      "key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "someter a revisión",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "presentar algo para ser revisado",
+      "meaning_fr": "soumettre à révision",
+      "example": "Someteremos el texto a revisión.",
+      "anki_answer": "someter a revisión",
+      "tags": [
+        "revisión"
+      ],
+      "key": "3820820956ae6326d8a139d79cef42175a71fbc2",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "mandato",
+      "aliases": [
+        "mandato",
+        "mandatos"
+      ],
+      "level": "C1",
+      "meaning": "la autoridad para administrar un territorio concedida por un organismo internacional",
+      "meaning_fr": "mandat",
+      "period": "Entreguerras",
+      "theme": "Política",
+      "example": "El mandato duró hasta 1946.",
+      "tags": [
+        "política"
+      ],
+      "key": "a7575613f0cf1336c11714439b228c4a9945837e",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-22",
+    "level": "C2",
+    "word": {
+      "text": "archivístico",
+      "level": "C2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/aɾtʃiˈβistiko/",
+      "meaning": "relativo a los documentos conservados en un archivo",
+      "meaning_fr": "archivistique",
+      "example": "Los documentos archivísticos se digitalizaron.",
+      "anki_answer": "archivístico",
+      "tags": [
+        "cultura"
+      ],
+      "key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "poner en duda la periodización",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "cuestionar la división en períodos",
+      "meaning_fr": "remettre en question la périodisation",
+      "example": "Pusieron en duda la periodización clásica.",
+      "anki_answer": "poner en duda la periodización",
+      "tags": [
+        "historia"
+      ],
+      "key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "diacronía",
+      "aliases": [
+        "diacronía",
+        "diacronia"
+      ],
+      "level": "C2",
+      "meaning": "el estudio de un fenómeno a lo largo del tiempo",
+      "meaning_fr": "diachronie",
+      "period": "General",
+      "theme": "Ciencia",
+      "example": "La diacronía mostró cambios en la lengua.",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "92299f8f11b810d361dc928f62bc61dacb40a942",
+      "kind": "history"
+    }
+  }
+}

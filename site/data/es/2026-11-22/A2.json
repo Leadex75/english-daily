@@ -1,0 +1,726 @@
+{
+  "date": "2026-11-22",
+  "lang": "es",
+  "level": "A2",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": {
+        "id": 1894677534,
+        "title": "1798. Hoy festejamos la Revolución, con Sigrid",
+        "source": "Charlas Hispanas",
+        "source_id": "es_charlas_hispanas",
+        "category": "news",
+        "url": "https://charlashispanas.com/1798-hoy-festejamos-la-revolucion-con-sigrid/?utm_source=rss&utm_medium=rss&utm_campaign=1798-hoy-festejamos-la-revolucion-con-sigrid",
+        "published_at": "2026-11-20T11:18:20",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "B1",
+        "word_count": 16,
+        "duration_sec": 1165,
+        "body_text": null,
+        "audio_url": "https://content.blubrry.com/charlashispanas/Episodio_1798-Hoy_festejamos_la_Revolucio_n_mezcla.mp3",
+        "description": "El día de hoy Fredo y Sigrid charlan sobre cómo se festeja la Revolución en México.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "63c0bb533762525e02fc93fc418c1aa45fc2435a",
+        "summary": "El día de hoy Fredo y Sigrid charlan sobre cómo se festeja la Revolución en México.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "1798. Hoy festejamos la Revolución, con Sigrid — Charlas Hispanas",
+        "duration_formatted": "19:25",
+        "source_url": "https://charlashispanas.com/feed/podcast/",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": null,
+      "audio": {
+        "id": 1894677559,
+        "title": "No es un día cualquiera - Postecnocracia con Marta Peirano: Nvidia y Anthropic",
+        "source": "RNE No es un día cualquiera",
+        "source_id": "es_rne_no_es_un_dia_cualquiera",
+        "category": "culture",
+        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-postecnocracia-marta-peirano-nvidia-anthropic/17325298/",
+        "published_at": "2026-11-22T09:18:39",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "B1",
+        "word_count": 62,
+        "duration_sec": 534,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SSECNOE/mp3/7/6/1795336658967.mp3?idasset=17325298&download-token=1795348883_0x0e1cbd87a0c8e60d33893c15b8aaf0a90d98ae19",
+        "description": "Nvidia ha pasado esta semana, tras el cierre de la bolsa el viernes, de ser la primera a la quinta empresa más valiosa del mundo. Por otro lado, Anthropic debutó en Nasdaq con la mayor salida a bolsa de la historia, incluso más que la de Space X . Marta Peirano analiza ambas cuestiones y sus posibles consecuencias hoy en ` Postecnocracia ´. Escuchar audio",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "0fd4e4d03e991b50e1a38c874d90e1665febb676",
+        "summary": "Nvidia ha pasado esta semana, tras el cierre de la bolsa el viernes, de ser la primera a la quinta empresa más valiosa del mundo. Por otro lado, Anthropic debutó en Nasdaq con la mayor salida a bolsa de la historia, incluso más que la de Space X . Marta Peirano analiza ambas cuestiones y sus posibles consecuencias hoy en ` Postecnocracia ´. Escuchar audio",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "No es un día cualquiera - Postecnocracia con Marta Peirano: Nvidia y Anthropic — RNE No es un día cualquiera",
+        "duration_formatted": "8:54",
+        "source_url": "https://www.rtve.es/api/programas/2054/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-22",
+    "level": "A2",
+    "word": {
+      "text": "tranquilo",
+      "level": "A2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/tɾanˈkilo/",
+      "meaning": "que hace poco ruido",
+      "meaning_fr": "calme",
+      "example": "La calle estaba tranquila por la noche.",
+      "anki_answer": "tranquilo",
+      "tags": [
+        "sonido"
+      ],
+      "key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "despertarse",
+      "level": "A2",
+      "type": "phrasal verb",
+      "meaning": "dejar de dormir",
+      "meaning_fr": "se réveiller",
+      "example": "Me despierto temprano los lunes.",
+      "anki_answer": "despertarse",
+      "tags": [
+        "diario"
+      ],
+      "key": "59fb8bc8302c53d48641d3365995ac18b10d667b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "mapa",
+      "aliases": [
+        "mapa",
+        "mapas"
+      ],
+      "level": "A2",
+      "meaning": "un dibujo de una zona de tierra",
+      "meaning_fr": "carte",
+      "period": "Edad Moderna",
+      "theme": "Ciencia",
+      "example": "El mapa mostraba las nuevas colonias.",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "358e1c0087cc872f08043c24da5712741f4e0112",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea",
+      "kind": "word",
+      "level": "A1",
+      "text": "pan",
+      "meaning": "un alimento común hecho con harina",
+      "meaning_fr": "pain",
+      "example": "Compramos pan y queso.",
+      "phonetic": "/pan/",
+      "anki_answer": "pan",
+      "tags": [
+        "comida"
+      ]
+    },
+    {
+      "key": "0fc6740b3909b29e62bfab123cf943384ebf9df9",
+      "kind": "expression",
+      "level": "A1",
+      "text": "buenos días",
+      "meaning": "saludo de la mañana",
+      "meaning_fr": "bonjour",
+      "example": "Buenos días, señora.",
+      "phonetic": "",
+      "anki_answer": "buenos días",
+      "tags": [
+        "saludos"
+      ]
+    },
+    {
+      "key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7",
+      "kind": "history",
+      "level": "A1",
+      "text": "año",
+      "meaning": "un período de doce meses",
+      "meaning_fr": "année",
+      "example": "El tratado duró solo un año.",
+      "phonetic": "",
+      "anki_answer": "année",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9",
+      "kind": "word",
+      "level": "A2",
+      "text": "tranquilo",
+      "meaning": "que hace poco ruido",
+      "meaning_fr": "calme",
+      "example": "La calle estaba tranquila por la noche.",
+      "phonetic": "/tɾanˈkilo/",
+      "anki_answer": "tranquilo",
+      "tags": [
+        "sonido"
+      ]
+    },
+    {
+      "key": "59fb8bc8302c53d48641d3365995ac18b10d667b",
+      "kind": "expression",
+      "level": "A2",
+      "text": "despertarse",
+      "meaning": "dejar de dormir",
+      "meaning_fr": "se réveiller",
+      "example": "Me despierto temprano los lunes.",
+      "phonetic": "",
+      "anki_answer": "despertarse",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "358e1c0087cc872f08043c24da5712741f4e0112",
+      "kind": "history",
+      "level": "A2",
+      "text": "mapa",
+      "meaning": "un dibujo de una zona de tierra",
+      "meaning_fr": "carte",
+      "example": "El mapa mostraba las nuevas colonias.",
+      "phonetic": "",
+      "anki_answer": "carte",
+      "tags": [
+        "ciencia"
+      ]
+    },
+    {
+      "key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad",
+      "kind": "word",
+      "level": "B1",
+      "text": "costa",
+      "meaning": "la tierra junto al mar",
+      "meaning_fr": "côte",
+      "example": "El ejército marchó por la costa.",
+      "phonetic": "/ˈkosta/",
+      "anki_answer": "costa",
+      "tags": [
+        "naturaleza"
+      ]
+    },
+    {
+      "key": "1712defdced250ad491ef25cac21fe72dfed9fce",
+      "kind": "expression",
+      "level": "B1",
+      "text": "ganar terreno",
+      "meaning": "avanzar frente a otros",
+      "meaning_fr": "gagner du terrain",
+      "example": "La idea ganó terreno.",
+      "phonetic": "",
+      "anki_answer": "ganar terreno",
+      "tags": [
+        "competencia"
+      ]
+    },
+    {
+      "key": "579105cb6487909caee03df8eb9a0640c242e250",
+      "kind": "history",
+      "level": "B1",
+      "text": "colono",
+      "meaning": "una persona que se establece en una tierra nueva",
+      "meaning_fr": "colon",
+      "example": "El colono construyó una casa pequeña.",
+      "phonetic": "",
+      "anki_answer": "colon",
+      "tags": [
+        "imperio"
+      ]
+    },
+    {
+      "key": "879f8be55f177153a930d661897dbc7ea575a7f6",
+      "kind": "word",
+      "level": "B2",
+      "text": "industria",
+      "meaning": "la actividad de fabricar bienes a gran escala",
+      "meaning_fr": "industrie",
+      "example": "La industria textil creció deprisa.",
+      "phonetic": "/indusˈtɾja/",
+      "anki_answer": "industria",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "642d73d7e808ebf212804f5eea912fe62d086fa3",
+      "kind": "expression",
+      "level": "B2",
+      "text": "ejercer presión",
+      "meaning": "presionar para lograr algo",
+      "meaning_fr": "exercer une pression",
+      "example": "Los vecinos ejercieron presión.",
+      "phonetic": "",
+      "anki_answer": "ejercer presión",
+      "tags": [
+        "influencia"
+      ]
+    },
+    {
+      "key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a",
+      "kind": "history",
+      "level": "B2",
+      "text": "censo",
+      "meaning": "un recuento oficial de la población",
+      "meaning_fr": "recensement",
+      "example": "El censo registró cada hogar.",
+      "phonetic": "",
+      "anki_answer": "recensement",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7",
+      "kind": "word",
+      "level": "C1",
+      "text": "mercantilismo",
+      "meaning": "una teoría económica basada en el comercio y la riqueza",
+      "meaning_fr": "mercantilisme",
+      "example": "El mercantilismo orientó la política colonial.",
+      "phonetic": "/meɾkantiˈlismo/",
+      "anki_answer": "mercantilismo",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "3820820956ae6326d8a139d79cef42175a71fbc2",
+      "kind": "expression",
+      "level": "C1",
+      "text": "someter a revisión",
+      "meaning": "presentar algo para ser revisado",
+      "meaning_fr": "soumettre à révision",
+      "example": "Someteremos el texto a revisión.",
+      "phonetic": "",
+      "anki_answer": "someter a revisión",
+      "tags": [
+        "revisión"
+      ]
+    },
+    {
+      "key": "a7575613f0cf1336c11714439b228c4a9945837e",
+      "kind": "history",
+      "level": "C1",
+      "text": "mandato",
+      "meaning": "la autoridad para administrar un territorio concedida por un organismo internacional",
+      "meaning_fr": "mandat",
+      "example": "El mandato duró hasta 1946.",
+      "phonetic": "",
+      "anki_answer": "mandat",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73",
+      "kind": "word",
+      "level": "C2",
+      "text": "archivístico",
+      "meaning": "relativo a los documentos conservados en un archivo",
+      "meaning_fr": "archivistique",
+      "example": "Los documentos archivísticos se digitalizaron.",
+      "phonetic": "/aɾtʃiˈβistiko/",
+      "anki_answer": "archivístico",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca",
+      "kind": "expression",
+      "level": "C2",
+      "text": "poner en duda la periodización",
+      "meaning": "cuestionar la división en períodos",
+      "meaning_fr": "remettre en question la périodisation",
+      "example": "Pusieron en duda la periodización clásica.",
+      "phonetic": "",
+      "anki_answer": "poner en duda la periodización",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "92299f8f11b810d361dc928f62bc61dacb40a942",
+      "kind": "history",
+      "level": "C2",
+      "text": "diacronía",
+      "meaning": "el estudio de un fenómeno a lo largo del tiempo",
+      "meaning_fr": "diachronie",
+      "example": "La diacronía mostró cambios en la lengua.",
+      "phonetic": "",
+      "anki_answer": "diachronie",
+      "tags": [
+        "ciencia"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “pan”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "pain",
+      "item_key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: ____ días",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "buenos",
+      "item_key": "0fc6740b3909b29e62bfab123cf943384ebf9df9"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “año”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “tranquilo”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "calme",
+      "item_key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: ____",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "despertarse",
+      "item_key": "59fb8bc8302c53d48641d3365995ac18b10d667b"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “mapa”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "358e1c0087cc872f08043c24da5712741f4e0112"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “costa”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "côte",
+      "item_key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: ganar ____",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "terreno",
+      "item_key": "1712defdced250ad491ef25cac21fe72dfed9fce"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “colono”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "579105cb6487909caee03df8eb9a0640c242e250"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “industria”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "industrie",
+      "item_key": "879f8be55f177153a930d661897dbc7ea575a7f6"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: ejercer ____",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "presión",
+      "item_key": "642d73d7e808ebf212804f5eea912fe62d086fa3"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “censo”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “mercantilismo”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "mercantilisme",
+      "item_key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: someter a ____",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "revisión",
+      "item_key": "3820820956ae6326d8a139d79cef42175a71fbc2"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “mandato”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Entreguerras",
+      "item_key": "a7575613f0cf1336c11714439b228c4a9945837e"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “archivístico”?",
+      "options": [
+        "archivistique",
+        "calme",
+        "côte",
+        "industrie"
+      ],
+      "answer": "archivistique",
+      "item_key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: poner en duda la ____",
+      "options": [
+        "buenos",
+        "despertarse",
+        "duda",
+        "días"
+      ],
+      "answer": "periodización",
+      "item_key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “diacronía”?",
+      "options": [
+        "Edad Moderna",
+        "Entreguerras",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "92299f8f11b810d361dc928f62bc61dacb40a942"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-hero]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "adjacent": 2
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-22.json"
+  }
+}

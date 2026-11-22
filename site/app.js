@@ -39,8 +39,11 @@ function requestedLanguage() {
   }
 }
 
-function normalizeLanguage(value, languages) {
-  const list = Array.isArray(languages) && languages.length ? languages : ['en'];
+function normalizeLanguage(value, payload) {
+  if (window.EDBrand && typeof window.EDBrand.normalizeLanguage === 'function') {
+    return window.EDBrand.normalizeLanguage(value, payload);
+  }
+  const list = Array.isArray(payload) && payload.length ? payload : ['en'];
   const wanted = String(value || '');
   return list.includes(wanted) ? wanted : (list.includes('en') ? 'en' : list[0]);
 }
@@ -58,7 +61,28 @@ function app() {
     all: {},
     loading: false,
     error: '',
-    theme: 'light',
+    theme: 'system',
+    prefs: window.EDSettings ? window.EDSettings.load() : {
+      theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
+      showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
+    },
+    themePresets: [
+      { value: 'system', label: 'System' },
+      { value: 'paper', label: 'Paper' },
+      { value: 'sepia', label: 'Sepia' },
+      { value: 'ink', label: 'Ink' },
+      { value: 'contrast', label: 'High contrast' },
+    ],
+    textSizes: [
+      { value: 'small', label: 'Small' },
+      { value: 'medium', label: 'Medium' },
+      { value: 'large', label: 'Large' },
+    ],
+    readingFonts: [
+      { value: 'serif', label: 'Serif' },
+      { value: 'sans', label: 'Sans' },
+    ],
+    speedOptions: [0.8, 1, 1.25],
     position: 0,
     duration: 0,
     playing: false,
@@ -69,64 +93,208 @@ function app() {
     weeklyGoal: 5,
     lang: 'en',
     languages: ['en'],
+    languagePayload: {},
+    brand: 'English Daily',
+    tagline: 'A little English, every day.',
+    route: 'today',
+    archiveMonth: '',
+    weekdays: window.EDArchive ? window.EDArchive.WEEKDAYS : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     searchQuery: '',
     searchResults: [],
     searching: false,
+    searchToken: 0,
+    ankiConnectBusy: false,
+    ankiConnectStatus: 'AnkiConnect is not checked yet.',
     storeTick: 0,
     answerTick: 0,
     tourIndex: 0,
     tourOpenFlag: false,
+    spotlightTick: 0,
+    tourHighlighted: null,
+    tourFocusTarget: null,
+    tourReturnFocus: null,
     online: true,
     updateAvailable: false,
 
     async init() {
       const goal = document.querySelector('meta[name="eds-goal"]');
       this.weeklyGoal = Number(goal && goal.getAttribute('content')) || 5;
-      this.theme = Store.get('english-daily:theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.dataset.theme = this.theme;
+      this.loadPreferences();
+      this.syncRoute();
+      window.addEventListener('hashchange', () => this.syncRoute());
       if (this.mode === 'static') await this.initPwa();
       try {
-        if (this.mode === 'static') {
-          const languagesResponse = await fetch('./data/languages.json');
-          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
-          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
-          this.lang = normalizeLanguage(
-            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
-            this.languages,
-          );
-          const response = await fetch(`./data/${encodeURIComponent(this.lang)}/index.json`);
-          if (!response.ok) throw new Error('Could not load index');
-          const index = await response.json();
-          this.days = Array.isArray(index.days) ? index.days : [];
-          this.counts = index.counts || {};
-        } else {
-          const languagesResponse = await fetch(`./${API_SEGMENT}/languages`);
-          const languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
-          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
-          this.lang = normalizeLanguage(
-            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
-            this.languages,
-          );
-          const response = await fetch(`./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`);
-          if (!response.ok) throw new Error('Could not load dates');
-          this.days = await response.json();
-          const today = new Date().toISOString().slice(0, 10);
-          if (!this.days.includes(today)) this.days.unshift(today);
-        }
+        await this.loadLanguagePayload();
+        this.lang = normalizeLanguage(
+          requestedLanguage() || Store.get('english-daily:lang') || (this.languagePayload && this.languagePayload.default),
+          this.languagePayload,
+        );
+        this.applyBranding();
         Store.set('english-daily:lang', this.lang);
+        this.updateLanguageUrl();
+        await this.loadDays();
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
+        this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
       }
       this.observeReading();
       this.syncTour();
+      this.$nextTick(() => this.maybeStartTour());
+    },
+
+    languageUrl() {
+      if (this.mode === 'static') return './data/languages.json';
+      return `./${API_SEGMENT}/languages`;
+    },
+
+    indexUrl() {
+      if (this.mode === 'static') {
+        return `./data/${encodeURIComponent(this.lang)}/index.json`;
+      }
+      return `./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`;
+    },
+
+    languageOptions() {
+      if (window.EDBrand && typeof window.EDBrand.languageOptions === 'function') {
+        return window.EDBrand.languageOptions(this.languagePayload);
+      }
+      return (this.languages || []).map((code) => ({ code, label: code }));
+    },
+
+    updateLanguageUrl() {
+      if (!window.history || typeof window.history.replaceState !== 'function') return;
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', this.lang);
+        window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+      } catch (err) {
+        // Ignore URL update failures.
+      }
+    },
+
+    async loadLanguagePayload() {
+      const response = await fetch(this.languageUrl());
+      const payload = response.ok ? await response.json() : {};
+      this.languagePayload = payload && typeof payload === 'object' ? payload : {};
+      this.languages = window.EDBrand && typeof window.EDBrand.languageCodes === 'function'
+        ? window.EDBrand.languageCodes(this.languagePayload)
+        : (Array.isArray(this.languagePayload.languages) ? this.languagePayload.languages : ['en']);
+      return this.languagePayload;
+    },
+
+    async loadDays() {
+      const response = await fetch(this.indexUrl());
+      if (!response.ok) throw new Error(this.mode === 'static' ? 'Could not load index' : 'Could not load dates');
+      const payload = await response.json();
+      if (this.mode === 'static') {
+        this.days = Array.isArray(payload.days) ? payload.days : [];
+        this.counts = payload.counts || {};
+      } else {
+        this.days = Array.isArray(payload) ? payload : [];
+        const today = new Date().toISOString().slice(0, 10);
+        if (!this.days.includes(today)) this.days.unshift(today);
+        this.counts = {};
+      }
+      return this.days;
+    },
+
+    async setLanguage(code) {
+      const next = normalizeLanguage(code, this.languagePayload);
+      if (next === this.lang) return;
+      this.lang = next;
+      this.error = '';
+      this.searchQuery = '';
+      this.searchResults = [];
+      this.searching = false;
+      this.searchToken += 1;
+      this.all = {};
+      this.stop();
+      Store.set('english-daily:lang', this.lang);
+      this.updateLanguageUrl();
+      this.applyBranding();
+      try {
+        await this.loadDays();
+        this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
+        this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
+        if (this.selectedDate) await this.loadDay();
+      } catch (err) {
+        this.error = String(err.message || err);
+      }
+    },
+
+    loadPreferences() {
+      this.prefs = window.EDSettings ? window.EDSettings.load() : this.prefs;
+      this.applyPreferences();
+    },
+
+    applyPreferences() {
+      if (window.EDSettings) window.EDSettings.apply(this.prefs, document.documentElement);
+      this.theme = this.prefs.theme;
+      this.speed = this.prefs.speed;
+    },
+
+    setPreference(name, value) {
+      this.prefs = window.EDSettings
+        ? window.EDSettings.normalize({ ...this.prefs, [name]: value })
+        : { ...this.prefs, [name]: value };
+      if (window.EDSettings) window.EDSettings.save(this.prefs);
+      this.applyPreferences();
+    },
+
+    resetPreferences() {
+      this.prefs = window.EDSettings ? window.EDSettings.normalize(null) : {
+        theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
+        showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
+      };
+      if (window.EDSettings) window.EDSettings.save(this.prefs);
+      this.applyPreferences();
+    },
+
+    prefersDark() {
+      if (this.prefs.theme === 'ink') return true;
+      if (this.prefs.theme === 'system' && window.matchMedia) {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      return false;
+    },
+
+    showFeedback() { return this.prefs.showFeedback !== false; },
+
+    applyBranding() {
+      this.brand = window.EDBrand ? window.EDBrand.brand(this.languagePayload, this.lang) : 'English Daily';
+      this.tagline = window.EDBrand ? window.EDBrand.tagline(this.languagePayload, this.lang) : 'A little English, every day.';
+      document.documentElement.lang = this.lang || 'en';
+      document.title = this.brand;
+      const description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute('content', this.tagline);
+      const home = document.querySelector('[data-eds-home]');
+      if (home) home.setAttribute('aria-label', `${this.brand} home`);
+    },
+
+    syncRoute() {
+      const raw = String(window.location.hash || '').replace(/^#\/?/, '').split(/[?&]/)[0];
+      this.route = window.EDBrand ? window.EDBrand.route(window.location.hash) : (
+        ['today', 'archive', 'glossary', 'settings'].includes(raw) ? raw : 'today'
+      );
+      if (raw !== this.route && window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', `${window.location.search}#${this.route}`);
+      }
+    },
+
+    navigate(route) {
+      window.location.hash = `#${window.EDBrand ? window.EDBrand.route(route) : route}`;
+    },
+
+    longDate(value) {
+      return window.EDBrand ? window.EDBrand.formatLongDate(value) : String(value || '');
     },
 
     observeReading() {
       if (typeof IntersectionObserver === 'undefined' || !this.$refs.readSentinel) return;
       this.observer = new IntersectionObserver((entries) => {
+        if (this.prefs.autoMarkRead === false) return;
         if (entries.some((entry) => entry.isIntersecting) && this.currentText()) {
           this.markRead(this.currentText());
         }
@@ -142,9 +310,50 @@ function app() {
     },
 
     toggleTheme() {
-      this.theme = this.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = this.theme;
-      Store.set('english-daily:theme', this.theme);
+      this.setPreference('theme', this.prefersDark() ? 'paper' : 'ink');
+    },
+
+    todayKey() {
+      return new Date().toISOString().slice(0, 10);
+    },
+
+    calendar() {
+      if (!window.EDArchive) {
+        return { label: this.archiveMonth, cells: [], availableCount: 0 };
+      }
+      return window.EDArchive.buildMonth(this.archiveMonth, this.days, this.selectedDate, this.todayKey());
+    },
+
+    archiveDates() {
+      return window.EDArchive ? window.EDArchive.recentDates(this.days, 7) : this.days.slice(0, 7);
+    },
+
+    canShiftMonth(direction) {
+      if (!window.EDArchive || !this.archiveMonth) return false;
+      const target = window.EDArchive.shiftMonth(this.archiveMonth, direction);
+      return window.EDArchive.months(this.days).includes(target);
+    },
+
+    shiftArchiveMonth(direction) {
+      if (!this.canShiftMonth(direction)) return;
+      this.archiveMonth = window.EDArchive.shiftMonth(this.archiveMonth, direction);
+    },
+
+    async selectArchiveDate(date) {
+      if (!date || !this.days.includes(date)) return;
+      this.selectedDate = date;
+      this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(date) : date.slice(0, 7);
+      await this.loadDay();
+      this.navigate('today');
+    },
+
+    goToday() {
+      const today = this.todayKey();
+      return this.selectArchiveDate(this.days.includes(today) ? today : this.days[0] || today);
+    },
+
+    openSearchResult(result) {
+      return result && result.date ? this.selectArchiveDate(result.date) : Promise.resolve();
     },
 
     canShift(direction) {
@@ -163,6 +372,7 @@ function app() {
       this.loading = true;
       this.error = '';
       this.all = {};
+      this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
       this.stop();
       try {
         const results = await Promise.all(this.levels.map(async (level) => {
@@ -389,6 +599,63 @@ function app() {
       }
     },
 
+    ankiNotes() {
+      if (!window.AnkiExport || typeof window.AnkiExport.buildNotes !== 'function') return [];
+      return window.AnkiExport.buildNotes(this.glossary(), { lang: this.lang, day: this.selectedDate });
+    },
+
+    ankiConnectClient() {
+      if (!window.AnkiConnect) return null;
+      return window.AnkiConnect(this.prefs.ankiConnectUrl, window.fetch ? window.fetch.bind(window) : null);
+    },
+
+    async checkAnkiConnect() {
+      const client = this.ankiConnectClient();
+      if (!client) {
+        this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        return false;
+      }
+      this.ankiConnectBusy = true;
+      this.ankiConnectStatus = 'Checking AnkiConnect…';
+      try {
+        const version = await client.check();
+        this.ankiConnectStatus = `AnkiConnect ${version} is ready.`;
+        return true;
+      } catch (err) {
+        this.ankiConnectStatus = `AnkiConnect unavailable: ${String(err.message || err)}`;
+        return false;
+      } finally {
+        this.ankiConnectBusy = false;
+      }
+    },
+
+    async sendAnkiConnect() {
+      const notes = this.ankiNotes();
+      if (!notes.length) {
+        this.ankiConnectStatus = 'Mark a phrase as learned first.';
+        return;
+      }
+      const client = this.ankiConnectClient();
+      if (!client) {
+        this.ankiConnectStatus = 'AnkiConnect client is unavailable.';
+        return;
+      }
+      this.ankiConnectBusy = true;
+      this.ankiConnectStatus = 'Sending notes to AnkiConnect…';
+      try {
+        await client.check();
+        const result = await client.addNotes(notes);
+        window.AnkiExport.recordExport(notes, window.EDStore, result);
+        const added = (result || []).filter(Boolean).length;
+        const skipped = notes.length - added;
+        this.ankiConnectStatus = `AnkiConnect added ${added} note(s); ${skipped} already present.`;
+      } catch (err) {
+        this.ankiConnectStatus = `AnkiConnect export failed: ${String(err.message || err)}`;
+      } finally {
+        this.ankiConnectBusy = false;
+      }
+    },
+
     allItems() {
       if (window.EDProgress) {
         return window.EDProgress.contentItems(this.all, this.levels, this.tabs);
@@ -465,15 +732,18 @@ function app() {
     },
     exerciseAnswer(exercise) {
       void this.answerTick;
-      return window.EDExercises ? window.EDExercises.answer(exercise) : null;
+      return window.EDExercises ? window.EDExercises.answer(exercise, this.lang) : null;
+    },
+    visibleExerciseAnswer(exercise) {
+      return this.showFeedback() ? this.exerciseAnswer(exercise) : null;
     },
     exerciseProgress() {
       const exercises = this.exercises();
-      if (window.EDExercises) return window.EDExercises.progress(exercises);
+      if (window.EDExercises) return window.EDExercises.progress(exercises, this.lang);
       return { done: 0, total: exercises.length, percent: 0 };
     },
     answerExercise(exercise, option) {
-      if (window.EDExercises) window.EDExercises.record(exercise, option);
+      if (window.EDExercises) window.EDExercises.record(exercise, option, this.lang);
       this.answerTick += 1;
       this.storeTick += 1;
     },
@@ -496,79 +766,197 @@ function app() {
       return steps[Math.min(this.tourIndex, Math.max(0, steps.length - 1))] || null;
     },
     tourState() { return { index: this.tourIndex, open: this.tourOpenFlag }; },
+    tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
+    maybeStartTour() {
+      if (!window.EDTour || this.tourOpen() || this.route !== 'today' || window.EDTour.seen()) return;
+      window.EDTour.markSeen();
+      const steps = this.tourSteps();
+      if (!steps.length) return;
+      const state = window.EDTour.start(0);
+      this.tourIndex = state.index;
+      this.tourOpenFlag = state.open && steps.length > 0;
+      this.updateTour();
+    },
+    prepareTourTarget(step) {
+      const id = step && step.id;
+      const route = id === 'glossary' ? 'glossary' : 'today';
+      if (this.route !== route) {
+        this.route = route;
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${route}`);
+        }
+      }
+      if (route === 'today') {
+        const tab = (id === 'phrase' || id === 'exercises') ? 'phrase' : 'news';
+        if (this.tab !== tab) this.tab = tab;
+      }
+    },
+    applyTourHighlight() {
+      this.clearTourHighlight();
+      const step = this.tourStep();
+      const target = step && step.target ? document.querySelector(step.target) : null;
+      if (!target) return null;
+      target.classList.add('tour-highlight');
+      this.tourHighlighted = target;
+      if (!target.hasAttribute('tabindex')) {
+        target.setAttribute('tabindex', '-1');
+        target.setAttribute('data-eds-tour-tabindex', '1');
+        this.tourFocusTarget = target;
+      }
+      return target;
+    },
+    clearTourHighlight() {
+      if (this.tourHighlighted) this.tourHighlighted.classList.remove('tour-highlight');
+      this.tourHighlighted = null;
+      if (this.tourFocusTarget && this.tourFocusTarget.getAttribute('data-eds-tour-tabindex') === '1') {
+        this.tourFocusTarget.removeAttribute('tabindex');
+        this.tourFocusTarget.removeAttribute('data-eds-tour-tabindex');
+      }
+      this.tourFocusTarget = null;
+    },
+    tourSpotlightStyle() {
+      void this.spotlightTick;
+      if (!this.tourOpen()) return 'display:none';
+      const step = this.tourStep();
+      const target = step && step.target ? document.querySelector(step.target) : null;
+      if (!target || typeof target.getBoundingClientRect !== 'function') return 'opacity:0';
+      const rect = target.getBoundingClientRect();
+      const pad = 8;
+      const maxWidth = Math.max(0, window.innerWidth - 16);
+      const maxHeight = Math.max(0, window.innerHeight - 16);
+      const width = Math.min(Math.max(rect.width + pad * 2, 48), maxWidth || 48);
+      const height = Math.min(Math.max(rect.height + pad * 2, 32), maxHeight || 32);
+      const left = Math.max(8, Math.min(rect.left - pad, Math.max(8, window.innerWidth - width - 8)));
+      const top = Math.max(8, Math.min(rect.top - pad, Math.max(8, window.innerHeight - height - 8)));
+      return `left:${left}px;top:${top}px;width:${width}px;height:${height}px;`;
+    },
+    updateTour() {
+      this.prepareTourTarget(this.tourStep());
+      this.$nextTick(() => {
+        this.focusTour();
+        this.spotlightTick += 1;
+      });
+    },
     syncTour() {
       const state = window.EDTour ? window.EDTour.state() : { index: 0, open: false };
       this.tourIndex = state.index || 0;
       this.tourOpenFlag = Boolean(state.open) && this.tourSteps().length > 0;
-      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+      if (this.tourOpenFlag) this.updateTour();
+      else this.clearTourHighlight();
     },
-    tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
     startTour() {
+      if (window.EDTour) window.EDTour.markSeen();
+      this.tourReturnFocus = document.activeElement;
       const state = window.EDTour ? window.EDTour.start(0) : { index: 0, open: true };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && this.tourSteps().length > 0;
-      this.$nextTick(() => this.focusTour());
+      this.updateTour();
     },
     openAnkiHelp() {
+      if (window.EDTour) window.EDTour.markSeen();
+      this.tourReturnFocus = document.activeElement;
       const steps = this.tourSteps();
       const found = steps.findIndex((step) => step && step.id === 'anki');
       const index = found >= 0 ? found : 0;
       const state = window.EDTour ? window.EDTour.go(index) : { index, open: true };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && steps.length > 0;
-      this.$nextTick(() => this.focusTour());
+      this.updateTour();
     },
     nextTour() {
       const steps = this.tourSteps();
       const state = window.EDTour ? window.EDTour.advance(steps.length) : { index: this.tourIndex + 1, open: false };
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && steps.length > 0;
-      if (this.tourOpenFlag) this.$nextTick(() => this.focusTour());
+      if (this.tourOpenFlag) this.updateTour();
+      else this.endTour();
     },
     endTour() {
       if (window.EDTour) window.EDTour.end();
       this.tourIndex = 0;
       this.tourOpenFlag = false;
+      this.clearTourHighlight();
+      this.spotlightTick += 1;
+      const restore = this.tourReturnFocus;
+      this.tourReturnFocus = null;
+      if (restore && typeof restore.focus === 'function') this.$nextTick(() => restore.focus());
     },
     focusTour() {
-      const step = this.tourStep();
-      const target = step && step.target ? document.querySelector(step.target) : null;
+      const target = this.applyTourHighlight();
       if (target && typeof target.focus === 'function') {
-        target.setAttribute('tabindex', '-1');
         target.focus();
         return;
       }
       if (this.$refs.tourDialog) this.$refs.tourDialog.focus();
+    },
+    trapTourTab(event) {
+      if (!this.tourOpen()) return;
+      const dialog = this.$refs.tourDialog;
+      if (!dialog) return;
+      const focusable = Array.from(dialog.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter((node) => node.offsetParent !== null || node === document.activeElement);
+      if (!focusable.length) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!dialog.contains(document.activeElement)) {
+        event.preventDefault();
+        first.focus();
+        return;
+      }
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+        return;
+      }
+      if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     },
 
     async runSearch() {
       const term = this.searchQuery.trim();
       this.searchResults = [];
       if (!term) return;
+      const token = ++this.searchToken;
+      const lang = this.lang;
       this.searching = true;
       this.error = '';
       try {
+        let results = [];
         if (this.mode === 'static') {
-          const path = window.EDSearch
-            ? window.EDSearch.path(this.payload())
-            : `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`;
-          const response = await fetch(path || `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(this.selectedDate)}.json`);
-          const index = response.ok ? await response.json() : { items: [] };
-          this.searchResults = window.EDSearch
-            ? window.EDSearch.query(index, term, this.level, 20)
-            : [];
+          const paths = this.days.slice(0, 120).map((date) => (
+            `./data/${encodeURIComponent(lang)}/search/${encodeURIComponent(date)}.json`
+          ));
+          const indexes = await Promise.all(paths.map(async (path) => {
+            try {
+              const response = await fetch(path);
+              return response.ok ? await response.json() : null;
+            } catch (err) {
+              return null;
+            }
+          }));
+          const index = window.EDSearch ? window.EDSearch.merge(indexes.filter(Boolean)) : { items: [] };
+          results = window.EDSearch ? window.EDSearch.query(index, term, null, 50) : [];
         } else {
           const response = await fetch(
-            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&day=${encodeURIComponent(this.selectedDate)}` +
-            `&level=${encodeURIComponent(this.level)}&lang=${encodeURIComponent(this.lang)}`,
+            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&lang=${encodeURIComponent(lang)}&limit=50`,
           );
           const payload = response.ok ? await response.json() : { results: [] };
-          this.searchResults = Array.isArray(payload.results) ? payload.results : [];
+          results = Array.isArray(payload.results) ? payload.results : [];
+        }
+        if (token === this.searchToken && lang === this.lang) {
+          this.searchResults = results;
         }
       } catch (err) {
-        this.error = String(err.message || err);
+        if (token === this.searchToken && lang === this.lang) this.error = String(err.message || err);
       } finally {
-        this.searching = false;
+        if (token === this.searchToken) this.searching = false;
       }
     },
     clearSearch() {
@@ -653,8 +1041,8 @@ function app() {
       this.position = value;
     },
     setSpeed(speed) {
-      this.speed = speed;
-      if (this.$refs.audio) this.$refs.audio.playbackRate = speed;
+      this.setPreference('speed', Number(speed));
+      if (this.$refs.audio) this.$refs.audio.playbackRate = this.speed;
     }
   };
 }

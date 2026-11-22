@@ -1,21 +1,26 @@
-var CACHE_NAME = 'english-daily-20261121215519';
+var CACHE_NAME = 'english-daily-20261122115247';
 var APP_SHELL = [
   './',
   './index.html',
+  './css/themes.css',
   './style.css',
   './app.js',
   './lib/store.js',
+  './lib/branding.js',
+  './lib/settings.js',
   './lib/links.js',
   './lib/progress.js',
   './lib/anki.js',
   './lib/exercises.js',
   './lib/tour.js',
   './lib/search.js',
+  './lib/archive.js',
   './lib/pwa.js',
   './vendor/alpine.min.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icons/icon-512.png',
+  './data/languages.json'
 ];
 
 function assetUrl(path) {

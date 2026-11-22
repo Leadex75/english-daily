@@ -60,5 +60,20 @@ window.EDSearch = (() => {
     return payload && payload.meta ? payload.meta.search_path : '';
   }
 
-  return { query, path, tokens };
+  function merge(indexes) {
+    const items = [];
+    const seen = new Set();
+    for (const index of Array.isArray(indexes) ? indexes : []) {
+      for (const entry of (index && Array.isArray(index.items)) ? index.items : []) {
+        const key = [entry.date, entry.guid_hash, entry.kind, entry.title].join('|');
+        if (seen.has(key)) continue;
+        seen.add(key);
+        items.push(entry);
+      }
+    }
+    items.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+    return { items };
+  }
+
+  return { query, path, merge, tokens };
 })();

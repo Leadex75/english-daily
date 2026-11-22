@@ -1,0 +1,460 @@
+{
+  "A1": {
+    "date": "2026-11-22",
+    "level": "A1",
+    "word": {
+      "text": "school",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/skuːl/",
+      "meaning": "a place where children learn",
+      "meaning_fr": "école",
+      "example": "The school opens at eight.",
+      "anki_answer": "école",
+      "tags": [
+        "education"
+      ],
+      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/skuːl/",
+        "definitions": [
+          "(collective) A group of fish or a group of marine mammals such as porpoises, dolphins, or whales.",
+          "A multitude.",
+          "(of fish) To form into, or travel in a school."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/school-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/institution\" title=\"institution\">institution</a> dedicated to <a rel=\"mw:WikiLink\" href=\"/wiki/teaching\" title=\"teaching\">teaching</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/learning\" title=\"learning\">learning</a>; an <a rel=\"mw:WikiLink\" href=\"/wiki/educational\" title=\"educational\">educational</a> institution.",
+          "<span class=\"usage-label-sense\" about=\"#mwt45\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/educational_institution\" title=\"educational institution\">educational institution</a> providing <a rel=\"mw:WikiLink\" href=\"/wiki/primary_education\" title=\"primary education\">primary</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/secondary_education\" title=\"secondary education\">secondary education</a>, prior to <a rel=\"mw:WikiLink\" href=\"/wiki/tertiary_education\" title=\"tertiary education\">tertiary education</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/college\" title=\"college\">college</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/university\" title=\"university\">university</a>).",
+          "<span class=\"usage-label-sense\" about=\"#mwt47\" typeof=\"mw:Transclusion\"></span> At <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Eton%20College\" title=\"w:Eton College\" about=\"#mwt48\" typeof=\"mw:Transclusion\" class=\"extiw\">Eton College</a>, a <a rel=\"mw:WikiLink\" href=\"/wiki/period\" title=\"period\">period</a> or session of teaching.",
+          "Within a larger educational institution, an organizational unit, such as a <a rel=\"mw:WikiLink\" href=\"/wiki/department\" title=\"department\">department</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/institute\" title=\"institute\">institute</a>, which is dedicated to a specific subject area."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "wait for",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "stay until someone or something arrives",
+      "meaning_fr": "attendre",
+      "example": "I wait for the bus here.",
+      "anki_answer": "attendre",
+      "tags": [
+        "daily"
+      ],
+      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/wait\" title=\"wait\">wait</a> until the specified event occurs.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/await\" title=\"await\">await</a> the arrival of."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "child",
+      "aliases": [
+        "child",
+        "children"
+      ],
+      "level": "A1",
+      "meaning": "a young human being",
+      "meaning_fr": "enfant",
+      "period": "General",
+      "theme": "Society",
+      "example": "The child listened to the old story.",
+      "tags": [
+        "people"
+      ],
+      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-22",
+    "level": "A2",
+    "word": {
+      "text": "neighbour",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈneɪbər/",
+      "meaning": "a person who lives near you",
+      "meaning_fr": "voisin",
+      "example": "Our neighbour has a garden.",
+      "anki_answer": "voisin",
+      "tags": [
+        "people"
+      ],
+      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈneɪbə/",
+        "definitions": [
+          "A person living on adjacent or nearby land; a person situated adjacently or nearby; anything (of the same type of thing as the subject) in an adjacent or nearby position.",
+          "One who is near in sympathy or confidence.",
+          "A fellow human being.",
+          "To be adjacent to"
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/neighbour-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A person living on <a rel=\"mw:WikiLink\" href=\"/wiki/adjacent\" title=\"adjacent\">adjacent</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/nearby\" title=\"nearby\">nearby</a> land; a person situated adjacently or nearby; anything (of the same type of thing as the subject) in an adjacent or nearby position.",
+          "One who is near in sympathy or confidence.",
+          "<span class=\"usage-label-sense\" about=\"#mwt66\" typeof=\"mw:Transclusion\"></span> A fellow <a rel=\"mw:WikiLink\" href=\"/wiki/human_being\" title=\"human being\">human being</a>.",
+          "Anything located directly <a rel=\"mw:WikiLink\" href=\"/wiki/adjacent\" title=\"adjacent\">adjacent</a> to something else."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be interested in",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "want to know about something",
+      "meaning_fr": "être intéressé par",
+      "example": "I am interested in history.",
+      "anki_answer": "intéressé",
+      "tags": [
+        "interests"
+      ],
+      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "revolution",
+      "aliases": [
+        "revolution",
+        "revolt"
+      ],
+      "level": "A2",
+      "meaning": "a major change in government or society",
+      "meaning_fr": "révolution",
+      "period": "General",
+      "theme": "Revolution",
+      "example": "The revolution changed the country.",
+      "tags": [
+        "politics"
+      ],
+      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-22",
+    "level": "B1",
+    "word": {
+      "text": "expect",
+      "level": "B1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ɪkˈspekt/",
+      "meaning": "believe something will happen",
+      "meaning_fr": "s'attendre à",
+      "example": "I expect the train to be late.",
+      "anki_answer": "s'attendre",
+      "tags": [
+        "probability"
+      ],
+      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɛkˈspɛkt/",
+        "definitions": [
+          "To predict or believe that something will happen",
+          "To consider obligatory or required.",
+          "To consider reasonably due.",
+          "(continuous aspect only, of a woman or couple) To be pregnant, to consider a baby due."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/expect-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/predict\" title=\"predict\">predict</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/believe\" title=\"believe\">believe</a> that something will happen",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/consider\" title=\"consider\">consider</a> <a rel=\"mw:WikiLink\" href=\"/wiki/obligatory\" title=\"obligatory\">obligatory</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/required\" title=\"required\">required</a>.",
+          "To consider reasonably <a rel=\"mw:WikiLink\" href=\"/wiki/due\" title=\"due\">due</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To be <a rel=\"mw:WikiLink\" href=\"/wiki/pregnant\" title=\"pregnant\">pregnant</a>, to consider a baby due."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "bring up",
+      "level": "B1",
+      "type": "phrasal verb",
+      "meaning": "mention a subject in conversation",
+      "meaning_fr": "évoquer, soulever",
+      "example": "He brought up an interesting point.",
+      "anki_answer": "évoquer",
+      "tags": [
+        "communication"
+      ],
+      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt7\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/bring#English\" title=\"bring\">bring</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/up#English\" title=\"up\">up</a></span>:</span> To <a rel=\"mw:WikiLink\" href=\"/wiki/bring\" title=\"bring\">bring</a> from a lower to a higher position.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/mention\" title=\"mention\">mention</a>.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/raise\" title=\"raise\">raise</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/rear\" title=\"rear\">rear</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/children\" title=\"children\">children</a>).",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/uncover\" title=\"uncover\">uncover</a>, to bring from <a rel=\"mw:WikiLink\" href=\"/wiki/obscurity\" title=\"obscurity\">obscurity</a>; to <span class=\"Latn\" lang=\"en\" about=\"#mwt15\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/resurface#English\" title=\"resurface\">resurface</a></span> (e.g. a memory)"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "conquest",
+      "aliases": [
+        "conquest",
+        "conquests"
+      ],
+      "level": "B1",
+      "meaning": "the act of taking land by force",
+      "meaning_fr": "conquête",
+      "period": "Antiquity",
+      "theme": "War",
+      "example": "The conquest changed the region.",
+      "tags": [
+        "war"
+      ],
+      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-22",
+    "level": "B2",
+    "word": {
+      "text": "relevant",
+      "level": "B2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈreləvənt/",
+      "meaning": "closely connected to the subject",
+      "meaning_fr": "pertinent",
+      "example": "Please include relevant details.",
+      "anki_answer": "pertinent",
+      "tags": [
+        "communication"
+      ],
+      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈɹɛləvənt/",
+        "definitions": [
+          "Directly related, connected, or pertinent to a topic.",
+          "Not out of date; current."
+        ],
+        "audio_url": null
+      },
+      "wiktionary": {
+        "definitions": [
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/related#Adjective\" title=\"related\">Related</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/connected#Adjective\" title=\"connected\">connected</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/pertinent\" title=\"pertinent\">pertinent</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/topic\" title=\"topic\">topic</a>.\n<ol><li><span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/directly\" title=\"directly\">Directly</a> related, connected, or pertinent, with <a rel=\"mw:WikiLink\" href=\"/wiki/important\" title=\"important\">important</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ramification#Noun\" title=\"ramification\">ramifications</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/implication#Noun\" title=\"implication\">implications</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/directly\" title=\"directly\">Directly</a> related, connected, or pertinent, with <a rel=\"mw:WikiLink\" href=\"/wiki/important\" title=\"important\">important</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ramification#Noun\" title=\"ramification\">ramifications</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/implication#Noun\" title=\"implication\">implications</a>.",
+          "Not <a rel=\"mw:WikiLink\" href=\"/wiki/out_of_date\" title=\"out of date\">out of date</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/current\" title=\"current\">current</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/famous\" title=\"famous\">Famous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/popular\" title=\"popular\">popular</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/noteworthy\" title=\"noteworthy\">noteworthy</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/contemporary\" title=\"contemporary\">contemporary</a> <a rel=\"mw:WikiLink\" href=\"/wiki/context\" title=\"context\">context</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "get out of hand",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "become uncontrolled",
+      "meaning_fr": "dégénérer, échapper de contrôle",
+      "example": "The argument got out of hand.",
+      "anki_answer": "dégénérer",
+      "tags": [
+        "problems"
+      ],
+      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "Without (further) <a rel=\"mw:WikiLink\" href=\"/wiki/thought\" title=\"thought\">thought</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/consideration\" title=\"consideration\">consideration</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/immediately\" title=\"immediately\">Immediately</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/forthwith\" title=\"forthwith\">forthwith</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/incontinently\" title=\"incontinently\">incontinently</a>.",
+          "Barely <a rel=\"mw:WikiLink\" href=\"/wiki/under_control\" title=\"under control\">under control</a>; not under control."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "civilisation",
+      "aliases": [
+        "civilisation",
+        "civilization"
+      ],
+      "level": "B2",
+      "meaning": "an advanced human society",
+      "meaning_fr": "civilisation",
+      "period": "Antiquity",
+      "theme": "Culture",
+      "example": "The civilisation left great monuments.",
+      "tags": [
+        "culture"
+      ],
+      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-22",
+    "level": "C1",
+    "word": {
+      "text": "resilient",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/rɪˈzɪliənt/",
+      "meaning": "able to recover after difficulty",
+      "meaning_fr": "résilient",
+      "example": "Children are remarkably resilient.",
+      "anki_answer": "résilient",
+      "tags": [
+        "strength"
+      ],
+      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": null,
+        "definitions": [
+          "(of objects or substances) Returning quickly to original shape after force is applied; elastic.",
+          "(organisms or people, of systems) Returning quickly to normal after damaging events or conditions."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/resilient-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "Returning quickly to original shape after force is applied; <a rel=\"mw:WikiLink\" href=\"/wiki/elastic\" title=\"elastic\">elastic</a>. \n<ol><li><span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.</li></ol>",
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.",
+          "Returning quickly to normal after damaging events or conditions. \n\n<ol><li><span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>.</li></ol>",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "on the cusp of",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "at the start of an important change",
+      "meaning_fr": "être au seuil de",
+      "example": "The company is on the cusp of a breakthrough.",
+      "anki_answer": "seuil, changement",
+      "tags": [
+        "change"
+      ],
+      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "mercantilism",
+      "aliases": [
+        "mercantilism"
+      ],
+      "level": "C1",
+      "meaning": "an economic theory based on trade and accumulated wealth",
+      "meaning_fr": "mercantilisme",
+      "period": "Early modern",
+      "theme": "Economy",
+      "example": "Mercantilism shaped colonial policy.",
+      "tags": [
+        "economy"
+      ],
+      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-22",
+    "level": "C2",
+    "word": {
+      "text": "capitulate",
+      "level": "C2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/kəˈpɪtʃuleɪt/",
+      "meaning": "stop resisting and surrender",
+      "meaning_fr": "capituler",
+      "example": "The rebels eventually capitulated.",
+      "anki_answer": "capituler",
+      "tags": [
+        "conflict"
+      ],
+      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/kəˈpɪ.tjʊ.leɪt/",
+        "definitions": [
+          "To surrender; to end all resistance, to give up; to go along with or comply.",
+          "To draw up in chapters; to enumerate.",
+          "To draw up the articles of treaty with; to treat, bargain, parley."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/capitulate-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt25\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/surrender\" title=\"surrender\">surrender</a> on <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulated</a> terms, end all <a rel=\"mw:WikiLink\" href=\"/wiki/resistance\" title=\"resistance\">resistance</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/give_up\" title=\"give up\">give up</a>, go along with or <a rel=\"mw:WikiLink\" href=\"/wiki/comply\" title=\"comply\">comply</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt26\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> To draw up in <a rel=\"mw:WikiLink\" href=\"/wiki/chapter\" title=\"chapter\">chapters</a>, heads or articles; to <a rel=\"mw:WikiLink\" href=\"/wiki/enumerate\" title=\"enumerate\">enumerate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/specify\" title=\"specify\">specify</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt37\" typeof=\"mw:Transclusion\"></span> To draw up articles of <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a> with; to propose <span class=\"Latn\" lang=\"en\" about=\"#mwt38\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/term#English:_condition,_legally,_in_general\" title=\"term\">term</a></span>s, <a rel=\"mw:WikiLink\" href=\"/wiki/treat\" title=\"treat\">treat</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/bargain\" title=\"bargain\">bargain</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/parley\" title=\"parley\">parley</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> To make conditions, <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/agree\" title=\"agree\">agree</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/formulate\" title=\"formulate\">formulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/conclude\" title=\"conclude\">conclude</a> (upon something)."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "draw a veil over",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "deliberately avoid discussing something",
+      "meaning_fr": "passer sous silence",
+      "example": "Let us draw a veil over that episode.",
+      "anki_answer": "passer silence",
+      "tags": [
+        "silence"
+      ],
+      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/avoid\" title=\"avoid\">avoid</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discuss\" title=\"discuss\">discussing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/call\" title=\"call\">calling</a> <a rel=\"mw:WikiLink\" href=\"/wiki/attention\" title=\"attention\">attention</a> to (something <a rel=\"mw:WikiLink\" href=\"/wiki/embarrassing\" title=\"embarrassing\">embarrassing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/unpleasant\" title=\"unpleasant\">unpleasant</a>)."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "determinism",
+      "aliases": [
+        "determinism"
+      ],
+      "level": "C2",
+      "meaning": "the belief that events are fixed by prior causes",
+      "meaning_fr": "déterminisme",
+      "period": "19th century",
+      "theme": "Science",
+      "example": "Economic determinism shaped his theory.",
+      "tags": [
+        "science"
+      ],
+      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
+      "kind": "history"
+    }
+  }
+}

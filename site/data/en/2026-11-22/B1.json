@@ -1,0 +1,962 @@
+{
+  "date": "2026-11-22",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 24,
+        "title": "FBI reportedly investigating apparent hack of its criminal database",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T00:10:44",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 374,
+        "duration_sec": null,
+        "body_text": "The FBI is investigating an apparent breach of its criminal information database, US media reports, citing two people briefed on the issue. The National Crime Information Center (NCIC) database is used by federal and local law enforcement to share information on warrants and background checks.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "f7a2b1fa0090f83fd6f522f387aa4026ea85a67c",
+        "summary": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "FBI reportedly investigating apparent hack of its criminal database — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 2
+      },
+      "audio": {
+        "id": 3,
+        "title": "5am ET, November 22 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-22T10:09:48",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/21dd57aa-f868-4598-9a07-04d1e07a38f6/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_61bcf78c8136fbf0135ee4689925387a_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=21dd57aa-f868-4598-9a07-04d1e07a38f6&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-0500-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__d9fef1b6f4c79a47725179b166c5573e5b4cca8d",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "25babdadab58d894f23ec5448df3df4be3beab78",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "5am ET, November 22 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 42,
+        "title": "NFL legend John Madden’s unlikely, unfiltered brilliance: ‘Coach was indeed animated’",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/film/2026/nov/20/john-madden-nfl-football-biopic",
+        "published_at": "2026-11-20T10:00:31",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 2257,
+        "duration_sec": null,
+        "body_text": "Wearing his Oakland Raiders uniform and helmet, and gripping an orange traffic cone like a lance, Ted Hendricks rode into the training session on a roan horse and stopped at the 50-yard line. Some American football coaches might have reacted to the stunt with fury. But John Madden was unfazed.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "399046e2c9f5a6b88f26aec224b7f9f801efca53",
+        "summary": "With the release of a new David O Russell biopic about the coach turned commentator turned gaming icon, those who knew him best remember his singular career Wearing his Oakland Raiders uniform and helmet, and gripping an orange traffic cone like a lance, Ted Hendricks rode into the training session on a roan horse and stopped at the 50-yard line. Some American football coaches might have reacted to the stunt with fury. But John Madden was unfazed. “We needed some relief from the intense grind,” recalls Hendricks, 79, who had borrowed the horse from a nearby stable. “It was a spur of the moment idea, but put a smile on everyone’s face. All Coach said once I dismounted was, ‘All right guys, Ted’s here, let’s get started.’ But I know he got a kick out of it too – just from the look on his face and the comments he made later in interviews.”",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "NFL legend John Madden’s unlikely, unfiltered brilliance: ‘Coach was indeed animated’ — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 12
+      },
+      "audio": {
+        "id": 1874710638,
+        "title": "Mother Goose in Prose - Singa Song o Sixpense",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/mother-goose-in-prose-by-l-frank-baum/",
+        "published_at": "2026-11-22T11:50:12",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 112,
+        "duration_sec": 850,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/mother_goose_prose_librivox/mother_goose_02_baum_64kb.mp3",
+        "description": "Mother Goose in Prose by . Whether Mother Goose was a real person or a myth, the songs that are attributed to her name are what we remember from our childhood. Some of these nursery rhymes are complete tales in themselves. There are others which are mere suggestions, leaving the imagination to weave in the details of the story. Many of the rhymes’ origins even at the time of this books writing, co",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "c5763a5d9e867194cd8e707789c3f4e6e3845826",
+        "summary": "Mother Goose in Prose by . Whether Mother Goose was a real person or a myth, the songs that are attributed to her name are what we remember from our childhood. Some of these nursery rhymes are complete tales in themselves. There are others which are mere suggestions, leaving the imagination to weave in the details of the story. Many of the rhymes’ origins even at the time of this books writing, co",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Mother Goose in Prose - Singa Song o Sixpense — LibriVox (culture)",
+        "duration_formatted": "14:10",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": {
+        "id": 63,
+        "title": "On this day: 22 November",
+        "source": "Wikipedia On this day",
+        "source_id": "wikipedia_onthisday",
+        "category": "history",
+        "url": "https://en.wikipedia.org/wiki/November_22",
+        "published_at": "2026-11-22T00:00:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 91,
+        "duration_sec": null,
+        "body_text": "2022 — A shooting at a Walmart in Chesapeake, Virginia leaves seven workers dead, including the shooter, and four others injured.\n\n2014 — While playing with a toy gun in Cleveland, 12-year-old African American Tamir Rice is killed by a white police officer.\n\n2010 — During the Cambodian water festival, a stampede in Koh Pich, Phnom Penh, kills 347 people.\n\n2004 — The Orange Revolution begins in Ukraine, resulting from the presidential elections.\n\n2003 — Baghdad DHL attempted shootdown incident: Shortly after takeoff, a DHL Express cargo plane is struck on the left wing by a surface-to-air missile and forced to land.",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "0cbc5f35c741dd54a0423409da03842a4fda13cf",
+        "summary": "2022 — A shooting at a Walmart in Chesapeake, Virginia leaves seven workers dead, including the shooter, and four others injured.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "Revolution",
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "revolution",
+            "aliases": [
+              "revolution",
+              "revolt"
+            ],
+            "level": "A2",
+            "meaning": "a major change in government or society",
+            "meaning_fr": "révolution",
+            "period": "General",
+            "theme": "Revolution",
+            "example": "The revolution changed the country.",
+            "tags": [
+              "politics"
+            ]
+          },
+          {
+            "text": "year",
+            "aliases": [
+              "year",
+              "years"
+            ],
+            "level": "A1",
+            "meaning": "a period of twelve months",
+            "meaning_fr": "année",
+            "period": "General",
+            "theme": "Society",
+            "example": "The treaty lasted only one year.",
+            "tags": [
+              "time"
+            ]
+          }
+        ],
+        "alt_text": "On this day: 22 November — Wikipedia On this day",
+        "duration_formatted": "",
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/MM/DD",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1026600099,
+        "title": "Art of War - 01 - Laying Plans / 02 - Waging War",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/the-art-of-war-by-sun-tzu/",
+        "published_at": "2026-11-21T21:54:26",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 98,
+        "duration_sec": 506,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/art_of_war_librivox/art_of_war_01-02_sun_tzu_64kb.mp3",
+        "description": "Art of War by . \"The Art of War is a Chinese military treatise written during the 6th century BC by Sun Tzu. Composed of 13 chapters, each of which is devoted to one aspect of warfare, it has long been praised as the definitive work on military strategies and tactics of its time. The Art of War is one of the oldest and most famous studies of strategy and has had a huge influence on both military p",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "f030c8d10b9fd7eee5d85d3494ed3a08caf98727",
+        "summary": "Art of War by . \"The Art of War is a Chinese military treatise written during the 6th century BC by Sun Tzu. Composed of 13 chapters, each of which is devoted to one aspect of warfare, it has long been praised as the definitive work on military strategies and tactics of its time. The Art of War is one of the oldest and most famous studies of strategy and has had a huge influence on both military p",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (history & biography)"
+        ],
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "War",
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "war",
+            "aliases": [
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "century",
+            "aliases": [
+              "century",
+              "centuries"
+            ],
+            "level": "A2",
+            "meaning": "a period of one hundred years",
+            "meaning_fr": "siècle",
+            "period": "General",
+            "theme": "Society",
+            "example": "This bridge is from the nineteenth century.",
+            "tags": [
+              "time"
+            ]
+          }
+        ],
+        "alt_text": "Art of War - 01 - Laying Plans / 02 - Waging War — LibriVox (history & biography)",
+        "duration_formatted": "8:26",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-22",
+    "level": "B1",
+    "word": {
+      "text": "expect",
+      "level": "B1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ɪkˈspekt/",
+      "meaning": "believe something will happen",
+      "meaning_fr": "s'attendre à",
+      "example": "I expect the train to be late.",
+      "anki_answer": "s'attendre",
+      "tags": [
+        "probability"
+      ],
+      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɛkˈspɛkt/",
+        "definitions": [
+          "To predict or believe that something will happen",
+          "To consider obligatory or required.",
+          "To consider reasonably due.",
+          "(continuous aspect only, of a woman or couple) To be pregnant, to consider a baby due."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/expect-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/predict\" title=\"predict\">predict</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/believe\" title=\"believe\">believe</a> that something will happen",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/consider\" title=\"consider\">consider</a> <a rel=\"mw:WikiLink\" href=\"/wiki/obligatory\" title=\"obligatory\">obligatory</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/required\" title=\"required\">required</a>.",
+          "To consider reasonably <a rel=\"mw:WikiLink\" href=\"/wiki/due\" title=\"due\">due</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To be <a rel=\"mw:WikiLink\" href=\"/wiki/pregnant\" title=\"pregnant\">pregnant</a>, to consider a baby due."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "bring up",
+      "level": "B1",
+      "type": "phrasal verb",
+      "meaning": "mention a subject in conversation",
+      "meaning_fr": "évoquer, soulever",
+      "example": "He brought up an interesting point.",
+      "anki_answer": "évoquer",
+      "tags": [
+        "communication"
+      ],
+      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt7\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/bring#English\" title=\"bring\">bring</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/up#English\" title=\"up\">up</a></span>:</span> To <a rel=\"mw:WikiLink\" href=\"/wiki/bring\" title=\"bring\">bring</a> from a lower to a higher position.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/mention\" title=\"mention\">mention</a>.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/raise\" title=\"raise\">raise</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/rear\" title=\"rear\">rear</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/children\" title=\"children\">children</a>).",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/uncover\" title=\"uncover\">uncover</a>, to bring from <a rel=\"mw:WikiLink\" href=\"/wiki/obscurity\" title=\"obscurity\">obscurity</a>; to <span class=\"Latn\" lang=\"en\" about=\"#mwt15\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/resurface#English\" title=\"resurface\">resurface</a></span> (e.g. a memory)"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "conquest",
+      "aliases": [
+        "conquest",
+        "conquests"
+      ],
+      "level": "B1",
+      "meaning": "the act of taking land by force",
+      "meaning_fr": "conquête",
+      "period": "Antiquity",
+      "theme": "War",
+      "example": "The conquest changed the region.",
+      "tags": [
+        "war"
+      ],
+      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "kind": "word",
+      "level": "A1",
+      "text": "school",
+      "meaning": "a place where children learn",
+      "meaning_fr": "école",
+      "example": "The school opens at eight.",
+      "phonetic": "/skuːl/",
+      "anki_answer": "école",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
+      "kind": "expression",
+      "level": "A1",
+      "text": "wait for",
+      "meaning": "stay until someone or something arrives",
+      "meaning_fr": "attendre",
+      "example": "I wait for the bus here.",
+      "phonetic": "",
+      "anki_answer": "attendre",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "kind": "history",
+      "level": "A1",
+      "text": "child",
+      "meaning": "a young human being",
+      "meaning_fr": "enfant",
+      "example": "The child listened to the old story.",
+      "phonetic": "",
+      "anki_answer": "enfant",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "kind": "word",
+      "level": "A2",
+      "text": "neighbour",
+      "meaning": "a person who lives near you",
+      "meaning_fr": "voisin",
+      "example": "Our neighbour has a garden.",
+      "phonetic": "/ˈneɪbər/",
+      "anki_answer": "voisin",
+      "tags": [
+        "people"
+      ]
+    },
+    {
+      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be interested in",
+      "meaning": "want to know about something",
+      "meaning_fr": "être intéressé par",
+      "example": "I am interested in history.",
+      "phonetic": "",
+      "anki_answer": "intéressé",
+      "tags": [
+        "interests"
+      ]
+    },
+    {
+      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "kind": "history",
+      "level": "A2",
+      "text": "revolution",
+      "meaning": "a major change in government or society",
+      "meaning_fr": "révolution",
+      "example": "The revolution changed the country.",
+      "phonetic": "",
+      "anki_answer": "révolution",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
+      "kind": "word",
+      "level": "B1",
+      "text": "expect",
+      "meaning": "believe something will happen",
+      "meaning_fr": "s'attendre à",
+      "example": "I expect the train to be late.",
+      "phonetic": "/ɪkˈspekt/",
+      "anki_answer": "s'attendre",
+      "tags": [
+        "probability"
+      ]
+    },
+    {
+      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
+      "kind": "expression",
+      "level": "B1",
+      "text": "bring up",
+      "meaning": "mention a subject in conversation",
+      "meaning_fr": "évoquer, soulever",
+      "example": "He brought up an interesting point.",
+      "phonetic": "",
+      "anki_answer": "évoquer",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
+      "kind": "history",
+      "level": "B1",
+      "text": "conquest",
+      "meaning": "the act of taking land by force",
+      "meaning_fr": "conquête",
+      "example": "The conquest changed the region.",
+      "phonetic": "",
+      "anki_answer": "conquête",
+      "tags": [
+        "war"
+      ]
+    },
+    {
+      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "kind": "word",
+      "level": "B2",
+      "text": "relevant",
+      "meaning": "closely connected to the subject",
+      "meaning_fr": "pertinent",
+      "example": "Please include relevant details.",
+      "phonetic": "/ˈreləvənt/",
+      "anki_answer": "pertinent",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "kind": "expression",
+      "level": "B2",
+      "text": "get out of hand",
+      "meaning": "become uncontrolled",
+      "meaning_fr": "dégénérer, échapper de contrôle",
+      "example": "The argument got out of hand.",
+      "phonetic": "",
+      "anki_answer": "dégénérer",
+      "tags": [
+        "problems"
+      ]
+    },
+    {
+      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "kind": "history",
+      "level": "B2",
+      "text": "civilisation",
+      "meaning": "an advanced human society",
+      "meaning_fr": "civilisation",
+      "example": "The civilisation left great monuments.",
+      "phonetic": "",
+      "anki_answer": "civilisation",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "kind": "word",
+      "level": "C1",
+      "text": "resilient",
+      "meaning": "able to recover after difficulty",
+      "meaning_fr": "résilient",
+      "example": "Children are remarkably resilient.",
+      "phonetic": "/rɪˈzɪliənt/",
+      "anki_answer": "résilient",
+      "tags": [
+        "strength"
+      ]
+    },
+    {
+      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
+      "kind": "expression",
+      "level": "C1",
+      "text": "on the cusp of",
+      "meaning": "at the start of an important change",
+      "meaning_fr": "être au seuil de",
+      "example": "The company is on the cusp of a breakthrough.",
+      "phonetic": "",
+      "anki_answer": "seuil, changement",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
+      "kind": "history",
+      "level": "C1",
+      "text": "mercantilism",
+      "meaning": "an economic theory based on trade and accumulated wealth",
+      "meaning_fr": "mercantilisme",
+      "example": "Mercantilism shaped colonial policy.",
+      "phonetic": "",
+      "anki_answer": "mercantilisme",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
+      "kind": "word",
+      "level": "C2",
+      "text": "capitulate",
+      "meaning": "stop resisting and surrender",
+      "meaning_fr": "capituler",
+      "example": "The rebels eventually capitulated.",
+      "phonetic": "/kəˈpɪtʃuleɪt/",
+      "anki_answer": "capituler",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
+      "kind": "expression",
+      "level": "C2",
+      "text": "draw a veil over",
+      "meaning": "deliberately avoid discussing something",
+      "meaning_fr": "passer sous silence",
+      "example": "Let us draw a veil over that episode.",
+      "phonetic": "",
+      "anki_answer": "passer silence",
+      "tags": [
+        "silence"
+      ]
+    },
+    {
+      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
+      "kind": "history",
+      "level": "C2",
+      "text": "determinism",
+      "meaning": "the belief that events are fixed by prior causes",
+      "meaning_fr": "déterminisme",
+      "example": "Economic determinism shaped his theory.",
+      "phonetic": "",
+      "anki_answer": "déterminisme",
+      "tags": [
+        "science"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “school” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "école",
+      "item_key": "45ec82195c5bc0379f855bfa44b17f87f9939f48"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ for",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "wait",
+      "item_key": "170b1a0e680e80a71c2dbf310718c305019619e0"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “child” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “neighbour” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "voisin",
+      "item_key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: be ____ in",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "interested",
+      "item_key": "3513f6c408320e6d94779e023fa404f075367587"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “revolution” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “expect” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "s'attendre à",
+      "item_key": "8956a54e2d95372dc761aae2c81f3b488accc7cc"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ up",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "bring",
+      "item_key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “conquest” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Antiquity",
+      "item_key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “relevant” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "pertinent",
+      "item_key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: get out of ____",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "hand",
+      "item_key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “civilisation” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Antiquity",
+      "item_key": "3ddb7708a56287d80c6f5de21c87fab19196b67b"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “resilient” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "résilient",
+      "item_key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: on the ____ of",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "cusp",
+      "item_key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “mercantilism” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "Early modern",
+      "item_key": "cf70c2f947ddd7601bd93471dd4438a1a4920717"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “capitulate” mean?",
+      "options": [
+        "capituler",
+        "pertinent",
+        "résilient",
+        "s'attendre à"
+      ],
+      "answer": "capituler",
+      "item_key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: draw a ____ over",
+      "options": [
+        "bring",
+        "cusp",
+        "draw",
+        "get"
+      ],
+      "answer": "veil",
+      "item_key": "d14ea879e92f110e1abec6267bf21353f35b7cc2"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “determinism” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-hero]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 6,
+    "total": 6,
+    "origins": {
+      "reserve": 2,
+      "adjacent": 4
+    },
+    "source_count": 6,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "General"
+    ],
+    "history_themes": [
+      "Revolution",
+      "Society",
+      "War"
+    ],
+    "search_path": "./data/en/search/2026-11-22.json"
+  }
+}

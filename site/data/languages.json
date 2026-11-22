@@ -1,7 +1,34 @@
 {
-  "generated_at": "2026-11-21T21:55:19Z",
+  "generated_at": "2026-11-22T11:52:47Z",
   "default": "en",
   "languages": [
-    "en"
-  ]
+    "en",
+    "es"
+  ],
+  "brands": {
+    "en": "English Daily",
+    "es": "Spanish Daily"
+  },
+  "labels": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "taglines": {
+    "en": "A little English, every day.",
+    "es": "Un poco de español, cada día."
+  },
+  "metadata": {
+    "en": {
+      "code": "en",
+      "brand": "English Daily",
+      "label": "English",
+      "tagline": "A little English, every day."
+    },
+    "es": {
+      "code": "es",
+      "brand": "Spanish Daily",
+      "label": "Spanish",
+      "tagline": "Un poco de español, cada día."
+    }
+  }
 }

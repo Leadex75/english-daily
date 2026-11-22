@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="system" data-text-size="medium" data-reading-font="serif" data-motion="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>english-daily</title>
+  <title>English Daily</title>
   <meta name="eds-mode" content="static">
   <meta name="robots" content="noindex,nofollow">
   <meta name="eds-goal" content="5">
@@ -11,285 +11,408 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="description" content="A little English, every day.">
+  <meta name="eds-brand-es" content="Spanish Daily">
+  <meta name="eds-tagline-es" content="Un poco de español, cada día.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/themes.css">
   <link rel="stylesheet" href="./style.css">
   <script defer src="./lib/store.js"></script>
+  <script defer src="./lib/branding.js"></script>
+  <script defer src="./lib/settings.js"></script>
   <script defer src="./lib/links.js"></script>
   <script defer src="./lib/progress.js"></script>
   <script defer src="./lib/anki.js"></script>
   <script defer src="./lib/exercises.js"></script>
   <script defer src="./lib/tour.js"></script>
   <script defer src="./lib/search.js"></script>
+  <script defer src="./lib/archive.js"></script>
   <script defer src="./lib/pwa.js"></script>
   <script defer src="./app.js"></script>
   <script defer src="./vendor/alpine.min.js"></script>
 </head>
-<body x-data="app()" x-init="init()" x-cloak @keydown.escape.window="endTour()">
+<body x-data="app()" x-init="init()" x-cloak @keydown.escape.window="endTour()" @keydown.tab.window="trapTourTab($event)">
   <a class="skip-link" href="#reading-panel">Skip to content</a>
-  <div class="shell">
+  <div class="shell" data-eds-route>
     <header class="masthead">
-      <div class="brand">
-        <span class="brand-mark">english<span class="accent">·</span>daily</span>
-        <span class="tagline">A little English, every day.</span>
-      </div>
+      <a class="brand" href="#today" data-eds-home :aria-label="brand + ' home'" aria-label="English Daily home">
+        <span class="brand-mark" x-text="brand">English Daily</span>
+        <span class="tagline" x-text="tagline">A little English, every day.</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#today" :aria-current="route === 'today' ? 'page' : null">Today</a>
+        <a href="#archive" :aria-current="route === 'archive' ? 'page' : null">Archive</a>
+        <a href="#glossary" :aria-current="route === 'glossary' ? 'page' : null">Glossary</a>
+        <a href="#settings" :aria-current="route === 'settings' ? 'page' : null">Settings</a>
+      </nav>
       <div class="header-actions">
+        <label class="sr-only" for="language-select">Language</label>
+        <select id="language-select" class="language-select language-picker" data-eds-language-select :value="lang" @change="setLanguage($event.target.value)" aria-label="Language">
+          <template x-for="option in languageOptions()" :key="option.code">
+            <option :value="option.code" x-text="option.label"></option>
+          </template>
+        </select>
         <button class="icon-button" type="button" x-show="updateAvailable" @click="applyUpdate()" aria-label="Install updated app">Update</button>
         <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
-        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" x-text="theme === 'dark' ? 'Light' : 'Dark'"></button>
+        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="prefersDark() ? 'Use light theme' : 'Use dark theme'" x-text="prefersDark() ? 'Light' : 'Dark'"></button>
         <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length || !ankiAvailable()" aria-label="Export learned words to Anki">Anki</button>
         <button class="icon-button anki-help" type="button" data-eds-anki @click="openAnkiHelp()" aria-label="Anki help">Anki help</button>
       </div>
     </header>
 
-    <section class="controls" aria-label="Reading controls">
-      <div class="date-control">
-        <button class="icon-button" type="button" @click="shiftDate(-1)" aria-label="Previous day" :disabled="!canShift(-1)">&#8592;</button>
-        <label class="sr-only" for="day-select">Date</label>
-        <select id="day-select" x-model="selectedDate" @change="loadDay()">
-          <template x-for="d in days" :key="d"><option :value="d" x-text="d"></option></template>
-        </select>
-        <button class="icon-button" type="button" @click="shiftDate(1)" aria-label="Next day" :disabled="!canShift(1)">&#8594;</button>
-      </div>
-      <div class="levels" role="group" aria-label="CEFR level" data-eds-level>
-        <template x-for="l in levels" :key="l">
-          <button type="button" class="level-button" :class="{ active: level === l, done: levelDone(l) }" :aria-pressed="level === l" @click="setLevel(l)" x-text="l"></button>
-        </template>
-      </div>
-    </section>
-
-    <section class="search-panel" aria-label="Search the archive">
-      <form @submit.prevent="runSearch()" role="search">
-        <label class="sr-only" for="search-input">Search titles, phrases and history terms</label>
-        <input id="search-input" type="search" x-model="searchQuery" placeholder="Search the archive" autocomplete="off">
-        <button class="pill" type="submit" :disabled="!searchQuery.trim() || searching">Search</button>
-        <button class="link-button" type="button" x-show="searchResults.length" @click="clearSearch()">Clear</button>
-      </form>
-      <p class="notice" x-show="searching" aria-live="polite">Searching…</p>
-      <ul class="search-results" x-show="searchResults.length" aria-live="polite">
-        <template x-for="result in searchResults" :key="result.guid_hash + result.title">
-          <li>
-            <a :href="result.url || '#'" target="_blank" rel="noopener noreferrer" x-text="result.title"></a>
-            <span x-text="[result.date, result.level, result.source].filter(Boolean).join(' · ')"></span>
-            <p x-text="result.snippet"></p>
-          </li>
-        </template>
-      </ul>
-    </section>
-
-    <section class="progress-panel" aria-label="Progress">
-      <div class="progress-line">
-        <span>Today</span>
-        <div class="progress-track"><div class="progress-fill" :style="`width: ${todayPercent()}%`"></div></div>
-        <span x-text="`${todayCount()} / ${todayTotal()}`"></span>
-      </div>
-      <div class="progress-line">
-        <span>This week</span>
-        <div class="progress-track"><div class="progress-fill" :style="`width: ${weekPercent()}%`"></div></div>
-        <span x-text="`${weekCount()} / ${weeklyGoal}`"></span>
-      </div>
-    </section>
-
-    <nav class="tabs" role="tablist" aria-label="Category" data-eds-tabs
-         @keydown.arrow-right.prevent="cycleTab(1)" @keydown.arrow-left.prevent="cycleTab(-1)">
-      <button id="tab-news" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'news'" :tabindex="tab === 'news' ? 0 : -1" :class="{ active: tab === 'news' }" @click="setTab('news')">
-        News <span class="check" x-show="categoryDone('news')" aria-label="completed">&#10003;</span>
-      </button>
-      <button id="tab-culture" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'culture'" :tabindex="tab === 'culture' ? 0 : -1" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
-        Culture <span class="check" x-show="categoryDone('culture')" aria-label="completed">&#10003;</span>
-      </button>
-      <button id="tab-history" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'history'" :tabindex="tab === 'history' ? 0 : -1" :class="{ active: tab === 'history' }" @click="setTab('history')">
-        History <span class="check" x-show="categoryDone('history')" aria-label="completed">&#10003;</span>
-      </button>
-      <button id="tab-phrase" type="button" role="tab" aria-controls="phrase-panel" :aria-selected="tab === 'phrase'" :tabindex="tab === 'phrase' ? 0 : -1" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
-        Phrase <span class="check" x-show="phraseDone()" aria-label="completed">&#10003;</span>
-      </button>
-    </nav>
-
     <p class="notice offline-banner" x-show="mode === 'static' && !online" role="status" aria-live="polite">Offline — showing saved days and your local progress.</p>
     <p class="notice" x-show="loading" aria-live="polite">Loading…</p>
     <p class="notice error" x-show="error" x-text="error" aria-live="polite"></p>
 
-    <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="tab !== 'phrase'">
-      <article class="block text-block" x-show="currentText()">
-        <div class="block-head">
-          <div>
-            <h2 x-text="currentText()?.title"></h2>
-            <p class="byline"><span x-text="currentText()?.source"></span><span class="dot">·</span><span x-text="formatDate(currentText()?.published_at)"></span></p>
-          </div>
-          <div class="badges">
-            <span class="badge" x-text="currentText()?.level || '—'"></span>
-            <span class="meta" x-text="(currentText()?.word_count || 0) + ' words'"></span>
-            <template x-for="badge in currentText()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
-            <span class="check" x-show="isRead(currentText())" title="Read">&#10003;</span>
-          </div>
-        </div>
-        <div class="article-body">
-          <template x-for="(para, i) in paragraphs(currentText())" :key="i"><p x-text="para"></p></template>
-        </div>
-        <p class="attribution" x-show="currentText()?.attribution">
-          Source: <a :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="currentText()?.attribution"></a>
-        </p>
-        <div class="block-foot source-links">
-          <div class="source-link-list">
-            <a class="source-link" :href="currentText()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentText())">
-              <span class="source-link-label" x-text="sourceLabel('text')"></span>
-              <span class="source-link-source" x-text="sourceName(currentText())"></span>
-            </a>
-            <a class="pill pill-link" x-show="currentText()?.truncated && hasSourceUrl(currentText())" :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="'Read the full text on ' + sourceName(currentText())"></a>
-          </div>
-          <button class="pill" type="button" @click="markRead(currentText())" :disabled="isRead(currentText())" x-text="isRead(currentText()) ? 'Read ✓' : 'Mark as read'"></button>
-        </div>
-        <div x-ref="readSentinel" class="sentinel" aria-hidden="true"></div>
-      </article>
-      <div class="block empty" x-show="!currentText() && !loading">No text for this slot today.</div>
-
-      <section class="block audio-block" x-show="currentAudio()">
-        <div class="block-head">
-          <div>
-            <h2 x-text="currentAudio()?.title"></h2>
-            <p class="byline"><span x-text="currentAudio()?.source"></span><span class="dot">·</span><span x-text="formatDate(currentAudio()?.published_at)"></span></p>
-          </div>
-          <div class="badges">
-            <span class="badge" x-text="currentAudio()?.level || '—'"></span>
-            <span class="meta" x-text="formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
-            <template x-for="badge in currentAudio()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
-            <span class="check" x-show="isListened(currentAudio())" title="Listened">&#10003;</span>
-          </div>
-        </div>
-        <audio x-ref="audio" :src="currentAudio()?.audio_url || null" preload="none" referrerpolicy="no-referrer"
-               @loadedmetadata="onMeta()" @timeupdate="onTime()" @ended="onEnd()" @error="onAudioError()"></audio>
-        <p class="notice error" x-show="audioError" aria-live="polite">
-          Audio unavailable here. <a :href="currentAudio()?.url" target="_blank" rel="noopener noreferrer" x-text="sourceLabel('audio')"></a>
-        </p>
-        <div class="player">
-          <button class="play" type="button" @click="playPause()" :aria-label="playing ? 'Pause' : 'Play'" x-text="playing ? '❚❚' : '▶'"></button>
-          <input class="progress" type="range" min="0" :max="Math.max(duration || currentAudio()?.duration_sec || 0, 1)" step="1"
-                 :value="position" @input="seek($event)" aria-label="Seek audio">
-          <span class="time" x-text="formatTime(position) + ' / ' + formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
-          <div class="speeds" role="group" aria-label="Playback speed">
-            <template x-for="s in speeds" :key="s">
-              <button type="button" :class="{ active: speed === s }" :aria-pressed="speed === s" @click="setSpeed(s)" x-text="s + 'x'"></button>
-            </template>
-          </div>
-        </div>
-        <div class="block-foot source-links">
-          <a class="source-link" :href="currentAudio()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentAudio())">
-            <span class="source-link-label" x-text="sourceLabel('audio')"></span>
-            <span class="source-link-source" x-text="sourceName(currentAudio())"></span>
-          </a>
-        </div>
-        <p class="hint" x-text="isListened(currentAudio()) ? 'Listened' : 'Listens are saved locally once you reach 90%.'"></p>
-      </section>
-      <div class="block empty" x-show="!currentAudio() && !loading">No audio for this slot today.</div>
-    </main>
-
-    <main id="phrase-panel" class="reading phrase-reading" role="tabpanel" aria-labelledby="tab-phrase" x-show="tab === 'phrase'" data-eds-phrase>
-      <template x-if="phrase()">
-        <div class="phrase-grid">
-          <article class="block phrase-card">
-            <div class="block-head">
-              <h2 x-text="phrase()?.word?.text"></h2>
-              <span class="badge" x-text="phrase()?.word?.pos"></span>
-            </div>
-            <p class="phonetic" x-text="phrase()?.word?.phonetic || phrase()?.word?.dictionary?.phonetic || ''"></p>
-            <button class="pill" type="button" x-show="phrase()?.word?.dictionary?.audio_url" @click="playUrl(phrase()?.word?.dictionary?.audio_url)">Hear it</button>
-            <p x-text="phrase()?.word?.meaning"></p>
-            <p class="phrase-fr" x-text="phrase()?.word?.meaning_fr"></p>
-            <blockquote x-text="phrase()?.word?.example"></blockquote>
-            <ul class="definition-list" x-show="(phrase()?.word?.dictionary?.definitions || []).length">
-              <template x-for="(definition, i) in phrase()?.word?.dictionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
-            </ul>
-            <div class="block-foot">
-              <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" x-text="isLearned(phrase()?.word) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.word)" :disabled="!canExportAnki(phrase()?.word)" :title="ankiStatus(phrase()?.word)" :aria-label="ankiStatus(phrase()?.word)" @click="exportAnki([phrase()?.word])" x-text="ankiLabel(phrase()?.word)"></button>
-              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.word)"></span>
-            </div>
-          </article>
-          <article class="block phrase-card">
-            <div class="block-head">
-              <h2 x-text="phrase()?.expression?.expression"></h2>
-              <span class="badge" x-text="phrase()?.expression?.type"></span>
-            </div>
-            <p x-text="phrase()?.expression?.meaning"></p>
-            <p class="phrase-fr" x-text="phrase()?.expression?.meaning_fr"></p>
-            <blockquote x-text="phrase()?.expression?.example"></blockquote>
-            <button class="pill" type="button" x-show="phrase()?.expression?.audio?.audio_url" @click="playUrl(phrase()?.expression?.audio?.audio_url)">Hear it</button>
-            <ul class="definition-list" x-show="(phrase()?.expression?.wiktionary?.definitions || []).length">
-              <template x-for="(definition, i) in phrase()?.expression?.wiktionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
-            </ul>
-            <div class="block-foot">
-              <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" x-text="isLearned(phrase()?.expression) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.expression)" :disabled="!canExportAnki(phrase()?.expression)" :title="ankiStatus(phrase()?.expression)" :aria-label="ankiStatus(phrase()?.expression)" @click="exportAnki([phrase()?.expression])" x-text="ankiLabel(phrase()?.expression)"></button>
-              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.expression)"></span>
-            </div>
-          </article>
-          <article class="block phrase-card history-card" x-show="phrase()?.history">
-            <div class="block-head">
-              <h2 x-text="phrase()?.history?.text"></h2>
-              <span class="badge" x-text="phrase()?.history?.period || 'history'"></span>
-            </div>
-            <p class="phrase-fr" x-text="phrase()?.history?.theme || ''"></p>
-            <p x-text="phrase()?.history?.meaning"></p>
-            <p class="phrase-fr" x-text="phrase()?.history?.meaning_fr"></p>
-            <blockquote x-text="phrase()?.history?.example"></blockquote>
-            <div class="block-foot">
-              <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" x-text="isLearned(phrase()?.history) ? 'Learned ✓' : 'Mark learned'"></button>
-              <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.history)" :disabled="!canExportAnki(phrase()?.history)" :title="ankiStatus(phrase()?.history)" :aria-label="ankiStatus(phrase()?.history)" @click="exportAnki([phrase()?.history])" x-text="ankiLabel(phrase()?.history)"></button>
-              <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.history)"></span>
-            </div>
-          </article>
-        </div>
-      </template>
-      <div class="block empty" x-show="!phrase() && !loading">No phrase for this level today.</div>
-    </main>
-
-    <section class="block exercises" x-show="tab === 'phrase' && exercises().length" data-eds-exercises aria-label="Daily exercises">
-      <div class="block-head">
+    <section id="today-view" class="view" x-show="route === 'today'" aria-labelledby="hero-title">
+      <div class="hero" data-eds-hero>
         <div>
-          <h2>Daily practice</h2>
-          <p class="byline" x-text="`${exerciseProgress().done} / ${exerciseProgress().total} answered`"></p>
+          <p class="eyebrow" x-text="longDate(selectedDate)"></p>
+          <h1 id="hero-title" x-text="tagline">A little English, every day.</h1>
+          <p class="hero-copy">Choose a level, then read and listen to real-world English selected for today.</p>
         </div>
-        <div class="progress-track exercise-progress"><div class="progress-fill" :style="`width: ${exerciseProgress().percent}%`"></div></div>
+        <div class="practice-summary" aria-label="Practice summary">
+          <span x-text="`Today ${todayCount()} / ${todayTotal()}`"></span>
+          <span x-text="`This week ${weekCount()} / ${weeklyGoal}`"></span>
+        </div>
       </div>
-      <ol class="exercise-list">
-        <template x-for="exercise in exercises()" :key="exercise.id">
-          <li>
-            <p class="exercise-prompt"><span class="badge" x-text="exercise.level"></span> <span x-text="exercise.prompt"></span></p>
-            <div class="exercise-options" role="group" :aria-label="exercise.prompt">
-              <template x-for="option in exercise.options" :key="option">
-                <button class="pill" type="button" @click="answerExercise(exercise, option)"
-                        :aria-pressed="exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option)"
-                        :class="{ correct: exerciseAnswer(exercise) && String(option) === String(exercise.answer), wrong: exerciseAnswer(exercise) && String(exerciseAnswer(exercise).option) === String(option) && !exerciseAnswer(exercise).correct }"
-                        x-text="option"></button>
+
+      <section class="controls" aria-label="Reading controls">
+        <div class="date-control">
+          <button class="icon-button" type="button" @click="shiftDate(-1)" aria-label="Previous day" :disabled="!canShift(-1)">&#8592;</button>
+          <label class="sr-only" for="day-select">Date</label>
+          <select id="day-select" x-model="selectedDate" @change="loadDay()">
+            <template x-for="d in days" :key="d"><option :value="d" x-text="d"></option></template>
+          </select>
+          <button class="icon-button" type="button" @click="shiftDate(1)" aria-label="Next day" :disabled="!canShift(1)">&#8594;</button>
+        </div>
+        <div class="levels" role="group" aria-label="CEFR level" data-eds-level>
+          <template x-for="l in levels" :key="l">
+            <button type="button" class="level-button" :class="{ active: level === l, done: levelDone(l) }" :aria-pressed="level === l" @click="setLevel(l)" x-text="l"></button>
+          </template>
+        </div>
+      </section>
+
+      <nav class="tabs" role="tablist" aria-label="Category" data-eds-tabs
+           @keydown.arrow-right.prevent="cycleTab(1)" @keydown.arrow-left.prevent="cycleTab(-1)">
+        <button id="tab-news" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'news'" :tabindex="tab === 'news' ? 0 : -1" :class="{ active: tab === 'news' }" @click="setTab('news')">
+          News <span class="check" x-show="categoryDone('news')" aria-label="completed">&#10003;</span>
+        </button>
+        <button id="tab-culture" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'culture'" :tabindex="tab === 'culture' ? 0 : -1" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
+          Culture <span class="check" x-show="categoryDone('culture')" aria-label="completed">&#10003;</span>
+        </button>
+        <button id="tab-history" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'history'" :tabindex="tab === 'history' ? 0 : -1" :class="{ active: tab === 'history' }" @click="setTab('history')">
+          History <span class="check" x-show="categoryDone('history')" aria-label="completed">&#10003;</span>
+        </button>
+        <button id="tab-phrase" type="button" role="tab" aria-controls="phrase-panel" :aria-selected="tab === 'phrase'" :tabindex="tab === 'phrase' ? 0 : -1" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
+          Phrase <span class="check" x-show="phraseDone()" aria-label="completed">&#10003;</span>
+        </button>
+      </nav>
+
+      <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="tab !== 'phrase'">
+        <article class="block text-block" x-show="currentText()">
+          <div class="block-head">
+            <div>
+              <h2 x-text="currentText()?.title"></h2>
+              <p class="byline"><span x-text="currentText()?.source"></span><span class="dot">·</span><span x-text="formatDate(currentText()?.published_at)"></span></p>
+            </div>
+            <div class="badges">
+              <span class="badge" x-text="currentText()?.level || '—'"></span>
+              <span class="meta" x-text="(currentText()?.word_count || 0) + ' words'"></span>
+              <template x-for="badge in currentText()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
+              <span class="check" x-show="isRead(currentText())" title="Read">&#10003;</span>
+            </div>
+          </div>
+          <div class="article-body">
+            <template x-for="(para, i) in paragraphs(currentText())" :key="i"><p x-text="para"></p></template>
+          </div>
+          <p class="attribution" x-show="currentText()?.attribution">
+            Source: <a :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="currentText()?.attribution"></a>
+          </p>
+          <div class="block-foot source-links">
+            <div class="source-link-list">
+              <a class="source-link" :href="currentText()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentText())">
+                <span class="source-link-label" x-text="sourceLabel('text')"></span>
+                <span class="source-link-source" x-text="sourceName(currentText())"></span>
+              </a>
+              <a class="pill pill-link" x-show="currentText()?.truncated && hasSourceUrl(currentText())" :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="'Read the full text on ' + sourceName(currentText())"></a>
+            </div>
+            <button class="pill" type="button" @click="markRead(currentText())" :disabled="isRead(currentText())" x-text="isRead(currentText()) ? 'Read ✓' : 'Mark as read'"></button>
+          </div>
+          <div x-ref="readSentinel" class="sentinel" aria-hidden="true"></div>
+        </article>
+        <div class="block empty" x-show="!currentText() && !loading">No text for this slot today.</div>
+
+        <section class="block audio-block" x-show="currentAudio()">
+          <div class="block-head">
+            <div>
+              <h2 x-text="currentAudio()?.title"></h2>
+              <p class="byline"><span x-text="currentAudio()?.source"></span><span class="dot">·</span><span x-text="formatDate(currentAudio()?.published_at)"></span></p>
+            </div>
+            <div class="badges">
+              <span class="badge" x-text="currentAudio()?.level || '—'"></span>
+              <span class="meta" x-text="formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
+              <template x-for="badge in currentAudio()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
+              <span class="check" x-show="isListened(currentAudio())" title="Listened">&#10003;</span>
+            </div>
+          </div>
+          <audio x-ref="audio" :src="currentAudio()?.audio_url || null" preload="none" referrerpolicy="no-referrer"
+                 @loadedmetadata="onMeta()" @timeupdate="onTime()" @ended="onEnd()" @error="onAudioError()"></audio>
+          <p class="notice error" x-show="audioError" aria-live="polite">
+            Audio unavailable here. <a :href="currentAudio()?.url" target="_blank" rel="noopener noreferrer" x-text="sourceLabel('audio')"></a>
+          </p>
+          <div class="player">
+            <button class="play" type="button" @click="playPause()" :aria-label="playing ? 'Pause' : 'Play'" x-text="playing ? '❚❚' : '▶'"></button>
+            <input class="progress" type="range" min="0" :max="Math.max(duration || currentAudio()?.duration_sec || 0, 1)" step="1"
+                   :value="position" @input="seek($event)" aria-label="Seek audio">
+            <span class="time" x-text="formatTime(position) + ' / ' + formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
+            <div class="speeds" role="group" aria-label="Playback speed">
+              <template x-for="s in speeds" :key="s">
+                <button type="button" :class="{ active: speed === s }" :aria-pressed="speed === s" @click="setSpeed(s)" x-text="s + 'x'"></button>
               </template>
             </div>
-            <p class="exercise-feedback" x-show="exerciseAnswer(exercise)" aria-live="polite"
-               x-text="exerciseAnswer(exercise) && exerciseAnswer(exercise).correct ? 'Correct.' : 'Answer: ' + exercise.answer"></p>
-          </li>
+          </div>
+          <div class="block-foot source-links">
+            <a class="source-link" :href="currentAudio()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentAudio())">
+              <span class="source-link-label" x-text="sourceLabel('audio')"></span>
+              <span class="source-link-source" x-text="sourceName(currentAudio())"></span>
+            </a>
+          </div>
+          <p class="hint" x-text="isListened(currentAudio()) ? 'Listened' : 'Listens are saved locally once you reach 90%.'"></p>
+        </section>
+        <div class="block empty" x-show="!currentAudio() && !loading">No audio for this slot today.</div>
+      </main>
+
+      <main id="phrase-panel" class="reading phrase-reading" role="tabpanel" aria-labelledby="tab-phrase" x-show="tab === 'phrase'" data-eds-phrase>
+        <template x-if="phrase()">
+          <div class="phrase-grid">
+            <article class="block phrase-card">
+              <div class="block-head">
+                <h2 x-text="phrase()?.word?.text"></h2>
+                <span class="badge" x-text="phrase()?.word?.pos"></span>
+              </div>
+              <p class="phonetic" x-text="phrase()?.word?.phonetic || phrase()?.word?.dictionary?.phonetic || ''"></p>
+              <button class="pill" type="button" x-show="phrase()?.word?.dictionary?.audio_url" @click="playUrl(phrase()?.word?.dictionary?.audio_url)">Hear it</button>
+              <p x-text="phrase()?.word?.meaning"></p>
+              <p class="phrase-fr" x-text="phrase()?.word?.meaning_fr"></p>
+              <blockquote x-text="phrase()?.word?.example"></blockquote>
+              <ul class="definition-list" x-show="(phrase()?.word?.dictionary?.definitions || []).length">
+                <template x-for="(definition, i) in phrase()?.word?.dictionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
+              </ul>
+              <div class="block-foot">
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" x-text="isLearned(phrase()?.word) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.word)" :disabled="!canExportAnki(phrase()?.word)" :title="ankiStatus(phrase()?.word)" :aria-label="ankiStatus(phrase()?.word)" @click="exportAnki([phrase()?.word])" x-text="ankiLabel(phrase()?.word)"></button>
+                <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.word)"></span>
+              </div>
+            </article>
+            <article class="block phrase-card">
+              <div class="block-head">
+                <h2 x-text="phrase()?.expression?.expression"></h2>
+                <span class="badge" x-text="phrase()?.expression?.type"></span>
+              </div>
+              <p x-text="phrase()?.expression?.meaning"></p>
+              <p class="phrase-fr" x-text="phrase()?.expression?.meaning_fr"></p>
+              <blockquote x-text="phrase()?.expression?.example"></blockquote>
+              <button class="pill" type="button" x-show="phrase()?.expression?.audio?.audio_url" @click="playUrl(phrase()?.expression?.audio?.audio_url)">Hear it</button>
+              <ul class="definition-list" x-show="(phrase()?.expression?.wiktionary?.definitions || []).length">
+                <template x-for="(definition, i) in phrase()?.expression?.wiktionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
+              </ul>
+              <div class="block-foot">
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" x-text="isLearned(phrase()?.expression) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.expression)" :disabled="!canExportAnki(phrase()?.expression)" :title="ankiStatus(phrase()?.expression)" :aria-label="ankiStatus(phrase()?.expression)" @click="exportAnki([phrase()?.expression])" x-text="ankiLabel(phrase()?.expression)"></button>
+                <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.expression)"></span>
+              </div>
+            </article>
+            <article class="block phrase-card history-card" x-show="phrase()?.history">
+              <div class="block-head">
+                <h2 x-text="phrase()?.history?.text"></h2>
+                <span class="badge" x-text="phrase()?.history?.period || 'history'"></span>
+              </div>
+              <p class="phrase-fr" x-text="phrase()?.history?.theme || ''"></p>
+              <p x-text="phrase()?.history?.meaning"></p>
+              <p class="phrase-fr" x-text="phrase()?.history?.meaning_fr"></p>
+              <blockquote x-text="phrase()?.history?.example"></blockquote>
+              <div class="block-foot">
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" x-text="isLearned(phrase()?.history) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.history)" :disabled="!canExportAnki(phrase()?.history)" :title="ankiStatus(phrase()?.history)" :aria-label="ankiStatus(phrase()?.history)" @click="exportAnki([phrase()?.history])" x-text="ankiLabel(phrase()?.history)"></button>
+                <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.history)"></span>
+              </div>
+            </article>
+          </div>
         </template>
-      </ol>
+        <div class="block empty" x-show="!phrase() && !loading">No phrase for this level today.</div>
+      </main>
+
+      <section class="block exercises" x-show="tab === 'phrase' && exercises().length" data-eds-exercises aria-label="Daily exercises">
+        <div class="block-head">
+          <div>
+            <h2>Daily practice</h2>
+            <p class="byline" x-text="`${exerciseProgress().done} / ${exerciseProgress().total} answered`"></p>
+          </div>
+          <div class="progress-track exercise-progress"><div class="progress-fill" :style="`width: ${exerciseProgress().percent}%`"></div></div>
+        </div>
+        <ol class="exercise-list">
+          <template x-for="exercise in exercises()" :key="exercise.id">
+            <li>
+              <p class="exercise-prompt"><span class="badge" x-text="exercise.level"></span> <span x-text="exercise.prompt"></span></p>
+              <div class="exercise-options" role="group" :aria-label="exercise.prompt">
+                <template x-for="option in exercise.options" :key="option">
+                  <button class="pill" type="button" @click="answerExercise(exercise, option)"
+                          :aria-pressed="visibleExerciseAnswer(exercise) && String(visibleExerciseAnswer(exercise).option) === String(option)"
+                          :class="{ correct: visibleExerciseAnswer(exercise) && String(option) === String(exercise.answer), wrong: visibleExerciseAnswer(exercise) && String(visibleExerciseAnswer(exercise).option) === String(option) && !visibleExerciseAnswer(exercise).correct }"
+                          x-text="option"></button>
+                </template>
+              </div>
+              <p class="exercise-feedback" x-show="visibleExerciseAnswer(exercise)" aria-live="polite"
+                 x-text="visibleExerciseAnswer(exercise) && visibleExerciseAnswer(exercise).correct ? 'Correct.' : 'Answer: ' + exercise.answer"></p>
+            </li>
+          </template>
+        </ol>
+      </section>
     </section>
 
-    <section class="block glossary" x-show="glossary().length" data-eds-glossary>
-      <div class="block-head">
-        <h2>My glossary</h2>
-        <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable()" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
+    <section id="archive-view" class="view" x-show="route === 'archive'" aria-labelledby="archive-title">
+      <div class="view-head">
+        <p class="eyebrow">Your reading history</p>
+        <h1 id="archive-title">Archive</h1>
+        <p>Browse saved days, search titles, phrases and history terms, and jump back into any edition.</p>
       </div>
-      <ul>
-        <template x-for="entry in glossary()" :key="entry.key">
-          <li>
-            <strong x-text="entry.text"></strong>
-            <span x-text="entry.meaning_fr"></span>
-            <button class="link-button" type="button" @click="forgetPhrase(entry.key)">remove</button>
-          </li>
-        </template>
-      </ul>
+      <section class="block archive-calendar" aria-label="Edition calendar" data-eds-calendar>
+        <div class="calendar-head">
+          <button class="icon-button" type="button" @click="shiftArchiveMonth(-1)" aria-label="Previous month" :disabled="!canShiftMonth(-1)">&#8592;</button>
+          <h2 x-text="calendar().label" aria-live="polite"></h2>
+          <button class="icon-button" type="button" @click="shiftArchiveMonth(1)" aria-label="Next month" :disabled="!canShiftMonth(1)">&#8594;</button>
+          <button class="pill" type="button" @click="goToday()">Today</button>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <template x-for="name in weekdays" :key="name"><span x-text="name"></span></template>
+        </div>
+        <div class="calendar-grid" role="grid" :aria-label="calendar().label + ' editions'">
+          <template x-for="(cell, index) in calendar().cells" :key="cell.date || 'blank-' + index">
+            <button class="calendar-day" type="button" role="gridcell" :class="{ available: cell.available, selected: cell.selected, today: cell.today }" :disabled="!cell.available" :aria-label="cell.ariaLabel" :aria-selected="cell.selected" @click="selectArchiveDate(cell.date)" x-text="cell.day"></button>
+          </template>
+        </div>
+        <p class="notice" x-show="!calendar().availableCount">No editions in this month.</p>
+      </section>
+      <section class="block archive-list" aria-label="Recent editions">
+        <div class="block-head">
+          <h2>Recent editions</h2>
+          <span class="meta" x-text="days.length + ' saved days'"></span>
+        </div>
+        <ul class="archive-days">
+          <template x-for="date in archiveDates()" :key="date">
+            <li>
+              <button class="link-button archive-day" type="button" @click="selectArchiveDate(date)" :class="{ active: date === selectedDate }">
+                <span x-text="longDate(date)"></span>
+                <span class="badge" x-show="date === todayKey()">Today</span>
+              </button>
+            </li>
+          </template>
+        </ul>
+      </section>
+      <section class="block search-panel" aria-label="Search the archive" data-eds-search>
+        <form @submit.prevent="runSearch()" role="search">
+          <label class="sr-only" for="search-input">Search titles, phrases and history terms</label>
+          <input id="search-input" type="search" x-model="searchQuery" placeholder="Search the archive" autocomplete="off">
+          <button class="pill" type="submit" :disabled="!searchQuery.trim() || searching">Search</button>
+          <button class="link-button" type="button" x-show="searchResults.length" @click="clearSearch()">Clear</button>
+        </form>
+        <p class="notice" x-show="searching" aria-live="polite">Searching…</p>
+        <ul class="search-results" x-show="searchResults.length" aria-live="polite">
+          <template x-for="result in searchResults" :key="result.guid_hash + result.title">
+            <li>
+              <a :href="result.url || '#'" target="_blank" rel="noopener noreferrer" x-text="result.title"></a>
+              <span x-text="[result.date, result.level, result.source].filter(Boolean).join(' · ')"></span>
+              <p x-text="result.snippet"></p>
+              <button class="link-button" type="button" x-show="result.date" @click="openSearchResult(result)">Open edition</button>
+            </li>
+          </template>
+        </ul>
+      </section>
     </section>
 
+    <section id="glossary-view" class="view" x-show="route === 'glossary'" aria-labelledby="glossary-title">
+      <div class="view-head">
+        <p class="eyebrow">Words you chose to keep</p>
+        <h1 id="glossary-title">My glossary</h1>
+        <p>These learned phrases stay in this browser. Export them to Anki whenever you are ready.</p>
+      </div>
+      <section class="block glossary" x-show="glossary().length" data-eds-glossary>
+        <div class="block-head">
+          <h2>Saved phrases</h2>
+          <div class="anki-actions">
+            <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable() || !glossary().length" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
+            <button class="pill" type="button" data-eds-anki-connect-check :disabled="!glossary().length || ankiConnectBusy" @click="checkAnkiConnect()">Check AnkiConnect</button>
+            <button class="pill" type="button" data-eds-anki-connect :disabled="!glossary().length || ankiConnectBusy" @click="sendAnkiConnect()">Send to AnkiConnect</button>
+          </div>
+        </div>
+        <p class="anki-status" data-eds-anki-connect-status aria-live="polite" x-text="ankiConnectStatus"></p>
+        <ul>
+          <template x-for="entry in glossary()" :key="entry.key">
+            <li>
+              <strong x-text="entry.text"></strong>
+              <span x-text="entry.meaning_fr"></span>
+              <button class="link-button" type="button" @click="forgetPhrase(entry.key)">remove</button>
+            </li>
+          </template>
+        </ul>
+      </section>
+      <div class="block empty" x-show="!glossary().length">No saved phrases yet. Mark a word, expression or history term as learned.</div>
+    </section>
+
+    <section id="settings-view" class="view" x-show="route === 'settings'" aria-labelledby="settings-title" data-eds-settings>
+      <div class="view-head">
+        <p class="eyebrow">Make it yours</p>
+        <h1 id="settings-title">Settings</h1>
+        <p>Appearance, reading and export preferences live here.</p>
+      </div>
+      <div class="settings-grid" data-eds-settings-controls>
+        <fieldset class="block settings-card">
+          <legend>Appearance</legend>
+          <p class="byline">Choose a palette. System follows your device setting.</p>
+          <div class="setting-options" role="group" aria-label="Theme preset">
+            <template x-for="preset in themePresets" :key="preset.value">
+              <button class="pill" type="button" :class="{ active: prefs.theme === preset.value }" :aria-pressed="prefs.theme === preset.value" @click="setPreference('theme', preset.value)" x-text="preset.label"></button>
+            </template>
+          </div>
+          <p class="setting-label">Text size</p>
+          <div class="setting-options" role="group" aria-label="Text size">
+            <template x-for="size in textSizes" :key="size.value">
+              <button class="pill" type="button" :class="{ active: prefs.textSize === size.value }" :aria-pressed="prefs.textSize === size.value" @click="setPreference('textSize', size.value)" x-text="size.label"></button>
+            </template>
+          </div>
+          <p class="setting-label">Reading font</p>
+          <div class="setting-options" role="group" aria-label="Reading font">
+            <template x-for="font in readingFonts" :key="font.value">
+              <button class="pill" type="button" :class="{ active: prefs.readingFont === font.value }" :aria-pressed="prefs.readingFont === font.value" @click="setPreference('readingFont', font.value)" x-text="font.label"></button>
+            </template>
+          </div>
+        </fieldset>
+        <fieldset class="block settings-card">
+          <legend>Reading and practice</legend>
+          <p class="setting-label">Default audio speed</p>
+          <div class="setting-options" role="group" aria-label="Default audio speed">
+            <template x-for="option in speedOptions" :key="option">
+              <button class="pill" type="button" :class="{ active: prefs.speed === option }" :aria-pressed="prefs.speed === option" @click="setPreference('speed', option)" x-text="option + 'x'"></button>
+            </template>
+          </div>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.showFeedback" @change="setPreference('showFeedback', $event.target.checked)"> Show exercise answers immediately</label>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.autoMarkRead" @change="setPreference('autoMarkRead', $event.target.checked)"> Mark texts as read while scrolling</label>
+          <label class="setting-toggle"><input type="checkbox" :checked="prefs.reduceMotion" @change="setPreference('reduceMotion', $event.target.checked)"> Reduce motion</label>
+          <label class="setting-label" for="anki-connect-url">AnkiConnect URL</label>
+          <input id="anki-connect-url" class="setting-input" type="url" inputmode="url" spellcheck="false" :value="prefs.ankiConnectUrl" @change="setPreference('ankiConnectUrl', $event.target.value)">
+          <div class="block-foot">
+            <span class="anki-status" aria-live="polite">Saved in this browser.</span>
+            <button class="pill" type="button" @click="resetPreferences()">Reset settings</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="tour-spotlight" aria-hidden="true" x-show="tourOpen()" x-ref="tourSpotlight" :style="tourSpotlightStyle()"></div>
     <section class="tour-dialog" role="dialog" aria-modal="true" aria-labelledby="tour-title"
-             x-show="tourOpen()" x-ref="tourDialog" tabindex="-1">
+             x-show="tourOpen()" x-ref="tourDialog" tabindex="-1" @keydown.tab.stop="trapTourTab($event)">
       <div class="block">
         <p class="eyebrow" x-text="`Tour ${tourState().index + 1} / ${tourSteps().length}`"></p>
         <h2 id="tour-title" x-text="tourStep()?.title || 'Welcome'"></h2>
