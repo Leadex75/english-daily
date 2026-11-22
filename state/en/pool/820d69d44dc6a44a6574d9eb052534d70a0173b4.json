@@ -1,0 +1,51 @@
+{
+  "guid_hash": "820d69d44dc6a44a6574d9eb052534d70a0173b4",
+  "source_id": "librivox_history",
+  "kind": "audio",
+  "category": "history",
+  "title": "Around the World in Seventy-Two Days - The Start",
+  "url": "https://librivox.org/around-the-world-in-seventy-two-days-by-nellie-bly/",
+  "summary": "Around the World in Seventy-Two Days by . This is a true account by American woman journalist who, in 1889, set out to see whether she could beat the fictional journey in Jules Verne’s 1873 novel, Around the World in Eighty Days . Wearing one dress and carrying one handbag, Elizabeth Cochrane Seaman (pen name “Nellie Bly”), reported her travels back to avid readers in America. (Summary by Mary Rea",
+  "published_at": "2026-11-22T13:06:36",
+  "added_at": "2026-11-22T13:06:36",
+  "body_text": null,
+  "word_count": 66,
+  "duration_sec": 1225,
+  "audio_remote_url": "https://www.archive.org/download/seventy_two_days_librivox/seventy_two_days_02_bly_64kb.mp3",
+  "score": 0.4294,
+  "fk_grade": 9.781,
+  "avg_sentence_len": 16.5,
+  "rare_word_ratio": 0.0638,
+  "level": "B2",
+  "level_method": "source",
+  "license": "public_domain",
+  "attribution": "LibriVox (public domain recording)",
+  "origin": "reserve",
+  "lang": "en",
+  "periods": [
+    "General"
+  ],
+  "themes": [
+    "Society"
+  ],
+  "history_terms": [
+    {
+      "text": "name",
+      "aliases": [
+        "name",
+        "names"
+      ],
+      "level": "A1",
+      "meaning": "what a person or place is called",
+      "meaning_fr": "nom",
+      "period": "General",
+      "theme": "Society",
+      "example": "The city changed its name.",
+      "tags": [
+        "language"
+      ]
+    }
+  ],
+  "transcript_url": null,
+  "transcript_text": null
+}

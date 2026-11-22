@@ -10,26 +10,26 @@
     "culture": {
       "text": null,
       "audio": {
-        "id": 1352225680,
-        "title": "Twenty Years After - 02 - A Nightly Patrol.",
+        "id": 1123778132,
+        "title": "Anne of Avonlea - Mr. Harrison at Home",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/twenty-years-after-by-alexandre-dumas/",
-        "published_at": "2026-11-22T11:50:09",
+        "url": "https://librivox.org/anne-of-avonlea-by-lucy-maud-montgomery/",
+        "published_at": "2026-11-22T13:06:19",
         "level": "A1",
         "slot_level": "A1",
         "source_level": "A2",
-        "word_count": 17,
-        "duration_sec": 1178,
+        "word_count": 74,
+        "duration_sec": 994,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/twentyyearsafter_0904_librivox/twentyyearsafter_02_dumas_64kb.mp3",
-        "description": "Twenty Years After by . Let's continue the D'Artagnan Romances that we've already started with The Three Musketeers.",
+        "audio_url": "https://www.archive.org/download/anne_avonlea/anne_of_avonlea_03_montgomery_64kb.mp3",
+        "description": "Anne of Avonlea by . Following Anne of Green Gables, the book covers the second chapter in the life of Anne Shirley. Anne of Avonlea follows Anne from the age of 16 to 18, during the two years that she teaches at Avonlea school. It includes many of the characters from Anne of Green Gables, as well new ones like Mr Harrison, Miss Lavendar Lewis, Paul Irving, and the twins Dora and Davy. (Summary fr",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "cdde88677a4d884a28fdab25d515c8c79f517863",
-        "summary": "Twenty Years After by . Let's continue the D'Artagnan Romances that we've already started with The Three Musketeers.",
+        "guid_hash": "1be7ab81e6069ddf99caa09f14f1bd0d5092306e",
+        "summary": "Anne of Avonlea by . Following Anne of Green Gables, the book covers the second chapter in the life of Anne Shirley. Anne of Avonlea follows Anne from the age of 16 to 18, during the two years that she teaches at Avonlea school. It includes many of the characters from Anne of Green Gables, as well new ones like Mr Harrison, Miss Lavendar Lewis, Paul Irving, and the twins Dora and Davy. (Summary fr",
         "origin": "adjacent",
         "badges": [
           "Reserve · LibriVox (culture)",
@@ -38,8 +38,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Twenty Years After - 02 - A Nightly Patrol. — LibriVox (culture)",
-        "duration_formatted": "19:38",
+        "alt_text": "Anne of Avonlea - Mr. Harrison at Home — LibriVox (culture)",
+        "duration_formatted": "16:34",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -53,331 +53,327 @@
     "date": "2026-11-22",
     "level": "A1",
     "word": {
-      "text": "school",
+      "text": "sleep",
       "level": "A1",
       "type": "word",
-      "pos": "noun",
-      "phonetic": "/skuːl/",
-      "meaning": "a place where children learn",
-      "meaning_fr": "école",
-      "example": "The school opens at eight.",
-      "anki_answer": "école",
+      "pos": "verb",
+      "phonetic": "/sliːp/",
+      "meaning": "rest with your eyes closed at night",
+      "meaning_fr": "dormir",
+      "example": "Babies sleep a lot.",
+      "anki_answer": "dormir",
       "tags": [
-        "education"
+        "daily"
       ],
-      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/skuːl/",
+        "phonetic": "/sliːp/",
         "definitions": [
-          "(collective) A group of fish or a group of marine mammals such as porpoises, dolphins, or whales.",
-          "A multitude.",
-          "(of fish) To form into, or travel in a school."
+          "To rest in a state of reduced consciousness.",
+          "(of a spinning top or yo-yo) To spin on its axis with no other perceptible motion.",
+          "To cause (a spinning top or yo-yo) to spin on its axis with no other perceptible motion.",
+          "To accommodate in beds."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/school-uk.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/sleep-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/institution\" title=\"institution\">institution</a> dedicated to <a rel=\"mw:WikiLink\" href=\"/wiki/teaching\" title=\"teaching\">teaching</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/learning\" title=\"learning\">learning</a>; an <a rel=\"mw:WikiLink\" href=\"/wiki/educational\" title=\"educational\">educational</a> institution.",
-          "<span class=\"usage-label-sense\" about=\"#mwt45\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/educational_institution\" title=\"educational institution\">educational institution</a> providing <a rel=\"mw:WikiLink\" href=\"/wiki/primary_education\" title=\"primary education\">primary</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/secondary_education\" title=\"secondary education\">secondary education</a>, prior to <a rel=\"mw:WikiLink\" href=\"/wiki/tertiary_education\" title=\"tertiary education\">tertiary education</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/college\" title=\"college\">college</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/university\" title=\"university\">university</a>).",
-          "<span class=\"usage-label-sense\" about=\"#mwt47\" typeof=\"mw:Transclusion\"></span> At <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Eton%20College\" title=\"w:Eton College\" about=\"#mwt48\" typeof=\"mw:Transclusion\" class=\"extiw\">Eton College</a>, a <a rel=\"mw:WikiLink\" href=\"/wiki/period\" title=\"period\">period</a> or session of teaching.",
-          "Within a larger educational institution, an organizational unit, such as a <a rel=\"mw:WikiLink\" href=\"/wiki/department\" title=\"department\">department</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/institute\" title=\"institute\">institute</a>, which is dedicated to a specific subject area."
+          "<span class=\"usage-label-sense\" about=\"#mwt56\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/rest\" title=\"rest\">rest</a> in a state of <a rel=\"mw:WikiLink\" href=\"/wiki/reduce\" title=\"reduce\">reduced</a> <a rel=\"mw:WikiLink\" href=\"/wiki/consciousness\" title=\"consciousness\">consciousness</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt59\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/sexual_intercourse\" title=\"sexual intercourse\">sexual intercourse</a> (see <a rel=\"mw:WikiLink\" href=\"/wiki/sleep_with\" title=\"sleep with\">sleep with</a>).",
+          "<span class=\"usage-label-sense\" about=\"#mwt61\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/accommodate\" title=\"accommodate\">accommodate</a> in beds.",
+          "<span class=\"usage-label-sense\" about=\"#mwt64\" typeof=\"mw:Transclusion\"></span> To be careless, inattentive, or unconcerned; not to be vigilant; to live thoughtlessly."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "wait for",
+      "expression": "watch TV",
       "level": "A1",
       "type": "collocation",
-      "meaning": "stay until someone or something arrives",
-      "meaning_fr": "attendre",
-      "example": "I wait for the bus here.",
-      "anki_answer": "attendre",
+      "meaning": "look at television programmes",
+      "meaning_fr": "regarder la télé",
+      "example": "They watch TV in the evening.",
+      "anki_answer": "regarder télé",
       "tags": [
         "daily"
       ],
-      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
+      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {
-        "definitions": [
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/wait\" title=\"wait\">wait</a> until the specified event occurs.",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/await\" title=\"await\">await</a> the arrival of."
-        ]
-      },
+      "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "child",
+      "text": "city",
       "aliases": [
-        "child",
-        "children"
+        "city",
+        "town"
       ],
       "level": "A1",
-      "meaning": "a young human being",
-      "meaning_fr": "enfant",
+      "meaning": "a large place where people live and work",
+      "meaning_fr": "ville",
       "period": "General",
       "theme": "Society",
-      "example": "The child listened to the old story.",
+      "example": "Rome is an ancient city.",
       "tags": [
-        "people"
+        "places"
       ],
-      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
       "kind": "word",
       "level": "A1",
-      "text": "school",
-      "meaning": "a place where children learn",
-      "meaning_fr": "école",
-      "example": "The school opens at eight.",
-      "phonetic": "/skuːl/",
-      "anki_answer": "école",
-      "tags": [
-        "education"
-      ]
-    },
-    {
-      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
-      "kind": "expression",
-      "level": "A1",
-      "text": "wait for",
-      "meaning": "stay until someone or something arrives",
-      "meaning_fr": "attendre",
-      "example": "I wait for the bus here.",
-      "phonetic": "",
-      "anki_answer": "attendre",
+      "text": "sleep",
+      "meaning": "rest with your eyes closed at night",
+      "meaning_fr": "dormir",
+      "example": "Babies sleep a lot.",
+      "phonetic": "/sliːp/",
+      "anki_answer": "dormir",
       "tags": [
         "daily"
       ]
     },
     {
-      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "kind": "expression",
+      "level": "A1",
+      "text": "watch TV",
+      "meaning": "look at television programmes",
+      "meaning_fr": "regarder la télé",
+      "example": "They watch TV in the evening.",
+      "phonetic": "",
+      "anki_answer": "regarder télé",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
       "kind": "history",
       "level": "A1",
-      "text": "child",
-      "meaning": "a young human being",
-      "meaning_fr": "enfant",
-      "example": "The child listened to the old story.",
+      "text": "city",
+      "meaning": "a large place where people live and work",
+      "meaning_fr": "ville",
+      "example": "Rome is an ancient city.",
       "phonetic": "",
-      "anki_answer": "enfant",
+      "anki_answer": "ville",
       "tags": [
-        "people"
+        "places"
       ]
     },
     {
-      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
       "kind": "word",
       "level": "A2",
-      "text": "neighbour",
-      "meaning": "a person who lives near you",
-      "meaning_fr": "voisin",
-      "example": "Our neighbour has a garden.",
-      "phonetic": "/ˈneɪbər/",
-      "anki_answer": "voisin",
+      "text": "pocket",
+      "meaning": "a small bag in clothing",
+      "meaning_fr": "poche",
+      "example": "The key is in my pocket.",
+      "phonetic": "/ˈpɑːkɪt/",
+      "anki_answer": "poche",
       "tags": [
-        "people"
+        "clothes"
       ]
     },
     {
-      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "key": "72c14350149902e62661267191dc176e22669331",
       "kind": "expression",
       "level": "A2",
-      "text": "be interested in",
-      "meaning": "want to know about something",
-      "meaning_fr": "être intéressé par",
-      "example": "I am interested in history.",
+      "text": "be proud of",
+      "meaning": "feel pleased with an achievement",
+      "meaning_fr": "être fier de",
+      "example": "I am proud of my sister.",
       "phonetic": "",
-      "anki_answer": "intéressé",
+      "anki_answer": "fier",
       "tags": [
-        "interests"
+        "feelings"
       ]
     },
     {
-      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
       "kind": "history",
       "level": "A2",
-      "text": "revolution",
-      "meaning": "a major change in government or society",
-      "meaning_fr": "révolution",
-      "example": "The revolution changed the country.",
+      "text": "soldier",
+      "meaning": "a person who fights in an army",
+      "meaning_fr": "soldat",
+      "example": "The soldier returned from the campaign.",
       "phonetic": "",
-      "anki_answer": "révolution",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
-      "kind": "word",
-      "level": "B1",
-      "text": "expect",
-      "meaning": "believe something will happen",
-      "meaning_fr": "s'attendre à",
-      "example": "I expect the train to be late.",
-      "phonetic": "/ɪkˈspekt/",
-      "anki_answer": "s'attendre",
-      "tags": [
-        "probability"
-      ]
-    },
-    {
-      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
-      "kind": "expression",
-      "level": "B1",
-      "text": "bring up",
-      "meaning": "mention a subject in conversation",
-      "meaning_fr": "évoquer, soulever",
-      "example": "He brought up an interesting point.",
-      "phonetic": "",
-      "anki_answer": "évoquer",
-      "tags": [
-        "communication"
-      ]
-    },
-    {
-      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquest",
-      "meaning": "the act of taking land by force",
-      "meaning_fr": "conquête",
-      "example": "The conquest changed the region.",
-      "phonetic": "",
-      "anki_answer": "conquête",
+      "anki_answer": "soldat",
       "tags": [
         "war"
       ]
     },
     {
-      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
       "kind": "word",
-      "level": "B2",
-      "text": "relevant",
-      "meaning": "closely connected to the subject",
-      "meaning_fr": "pertinent",
-      "example": "Please include relevant details.",
-      "phonetic": "/ˈreləvənt/",
-      "anki_answer": "pertinent",
+      "level": "B1",
+      "text": "explain",
+      "meaning": "make something clear to someone",
+      "meaning_fr": "expliquer",
+      "example": "Can you explain this word?",
+      "phonetic": "/ɪkˈspleɪn/",
+      "anki_answer": "expliquer",
       "tags": [
         "communication"
       ]
     },
     {
-      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
       "kind": "expression",
-      "level": "B2",
-      "text": "get out of hand",
-      "meaning": "become uncontrolled",
-      "meaning_fr": "dégénérer, échapper de contrôle",
-      "example": "The argument got out of hand.",
+      "level": "B1",
+      "text": "deal with",
+      "meaning": "handle a problem or person",
+      "meaning_fr": "s'occuper de, gérer",
+      "example": "We need to deal with this issue.",
       "phonetic": "",
-      "anki_answer": "dégénérer",
+      "anki_answer": "gérer",
       "tags": [
         "problems"
       ]
     },
     {
-      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronation",
+      "meaning": "the ceremony of crowning a ruler",
+      "meaning_fr": "couronnement",
+      "example": "The coronation took place in the cathedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
+      "kind": "word",
+      "level": "B2",
+      "text": "significant",
+      "meaning": "large or important enough to notice",
+      "meaning_fr": "significatif",
+      "example": "The difference is significant.",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "anki_answer": "significatif",
+      "tags": [
+        "importance"
+      ]
+    },
+    {
+      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
+      "kind": "expression",
+      "level": "B2",
+      "text": "get the hang of",
+      "meaning": "learn how to do something",
+      "meaning_fr": "prendre le coup de main",
+      "example": "I am getting the hang of driving.",
+      "phonetic": "",
+      "anki_answer": "coup de main",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
       "kind": "history",
       "level": "B2",
-      "text": "civilisation",
-      "meaning": "an advanced human society",
-      "meaning_fr": "civilisation",
-      "example": "The civilisation left great monuments.",
+      "text": "colonialism",
+      "meaning": "a system in which a powerful country controls other territories",
+      "meaning_fr": "colonialisme",
+      "example": "Colonialism transformed the African map.",
       "phonetic": "",
-      "anki_answer": "civilisation",
+      "anki_answer": "colonialisme",
       "tags": [
-        "culture"
+        "empire"
       ]
     },
     {
-      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
       "kind": "word",
       "level": "C1",
-      "text": "resilient",
-      "meaning": "able to recover after difficulty",
-      "meaning_fr": "résilient",
-      "example": "Children are remarkably resilient.",
-      "phonetic": "/rɪˈzɪliənt/",
-      "anki_answer": "résilient",
-      "tags": [
-        "strength"
-      ]
-    },
-    {
-      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
-      "kind": "expression",
-      "level": "C1",
-      "text": "on the cusp of",
-      "meaning": "at the start of an important change",
-      "meaning_fr": "être au seuil de",
-      "example": "The company is on the cusp of a breakthrough.",
-      "phonetic": "",
-      "anki_answer": "seuil, changement",
-      "tags": [
-        "change"
-      ]
-    },
-    {
-      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilism",
-      "meaning": "an economic theory based on trade and accumulated wealth",
-      "meaning_fr": "mercantilisme",
-      "example": "Mercantilism shaped colonial policy.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
-      "tags": [
-        "economy"
-      ]
-    },
-    {
-      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
-      "kind": "word",
-      "level": "C2",
-      "text": "capitulate",
-      "meaning": "stop resisting and surrender",
-      "meaning_fr": "capituler",
-      "example": "The rebels eventually capitulated.",
-      "phonetic": "/kəˈpɪtʃuleɪt/",
-      "anki_answer": "capituler",
-      "tags": [
-        "conflict"
-      ]
-    },
-    {
-      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
-      "kind": "expression",
-      "level": "C2",
-      "text": "draw a veil over",
-      "meaning": "deliberately avoid discussing something",
-      "meaning_fr": "passer sous silence",
-      "example": "Let us draw a veil over that episode.",
-      "phonetic": "",
-      "anki_answer": "passer silence",
-      "tags": [
-        "silence"
-      ]
-    },
-    {
-      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
-      "kind": "history",
-      "level": "C2",
-      "text": "determinism",
-      "meaning": "the belief that events are fixed by prior causes",
-      "meaning_fr": "déterminisme",
-      "example": "Economic determinism shaped his theory.",
-      "phonetic": "",
-      "anki_answer": "déterminisme",
+      "text": "rigorous",
+      "meaning": "extremely thorough and careful",
+      "meaning_fr": "rigoureux",
+      "example": "The study followed a rigorous method.",
+      "phonetic": "/ˈrɪɡərəs/",
+      "anki_answer": "rigoureux",
       "tags": [
         "science"
+      ]
+    },
+    {
+      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "kind": "expression",
+      "level": "C1",
+      "text": "on the same wavelength",
+      "meaning": "thinking in the same way as someone",
+      "meaning_fr": "sur la même longueur d'onde",
+      "example": "We are on the same wavelength about the plan.",
+      "phonetic": "",
+      "anki_answer": "même longueur onde",
+      "tags": [
+        "agreement"
+      ]
+    },
+    {
+      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "kind": "history",
+      "level": "C1",
+      "text": "nationalism",
+      "meaning": "loyalty to a nation and belief in its interests",
+      "meaning_fr": "nationalisme",
+      "example": "Nationalism grew across Europe.",
+      "phonetic": "",
+      "anki_answer": "nationalisme",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
+      "kind": "word",
+      "level": "C2",
+      "text": "dichotomy",
+      "meaning": "a division into two opposing parts",
+      "meaning_fr": "dichotomie",
+      "example": "The article sets up a false dichotomy.",
+      "phonetic": "/daɪˈkɑːtəmi/",
+      "anki_answer": "dichotomie",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
+      "kind": "expression",
+      "level": "C2",
+      "text": "flog a dead horse",
+      "meaning": "waste effort on a hopeless cause",
+      "meaning_fr": "battre l'eau, perdre son temps",
+      "example": "Arguing now is flogging a dead horse.",
+      "phonetic": "",
+      "anki_answer": "perdre temps",
+      "tags": [
+        "futility"
+      ]
+    },
+    {
+      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
+      "kind": "history",
+      "level": "C2",
+      "text": "discontinuity",
+      "meaning": "a break in the continuity of a process",
+      "meaning_fr": "discontinuité",
+      "example": "The novel emphasised historical discontinuity.",
+      "phonetic": "",
+      "anki_answer": "discontinuité",
+      "tags": [
+        "culture"
       ]
     }
   ],
@@ -387,270 +383,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “school” mean?",
+      "prompt": "What does “sleep” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "école",
-      "item_key": "45ec82195c5bc0379f855bfa44b17f87f9939f48"
+      "answer": "dormir",
+      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ for",
+      "prompt": "Complete the expression: ____ TV",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "wait",
-      "item_key": "170b1a0e680e80a71c2dbf310718c305019619e0"
+      "answer": "watch",
+      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “child” belong to?",
+      "prompt": "Which period does “city” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268"
+      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “neighbour” mean?",
+      "prompt": "What does “pocket” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "voisin",
-      "item_key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d"
+      "answer": "poche",
+      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ in",
+      "prompt": "Complete the expression: be ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "interested",
-      "item_key": "3513f6c408320e6d94779e023fa404f075367587"
+      "answer": "proud",
+      "item_key": "72c14350149902e62661267191dc176e22669331"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “revolution” belong to?",
+      "prompt": "Which period does “soldier” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d"
+      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “expect” mean?",
+      "prompt": "What does “explain” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "s'attendre à",
-      "item_key": "8956a54e2d95372dc761aae2c81f3b488accc7cc"
+      "answer": "expliquer",
+      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ up",
+      "prompt": "Complete the expression: ____ with",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "bring",
-      "item_key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e"
+      "answer": "deal",
+      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “conquest” belong to?",
+      "prompt": "Which period does “coronation” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373"
+      "answer": "Middle Ages",
+      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “relevant” mean?",
+      "prompt": "What does “significant” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "pertinent",
-      "item_key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064"
+      "answer": "significatif",
+      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get out of ____",
+      "prompt": "Complete the expression: get the ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "hand",
-      "item_key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e"
+      "answer": "hang",
+      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “civilisation” belong to?",
+      "prompt": "Which period does “colonialism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "3ddb7708a56287d80c6f5de21c87fab19196b67b"
+      "answer": "19th century",
+      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “resilient” mean?",
+      "prompt": "What does “rigorous” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "résilient",
-      "item_key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1"
+      "answer": "rigoureux",
+      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the ____ of",
+      "prompt": "Complete the expression: on the same ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "cusp",
-      "item_key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d"
+      "answer": "wavelength",
+      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “mercantilism” belong to?",
+      "prompt": "Which period does “nationalism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Early modern",
-      "item_key": "cf70c2f947ddd7601bd93471dd4438a1a4920717"
+      "answer": "19th century",
+      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “capitulate” mean?",
+      "prompt": "What does “dichotomy” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "capituler",
-      "item_key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa"
+      "answer": "dichotomie",
+      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: draw a ____ over",
+      "prompt": "Complete the expression: flog a dead ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "veil",
-      "item_key": "d14ea879e92f110e1abec6267bf21353f35b7cc2"
+      "answer": "horse",
+      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “determinism” belong to?",
+      "prompt": "Which period does “discontinuity” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "19th century",
-      "item_key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e"
+      "answer": "Contemporary",
+      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
     }
   ],
   "tour": [

@@ -3,77 +3,73 @@
     "date": "2026-11-22",
     "level": "A1",
     "word": {
-      "text": "school",
+      "text": "sleep",
       "level": "A1",
       "type": "word",
-      "pos": "noun",
-      "phonetic": "/skuːl/",
-      "meaning": "a place where children learn",
-      "meaning_fr": "école",
-      "example": "The school opens at eight.",
-      "anki_answer": "école",
+      "pos": "verb",
+      "phonetic": "/sliːp/",
+      "meaning": "rest with your eyes closed at night",
+      "meaning_fr": "dormir",
+      "example": "Babies sleep a lot.",
+      "anki_answer": "dormir",
       "tags": [
-        "education"
+        "daily"
       ],
-      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/skuːl/",
+        "phonetic": "/sliːp/",
         "definitions": [
-          "(collective) A group of fish or a group of marine mammals such as porpoises, dolphins, or whales.",
-          "A multitude.",
-          "(of fish) To form into, or travel in a school."
+          "To rest in a state of reduced consciousness.",
+          "(of a spinning top or yo-yo) To spin on its axis with no other perceptible motion.",
+          "To cause (a spinning top or yo-yo) to spin on its axis with no other perceptible motion.",
+          "To accommodate in beds."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/school-uk.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/sleep-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/institution\" title=\"institution\">institution</a> dedicated to <a rel=\"mw:WikiLink\" href=\"/wiki/teaching\" title=\"teaching\">teaching</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/learning\" title=\"learning\">learning</a>; an <a rel=\"mw:WikiLink\" href=\"/wiki/educational\" title=\"educational\">educational</a> institution.",
-          "<span class=\"usage-label-sense\" about=\"#mwt45\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/educational_institution\" title=\"educational institution\">educational institution</a> providing <a rel=\"mw:WikiLink\" href=\"/wiki/primary_education\" title=\"primary education\">primary</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/secondary_education\" title=\"secondary education\">secondary education</a>, prior to <a rel=\"mw:WikiLink\" href=\"/wiki/tertiary_education\" title=\"tertiary education\">tertiary education</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/college\" title=\"college\">college</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/university\" title=\"university\">university</a>).",
-          "<span class=\"usage-label-sense\" about=\"#mwt47\" typeof=\"mw:Transclusion\"></span> At <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Eton%20College\" title=\"w:Eton College\" about=\"#mwt48\" typeof=\"mw:Transclusion\" class=\"extiw\">Eton College</a>, a <a rel=\"mw:WikiLink\" href=\"/wiki/period\" title=\"period\">period</a> or session of teaching.",
-          "Within a larger educational institution, an organizational unit, such as a <a rel=\"mw:WikiLink\" href=\"/wiki/department\" title=\"department\">department</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/institute\" title=\"institute\">institute</a>, which is dedicated to a specific subject area."
+          "<span class=\"usage-label-sense\" about=\"#mwt56\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/rest\" title=\"rest\">rest</a> in a state of <a rel=\"mw:WikiLink\" href=\"/wiki/reduce\" title=\"reduce\">reduced</a> <a rel=\"mw:WikiLink\" href=\"/wiki/consciousness\" title=\"consciousness\">consciousness</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt59\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/sexual_intercourse\" title=\"sexual intercourse\">sexual intercourse</a> (see <a rel=\"mw:WikiLink\" href=\"/wiki/sleep_with\" title=\"sleep with\">sleep with</a>).",
+          "<span class=\"usage-label-sense\" about=\"#mwt61\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/accommodate\" title=\"accommodate\">accommodate</a> in beds.",
+          "<span class=\"usage-label-sense\" about=\"#mwt64\" typeof=\"mw:Transclusion\"></span> To be careless, inattentive, or unconcerned; not to be vigilant; to live thoughtlessly."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "wait for",
+      "expression": "watch TV",
       "level": "A1",
       "type": "collocation",
-      "meaning": "stay until someone or something arrives",
-      "meaning_fr": "attendre",
-      "example": "I wait for the bus here.",
-      "anki_answer": "attendre",
+      "meaning": "look at television programmes",
+      "meaning_fr": "regarder la télé",
+      "example": "They watch TV in the evening.",
+      "anki_answer": "regarder télé",
       "tags": [
         "daily"
       ],
-      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
+      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {
-        "definitions": [
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/wait\" title=\"wait\">wait</a> until the specified event occurs.",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/await\" title=\"await\">await</a> the arrival of."
-        ]
-      },
+      "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "child",
+      "text": "city",
       "aliases": [
-        "child",
-        "children"
+        "city",
+        "town"
       ],
       "level": "A1",
-      "meaning": "a young human being",
-      "meaning_fr": "enfant",
+      "meaning": "a large place where people live and work",
+      "meaning_fr": "ville",
       "period": "General",
       "theme": "Society",
-      "example": "The child listened to the old story.",
+      "example": "Rome is an ancient city.",
       "tags": [
-        "people"
+        "places"
       ],
-      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
       "kind": "history"
     }
   },
@@ -81,73 +77,73 @@
     "date": "2026-11-22",
     "level": "A2",
     "word": {
-      "text": "neighbour",
+      "text": "pocket",
       "level": "A2",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/ˈneɪbər/",
-      "meaning": "a person who lives near you",
-      "meaning_fr": "voisin",
-      "example": "Our neighbour has a garden.",
-      "anki_answer": "voisin",
+      "phonetic": "/ˈpɑːkɪt/",
+      "meaning": "a small bag in clothing",
+      "meaning_fr": "poche",
+      "example": "The key is in my pocket.",
+      "anki_answer": "poche",
       "tags": [
-        "people"
+        "clothes"
       ],
-      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ˈneɪbə/",
+        "phonetic": "/ˈpɒkɪt/",
         "definitions": [
-          "A person living on adjacent or nearby land; a person situated adjacently or nearby; anything (of the same type of thing as the subject) in an adjacent or nearby position.",
-          "One who is near in sympathy or confidence.",
-          "A fellow human being.",
-          "To be adjacent to"
+          "A bag stitched to an item of clothing, used for carrying small items.",
+          "Such a receptacle seen as housing someone's money; hence, financial resources.",
+          "An indention and cavity with a net sack or similar structure (into which the balls are to be struck) at each corner and one centered on each side of a pool or snooker table.",
+          "An enclosed volume of one substance surrounded by another."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/neighbour-uk.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/pocket-au.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "A person living on <a rel=\"mw:WikiLink\" href=\"/wiki/adjacent\" title=\"adjacent\">adjacent</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/nearby\" title=\"nearby\">nearby</a> land; a person situated adjacently or nearby; anything (of the same type of thing as the subject) in an adjacent or nearby position.",
-          "One who is near in sympathy or confidence.",
-          "<span class=\"usage-label-sense\" about=\"#mwt66\" typeof=\"mw:Transclusion\"></span> A fellow <a rel=\"mw:WikiLink\" href=\"/wiki/human_being\" title=\"human being\">human being</a>.",
-          "Anything located directly <a rel=\"mw:WikiLink\" href=\"/wiki/adjacent\" title=\"adjacent\">adjacent</a> to something else."
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/bag\" title=\"bag\">bag</a> stitched to an item of clothing, used for carrying small items.",
+          "<span class=\"usage-label-sense\" about=\"#mwt43\" typeof=\"mw:Transclusion\"></span> A person's financial resources.",
+          "<span class=\"usage-label-sense\"></span> An indention and cavity with a <a rel=\"mw:WikiLink\" href=\"/wiki/net\" title=\"net\">net</a> sack or similar structure (into which the balls are to be struck) at each <a rel=\"mw:WikiLink\" href=\"/wiki/corner\" title=\"corner\">corner</a> and one centered on each side of a <a rel=\"mw:WikiLink\" href=\"/wiki/pool\" title=\"pool\">pool</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/snooker\" title=\"snooker\">snooker</a> table.",
+          "An enclosed <a rel=\"mw:WikiLink\" href=\"/wiki/volume\" title=\"volume\">volume</a> of one substance surrounded by another."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "be interested in",
+      "expression": "be proud of",
       "level": "A2",
       "type": "collocation",
-      "meaning": "want to know about something",
-      "meaning_fr": "être intéressé par",
-      "example": "I am interested in history.",
-      "anki_answer": "intéressé",
+      "meaning": "feel pleased with an achievement",
+      "meaning_fr": "être fier de",
+      "example": "I am proud of my sister.",
+      "anki_answer": "fier",
       "tags": [
-        "interests"
+        "feelings"
       ],
-      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "key": "72c14350149902e62661267191dc176e22669331",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "revolution",
+      "text": "soldier",
       "aliases": [
-        "revolution",
-        "revolt"
+        "soldier",
+        "soldiers"
       ],
       "level": "A2",
-      "meaning": "a major change in government or society",
-      "meaning_fr": "révolution",
+      "meaning": "a person who fights in an army",
+      "meaning_fr": "soldat",
       "period": "General",
-      "theme": "Revolution",
-      "example": "The revolution changed the country.",
+      "theme": "War",
+      "example": "The soldier returned from the campaign.",
       "tags": [
-        "politics"
+        "war"
       ],
-      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
       "kind": "history"
     }
   },
@@ -155,80 +151,71 @@
     "date": "2026-11-22",
     "level": "B1",
     "word": {
-      "text": "expect",
+      "text": "explain",
       "level": "B1",
       "type": "word",
       "pos": "verb",
-      "phonetic": "/ɪkˈspekt/",
-      "meaning": "believe something will happen",
-      "meaning_fr": "s'attendre à",
-      "example": "I expect the train to be late.",
-      "anki_answer": "s'attendre",
+      "phonetic": "/ɪkˈspleɪn/",
+      "meaning": "make something clear to someone",
+      "meaning_fr": "expliquer",
+      "example": "Can you explain this word?",
+      "anki_answer": "expliquer",
       "tags": [
-        "probability"
+        "communication"
       ],
-      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
+      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
       "kind": "word",
-      "dictionary": {
-        "phonetic": "/ɛkˈspɛkt/",
-        "definitions": [
-          "To predict or believe that something will happen",
-          "To consider obligatory or required.",
-          "To consider reasonably due.",
-          "(continuous aspect only, of a woman or couple) To be pregnant, to consider a baby due."
-        ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/expect-us.mp3"
-      },
+      "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/predict\" title=\"predict\">predict</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/believe\" title=\"believe\">believe</a> that something will happen",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/consider\" title=\"consider\">consider</a> <a rel=\"mw:WikiLink\" href=\"/wiki/obligatory\" title=\"obligatory\">obligatory</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/required\" title=\"required\">required</a>.",
-          "To consider reasonably <a rel=\"mw:WikiLink\" href=\"/wiki/due\" title=\"due\">due</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt33\" typeof=\"mw:Transclusion\"></span> To be <a rel=\"mw:WikiLink\" href=\"/wiki/pregnant\" title=\"pregnant\">pregnant</a>, to consider a baby due."
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To make <a rel=\"mw:WikiLink\" href=\"/wiki/plain\" title=\"plain\">plain</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/manifest\" title=\"manifest\">manifest</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/intelligible\" title=\"intelligible\">intelligible</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/clear\" title=\"clear\">clear</a> of <a rel=\"mw:WikiLink\" href=\"/wiki/obscurity\" title=\"obscurity\">obscurity</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/illustrate\" title=\"illustrate\">illustrate</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/meaning\" title=\"meaning\">meaning</a> of.",
+          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> To give the reason for, justification for, or cause of.",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To make <a rel=\"mw:WikiLink\" href=\"/wiki/flat\" title=\"flat\">flat</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/smooth_out\" title=\"smooth out\">smooth out</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/unfold\" title=\"unfold\">unfold</a> or make <a rel=\"mw:WikiLink\" href=\"/wiki/visible\" title=\"visible\">visible</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "bring up",
+      "expression": "deal with",
       "level": "B1",
       "type": "phrasal verb",
-      "meaning": "mention a subject in conversation",
-      "meaning_fr": "évoquer, soulever",
-      "example": "He brought up an interesting point.",
-      "anki_answer": "évoquer",
+      "meaning": "handle a problem or person",
+      "meaning_fr": "s'occuper de, gérer",
+      "example": "We need to deal with this issue.",
+      "anki_answer": "gérer",
       "tags": [
-        "communication"
+        "problems"
       ],
-      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
+      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"use-with-mention\" about=\"#mwt7\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/bring#English\" title=\"bring\">bring</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/up#English\" title=\"up\">up</a></span>:</span> To <a rel=\"mw:WikiLink\" href=\"/wiki/bring\" title=\"bring\">bring</a> from a lower to a higher position.",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/mention\" title=\"mention\">mention</a>.",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/raise\" title=\"raise\">raise</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/rear\" title=\"rear\">rear</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/children\" title=\"children\">children</a>).",
-          "To <a rel=\"mw:WikiLink\" href=\"/wiki/uncover\" title=\"uncover\">uncover</a>, to bring from <a rel=\"mw:WikiLink\" href=\"/wiki/obscurity\" title=\"obscurity\">obscurity</a>; to <span class=\"Latn\" lang=\"en\" about=\"#mwt15\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/resurface#English\" title=\"resurface\">resurface</a></span> (e.g. a memory)"
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To handle verbally or in some form of artistic expression; to <a rel=\"mw:WikiLink\" href=\"/wiki/address\" title=\"address\">address</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/discuss\" title=\"discuss\">discuss</a> as a <a rel=\"mw:WikiLink\" href=\"/wiki/subject\" title=\"subject\">subject</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt8\" typeof=\"mw:Transclusion\"></span> To take action with <a rel=\"mw:WikiLink\" href=\"/wiki/respect\" title=\"respect\">respect</a> to (someone or something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt15\" typeof=\"mw:Transclusion\"></span> To consider, as an example.",
+          "<span class=\"usage-label-sense\" about=\"#mwt18\" typeof=\"mw:Transclusion\"></span> To confront or overcome any difficulties presented by."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "conquest",
+      "text": "coronation",
       "aliases": [
-        "conquest",
-        "conquests"
+        "coronation",
+        "coronations"
       ],
       "level": "B1",
-      "meaning": "the act of taking land by force",
-      "meaning_fr": "conquête",
-      "period": "Antiquity",
-      "theme": "War",
-      "example": "The conquest changed the region.",
+      "meaning": "the ceremony of crowning a ruler",
+      "meaning_fr": "couronnement",
+      "period": "Middle Ages",
+      "theme": "Politics",
+      "example": "The coronation took place in the cathedral.",
       "tags": [
-        "war"
+        "politics"
       ],
-      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
+      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
       "kind": "history"
     }
   },
@@ -236,77 +223,76 @@
     "date": "2026-11-22",
     "level": "B2",
     "word": {
-      "text": "relevant",
+      "text": "significant",
       "level": "B2",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/ˈreləvənt/",
-      "meaning": "closely connected to the subject",
-      "meaning_fr": "pertinent",
-      "example": "Please include relevant details.",
-      "anki_answer": "pertinent",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "meaning": "large or important enough to notice",
+      "meaning_fr": "significatif",
+      "example": "The difference is significant.",
+      "anki_answer": "significatif",
       "tags": [
-        "communication"
+        "importance"
       ],
-      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ˈɹɛləvənt/",
+        "phonetic": "/sɪɡˈnɪ.fɪ.kənt/",
         "definitions": [
-          "Directly related, connected, or pertinent to a topic.",
-          "Not out of date; current."
+          "That which has significance; a sign; a token; a symbol.",
+          "Signifying something; carrying meaning.",
+          "Having a covert or hidden meaning.",
+          "Having a noticeable or major effect; notable."
         ],
-        "audio_url": null
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/significant-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/related#Adjective\" title=\"related\">Related</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/connected#Adjective\" title=\"connected\">connected</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/pertinent\" title=\"pertinent\">pertinent</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/topic\" title=\"topic\">topic</a>.\n<ol><li><span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/directly\" title=\"directly\">Directly</a> related, connected, or pertinent, with <a rel=\"mw:WikiLink\" href=\"/wiki/important\" title=\"important\">important</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ramification#Noun\" title=\"ramification\">ramifications</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/implication#Noun\" title=\"implication\">implications</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/directly\" title=\"directly\">Directly</a> related, connected, or pertinent, with <a rel=\"mw:WikiLink\" href=\"/wiki/important\" title=\"important\">important</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ramification#Noun\" title=\"ramification\">ramifications</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/implication#Noun\" title=\"implication\">implications</a>.",
-          "Not <a rel=\"mw:WikiLink\" href=\"/wiki/out_of_date\" title=\"out of date\">out of date</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/current\" title=\"current\">current</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/famous\" title=\"famous\">Famous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/popular\" title=\"popular\">popular</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/noteworthy\" title=\"noteworthy\">noteworthy</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/contemporary\" title=\"contemporary\">contemporary</a> <a rel=\"mw:WikiLink\" href=\"/wiki/context\" title=\"context\">context</a>."
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/signify\" title=\"signify\">Signifying</a> something; carrying <a rel=\"mw:WikiLink\" href=\"/wiki/meaning\" title=\"meaning\">meaning</a>.",
+          "Having a <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/major\" title=\"major\">major</a> effect.",
+          "Reasonably <a rel=\"mw:WikiLink\" href=\"/wiki/large\" title=\"large\">large</a> in number or amount.",
+          "Having a <a rel=\"mw:WikiLink\" href=\"/wiki/covert\" title=\"covert\">covert</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/hidden\" title=\"hidden\">hidden</a> meaning."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "get out of hand",
+      "expression": "get the hang of",
       "level": "B2",
       "type": "idiom",
-      "meaning": "become uncontrolled",
-      "meaning_fr": "dégénérer, échapper de contrôle",
-      "example": "The argument got out of hand.",
-      "anki_answer": "dégénérer",
+      "meaning": "learn how to do something",
+      "meaning_fr": "prendre le coup de main",
+      "example": "I am getting the hang of driving.",
+      "anki_answer": "coup de main",
       "tags": [
-        "problems"
+        "learning"
       ],
-      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "Without (further) <a rel=\"mw:WikiLink\" href=\"/wiki/thought\" title=\"thought\">thought</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/consideration\" title=\"consideration\">consideration</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/immediately\" title=\"immediately\">Immediately</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/forthwith\" title=\"forthwith\">forthwith</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/incontinently\" title=\"incontinently\">incontinently</a>.",
-          "Barely <a rel=\"mw:WikiLink\" href=\"/wiki/under_control\" title=\"under control\">under control</a>; not under control."
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To begin to <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/manage\" title=\"manage\">manage</a> at a basic level; to learn to handle with some skill."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "civilisation",
+      "text": "colonialism",
       "aliases": [
-        "civilisation",
-        "civilization"
+        "colonialism"
       ],
       "level": "B2",
-      "meaning": "an advanced human society",
-      "meaning_fr": "civilisation",
-      "period": "Antiquity",
-      "theme": "Culture",
-      "example": "The civilisation left great monuments.",
+      "meaning": "a system in which a powerful country controls other territories",
+      "meaning_fr": "colonialisme",
+      "period": "19th century",
+      "theme": "Empire",
+      "example": "Colonialism transformed the African map.",
       "tags": [
-        "culture"
+        "empire"
       ],
-      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
       "kind": "history"
     }
   },
@@ -314,70 +300,74 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "resilient",
+      "text": "rigorous",
       "level": "C1",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/rɪˈzɪliənt/",
-      "meaning": "able to recover after difficulty",
-      "meaning_fr": "résilient",
-      "example": "Children are remarkably resilient.",
-      "anki_answer": "résilient",
+      "phonetic": "/ˈrɪɡərəs/",
+      "meaning": "extremely thorough and careful",
+      "meaning_fr": "rigoureux",
+      "example": "The study followed a rigorous method.",
+      "anki_answer": "rigoureux",
       "tags": [
-        "strength"
+        "science"
       ],
-      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
       "kind": "word",
       "dictionary": {
-        "phonetic": null,
+        "phonetic": "/ˈɹɪɡəɹəs/",
         "definitions": [
-          "(of objects or substances) Returning quickly to original shape after force is applied; elastic.",
-          "(organisms or people, of systems) Returning quickly to normal after damaging events or conditions."
+          "Showing, causing, or favoring rigour; scrupulously accurate or strict; thorough.",
+          "Severe; intense."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/resilient-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/rigorous-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "Returning quickly to original shape after force is applied; <a rel=\"mw:WikiLink\" href=\"/wiki/elastic\" title=\"elastic\">elastic</a>. \n<ol><li><span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.</li></ol>",
-          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.",
-          "Returning quickly to normal after damaging events or conditions. \n\n<ol><li><span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>.</li></ol>",
-          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>."
+          "Showing, causing, or favoring <a rel=\"mw:WikiLink\" href=\"/wiki/rigour\" title=\"rigour\">rigour</a>/<a rel=\"mw:WikiLink\" href=\"/wiki/rigor\" title=\"rigor\">rigor</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/scrupulous\" title=\"scrupulous\">scrupulously</a> <a rel=\"mw:WikiLink\" href=\"/wiki/accurate\" title=\"accurate\">accurate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/strict\" title=\"strict\">strict</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/thorough\" title=\"thorough\">thorough</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/severe\" title=\"severe\">Severe</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/intense\" title=\"intense\">intense</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "on the cusp of",
+      "expression": "on the same wavelength",
       "level": "C1",
       "type": "idiom",
-      "meaning": "at the start of an important change",
-      "meaning_fr": "être au seuil de",
-      "example": "The company is on the cusp of a breakthrough.",
-      "anki_answer": "seuil, changement",
+      "meaning": "thinking in the same way as someone",
+      "meaning_fr": "sur la même longueur d'onde",
+      "example": "We are on the same wavelength about the plan.",
+      "anki_answer": "même longueur onde",
       "tags": [
-        "change"
+        "agreement"
       ],
-      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
+      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {},
+      "wiktionary": {
+        "definitions": [
+          "Thinking in the same <a rel=\"mw:WikiLink\" href=\"/wiki/way\" title=\"way\">way</a>; having similar <a rel=\"mw:WikiLink\" href=\"/wiki/thought_process\" title=\"thought process\">thought processes</a> (in general).",
+          "In complete <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a>; having the same <a rel=\"mw:WikiLink\" href=\"/wiki/perspective\" title=\"perspective\">perspective</a> (on a particular issue)."
+        ]
+      },
       "audio": null
     },
     "history": {
-      "text": "mercantilism",
+      "text": "nationalism",
       "aliases": [
-        "mercantilism"
+        "nationalism",
+        "patriotic movement"
       ],
       "level": "C1",
-      "meaning": "an economic theory based on trade and accumulated wealth",
-      "meaning_fr": "mercantilisme",
-      "period": "Early modern",
-      "theme": "Economy",
-      "example": "Mercantilism shaped colonial policy.",
+      "meaning": "loyalty to a nation and belief in its interests",
+      "meaning_fr": "nationalisme",
+      "period": "19th century",
+      "theme": "Politics",
+      "example": "Nationalism grew across Europe.",
       "tags": [
-        "economy"
+        "politics"
       ],
-      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
+      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
       "kind": "history"
     }
   },
@@ -385,75 +375,78 @@
     "date": "2026-11-22",
     "level": "C2",
     "word": {
-      "text": "capitulate",
+      "text": "dichotomy",
       "level": "C2",
       "type": "word",
-      "pos": "verb",
-      "phonetic": "/kəˈpɪtʃuleɪt/",
-      "meaning": "stop resisting and surrender",
-      "meaning_fr": "capituler",
-      "example": "The rebels eventually capitulated.",
-      "anki_answer": "capituler",
+      "pos": "noun",
+      "phonetic": "/daɪˈkɑːtəmi/",
+      "meaning": "a division into two opposing parts",
+      "meaning_fr": "dichotomie",
+      "example": "The article sets up a false dichotomy.",
+      "anki_answer": "dichotomie",
       "tags": [
-        "conflict"
+        "reasoning"
       ],
-      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
+      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/kəˈpɪ.tjʊ.leɪt/",
+        "phonetic": "/daɪˈkɒt.ə.mi/",
         "definitions": [
-          "To surrender; to end all resistance, to give up; to go along with or comply.",
-          "To draw up in chapters; to enumerate.",
-          "To draw up the articles of treaty with; to treat, bargain, parley."
+          "A separation or division into two; a distinction that results in such a division.",
+          "Such a division involving apparently incompatible or opposite principles; a duality.",
+          "The division of a class into two disjoint subclasses that are together comprehensive, as the division of man into white and not white.",
+          "The division of a genus into two species; a division into two subordinate parts."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/capitulate-au.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/dichotomy-au.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt25\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/surrender\" title=\"surrender\">surrender</a> on <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulated</a> terms, end all <a rel=\"mw:WikiLink\" href=\"/wiki/resistance\" title=\"resistance\">resistance</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/give_up\" title=\"give up\">give up</a>, go along with or <a rel=\"mw:WikiLink\" href=\"/wiki/comply\" title=\"comply\">comply</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt26\">.mw-parser-output .defdate{font-size:smaller}</style>",
-          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> To draw up in <a rel=\"mw:WikiLink\" href=\"/wiki/chapter\" title=\"chapter\">chapters</a>, heads or articles; to <a rel=\"mw:WikiLink\" href=\"/wiki/enumerate\" title=\"enumerate\">enumerate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/specify\" title=\"specify\">specify</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt37\" typeof=\"mw:Transclusion\"></span> To draw up articles of <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a> with; to propose <span class=\"Latn\" lang=\"en\" about=\"#mwt38\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/term#English:_condition,_legally,_in_general\" title=\"term\">term</a></span>s, <a rel=\"mw:WikiLink\" href=\"/wiki/treat\" title=\"treat\">treat</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/bargain\" title=\"bargain\">bargain</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/parley\" title=\"parley\">parley</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> To make conditions, <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/agree\" title=\"agree\">agree</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/formulate\" title=\"formulate\">formulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/conclude\" title=\"conclude\">conclude</a> (upon something)."
+          "A separation or <a rel=\"mw:WikiLink\" href=\"/wiki/division\" title=\"division\">division</a> into two; a <a rel=\"mw:WikiLink\" href=\"/wiki/distinction\" title=\"distinction\">distinction</a> that results in such a division.",
+          "Such a division involving apparently <a rel=\"mw:WikiLink\" href=\"/wiki/incompatible\" title=\"incompatible\">incompatible</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/opposite\" title=\"opposite\">opposite</a> principles; a <a rel=\"mw:WikiLink\" href=\"/wiki/duality\" title=\"duality\">duality</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> The division of a <a rel=\"mw:WikiLink\" href=\"/wiki/class\" title=\"class\">class</a> into two <a rel=\"mw:WikiLink\" href=\"/wiki/disjoint\" title=\"disjoint\">disjoint</a> <a rel=\"mw:WikiLink\" href=\"/wiki/subclass\" title=\"subclass\">subclasses</a> that are together <a rel=\"mw:WikiLink\" href=\"/wiki/comprehensive\" title=\"comprehensive\">comprehensive</a>, as the division of <i><a rel=\"mw:WikiLink\" href=\"/wiki/human\" title=\"human\">human</a></i> into <i><a rel=\"mw:WikiLink\" href=\"/wiki/female\" title=\"female\">female</a></i> and <i><a rel=\"mw:WikiLink\" href=\"/wiki/male\" title=\"male\">male</a></i>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt26\" typeof=\"mw:Transclusion\"></span> The division of a <a rel=\"mw:WikiLink\" href=\"/wiki/genus\" title=\"genus\">genus</a> into two <a rel=\"mw:WikiLink\" href=\"/wiki/species\" title=\"species\">species</a>; a division into two subordinate parts."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "draw a veil over",
+      "expression": "flog a dead horse",
       "level": "C2",
       "type": "idiom",
-      "meaning": "deliberately avoid discussing something",
-      "meaning_fr": "passer sous silence",
-      "example": "Let us draw a veil over that episode.",
-      "anki_answer": "passer silence",
+      "meaning": "waste effort on a hopeless cause",
+      "meaning_fr": "battre l'eau, perdre son temps",
+      "example": "Arguing now is flogging a dead horse.",
+      "anki_answer": "perdre temps",
       "tags": [
-        "silence"
+        "futility"
       ],
-      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
+      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/avoid\" title=\"avoid\">avoid</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discuss\" title=\"discuss\">discussing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/call\" title=\"call\">calling</a> <a rel=\"mw:WikiLink\" href=\"/wiki/attention\" title=\"attention\">attention</a> to (something <a rel=\"mw:WikiLink\" href=\"/wiki/embarrassing\" title=\"embarrassing\">embarrassing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/unpleasant\" title=\"unpleasant\">unpleasant</a>)."
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To attempt to get more out of something that cannot give more; to attempt to arouse fresh interest in something that is either hopeless or already settled.",
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To attempt to get extra <a rel=\"mw:WikiLink\" href=\"/wiki/work\" title=\"work\">work</a> out of a ship's crew during the <a rel=\"mw:WikiLink\" href=\"/wiki/dead_horse\" title=\"dead horse\">dead horse</a> period."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "determinism",
+      "text": "discontinuity",
       "aliases": [
-        "determinism"
+        "discontinuity",
+        "discontinuities"
       ],
       "level": "C2",
-      "meaning": "the belief that events are fixed by prior causes",
-      "meaning_fr": "déterminisme",
-      "period": "19th century",
-      "theme": "Science",
-      "example": "Economic determinism shaped his theory.",
+      "meaning": "a break in the continuity of a process",
+      "meaning_fr": "discontinuité",
+      "period": "Contemporary",
+      "theme": "Culture",
+      "example": "The novel emphasised historical discontinuity.",
       "tags": [
-        "science"
+        "culture"
       ],
-      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
+      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
       "kind": "history"
     }
   }

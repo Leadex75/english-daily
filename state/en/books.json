@@ -1142,5 +1142,170 @@
     "url_rss": "https://librivox.org/rss/232",
     "fetched_at": "2026-11-22T11:50:32",
     "level_method": "source"
+  },
+  "370": {
+    "title": "Five Little Peppers and How They Grew",
+    "author": "",
+    "gutenberg_id": "2770",
+    "genre": "Children's Fiction",
+    "level": "B1",
+    "score": 0.2984,
+    "url_rss": "https://librivox.org/rss/370",
+    "fetched_at": "2026-11-22T13:06:02",
+    "level_method": "source"
+  },
+  "371": {
+    "title": "Lost Princess of Oz",
+    "author": "",
+    "gutenberg_id": "959",
+    "genre": "Action & Adventure",
+    "level": "B1",
+    "score": 0.3056,
+    "url_rss": "https://librivox.org/rss/371",
+    "fetched_at": "2026-11-22T13:06:03",
+    "level_method": "source"
+  },
+  "372": {
+    "title": "Anne of Green Gables (version 2)",
+    "author": "",
+    "gutenberg_id": "45",
+    "genre": "Children's Fiction",
+    "level": "B1",
+    "score": 0.4136,
+    "url_rss": "https://librivox.org/rss/372",
+    "fetched_at": "2026-11-22T13:06:04",
+    "level_method": "source"
+  },
+  "378": {
+    "title": "Fire and Ice",
+    "author": "",
+    "gutenberg_id": "",
+    "genre": "Multi-version (Weekly and Fortnightly poetry)",
+    "level": "B1",
+    "score": 0.2876,
+    "url_rss": "https://librivox.org/rss/378",
+    "fetched_at": "2026-11-22T13:06:04",
+    "level_method": "source"
+  },
+  "134": {
+    "title": "Eclogues",
+    "author": "",
+    "gutenberg_id": "230",
+    "genre": "Classics (Greek & Latin Antiquity), Poetry",
+    "level": "C2",
+    "score": 0.7765,
+    "url_rss": "https://librivox.org/rss/134",
+    "fetched_at": "2026-11-22T13:06:17",
+    "level_method": "source"
+  },
+  "138": {
+    "title": "Ballad of John Silver",
+    "author": "",
+    "gutenberg_id": "",
+    "genre": "Multi-version (Weekly and Fortnightly poetry)",
+    "level": "B2",
+    "score": 0.4329,
+    "url_rss": "https://librivox.org/rss/138",
+    "fetched_at": "2026-11-22T13:06:17",
+    "level_method": "source"
+  },
+  "141": {
+    "title": "Connecticut Yankee in King Arthur's Court",
+    "author": "",
+    "gutenberg_id": "86",
+    "genre": "Action & Adventure Fiction, Fantastic Fiction, Satire",
+    "level": "C1",
+    "score": 0.7233,
+    "url_rss": "https://librivox.org/rss/141",
+    "fetched_at": "2026-11-22T13:06:18",
+    "level_method": "source"
+  },
+  "142": {
+    "title": "American Indian Fairy Tales",
+    "author": ", ",
+    "gutenberg_id": "",
+    "genre": "Children's Fiction, Myths, Legends & Fairy Tales, Short Stories",
+    "level": "B2",
+    "score": 0.4577,
+    "url_rss": "https://librivox.org/rss/142",
+    "fetched_at": "2026-11-22T13:06:18",
+    "level_method": "source"
+  },
+  "145": {
+    "title": "Anne of Avonlea",
+    "author": "",
+    "gutenberg_id": "47",
+    "genre": "Children's Fiction, General Fiction, Humorous Fiction",
+    "level": "A2",
+    "score": 0.2791,
+    "url_rss": "https://librivox.org/rss/145",
+    "fetched_at": "2026-11-22T13:06:19",
+    "level_method": "source"
+  },
+  "146": {
+    "title": "Anne of Green Gables",
+    "author": "",
+    "gutenberg_id": "45",
+    "genre": "Children's Fiction, General Fiction, Humorous Fiction",
+    "level": "B1",
+    "score": 0.402,
+    "url_rss": "https://librivox.org/rss/146",
+    "fetched_at": "2026-11-22T13:06:20",
+    "level_method": "source"
+  },
+  "147": {
+    "title": "Art and Heart",
+    "author": "",
+    "gutenberg_id": "16776",
+    "genre": "Multi-version (Weekly and Fortnightly poetry)",
+    "level": "B2",
+    "score": 0.5797,
+    "url_rss": "https://librivox.org/rss/147",
+    "fetched_at": "2026-11-22T13:06:21",
+    "level_method": "source"
+  },
+  "184": {
+    "title": "History of England, from the Accession of James II - (Volume 1, Chapter 05)",
+    "author": "",
+    "gutenberg_id": "1468",
+    "genre": "*Non-fiction, History",
+    "level": "B1",
+    "score": 0.4093,
+    "url_rss": "https://librivox.org/rss/184",
+    "fetched_at": "2026-11-22T13:06:22",
+    "level_method": "source"
+  },
+  "218": {
+    "title": "North of Boston",
+    "author": "",
+    "gutenberg_id": "3026",
+    "genre": "Poetry",
+    "level": "B2",
+    "score": 0.5282,
+    "url_rss": "https://librivox.org/rss/218",
+    "fetched_at": "2026-11-22T13:06:35",
+    "level_method": "source"
+  },
+  "132": {
+    "title": "Last of the Mohicans - A Narrative of 1757 (version 2)",
+    "author": "",
+    "gutenberg_id": "940",
+    "genre": "Historical Fiction",
+    "level": "C1",
+    "score": 0.6474,
+    "url_rss": "https://librivox.org/rss/132",
+    "fetched_at": "2026-11-22T13:06:36",
+    "level_method": "source"
+  },
+  "136": {
+    "title": "Around the World in Seventy-Two Days",
+    "author": "",
+    "gutenberg_id": "",
+    "genre": "*Non-fiction, Biography & Autobiography, Travel & Geography",
+    "level": "B2",
+    "score": 0.4294,
+    "url_rss": "https://librivox.org/rss/136",
+    "fetched_at": "2026-11-22T13:06:36",
+    "level_method": "source"
   }
 }

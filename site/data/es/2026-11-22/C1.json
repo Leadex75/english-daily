@@ -5,57 +5,26 @@
   "slots": {
     "news": {
       "text": {
-        "id": 1894677527,
-        "title": "La princesa de Gales, Kate Middleton, habla abiertamente sobre cómo el cáncer cambió su vida en un documental de la BBC",
+        "id": 1898864368,
+        "title": "La ciudad reconstruida tras unas devastadoras riadas que se convirtió en escaparate del gobierno del líder rebelde libio",
         "source": "BBC Mundo (texto)",
         "source_id": "es_bbc_mundo_text",
         "category": "news",
-        "url": "https://www.bbc.com/mundo/articles/c6gregq1xynwo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-21T22:57:24",
+        "url": "https://www.bbc.com/mundo/articles/cm8x0q2kv42lo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T09:34:26",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 784,
+        "word_count": 1667,
         "duration_sec": null,
-        "body_text": "La princesa de Gales, Kate Middleton, habla abiertamente sobre cómo el cáncer cambió su vida en un documental de la BBC - Autor, Sean Coughlan - Título del autor, corresponsal real, BBC News - Fecha de publicación - Tiempo de lectura…",
+        "body_text": "La ciudad reconstruida tras unas devastadoras riadas que se convirtió en escaparate del gobierno del líder rebelde libio - Autor, Tim Whewell - Título del autor, BBC News - Informa desde, Derna - Fecha de publicación - Tiempo de lectura: 8 min \"Fue una alegría cuando me mudé.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "a8df7e1c991c1da11f57895b2d41e953dd511d1d",
-        "summary": "\"Hay una faceta mucho, mucho más profunda de cómo un cáncer te cambia\", dice la Princesa de Gales en el documental.",
-        "origin": "fresh",
-        "badges": [],
-        "periods": [],
-        "themes": [],
-        "history_terms": [],
-        "alt_text": "La princesa de Gales, Kate Middleton, habla abiertamente sobre cómo el cáncer cambió su vida en un documental de la BBC — BBC Mundo (texto)",
-        "duration_formatted": "",
-        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-        "reading_time_min": 4
-      },
-      "audio": {
-        "id": 1894677544,
-        "title": "Jahel Queralt: \"El mérito ha servido para justificar privilegios\"",
-        "source": "RNE 24 horas",
-        "source_id": "es_rne_24_horas",
-        "category": "news",
-        "url": "https://www.rtve.es/play/audios/24-horas/jahel-queralt-merito-servido-para-justificar-privilegios/17324391/",
-        "published_at": "2026-11-20T20:08:55",
-        "level": "C1",
-        "slot_level": "C1",
-        "source_level": "C1",
-        "word_count": 278,
-        "duration_sec": 1702,
-        "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/2/3/1795204910532.mp3?idasset=17324391&download-token=1795348863_0xb27c695ea8268e4db1450ae47a1c5c80f97e9620",
-        "description": "Jahel Queralt , jurista y autora 'Nadie merece nada. Por qué la izquierda necesita la meritocracia', explica en 24 Horas de RNE qué es la meritocracia: \"La meritocracia significa que la gente se mueve de una clase a otra y a veces. Eso no es subir y bajar, sino también mudarse a otro sitio\". Desde este punto de partida, Queralt cuestiona cómo se ha utilizado el término de \"mérito\", ya que, en sus palabras, \"el mérito ha servido para justificar privilegios\". Ante este dilema, en el que la meritocracia se asocia al mercado y los privilegios, el libro 'Nadie merece nada. Por qué la izquierda necesita la meritocracia' nace para dar respuesta a dos pensadores anglosajones muy influyentes: Michael Sandel y Daniel Markowitz. Así, Jahel Queralt sostiene que aunque \"un ideal no funcione, incluso esté viciado\" no hay que renunciar a él, sino revisar qué es lo que se está haciendo mal. Por ello, dibuja una posibilidad para deshacer este relato y es tener en cuenta la suerte, el azar y las circunstancias. También apunta a la tendencia a \"moralizar las trayectorias vitales de la gente\", lo que conlleva a dar preponderancia a la responsabilidad frente a otros factores, como la cuestión de clase o la genética. En este sentido Queralt confiesa que la finalidad de su nueva obra es \"recuperar el significado de la meritocracia\" y que meritocracia y desigualdad de mercado en un sistema capitalista \"no van necesariamente de la mano\". Así, propone que la izquierda no deje que la meritocracia sea un \"patrimonio exclusivamente de la derecha\", porque es el \"único instrumento\" que tienen las personas que provienen de un origen humilde para progresar sutilmente. Escuchar audio",
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": false,
-        "guid_hash": "8a711e0d7f85e11cfad1fac76a8654a667239a66",
-        "summary": "Jahel Queralt , jurista y autora 'Nadie merece nada. Por qué la izquierda necesita la meritocracia', explica en 24 Horas de RNE qué es la meritocracia: \"La meritocracia significa que la gente se mueve de una clase a otra y a veces. Eso no es subir y bajar, sino también mudarse a otro sitio\". Desde este punto de partida, Queralt cuestiona cómo se ha utilizado el término de \"mérito\", ya que, en sus palabras, \"el mérito ha servido para justificar privilegios\". Ante este dilema, en el que la meritocracia se asocia al mercado y los privilegios, el libro 'Nadie merece nada. Por qué la izquierda necesita la meritocracia' nace para dar respuesta a dos pensadores anglosajones muy influyentes: Michael Sandel y Daniel Markowitz. Así, Jahel Queralt sostiene que aunque \"un ideal no funcione, incluso esté viciado\" no hay que renunciar a él, sino revisar qué es lo que se está haciendo mal. Por ello, dibuja una posibilidad para deshacer este relato y es tener en cuenta la suerte, el azar y las circunstancias. También apunta a la tendencia a \"moralizar las trayectorias vitales de la gente\", lo que conlleva a dar preponderancia a la responsabilidad frente a otros factores, como la cuestión de clase o la genética. En este sentido Queralt confiesa que la finalidad de su nueva obra es \"recuperar el significado de la meritocracia\" y que meritocracia y desigualdad de mercado en un sistema capitalista \"no van necesariamente de la mano\". Así, propone que la izquierda no deje que la meritocracia sea un \"patrimonio exclusivamente de la derecha\", porque es el \"único instrumento\" que tienen las personas que provienen de un origen humilde para progresar sutilmente. Escuchar audio",
+        "guid_hash": "e1b0efc97758281f91f895eb43520aa485e6d174",
+        "summary": "La extraordinaria reconstrucción de Derna está siendo utilizada por Khalifa Haftar y sus hijos como ejemplo para el resto de Libia.",
         "origin": "fresh",
         "badges": [
           "Outside preferred window"
@@ -63,8 +32,42 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Jahel Queralt: \"El mérito ha servido para justificar privilegios\" — RNE 24 horas",
-        "duration_formatted": "28:22",
+        "alt_text": "La ciudad reconstruida tras unas devastadoras riadas que se convirtió en escaparate del gobierno del líder rebelde libio — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 9
+      },
+      "audio": {
+        "id": 1898864381,
+        "title": "24 Horas - Informativo y Análisis información - 20/11/26",
+        "source": "RNE 24 horas",
+        "source_id": "es_rne_24_horas",
+        "category": "news",
+        "url": "https://www.rtve.es/play/audios/24-horas/22-201126-ptr/17324547/",
+        "published_at": "2026-11-20T21:00:00",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "B2",
+        "word_count": 1,
+        "duration_sec": 3605,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/9/7/1795212484579.mp3?idasset=17324547&download-token=1795353425_0x041a258e6db41a8a46fc241a58b9a18a1449e5a0",
+        "description": "null",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "9e9b07b26d9050073b7bcd8effab3953dc4c9a4d",
+        "summary": "null",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "24 Horas - Informativo y Análisis información - 20/11/26 — RNE 24 horas",
+        "duration_formatted": "60:05",
         "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
         "reading_time_min": 0
       }
@@ -72,26 +75,26 @@
     "culture": {
       "text": null,
       "audio": {
-        "id": 1894677561,
-        "title": "A hombros de gigantes - Del cosmos a la vida, un recorrido por la historia del universo a través de la ciencia y el arte - 22/11/2026",
-        "source": "RNE A hombros de gigantes",
-        "source_id": "es_rne_a_hombros_de_gigantes",
+        "id": 1898864403,
+        "title": "El Ojo Crítico - Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026",
+        "source": "RNE El ojo crítico",
+        "source_id": "es_rne_el_ojo_critico",
         "category": "culture",
-        "url": "https://www.rtve.es/play/audios/a-hombros-de-gigantes/hombros-gigantes-del-cosmos-vida-recorrido-historia-del-universo-traves-ciencia-arte-22-11-2026/17321501/",
-        "published_at": "2026-11-21T03:00:02",
+        "url": "https://www.rtve.es/play/audios/el-ojo-critico/nenas-theatre-premio-ojo-critico-teatro-2026/17324090/",
+        "published_at": "2026-11-20T16:52:43",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 289,
-        "duration_sec": 2912,
+        "word_count": 391,
+        "duration_sec": 2590,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SAHOMB/mp3/1/9/1795088685391.mp3?idasset=17321501&download-token=1795348885_0x9b6ed1dc8cb20f6510c526349fc51c5b8e030061",
-        "description": "Hace 13.800 millones de años comenzó la historia del universo tal y como hoy la conocemos. Desde entonces, materia y energía han ido transformándose en partículas, átomos, estrellas, galaxias, planetas… Y en algún momento de la historia de la Tierra, ocurrió uno de los acontecimientos más extraordinarios que conocemos: el nacimiento de la vida. Este fascinante viaje en el tiempo constituye el punto de partida de “Del cosmos a la vida. Un diálogo entre ciencia y arte” (Plaza y Janés) que combina 125 obras de arte con 125 textos breves para recorrer estos 13.800 millones de años de historia del Cosmos. Hemos hablado con su autor, Carlos Briones , investigador del CSIC en el Centro de Astrobiología. Almudena Timón nos ha informado de un estudio realizado por el Centro de Investigación del Cáncer (CSIC-USAL-FICUS) que muestra en modelos animales como mutaciones opuestas de un mismo gen dotan a una proteína de una nueva función que impulsa un tipo de linfomas de mal pronóstico y tratamiento. Con testimonios de Xosé Bustelo , líder de la investigación. Con Humberto Bustince hemos analizado por qué la inteligencia artificial suele evitar decir \"no\" o \"no lo sé\". Se debe a su entrenamiento para generar respuestas útiles y continuas, y no para evaluar su propia certeza. Lluís Montoliu nos ha contado como los sistemas que emplean las espinacas para realizar la fotosíntesis podrían emplearse para tratar el ojo seco, un síndrome que afecta a buena parte de la población. Eulalia Pérez Sedeño ha trazado la biografía de María Luisa Canut Ruiz , especialista en cristalografía de rayos X reconocida en España y EEUU. En ese país participó en una reclamación judicial contra la discriminación salarial de las investigadoras. En 1985, fue una de las fundadoras del Instituto Menorquín de Estudios. Escuchar audio",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SELOJO/mp3/4/3/1795191622034.mp3?idasset=17324090&download-token=1795353452_0x3df387680f231eb7fb625b55e7b59f95b36de9ec",
+        "description": "Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 , protagonizan nuestro programa. Conversamos con Ane Sagüés Abad y Cristina Tomás Olaya , integrantes de esta joven compañía navarra fundada en 2022, que ha desarrollado un lenguaje escénico propio a través del humor, la performance, la improvisación y la provocación. El jurado reconoce su capacidad para cuestionar los cánones teatrales, renovar los lenguajes escénicos y conectar con públicos que habitualmente no acuden al teatro. Hablamos de su manera de crear, de su relación con los espectadores y de espectáculos como “ Torcidas” , “ Manual para dos cuerpos desorientadxs” y “ Sexiliadas” , en los que exploran los roles de poder, la feminidad, el cuerpo, las contradicciones sociales y las experiencias de quienes se ven obligados a abandonar su lugar de origen por su sexualidad. Los viernes repasamos las novedades musicales con Carlos García Fernández . Nos detenemos en la banda sonora de “ Grand Theft Auto VI” (GTA VI) , con artistas como Dua Lipa, Lana Del Rey, Travis Scott, Justice, Tame Impala y Rauw Alejandro. Escuchamos también las nuevas propuestas de Ganges, Pau Vallvé, María Pelaé y Raya Real , además del regreso de Sanguijuelas del Guadiana . Carlos nos presenta, además, “ TEBEO” , el pódcast de RTVE que ha realizado junto a Marcos Díaz Martín sobre la historia de la pintora Marisa Roësset Velasco y la soprano Lola Rodríguez Aragón. Viajamos a A Coruña , donde la Fundación MOP presenta “ The Hamster Becomes the Problem” , una exposición dedicada al universo creativo de David Sims , uno de los grandes nombres de la fotografía de moda contemporánea. Nuestra colaboradora Conxita Casanovas , directora de “ Va de cine” en Radio 4 y Radio 5, repasa los estrenos de la cartelera. Hablamos de “ El mal padre” , de Roberto Bueso, con Eduard Fernández; “ El director” , de Dani de la Orden, basada en la novela de David Jiménez; Rose , protagonizada por Sandra Hüller; el thriller “ Adolescencia, sexo y muerte en el",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "d2bf9138f706f47ecaafde034d298d4a06f62c1b",
-        "summary": "Hace 13.800 millones de años comenzó la historia del universo tal y como hoy la conocemos. Desde entonces, materia y energía han ido transformándose en partículas, átomos, estrellas, galaxias, planetas… Y en algún momento de la historia de la Tierra, ocurrió uno de los acontecimientos más extraordinarios que conocemos: el nacimiento de la vida. Este fascinante viaje en el tiempo constituye el punto de partida de “Del cosmos a la vida. Un diálogo entre ciencia y arte” (Plaza y Janés) que combina 125 obras de arte con 125 textos breves para recorrer estos 13.800 millones de años de historia del Cosmos. Hemos hablado con su autor, Carlos Briones , investigador del CSIC en el Centro de Astrobiología. Almudena Timón nos ha informado de un estudio realizado por el Centro de Investigación del Cáncer (CSIC-USAL-FICUS) que muestra en modelos animales como mutaciones opuestas de un mismo gen dotan a una proteína de una nueva función que impulsa un tipo de linfomas de mal pronóstico y tratamiento. Con testimonios de Xosé Bustelo , líder de la investigación. Con Humberto Bustince hemos analizado por qué la inteligencia artificial suele evitar decir \"no\" o \"no lo sé\". Se debe a su entrenamiento para generar respuestas útiles y continuas, y no para evaluar su propia certeza. Lluís Montoliu nos ha contado como los sistemas que emplean las espinacas para realizar la fotosíntesis podrían emplearse para tratar el ojo seco, un síndrome que afecta a buena parte de la población. Eulalia Pérez Sedeño ha trazado la biografía de María Luisa Canut Ruiz , especialista en cristalografía de rayos X reconocida en España y EEUU. En ese país participó en una reclamación judicial contra la discriminación salarial de las investigadoras. En 1985, fue una de las fundadoras del Instituto Menorquín de Estudios. Escuchar audio",
+        "guid_hash": "4f140b4032a64642eee6fea891de45d15dd2d065",
+        "summary": "Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 , protagonizan nuestro programa. Conversamos con Ane Sagüés Abad y Cristina Tomás Olaya , integrantes de esta joven compañía navarra fundada en 2022, que ha desarrollado un lenguaje escénico propio a través del humor, la performance, la improvisación y la provocación. El jurado reconoce su capacidad para cuestionar los cánones teatrales, renovar los lenguajes escénicos y conectar con públicos que habitualmente no acuden al teatro. Hablamos de su manera de crear, de su relación con los espectadores y de espectáculos como “ Torcidas” , “ Manual para dos cuerpos desorientadxs” y “ Sexiliadas” , en los que exploran los roles de poder, la feminidad, el cuerpo, las contradicciones sociales y las experiencias de quienes se ven obligados a abandonar su lugar de origen por su sexualidad. Los viernes repasamos las novedades musicales con Carlos García Fernández . Nos detenemos en la banda sonora de “ Grand Theft Auto VI” (GTA VI) , con artistas como Dua Lipa, Lana Del Rey, Travis Scott, Justice, Tame Impala y Rauw Alejandro. Escuchamos también las nuevas propuestas de Ganges, Pau Vallvé, María Pelaé y Raya Real , además del regreso de Sanguijuelas del Guadiana . Carlos nos presenta, además, “ TEBEO” , el pódcast de RTVE que ha realizado junto a Marcos Díaz Martín sobre la historia de la pintora Marisa Roësset Velasco y la soprano Lola Rodríguez Aragón. Viajamos a A Coruña , donde la Fundación MOP presenta “ The Hamster Becomes the Problem” , una exposición dedicada al universo creativo de David Sims , uno de los grandes nombres de la fotografía de moda contemporánea. Nuestra colaboradora Conxita Casanovas , directora de “ Va de cine” en Radio 4 y Radio 5, repasa los estrenos de la cartelera. Hablamos de “ El mal padre” , de Roberto Bueso, con Eduard Fernández; “ El director” , de Dani de la Orden, basada en la novela de David Jiménez; Rose , protagonizada por Sandra Hüller; el thriller “ Adolescencia, sexo y muerte en el",
         "origin": "fresh",
         "badges": [
           "Outside preferred window"
@@ -99,9 +102,9 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "A hombros de gigantes - Del cosmos a la vida, un recorrido por la historia del universo a través de la ciencia y el arte - 22/11/2026 — RNE A hombros de gigantes",
-        "duration_formatted": "48:32",
-        "source_url": "https://www.rtve.es/api/programas/1873/audios.rss",
+        "alt_text": "El Ojo Crítico - Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 — RNE El ojo crítico",
+        "duration_formatted": "43:10",
+        "source_url": "https://www.rtve.es/api/programas/1957/audios.rss",
         "reading_time_min": 0
       }
     },
@@ -114,311 +117,310 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "mercantilismo",
+      "text": "modernización",
       "level": "C1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/meɾkantiˈlismo/",
-      "meaning": "una teoría económica basada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo orientó la política colonial.",
-      "anki_answer": "mercantilismo",
+      "phonetic": "/moðeɾniθaˈθjon/",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "anki_answer": "modernización",
       "tags": [
-        "economía"
+        "sociedad"
       ],
-      "key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7",
+      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "someter a revisión",
+      "expression": "socavar la legitimidad",
       "level": "C1",
       "type": "collocation",
-      "meaning": "presentar algo para ser revisado",
-      "meaning_fr": "soumettre à révision",
-      "example": "Someteremos el texto a revisión.",
-      "anki_answer": "someter a revisión",
+      "meaning": "debilitar el derecho a gobernar",
+      "meaning_fr": "miner la légitimité",
+      "example": "La corrupción socavó la legitimidad.",
+      "anki_answer": "socavar la legitimidad",
       "tags": [
-        "revisión"
+        "política"
       ],
-      "key": "3820820956ae6326d8a139d79cef42175a71fbc2",
+      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "mandato",
+      "text": "mercantilismo",
       "aliases": [
-        "mandato",
-        "mandatos"
+        "mercantilismo"
       ],
       "level": "C1",
-      "meaning": "la autoridad para administrar un territorio concedida por un organismo internacional",
-      "meaning_fr": "mandat",
-      "period": "Entreguerras",
-      "theme": "Política",
-      "example": "El mandato duró hasta 1946.",
+      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
+      "meaning_fr": "mercantilisme",
+      "period": "Edad Moderna",
+      "theme": "Economía",
+      "example": "El mercantilismo guiaba la política colonial.",
       "tags": [
-        "política"
+        "economía"
       ],
-      "key": "a7575613f0cf1336c11714439b228c4a9945837e",
+      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea",
+      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
       "kind": "word",
       "level": "A1",
-      "text": "pan",
-      "meaning": "un alimento común hecho con harina",
-      "meaning_fr": "pain",
-      "example": "Compramos pan y queso.",
-      "phonetic": "/pan/",
-      "anki_answer": "pan",
+      "text": "pequeño",
+      "meaning": "que no es grande",
+      "meaning_fr": "petit",
+      "example": "Viven en un piso pequeño.",
+      "phonetic": "/peˈkeɲo/",
+      "anki_answer": "pequeño",
       "tags": [
-        "comida"
+        "tamaño"
       ]
     },
     {
-      "key": "0fc6740b3909b29e62bfab123cf943384ebf9df9",
+      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
       "kind": "expression",
       "level": "A1",
-      "text": "buenos días",
-      "meaning": "saludo de la mañana",
-      "meaning_fr": "bonjour",
-      "example": "Buenos días, señora.",
+      "text": "de nada",
+      "meaning": "respuesta a las gracias",
+      "meaning_fr": "de rien",
+      "example": "De nada, me alegra haber ayudado.",
       "phonetic": "",
-      "anki_answer": "buenos días",
+      "anki_answer": "de nada",
       "tags": [
-        "saludos"
+        "cortesía"
       ]
     },
     {
-      "key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7",
+      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
       "kind": "history",
       "level": "A1",
-      "text": "año",
-      "meaning": "un período de doce meses",
-      "meaning_fr": "année",
-      "example": "El tratado duró solo un año.",
+      "text": "bandera",
+      "meaning": "una tela usada como símbolo",
+      "meaning_fr": "drapeau",
+      "example": "La bandera se izó sobre la ciudad.",
       "phonetic": "",
-      "anki_answer": "année",
+      "anki_answer": "drapeau",
       "tags": [
-        "tiempo"
+        "símbolos"
       ]
     },
     {
-      "key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9",
+      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
       "kind": "word",
       "level": "A2",
-      "text": "tranquilo",
-      "meaning": "que hace poco ruido",
-      "meaning_fr": "calme",
-      "example": "La calle estaba tranquila por la noche.",
-      "phonetic": "/tɾanˈkilo/",
-      "anki_answer": "tranquilo",
+      "text": "viaje",
+      "meaning": "el acto de viajar a otro lugar",
+      "meaning_fr": "voyage",
+      "example": "El viaje duró tres horas.",
+      "phonetic": "/ˈbjaχe/",
+      "anki_answer": "viaje",
       "tags": [
-        "sonido"
+        "viajes"
       ]
     },
     {
-      "key": "59fb8bc8302c53d48641d3365995ac18b10d667b",
+      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
       "kind": "expression",
       "level": "A2",
-      "text": "despertarse",
-      "meaning": "dejar de dormir",
-      "meaning_fr": "se réveiller",
-      "example": "Me despierto temprano los lunes.",
+      "text": "echar de menos",
+      "meaning": "sentir la ausencia de alguien",
+      "meaning_fr": "avoir le mal du pays, regretter",
+      "example": "Echo de menos a mi familia.",
       "phonetic": "",
-      "anki_answer": "despertarse",
+      "anki_answer": "echar de menos",
       "tags": [
-        "diario"
+        "sentimientos"
       ]
     },
     {
-      "key": "358e1c0087cc872f08043c24da5712741f4e0112",
+      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
       "kind": "history",
       "level": "A2",
-      "text": "mapa",
-      "meaning": "un dibujo de una zona de tierra",
-      "meaning_fr": "carte",
-      "example": "El mapa mostraba las nuevas colonias.",
+      "text": "monasterio",
+      "meaning": "un lugar donde viven y trabajan los monjes",
+      "meaning_fr": "monastère",
+      "example": "Los monjes copiaban libros en el monasterio.",
       "phonetic": "",
-      "anki_answer": "carte",
+      "anki_answer": "monastère",
       "tags": [
-        "ciencia"
+        "religión"
       ]
     },
     {
-      "key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad",
+      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
       "kind": "word",
       "level": "B1",
-      "text": "costa",
-      "meaning": "la tierra junto al mar",
-      "meaning_fr": "côte",
-      "example": "El ejército marchó por la costa.",
-      "phonetic": "/ˈkosta/",
-      "anki_answer": "costa",
-      "tags": [
-        "naturaleza"
-      ]
-    },
-    {
-      "key": "1712defdced250ad491ef25cac21fe72dfed9fce",
-      "kind": "expression",
-      "level": "B1",
-      "text": "ganar terreno",
-      "meaning": "avanzar frente a otros",
-      "meaning_fr": "gagner du terrain",
-      "example": "La idea ganó terreno.",
-      "phonetic": "",
-      "anki_answer": "ganar terreno",
-      "tags": [
-        "competencia"
-      ]
-    },
-    {
-      "key": "579105cb6487909caee03df8eb9a0640c242e250",
-      "kind": "history",
-      "level": "B1",
-      "text": "colono",
-      "meaning": "una persona que se establece en una tierra nueva",
-      "meaning_fr": "colon",
-      "example": "El colono construyó una casa pequeña.",
-      "phonetic": "",
-      "anki_answer": "colon",
-      "tags": [
-        "imperio"
-      ]
-    },
-    {
-      "key": "879f8be55f177153a930d661897dbc7ea575a7f6",
-      "kind": "word",
-      "level": "B2",
-      "text": "industria",
-      "meaning": "la actividad de fabricar bienes a gran escala",
-      "meaning_fr": "industrie",
-      "example": "La industria textil creció deprisa.",
-      "phonetic": "/indusˈtɾja/",
-      "anki_answer": "industria",
-      "tags": [
-        "economía"
-      ]
-    },
-    {
-      "key": "642d73d7e808ebf212804f5eea912fe62d086fa3",
-      "kind": "expression",
-      "level": "B2",
-      "text": "ejercer presión",
-      "meaning": "presionar para lograr algo",
-      "meaning_fr": "exercer une pression",
-      "example": "Los vecinos ejercieron presión.",
-      "phonetic": "",
-      "anki_answer": "ejercer presión",
-      "tags": [
-        "influencia"
-      ]
-    },
-    {
-      "key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a",
-      "kind": "history",
-      "level": "B2",
-      "text": "censo",
-      "meaning": "un recuento oficial de la población",
-      "meaning_fr": "recensement",
-      "example": "El censo registró cada hogar.",
-      "phonetic": "",
-      "anki_answer": "recensement",
-      "tags": [
-        "sociedad"
-      ]
-    },
-    {
-      "key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7",
-      "kind": "word",
-      "level": "C1",
-      "text": "mercantilismo",
-      "meaning": "una teoría económica basada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo orientó la política colonial.",
-      "phonetic": "/meɾkantiˈlismo/",
-      "anki_answer": "mercantilismo",
-      "tags": [
-        "economía"
-      ]
-    },
-    {
-      "key": "3820820956ae6326d8a139d79cef42175a71fbc2",
-      "kind": "expression",
-      "level": "C1",
-      "text": "someter a revisión",
-      "meaning": "presentar algo para ser revisado",
-      "meaning_fr": "soumettre à révision",
-      "example": "Someteremos el texto a revisión.",
-      "phonetic": "",
-      "anki_answer": "someter a revisión",
-      "tags": [
-        "revisión"
-      ]
-    },
-    {
-      "key": "a7575613f0cf1336c11714439b228c4a9945837e",
-      "kind": "history",
-      "level": "C1",
-      "text": "mandato",
-      "meaning": "la autoridad para administrar un territorio concedida por un organismo internacional",
-      "meaning_fr": "mandat",
-      "example": "El mandato duró hasta 1946.",
-      "phonetic": "",
-      "anki_answer": "mandat",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73",
-      "kind": "word",
-      "level": "C2",
-      "text": "archivístico",
-      "meaning": "relativo a los documentos conservados en un archivo",
-      "meaning_fr": "archivistique",
-      "example": "Los documentos archivísticos se digitalizaron.",
-      "phonetic": "/aɾtʃiˈβistiko/",
-      "anki_answer": "archivístico",
+      "text": "costumbre",
+      "meaning": "una tradición seguida por un grupo",
+      "meaning_fr": "coutume",
+      "example": "La costumbre sobrevivió siglos.",
+      "phonetic": "/kosˈtumbre/",
+      "anki_answer": "costumbre",
       "tags": [
         "cultura"
       ]
     },
     {
-      "key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca",
+      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
       "kind": "expression",
-      "level": "C2",
-      "text": "poner en duda la periodización",
-      "meaning": "cuestionar la división en períodos",
-      "meaning_fr": "remettre en question la périodisation",
-      "example": "Pusieron en duda la periodización clásica.",
+      "level": "B1",
+      "text": "hablar en nombre de",
+      "meaning": "representar a un grupo",
+      "meaning_fr": "parler au nom de",
+      "example": "Habló en nombre de todos.",
       "phonetic": "",
-      "anki_answer": "poner en duda la periodización",
+      "anki_answer": "hablar en nombre de",
       "tags": [
-        "historia"
+        "representación"
       ]
     },
     {
-      "key": "92299f8f11b810d361dc928f62bc61dacb40a942",
+      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
       "kind": "history",
-      "level": "C2",
-      "text": "diacronía",
-      "meaning": "el estudio de un fenómeno a lo largo del tiempo",
-      "meaning_fr": "diachronie",
-      "example": "La diacronía mostró cambios en la lengua.",
+      "level": "B1",
+      "text": "conquista",
+      "meaning": "el acto de tomar un territorio por la fuerza",
+      "meaning_fr": "conquête",
+      "example": "La conquista cambió la región.",
       "phonetic": "",
-      "anki_answer": "diachronie",
+      "anki_answer": "conquête",
+      "tags": [
+        "guerra"
+      ]
+    },
+    {
+      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
+      "kind": "word",
+      "level": "B2",
+      "text": "insurrección",
+      "meaning": "un levantamiento contra la autoridad",
+      "meaning_fr": "insurrection",
+      "example": "La insurrección empezó en la capital.",
+      "phonetic": "/insuɾeˈkθjon/",
+      "anki_answer": "insurrección",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "estar a la altura",
+      "meaning": "cumplir las expectativas",
+      "meaning_fr": "être à la hauteur",
+      "example": "El equipo estuvo a la altura.",
+      "phonetic": "",
+      "anki_answer": "estar a la altura",
+      "tags": [
+        "expectativas"
+      ]
+    },
+    {
+      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "kind": "history",
+      "level": "B2",
+      "text": "civilización",
+      "meaning": "una sociedad humana avanzada",
+      "meaning_fr": "civilisation",
+      "example": "La civilización dejó grandes monumentos.",
+      "phonetic": "",
+      "anki_answer": "civilisation",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
+      "kind": "word",
+      "level": "C1",
+      "text": "modernización",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "phonetic": "/moðeɾniθaˈθjon/",
+      "anki_answer": "modernización",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
+      "kind": "expression",
+      "level": "C1",
+      "text": "socavar la legitimidad",
+      "meaning": "debilitar el derecho a gobernar",
+      "meaning_fr": "miner la légitimité",
+      "example": "La corrupción socavó la legitimidad.",
+      "phonetic": "",
+      "anki_answer": "socavar la legitimidad",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
+      "kind": "history",
+      "level": "C1",
+      "text": "mercantilismo",
+      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
+      "meaning_fr": "mercantilisme",
+      "example": "El mercantilismo guiaba la política colonial.",
+      "phonetic": "",
+      "anki_answer": "mercantilisme",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "kind": "word",
+      "level": "C2",
+      "text": "cartografía",
+      "meaning": "el arte y la ciencia de hacer mapas",
+      "meaning_fr": "cartographie",
+      "example": "La cartografía portuguesa mejoró rápidamente.",
+      "phonetic": "/kaɾtoɣɾaˈfia/",
+      "anki_answer": "cartografía",
       "tags": [
         "ciencia"
+      ]
+    },
+    {
+      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "kind": "expression",
+      "level": "C2",
+      "text": "poner en perspectiva",
+      "meaning": "comparar un hecho con su contexto",
+      "meaning_fr": "mettre en perspective",
+      "example": "Puso el dato en perspectiva.",
+      "phonetic": "",
+      "anki_answer": "poner en perspectiva",
+      "tags": [
+        "análisis"
+      ]
+    },
+    {
+      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "kind": "history",
+      "level": "C2",
+      "text": "discontinuidad",
+      "meaning": "una ruptura en la continuidad de un proceso",
+      "meaning_fr": "discontinuité",
+      "example": "La obra subrayó la discontinuidad.",
+      "phonetic": "",
+      "anki_answer": "discontinuité",
+      "tags": [
+        "cultura"
       ]
     }
   ],
@@ -428,270 +430,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "¿Qué significa “pan”?",
+      "prompt": "¿Qué significa “pequeño”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "pain",
-      "item_key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea"
+      "answer": "petit",
+      "item_key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Completa la expresión: ____ días",
+      "prompt": "Completa la expresión: de ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "buenos",
-      "item_key": "0fc6740b3909b29e62bfab123cf943384ebf9df9"
+      "answer": "nada",
+      "item_key": "3df7c4daec9142ef06b1d480c13faa588cc0650f"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "¿A qué período pertenece “año”?",
+      "prompt": "¿A qué período pertenece “bandera”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
       "answer": "General",
-      "item_key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7"
+      "item_key": "825332468514bbcede1dd4927c73122b64a7bb71"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "¿Qué significa “tranquilo”?",
+      "prompt": "¿Qué significa “viaje”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "calme",
-      "item_key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9"
+      "answer": "voyage",
+      "item_key": "46795912b3ee42f36cf5fd776870b1026852abcd"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Completa la expresión: ____",
+      "prompt": "Completa la expresión: echar de ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "despertarse",
-      "item_key": "59fb8bc8302c53d48641d3365995ac18b10d667b"
+      "answer": "menos",
+      "item_key": "714348c8b4f4782814f0ef78e6ba345271ab5188"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "¿A qué período pertenece “mapa”?",
+      "prompt": "¿A qué período pertenece “monasterio”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Edad Moderna",
-      "item_key": "358e1c0087cc872f08043c24da5712741f4e0112"
+      "answer": "Edad Media",
+      "item_key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "¿Qué significa “costa”?",
+      "prompt": "¿Qué significa “costumbre”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "côte",
-      "item_key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad"
+      "answer": "coutume",
+      "item_key": "6ab5f616acf084645298dc16cddde5180d6a0d81"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Completa la expresión: ganar ____",
+      "prompt": "Completa la expresión: hablar en ____ de",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "terreno",
-      "item_key": "1712defdced250ad491ef25cac21fe72dfed9fce"
+      "answer": "nombre",
+      "item_key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "¿A qué período pertenece “colono”?",
+      "prompt": "¿A qué período pertenece “conquista”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Siglo XIX",
-      "item_key": "579105cb6487909caee03df8eb9a0640c242e250"
+      "answer": "Antigüedad",
+      "item_key": "950c0cc5d1df2fef68e78e266b0243c978702057"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "¿Qué significa “industria”?",
+      "prompt": "¿Qué significa “insurrección”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "industrie",
-      "item_key": "879f8be55f177153a930d661897dbc7ea575a7f6"
+      "answer": "insurrection",
+      "item_key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Completa la expresión: ejercer ____",
+      "prompt": "Completa la expresión: estar a la ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "presión",
-      "item_key": "642d73d7e808ebf212804f5eea912fe62d086fa3"
+      "answer": "altura",
+      "item_key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "¿A qué período pertenece “censo”?",
+      "prompt": "¿A qué período pertenece “civilización”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "General",
-      "item_key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a"
+      "answer": "Antigüedad",
+      "item_key": "5286c476c737af93cf9b017f1c116af98eda1482"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "¿Qué significa “mercantilismo”?",
+      "prompt": "¿Qué significa “modernización”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "mercantilisme",
-      "item_key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7"
+      "answer": "modernisation",
+      "item_key": "891634f2bec28bf34add705d3a28a37d3bc0b94b"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Completa la expresión: someter a ____",
+      "prompt": "Completa la expresión: socavar la ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "revisión",
-      "item_key": "3820820956ae6326d8a139d79cef42175a71fbc2"
+      "answer": "legitimidad",
+      "item_key": "880a19665645f476ded6b498c0e9da5584f699f8"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "¿A qué período pertenece “mandato”?",
+      "prompt": "¿A qué período pertenece “mercantilismo”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Entreguerras",
-      "item_key": "a7575613f0cf1336c11714439b228c4a9945837e"
+      "answer": "Edad Moderna",
+      "item_key": "a732dd8e2fef5ea60d559f42893462a496ee8697"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "¿Qué significa “archivístico”?",
+      "prompt": "¿Qué significa “cartografía”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "archivistique",
-      "item_key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73"
+      "answer": "cartographie",
+      "item_key": "ba6275ea6d926358822050ea139ef4b860872029"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Completa la expresión: poner en duda la ____",
+      "prompt": "Completa la expresión: poner en ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "periodización",
-      "item_key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca"
+      "answer": "perspectiva",
+      "item_key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "¿A qué período pertenece “diacronía”?",
+      "prompt": "¿A qué período pertenece “discontinuidad”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "General",
-      "item_key": "92299f8f11b810d361dc928f62bc61dacb40a942"
+      "answer": "Contemporáneo",
+      "item_key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da"
     }
   ],
   "tour": [
@@ -743,7 +745,8 @@
     "filled": 3,
     "total": 6,
     "origins": {
-      "fresh": 3
+      "fresh": 2,
+      "adjacent": 1
     },
     "source_count": 3,
     "phrase_count": 6,

@@ -5,58 +5,58 @@
   "slots": {
     "news": {
       "text": {
-        "id": 1894677529,
-        "title": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler",
+        "id": 1898864364,
+        "title": "BepiColombo, la misión a Mercurio que busca descubrir por qué el planeta se está achicando (y otros misterios)",
         "source": "BBC Mundo (texto)",
         "source_id": "es_bbc_mundo_text",
         "category": "news",
-        "url": "https://www.bbc.com/mundo/articles/c6n90g8p3nlwo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-21T12:21:16",
+        "url": "https://www.bbc.com/mundo/articles/c68x04de2nzgo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T12:12:20",
         "level": "B2",
         "slot_level": "B2",
-        "source_level": "B2",
-        "word_count": 1515,
+        "source_level": "C1",
+        "word_count": 1344,
         "duration_sec": null,
-        "body_text": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler Jorge Drexler está en la barra de un bar en Miami Beach. Se pone los lentes para leer la carta de tragos mientras intenta que lo vean para que lo atiendan.",
+        "body_text": "BepiColombo, la misión a Mercurio que busca descubrir por qué el planeta se está achicando (y otros misterios) - Autor, Fernando Duarte - Título del autor, Servicio Mundial de la BBC - Fecha de publicación - Tiempo de lectura: 7 min Tras un viaje de ocho años a través del Sistema Solar interior…",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "630f74e2e892d9d2920d2fa7f285c55c428d0ba5",
-        "summary": "El músico uruguayo ganó tres premios Latin Grammy la semana pasada y recibió ahora dos nominaciones al Grammy anglosajón.",
-        "origin": "fresh",
+        "guid_hash": "0b54f6a23649d0883ca3891000fbb0f5cb8331be",
+        "summary": "Una nave espacial llamada BepiColombo está llegando este mes a nuestro vecino menos explorado, con la esperanza de arrojar luz sobre algunos de sus misterios.",
+        "origin": "adjacent",
         "badges": [
-          "Outside preferred window"
+          "Closest level: C1"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler — BBC Mundo (texto)",
+        "alt_text": "BepiColombo, la misión a Mercurio que busca descubrir por qué el planeta se está achicando (y otros misterios) — BBC Mundo (texto)",
         "duration_formatted": "",
         "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-        "reading_time_min": 8
+        "reading_time_min": 7
       },
       "audio": {
-        "id": 1894677543,
-        "title": "24 Horas - Cultura con Marta García Miranda - 20/11/26",
+        "id": 1898864386,
+        "title": "24 Horas - Informativo - 20/11/26",
         "source": "RNE 24 horas",
         "source_id": "es_rne_24_horas",
         "category": "news",
-        "url": "https://www.rtve.es/play/audios/24-horas/cultura-marta-garcia-miranda-20-11-26/17324526/",
-        "published_at": "2026-11-20T20:30:00",
+        "url": "https://www.rtve.es/play/audios/24-horas/informativo-20-11-26/17324421/",
+        "published_at": "2026-11-20T19:00:00",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
         "word_count": 1,
-        "duration_sec": 1801,
+        "duration_sec": 1800,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/4/8/1795209106584.mp3?idasset=17324526&download-token=1795348862_0x24eff1686ed1a9dd04b88e4183a23de26a55b802",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/2/2/1795203274322.mp3?idasset=17324421&download-token=1795353431_0x214a4a07016fd86dd7e37841fd684a088fcf104c",
         "description": "null",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "2582e181827881c217b65052746b73f4561f964d",
+        "guid_hash": "6f1aa17bd044c266e117c6d6a24c50b79c5ef9c9",
         "summary": "null",
         "origin": "fresh",
         "badges": [
@@ -65,8 +65,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "24 Horas - Cultura con Marta García Miranda - 20/11/26 — RNE 24 horas",
-        "duration_formatted": "30:01",
+        "alt_text": "24 Horas - Informativo - 20/11/26 — RNE 24 horas",
+        "duration_formatted": "30:00",
         "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
         "reading_time_min": 0
       }
@@ -74,472 +74,351 @@
     "culture": {
       "text": null,
       "audio": {
-        "id": 1894677553,
-        "title": "No es un día cualquiera - Verba Volant con Emilio del Río: espías",
-        "source": "RNE No es un día cualquiera",
-        "source_id": "es_rne_no_es_un_dia_cualquiera",
+        "id": 1898864401,
+        "title": "Más cerca - ¿Qué nos pasa con las matemáticas? - 18/11/2026",
+        "source": "RNE A hombros de gigantes",
+        "source_id": "es_rne_a_hombros_de_gigantes",
         "category": "culture",
-        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-verba-volant-emilio-del-rio-espias/17325386/",
-        "published_at": "2026-11-22T10:52:59",
+        "url": "https://www.rtve.es/play/audios/a-hombros-de-gigantes/mas-cerca-pasa-matematicas-18-11-2026/17319538/",
+        "published_at": "2026-11-18T11:03:58",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 66,
-        "duration_sec": 911,
+        "word_count": 85,
+        "duration_sec": 543,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SNEDCSD/mp3/1/4/1795343625241.mp3?idasset=17325386&download-token=1795348875_0xa978d6eb7cbeed984b2995d8863a9eae1f0dbc3e",
-        "description": "Espías es el tema protagonista de un ` Verba Volant ´. Con su humor habitual, Emilio del Río nos habla y enseña el origen de términos como espiar o especular . La pregunta del `concursus´ es : ¿Cómo se llama la mujer de Orfeo , a la que va a buscar al Hades ?. Las repuestas las podéis enviar a verbavolant@rtve.es y a las redes sociales de Emilio Escuchar audio",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SAHOMB/mp3/1/4/1794998001341.mp3?idasset=17319538&download-token=1795353450_0x4d5425a88766add7f7966c0f0b64ba9905352e33",
+        "description": "Las matemáticas están presentes en nuestra vida cotidiana: en el dinero que gestionamos, en la etiqueta de un producto, en el código de barras, en nuestro DNI, en los algoritmos de nuestro teléfono móvil o en la predicción del tiempo. Están en todos lados y, sin embargo, una parte considerable de la población mantiene con ellas una relación de distancia, frustración o incluso rechazo. En \"Más cerca\" (Radio 5) hemos hablado con Enrique Gracián , autor del libro “Que nos pasa con las matemáticas” (Arpa). Escuchar audio",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "fc5e5905a358efb85e2a43a4ba703ff1ea5589ba",
-        "summary": "Espías es el tema protagonista de un ` Verba Volant ´. Con su humor habitual, Emilio del Río nos habla y enseña el origen de términos como espiar o especular . La pregunta del `concursus´ es : ¿Cómo se llama la mujer de Orfeo , a la que va a buscar al Hades ?. Las repuestas las podéis enviar a verbavolant@rtve.es y a las redes sociales de Emilio Escuchar audio",
+        "guid_hash": "5574e6d1b1331afec9aeaaf313b3b0cdd0fc3548",
+        "summary": "Las matemáticas están presentes en nuestra vida cotidiana: en el dinero que gestionamos, en la etiqueta de un producto, en el código de barras, en nuestro DNI, en los algoritmos de nuestro teléfono móvil o en la predicción del tiempo. Están en todos lados y, sin embargo, una parte considerable de la población mantiene con ellas una relación de distancia, frustración o incluso rechazo. En \"Más cerca\" (Radio 5) hemos hablado con Enrique Gracián , autor del libro “Que nos pasa con las matemáticas” (Arpa). Escuchar audio",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "No es un día cualquiera - Verba Volant con Emilio del Río: espías — RNE No es un día cualquiera",
-        "duration_formatted": "15:11",
-        "source_url": "https://www.rtve.es/api/programas/2054/audios.rss",
+        "alt_text": "Más cerca - ¿Qué nos pasa con las matemáticas? - 18/11/2026 — RNE A hombros de gigantes",
+        "duration_formatted": "9:03",
+        "source_url": "https://www.rtve.es/api/programas/1873/audios.rss",
         "reading_time_min": 0
       }
     },
     "history": {
       "text": null,
-      "audio": {
-        "id": 1894677571,
-        "title": "Documentos RNE - Juana I de Castilla, una reina entre la locura y la conjura - 16/11/26",
-        "source": "RNE Documentos RNE",
-        "source_id": "es_rne_documentos_rne",
-        "category": "history",
-        "url": "https://www.rtve.es/play/audios/documentos-rne/juana-castilla-loca-conjura/17312681/",
-        "published_at": "2026-11-15T23:55:49",
-        "level": "B2",
-        "slot_level": "B2",
-        "source_level": "C1",
-        "word_count": 348,
-        "duration_sec": 3330,
-        "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SRDOCU/mp3/0/2/1794571177120.mp3?idasset=17312681&download-token=1795348898_0x84433f835c744a91fdf21c421bdd6db087c2d73f",
-        "description": "Juana I , tercera hija de los Reyes Católicos , esposa de Felipe el Hermoso y madre de Carlos V , reinó más de 50 años en Castilla y casi 40 en Aragón. Nunca se la desposeyó oficialmente de sus derechos, pero apenas pudo ejercer autoridad sobre sus dominios ni sobre ella misma. La versión más extendida a lo largo de la historia –en la que se apoya el sobrenombre \"la Loca\"– sostiene que no tenía capacidad para hacerlo debido a algún tipo de enfermedad mental. Sin embargo, otra teoría defiende que la apartaron del poder las ambiciones de su marido, su padre y su hijo. Dos visiones opuestas pero con un punto en común: considerar a Juana como una víctima, ya sea de la conjura o de la locura. Los escritores y artistas del Romanticismo acabaron de redondear el mito atribuyendo su supuesta demencia a los celos y a un amor posesivo que sobrevivió incluso a la muerte. Representaciones más recientes, como las plasmadas en la serie de TVE 'Isabel' o en la película coproducida por RTVE 'La corona partida', tratan de ser más fieles a la realidad histórica del personaje. Este documental sonoro, escrito por Luis Zaragoza y realizado por Mayca Aguilera , se aproxima a la biografía de la monarca sin obviar el debate que sigue existiendo en torno a ella. El programa traza un relato sobre su infancia y juventud, las vicisitudes de su matrimonio, los conflictos de intereses en la Castilla y la Europa de la época, la lucha sucesoria tras la muerte de Isabel la Católica , la actuación de Juana tras el fallecimiento (nunca bien aclarado) de Felipe el Hermoso, su residencia durante 46 años en Tordesillas y la relación con su hijo Carlos y con los comuneros que le hicieron frente. Intervienen los historiadores Miguel Ángel Zalama , investigador de la figura de Juana I de Castilla; Bethany Aram , autora del libro 'La reina Juana: gobierno, piedad y dinastía'; María Lara , autora de 'Juana I, la reina cuerda'; Isabel del Val , experta en Isabel la Católica; y José Manuel Calderón , autor de l",
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": false,
-        "guid_hash": "f921e9f7860209f1a071c9722e85f22d45c0c294",
-        "summary": "Juana I , tercera hija de los Reyes Católicos , esposa de Felipe el Hermoso y madre de Carlos V , reinó más de 50 años en Castilla y casi 40 en Aragón. Nunca se la desposeyó oficialmente de sus derechos, pero apenas pudo ejercer autoridad sobre sus dominios ni sobre ella misma. La versión más extendida a lo largo de la historia –en la que se apoya el sobrenombre \"la Loca\"– sostiene que no tenía capacidad para hacerlo debido a algún tipo de enfermedad mental. Sin embargo, otra teoría defiende que la apartaron del poder las ambiciones de su marido, su padre y su hijo. Dos visiones opuestas pero con un punto en común: considerar a Juana como una víctima, ya sea de la conjura o de la locura. Los escritores y artistas del Romanticismo acabaron de redondear el mito atribuyendo su supuesta demencia a los celos y a un amor posesivo que sobrevivió incluso a la muerte. Representaciones más recientes, como las plasmadas en la serie de TVE 'Isabel' o en la película coproducida por RTVE 'La corona partida', tratan de ser más fieles a la realidad histórica del personaje. Este documental sonoro, escrito por Luis Zaragoza y realizado por Mayca Aguilera , se aproxima a la biografía de la monarca sin obviar el debate que sigue existiendo en torno a ella. El programa traza un relato sobre su infancia y juventud, las vicisitudes de su matrimonio, los conflictos de intereses en la Castilla y la Europa de la época, la lucha sucesoria tras la muerte de Isabel la Católica , la actuación de Juana tras el fallecimiento (nunca bien aclarado) de Felipe el Hermoso, su residencia durante 46 años en Tordesillas y la relación con su hijo Carlos y con los comuneros que le hicieron frente. Intervienen los historiadores Miguel Ángel Zalama , investigador de la figura de Juana I de Castilla; Bethany Aram , autora del libro 'La reina Juana: gobierno, piedad y dinastía'; María Lara , autora de 'Juana I, la reina cuerda'; Isabel del Val , experta en Isabel la Católica; y José Manuel Calderón , autor de l",
-        "origin": "adjacent",
-        "badges": [
-          "Closest level: C1",
-          "Outside preferred window"
-        ],
-        "periods": [
-          "Edad Media",
-          "General"
-        ],
-        "themes": [
-          "Política",
-          "Sociedad",
-          "Cultura"
-        ],
-        "history_terms": [
-          {
-            "text": "rey",
-            "aliases": [
-              "rey",
-              "reyes"
-            ],
-            "level": "A1",
-            "meaning": "un hombre que gobierna un reino",
-            "meaning_fr": "roi",
-            "period": "Edad Media",
-            "theme": "Política",
-            "example": "El rey firmó el tratado.",
-            "tags": [
-              "política"
-            ]
-          },
-          {
-            "text": "reina",
-            "aliases": [
-              "reina",
-              "reinas"
-            ],
-            "level": "A1",
-            "meaning": "una mujer que gobierna un reino",
-            "meaning_fr": "reine",
-            "period": "Edad Media",
-            "theme": "Política",
-            "example": "La reina mandó construir el puente.",
-            "tags": [
-              "política"
-            ]
-          },
-          {
-            "text": "año",
-            "aliases": [
-              "año",
-              "años"
-            ],
-            "level": "A1",
-            "meaning": "un período de doce meses",
-            "meaning_fr": "année",
-            "period": "General",
-            "theme": "Sociedad",
-            "example": "El tratado duró solo un año.",
-            "tags": [
-              "tiempo"
-            ]
-          },
-          {
-            "text": "libro",
-            "aliases": [
-              "libro",
-              "libros"
-            ],
-            "level": "A1",
-            "meaning": "una obra escrita con páginas",
-            "meaning_fr": "livre",
-            "period": "General",
-            "theme": "Cultura",
-            "example": "El libro describe la Roma antigua.",
-            "tags": [
-              "cultura"
-            ]
-          },
-          {
-            "text": "dinastía",
-            "aliases": [
-              "dinastía",
-              "dinastías"
-            ],
-            "level": "B1",
-            "meaning": "una sucesión de gobernantes de una familia",
-            "meaning_fr": "dynastie",
-            "period": "Edad Media",
-            "theme": "Política",
-            "example": "La dinastía duró tres siglos.",
-            "tags": [
-              "política"
-            ]
-          }
-        ],
-        "alt_text": "Documentos RNE - Juana I de Castilla, una reina entre la locura y la conjura - 16/11/26 — RNE Documentos RNE",
-        "duration_formatted": "55:30",
-        "source_url": "https://www.rtve.es/api/programas/1938/audios.rss",
-        "reading_time_min": 0
-      }
+      "audio": null
     }
   },
   "phrase": {
     "date": "2026-11-22",
     "level": "B2",
     "word": {
-      "text": "industria",
+      "text": "insurrección",
       "level": "B2",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/indusˈtɾja/",
-      "meaning": "la actividad de fabricar bienes a gran escala",
-      "meaning_fr": "industrie",
-      "example": "La industria textil creció deprisa.",
-      "anki_answer": "industria",
+      "phonetic": "/insuɾeˈkθjon/",
+      "meaning": "un levantamiento contra la autoridad",
+      "meaning_fr": "insurrection",
+      "example": "La insurrección empezó en la capital.",
+      "anki_answer": "insurrección",
       "tags": [
-        "economía"
+        "política"
       ],
-      "key": "879f8be55f177153a930d661897dbc7ea575a7f6",
+      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "ejercer presión",
+      "expression": "estar a la altura",
       "level": "B2",
       "type": "collocation",
-      "meaning": "presionar para lograr algo",
-      "meaning_fr": "exercer une pression",
-      "example": "Los vecinos ejercieron presión.",
-      "anki_answer": "ejercer presión",
+      "meaning": "cumplir las expectativas",
+      "meaning_fr": "être à la hauteur",
+      "example": "El equipo estuvo a la altura.",
+      "anki_answer": "estar a la altura",
       "tags": [
-        "influencia"
+        "expectativas"
       ],
-      "key": "642d73d7e808ebf212804f5eea912fe62d086fa3",
+      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "censo",
+      "text": "civilización",
       "aliases": [
-        "censo",
-        "censos"
+        "civilización",
+        "civilizaciones"
       ],
       "level": "B2",
-      "meaning": "un recuento oficial de la población",
-      "meaning_fr": "recensement",
-      "period": "General",
-      "theme": "Sociedad",
-      "example": "El censo registró cada hogar.",
+      "meaning": "una sociedad humana avanzada",
+      "meaning_fr": "civilisation",
+      "period": "Antigüedad",
+      "theme": "Cultura",
+      "example": "La civilización dejó grandes monumentos.",
       "tags": [
-        "sociedad"
+        "cultura"
       ],
-      "key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a",
+      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea",
+      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
       "kind": "word",
       "level": "A1",
-      "text": "pan",
-      "meaning": "un alimento común hecho con harina",
-      "meaning_fr": "pain",
-      "example": "Compramos pan y queso.",
-      "phonetic": "/pan/",
-      "anki_answer": "pan",
+      "text": "pequeño",
+      "meaning": "que no es grande",
+      "meaning_fr": "petit",
+      "example": "Viven en un piso pequeño.",
+      "phonetic": "/peˈkeɲo/",
+      "anki_answer": "pequeño",
       "tags": [
-        "comida"
+        "tamaño"
       ]
     },
     {
-      "key": "0fc6740b3909b29e62bfab123cf943384ebf9df9",
+      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
       "kind": "expression",
       "level": "A1",
-      "text": "buenos días",
-      "meaning": "saludo de la mañana",
-      "meaning_fr": "bonjour",
-      "example": "Buenos días, señora.",
+      "text": "de nada",
+      "meaning": "respuesta a las gracias",
+      "meaning_fr": "de rien",
+      "example": "De nada, me alegra haber ayudado.",
       "phonetic": "",
-      "anki_answer": "buenos días",
+      "anki_answer": "de nada",
       "tags": [
-        "saludos"
+        "cortesía"
       ]
     },
     {
-      "key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7",
+      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
       "kind": "history",
       "level": "A1",
-      "text": "año",
-      "meaning": "un período de doce meses",
-      "meaning_fr": "année",
-      "example": "El tratado duró solo un año.",
+      "text": "bandera",
+      "meaning": "una tela usada como símbolo",
+      "meaning_fr": "drapeau",
+      "example": "La bandera se izó sobre la ciudad.",
       "phonetic": "",
-      "anki_answer": "année",
+      "anki_answer": "drapeau",
       "tags": [
-        "tiempo"
+        "símbolos"
       ]
     },
     {
-      "key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9",
+      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
       "kind": "word",
       "level": "A2",
-      "text": "tranquilo",
-      "meaning": "que hace poco ruido",
-      "meaning_fr": "calme",
-      "example": "La calle estaba tranquila por la noche.",
-      "phonetic": "/tɾanˈkilo/",
-      "anki_answer": "tranquilo",
+      "text": "viaje",
+      "meaning": "el acto de viajar a otro lugar",
+      "meaning_fr": "voyage",
+      "example": "El viaje duró tres horas.",
+      "phonetic": "/ˈbjaχe/",
+      "anki_answer": "viaje",
       "tags": [
-        "sonido"
+        "viajes"
       ]
     },
     {
-      "key": "59fb8bc8302c53d48641d3365995ac18b10d667b",
+      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
       "kind": "expression",
       "level": "A2",
-      "text": "despertarse",
-      "meaning": "dejar de dormir",
-      "meaning_fr": "se réveiller",
-      "example": "Me despierto temprano los lunes.",
+      "text": "echar de menos",
+      "meaning": "sentir la ausencia de alguien",
+      "meaning_fr": "avoir le mal du pays, regretter",
+      "example": "Echo de menos a mi familia.",
       "phonetic": "",
-      "anki_answer": "despertarse",
+      "anki_answer": "echar de menos",
       "tags": [
-        "diario"
+        "sentimientos"
       ]
     },
     {
-      "key": "358e1c0087cc872f08043c24da5712741f4e0112",
+      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
       "kind": "history",
       "level": "A2",
-      "text": "mapa",
-      "meaning": "un dibujo de una zona de tierra",
-      "meaning_fr": "carte",
-      "example": "El mapa mostraba las nuevas colonias.",
+      "text": "monasterio",
+      "meaning": "un lugar donde viven y trabajan los monjes",
+      "meaning_fr": "monastère",
+      "example": "Los monjes copiaban libros en el monasterio.",
       "phonetic": "",
-      "anki_answer": "carte",
+      "anki_answer": "monastère",
       "tags": [
-        "ciencia"
+        "religión"
       ]
     },
     {
-      "key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad",
+      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
       "kind": "word",
       "level": "B1",
-      "text": "costa",
-      "meaning": "la tierra junto al mar",
-      "meaning_fr": "côte",
-      "example": "El ejército marchó por la costa.",
-      "phonetic": "/ˈkosta/",
-      "anki_answer": "costa",
-      "tags": [
-        "naturaleza"
-      ]
-    },
-    {
-      "key": "1712defdced250ad491ef25cac21fe72dfed9fce",
-      "kind": "expression",
-      "level": "B1",
-      "text": "ganar terreno",
-      "meaning": "avanzar frente a otros",
-      "meaning_fr": "gagner du terrain",
-      "example": "La idea ganó terreno.",
-      "phonetic": "",
-      "anki_answer": "ganar terreno",
-      "tags": [
-        "competencia"
-      ]
-    },
-    {
-      "key": "579105cb6487909caee03df8eb9a0640c242e250",
-      "kind": "history",
-      "level": "B1",
-      "text": "colono",
-      "meaning": "una persona que se establece en una tierra nueva",
-      "meaning_fr": "colon",
-      "example": "El colono construyó una casa pequeña.",
-      "phonetic": "",
-      "anki_answer": "colon",
-      "tags": [
-        "imperio"
-      ]
-    },
-    {
-      "key": "879f8be55f177153a930d661897dbc7ea575a7f6",
-      "kind": "word",
-      "level": "B2",
-      "text": "industria",
-      "meaning": "la actividad de fabricar bienes a gran escala",
-      "meaning_fr": "industrie",
-      "example": "La industria textil creció deprisa.",
-      "phonetic": "/indusˈtɾja/",
-      "anki_answer": "industria",
-      "tags": [
-        "economía"
-      ]
-    },
-    {
-      "key": "642d73d7e808ebf212804f5eea912fe62d086fa3",
-      "kind": "expression",
-      "level": "B2",
-      "text": "ejercer presión",
-      "meaning": "presionar para lograr algo",
-      "meaning_fr": "exercer une pression",
-      "example": "Los vecinos ejercieron presión.",
-      "phonetic": "",
-      "anki_answer": "ejercer presión",
-      "tags": [
-        "influencia"
-      ]
-    },
-    {
-      "key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a",
-      "kind": "history",
-      "level": "B2",
-      "text": "censo",
-      "meaning": "un recuento oficial de la población",
-      "meaning_fr": "recensement",
-      "example": "El censo registró cada hogar.",
-      "phonetic": "",
-      "anki_answer": "recensement",
-      "tags": [
-        "sociedad"
-      ]
-    },
-    {
-      "key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7",
-      "kind": "word",
-      "level": "C1",
-      "text": "mercantilismo",
-      "meaning": "una teoría económica basada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo orientó la política colonial.",
-      "phonetic": "/meɾkantiˈlismo/",
-      "anki_answer": "mercantilismo",
-      "tags": [
-        "economía"
-      ]
-    },
-    {
-      "key": "3820820956ae6326d8a139d79cef42175a71fbc2",
-      "kind": "expression",
-      "level": "C1",
-      "text": "someter a revisión",
-      "meaning": "presentar algo para ser revisado",
-      "meaning_fr": "soumettre à révision",
-      "example": "Someteremos el texto a revisión.",
-      "phonetic": "",
-      "anki_answer": "someter a revisión",
-      "tags": [
-        "revisión"
-      ]
-    },
-    {
-      "key": "a7575613f0cf1336c11714439b228c4a9945837e",
-      "kind": "history",
-      "level": "C1",
-      "text": "mandato",
-      "meaning": "la autoridad para administrar un territorio concedida por un organismo internacional",
-      "meaning_fr": "mandat",
-      "example": "El mandato duró hasta 1946.",
-      "phonetic": "",
-      "anki_answer": "mandat",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73",
-      "kind": "word",
-      "level": "C2",
-      "text": "archivístico",
-      "meaning": "relativo a los documentos conservados en un archivo",
-      "meaning_fr": "archivistique",
-      "example": "Los documentos archivísticos se digitalizaron.",
-      "phonetic": "/aɾtʃiˈβistiko/",
-      "anki_answer": "archivístico",
+      "text": "costumbre",
+      "meaning": "una tradición seguida por un grupo",
+      "meaning_fr": "coutume",
+      "example": "La costumbre sobrevivió siglos.",
+      "phonetic": "/kosˈtumbre/",
+      "anki_answer": "costumbre",
       "tags": [
         "cultura"
       ]
     },
     {
-      "key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca",
+      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
       "kind": "expression",
-      "level": "C2",
-      "text": "poner en duda la periodización",
-      "meaning": "cuestionar la división en períodos",
-      "meaning_fr": "remettre en question la périodisation",
-      "example": "Pusieron en duda la periodización clásica.",
+      "level": "B1",
+      "text": "hablar en nombre de",
+      "meaning": "representar a un grupo",
+      "meaning_fr": "parler au nom de",
+      "example": "Habló en nombre de todos.",
       "phonetic": "",
-      "anki_answer": "poner en duda la periodización",
+      "anki_answer": "hablar en nombre de",
       "tags": [
-        "historia"
+        "representación"
       ]
     },
     {
-      "key": "92299f8f11b810d361dc928f62bc61dacb40a942",
+      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
       "kind": "history",
-      "level": "C2",
-      "text": "diacronía",
-      "meaning": "el estudio de un fenómeno a lo largo del tiempo",
-      "meaning_fr": "diachronie",
-      "example": "La diacronía mostró cambios en la lengua.",
+      "level": "B1",
+      "text": "conquista",
+      "meaning": "el acto de tomar un territorio por la fuerza",
+      "meaning_fr": "conquête",
+      "example": "La conquista cambió la región.",
       "phonetic": "",
-      "anki_answer": "diachronie",
+      "anki_answer": "conquête",
+      "tags": [
+        "guerra"
+      ]
+    },
+    {
+      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
+      "kind": "word",
+      "level": "B2",
+      "text": "insurrección",
+      "meaning": "un levantamiento contra la autoridad",
+      "meaning_fr": "insurrection",
+      "example": "La insurrección empezó en la capital.",
+      "phonetic": "/insuɾeˈkθjon/",
+      "anki_answer": "insurrección",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "estar a la altura",
+      "meaning": "cumplir las expectativas",
+      "meaning_fr": "être à la hauteur",
+      "example": "El equipo estuvo a la altura.",
+      "phonetic": "",
+      "anki_answer": "estar a la altura",
+      "tags": [
+        "expectativas"
+      ]
+    },
+    {
+      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "kind": "history",
+      "level": "B2",
+      "text": "civilización",
+      "meaning": "una sociedad humana avanzada",
+      "meaning_fr": "civilisation",
+      "example": "La civilización dejó grandes monumentos.",
+      "phonetic": "",
+      "anki_answer": "civilisation",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
+      "kind": "word",
+      "level": "C1",
+      "text": "modernización",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "phonetic": "/moðeɾniθaˈθjon/",
+      "anki_answer": "modernización",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
+      "kind": "expression",
+      "level": "C1",
+      "text": "socavar la legitimidad",
+      "meaning": "debilitar el derecho a gobernar",
+      "meaning_fr": "miner la légitimité",
+      "example": "La corrupción socavó la legitimidad.",
+      "phonetic": "",
+      "anki_answer": "socavar la legitimidad",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
+      "kind": "history",
+      "level": "C1",
+      "text": "mercantilismo",
+      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
+      "meaning_fr": "mercantilisme",
+      "example": "El mercantilismo guiaba la política colonial.",
+      "phonetic": "",
+      "anki_answer": "mercantilisme",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "kind": "word",
+      "level": "C2",
+      "text": "cartografía",
+      "meaning": "el arte y la ciencia de hacer mapas",
+      "meaning_fr": "cartographie",
+      "example": "La cartografía portuguesa mejoró rápidamente.",
+      "phonetic": "/kaɾtoɣɾaˈfia/",
+      "anki_answer": "cartografía",
       "tags": [
         "ciencia"
+      ]
+    },
+    {
+      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "kind": "expression",
+      "level": "C2",
+      "text": "poner en perspectiva",
+      "meaning": "comparar un hecho con su contexto",
+      "meaning_fr": "mettre en perspective",
+      "example": "Puso el dato en perspectiva.",
+      "phonetic": "",
+      "anki_answer": "poner en perspectiva",
+      "tags": [
+        "análisis"
+      ]
+    },
+    {
+      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "kind": "history",
+      "level": "C2",
+      "text": "discontinuidad",
+      "meaning": "una ruptura en la continuidad de un proceso",
+      "meaning_fr": "discontinuité",
+      "example": "La obra subrayó la discontinuidad.",
+      "phonetic": "",
+      "anki_answer": "discontinuité",
+      "tags": [
+        "cultura"
       ]
     }
   ],
@@ -549,270 +428,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "¿Qué significa “pan”?",
+      "prompt": "¿Qué significa “pequeño”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "pain",
-      "item_key": "4bd4dae8d29fa09894ed94be8532349f5c3a13ea"
+      "answer": "petit",
+      "item_key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Completa la expresión: ____ días",
+      "prompt": "Completa la expresión: de ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "buenos",
-      "item_key": "0fc6740b3909b29e62bfab123cf943384ebf9df9"
+      "answer": "nada",
+      "item_key": "3df7c4daec9142ef06b1d480c13faa588cc0650f"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "¿A qué período pertenece “año”?",
+      "prompt": "¿A qué período pertenece “bandera”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
       "answer": "General",
-      "item_key": "da53d4bf4c2f61f9b6d273ad6e3dde0b37205eb7"
+      "item_key": "825332468514bbcede1dd4927c73122b64a7bb71"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "¿Qué significa “tranquilo”?",
+      "prompt": "¿Qué significa “viaje”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "calme",
-      "item_key": "8e9fad91533b5ace75ce24c8ef7eecc44b8fe9c9"
+      "answer": "voyage",
+      "item_key": "46795912b3ee42f36cf5fd776870b1026852abcd"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Completa la expresión: ____",
+      "prompt": "Completa la expresión: echar de ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "despertarse",
-      "item_key": "59fb8bc8302c53d48641d3365995ac18b10d667b"
+      "answer": "menos",
+      "item_key": "714348c8b4f4782814f0ef78e6ba345271ab5188"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "¿A qué período pertenece “mapa”?",
+      "prompt": "¿A qué período pertenece “monasterio”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Edad Moderna",
-      "item_key": "358e1c0087cc872f08043c24da5712741f4e0112"
+      "answer": "Edad Media",
+      "item_key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "¿Qué significa “costa”?",
+      "prompt": "¿Qué significa “costumbre”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "côte",
-      "item_key": "fc8cd13d4b239206ed7ad0acce1e70a1728b8fad"
+      "answer": "coutume",
+      "item_key": "6ab5f616acf084645298dc16cddde5180d6a0d81"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Completa la expresión: ganar ____",
+      "prompt": "Completa la expresión: hablar en ____ de",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "terreno",
-      "item_key": "1712defdced250ad491ef25cac21fe72dfed9fce"
+      "answer": "nombre",
+      "item_key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "¿A qué período pertenece “colono”?",
+      "prompt": "¿A qué período pertenece “conquista”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Siglo XIX",
-      "item_key": "579105cb6487909caee03df8eb9a0640c242e250"
+      "answer": "Antigüedad",
+      "item_key": "950c0cc5d1df2fef68e78e266b0243c978702057"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "¿Qué significa “industria”?",
+      "prompt": "¿Qué significa “insurrección”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "industrie",
-      "item_key": "879f8be55f177153a930d661897dbc7ea575a7f6"
+      "answer": "insurrection",
+      "item_key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Completa la expresión: ejercer ____",
+      "prompt": "Completa la expresión: estar a la ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "presión",
-      "item_key": "642d73d7e808ebf212804f5eea912fe62d086fa3"
+      "answer": "altura",
+      "item_key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "¿A qué período pertenece “censo”?",
+      "prompt": "¿A qué período pertenece “civilización”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "General",
-      "item_key": "f642547069fe5a4d4c3ce1e8d0e945c3117a846a"
+      "answer": "Antigüedad",
+      "item_key": "5286c476c737af93cf9b017f1c116af98eda1482"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "¿Qué significa “mercantilismo”?",
+      "prompt": "¿Qué significa “modernización”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "mercantilisme",
-      "item_key": "5ae033d53f85aa6d26ecc728858b4c5b513ff7a7"
+      "answer": "modernisation",
+      "item_key": "891634f2bec28bf34add705d3a28a37d3bc0b94b"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Completa la expresión: someter a ____",
+      "prompt": "Completa la expresión: socavar la ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "revisión",
-      "item_key": "3820820956ae6326d8a139d79cef42175a71fbc2"
+      "answer": "legitimidad",
+      "item_key": "880a19665645f476ded6b498c0e9da5584f699f8"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "¿A qué período pertenece “mandato”?",
+      "prompt": "¿A qué período pertenece “mercantilismo”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "Entreguerras",
-      "item_key": "a7575613f0cf1336c11714439b228c4a9945837e"
+      "answer": "Edad Moderna",
+      "item_key": "a732dd8e2fef5ea60d559f42893462a496ee8697"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "¿Qué significa “archivístico”?",
+      "prompt": "¿Qué significa “cartografía”?",
       "options": [
-        "archivistique",
-        "calme",
-        "côte",
-        "industrie"
+        "cartographie",
+        "coutume",
+        "insurrection",
+        "modernisation"
       ],
-      "answer": "archivistique",
-      "item_key": "d5b1238f4fa43c73f827de9d30bf0e5381b5eb73"
+      "answer": "cartographie",
+      "item_key": "ba6275ea6d926358822050ea139ef4b860872029"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Completa la expresión: poner en duda la ____",
+      "prompt": "Completa la expresión: poner en ____",
       "options": [
-        "buenos",
-        "despertarse",
-        "duda",
-        "días"
+        "altura",
+        "echar",
+        "estar",
+        "hablar"
       ],
-      "answer": "periodización",
-      "item_key": "8b102b0257cc11bc23574f85853a6d67f66ce4ca"
+      "answer": "perspectiva",
+      "item_key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "¿A qué período pertenece “diacronía”?",
+      "prompt": "¿A qué período pertenece “discontinuidad”?",
       "options": [
-        "Edad Moderna",
-        "Entreguerras",
-        "General",
-        "Siglo XIX"
+        "Antigüedad",
+        "Contemporáneo",
+        "Edad Media",
+        "Edad Moderna"
       ],
-      "answer": "General",
-      "item_key": "92299f8f11b810d361dc928f62bc61dacb40a942"
+      "answer": "Contemporáneo",
+      "item_key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da"
     }
   ],
   "tour": [
@@ -861,25 +740,18 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 4,
+    "filled": 3,
     "total": 6,
     "origins": {
-      "fresh": 3,
+      "fresh": 2,
       "adjacent": 1
     },
-    "source_count": 4,
+    "source_count": 3,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,
-    "history_periods": [
-      "Edad Media",
-      "General"
-    ],
-    "history_themes": [
-      "Cultura",
-      "Política",
-      "Sociedad"
-    ],
+    "history_periods": [],
+    "history_themes": [],
     "search_path": "./data/es/search/2026-11-22.json"
   }
 }

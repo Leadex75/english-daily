@@ -5,26 +5,26 @@
   "slots": {
     "news": {
       "text": {
-        "id": 22,
-        "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+        "id": 26,
+        "title": "Lock of former US President George Washington's hair sells for $4,000",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-22T07:12:41",
+        "url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-21T22:01:19",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C1",
-        "word_count": 414,
+        "word_count": 343,
         "duration_sec": null,
-        "body_text": "Italian jeweller Paolo Bulgari, who helped turn his family's business into a global luxury brand, has died in Rome aged age 89. His family announced the news, remembering him as \"the greatest jeweller of our time\", according to Italian media.",
+        "body_text": "A framed lock of hair from America's first president, George Washington, has been sold at auction for $4,000 (£3,058).",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "19ccb28f813db869fe2d7b69ea395c360ad297db",
-        "summary": "In a statement to Italian media, his family remember him as \"the greatest jeweller of our time\".",
+        "guid_hash": "e7b2d18bd9fa694e5b4d4dac5bf6b7265b37c69c",
+        "summary": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner.",
         "origin": "adjacent",
         "badges": [
           "Closest level: C1"
@@ -32,67 +32,35 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Italian jeweller and businessman Paolo Bulgari dies aged 89 — BBC News - World",
+        "alt_text": "Lock of former US President George Washington's hair sells for $4,000 — BBC News - World",
         "duration_formatted": "",
         "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 3
+        "reading_time_min": 2
       },
-      "audio": {
-        "id": 12,
-        "title": "FAA Ground Stop Update, Democratic Leadership Contest, Trump's Travels To Asia",
-        "source": "NPR Up First",
-        "source_id": "npr_up_first",
-        "category": "news",
-        "url": "https://www.npr.org/2026/11/16/nx-s1-6042207/faa-ground-stop-update-democratic-leadership-contest-trumps-travels-to-asia",
-        "published_at": "2026-11-16T11:05:52",
-        "level": "C2",
-        "slot_level": "C2",
-        "source_level": "C1",
-        "word_count": 96,
-        "duration_sec": 771,
-        "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/54ea85b9-0274-4346-bce3-fcb390b24b9c/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_c3b97c77964078f00d356b7fa1103ade_12339443.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=54ea85b9-0274-4346-bce3-fcb390b24b9c&feed=HMwRVgVt&t=podcast&e=nx-s1-6042207&p=510318&d=771&size=12339035&hash_redirect=1&x-total-bytes=12339443&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__5d59cfd3b2f2c4ed9c97d933e3c11f5181d690e7",
-        "description": "Airlines are recovering from a nationwide ground stop caused by a failure during routine FAA maintenance, raising new questions about the aging air traffic control system just ahead of the Thanksgiving travel rush. Maryland Senator Chris Van Hollen is challenging Chuck Schumer to lead Senate Democrats, arguing the party’s midterm wins should not mean a return to business as usual. President Trump heads to Asia for meetings with Vladimir Putin and Xi Jinping, where the White House says he plans to focus on nuclear weapons while leaving Ukraine and tensions over artificial intelligence off the agenda.",
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": false,
-        "guid_hash": "2d61cb55d369f4b6a0c75cf3794a17dd793db059",
-        "summary": "Airlines are recovering from a nationwide ground stop caused by a failure during routine FAA maintenance, raising new questions about the aging air traffic control system just ahead of the Thanksgiving travel rush. Maryland Senator Chris Van Hollen is challenging Chuck Schumer to lead Senate Democrats, arguing the party’s midterm wins should not mean a return to business as usual. President Trump heads to Asia for meetings with Vladimir Putin and Xi Jinping, where the White House says he plans to focus on nuclear weapons while leaving Ukraine and tensions over artificial intelligence off the agenda.",
-        "origin": "adjacent",
-        "badges": [
-          "Closest level: C1"
-        ],
-        "periods": [],
-        "themes": [],
-        "history_terms": [],
-        "alt_text": "FAA Ground Stop Update, Democratic Leadership Contest, Trump's Travels To Asia — NPR Up First",
-        "duration_formatted": "12:51",
-        "source_url": "https://feeds.npr.org/510318/podcast.xml",
-        "reading_time_min": 0
-      }
+      "audio": null
     },
     "culture": {
       "text": {
-        "id": 53,
-        "title": "Spuds in space: scientists say potatoes could be key food source for future moon base",
+        "id": 56,
+        "title": "Senate committee rejects Trump nominee to lead National Science Foundation",
         "source": "The Guardian - Science",
         "source_id": "guardian_science",
         "category": "culture",
-        "url": "https://www.theguardian.com/science/2026/nov/19/potatoes-moon-base-nasa",
-        "published_at": "2026-11-19T18:49:54",
+        "url": "https://www.theguardian.com/us-news/2026/nov/18/trump-national-science-foundation-nominee",
+        "published_at": "2026-11-18T17:46:34",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C1",
-        "word_count": 799,
+        "word_count": 353,
         "duration_sec": null,
-        "body_text": "The humble potato could be the key to sustaining human life on the moon, according to a new scientific report asserting that prolonged lunar exploration will depend on life support systems capable of producing food there.",
+        "body_text": "Jim O’Neill will not undergo a confirmation hearing on Wednesday to head he National Science Foundation (NSF) because he “did not do enough to stand up for science” in his previous position, said Bill Cassidy, a Republican from Louisiana who is chair of the Senate committee on health, education, labor and pensions.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "cc7da51b0fd491da02126eb81a8d0bbeb6c282a7",
-        "summary": "New report details how potatoes were successfully cultivated in simulated lunar soil The humble potato could be the key to sustaining human life on the moon , according to a new scientific report asserting that prolonged lunar exploration will depend on life support systems capable of producing food there. Potatoes are an ideal candidate for farming on the moon, scientists on a project backed by the US space agency Nasa concluded, after they succeeded in growing them in simulated lunar soil.",
+        "guid_hash": "23791b853e1c01e552e65b967c05a221890bc5e3",
+        "summary": "Committee chair Bill Cassidy, a Republican, said Jim O’Neill ‘did not do enough to stand up for science’ in previous posts Jim O’Neill will not undergo a confirmation hearing on Wednesday to head he National Science Foundation (NSF) because he “did not do enough to stand up for science” in his previous position, said Bill Cassidy, a Republican from Louisiana who is chair of the Senate committee on health, education, labor and pensions. This ends O’Neill’s run for the top US scientific organization, an embattled independent federal agency that has seen major budget cuts and grant freezes under the Trump administration . The next NSF nominee will face a Democratic-led Senate.",
         "origin": "adjacent",
         "badges": [
           "Closest level: C1"
@@ -100,432 +68,380 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Spuds in space: scientists say potatoes could be key food source for future moon base — The Guardian - Science",
+        "alt_text": "Senate committee rejects Trump nominee to lead National Science Foundation — The Guardian - Science",
         "duration_formatted": "",
         "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 4
+        "reading_time_min": 2
       },
       "audio": {
-        "id": 1433236139,
-        "title": "Shakespeare's Sonnets - Sonnets 11-20",
+        "id": 1898864362,
+        "title": "Eclogues - Eclogue 01",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/sonnets-by-william-shakespeare/",
-        "published_at": "2026-11-22T11:50:29",
+        "url": "https://librivox.org/the-eclogues-by-publius-vergilius-maro/",
+        "published_at": "2026-11-22T13:06:17",
         "level": "C2",
         "slot_level": "C2",
-        "source_level": "C1",
-        "word_count": 28,
-        "duration_sec": 479,
+        "source_level": "C2",
+        "word_count": 158,
+        "duration_sec": 446,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/sonnets_librivox/sonnets_02_shakespeare_64kb.mp3",
-        "description": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
+        "audio_url": "https://www.archive.org/download/eclogues_0810_librivox/eclogues_01_virgil_64kb.mp3",
+        "description": "Eclogues by . This book of poems, written between 42 en 39 BC, was a bestseller in ancient Rome, and still holds a fascination today. Held to be divinely inspired not only by the Romans themselves, but by the Medieval Catholic church, The Eclogues is one of the most beloved collections of Latin short poetry. (Summary by Caeristhiona) The translator of this version is unknown. This recording is don",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "65005d83266a1fdb71e3dc22df71ff6b0ac04aec",
-        "summary": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
-        "origin": "adjacent",
+        "guid_hash": "0e83a52979b6991db7c785ff57f6ec1ea1fbf012",
+        "summary": "Eclogues by . This book of poems, written between 42 en 39 BC, was a bestseller in ancient Rome, and still holds a fascination today. Held to be divinely inspired not only by the Romans themselves, but by the Medieval Catholic church, The Eclogues is one of the most beloved collections of Latin short poetry. (Summary by Caeristhiona) The translator of this version is unknown. This recording is don",
+        "origin": "reserve",
         "badges": [
-          "Reserve · LibriVox (culture)",
-          "Closest level: C1"
+          "Reserve · LibriVox (culture)"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Shakespeare's Sonnets - Sonnets 11-20 — LibriVox (culture)",
-        "duration_formatted": "7:59",
+        "alt_text": "Eclogues - Eclogue 01 — LibriVox (culture)",
+        "duration_formatted": "7:26",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
     },
     "history": {
       "text": null,
-      "audio": {
-        "id": 1134795563,
-        "title": "Amendments to the United States Constitution (version 2) - The Bill of Rights (Amendments 1-10)",
-        "source": "LibriVox (history & biography)",
-        "source_id": "librivox_history",
-        "category": "history",
-        "url": "https://librivox.org/amendments-to-the-united-states-constitution-version-2/",
-        "published_at": "2026-11-21T18:26:51",
-        "level": "C2",
-        "slot_level": "C2",
-        "source_level": "C1",
-        "word_count": 38,
-        "duration_sec": 228,
-        "body_text": null,
-        "audio_url": "https://www.archive.org/download/amendments_2_librivox/amendments_1-10_64kb.mp3",
-        "description": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
-        "license": "public_domain",
-        "attribution": "LibriVox (public domain recording)",
-        "truncated": false,
-        "guid_hash": "7ba626238e20d556bb934ff1a0054e77a6b5ba30",
-        "summary": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
-        "origin": "adjacent",
-        "badges": [
-          "Reserve · LibriVox (history & biography)",
-          "Closest level: C1"
-        ],
-        "periods": [
-          "18th century"
-        ],
-        "themes": [
-          "Politics"
-        ],
-        "history_terms": [
-          {
-            "text": "constitution",
-            "aliases": [
-              "constitution",
-              "charter"
-            ],
-            "level": "B2",
-            "meaning": "the main set of laws and principles of a state",
-            "meaning_fr": "constitution",
-            "period": "18th century",
-            "theme": "Politics",
-            "example": "The constitution protects citizens' rights.",
-            "tags": [
-              "law"
-            ]
-          }
-        ],
-        "alt_text": "Amendments to the United States Constitution (version 2) - The Bill of Rights (Amendments 1-10) — LibriVox (history & biography)",
-        "duration_formatted": "3:48",
-        "source_url": "https://librivox.org/api/feed/audiobooks/",
-        "reading_time_min": 0
-      }
+      "audio": null
     }
   },
   "phrase": {
     "date": "2026-11-22",
     "level": "C2",
     "word": {
-      "text": "capitulate",
+      "text": "dichotomy",
       "level": "C2",
       "type": "word",
-      "pos": "verb",
-      "phonetic": "/kəˈpɪtʃuleɪt/",
-      "meaning": "stop resisting and surrender",
-      "meaning_fr": "capituler",
-      "example": "The rebels eventually capitulated.",
-      "anki_answer": "capituler",
+      "pos": "noun",
+      "phonetic": "/daɪˈkɑːtəmi/",
+      "meaning": "a division into two opposing parts",
+      "meaning_fr": "dichotomie",
+      "example": "The article sets up a false dichotomy.",
+      "anki_answer": "dichotomie",
       "tags": [
-        "conflict"
+        "reasoning"
       ],
-      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
+      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/kəˈpɪ.tjʊ.leɪt/",
+        "phonetic": "/daɪˈkɒt.ə.mi/",
         "definitions": [
-          "To surrender; to end all resistance, to give up; to go along with or comply.",
-          "To draw up in chapters; to enumerate.",
-          "To draw up the articles of treaty with; to treat, bargain, parley."
+          "A separation or division into two; a distinction that results in such a division.",
+          "Such a division involving apparently incompatible or opposite principles; a duality.",
+          "The division of a class into two disjoint subclasses that are together comprehensive, as the division of man into white and not white.",
+          "The division of a genus into two species; a division into two subordinate parts."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/capitulate-au.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/dichotomy-au.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt25\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/surrender\" title=\"surrender\">surrender</a> on <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulated</a> terms, end all <a rel=\"mw:WikiLink\" href=\"/wiki/resistance\" title=\"resistance\">resistance</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/give_up\" title=\"give up\">give up</a>, go along with or <a rel=\"mw:WikiLink\" href=\"/wiki/comply\" title=\"comply\">comply</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt26\">.mw-parser-output .defdate{font-size:smaller}</style>",
-          "<span class=\"usage-label-sense\" about=\"#mwt34\" typeof=\"mw:Transclusion\"></span> To draw up in <a rel=\"mw:WikiLink\" href=\"/wiki/chapter\" title=\"chapter\">chapters</a>, heads or articles; to <a rel=\"mw:WikiLink\" href=\"/wiki/enumerate\" title=\"enumerate\">enumerate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/specify\" title=\"specify\">specify</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt37\" typeof=\"mw:Transclusion\"></span> To draw up articles of <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a> with; to propose <span class=\"Latn\" lang=\"en\" about=\"#mwt38\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/term#English:_condition,_legally,_in_general\" title=\"term\">term</a></span>s, <a rel=\"mw:WikiLink\" href=\"/wiki/treat\" title=\"treat\">treat</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/bargain\" title=\"bargain\">bargain</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/parley\" title=\"parley\">parley</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> To make conditions, <a rel=\"mw:WikiLink\" href=\"/wiki/stipulate\" title=\"stipulate\">stipulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/agree\" title=\"agree\">agree</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/formulate\" title=\"formulate\">formulate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/conclude\" title=\"conclude\">conclude</a> (upon something)."
+          "A separation or <a rel=\"mw:WikiLink\" href=\"/wiki/division\" title=\"division\">division</a> into two; a <a rel=\"mw:WikiLink\" href=\"/wiki/distinction\" title=\"distinction\">distinction</a> that results in such a division.",
+          "Such a division involving apparently <a rel=\"mw:WikiLink\" href=\"/wiki/incompatible\" title=\"incompatible\">incompatible</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/opposite\" title=\"opposite\">opposite</a> principles; a <a rel=\"mw:WikiLink\" href=\"/wiki/duality\" title=\"duality\">duality</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> The division of a <a rel=\"mw:WikiLink\" href=\"/wiki/class\" title=\"class\">class</a> into two <a rel=\"mw:WikiLink\" href=\"/wiki/disjoint\" title=\"disjoint\">disjoint</a> <a rel=\"mw:WikiLink\" href=\"/wiki/subclass\" title=\"subclass\">subclasses</a> that are together <a rel=\"mw:WikiLink\" href=\"/wiki/comprehensive\" title=\"comprehensive\">comprehensive</a>, as the division of <i><a rel=\"mw:WikiLink\" href=\"/wiki/human\" title=\"human\">human</a></i> into <i><a rel=\"mw:WikiLink\" href=\"/wiki/female\" title=\"female\">female</a></i> and <i><a rel=\"mw:WikiLink\" href=\"/wiki/male\" title=\"male\">male</a></i>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt26\" typeof=\"mw:Transclusion\"></span> The division of a <a rel=\"mw:WikiLink\" href=\"/wiki/genus\" title=\"genus\">genus</a> into two <a rel=\"mw:WikiLink\" href=\"/wiki/species\" title=\"species\">species</a>; a division into two subordinate parts."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "draw a veil over",
+      "expression": "flog a dead horse",
       "level": "C2",
       "type": "idiom",
-      "meaning": "deliberately avoid discussing something",
-      "meaning_fr": "passer sous silence",
-      "example": "Let us draw a veil over that episode.",
-      "anki_answer": "passer silence",
+      "meaning": "waste effort on a hopeless cause",
+      "meaning_fr": "battre l'eau, perdre son temps",
+      "example": "Arguing now is flogging a dead horse.",
+      "anki_answer": "perdre temps",
       "tags": [
-        "silence"
+        "futility"
       ],
-      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
+      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/avoid\" title=\"avoid\">avoid</a> <a rel=\"mw:WikiLink\" href=\"/wiki/discuss\" title=\"discuss\">discussing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/call\" title=\"call\">calling</a> <a rel=\"mw:WikiLink\" href=\"/wiki/attention\" title=\"attention\">attention</a> to (something <a rel=\"mw:WikiLink\" href=\"/wiki/embarrassing\" title=\"embarrassing\">embarrassing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/unpleasant\" title=\"unpleasant\">unpleasant</a>)."
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To attempt to get more out of something that cannot give more; to attempt to arouse fresh interest in something that is either hopeless or already settled.",
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To attempt to get extra <a rel=\"mw:WikiLink\" href=\"/wiki/work\" title=\"work\">work</a> out of a ship's crew during the <a rel=\"mw:WikiLink\" href=\"/wiki/dead_horse\" title=\"dead horse\">dead horse</a> period."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "determinism",
+      "text": "discontinuity",
       "aliases": [
-        "determinism"
+        "discontinuity",
+        "discontinuities"
       ],
       "level": "C2",
-      "meaning": "the belief that events are fixed by prior causes",
-      "meaning_fr": "déterminisme",
-      "period": "19th century",
-      "theme": "Science",
-      "example": "Economic determinism shaped his theory.",
+      "meaning": "a break in the continuity of a process",
+      "meaning_fr": "discontinuité",
+      "period": "Contemporary",
+      "theme": "Culture",
+      "example": "The novel emphasised historical discontinuity.",
       "tags": [
-        "science"
+        "culture"
       ],
-      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
+      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
       "kind": "word",
       "level": "A1",
-      "text": "school",
-      "meaning": "a place where children learn",
-      "meaning_fr": "école",
-      "example": "The school opens at eight.",
-      "phonetic": "/skuːl/",
-      "anki_answer": "école",
-      "tags": [
-        "education"
-      ]
-    },
-    {
-      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
-      "kind": "expression",
-      "level": "A1",
-      "text": "wait for",
-      "meaning": "stay until someone or something arrives",
-      "meaning_fr": "attendre",
-      "example": "I wait for the bus here.",
-      "phonetic": "",
-      "anki_answer": "attendre",
+      "text": "sleep",
+      "meaning": "rest with your eyes closed at night",
+      "meaning_fr": "dormir",
+      "example": "Babies sleep a lot.",
+      "phonetic": "/sliːp/",
+      "anki_answer": "dormir",
       "tags": [
         "daily"
       ]
     },
     {
-      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "kind": "expression",
+      "level": "A1",
+      "text": "watch TV",
+      "meaning": "look at television programmes",
+      "meaning_fr": "regarder la télé",
+      "example": "They watch TV in the evening.",
+      "phonetic": "",
+      "anki_answer": "regarder télé",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
       "kind": "history",
       "level": "A1",
-      "text": "child",
-      "meaning": "a young human being",
-      "meaning_fr": "enfant",
-      "example": "The child listened to the old story.",
+      "text": "city",
+      "meaning": "a large place where people live and work",
+      "meaning_fr": "ville",
+      "example": "Rome is an ancient city.",
       "phonetic": "",
-      "anki_answer": "enfant",
+      "anki_answer": "ville",
       "tags": [
-        "people"
+        "places"
       ]
     },
     {
-      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
       "kind": "word",
       "level": "A2",
-      "text": "neighbour",
-      "meaning": "a person who lives near you",
-      "meaning_fr": "voisin",
-      "example": "Our neighbour has a garden.",
-      "phonetic": "/ˈneɪbər/",
-      "anki_answer": "voisin",
+      "text": "pocket",
+      "meaning": "a small bag in clothing",
+      "meaning_fr": "poche",
+      "example": "The key is in my pocket.",
+      "phonetic": "/ˈpɑːkɪt/",
+      "anki_answer": "poche",
       "tags": [
-        "people"
+        "clothes"
       ]
     },
     {
-      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "key": "72c14350149902e62661267191dc176e22669331",
       "kind": "expression",
       "level": "A2",
-      "text": "be interested in",
-      "meaning": "want to know about something",
-      "meaning_fr": "être intéressé par",
-      "example": "I am interested in history.",
+      "text": "be proud of",
+      "meaning": "feel pleased with an achievement",
+      "meaning_fr": "être fier de",
+      "example": "I am proud of my sister.",
       "phonetic": "",
-      "anki_answer": "intéressé",
+      "anki_answer": "fier",
       "tags": [
-        "interests"
+        "feelings"
       ]
     },
     {
-      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
       "kind": "history",
       "level": "A2",
-      "text": "revolution",
-      "meaning": "a major change in government or society",
-      "meaning_fr": "révolution",
-      "example": "The revolution changed the country.",
+      "text": "soldier",
+      "meaning": "a person who fights in an army",
+      "meaning_fr": "soldat",
+      "example": "The soldier returned from the campaign.",
       "phonetic": "",
-      "anki_answer": "révolution",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
-      "kind": "word",
-      "level": "B1",
-      "text": "expect",
-      "meaning": "believe something will happen",
-      "meaning_fr": "s'attendre à",
-      "example": "I expect the train to be late.",
-      "phonetic": "/ɪkˈspekt/",
-      "anki_answer": "s'attendre",
-      "tags": [
-        "probability"
-      ]
-    },
-    {
-      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
-      "kind": "expression",
-      "level": "B1",
-      "text": "bring up",
-      "meaning": "mention a subject in conversation",
-      "meaning_fr": "évoquer, soulever",
-      "example": "He brought up an interesting point.",
-      "phonetic": "",
-      "anki_answer": "évoquer",
-      "tags": [
-        "communication"
-      ]
-    },
-    {
-      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquest",
-      "meaning": "the act of taking land by force",
-      "meaning_fr": "conquête",
-      "example": "The conquest changed the region.",
-      "phonetic": "",
-      "anki_answer": "conquête",
+      "anki_answer": "soldat",
       "tags": [
         "war"
       ]
     },
     {
-      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
       "kind": "word",
-      "level": "B2",
-      "text": "relevant",
-      "meaning": "closely connected to the subject",
-      "meaning_fr": "pertinent",
-      "example": "Please include relevant details.",
-      "phonetic": "/ˈreləvənt/",
-      "anki_answer": "pertinent",
+      "level": "B1",
+      "text": "explain",
+      "meaning": "make something clear to someone",
+      "meaning_fr": "expliquer",
+      "example": "Can you explain this word?",
+      "phonetic": "/ɪkˈspleɪn/",
+      "anki_answer": "expliquer",
       "tags": [
         "communication"
       ]
     },
     {
-      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
       "kind": "expression",
-      "level": "B2",
-      "text": "get out of hand",
-      "meaning": "become uncontrolled",
-      "meaning_fr": "dégénérer, échapper de contrôle",
-      "example": "The argument got out of hand.",
+      "level": "B1",
+      "text": "deal with",
+      "meaning": "handle a problem or person",
+      "meaning_fr": "s'occuper de, gérer",
+      "example": "We need to deal with this issue.",
       "phonetic": "",
-      "anki_answer": "dégénérer",
+      "anki_answer": "gérer",
       "tags": [
         "problems"
       ]
     },
     {
-      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronation",
+      "meaning": "the ceremony of crowning a ruler",
+      "meaning_fr": "couronnement",
+      "example": "The coronation took place in the cathedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
+      "kind": "word",
+      "level": "B2",
+      "text": "significant",
+      "meaning": "large or important enough to notice",
+      "meaning_fr": "significatif",
+      "example": "The difference is significant.",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "anki_answer": "significatif",
+      "tags": [
+        "importance"
+      ]
+    },
+    {
+      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
+      "kind": "expression",
+      "level": "B2",
+      "text": "get the hang of",
+      "meaning": "learn how to do something",
+      "meaning_fr": "prendre le coup de main",
+      "example": "I am getting the hang of driving.",
+      "phonetic": "",
+      "anki_answer": "coup de main",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
       "kind": "history",
       "level": "B2",
-      "text": "civilisation",
-      "meaning": "an advanced human society",
-      "meaning_fr": "civilisation",
-      "example": "The civilisation left great monuments.",
+      "text": "colonialism",
+      "meaning": "a system in which a powerful country controls other territories",
+      "meaning_fr": "colonialisme",
+      "example": "Colonialism transformed the African map.",
       "phonetic": "",
-      "anki_answer": "civilisation",
+      "anki_answer": "colonialisme",
       "tags": [
-        "culture"
+        "empire"
       ]
     },
     {
-      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
       "kind": "word",
       "level": "C1",
-      "text": "resilient",
-      "meaning": "able to recover after difficulty",
-      "meaning_fr": "résilient",
-      "example": "Children are remarkably resilient.",
-      "phonetic": "/rɪˈzɪliənt/",
-      "anki_answer": "résilient",
-      "tags": [
-        "strength"
-      ]
-    },
-    {
-      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
-      "kind": "expression",
-      "level": "C1",
-      "text": "on the cusp of",
-      "meaning": "at the start of an important change",
-      "meaning_fr": "être au seuil de",
-      "example": "The company is on the cusp of a breakthrough.",
-      "phonetic": "",
-      "anki_answer": "seuil, changement",
-      "tags": [
-        "change"
-      ]
-    },
-    {
-      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilism",
-      "meaning": "an economic theory based on trade and accumulated wealth",
-      "meaning_fr": "mercantilisme",
-      "example": "Mercantilism shaped colonial policy.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
-      "tags": [
-        "economy"
-      ]
-    },
-    {
-      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
-      "kind": "word",
-      "level": "C2",
-      "text": "capitulate",
-      "meaning": "stop resisting and surrender",
-      "meaning_fr": "capituler",
-      "example": "The rebels eventually capitulated.",
-      "phonetic": "/kəˈpɪtʃuleɪt/",
-      "anki_answer": "capituler",
-      "tags": [
-        "conflict"
-      ]
-    },
-    {
-      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
-      "kind": "expression",
-      "level": "C2",
-      "text": "draw a veil over",
-      "meaning": "deliberately avoid discussing something",
-      "meaning_fr": "passer sous silence",
-      "example": "Let us draw a veil over that episode.",
-      "phonetic": "",
-      "anki_answer": "passer silence",
-      "tags": [
-        "silence"
-      ]
-    },
-    {
-      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
-      "kind": "history",
-      "level": "C2",
-      "text": "determinism",
-      "meaning": "the belief that events are fixed by prior causes",
-      "meaning_fr": "déterminisme",
-      "example": "Economic determinism shaped his theory.",
-      "phonetic": "",
-      "anki_answer": "déterminisme",
+      "text": "rigorous",
+      "meaning": "extremely thorough and careful",
+      "meaning_fr": "rigoureux",
+      "example": "The study followed a rigorous method.",
+      "phonetic": "/ˈrɪɡərəs/",
+      "anki_answer": "rigoureux",
       "tags": [
         "science"
+      ]
+    },
+    {
+      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "kind": "expression",
+      "level": "C1",
+      "text": "on the same wavelength",
+      "meaning": "thinking in the same way as someone",
+      "meaning_fr": "sur la même longueur d'onde",
+      "example": "We are on the same wavelength about the plan.",
+      "phonetic": "",
+      "anki_answer": "même longueur onde",
+      "tags": [
+        "agreement"
+      ]
+    },
+    {
+      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "kind": "history",
+      "level": "C1",
+      "text": "nationalism",
+      "meaning": "loyalty to a nation and belief in its interests",
+      "meaning_fr": "nationalisme",
+      "example": "Nationalism grew across Europe.",
+      "phonetic": "",
+      "anki_answer": "nationalisme",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
+      "kind": "word",
+      "level": "C2",
+      "text": "dichotomy",
+      "meaning": "a division into two opposing parts",
+      "meaning_fr": "dichotomie",
+      "example": "The article sets up a false dichotomy.",
+      "phonetic": "/daɪˈkɑːtəmi/",
+      "anki_answer": "dichotomie",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
+      "kind": "expression",
+      "level": "C2",
+      "text": "flog a dead horse",
+      "meaning": "waste effort on a hopeless cause",
+      "meaning_fr": "battre l'eau, perdre son temps",
+      "example": "Arguing now is flogging a dead horse.",
+      "phonetic": "",
+      "anki_answer": "perdre temps",
+      "tags": [
+        "futility"
+      ]
+    },
+    {
+      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
+      "kind": "history",
+      "level": "C2",
+      "text": "discontinuity",
+      "meaning": "a break in the continuity of a process",
+      "meaning_fr": "discontinuité",
+      "example": "The novel emphasised historical discontinuity.",
+      "phonetic": "",
+      "anki_answer": "discontinuité",
+      "tags": [
+        "culture"
       ]
     }
   ],
@@ -535,270 +451,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “school” mean?",
+      "prompt": "What does “sleep” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "école",
-      "item_key": "45ec82195c5bc0379f855bfa44b17f87f9939f48"
+      "answer": "dormir",
+      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ for",
+      "prompt": "Complete the expression: ____ TV",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "wait",
-      "item_key": "170b1a0e680e80a71c2dbf310718c305019619e0"
+      "answer": "watch",
+      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “child” belong to?",
+      "prompt": "Which period does “city” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268"
+      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “neighbour” mean?",
+      "prompt": "What does “pocket” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "voisin",
-      "item_key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d"
+      "answer": "poche",
+      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ in",
+      "prompt": "Complete the expression: be ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "interested",
-      "item_key": "3513f6c408320e6d94779e023fa404f075367587"
+      "answer": "proud",
+      "item_key": "72c14350149902e62661267191dc176e22669331"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “revolution” belong to?",
+      "prompt": "Which period does “soldier” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d"
+      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “expect” mean?",
+      "prompt": "What does “explain” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "s'attendre à",
-      "item_key": "8956a54e2d95372dc761aae2c81f3b488accc7cc"
+      "answer": "expliquer",
+      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ up",
+      "prompt": "Complete the expression: ____ with",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "bring",
-      "item_key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e"
+      "answer": "deal",
+      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “conquest” belong to?",
+      "prompt": "Which period does “coronation” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373"
+      "answer": "Middle Ages",
+      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “relevant” mean?",
+      "prompt": "What does “significant” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "pertinent",
-      "item_key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064"
+      "answer": "significatif",
+      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get out of ____",
+      "prompt": "Complete the expression: get the ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "hand",
-      "item_key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e"
+      "answer": "hang",
+      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “civilisation” belong to?",
+      "prompt": "Which period does “colonialism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "3ddb7708a56287d80c6f5de21c87fab19196b67b"
+      "answer": "19th century",
+      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “resilient” mean?",
+      "prompt": "What does “rigorous” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "résilient",
-      "item_key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1"
+      "answer": "rigoureux",
+      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the ____ of",
+      "prompt": "Complete the expression: on the same ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "cusp",
-      "item_key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d"
+      "answer": "wavelength",
+      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “mercantilism” belong to?",
+      "prompt": "Which period does “nationalism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Early modern",
-      "item_key": "cf70c2f947ddd7601bd93471dd4438a1a4920717"
+      "answer": "19th century",
+      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “capitulate” mean?",
+      "prompt": "What does “dichotomy” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "capituler",
-      "item_key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa"
+      "answer": "dichotomie",
+      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: draw a ____ over",
+      "prompt": "Complete the expression: flog a dead ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "veil",
-      "item_key": "d14ea879e92f110e1abec6267bf21353f35b7cc2"
+      "answer": "horse",
+      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “determinism” belong to?",
+      "prompt": "Which period does “discontinuity” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "19th century",
-      "item_key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e"
+      "answer": "Contemporary",
+      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
     }
   ],
   "tour": [
@@ -847,21 +763,18 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 5,
+    "filled": 3,
     "total": 6,
     "origins": {
-      "adjacent": 5
+      "reserve": 1,
+      "adjacent": 2
     },
-    "source_count": 5,
+    "source_count": 3,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,
-    "history_periods": [
-      "18th century"
-    ],
-    "history_themes": [
-      "Politics"
-    ],
+    "history_periods": [],
+    "history_themes": [],
     "search_path": "./data/en/search/2026-11-22.json"
   }
 }

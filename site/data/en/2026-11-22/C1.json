@@ -5,103 +5,105 @@
   "slots": {
     "news": {
       "text": {
-        "id": 33,
-        "title": "Bank of England directors illegally profited from post-abolition enslavement in Cuba",
-        "source": "The Guardian - World news",
-        "source_id": "guardian_world",
+        "id": 18,
+        "title": "South Korea education minister resigns over exam cheating scandal",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.theguardian.com/news/2026/nov/22/bank-of-england-directors-illegally-profited-enslavement-cuba",
-        "published_at": "2026-11-22T08:00:22",
+        "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T09:20:45",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 939,
+        "word_count": 479,
         "duration_sec": null,
-        "body_text": "British businesses run by long-serving directors of the Bank of England profited from “brutal” enslavement in Cuba for decades after slavery’s abolition in the British empire, according to research.",
+        "body_text": "South Korea's Education Minister Choi Kyo-jin has resigned over an exam cheating scandal that shocked the nation. He said he took full responsibility for the confusion caused by last-minute measures aimed at stopping AI-assisted cheating during Thursday's annual college entrance exam, known as Suneung.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "390f250b14bf28536de89650ce7f876081b7a706",
-        "summary": "New research finds that the British-led Cobre Mining Company helped industrialise Manchester via copper deposits and enslaved African people • Slave-trade wealth was embedded in Britain’s financial system, research finds British businesses run by long-serving directors of the Bank of England profited from “brutal” enslavement in Cuba for decades after slavery’s abolition in the British empire, according to research. Men and boys were enslaved in prison conditions at the El Cobre copper ore mine near Santiago de Cuba, which supplied British firms during the Industrial Revolution, the historian Chris Evans has found.",
+        "guid_hash": "e3550ec9dbcbe575a3bc33db07fa400137f2b62c",
+        "summary": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Bank of England directors illegally profited from post-abolition enslavement in Cuba — The Guardian - World news",
+        "alt_text": "South Korea education minister resigns over exam cheating scandal — BBC News - World",
         "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/world/rss",
-        "reading_time_min": 5
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 3
       },
       "audio": {
-        "id": 11,
-        "title": "FAA Tech Upgrade Update, Trump Asia Agenda, Petition To Reinstate Huang At Nvidia",
+        "id": 8,
+        "title": "Ben Shapiro reassesses the president he campaigned for | Newsmakers",
         "source": "NPR Up First",
         "source_id": "npr_up_first",
         "category": "news",
-        "url": "https://www.npr.org/2026/11/17/nx-s1-6043667/faa-tech-upgrade-update-trump-asia-agenda-petition-to-reinstate-huang-at-nvidia",
-        "published_at": "2026-11-17T10:46:57",
+        "url": "",
+        "published_at": "2026-11-19T18:00:00",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 102,
-        "duration_sec": 774,
+        "word_count": 217,
+        "duration_sec": 2349,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/6430874a-e7f0-4e59-b9c4-75eb2181f32d/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_4380f99b5af5686c10f8736d1f5c5d5c_12389180.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=6430874a-e7f0-4e59-b9c4-75eb2181f32d&feed=HMwRVgVt&t=podcast&e=nx-s1-6043667&p=510318&d=774&size=12388773&hash_redirect=1&x-total-bytes=12389180&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__e68d706b1e7c6ea1f9c5e145bb03735538cc8dcb",
-        "description": "Another technology problem disrupted United Airlines flights on Monday night as President Trump pushes Congress for more money to modernize the nation’s air traffic control system and Democrats question how previously approved funds are being spent. Trump is in Asia for a historic summit with Xi Jinping and Vladimir Putin, after the White House said Ukraine would be off the agenda and Trump later said he plans to discuss it. Silicon Valley leaders are rallying around ousted Nvidia CEO Jensen Huang, as pressure grows on the company’s board to reconsider his resignation while questions about the scandal and Nvidia’s future remain unresolved.",
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/34cda4cf-7f57-4f56-b7a1-8b512ab7f3b9/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_c217b806843c7f04d711b494a2b8350f_40898168.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=34cda4cf-7f57-4f56-b7a1-8b512ab7f3b9&feed=HMwRVgVt&t=podcast&e=nx-s1-6047447&p=510318&d=2349&size=37611774&hash_redirect=1&x-total-bytes=40898168&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__d94b5fd3a22809e5702ed9a06572ceef1ada4a17",
+        "description": "Conservative host Ben Shapiro says he is holding to his conservative values in the unstable era of President Trump. The host of The Ben Shapiro Show voted against Trump in 2016 but also campaigned for him in 2024. He’s disappointed in the president’s tariffs, alleged corruption and the execution of the Iran war. “I regret the way the president has performed,” Shapiro tells host Steve Inskeep in this episode of Newsmakers . “I don't regret my vote. I don't have a time machine.” Shapiro says Trump’s aggressive immigration enforcement and the general “whiff of corruption” that surrounds the White House — specifically the Trump family’s crypto company World Liberty Financial — all contributed to the Republican Party’s midterm losses in Congress, governor's mansions and state legislatures. He believes that Republicans have an “uphill road in 2028” and that Vice President Vance isn’t the ideal Republican presidential candidate. He argues that Vance would shrink Trump’s winning 2024 voting bloc of Hispanics, the working class, women and college-educated individuals. Shapiro points to Secretary of State Marco Rubio as a potential 2028 Republican candidate with broader appeal and a larger coalition. But he says many within the current White House will likely be damaged by association. Shapiro also unpacks his new movie, Confession — featuring Rob Lowe and James Franco — and the recent decline in his show’s YouTube subscriptions.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "dafe7e9a5625b212d47ca86b5df3ab7507887770",
-        "summary": "Another technology problem disrupted United Airlines flights on Monday night as President Trump pushes Congress for more money to modernize the nation’s air traffic control system and Democrats question how previously approved funds are being spent. Trump is in Asia for a historic summit with Xi Jinping and Vladimir Putin, after the White House said Ukraine would be off the agenda and Trump later said he plans to discuss it. Silicon Valley leaders are rallying around ousted Nvidia CEO Jensen Huang, as pressure grows on the company’s board to reconsider his resignation while questions about the scandal and Nvidia’s future remain unresolved.",
+        "guid_hash": "814df2d16dd89dd005ffe86c665c4b200ff93388",
+        "summary": "Conservative host Ben Shapiro says he is holding to his conservative values in the unstable era of President Trump. The host of The Ben Shapiro Show voted against Trump in 2016 but also campaigned for him in 2024. He’s disappointed in the president’s tariffs, alleged corruption and the execution of the Iran war. “I regret the way the president has performed,” Shapiro tells host Steve Inskeep in this episode of Newsmakers . “I don't regret my vote. I don't have a time machine.” Shapiro says Trump’s aggressive immigration enforcement and the general “whiff of corruption” that surrounds the White House — specifically the Trump family’s crypto company World Liberty Financial — all contributed to the Republican Party’s midterm losses in Congress, governor's mansions and state legislatures. He believes that Republicans have an “uphill road in 2028” and that Vice President Vance isn’t the ideal Republican presidential candidate. He argues that Vance would shrink Trump’s winning 2024 voting bloc of Hispanics, the working class, women and college-educated individuals. Shapiro points to Secretary of State Marco Rubio as a potential 2028 Republican candidate with broader appeal and a larger coalition. But he says many within the current White House will likely be damaged by association. Shapiro also unpacks his new movie, Confession — featuring Rob Lowe and James Franco — and the recent decline in his show’s YouTube subscriptions.",
         "origin": "fresh",
-        "badges": [],
+        "badges": [
+          "Outside preferred window"
+        ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "FAA Tech Upgrade Update, Trump Asia Agenda, Petition To Reinstate Huang At Nvidia — NPR Up First",
-        "duration_formatted": "12:54",
+        "alt_text": "Ben Shapiro reassesses the president he campaigned for | Newsmakers — NPR Up First",
+        "duration_formatted": "39:09",
         "source_url": "https://feeds.npr.org/510318/podcast.xml",
         "reading_time_min": 0
       }
     },
     "culture": {
       "text": {
-        "id": 48,
-        "title": "It will soon be too late to regulate use of autonomous weapons, warns Red Cross",
+        "id": 52,
+        "title": "An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message",
         "source": "The Guardian - Science",
         "source_id": "guardian_science",
         "category": "culture",
-        "url": "https://www.theguardian.com/science/2026/nov/22/red-cross-warns-too-late-regulate-autonomous-weapons-united-nations",
-        "published_at": "2026-11-22T09:00:22",
+        "url": "https://www.theguardian.com/science/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment",
+        "published_at": "2026-11-19T23:30:26",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 765,
+        "word_count": 585,
         "duration_sec": null,
-        "body_text": "The International Committee of the Red Cross and rights groups have warned that it will soon be too late to put the “genie back in the bottle” as the development of autonomous weapons appears to outpace efforts to regulate them.",
+        "body_text": "Australian scientists have used gravity as a means of communication, in a proof-of-concept experiment involving a snail-paced 1950s elevator, a brick wall and a men’s bathroom.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "67109e9aeafa1a7c88e48fa28a12ce788a3cd8be",
-        "summary": "Warning about putting ‘genie back in the bottle’ comes as UN conference fails to agree on regulation instrument The International Committee of the Red Cross and rights groups have warned that it will soon be too late to put the “genie back in the bottle” as the development of autonomous weapons appears to outpace efforts to regulate them. The stark warning came as more than 120 member states of the UN Convention on Certain Conventional Weapons concluded a week-long conference in Geneva.",
+        "guid_hash": "c410430c53972b9daa9857502a526a855a1f2c7e",
+        "summary": "Australian physicists chose to transmit the word ‘gravity’ in binary code through brick wall Get our breaking news email , free app or daily news podcast Australian scientists have used gravity as a means of communication, in a proof-of-concept experiment involving a snail-paced 1950s elevator, a brick wall and a men’s bathroom. Physicists at the University of Queensland have used gravity to transmit a “practically unblockable” message about 70cm through a brick wall, by sending an elevator up and down between two floors and measuring changes in the gravitational field as a result of the movement.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "It will soon be too late to regulate use of autonomous weapons, warns Red Cross — The Guardian - Science",
+        "alt_text": "An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message — The Guardian - Science",
         "duration_formatted": "",
         "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 4
+        "reading_time_min": 3
       },
       "audio": {
-        "id": 1808500361,
-        "title": "Shakespeare's Sonnets - Sonnets 1-10",
+        "id": 1001325675,
+        "title": "Shakespeare's Sonnets - Sonnets 21-30",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
@@ -111,14 +113,14 @@
         "slot_level": "C1",
         "source_level": "C1",
         "word_count": 28,
-        "duration_sec": 676,
+        "duration_sec": 687,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/sonnets_librivox/sonnets_01_shakespeare_64kb.mp3",
+        "audio_url": "https://www.archive.org/download/sonnets_librivox/sonnets_03_shakespeare_64kb.mp3",
         "description": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "01309f2f807edca0ea79c657e9aa140687d6f58d",
+        "guid_hash": "8284bfa56acdbc19ee555655978a70e984baee17",
         "summary": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
         "origin": "reserve",
         "badges": [
@@ -127,8 +129,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Shakespeare's Sonnets - Sonnets 1-10 — LibriVox (culture)",
-        "duration_formatted": "11:16",
+        "alt_text": "Shakespeare's Sonnets - Sonnets 21-30 — LibriVox (culture)",
+        "duration_formatted": "11:27",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -136,8 +138,8 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1641606628,
-        "title": "Amendments to the United States Constitution (version 2) - Amendments 11-13",
+        "id": 1381496821,
+        "title": "Amendments to the United States Constitution (version 2) - Amendments 14-19",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
@@ -147,14 +149,14 @@
         "slot_level": "C1",
         "source_level": "C1",
         "word_count": 38,
-        "duration_sec": 230,
+        "duration_sec": 401,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/amendments_2_librivox/amendments_11-13_64kb.mp3",
+        "audio_url": "https://www.archive.org/download/amendments_2_librivox/amendments_14-19_64kb.mp3",
         "description": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "3e3c8e26a2048aa9e124e3b888f2e79c6112649e",
+        "guid_hash": "9ddcedaf5b998fb1ef8ca3b485735535695fb6ea",
         "summary": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
         "origin": "reserve",
         "badges": [
@@ -184,8 +186,8 @@
             ]
           }
         ],
-        "alt_text": "Amendments to the United States Constitution (version 2) - Amendments 11-13 — LibriVox (history & biography)",
-        "duration_formatted": "3:50",
+        "alt_text": "Amendments to the United States Constitution (version 2) - Amendments 14-19 — LibriVox (history & biography)",
+        "duration_formatted": "6:41",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -195,324 +197,328 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "resilient",
+      "text": "rigorous",
       "level": "C1",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/rɪˈzɪliənt/",
-      "meaning": "able to recover after difficulty",
-      "meaning_fr": "résilient",
-      "example": "Children are remarkably resilient.",
-      "anki_answer": "résilient",
+      "phonetic": "/ˈrɪɡərəs/",
+      "meaning": "extremely thorough and careful",
+      "meaning_fr": "rigoureux",
+      "example": "The study followed a rigorous method.",
+      "anki_answer": "rigoureux",
       "tags": [
-        "strength"
+        "science"
       ],
-      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
       "kind": "word",
       "dictionary": {
-        "phonetic": null,
+        "phonetic": "/ˈɹɪɡəɹəs/",
         "definitions": [
-          "(of objects or substances) Returning quickly to original shape after force is applied; elastic.",
-          "(organisms or people, of systems) Returning quickly to normal after damaging events or conditions."
+          "Showing, causing, or favoring rigour; scrupulously accurate or strict; thorough.",
+          "Severe; intense."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/resilient-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/rigorous-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "Returning quickly to original shape after force is applied; <a rel=\"mw:WikiLink\" href=\"/wiki/elastic\" title=\"elastic\">elastic</a>. \n<ol><li><span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.</li></ol>",
-          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the ability to absorb energy when deformed.",
-          "Returning quickly to normal after damaging events or conditions. \n\n<ol><li><span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>.</li></ol>",
-          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Having the ability to recover from <a rel=\"mw:WikiLink\" href=\"/wiki/mental_illness\" title=\"mental illness\">mental illness</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/trauma\" title=\"trauma\">trauma</a>, etc.; having <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/resilience%20(psychology)\" title=\"w:resilience (psychology)\" class=\"extiw\">resilience</a>."
+          "Showing, causing, or favoring <a rel=\"mw:WikiLink\" href=\"/wiki/rigour\" title=\"rigour\">rigour</a>/<a rel=\"mw:WikiLink\" href=\"/wiki/rigor\" title=\"rigor\">rigor</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/scrupulous\" title=\"scrupulous\">scrupulously</a> <a rel=\"mw:WikiLink\" href=\"/wiki/accurate\" title=\"accurate\">accurate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/strict\" title=\"strict\">strict</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/thorough\" title=\"thorough\">thorough</a>.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/severe\" title=\"severe\">Severe</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/intense\" title=\"intense\">intense</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "on the cusp of",
+      "expression": "on the same wavelength",
       "level": "C1",
       "type": "idiom",
-      "meaning": "at the start of an important change",
-      "meaning_fr": "être au seuil de",
-      "example": "The company is on the cusp of a breakthrough.",
-      "anki_answer": "seuil, changement",
+      "meaning": "thinking in the same way as someone",
+      "meaning_fr": "sur la même longueur d'onde",
+      "example": "We are on the same wavelength about the plan.",
+      "anki_answer": "même longueur onde",
       "tags": [
-        "change"
+        "agreement"
       ],
-      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
+      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {},
+      "wiktionary": {
+        "definitions": [
+          "Thinking in the same <a rel=\"mw:WikiLink\" href=\"/wiki/way\" title=\"way\">way</a>; having similar <a rel=\"mw:WikiLink\" href=\"/wiki/thought_process\" title=\"thought process\">thought processes</a> (in general).",
+          "In complete <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a>; having the same <a rel=\"mw:WikiLink\" href=\"/wiki/perspective\" title=\"perspective\">perspective</a> (on a particular issue)."
+        ]
+      },
       "audio": null
     },
     "history": {
-      "text": "mercantilism",
+      "text": "nationalism",
       "aliases": [
-        "mercantilism"
+        "nationalism",
+        "patriotic movement"
       ],
       "level": "C1",
-      "meaning": "an economic theory based on trade and accumulated wealth",
-      "meaning_fr": "mercantilisme",
-      "period": "Early modern",
-      "theme": "Economy",
-      "example": "Mercantilism shaped colonial policy.",
+      "meaning": "loyalty to a nation and belief in its interests",
+      "meaning_fr": "nationalisme",
+      "period": "19th century",
+      "theme": "Politics",
+      "example": "Nationalism grew across Europe.",
       "tags": [
-        "economy"
+        "politics"
       ],
-      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
+      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "45ec82195c5bc0379f855bfa44b17f87f9939f48",
+      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
       "kind": "word",
       "level": "A1",
-      "text": "school",
-      "meaning": "a place where children learn",
-      "meaning_fr": "école",
-      "example": "The school opens at eight.",
-      "phonetic": "/skuːl/",
-      "anki_answer": "école",
-      "tags": [
-        "education"
-      ]
-    },
-    {
-      "key": "170b1a0e680e80a71c2dbf310718c305019619e0",
-      "kind": "expression",
-      "level": "A1",
-      "text": "wait for",
-      "meaning": "stay until someone or something arrives",
-      "meaning_fr": "attendre",
-      "example": "I wait for the bus here.",
-      "phonetic": "",
-      "anki_answer": "attendre",
+      "text": "sleep",
+      "meaning": "rest with your eyes closed at night",
+      "meaning_fr": "dormir",
+      "example": "Babies sleep a lot.",
+      "phonetic": "/sliːp/",
+      "anki_answer": "dormir",
       "tags": [
         "daily"
       ]
     },
     {
-      "key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268",
+      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "kind": "expression",
+      "level": "A1",
+      "text": "watch TV",
+      "meaning": "look at television programmes",
+      "meaning_fr": "regarder la télé",
+      "example": "They watch TV in the evening.",
+      "phonetic": "",
+      "anki_answer": "regarder télé",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
       "kind": "history",
       "level": "A1",
-      "text": "child",
-      "meaning": "a young human being",
-      "meaning_fr": "enfant",
-      "example": "The child listened to the old story.",
+      "text": "city",
+      "meaning": "a large place where people live and work",
+      "meaning_fr": "ville",
+      "example": "Rome is an ancient city.",
       "phonetic": "",
-      "anki_answer": "enfant",
+      "anki_answer": "ville",
       "tags": [
-        "people"
+        "places"
       ]
     },
     {
-      "key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d",
+      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
       "kind": "word",
       "level": "A2",
-      "text": "neighbour",
-      "meaning": "a person who lives near you",
-      "meaning_fr": "voisin",
-      "example": "Our neighbour has a garden.",
-      "phonetic": "/ˈneɪbər/",
-      "anki_answer": "voisin",
+      "text": "pocket",
+      "meaning": "a small bag in clothing",
+      "meaning_fr": "poche",
+      "example": "The key is in my pocket.",
+      "phonetic": "/ˈpɑːkɪt/",
+      "anki_answer": "poche",
       "tags": [
-        "people"
+        "clothes"
       ]
     },
     {
-      "key": "3513f6c408320e6d94779e023fa404f075367587",
+      "key": "72c14350149902e62661267191dc176e22669331",
       "kind": "expression",
       "level": "A2",
-      "text": "be interested in",
-      "meaning": "want to know about something",
-      "meaning_fr": "être intéressé par",
-      "example": "I am interested in history.",
+      "text": "be proud of",
+      "meaning": "feel pleased with an achievement",
+      "meaning_fr": "être fier de",
+      "example": "I am proud of my sister.",
       "phonetic": "",
-      "anki_answer": "intéressé",
+      "anki_answer": "fier",
       "tags": [
-        "interests"
+        "feelings"
       ]
     },
     {
-      "key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d",
+      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
       "kind": "history",
       "level": "A2",
-      "text": "revolution",
-      "meaning": "a major change in government or society",
-      "meaning_fr": "révolution",
-      "example": "The revolution changed the country.",
+      "text": "soldier",
+      "meaning": "a person who fights in an army",
+      "meaning_fr": "soldat",
+      "example": "The soldier returned from the campaign.",
       "phonetic": "",
-      "anki_answer": "révolution",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "8956a54e2d95372dc761aae2c81f3b488accc7cc",
-      "kind": "word",
-      "level": "B1",
-      "text": "expect",
-      "meaning": "believe something will happen",
-      "meaning_fr": "s'attendre à",
-      "example": "I expect the train to be late.",
-      "phonetic": "/ɪkˈspekt/",
-      "anki_answer": "s'attendre",
-      "tags": [
-        "probability"
-      ]
-    },
-    {
-      "key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e",
-      "kind": "expression",
-      "level": "B1",
-      "text": "bring up",
-      "meaning": "mention a subject in conversation",
-      "meaning_fr": "évoquer, soulever",
-      "example": "He brought up an interesting point.",
-      "phonetic": "",
-      "anki_answer": "évoquer",
-      "tags": [
-        "communication"
-      ]
-    },
-    {
-      "key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquest",
-      "meaning": "the act of taking land by force",
-      "meaning_fr": "conquête",
-      "example": "The conquest changed the region.",
-      "phonetic": "",
-      "anki_answer": "conquête",
+      "anki_answer": "soldat",
       "tags": [
         "war"
       ]
     },
     {
-      "key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064",
+      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
       "kind": "word",
-      "level": "B2",
-      "text": "relevant",
-      "meaning": "closely connected to the subject",
-      "meaning_fr": "pertinent",
-      "example": "Please include relevant details.",
-      "phonetic": "/ˈreləvənt/",
-      "anki_answer": "pertinent",
+      "level": "B1",
+      "text": "explain",
+      "meaning": "make something clear to someone",
+      "meaning_fr": "expliquer",
+      "example": "Can you explain this word?",
+      "phonetic": "/ɪkˈspleɪn/",
+      "anki_answer": "expliquer",
       "tags": [
         "communication"
       ]
     },
     {
-      "key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e",
+      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
       "kind": "expression",
-      "level": "B2",
-      "text": "get out of hand",
-      "meaning": "become uncontrolled",
-      "meaning_fr": "dégénérer, échapper de contrôle",
-      "example": "The argument got out of hand.",
+      "level": "B1",
+      "text": "deal with",
+      "meaning": "handle a problem or person",
+      "meaning_fr": "s'occuper de, gérer",
+      "example": "We need to deal with this issue.",
       "phonetic": "",
-      "anki_answer": "dégénérer",
+      "anki_answer": "gérer",
       "tags": [
         "problems"
       ]
     },
     {
-      "key": "3ddb7708a56287d80c6f5de21c87fab19196b67b",
+      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronation",
+      "meaning": "the ceremony of crowning a ruler",
+      "meaning_fr": "couronnement",
+      "example": "The coronation took place in the cathedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
+      "kind": "word",
+      "level": "B2",
+      "text": "significant",
+      "meaning": "large or important enough to notice",
+      "meaning_fr": "significatif",
+      "example": "The difference is significant.",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "anki_answer": "significatif",
+      "tags": [
+        "importance"
+      ]
+    },
+    {
+      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
+      "kind": "expression",
+      "level": "B2",
+      "text": "get the hang of",
+      "meaning": "learn how to do something",
+      "meaning_fr": "prendre le coup de main",
+      "example": "I am getting the hang of driving.",
+      "phonetic": "",
+      "anki_answer": "coup de main",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
       "kind": "history",
       "level": "B2",
-      "text": "civilisation",
-      "meaning": "an advanced human society",
-      "meaning_fr": "civilisation",
-      "example": "The civilisation left great monuments.",
+      "text": "colonialism",
+      "meaning": "a system in which a powerful country controls other territories",
+      "meaning_fr": "colonialisme",
+      "example": "Colonialism transformed the African map.",
       "phonetic": "",
-      "anki_answer": "civilisation",
+      "anki_answer": "colonialisme",
       "tags": [
-        "culture"
+        "empire"
       ]
     },
     {
-      "key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1",
+      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
       "kind": "word",
       "level": "C1",
-      "text": "resilient",
-      "meaning": "able to recover after difficulty",
-      "meaning_fr": "résilient",
-      "example": "Children are remarkably resilient.",
-      "phonetic": "/rɪˈzɪliənt/",
-      "anki_answer": "résilient",
-      "tags": [
-        "strength"
-      ]
-    },
-    {
-      "key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d",
-      "kind": "expression",
-      "level": "C1",
-      "text": "on the cusp of",
-      "meaning": "at the start of an important change",
-      "meaning_fr": "être au seuil de",
-      "example": "The company is on the cusp of a breakthrough.",
-      "phonetic": "",
-      "anki_answer": "seuil, changement",
-      "tags": [
-        "change"
-      ]
-    },
-    {
-      "key": "cf70c2f947ddd7601bd93471dd4438a1a4920717",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilism",
-      "meaning": "an economic theory based on trade and accumulated wealth",
-      "meaning_fr": "mercantilisme",
-      "example": "Mercantilism shaped colonial policy.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
-      "tags": [
-        "economy"
-      ]
-    },
-    {
-      "key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa",
-      "kind": "word",
-      "level": "C2",
-      "text": "capitulate",
-      "meaning": "stop resisting and surrender",
-      "meaning_fr": "capituler",
-      "example": "The rebels eventually capitulated.",
-      "phonetic": "/kəˈpɪtʃuleɪt/",
-      "anki_answer": "capituler",
-      "tags": [
-        "conflict"
-      ]
-    },
-    {
-      "key": "d14ea879e92f110e1abec6267bf21353f35b7cc2",
-      "kind": "expression",
-      "level": "C2",
-      "text": "draw a veil over",
-      "meaning": "deliberately avoid discussing something",
-      "meaning_fr": "passer sous silence",
-      "example": "Let us draw a veil over that episode.",
-      "phonetic": "",
-      "anki_answer": "passer silence",
-      "tags": [
-        "silence"
-      ]
-    },
-    {
-      "key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e",
-      "kind": "history",
-      "level": "C2",
-      "text": "determinism",
-      "meaning": "the belief that events are fixed by prior causes",
-      "meaning_fr": "déterminisme",
-      "example": "Economic determinism shaped his theory.",
-      "phonetic": "",
-      "anki_answer": "déterminisme",
+      "text": "rigorous",
+      "meaning": "extremely thorough and careful",
+      "meaning_fr": "rigoureux",
+      "example": "The study followed a rigorous method.",
+      "phonetic": "/ˈrɪɡərəs/",
+      "anki_answer": "rigoureux",
       "tags": [
         "science"
+      ]
+    },
+    {
+      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "kind": "expression",
+      "level": "C1",
+      "text": "on the same wavelength",
+      "meaning": "thinking in the same way as someone",
+      "meaning_fr": "sur la même longueur d'onde",
+      "example": "We are on the same wavelength about the plan.",
+      "phonetic": "",
+      "anki_answer": "même longueur onde",
+      "tags": [
+        "agreement"
+      ]
+    },
+    {
+      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "kind": "history",
+      "level": "C1",
+      "text": "nationalism",
+      "meaning": "loyalty to a nation and belief in its interests",
+      "meaning_fr": "nationalisme",
+      "example": "Nationalism grew across Europe.",
+      "phonetic": "",
+      "anki_answer": "nationalisme",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
+      "kind": "word",
+      "level": "C2",
+      "text": "dichotomy",
+      "meaning": "a division into two opposing parts",
+      "meaning_fr": "dichotomie",
+      "example": "The article sets up a false dichotomy.",
+      "phonetic": "/daɪˈkɑːtəmi/",
+      "anki_answer": "dichotomie",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
+      "kind": "expression",
+      "level": "C2",
+      "text": "flog a dead horse",
+      "meaning": "waste effort on a hopeless cause",
+      "meaning_fr": "battre l'eau, perdre son temps",
+      "example": "Arguing now is flogging a dead horse.",
+      "phonetic": "",
+      "anki_answer": "perdre temps",
+      "tags": [
+        "futility"
+      ]
+    },
+    {
+      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
+      "kind": "history",
+      "level": "C2",
+      "text": "discontinuity",
+      "meaning": "a break in the continuity of a process",
+      "meaning_fr": "discontinuité",
+      "example": "The novel emphasised historical discontinuity.",
+      "phonetic": "",
+      "anki_answer": "discontinuité",
+      "tags": [
+        "culture"
       ]
     }
   ],
@@ -522,270 +528,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “school” mean?",
+      "prompt": "What does “sleep” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "école",
-      "item_key": "45ec82195c5bc0379f855bfa44b17f87f9939f48"
+      "answer": "dormir",
+      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ for",
+      "prompt": "Complete the expression: ____ TV",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "wait",
-      "item_key": "170b1a0e680e80a71c2dbf310718c305019619e0"
+      "answer": "watch",
+      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “child” belong to?",
+      "prompt": "Which period does “city” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "c0cb212b02781fc11d8aaada2c3893a3ea24e268"
+      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “neighbour” mean?",
+      "prompt": "What does “pocket” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "voisin",
-      "item_key": "85d87831e9e9b0d4197115782ba5f069fb3b6c1d"
+      "answer": "poche",
+      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ in",
+      "prompt": "Complete the expression: be ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "interested",
-      "item_key": "3513f6c408320e6d94779e023fa404f075367587"
+      "answer": "proud",
+      "item_key": "72c14350149902e62661267191dc176e22669331"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “revolution” belong to?",
+      "prompt": "Which period does “soldier” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
       "answer": "General",
-      "item_key": "0adff7f1ad2f3d26091b22ea6ab7f5a09551b68d"
+      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “expect” mean?",
+      "prompt": "What does “explain” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "s'attendre à",
-      "item_key": "8956a54e2d95372dc761aae2c81f3b488accc7cc"
+      "answer": "expliquer",
+      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ up",
+      "prompt": "Complete the expression: ____ with",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "bring",
-      "item_key": "630d65cc300e6ba3dc551e1f0a25ad2a4a35eb5e"
+      "answer": "deal",
+      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “conquest” belong to?",
+      "prompt": "Which period does “coronation” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "154bd5c281c5bbdcccc04fe4ed83708497fc3373"
+      "answer": "Middle Ages",
+      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “relevant” mean?",
+      "prompt": "What does “significant” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "pertinent",
-      "item_key": "fd0270e2d64db44cab2c25a03a8757c15ff8f064"
+      "answer": "significatif",
+      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get out of ____",
+      "prompt": "Complete the expression: get the ____ of",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "hand",
-      "item_key": "581c31ac92552c6d9a349566c4c44d4f81b3d25e"
+      "answer": "hang",
+      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “civilisation” belong to?",
+      "prompt": "Which period does “colonialism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Antiquity",
-      "item_key": "3ddb7708a56287d80c6f5de21c87fab19196b67b"
+      "answer": "19th century",
+      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “resilient” mean?",
+      "prompt": "What does “rigorous” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "résilient",
-      "item_key": "874d99eb8ce547822dc7bbbc53841b50d4bc4fc1"
+      "answer": "rigoureux",
+      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the ____ of",
+      "prompt": "Complete the expression: on the same ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "cusp",
-      "item_key": "bf9406d5b7745e1fc6db74332b1ece8e00398a0d"
+      "answer": "wavelength",
+      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “mercantilism” belong to?",
+      "prompt": "Which period does “nationalism” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "Early modern",
-      "item_key": "cf70c2f947ddd7601bd93471dd4438a1a4920717"
+      "answer": "19th century",
+      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “capitulate” mean?",
+      "prompt": "What does “dichotomy” mean?",
       "options": [
-        "capituler",
-        "pertinent",
-        "résilient",
-        "s'attendre à"
+        "dichotomie",
+        "dormir",
+        "expliquer",
+        "poche"
       ],
-      "answer": "capituler",
-      "item_key": "0ba7249bf7b212e05afa57c50735b98ca1846cfa"
+      "answer": "dichotomie",
+      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: draw a ____ over",
+      "prompt": "Complete the expression: flog a dead ____",
       "options": [
-        "bring",
-        "cusp",
-        "draw",
+        "dead",
+        "deal",
+        "flog",
         "get"
       ],
-      "answer": "veil",
-      "item_key": "d14ea879e92f110e1abec6267bf21353f35b7cc2"
+      "answer": "horse",
+      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “determinism” belong to?",
+      "prompt": "Which period does “discontinuity” belong to?",
       "options": [
         "19th century",
-        "Antiquity",
-        "Early modern",
-        "General"
+        "Contemporary",
+        "General",
+        "Middle Ages"
       ],
-      "answer": "19th century",
-      "item_key": "85f920914f0ef5f5e98fc03f8a9ba72a85f5855e"
+      "answer": "Contemporary",
+      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
     }
   ],
   "tour": [
