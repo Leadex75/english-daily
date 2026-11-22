@@ -7,7 +7,7 @@ from e2e_harness import E2EHarness
 
 class ThemesSettingsSpec(E2EHarness):
     def test_theme_size_font_motion_and_reset_persist(self) -> None:
-        self.page.click('.main-nav a[href="#settings"]')
+        self.page.click("[data-eds-settings-open]")
         expect(self.page.locator("#settings-view")).to_be_visible()
         controls = self.page.locator("[data-eds-settings-controls]")
 
@@ -30,7 +30,7 @@ class ThemesSettingsSpec(E2EHarness):
 
         self.page.reload()
         self.page.wait_for_selector("[data-eds-route]")
-        self.page.click('.main-nav a[href="#settings"]')
+        self.page.click("[data-eds-settings-open]")
         expect(self.page.locator("html")).to_have_attribute("data-text-size", "large")
         expect(self.page.locator("html")).to_have_attribute("data-reading-font", "sans")
         expect(self.page.locator("html")).to_have_attribute("data-motion", "reduce")

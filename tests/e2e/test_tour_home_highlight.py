@@ -13,11 +13,11 @@ class TourHomeHighlightSpec(E2EHarness):
         expect(dialog).to_be_visible()
         expect(dialog.locator(".eyebrow")).to_have_text("Tour 1 / 7")
         expect(dialog.locator("#tour-title")).to_have_text("Start at home")
-        expect(self.page.locator("[data-eds-hero].tour-highlight")).to_be_visible()
+        expect(self.page.locator("[data-eds-today].tour-highlight")).to_be_visible()
         self.assertIn("left:", self.page.locator(".tour-spotlight").get_attribute("style") or "")
 
         focused_target = self.page.evaluate(
-            "() => Boolean(document.activeElement && document.activeElement.hasAttribute('data-eds-hero'))"
+            "() => Boolean(document.activeElement && document.activeElement.hasAttribute('data-eds-today'))"
         )
         self.assertTrue(focused_target)
         self.page.keyboard.press("Tab")
@@ -38,5 +38,6 @@ class TourHomeHighlightSpec(E2EHarness):
 
         self.page.get_by_role("button", name="Start the guided tour").click()
         expect(dialog).to_be_visible()
-        self.page.locator("[data-eds-anki]").click()
+        self.page.locator("[data-eds-anki-open]").click()
+        expect(self.page.locator("#anki-view")).to_be_visible()
         expect(dialog.locator("#tour-title")).to_have_text("Export learned items")

@@ -21,6 +21,9 @@ $env:E2E_CHROMIUM_PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 .\.venv\Scripts\python.exe -m unittest discover -s tests/e2e -v
 ```
 
+Screenshot outputs are written to `tests/screenshots/` by the `test_screenshots.py` E2E spec. The
+folder is ignored by Git; regenerate it after UI or palette changes.
+
 ## Results
 
 - Phase 5: 61 unit tests passed.
@@ -29,9 +32,11 @@ $env:E2E_CHROMIUM_PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 - Phase 8: 66 unit tests passed.
 - Static checks: compileall, JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
 - Phase 7 E2E: 6 Playwright tests passed against a deterministic static export, with external requests blocked and AnkiConnect stubbed.
-- E2E coverage: brand/layout, theme/settings persistence, calendar/search, AnkiConnect success/failure plus TSV fallback, Spanish language switch, and first-visit tour/home spotlight.
+- E2E coverage: brand/layout, theme/settings persistence, calendar/search, AnkiConnect success/failure plus TSV fallback, Spanish language switch, first-visit tour/Today spotlight, and responsive screenshot capture.
 - Phase 8 CLI smoke: `validate-config --json` returned `ok: true`; `calibrate --json`, `demo-data`, `backup-db`, `restore-db` and a temp public static export all succeeded.
 - Final E2E rerun after Phase 8: 6 Playwright tests passed.
+- Addendum Phase 9: 66 unit tests passed; 7 Playwright tests passed, including responsive screenshots for main, Archive, Anki and Settings at 360/768/1280 in Paper and Ink palettes.
+- Addendum Phase 9 static checks: compileall, JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
 
 ## Environment
 

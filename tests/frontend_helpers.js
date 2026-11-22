@@ -218,7 +218,7 @@ global.window.localStorage = fakeLocalStorage;
 global.localStorage = fakeLocalStorage;
 EDStore.keys(EDStore.PREFIX).forEach((key) => EDStore.remove(key));
 
-const tourSteps = [{ id: 'home', target: '[data-eds-hero]' }, { id: 'level', target: '[data-eds-level]' }];
+const tourSteps = [{ id: 'home', target: '[data-eds-today]' }, { id: 'level', target: '[data-eds-level]' }];
 assert.deepStrictEqual(EDTour.steps({ tour: tourSteps }), tourSteps);
 assert.deepStrictEqual(EDTour.state(), { index: 0, open: false });
 assert.deepStrictEqual(EDTour.start(1), { index: 1, open: true });

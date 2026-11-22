@@ -276,7 +276,7 @@ function app() {
     syncRoute() {
       const raw = String(window.location.hash || '').replace(/^#\/?/, '').split(/[?&]/)[0];
       this.route = window.EDBrand ? window.EDBrand.route(window.location.hash) : (
-        ['today', 'archive', 'glossary', 'settings'].includes(raw) ? raw : 'today'
+        ['today', 'archive', 'anki', 'settings'].includes(raw) ? raw : 'today'
       );
       if (raw !== this.route && window.history && window.history.replaceState) {
         window.history.replaceState(null, '', `${window.location.search}#${this.route}`);
@@ -779,7 +779,7 @@ function app() {
     },
     prepareTourTarget(step) {
       const id = step && step.id;
-      const route = id === 'glossary' ? 'glossary' : 'today';
+      const route = (id === 'glossary' || id === 'anki') ? 'anki' : 'today';
       if (this.route !== route) {
         this.route = route;
         if (window.history && window.history.replaceState) {
@@ -851,6 +851,13 @@ function app() {
       this.tourIndex = state.index;
       this.tourOpenFlag = state.open && this.tourSteps().length > 0;
       this.updateTour();
+    },
+    openAnkiPage() {
+      if (this.tourOpen()) {
+        this.openAnkiHelp();
+        return;
+      }
+      this.navigate('anki');
     },
     openAnkiHelp() {
       if (window.EDTour) window.EDTour.markSeen();

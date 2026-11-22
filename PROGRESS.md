@@ -245,3 +245,16 @@
 - Verification: Python compile check, all JavaScript syntax checks, frontend helpers, palette check, contrast audit, config validation, calibration, demo data, backup/restore and temp public static export passed.
 - Decision: keep generated site/state commits out of CI triggers via path filters while preserving the scheduled daily publish path.
 - Remaining: publish and push.
+
+## Addendum Phase 9 — clean header and main screen (done)
+
+- Removed the primary nav, editorial hero, practice summary, date dropdown, old light/dark toggle and Anki help button from the masthead/main screen.
+- The header now keeps a single `English Daily` wordmark link to Today, language picker, update button when available, Tour, Anki and a Settings gear; Archive is the fifth main tab.
+- Moved the glossary and Anki controls into a dedicated Anki view, kept the Anki tour step reachable from the Anki header action, and added `data-eds-today`, `data-eds-tab-archive`, `data-eds-anki-open`, `data-eds-settings-open`, `data-eds-source-link` and `data-eds-mark-read` landmarks.
+- Normalized card actions: one source link per text/audio card plus a separate read/listened toggle, with truncated text using the full-article label and complete text using a plain Source label.
+- Retargeted the home tour step from the removed hero to `[data-eds-today]` and updated EN/ES tour copy for the Anki page.
+- Added Playwright screenshot coverage for main, Archive, Anki and Settings at 360/768/1280 in Paper and Ink; outputs go to ignored `tests/screenshots/`.
+- Tests: 66 unit tests and 7 Playwright E2E tests passed after the Phase 9 changes.
+- Verification: `compileall`, all JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
+- Decision: keep legacy `english-daily:*` storage keys during this UI phase; the new `eds.<lang>.*` storage layer is reserved for Phase 11.
+- Remaining: Phases 10–13.

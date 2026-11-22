@@ -9,9 +9,7 @@ class SpanishSwitchSpec(E2EHarness):
     def test_spanish_brand_content_paths_and_exercise_keys(self) -> None:
         self.select_language("es")
         expect(self.page.locator("[data-eds-home] .brand-mark")).to_have_text("Spanish Daily")
-        expect(self.page.locator("[data-eds-home] .tagline")).to_have_text(
-            "Un poco de español, cada día."
-        )
+        expect(self.page).to_have_title("Spanish Daily")
         expect(self.page.locator("html")).to_have_attribute("lang", "es")
         self.assertIn("lang=es", self.page.url)
 
@@ -26,6 +24,7 @@ class SpanishSwitchSpec(E2EHarness):
 
         self.select_language("en")
         expect(self.page.locator("[data-eds-home] .brand-mark")).to_have_text("English Daily")
+        expect(self.page).to_have_title("English Daily")
         self.assertNotIn("lang=es", self.page.url)
         keys = self.page.evaluate(
             "() => Object.keys(localStorage).filter((key) => key.startsWith('english-daily:exercise:'))"

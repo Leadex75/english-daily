@@ -839,7 +839,7 @@ class ContractTests(unittest.TestCase):
             word_exercise = next(item for item in payload["exercises"] if item["id"] == "B1-word")
             self.assertIn(word_exercise["answer"], word_exercise["options"])
             self.assertEqual(payload["tour"][0]["id"], "home")
-            self.assertEqual(payload["tour"][0]["target"], "[data-eds-hero]")
+            self.assertEqual(payload["tour"][0]["target"], "[data-eds-today]")
             item = payload["slots"]["history"]["text"]
             self.assertIn("Renaissance art", item["alt_text"])
             self.assertEqual(item["source_url"], "https://example.org/feed")
@@ -964,12 +964,14 @@ class PhaseOneBrandingAndLayoutTests(unittest.TestCase):
         self.assertEqual(manifest["short_name"], "English Daily")
         self.assertTrue(readme.startswith("# English Daily\n"))
         for marker in (
-            "data-eds-home", "class=\"main-nav\"", "id=\"today-view\"", "id=\"archive-view\"",
-            "id=\"glossary-view\"", "id=\"settings-view\"", "data-eds-settings", "data-eds-search",
+            "data-eds-home", "data-eds-today", "data-eds-tab-archive", "id=\"today-view\"",
+            "id=\"archive-view\"", "id=\"anki-view\"", "id=\"settings-view\"",
+            "data-eds-settings", "data-eds-search", "data-eds-source-link", "data-eds-mark-read",
             "./lib/branding.js", "x-text=\"brand\"", "longDate(selectedDate)",
         ):
             self.assertIn(marker, index)
-        self.assertNotIn("class=\"progress-panel\"", index)
+        for marker in ("class=\"main-nav\"", "data-eds-hero", "class=\"progress-panel\"", "Anki help"):
+            self.assertNotIn(marker, index)
         self.assertIn("./lib/branding.js", worker)
 
 
@@ -1291,14 +1293,16 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertIn("./css/themes.css", index)
         self.assertIn("./css/themes.css", worker)
         self.assertTrue((static / "css" / "themes.css").is_file())
-        for marker in ("data-eds-hero", "data-eds-level", "data-eds-tabs", "data-eds-phrase", "data-eds-exercises", "role=\"dialog\"", "tour-spotlight"):
+        for marker in ("data-eds-today", "data-eds-level", "data-eds-tabs", "data-eds-tab-archive", "data-eds-phrase", "data-eds-exercises", "data-eds-source-link", "data-eds-mark-read", "data-eds-anki", "data-eds-glossary", "data-eds-settings-open", "role=\"dialog\"", "tour-spotlight"):
             self.assertIn(marker, index)
         for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen("):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
             self.assertIn(marker, styles)
-        for marker in ("data-eds-anki", "ankiStatus(", "ankiLabel(", "Anki help"):
+        for marker in ("data-eds-anki", "data-eds-anki-open", "ankiStatus(", "ankiLabel("):
             self.assertIn(marker, index)
+        for marker in ("main-nav", "data-eds-hero", "Anki help"):
+            self.assertNotIn(marker, index)
         for marker in ("data-eds-settings-controls", "Theme preset", "Text size", "Reading font", "Default audio speed", "Show exercise answers immediately", "Mark texts as read while scrolling", "Reduce motion", "Reset settings"):
             self.assertIn(marker, index)
         for marker in ("data-eds-calendar", "Previous month", "Next month", "Recent editions", "Open edition", 'x-text="calendar().label"'):
@@ -1337,8 +1341,9 @@ class FrontendAssetTests(unittest.TestCase):
             "loadLanguagePayload(", "loadDays(",
         ):
             self.assertIn(marker, script)
+        self.assertIn("Spanish Daily", index)
+        self.assertIn("Un poco de español, cada día.", index)
         for marker in ("Spanish Daily", "Un poco de español, cada día."):
-            self.assertIn(marker, index)
             self.assertIn(marker, branding)
         self.assertIn("document.documentElement.lang", script)
         self.assertIn("exercise:${language}:", exercises)
@@ -1377,7 +1382,7 @@ class PhaseSixTourTests(unittest.TestCase):
                 self.assertEqual(set(step), {"id", "title", "body", "target"})
                 self.assertTrue(step["target"].startswith("[data-eds-"))
         self.assertEqual(_TOUR_STEPS_BY_LANG["en"][0]["title"], "Start at home")
-        self.assertEqual(_TOUR_STEPS_BY_LANG["en"][0]["target"], "[data-eds-hero]")
+        self.assertEqual(_TOUR_STEPS_BY_LANG["en"][0]["target"], "[data-eds-today]")
         self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Empieza desde casa")
 
 
@@ -1397,6 +1402,7 @@ class PhaseSevenE2ETests(unittest.TestCase):
             "test_anki_connect.py",
             "test_spanish_switch.py",
             "test_tour_home_highlight.py",
+            "test_screenshots.py",
         )
         for name in required:
             self.assertTrue((e2e_dir / name).is_file(), name)
@@ -1405,6 +1411,8 @@ class PhaseSevenE2ETests(unittest.TestCase):
         for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort"):
             self.assertIn(marker, harness)
 
+        screenshots_ignore = (root / "tests" / "screenshots" / ".gitignore").read_text(encoding="utf-8")
+        self.assertIn("*", screenshots_ignore)
         report = (root / "TEST_REPORT.md").read_text(encoding="utf-8")
         self.assertIn("Playwright", report)
 

@@ -31,21 +31,21 @@ _EXERCISE_PROMPTS = {
     },
 }
 _TOUR_STEPS = (
-    {"id": "home", "title": "Start at home", "body": "Today is your home base: choose a level, read, listen and practise.", "target": "[data-eds-hero]"},
+    {"id": "home", "title": "Start at home", "body": "Today is your home base: choose a level, read, listen and practise.", "target": "[data-eds-today]"},
     {"id": "level", "title": "Choose your level", "body": "Start with a CEFR level, then switch any time.", "target": "[data-eds-level]"},
     {"id": "tabs", "title": "Browse the day", "body": "Read news, culture and history in both text and audio.", "target": "[data-eds-tabs]"},
     {"id": "phrase", "title": "Learn the phrase", "body": "Each level has one word, expression and history term.", "target": "[data-eds-phrase]"},
     {"id": "exercises", "title": "Practise actively", "body": "Answer three short exercises to review what you learned.", "target": "[data-eds-exercises]"},
-    {"id": "anki", "title": "Export learned items", "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.", "target": "[data-eds-anki]"},
+    {"id": "anki", "title": "Export learned items", "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.", "target": "[data-eds-anki]"},
     {"id": "glossary", "title": "Build your glossary", "body": "Star items, export them to Anki, and keep your progress.", "target": "[data-eds-glossary]"},
 )
 _TOUR_STEPS_ES = (
-    {"id": "home", "title": "Empieza desde casa", "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.", "target": "[data-eds-hero]"},
+    {"id": "home", "title": "Empieza desde casa", "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.", "target": "[data-eds-today]"},
     {"id": "level", "title": "Elige tu nivel", "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.", "target": "[data-eds-level]"},
     {"id": "tabs", "title": "Explora el día", "body": "Lee noticias, cultura e historia en texto y audio.", "target": "[data-eds-tabs]"},
     {"id": "phrase", "title": "Aprende la frase", "body": "Cada nivel tiene una palabra, una expresión y un término histórico.", "target": "[data-eds-phrase]"},
     {"id": "exercises", "title": "Practica activamente", "body": "Responde tres ejercicios breves para repasar lo aprendido.", "target": "[data-eds-exercises]"},
-    {"id": "anki", "title": "Exporta lo aprendido", "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.", "target": "[data-eds-anki]"},
+    {"id": "anki", "title": "Exporta lo aprendido", "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.", "target": "[data-eds-anki]"},
     {"id": "glossary", "title": "Crea tu glosario", "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.", "target": "[data-eds-glossary]"},
 )
 _TOUR_STEPS_BY_LANG = {"en": _TOUR_STEPS, "es": _TOUR_STEPS_ES}

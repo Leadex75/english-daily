@@ -129,18 +129,23 @@ unless `--force` is used.
   `bank/<lang>/words.yaml`, `expressions.yaml` and `history_terms.yaml`.
 - Daily exercises cover word meaning, expression cloze and history period, with distractors drawn
   from the same day's phrase bank.
-- A seven-step guided tour starts on the first visit at the home hero, then moves through levels,
+- The masthead keeps one wordmark link to Today, a language picker, Tour, Anki and a Settings gear;
+  the old primary nav, headline hero, progress summary, date dropdown, light/dark toggle and Anki
+  help button have been removed. Archive is the fifth main tab, and the glossary lives on the Anki
+  page.
+- A seven-step guided tour starts on the first visit at the Today view, then moves through levels,
   tabs, phrases, exercises, Anki and the glossary; archive search, glossary, Anki export and theme
   switch are driven by the versioned day contract (`meta.contract_version: 2`).
-- Text and audio cards expose separate "Read the full text" and "Listen to the original audio"
-  links in a responsive two-column source footer.
-- Anki buttons show ready, learn-first and unavailable states, export only learned items, and the
-  Anki help button reopens the Anki tour step. The tour overlays a keyboard-safe spotlight on the
-  current target, reveals hidden views before highlighting them, traps Tab focus inside the dialog
-  and restores focus on exit. Notes use a persistent `English Daily Phrase` model,
-  deterministic GUIDs, field escaping and stable tags; Settings stores the AnkiConnect URL, and the
-  glossary can check the connection and send notes without using a browser download. `anki-notes`
-  and `anki-build` expose the same note model as JSON or a reusable `.apkg` (via `genanki`).
+- Text and audio cards each expose one labelled source link and a separate mark-as-read or
+  mark-as-listened toggle. Truncated text links read "Read the full article on <source>"; complete
+  text keeps a plain Source link.
+- Anki buttons show ready, learn-first and unavailable states and export only saved items. The tour
+  overlays a keyboard-safe spotlight on the current target, reveals hidden views before highlighting
+  them, traps Tab focus inside the dialog and restores focus on exit. Notes use a persistent
+  `English Daily Phrase` model, deterministic GUIDs, field escaping and stable tags; Settings stores
+  the AnkiConnect URL, and the Anki page can check the connection and send notes without a browser
+  download. `anki-notes` and `anki-build` expose the same note model as JSON or a reusable `.apkg`
+  (via `genanki`).
 - `tools/palette_build.py` generates `static/css/themes.css` from audited palette definitions;
   `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
   High contrast and both System modes.
@@ -205,7 +210,7 @@ Day payloads include:
 - `phrase`: word, expression and history term for the selected level
 - `glossary`: all bank entries for the day
 - `exercises`: deterministic CEFR-scoped practice items
-- `tour`: seven guided steps targeting frontend landmarks, beginning with the home hero
+- `tour`: seven guided steps targeting frontend landmarks, beginning with the Today view
 - `meta`: contract version, filled counts, origins, provenance counts, periods, themes and search path
 
 Serialized items include `periods`, `themes`, `history_terms`, `alt_text`, `duration_formatted`,
