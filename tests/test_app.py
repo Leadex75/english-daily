@@ -1422,7 +1422,7 @@ class FrontendAssetTests(unittest.TestCase):
         script = (static / "app.js").read_text(encoding="utf-8")
         styles = (static / "style.css").read_text(encoding="utf-8")
         worker = (static / "sw.js").read_text(encoding="utf-8")
-        for name in ("store.js", "branding.js", "settings.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "archive.js", "pwa.js", "anki.js"):
+        for name in ("store.js", "branding.js", "settings.js", "i18n.js", "ics.js", "quiz.js", "annotations.js", "reading.js", "shortcuts.js", "semester.js", "links.js", "progress.js", "exercises.js", "tour.js", "search.js", "archive.js", "pwa.js", "anki.js"):
             self.assertIn(f"./lib/{name}", index)
             self.assertIn(f"./lib/{name}", worker)
             self.assertTrue((static / "lib" / name).is_file())
@@ -1434,11 +1434,11 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertIn("./css/themes.css", index)
         self.assertIn("./css/themes.css", worker)
         self.assertTrue((static / "css" / "themes.css").is_file())
-        for marker in ("data-eds-today", "data-eds-level", "data-eds-tabs", "data-eds-tab-archive", "data-eds-phrase", "data-eds-exercises", "data-eds-source-link", "data-eds-mark-read", "data-eds-anki", "data-eds-glossary", "data-eds-settings-open", "role=\"dialog\"", "tour-spotlight"):
+        for marker in ("data-eds-today", "data-eds-level", "data-eds-tabs", "data-eds-tab-archive", "data-eds-tab-semester", "data-eds-phrase", "data-eds-exercises", "data-eds-source-link", "data-eds-mark-read", "data-eds-anki", "data-eds-glossary", "data-eds-settings-open", "data-eds-reading-toggle", "data-eds-annotations", "data-eds-quiz-check", "data-eds-semester", "data-eds-shortcuts", "data-eds-reminder-time", "data-eds-reminders-download", "role=\"dialog\"", "tour-spotlight"):
             self.assertIn(marker, index)
-        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "EDAnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "ankiConnectDiagnostic", "ankiConnectCounts", "requestPermission(", "verifyModels(", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen("):
+        for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "EDAnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "ankiConnectDiagnostic", "ankiConnectCounts", "requestPermission(", "verifyModels(", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen(", "EDi18n", "EDICS", "EDQuiz", "EDAnnotations", "EDReading", "EDShortcuts", "EDSemester", "downloadReminders(", "checkQuiz(", "saveAnnotation(", "semesterProgress("):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions", ".reading-panel-actions", ".annotation-panel", ".quiz-actions", ".semester-form", ".shortcut-dialog", "html[data-reading=\"focus\"]"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "data-eds-anki-open", "ankiStatus(", "ankiLabel("):
             self.assertIn(marker, index)
@@ -1545,6 +1545,7 @@ class PhaseSevenE2ETests(unittest.TestCase):
             "test_archive_search.py",
             "test_anki_connect.py",
             "test_anki_diagnostics.py",
+            "test_study_features.py",
             "test_spanish_switch.py",
             "test_tour_home_highlight.py",
             "test_screenshots.py",
@@ -1553,7 +1554,7 @@ class PhaseSevenE2ETests(unittest.TestCase):
             self.assertTrue((e2e_dir / name).is_file(), name)
 
         harness = (e2e_dir / "e2e_harness.py").read_text(encoding="utf-8")
-        for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort", "route_anki_mode", "/api/ankiconnect", "duplicate notes", "webCorsOriginList"):
+        for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort", "route_anki_mode", "/api/ankiconnect", "duplicate notes", "webCorsOriginList", "key.startsWith('eds.')"):
             self.assertIn(marker, harness)
 
         screenshots_ignore = (root / "tests" / "screenshots" / ".gitignore").read_text(encoding="utf-8")
@@ -1632,6 +1633,37 @@ class AddendumPhaseTenTests(unittest.TestCase):
             ALLOWED_ACTIONS,
             frozenset({"version", "requestPermission", "modelFieldNames", "createModel", "addNotes"}),
         )
+
+
+class AddendumPhaseElevenTests(unittest.TestCase):
+    def test_phase_eleven_modules_use_per_language_storage_keys(self):
+        root = Path(__file__).resolve().parents[1]
+        static = root / "static"
+        for name in ("i18n.js", "ics.js", "quiz.js", "annotations.js", "reading.js", "shortcuts.js", "semester.js"):
+            source = (static / "lib" / name).read_text(encoding="utf-8")
+            self.assertIn("window.ED", source)
+        quiz = (static / "lib" / "quiz.js").read_text(encoding="utf-8")
+        annotations = (static / "lib" / "annotations.js").read_text(encoding="utf-8")
+        semester = (static / "lib" / "semester.js").read_text(encoding="utf-8")
+        i18n = (static / "lib" / "i18n.js").read_text(encoding="utf-8")
+        self.assertIn("quiz.${", quiz)
+        self.assertIn("annotations.${", annotations)
+        self.assertIn(".semester`", semester)
+        self.assertIn(".i18n`", i18n)
+
+    def test_phase_eleven_docs_and_progress_are_recorded(self):
+        root = Path(__file__).resolve().parents[1]
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        for marker in (
+            "static/lib/i18n.js", "static/lib/ics.js", "static/lib/quiz.js",
+            "static/lib/annotations.js", "static/lib/reading.js",
+            "static/lib/shortcuts.js", "static/lib/semester.js",
+            "eds.<lang>.*", "ICS reminders", "Semester planner",
+        ):
+            self.assertIn(marker, readme)
+        progress = (root / "PROGRESS.md").read_text(encoding="utf-8")
+        self.assertIn("Phase 11", progress)
+        self.assertIn("done / remaining / decisions", progress)
 
 
 if __name__ == "__main__":

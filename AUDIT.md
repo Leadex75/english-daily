@@ -131,3 +131,11 @@
 - The proxy permits only `version`, `requestPermission`, `modelFieldNames`, `createModel` and `addNotes`; it caps request size and timeout, validates local Host/Origin/Referer, and never logs bodies or keys.
 - Notes are verified against `bank/anki_models.json` before sending; model fields can be created when absent, and added/duplicate/failed counts are surfaced in the Anki view.
 - Manual diagnosis uses `tools/fake_ankiconnect.py` with `ok`, `origin-not-allowed`, `not-running`, `slow`, `permission-denied` and `duplicate notes` modes.
+
+## Addendum Phase 11 resolution
+
+- New UI strings resolve through `static/lib/i18n.js`; English and Spanish bundles are built in, and translators or users can override individual keys under `eds.<lang>.i18n` without touching source files.
+- Study data is namespaced under `eds.<lang>.*` (`quiz`, `annotations`, `semester`), while all legacy `english-daily:*` progress markers remain valid and are still read for weekly and semester progress.
+- ICS reminders are generated in-browser from deterministic edition dates and the configured local time; no event is sent to a calendar service and no network request is made.
+- Reading mode hides navigation around the reading panel but keeps its own exit control visible; shortcuts ignore typing fields and the tour dialog, and the shortcut dialog traps Tab focus.
+- The Semester view uses unique practiced dates from both storage generations, so earlier progress is not lost when new study tools are used.

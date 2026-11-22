@@ -4,6 +4,7 @@ window.EDSettings = (() => {
   const TEXT_SIZES = ['small', 'medium', 'large'];
   const FONTS = ['serif', 'sans'];
   const SPEEDS = [0.8, 1, 1.25];
+  const DEFAULT_REMINDER_TIME = '07:00';
   const DEFAULTS = {
     theme: 'system',
     textSize: 'medium',
@@ -12,6 +13,8 @@ window.EDSettings = (() => {
     showFeedback: true,
     autoMarkRead: true,
     reduceMotion: false,
+    readingMode: false,
+    reminderTime: DEFAULT_REMINDER_TIME,
     ankiConnectUrl: 'http://127.0.0.1:8765',
   };
 
@@ -30,6 +33,11 @@ window.EDSettings = (() => {
     }
   }
 
+  function reminderTime(value) {
+    const raw = String(value || '').trim();
+    return /^([01]\d|2[0-3]):[0-5]\d$/.test(raw) ? raw : DEFAULT_REMINDER_TIME;
+  }
+
   function normalize(value) {
     const raw = value && typeof value === 'object' ? value : {};
     const speed = Number(raw.speed);
@@ -41,6 +49,8 @@ window.EDSettings = (() => {
       showFeedback: raw.showFeedback === undefined ? DEFAULTS.showFeedback : Boolean(raw.showFeedback),
       autoMarkRead: raw.autoMarkRead === undefined ? DEFAULTS.autoMarkRead : Boolean(raw.autoMarkRead),
       reduceMotion: raw.reduceMotion === undefined ? DEFAULTS.reduceMotion : Boolean(raw.reduceMotion),
+      readingMode: raw.readingMode === undefined ? DEFAULTS.readingMode : Boolean(raw.readingMode),
+      reminderTime: reminderTime(raw.reminderTime),
       ankiConnectUrl: ankiUrl(raw.ankiConnectUrl),
     };
   }
@@ -65,6 +75,7 @@ window.EDSettings = (() => {
     element.dataset.textSize = value.textSize;
     element.dataset.readingFont = value.readingFont;
     element.dataset.motion = value.reduceMotion ? 'reduce' : 'auto';
+    element.dataset.reading = value.readingMode ? 'focus' : 'off';
     return value;
   }
 
@@ -74,6 +85,7 @@ window.EDSettings = (() => {
     TEXT_SIZES,
     FONTS,
     SPEEDS,
+    DEFAULT_REMINDER_TIME,
     DEFAULTS,
     normalize,
     load,

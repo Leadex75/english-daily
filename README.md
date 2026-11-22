@@ -164,18 +164,41 @@ unless `--force` is used.
   `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
   High contrast and both System modes.
 - The Settings view stores the theme preset, text size, reading font, default audio speed, exercise
-  feedback, auto-marking and reduced-motion preference in browser `localStorage`.
+  feedback, auto-marking, reduced-motion, reading mode, reminder time and AnkiConnect URL in browser
+  `localStorage`. It also exports deterministic ICS reminders from the saved edition dates.
 - Today's progress counts only available text/audio slots; this week's progress counts unique
   practiced days from read, listened, learned and exercised markers.
 - Read/listened markers, learned phrases, exercise answers, settings, language, tour position and
-  the first-visit tour flag live only in browser `localStorage`.
+  the first-visit tour flag use the legacy `english-daily:*` keys in browser `localStorage`. New study
+  features use per-language `eds.<lang>.*` keys, so annotations, quiz scores, semester plans and i18n
+  overrides never collide with older data.
 - Static mode caches the app shell, modules and viewed day files with a service worker. Audio is
   never cached or re-hosted; a labelled "Audio unavailable here" publisher fallback is always shown.
 - The frontend is split into browser-native modules under `static/lib/` (`store`, `branding`,
-  `settings`, `links`, `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`) plus
-  `static/js/ankiconnect.js` for the resilient AnkiConnect client. Keyboard tab navigation, skip
-  link, focus-visible outlines, tour spotlight/highlight, dialog focus trapping and reduced-motion
-  support are included.
+  `settings`, `i18n`, `ics`, `quiz`, `annotations`, `reading`, `shortcuts`, `semester`, `links`,
+  `progress`, `exercises`, `tour`, `search`, `archive`, `pwa` and `anki`) plus
+  `static/js/ankiconnect.js` for the resilient AnkiConnect client. New UI strings are resolved through
+  `static/lib/i18n.js` with English and Spanish bundles and per-language `eds.<lang>.i18n` overrides.
+  Keyboard tab navigation, skip link, focus-visible outlines, tour spotlight/highlight, dialog focus
+  trapping and reduced-motion support are included.
+
+## Study tools
+
+The Phase 11 helpers are `static/lib/i18n.js`, `static/lib/ics.js`, `static/lib/quiz.js`,
+`static/lib/annotations.js`, `static/lib/reading.js`, `static/lib/shortcuts.js` and
+`static/lib/semester.js`.
+
+- Daily quiz: answer the phrase-tab exercises, then use Check answers. Scores are graded
+  deterministically and stored under `eds.<lang>.quiz.<date>`.
+- My notes: write a short note under the current text. Notes are stored under
+  `eds.<lang>.annotations.<date>.<item>` and can be removed individually.
+- Reading mode: the toggle stays inside the reading panel so focus mode can be exited without the
+  header or tabs. Keyboard users can also press `r`, `a`, `s`, `?`, `j`, `k` or `1`–`5`; typing targets
+  and the tour dialog are ignored.
+- Semester planner: choose a start date, end date and weekly goal. Progress comes from unique
+  practiced days in both legacy and `eds.<lang>.*` storage and is kept under `eds.<lang>.semester`.
+- ICS reminders: Settings writes a deterministic UTF-8 calendar file with one all-day reminder per
+  saved edition date, using the configured reminder time.
 
 ## Multilingual layout
 

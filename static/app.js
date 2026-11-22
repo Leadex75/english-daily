@@ -64,7 +64,8 @@ function app() {
     theme: 'system',
     prefs: window.EDSettings ? window.EDSettings.load() : {
       theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
-      showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
+      showFeedback: true, autoMarkRead: true, reduceMotion: false, readingMode: false,
+      reminderTime: '07:00', ankiConnectUrl: 'http://127.0.0.1:8765',
     },
     themePresets: [
       { value: 'system', label: 'System' },
@@ -108,6 +109,13 @@ function app() {
     ankiConnectDiagnostic: '',
     ankiConnectCounts: { total: 0, added: 0, duplicates: 0, failed: 0 },
     ankiConnectMode: 'not checked',
+    quizMessage: '',
+    quizLatest: null,
+    annotationDraft: '',
+    semesterStart: '',
+    semesterEnd: '',
+    semesterGoal: 5,
+    shortcutHelp: false,
     storeTick: 0,
     answerTick: 0,
     tourIndex: 0,
@@ -125,6 +133,7 @@ function app() {
       this.loadPreferences();
       this.syncRoute();
       window.addEventListener('hashchange', () => this.syncRoute());
+      window.addEventListener('keydown', (event) => this.handleShortcut(event));
       if (this.mode === 'static') await this.initPwa();
       try {
         await this.loadLanguagePayload();
@@ -138,6 +147,7 @@ function app() {
         await this.loadDays();
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
+        this.loadSemester();
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
@@ -221,6 +231,7 @@ function app() {
         await this.loadDays();
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
+        this.loadSemester();
         if (this.selectedDate) await this.loadDay();
       } catch (err) {
         this.error = String(err.message || err);
@@ -249,7 +260,8 @@ function app() {
     resetPreferences() {
       this.prefs = window.EDSettings ? window.EDSettings.normalize(null) : {
         theme: 'system', textSize: 'medium', readingFont: 'serif', speed: 1,
-        showFeedback: true, autoMarkRead: true, reduceMotion: false, ankiConnectUrl: 'http://127.0.0.1:8765',
+        showFeedback: true, autoMarkRead: true, reduceMotion: false, readingMode: false,
+        reminderTime: '07:00', ankiConnectUrl: 'http://127.0.0.1:8765',
       };
       if (window.EDSettings) window.EDSettings.save(this.prefs);
       this.applyPreferences();
@@ -265,6 +277,10 @@ function app() {
 
     showFeedback() { return this.prefs.showFeedback !== false; },
 
+    t(key, params) {
+      return window.EDi18n ? window.EDi18n.t(this.lang, key, params || {}, Store) : String(key);
+    },
+
     applyBranding() {
       this.brand = window.EDBrand ? window.EDBrand.brand(this.languagePayload, this.lang) : 'English Daily';
       this.tagline = window.EDBrand ? window.EDBrand.tagline(this.languagePayload, this.lang) : 'A little English, every day.';
@@ -279,7 +295,7 @@ function app() {
     syncRoute() {
       const raw = String(window.location.hash || '').replace(/^#\/?/, '').split(/[?&]/)[0];
       this.route = window.EDBrand ? window.EDBrand.route(window.location.hash) : (
-        ['today', 'archive', 'anki', 'settings'].includes(raw) ? raw : 'today'
+        ['today', 'archive', 'semester', 'anki', 'settings'].includes(raw) ? raw : 'today'
       );
       if (raw !== this.route && window.history && window.history.replaceState) {
         window.history.replaceState(null, '', `${window.location.search}#${this.route}`);
@@ -776,6 +792,209 @@ function app() {
       this.answerTick += 1;
       this.storeTick += 1;
     },
+
+    quizQuestions() {
+      return window.EDQuiz ? window.EDQuiz.build(this.exercises(), { level: this.level, limit: 5 }) : [];
+    },
+    quizScore() {
+      void this.answerTick;
+      void this.storeTick;
+      return window.EDQuiz ? window.EDQuiz.loadResult(this.lang, this.selectedDate, Store) : null;
+    },
+    checkQuiz() {
+      const questions = this.quizQuestions();
+      if (!questions.length || !window.EDQuiz) {
+        this.quizMessage = this.t('quiz.empty');
+        return null;
+      }
+      const answers = {};
+      for (const question of questions) {
+        const answer = this.exerciseAnswer(question);
+        if (answer && answer.option !== undefined) answers[question.id] = answer.option;
+      }
+      const result = window.EDQuiz.grade(questions, answers);
+      this.quizLatest = window.EDQuiz.saveResult(this.lang, this.selectedDate, result, Store);
+      this.quizMessage = this.t('quiz.result', {
+        correct: result.correct,
+        total: result.total,
+        percent: result.percent,
+      });
+      this.answerTick += 1;
+      this.storeTick += 1;
+      return result;
+    },
+
+    currentItemId() {
+      const active = this.current();
+      if (active && active.id) return String(active.id);
+      const term = this.phrase() && (this.phrase().word || this.phrase().expression || this.phrase().history);
+      return term && term.id ? String(term.id) : this.tab;
+    },
+    annotationQuote() {
+      const item = this.currentText() || this.currentAudio();
+      const text = item && (item.title || item.body_text) ? (item.title || item.body_text) : '';
+      return String(text || '').slice(0, 160);
+    },
+    annotations() {
+      void this.storeTick;
+      return window.EDAnnotations ? window.EDAnnotations.list(Store, this.lang, this.selectedDate) : [];
+    },
+    saveAnnotation() {
+      const text = String(this.annotationDraft || '').trim();
+      if (!text || !window.EDAnnotations) return null;
+      const note = window.EDAnnotations.save({
+        lang: this.lang,
+        day: this.selectedDate,
+        item: this.currentItemId(),
+        quote: this.annotationQuote(),
+        text,
+        saved_at: new Date().toISOString(),
+      }, Store);
+      this.annotationDraft = '';
+      this.storeTick += 1;
+      return note;
+    },
+    removeAnnotation(id) {
+      if (!window.EDAnnotations) return 0;
+      const removed = window.EDAnnotations.remove(id, Store, this.lang, this.selectedDate);
+      this.storeTick += 1;
+      return removed;
+    },
+
+    readingEnabled() {
+      return window.EDReading ? window.EDReading.isEnabled(document.documentElement) : Boolean(this.prefs.readingMode);
+    },
+    toggleReadingMode() {
+      const next = !this.readingEnabled();
+      this.setPreference('readingMode', next);
+      if (window.EDReading) window.EDReading.apply(next, document.documentElement);
+    },
+
+    loadSemester() {
+      const saved = window.EDSemester ? window.EDSemester.load(this.lang, Store) : {};
+      const fallback = this.selectedDate || this.todayKey();
+      this.semesterStart = saved.start || `${fallback.slice(0, 7)}-01`;
+      this.semesterEnd = saved.end || fallback;
+      this.semesterGoal = saved.weeklyGoal || this.weeklyGoal;
+    },
+    semesterConfig() {
+      return { start: this.semesterStart, end: this.semesterEnd, weeklyGoal: this.semesterGoal };
+    },
+    semesterDates() {
+      const entries = [];
+      for (const key of Store.keys('english-daily:')) {
+        const value = Store.get(key);
+        if (key.startsWith('english-daily:done-date:')) entries.push(value);
+        if (key.startsWith('english-daily:phrase:') || key.startsWith('english-daily:exercise:')) {
+          try {
+            const entry = typeof value === 'string' ? JSON.parse(value) : value;
+            if (entry && entry.learned_at) entries.push({ date: entry.learned_at });
+            if (entry && entry.answered_at) entries.push({ date: entry.answered_at });
+          } catch (err) {
+            continue;
+          }
+        }
+      }
+      for (const key of Store.keys(`eds.${this.lang}.`)) {
+        const value = Store.get(key);
+        const list = Array.isArray(value) ? value : [value];
+        for (const entry of list) {
+          if (!entry || typeof entry !== 'object') continue;
+          if (entry.saved_at) entries.push({ date: String(entry.saved_at).slice(0, 10) });
+          if (entry.day) entries.push({ date: entry.day });
+        }
+      }
+      return window.EDProgress
+        ? window.EDProgress.practicedDates(entries, this.todayKey(), 365)
+        : [...new Set(entries.map((entry) => (typeof entry === 'string' ? entry : entry.date)).filter(Boolean))].sort();
+    },
+    semesterProgress() {
+      void this.storeTick;
+      void this.answerTick;
+      return window.EDSemester ? window.EDSemester.progress(this.semesterDates(), this.semesterConfig()) : null;
+    },
+    saveSemester() {
+      if (!window.EDSemester) return null;
+      const saved = window.EDSemester.save(this.lang, this.semesterConfig(), Store, new Date().toISOString());
+      this.semesterStart = saved.start;
+      this.semesterEnd = saved.end;
+      this.semesterGoal = saved.weeklyGoal;
+      this.storeTick += 1;
+      return saved;
+    },
+    downloadReminders() {
+      if (!window.EDICS) return '';
+      const days = this.days.length ? this.days : [this.selectedDate].filter(Boolean);
+      const text = window.EDICS.buildCalendar({
+        days,
+        lang: this.lang,
+        brand: this.brand,
+        time: this.prefs.reminderTime,
+        weeklyGoal: this.weeklyGoal,
+      });
+      window.EDICS.download(text, `${String(this.lang || 'en').replace(/[^A-Za-z0-9_-]/g, '-')}-daily.ics`);
+      return text;
+    },
+
+    handleShortcut(event) {
+      if (this.tourOpen() || this.shortcutHelp) return '';
+      return window.EDShortcuts ? window.EDShortcuts.dispatch(event, {
+        previousDay: () => this.shiftDate(-1),
+        nextDay: () => this.shiftDate(1),
+        tabNews: () => this.openTodayTab('news'),
+        tabCulture: () => this.openTodayTab('culture'),
+        tabHistory: () => this.openTodayTab('history'),
+        tabPhrase: () => this.openTodayTab('phrase'),
+        tabArchive: () => this.navigate('archive'),
+        readingMode: () => this.toggleReadingMode(),
+        annotation: () => this.focusAnnotation(),
+        quiz: () => this.focusQuiz(),
+        help: () => this.openShortcuts(),
+      }, this) : '';
+    },
+    openTodayTab(tab) {
+      this.navigate('today');
+      this.setTab(tab);
+    },
+    focusAnnotation() {
+      this.openTodayTab(this.tab === 'phrase' ? 'phrase' : 'news');
+      this.$nextTick(() => {
+        const input = this.$refs.annotationInput;
+        if (input && typeof input.focus === 'function') input.focus();
+      });
+    },
+    focusQuiz() {
+      this.openTodayTab('phrase');
+      this.$nextTick(() => this.checkQuiz());
+    },
+    shortcutBindings() {
+      if (!window.EDShortcuts) return [];
+      return window.EDShortcuts.BINDINGS.map((binding) => ({ ...binding, label: this.t(binding.labelKey) }));
+    },
+    trapShortcutTab(event) {
+      const dialog = this.$refs.shortcutDialog;
+      if (!dialog) return;
+      const focusable = [...dialog.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])')]
+        .filter((node) => !node.disabled);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    },
+    openShortcuts() {
+      this.shortcutHelp = true;
+      this.$nextTick(() => {
+        const close = this.$refs.shortcutClose;
+        if (close && typeof close.focus === 'function') close.focus();
+      });
+    },
+    closeShortcuts() { this.shortcutHelp = false; },
 
     cycleTab(direction) {
       const index = this.tabs.indexOf(this.tab);

@@ -41,6 +41,9 @@ folder is ignored by Git; regenerate it after UI or palette changes.
 - Addendum Phase 10: 75 unit tests passed; 12 Playwright tests passed, including origin/permission/not-running diagnostics, duplicate counts and proxy-mode detection.
 - Addendum Phase 10 static checks: compileall, JavaScript syntax checks (including `static/js/`), frontend helpers, palette check and contrast audit passed.
 - Addendum Phase 10 proxy checks: allowlist, loopback/Host/Origin/Referer validation, body cap, `text/plain` direct calls, model definitions and fake-server modes all passed in unit tests.
+- Addendum Phase 11: 77 unit tests passed; 16 Playwright tests passed, including reading mode, annotation persistence, quiz score, semester progress, shortcuts dialog and ICS reminder download.
+- Addendum Phase 11 static checks: compileall, all JavaScript syntax checks (including all `static/lib/` modules), frontend helpers, palette check and contrast audit passed.
+- Addendum Phase 11 storage checks: new `eds.<lang>.*` keys are covered by frontend helpers and E2E cleanup; legacy `english-daily:*` keys remain unchanged.
 
 ## Environment
 

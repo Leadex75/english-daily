@@ -4,6 +4,13 @@ global.window = {};
 require('../static/lib/store.js');
 require('../static/lib/branding.js');
 require('../static/lib/settings.js');
+require('../static/lib/i18n.js');
+require('../static/lib/ics.js');
+require('../static/lib/quiz.js');
+require('../static/lib/annotations.js');
+require('../static/lib/reading.js');
+require('../static/lib/shortcuts.js');
+require('../static/lib/semester.js');
 require('../static/lib/links.js');
 require('../static/lib/search.js');
 require('../static/lib/archive.js');
@@ -16,6 +23,13 @@ require('../static/lib/tour.js');
 const EDStore = global.window.EDStore;
 const EDBrand = global.window.EDBrand;
 const EDSettings = global.window.EDSettings;
+const EDi18n = global.window.EDi18n;
+const EDICS = global.window.EDICS;
+const EDQuiz = global.window.EDQuiz;
+const EDAnnotations = global.window.EDAnnotations;
+const EDReading = global.window.EDReading;
+const EDShortcuts = global.window.EDShortcuts;
+const EDSemester = global.window.EDSemester;
 const EDLinks = global.window.EDLinks;
 const EDSearch = global.window.EDSearch;
 const EDArchive = global.window.EDArchive;
@@ -56,6 +70,7 @@ assert.strictEqual(EDBrand.tagline({ default: 'en' }, 'en'), 'A little English, 
 assert.strictEqual(EDBrand.tagline({ default: 'en' }, 'es'), 'Un poco de español, cada día.');
 assert.strictEqual(EDBrand.tagline(payload, 'es'), 'Un poco de español, cada día.');
 assert.strictEqual(EDBrand.route('#archive'), 'archive');
+assert.strictEqual(EDBrand.route('#semester'), 'semester');
 assert.strictEqual(EDBrand.route('settings'), 'settings');
 assert.strictEqual(EDBrand.route('#unknown'), 'today');
 assert.strictEqual(EDBrand.formatLongDate('2026-11-21'), 'Saturday 21 November 2026');
@@ -65,6 +80,8 @@ assert.strictEqual(EDSettings.KEY, 'english-daily:settings');
 assert.strictEqual(EDSettings.normalize({ theme: 'bogus' }).theme, 'system');
 assert.strictEqual(EDSettings.normalize({ speed: 1.25 }).speed, 1.25);
 assert.strictEqual(EDSettings.normalize({ showFeedback: false }).showFeedback, false);
+assert.strictEqual(EDSettings.normalize({ readingMode: true }).readingMode, true);
+assert.strictEqual(EDSettings.normalize({ reminderTime: 'bad' }).reminderTime, '07:00');
 assert.strictEqual(EDSettings.normalize({ ankiConnectUrl: 'ftp://bad' }).ankiConnectUrl, 'http://127.0.0.1:8765');
 const settingsStore = new Map();
 const fakeSettingsStore = {
@@ -78,7 +95,7 @@ assert.deepStrictEqual(EDSettings.load(fakeSettingsStore), savedSettings);
 const settingsRoot = { dataset: {} };
 EDSettings.apply(savedSettings, settingsRoot);
 assert.deepStrictEqual(settingsRoot.dataset, {
-  theme: 'sepia', textSize: 'large', readingFont: 'sans', motion: 'reduce',
+  theme: 'sepia', textSize: 'large', readingFont: 'sans', motion: 'reduce', reading: 'off',
 });
 
 assert.strictEqual(EDArchive.monthKey('2026-11-21'), '2026-11');
@@ -327,7 +344,77 @@ assert.deepStrictEqual(
 );
 assert.strictEqual(EDProgress.weekCount(practiced, '2026-11-21', 7), 3);
 
-testAnkiConnect().then(testAddendumAnkiConnect).then(function () {
+function testAddendumPhaseEleven() {
+  assert.strictEqual(EDi18n.t('en', 'quiz.result', { correct: 1, total: 2, percent: 50 }), '1 / 2 correct (50%).');
+  EDi18n.setOverride('en', 'quiz.check', 'Verify', EDStore);
+  assert.strictEqual(EDi18n.t('en', 'quiz.check', {}, EDStore), 'Verify');
+
+  const calendar = EDICS.buildCalendar({
+    days: ['2026-11-21'],
+    lang: 'en',
+    brand: 'English Daily',
+    time: '07:00',
+  });
+  assert.ok(calendar.startsWith('BEGIN:VCALENDAR\r\n'));
+  assert.ok(calendar.includes('UID:en-2026-11-21@english-daily.local'));
+  assert.ok(calendar.includes('DTSTART:20261121T070000Z'));
+  assert.strictEqual(calendar, EDICS.buildCalendar({
+    days: ['2026-11-21'],
+    lang: 'en',
+    brand: 'English Daily',
+    time: '07:00',
+  }));
+
+  const questions = EDQuiz.build([
+    { id: 'q1', level: 'B1', prompt: 'Choose one', options: ['yes', 'no'], answer: 'yes' },
+    { id: 'q2', level: 'B1', prompt: 'Choose another', options: ['yes', 'no'], answer: 'no' },
+    { id: 'q3', level: 'A2', prompt: 'Skip me', options: ['yes', 'no'], answer: 'yes' },
+  ], { level: 'B1', limit: 1 });
+  assert.strictEqual(questions.length, 1);
+  const graded = EDQuiz.grade(questions, { q1: 'yes' });
+  assert.strictEqual(graded.correct, 1);
+  const quizResult = EDQuiz.saveResult('en', '2026-11-21', graded, EDStore, '2026-11-21T08:00:00Z');
+  assert.strictEqual(quizResult.total, 1);
+  assert.deepStrictEqual(EDQuiz.loadResult('en', '2026-11-21', EDStore), quizResult);
+
+  const note = EDAnnotations.save({
+    lang: 'en', day: '2026-11-21', item: 'news-1', text: 'Useful phrase', saved_at: '2026-11-21T08:00:00Z',
+  }, EDStore);
+  assert.ok(note.id);
+  assert.strictEqual(EDAnnotations.list(EDStore, 'en', '2026-11-21').length, 1);
+  assert.strictEqual(EDAnnotations.summary(EDStore, 'en', '2026-11-21').items, 1);
+  assert.strictEqual(EDAnnotations.remove(note.id, EDStore, 'en', '2026-11-21'), 1);
+  assert.strictEqual(EDAnnotations.list(EDStore, 'en', '2026-11-21').length, 0);
+
+  const readingRoot = { dataset: {} };
+  assert.strictEqual(EDReading.apply(true, readingRoot), 'focus');
+  assert.strictEqual(EDReading.isEnabled(readingRoot), true);
+  assert.strictEqual(EDReading.toggle(readingRoot), 'off');
+
+  assert.strictEqual(EDShortcuts.parse({ key: 'r', target: { tagName: 'BODY' } }), 'r');
+  assert.strictEqual(EDShortcuts.parse({ key: 'r', target: { tagName: 'INPUT' } }), '');
+  const shortcutCalls = [];
+  EDShortcuts.dispatch({ key: 'r', target: { tagName: 'BODY' } }, {
+    readingMode: () => shortcutCalls.push('readingMode'),
+  });
+  assert.deepStrictEqual(shortcutCalls, ['readingMode']);
+
+  const semester = { start: '2026-11-01', end: '2026-11-14', weeklyGoal: 5 };
+  assert.strictEqual(EDSemester.weeks(semester).length, 2);
+  const semesterProgress = EDSemester.progress(['2026-11-02', '2026-11-02', '2026-11-03'], semester);
+  assert.strictEqual(semesterProgress.completed, 2);
+  assert.strictEqual(semesterProgress.goal, 10);
+  assert.strictEqual(semesterProgress.percent, 20);
+  assert.strictEqual(semesterProgress.weeks[0].count, 2);
+  const savedSemester = EDSemester.save('en', semester, EDStore, '2026-11-21T08:00:00Z');
+  assert.strictEqual(EDSemester.load('en', EDStore).start, savedSemester.start);
+  assert.strictEqual(EDSemester.load('en', EDStore).end, savedSemester.end);
+  assert.strictEqual(EDSemester.load('en', EDStore).weeklyGoal, savedSemester.weeklyGoal);
+
+  EDStore.keys('eds.').forEach((key) => EDStore.remove(key));
+}
+
+testAnkiConnect().then(testAddendumAnkiConnect).then(testAddendumPhaseEleven).then(function () {
   console.log('frontend helper checks passed');
 }).catch(function (err) {
   console.error(err);

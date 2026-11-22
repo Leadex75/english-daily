@@ -189,7 +189,7 @@ class E2EHarness(unittest.TestCase):
     def clear_local_storage(self) -> None:
         self.page.evaluate(
             """() => Object.keys(localStorage)
-                .filter((key) => key.startsWith('english-daily:'))
+                .filter((key) => key.startsWith('english-daily:') || key.startsWith('eds.'))
                 .forEach((key) => localStorage.removeItem(key))"""
         )
 

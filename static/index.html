@@ -20,6 +20,13 @@
   <script defer src="./lib/store.js"></script>
   <script defer src="./lib/branding.js"></script>
   <script defer src="./lib/settings.js"></script>
+  <script defer src="./lib/i18n.js"></script>
+  <script defer src="./lib/ics.js"></script>
+  <script defer src="./lib/quiz.js"></script>
+  <script defer src="./lib/annotations.js"></script>
+  <script defer src="./lib/reading.js"></script>
+  <script defer src="./lib/shortcuts.js"></script>
+  <script defer src="./lib/semester.js"></script>
   <script defer src="./lib/links.js"></script>
   <script defer src="./lib/progress.js"></script>
   <script defer src="./lib/anki.js"></script>
@@ -90,9 +97,16 @@
         <button id="tab-archive" type="button" role="tab" aria-controls="archive-view" data-eds-tab-archive :aria-selected="route === 'archive'" :tabindex="route === 'archive' ? 0 : -1" :class="{ active: route === 'archive' }" @click="navigate('archive')">
           Archive
         </button>
+        <button id="tab-semester" type="button" role="tab" aria-controls="semester-view" data-eds-tab-semester :aria-selected="route === 'semester'" :tabindex="route === 'semester' ? 0 : -1" :class="{ active: route === 'semester' }" @click="navigate('semester')" x-text="t('semester.tab')">
+          Semester
+        </button>
       </nav>
 
       <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="route === 'today' && tab !== 'phrase'">
+        <div class="reading-panel-actions">
+          <button class="pill" type="button" data-eds-reading-toggle :aria-pressed="readingEnabled()" @click="toggleReadingMode()" x-text="readingEnabled() ? t('control.reading') + ' ✓' : t('control.reading')"></button>
+          <button class="pill" type="button" data-eds-shortcuts-open @click="openShortcuts()" x-text="t('shortcuts.open')"></button>
+        </div>
         <article class="block text-block" x-show="currentText()">
           <div class="block-head">
             <div>
@@ -117,6 +131,26 @@
           <div x-ref="readSentinel" class="sentinel" aria-hidden="true"></div>
         </article>
         <div class="block empty" x-show="!currentText() && !loading">No text for this slot today.</div>
+
+        <section class="block annotation-panel" x-show="currentText()" data-eds-annotations :aria-label="t('annotation.title')">
+          <div class="block-head">
+            <h2 x-text="t('annotation.title')"></h2>
+          </div>
+          <form @submit.prevent="saveAnnotation()">
+            <label class="sr-only" for="annotation-input" x-text="t('annotation.placeholder')"></label>
+            <textarea id="annotation-input" x-ref="annotationInput" x-model="annotationDraft" rows="2" :placeholder="t('annotation.placeholder')"></textarea>
+            <button class="pill" type="button" data-eds-annotation-save :disabled="!annotationDraft.trim()" @click="saveAnnotation()" x-text="t('annotation.save')"></button>
+          </form>
+          <ul x-show="annotations().length">
+            <template x-for="note in annotations()" :key="note.id">
+              <li>
+                <p x-text="note.text"></p>
+                <button class="link-button" type="button" :aria-label="t('annotation.remove')" @click="removeAnnotation(note.id)" x-text="t('annotation.remove')"></button>
+              </li>
+            </template>
+          </ul>
+          <p class="empty" x-show="!annotations().length" x-text="t('annotation.empty')"></p>
+        </section>
 
         <section class="block audio-block" x-show="currentAudio()">
           <div class="block-head">
@@ -242,6 +276,10 @@
             </li>
           </template>
         </ol>
+        <div class="block-foot quiz-actions">
+          <button class="pill" type="button" data-eds-quiz-check :disabled="!quizQuestions().length" @click="checkQuiz()" x-text="t('quiz.check')"></button>
+          <p class="quiz-message" aria-live="polite" x-show="quizMessage" x-text="quizMessage"></p>
+        </div>
       </section>
     </section>
 
@@ -302,6 +340,42 @@
             </li>
           </template>
         </ul>
+      </section>
+    </section>
+
+    <section id="semester-view" class="view" x-show="route === 'semester'" aria-labelledby="semester-title" data-eds-semester>
+      <div class="view-head">
+        <p class="eyebrow" x-text="t('semester.title')"></p>
+        <h1 id="semester-title" x-text="t('semester.title')"></h1>
+        <p x-text="t('semester.intro')"></p>
+      </div>
+      <section class="block semester-form" aria-label="Semester plan">
+        <label class="setting-label" for="semester-start" x-text="t('semester.start')"></label>
+        <input id="semester-start" class="setting-input" type="date" x-model="semesterStart" data-eds-semester-start>
+        <label class="setting-label" for="semester-end" x-text="t('semester.end')"></label>
+        <input id="semester-end" class="setting-input" type="date" x-model="semesterEnd" data-eds-semester-end>
+        <label class="setting-label" for="semester-goal" x-text="t('semester.goal')"></label>
+        <input id="semester-goal" class="setting-input" type="number" min="1" max="7" x-model.number="semesterGoal" data-eds-semester-goal>
+        <button class="pill" type="button" data-eds-semester-save @click="saveSemester()" x-text="t('semester.save')"></button>
+      </section>
+      <section class="block semester-progress" aria-label="Semester progress" data-eds-semester-progress>
+        <div class="block-head">
+          <div>
+            <h2 x-text="t('semester.title')"></h2>
+            <p class="byline" x-text="semesterProgress() ? t('semester.progress', { completed: semesterProgress().completed, goal: semesterProgress().goal, percent: semesterProgress().percent }) : ''"></p>
+          </div>
+          <div class="progress-track semester-track" x-show="semesterProgress()">
+            <div class="progress-fill" :style="`width: ${semesterProgress() ? semesterProgress().percent : 0}%`"></div>
+          </div>
+        </div>
+        <ol class="semester-weeks" x-show="semesterProgress()">
+          <template x-for="week in (semesterProgress() ? semesterProgress().weeks : [])" :key="week.index">
+            <li>
+              <span x-text="`${week.index}. ${formatDate(week.start)} — ${formatDate(week.end)}`"></span>
+              <span class="badge" x-text="`${week.count}/${semesterGoal}`"></span>
+            </li>
+          </template>
+        </ol>
       </section>
     </section>
 
@@ -375,6 +449,10 @@
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.showFeedback" @change="setPreference('showFeedback', $event.target.checked)"> Show exercise answers immediately</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.autoMarkRead" @change="setPreference('autoMarkRead', $event.target.checked)"> Mark texts as read while scrolling</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.reduceMotion" @change="setPreference('reduceMotion', $event.target.checked)"> Reduce motion</label>
+          <label class="setting-toggle"><input type="checkbox" data-eds-reading-setting :checked="prefs.readingMode" @change="setPreference('readingMode', $event.target.checked)" x-text="t('control.reading')"></label>
+          <label class="setting-label" for="reminder-time" x-text="t('reminders.time')"></label>
+          <input id="reminder-time" class="setting-input" type="time" data-eds-reminder-time :value="prefs.reminderTime" @change="setPreference('reminderTime', $event.target.value)">
+          <button class="pill" type="button" data-eds-reminders-download @click="downloadReminders()" x-text="t('reminders.download')"></button>
           <label class="setting-label" for="anki-connect-url">AnkiConnect URL</label>
           <input id="anki-connect-url" class="setting-input" type="url" inputmode="url" spellcheck="false" :value="prefs.ankiConnectUrl" @change="setPreference('ankiConnectUrl', $event.target.value)">
           <div class="block-foot">
@@ -382,6 +460,23 @@
             <button class="pill" type="button" @click="resetPreferences()">Reset settings</button>
           </div>
         </fieldset>
+      </div>
+    </section>
+
+    <div class="modal-backdrop" x-show="shortcutHelp" @click="closeShortcuts()"></div>
+    <section class="shortcut-dialog" role="dialog" aria-modal="true" aria-labelledby="shortcut-title"
+             x-show="shortcutHelp" x-ref="shortcutDialog" tabindex="-1" @keydown.tab.stop="trapShortcutTab($event)" data-eds-shortcuts>
+      <div class="block">
+        <p class="eyebrow" x-text="t('shortcuts.title')"></p>
+        <h2 id="shortcut-title" x-text="t('shortcuts.title')"></h2>
+        <ul class="shortcut-list">
+          <template x-for="binding in shortcutBindings()" :key="binding.key">
+            <li><kbd x-text="binding.key"></kbd><span x-text="binding.label"></span></li>
+          </template>
+        </ul>
+        <div class="block-foot">
+          <button class="pill" type="button" x-ref="shortcutClose" data-eds-shortcuts-close @click="closeShortcuts()" x-text="t('shortcuts.close')"></button>
+        </div>
       </div>
     </section>
 

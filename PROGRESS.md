@@ -269,3 +269,13 @@
 - Tests: 75 unit tests and 12 Playwright E2E tests passed; compileall, all JavaScript syntax checks, frontend helpers, palette check and contrast audit passed.
 - Remaining: Phases 11–13; local commit for Phase 10, then final push only after the last phase.
 - Decisions: keep the existing deterministic note builders and `english-daily:*` storage keys; use `text/plain` for direct browser calls and reserve the proxy for loopback desktop/server usage so no secrets or remote API keys are introduced.
+
+## Addendum Phase 11 — study tools and local personalization (done / remaining / decisions)
+
+- Done: added `static/lib/i18n.js` with English/Spanish bundles and `eds.<lang>.i18n` overrides so all new UI strings are translated instead of hard-coded.
+- Done: added `static/lib/ics.js`, `quiz.js`, `annotations.js`, `reading.js`, `shortcuts.js` and `semester.js` as deterministic browser-native modules, cached by the service worker and covered by `tests/frontend_helpers.js`.
+- Done: wired ICS reminders, daily quiz check, local annotations, reading focus mode, keyboard shortcuts and a Semester planner/route into the Today, Settings and Semester views.
+- Done: new study data uses `eds.<lang>.*` keys; legacy `english-daily:*` keys remain untouched, and E2E cleanup now clears both prefixes.
+- Done: added `tests/e2e/test_study_features.py` for reading mode, annotation persistence, quiz score, semester progress, shortcuts and reminder download.
+- Remaining: Phases 12–13; local Phase 11 commit, then final push only after the last phase.
+- Decisions: keep the ICS output deterministic and download-only; keep focus-mode controls inside the reading panel; derive semester progress from unique practiced dates in both legacy and `eds.<lang>.*` storage; keep all study data local with no network calls.
