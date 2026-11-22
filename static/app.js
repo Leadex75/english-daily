@@ -112,6 +112,7 @@ function app() {
     quizMessage: '',
     quizLatest: null,
     annotationDraft: '',
+    annotationTone: 'hl1',
     semesterStart: '',
     semesterEnd: '',
     semesterGoal: 5,
@@ -839,6 +840,12 @@ function app() {
       void this.storeTick;
       return window.EDAnnotations ? window.EDAnnotations.list(Store, this.lang, this.selectedDate) : [];
     },
+    annotationTones() {
+      return window.EDAnnotations ? window.EDAnnotations.TONES : [];
+    },
+    setAnnotationTone(tone) {
+      if (this.annotationTones().includes(tone)) this.annotationTone = tone;
+    },
     saveAnnotation() {
       const text = String(this.annotationDraft || '').trim();
       if (!text || !window.EDAnnotations) return null;
@@ -847,6 +854,7 @@ function app() {
         day: this.selectedDate,
         item: this.currentItemId(),
         quote: this.annotationQuote(),
+        tone: this.annotationTone,
         text,
         saved_at: new Date().toISOString(),
       }, Store);
@@ -1007,13 +1015,22 @@ function app() {
     },
 
     tourSteps() {
-      return window.EDTour ? window.EDTour.steps(this.payload()) : ((this.payload() && this.payload().tour) || []);
+      const steps = window.EDTour ? window.EDTour.steps(this.payload()) : ((this.payload() && this.payload().tour) || []);
+      return steps.map((step) => ({
+        ...step,
+        title: this.t(`tour.${step.id}.title`) === `tour.${step.id}.title` ? step.title : this.t(`tour.${step.id}.title`),
+        body: this.t(`tour.${step.id}.body`) === `tour.${step.id}.body` ? step.body : this.t(`tour.${step.id}.body`),
+      }));
     },
     tourStep() {
       const steps = this.tourSteps();
       return steps[Math.min(this.tourIndex, Math.max(0, steps.length - 1))] || null;
     },
     tourState() { return { index: this.tourIndex, open: this.tourOpenFlag }; },
+    tourTone() {
+      const tones = this.annotationTones();
+      return tones.length ? tones[this.tourIndex % tones.length] : 'hl1';
+    },
     tourOpen() { return this.tourOpenFlag && this.tourSteps().length > 0; },
     maybeStartTour() {
       if (!window.EDTour || this.tourOpen() || this.route !== 'today' || window.EDTour.seen()) return;
@@ -1045,6 +1062,8 @@ function app() {
       const target = step && step.target ? document.querySelector(step.target) : null;
       if (!target) return null;
       target.classList.add('tour-highlight');
+      target.dataset.tone = this.tourTone();
+      target.dataset.edsTourTone = '1';
       this.tourHighlighted = target;
       if (!target.hasAttribute('tabindex')) {
         target.setAttribute('tabindex', '-1');
@@ -1054,7 +1073,13 @@ function app() {
       return target;
     },
     clearTourHighlight() {
-      if (this.tourHighlighted) this.tourHighlighted.classList.remove('tour-highlight');
+      if (this.tourHighlighted) {
+        this.tourHighlighted.classList.remove('tour-highlight');
+        if (this.tourHighlighted.getAttribute('data-eds-tour-tone') === '1') {
+          this.tourHighlighted.removeAttribute('data-tone');
+          this.tourHighlighted.removeAttribute('data-eds-tour-tone');
+        }
+      }
       this.tourHighlighted = null;
       if (this.tourFocusTarget && this.tourFocusTarget.getAttribute('data-eds-tour-tabindex') === '1') {
         this.tourFocusTarget.removeAttribute('tabindex');

@@ -1,5 +1,6 @@
 window.EDAnnotations = (() => {
   const PREFIX = 'eds';
+  const TONES = ['hl1', 'hl2', 'hl3'];
 
   function keyPrefix(lang, day) {
     return `${PREFIX}.${String(lang || 'en')}.annotations.${String(day || 'today')}.`;
@@ -21,7 +22,11 @@ window.EDAnnotations = (() => {
 
   function noteId(note) {
     const input = note || {};
-    return hash(`${input.day || ''}|${input.item || ''}|${input.quote || ''}|${input.text || ''}`);
+    return hash(`${input.day || ''}|${input.item || ''}|${input.quote || ''}|${tone(input.tone)}|${input.text || ''}`);
+  }
+
+  function tone(value) {
+    return TONES.includes(String(value || '')) ? String(value) : TONES[0];
   }
 
   function create(input) {
@@ -32,6 +37,7 @@ window.EDAnnotations = (() => {
       day: String(note.day || ''),
       item: String(note.item || ''),
       quote: String(note.quote || ''),
+      tone: tone(note.tone),
       text: String(note.text || '').trim(),
       saved_at: String(note.saved_at || ''),
     };
@@ -87,5 +93,5 @@ window.EDAnnotations = (() => {
     return { total: notes.length, items: new Set(notes.map((note) => note.item)).size };
   }
 
-  return { PREFIX, keyPrefix, storageKey, hash, noteId, create, save, list, remove, summary };
+  return { PREFIX, TONES, keyPrefix, storageKey, hash, tone, noteId, create, save, list, remove, summary };
 })();

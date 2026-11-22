@@ -140,11 +140,16 @@
             <label class="sr-only" for="annotation-input" x-text="t('annotation.placeholder')"></label>
             <textarea id="annotation-input" x-ref="annotationInput" x-model="annotationDraft" rows="2" :placeholder="t('annotation.placeholder')"></textarea>
             <button class="pill" type="button" data-eds-annotation-save :disabled="!annotationDraft.trim()" @click="saveAnnotation()" x-text="t('annotation.save')"></button>
+            <div class="annotation-tones" role="group" :aria-label="t('annotation.title')">
+              <template x-for="tone in annotationTones()" :key="tone">
+                <button class="annotation-tone" type="button" :class="[tone, { active: annotationTone === tone }]" :aria-pressed="annotationTone === tone" :aria-label="t('annotation.' + tone)" :title="t('annotation.' + tone)" @click="setAnnotationTone(tone)"></button>
+              </template>
+            </div>
           </form>
           <ul x-show="annotations().length">
             <template x-for="note in annotations()" :key="note.id">
               <li>
-                <p x-text="note.text"></p>
+                <p class="annotation-highlight" :class="note.tone" x-text="note.text"></p>
                 <button class="link-button" type="button" :aria-label="t('annotation.remove')" @click="removeAnnotation(note.id)" x-text="t('annotation.remove')"></button>
               </li>
             </template>

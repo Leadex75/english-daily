@@ -139,3 +139,10 @@
 - ICS reminders are generated in-browser from deterministic edition dates and the configured local time; no event is sent to a calendar service and no network request is made.
 - Reading mode hides navigation around the reading panel but keeps its own exit control visible; shortcuts ignore typing fields and the tour dialog, and the shortcut dialog traps Tab focus.
 - The Semester view uses unique practiced dates from both storage generations, so earlier progress is not lost when new study tools are used.
+
+## Addendum Phase 12 resolution
+
+- `tools/palette_build.py` now emits `--fg`, `--hl1`, `--hl2` and `--hl3` for all generated palettes; `tools/contrast_check.py` audits every highlight against `--fg` at 4.5:1 and fails on any violation.
+- Annotation notes store their selected highlight tone per item, and note text uses `--fg` so it stays readable on every highlight in Paper, Sepia, Ink, High contrast and both System modes.
+- Guided-tour copy is resolved through `static/lib/i18n.js`; the serialized seven-step contract remains stable while titles and bodies follow the selected language and `eds.<lang>.i18n` overrides.
+- Tour target outlines rotate through the audited highlight tokens without changing target backgrounds, so the tour spotlight does not reduce reading contrast.

@@ -279,3 +279,12 @@
 - Done: added `tests/e2e/test_study_features.py` for reading mode, annotation persistence, quiz score, semester progress, shortcuts and reminder download.
 - Remaining: Phases 12–13; local Phase 11 commit, then final push only after the last phase.
 - Decisions: keep the ICS output deterministic and download-only; keep focus-mode controls inside the reading panel; derive semester progress from unique practiced dates in both legacy and `eds.<lang>.*` storage; keep all study data local with no network calls.
+
+## Addendum Phase 12 — guided tour i18n and audited highlight tokens (done / remaining / decisions)
+
+- Done: added `--fg` plus `--hl1`, `--hl2` and `--hl3` to every generated palette and audited each highlight against `--fg` at 4.5:1; the contrast report now covers 72 pairs.
+- Done: used the highlight tokens for annotation colour choices and rotating tour-target outlines while `--fg` keeps note text readable on every palette.
+- Done: moved the guided tour titles and bodies through `static/lib/i18n.js` with English and Spanish bundles, so tour copy follows the selected language and remains overridable under `eds.<lang>.i18n`.
+- Done: extended frontend helpers and E2E coverage for stored annotation tones and the contrast audit; added a separate Phase 12 unit class and docs markers.
+- Remaining: Phase 13 final verification, docs and publish; local Phase 12 commit, then final push only after the last phase.
+- Decisions: keep the existing seven serialized tour steps and translate them in the client instead of changing backend contract data; keep highlight colours local and contrast-audited rather than introducing new runtime dependencies.

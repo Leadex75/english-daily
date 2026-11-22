@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-TOKEN_NAMES = ("paper", "surface", "ink", "muted", "line", "accent", "accent_soft")
+TOKEN_NAMES = ("paper", "surface", "ink", "fg", "muted", "line", "accent", "accent_soft", "hl1", "hl2", "hl3")
 PAIRS = (
     ("body text", "ink", "paper", 4.5),
     ("card text", "ink", "surface", 4.5),
@@ -18,6 +18,9 @@ PAIRS = (
     ("inverted button text", "paper", "accent", 4.5),
     ("page border", "line", "paper", 3.0),
     ("card border", "line", "surface", 3.0),
+    ("highlight 1 text", "fg", "hl1", 4.5),
+    ("highlight 2 text", "fg", "hl2", 4.5),
+    ("highlight 3 text", "fg", "hl3", 4.5),
 )
 _THEME_RE = re.compile(r':root\[data-theme="([a-z-]+)"\]\s*\{(?P<body>.*?)\}', re.DOTALL)
 _SYSTEM_RE = re.compile(

@@ -378,9 +378,10 @@ function testAddendumPhaseEleven() {
   assert.deepStrictEqual(EDQuiz.loadResult('en', '2026-11-21', EDStore), quizResult);
 
   const note = EDAnnotations.save({
-    lang: 'en', day: '2026-11-21', item: 'news-1', text: 'Useful phrase', saved_at: '2026-11-21T08:00:00Z',
+    lang: 'en', day: '2026-11-21', item: 'news-1', tone: 'hl2', text: 'Useful phrase', saved_at: '2026-11-21T08:00:00Z',
   }, EDStore);
   assert.ok(note.id);
+  assert.strictEqual(note.tone, 'hl2');
   assert.strictEqual(EDAnnotations.list(EDStore, 'en', '2026-11-21').length, 1);
   assert.strictEqual(EDAnnotations.summary(EDStore, 'en', '2026-11-21').items, 1);
   assert.strictEqual(EDAnnotations.remove(note.id, EDStore, 'en', '2026-11-21'), 1);

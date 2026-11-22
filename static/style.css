@@ -261,6 +261,17 @@ html[data-reading-font="sans"] .article-body { font-family: Arial, Helvetica, sa
   flex: 1 1 320px; min-height: 64px; resize: vertical; font: inherit; color: var(--ink);
   background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px;
 }
+.annotation-tones { display: inline-flex; gap: 6px; align-items: center; }
+.annotation-tone { width: 24px; height: 24px; padding: 0; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.annotation-tone.hl1 { background: var(--hl1); }
+.annotation-tone.hl2 { background: var(--hl2); }
+.annotation-tone.hl3 { background: var(--hl3); }
+.annotation-tone.active { outline: 2px solid var(--accent); outline-offset: 2px; }
+.annotation-highlight { margin: 0; padding: 2px 4px; border-radius: 3px; color: var(--fg); }
+.annotation-highlight.hl1 { background: var(--hl1); }
+.annotation-highlight.hl2 { background: var(--hl2); }
+.annotation-highlight.hl3 { background: var(--hl3); }
+
 .annotation-panel ul, .shortcut-list, .semester-weeks { list-style: none; margin: 16px 0 0; padding: 0; }
 .annotation-panel li, .shortcut-list li, .semester-weeks li {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
@@ -302,8 +313,11 @@ html[data-reading="focus"] .reading-panel-actions { justify-content: flex-start;
   pointer-events: none; transition: left 140ms ease, top 140ms ease, width 140ms ease, height 140ms ease;
 }
 .tour-highlight {
-  position: relative; z-index: 23; outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px;
+  position: relative; z-index: 23; outline: 2px solid var(--tour-tone, var(--accent)); outline-offset: 3px; border-radius: 6px;
 }
+.tour-highlight[data-tone="hl1"] { --tour-tone: var(--hl1); }
+.tour-highlight[data-tone="hl2"] { --tour-tone: var(--hl2); }
+.tour-highlight[data-tone="hl3"] { --tour-tone: var(--hl3); }
 .tour-dialog {
   position: fixed; inset: auto 16px 24px auto; z-index: 30; width: min(360px, calc(100vw - 32px));
 }

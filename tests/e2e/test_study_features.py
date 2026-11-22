@@ -14,10 +14,12 @@ class StudyFeaturesSpec(E2EHarness):
         toggle.click()
         expect(self.page.locator("html")).to_have_attribute("data-reading", "off")
 
+        self.page.click(".annotation-tone.hl3")
         self.page.fill("#annotation-input", "Keep this sentence")
         self.page.click("[data-eds-annotation-save]")
         note = self.page.locator("[data-eds-annotations] li").first
         expect(note).to_contain_text("Keep this sentence")
+        expect(note.locator(".annotation-highlight")).to_have_class("annotation-highlight hl3")
         keys = self.page.evaluate(
             "() => Object.keys(localStorage).filter((key) => key.startsWith('eds.en.annotations.'))"
         )
@@ -25,7 +27,9 @@ class StudyFeaturesSpec(E2EHarness):
 
         self.page.reload()
         self.page.wait_for_selector("[data-eds-route]")
-        expect(self.page.locator("[data-eds-annotations] li").first).to_contain_text("Keep this sentence")
+        reloaded_note = self.page.locator("[data-eds-annotations] li").first
+        expect(reloaded_note).to_contain_text("Keep this sentence")
+        expect(reloaded_note.locator(".annotation-highlight")).to_have_class("annotation-highlight hl3")
 
     def test_quiz_check_saves_score(self) -> None:
         self.page.click("#tab-phrase")

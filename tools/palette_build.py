@@ -16,40 +16,56 @@ PALETTES: dict[str, dict[str, str]] = {
         "paper": "#fbfaf7",
         "surface": "#ffffff",
         "ink": "#23221f",
+        "fg": "#23221f",
         "muted": "#635f58",
         "line": "#8c887e",
         "accent": "#9b422c",
         "accent_soft": "#f3e8e3",
+        "hl1": "#f6d9a8",
+        "hl2": "#cfe3f2",
+        "hl3": "#d9ecd1",
         "shadow": "0 1px 2px rgba(30, 25, 20, 0.04)",
     },
     "ink": {
         "paper": "#171817",
         "surface": "#1e201e",
         "ink": "#ece9e2",
+        "fg": "#ece9e2",
         "muted": "#b8b4ab",
         "line": "#71756c",
         "accent": "#df9077",
         "accent_soft": "#3a2b25",
+        "hl1": "#3f2d22",
+        "hl2": "#22374a",
+        "hl3": "#243c2c",
         "shadow": "none",
     },
     "sepia": {
         "paper": "#f6f0e4",
         "surface": "#fffaf0",
         "ink": "#2c241b",
+        "fg": "#2c241b",
         "muted": "#5f5548",
         "line": "#8a7865",
         "accent": "#8a3f24",
         "accent_soft": "#efded0",
+        "hl1": "#ead6b0",
+        "hl2": "#d9e3d0",
+        "hl3": "#e7c8bb",
         "shadow": "0 1px 2px rgba(57, 42, 25, 0.06)",
     },
     "contrast": {
         "paper": "#ffffff",
         "surface": "#ffffff",
         "ink": "#000000",
+        "fg": "#000000",
         "muted": "#1a1a1a",
         "line": "#000000",
         "accent": "#72001e",
         "accent_soft": "#ffe4e9",
+        "hl1": "#ffe066",
+        "hl2": "#b3d9ff",
+        "hl3": "#c9f2c9",
         "shadow": "none",
     },
 }
@@ -60,7 +76,7 @@ SCHEMES = {"paper": "light", "sepia": "light", "ink": "dark", "contrast": "light
 
 def _block(selector: str, palette: dict[str, str], scheme: str) -> str:
     lines = [f"{selector} {{", f"  color-scheme: {scheme};"]
-    for name in ("paper", "surface", "ink", "muted", "line", "accent", "accent_soft", "shadow"):
+    for name in ("paper", "surface", "ink", "fg", "muted", "line", "accent", "accent_soft", "hl1", "hl2", "hl3", "shadow"):
         css_name = name.replace("_", "-")
         lines.append(f"  --{css_name}: {palette[name]};")
     lines.append("}")

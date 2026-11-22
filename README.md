@@ -162,7 +162,8 @@ unless `--force` is used.
   reusable `.apkg` (via `genanki`).
 - `tools/palette_build.py` generates `static/css/themes.css` from audited palette definitions;
   `tools/contrast_check.py` verifies WCAG AA text contrast and 3:1 borders for Paper, Sepia, Ink,
-  High contrast and both System modes.
+  High contrast and both System modes. The generated highlight tokens `--hl1`, `--hl2` and `--hl3`
+  are checked against `--fg` in every palette; the full audit runs 72 contrast pairs.
 - The Settings view stores the theme preset, text size, reading font, default audio speed, exercise
   feedback, auto-marking, reduced-motion, reading mode, reminder time and AnkiConnect URL in browser
   `localStorage`. It also exports deterministic ICS reminders from the saved edition dates.
@@ -190,8 +191,9 @@ The Phase 11 helpers are `static/lib/i18n.js`, `static/lib/ics.js`, `static/lib/
 
 - Daily quiz: answer the phrase-tab exercises, then use Check answers. Scores are graded
   deterministically and stored under `eds.<lang>.quiz.<date>`.
-- My notes: write a short note under the current text. Notes are stored under
-  `eds.<lang>.annotations.<date>.<item>` and can be removed individually.
+- My notes: write a short note under the current text and choose one of the audited highlight tokens
+  (`--hl1`, `--hl2`, `--hl3`). Notes are stored under `eds.<lang>.annotations.<date>.<item>` and can be
+  removed individually.
 - Reading mode: the toggle stays inside the reading panel so focus mode can be exited without the
   header or tabs. Keyboard users can also press `r`, `a`, `s`, `?`, `j`, `k` or `1`–`5`; typing targets
   and the tour dialog are ignored.

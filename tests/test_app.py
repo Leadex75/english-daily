@@ -1374,7 +1374,7 @@ class ContrastTests(unittest.TestCase):
         report = audit_css(css)
         self.assertTrue(report["ok"])
         self.assertTrue(report["dark_definitions_match"])
-        self.assertEqual(len(report["rows"]), 54)
+        self.assertEqual(len(report["rows"]), 72)
         self.assertTrue(all(row["pass"] for row in report["rows"]))
 
     def test_contrast_check_cli_emits_json(self):
@@ -1411,7 +1411,7 @@ class PaletteBuildTests(unittest.TestCase):
     def test_all_palette_tokens_pass_accessibility_audit(self):
         report = audit_palettes()
         self.assertTrue(report["ok"])
-        self.assertEqual(len(report["rows"]), 54)
+        self.assertEqual(len(report["rows"]), 72)
 
 
 class FrontendAssetTests(unittest.TestCase):
@@ -1438,7 +1438,7 @@ class FrontendAssetTests(unittest.TestCase):
             self.assertIn(marker, index)
         for marker in ("EDExercises", "EDTour", "EDSearch", "cycleTab", "runSearch", "EDProgress", "dailyTotal", "practicedDates", "ankiAvailable", "canExportAnki", "openAnkiHelp", "exportableAnkiItems", "EDSettings", "setPreference", "resetPreferences", "prefersDark", "visibleExerciseAnswer", "EDArchive", "calendar()", "selectArchiveDate", "shiftArchiveMonth", "openSearchResult", "AnkiConnect", "EDAnkiConnect", "ankiNotes", "sendAnkiConnect", "checkAnkiConnect", "ankiConnectStatus", "ankiConnectDiagnostic", "ankiConnectCounts", "requestPermission(", "verifyModels(", "maybeStartTour(", "tourSpotlightStyle(", "trapTourTab(", "data-eds-tour-tabindex", "EDTour.seen(", "EDTour.markSeen(", "EDi18n", "EDICS", "EDQuiz", "EDAnnotations", "EDReading", "EDShortcuts", "EDSemester", "downloadReminders(", "checkQuiz(", "saveAnnotation(", "semesterProgress("):
             self.assertIn(marker, script)
-        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions", ".reading-panel-actions", ".annotation-panel", ".quiz-actions", ".semester-form", ".shortcut-dialog", "html[data-reading=\"focus\"]"):
+        for marker in (":focus-visible", "prefers-reduced-motion", ".skip-link", ".exercise-options", ".tour-dialog", ".tour-spotlight", ".tour-highlight", ".source-links", ".source-link-label", ".mark-toggle", ".current-date", ".settings-button", ".anki-button.anki-ready", ".anki-button.anki-unlearned", ".anki-status", ".settings-grid", "data-text-size", "data-reading-font", "data-motion", ".archive-calendar", ".calendar-grid", ".calendar-day", ".archive-days", ".setting-input", ".anki-actions", ".reading-panel-actions", ".annotation-panel", ".quiz-actions", ".semester-form", ".shortcut-dialog", "html[data-reading=\"focus\"]", ".annotation-tones", ".annotation-tone.hl1", ".annotation-highlight.hl2", ".tour-highlight[data-tone=\"hl1\"]"):
             self.assertIn(marker, styles)
         for marker in ("data-eds-anki", "data-eds-anki-open", "ankiStatus(", "ankiLabel("):
             self.assertIn(marker, index)
@@ -1664,6 +1664,32 @@ class AddendumPhaseElevenTests(unittest.TestCase):
         progress = (root / "PROGRESS.md").read_text(encoding="utf-8")
         self.assertIn("Phase 11", progress)
         self.assertIn("done / remaining / decisions", progress)
+
+
+class AddendumPhaseTwelveTests(unittest.TestCase):
+    def test_highlight_tokens_are_generated_and_audited(self):
+        root = Path(__file__).resolve().parents[1]
+        css = (root / "static" / "css" / "themes.css").read_text(encoding="utf-8")
+        for token in ("--fg", "--hl1", "--hl2", "--hl3"):
+            self.assertIn(token, css)
+        audit = audit_palettes()
+        self.assertTrue(audit["ok"])
+        self.assertEqual(len(audit["rows"]), 72)
+        highlights = [row for row in audit["rows"] if row["pair"].startswith("highlight")]
+        self.assertEqual(len(highlights), 18)
+        self.assertTrue(all(row["pass"] for row in highlights))
+        self.assertTrue(all(row["foreground"] == "fg" for row in highlights))
+
+    def test_phase_twelve_docs_and_tour_translations_are_present(self):
+        root = Path(__file__).resolve().parents[1]
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        for marker in ("--hl1", "--hl2", "--hl3", "highlight tokens", "72 contrast pairs"):
+            self.assertIn(marker, readme)
+        progress = (root / "PROGRESS.md").read_text(encoding="utf-8")
+        self.assertIn("Phase 12", progress)
+        i18n = (root / "static" / "lib" / "i18n.js").read_text(encoding="utf-8")
+        for marker in ("tour.home.title", "tour.anki.title", "annotation.hl1"):
+            self.assertIn(marker, i18n)
 
 
 if __name__ == "__main__":
