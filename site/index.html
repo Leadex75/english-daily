@@ -21,9 +21,17 @@
   <script defer src="./lib/store.js"></script>
   <script defer src="./lib/branding.js"></script>
   <script defer src="./lib/settings.js"></script>
+  <script defer src="./lib/i18n.js"></script>
+  <script defer src="./lib/ics.js"></script>
+  <script defer src="./lib/quiz.js"></script>
+  <script defer src="./lib/annotations.js"></script>
+  <script defer src="./lib/reading.js"></script>
+  <script defer src="./lib/shortcuts.js"></script>
+  <script defer src="./lib/semester.js"></script>
   <script defer src="./lib/links.js"></script>
   <script defer src="./lib/progress.js"></script>
   <script defer src="./lib/anki.js"></script>
+  <script defer src="./js/ankiconnect.js"></script>
   <script defer src="./lib/exercises.js"></script>
   <script defer src="./lib/tour.js"></script>
   <script defer src="./lib/search.js"></script>
@@ -38,14 +46,7 @@
     <header class="masthead">
       <a class="brand" href="#today" data-eds-home :aria-label="brand + ' home'" aria-label="English Daily home">
         <span class="brand-mark" x-text="brand">English Daily</span>
-        <span class="tagline" x-text="tagline">A little English, every day.</span>
       </a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="#today" :aria-current="route === 'today' ? 'page' : null">Today</a>
-        <a href="#archive" :aria-current="route === 'archive' ? 'page' : null">Archive</a>
-        <a href="#glossary" :aria-current="route === 'glossary' ? 'page' : null">Glossary</a>
-        <a href="#settings" :aria-current="route === 'settings' ? 'page' : null">Settings</a>
-      </nav>
       <div class="header-actions">
         <label class="sr-only" for="language-select">Language</label>
         <select id="language-select" class="language-select language-picker" data-eds-language-select :value="lang" @change="setLanguage($event.target.value)" aria-label="Language">
@@ -55,9 +56,8 @@
         </select>
         <button class="icon-button" type="button" x-show="updateAvailable" @click="applyUpdate()" aria-label="Install updated app">Update</button>
         <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
-        <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="prefersDark() ? 'Use light theme' : 'Use dark theme'" x-text="prefersDark() ? 'Light' : 'Dark'"></button>
-        <button class="icon-button" type="button" @click="exportAllAnki()" :disabled="!glossary().length || !ankiAvailable()" aria-label="Export learned words to Anki">Anki</button>
-        <button class="icon-button anki-help" type="button" data-eds-anki @click="openAnkiHelp()" aria-label="Anki help">Anki help</button>
+        <button class="icon-button" type="button" data-eds-anki-open @click="openAnkiPage()" aria-label="Anki">Anki</button>
+        <button class="icon-button settings-button" type="button" data-eds-settings-open @click="navigate('settings')" aria-label="Settings">&#9881;</button>
       </div>
     </header>
 
@@ -65,26 +65,13 @@
     <p class="notice" x-show="loading" aria-live="polite">Loading…</p>
     <p class="notice error" x-show="error" x-text="error" aria-live="polite"></p>
 
-    <section id="today-view" class="view" x-show="route === 'today'" aria-labelledby="hero-title">
-      <div class="hero" data-eds-hero>
-        <div>
-          <p class="eyebrow" x-text="longDate(selectedDate)"></p>
-          <h1 id="hero-title" x-text="tagline">A little English, every day.</h1>
-          <p class="hero-copy">Choose a level, then read and listen to real-world English selected for today.</p>
-        </div>
-        <div class="practice-summary" aria-label="Practice summary">
-          <span x-text="`Today ${todayCount()} / ${todayTotal()}`"></span>
-          <span x-text="`This week ${weekCount()} / ${weeklyGoal}`"></span>
-        </div>
-      </div>
+    <section id="today-view" class="view" x-show="route === 'today'" aria-labelledby="today-title" data-eds-today>
+      <h1 id="today-title" class="sr-only" x-text="brand">English Daily</h1>
 
       <section class="controls" aria-label="Reading controls">
         <div class="date-control">
           <button class="icon-button" type="button" @click="shiftDate(-1)" aria-label="Previous day" :disabled="!canShift(-1)">&#8592;</button>
-          <label class="sr-only" for="day-select">Date</label>
-          <select id="day-select" x-model="selectedDate" @change="loadDay()">
-            <template x-for="d in days" :key="d"><option :value="d" x-text="d"></option></template>
-          </select>
+          <span class="current-date" x-text="longDate(selectedDate)"></span>
           <button class="icon-button" type="button" @click="shiftDate(1)" aria-label="Next day" :disabled="!canShift(1)">&#8594;</button>
         </div>
         <div class="levels" role="group" aria-label="CEFR level" data-eds-level>
@@ -96,21 +83,31 @@
 
       <nav class="tabs" role="tablist" aria-label="Category" data-eds-tabs
            @keydown.arrow-right.prevent="cycleTab(1)" @keydown.arrow-left.prevent="cycleTab(-1)">
-        <button id="tab-news" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'news'" :tabindex="tab === 'news' ? 0 : -1" :class="{ active: tab === 'news' }" @click="setTab('news')">
+        <button id="tab-news" type="button" role="tab" aria-controls="reading-panel" :aria-selected="route === 'today' && tab === 'news'" :tabindex="route === 'today' && tab === 'news' ? 0 : -1" :class="{ active: route === 'today' && tab === 'news' }" @click="navigate('today'); setTab('news')">
           News <span class="check" x-show="categoryDone('news')" aria-label="completed">&#10003;</span>
         </button>
-        <button id="tab-culture" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'culture'" :tabindex="tab === 'culture' ? 0 : -1" :class="{ active: tab === 'culture' }" @click="setTab('culture')">
+        <button id="tab-culture" type="button" role="tab" aria-controls="reading-panel" :aria-selected="route === 'today' && tab === 'culture'" :tabindex="route === 'today' && tab === 'culture' ? 0 : -1" :class="{ active: route === 'today' && tab === 'culture' }" @click="navigate('today'); setTab('culture')">
           Culture <span class="check" x-show="categoryDone('culture')" aria-label="completed">&#10003;</span>
         </button>
-        <button id="tab-history" type="button" role="tab" aria-controls="reading-panel" :aria-selected="tab === 'history'" :tabindex="tab === 'history' ? 0 : -1" :class="{ active: tab === 'history' }" @click="setTab('history')">
+        <button id="tab-history" type="button" role="tab" aria-controls="reading-panel" :aria-selected="route === 'today' && tab === 'history'" :tabindex="route === 'today' && tab === 'history' ? 0 : -1" :class="{ active: route === 'today' && tab === 'history' }" @click="navigate('today'); setTab('history')">
           History <span class="check" x-show="categoryDone('history')" aria-label="completed">&#10003;</span>
         </button>
-        <button id="tab-phrase" type="button" role="tab" aria-controls="phrase-panel" :aria-selected="tab === 'phrase'" :tabindex="tab === 'phrase' ? 0 : -1" :class="{ active: tab === 'phrase' }" @click="setTab('phrase')">
+        <button id="tab-phrase" type="button" role="tab" aria-controls="phrase-panel" :aria-selected="route === 'today' && tab === 'phrase'" :tabindex="route === 'today' && tab === 'phrase' ? 0 : -1" :class="{ active: route === 'today' && tab === 'phrase' }" @click="navigate('today'); setTab('phrase')">
           Phrase <span class="check" x-show="phraseDone()" aria-label="completed">&#10003;</span>
+        </button>
+        <button id="tab-archive" type="button" role="tab" aria-controls="archive-view" data-eds-tab-archive :aria-selected="route === 'archive'" :tabindex="route === 'archive' ? 0 : -1" :class="{ active: route === 'archive' }" @click="navigate('archive')">
+          Archive
+        </button>
+        <button id="tab-semester" type="button" role="tab" aria-controls="semester-view" data-eds-tab-semester :aria-selected="route === 'semester'" :tabindex="route === 'semester' ? 0 : -1" :class="{ active: route === 'semester' }" @click="navigate('semester')" x-text="t('semester.tab')">
+          Semester
         </button>
       </nav>
 
-      <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="tab !== 'phrase'">
+      <main id="reading-panel" class="reading" role="tabpanel" aria-labelledby="tab-news" x-show="route === 'today' && tab !== 'phrase'">
+        <div class="reading-panel-actions">
+          <button class="pill" type="button" data-eds-reading-toggle :aria-pressed="readingEnabled()" @click="toggleReadingMode()" x-text="readingEnabled() ? t('control.reading') + ' ✓' : t('control.reading')"></button>
+          <button class="pill" type="button" data-eds-shortcuts-open @click="openShortcuts()" x-text="t('shortcuts.open')"></button>
+        </div>
         <article class="block text-block" x-show="currentText()">
           <div class="block-head">
             <div>
@@ -121,28 +118,45 @@
               <span class="badge" x-text="currentText()?.level || '—'"></span>
               <span class="meta" x-text="(currentText()?.word_count || 0) + ' words'"></span>
               <template x-for="badge in currentText()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
-              <span class="check" x-show="isRead(currentText())" title="Read">&#10003;</span>
             </div>
           </div>
           <div class="article-body">
             <template x-for="(para, i) in paragraphs(currentText())" :key="i"><p x-text="para"></p></template>
           </div>
-          <p class="attribution" x-show="currentText()?.attribution">
-            Source: <a :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="currentText()?.attribution"></a>
-          </p>
           <div class="block-foot source-links">
-            <div class="source-link-list">
-              <a class="source-link" :href="currentText()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentText())">
-                <span class="source-link-label" x-text="sourceLabel('text')"></span>
-                <span class="source-link-source" x-text="sourceName(currentText())"></span>
-              </a>
-              <a class="pill pill-link" x-show="currentText()?.truncated && hasSourceUrl(currentText())" :href="currentText()?.url" target="_blank" rel="noopener noreferrer" x-text="'Read the full text on ' + sourceName(currentText())"></a>
-            </div>
-            <button class="pill" type="button" @click="markRead(currentText())" :disabled="isRead(currentText())" x-text="isRead(currentText()) ? 'Read ✓' : 'Mark as read'"></button>
+            <a class="source-link" data-eds-source-link :href="currentText()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentText())">
+              <span class="source-link-label" x-text="currentText()?.truncated ? 'Read the full article on ' + sourceName(currentText()) : 'Source: ' + sourceName(currentText())"></span>
+            </a>
+            <button class="pill mark-toggle" type="button" data-eds-mark-read :disabled="isRead(currentText())" :aria-pressed="isRead(currentText())" @click="markRead(currentText())" x-text="isRead(currentText()) ? 'Read' : 'Mark as read'"></button>
           </div>
           <div x-ref="readSentinel" class="sentinel" aria-hidden="true"></div>
         </article>
         <div class="block empty" x-show="!currentText() && !loading">No text for this slot today.</div>
+
+        <section class="block annotation-panel" x-show="currentText()" data-eds-annotations :aria-label="t('annotation.title')">
+          <div class="block-head">
+            <h2 x-text="t('annotation.title')"></h2>
+          </div>
+          <form @submit.prevent="saveAnnotation()">
+            <label class="sr-only" for="annotation-input" x-text="t('annotation.placeholder')"></label>
+            <textarea id="annotation-input" x-ref="annotationInput" x-model="annotationDraft" rows="2" :placeholder="t('annotation.placeholder')"></textarea>
+            <button class="pill" type="button" data-eds-annotation-save :disabled="!annotationDraft.trim()" @click="saveAnnotation()" x-text="t('annotation.save')"></button>
+            <div class="annotation-tones" role="group" :aria-label="t('annotation.title')">
+              <template x-for="tone in annotationTones()" :key="tone">
+                <button class="annotation-tone" type="button" :class="[tone, { active: annotationTone === tone }]" :aria-pressed="annotationTone === tone" :aria-label="t('annotation.' + tone)" :title="t('annotation.' + tone)" @click="setAnnotationTone(tone)"></button>
+              </template>
+            </div>
+          </form>
+          <ul x-show="annotations().length">
+            <template x-for="note in annotations()" :key="note.id">
+              <li>
+                <p class="annotation-highlight" :class="note.tone" x-text="note.text"></p>
+                <button class="link-button" type="button" :aria-label="t('annotation.remove')" @click="removeAnnotation(note.id)" x-text="t('annotation.remove')"></button>
+              </li>
+            </template>
+          </ul>
+          <p class="empty" x-show="!annotations().length" x-text="t('annotation.empty')"></p>
+        </section>
 
         <section class="block audio-block" x-show="currentAudio()">
           <div class="block-head">
@@ -154,7 +168,6 @@
               <span class="badge" x-text="currentAudio()?.level || '—'"></span>
               <span class="meta" x-text="formatTime(duration || currentAudio()?.duration_sec || 0)"></span>
               <template x-for="badge in currentAudio()?.badges || []" :key="badge"><span class="badge badge-origin" x-text="badge"></span></template>
-              <span class="check" x-show="isListened(currentAudio())" title="Listened">&#10003;</span>
             </div>
           </div>
           <audio x-ref="audio" :src="currentAudio()?.audio_url || null" preload="none" referrerpolicy="no-referrer"
@@ -174,17 +187,17 @@
             </div>
           </div>
           <div class="block-foot source-links">
-            <a class="source-link" :href="currentAudio()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentAudio())">
-              <span class="source-link-label" x-text="sourceLabel('audio')"></span>
-              <span class="source-link-source" x-text="sourceName(currentAudio())"></span>
+            <a class="source-link" data-eds-source-link :href="currentAudio()?.url || '#'" target="_blank" rel="noopener noreferrer" x-show="hasSourceUrl(currentAudio())">
+              <span class="source-link-label" x-text="'Listen to the original audio on ' + sourceName(currentAudio())"></span>
             </a>
+            <button class="pill mark-toggle" type="button" data-eds-mark-listened :disabled="isListened(currentAudio())" :aria-pressed="isListened(currentAudio())" @click="markListened(currentAudio())" x-text="isListened(currentAudio()) ? 'Listened' : 'Mark as listened'"></button>
           </div>
           <p class="hint" x-text="isListened(currentAudio()) ? 'Listened' : 'Listens are saved locally once you reach 90%.'"></p>
         </section>
         <div class="block empty" x-show="!currentAudio() && !loading">No audio for this slot today.</div>
       </main>
 
-      <main id="phrase-panel" class="reading phrase-reading" role="tabpanel" aria-labelledby="tab-phrase" x-show="tab === 'phrase'" data-eds-phrase>
+      <main id="phrase-panel" class="reading phrase-reading" role="tabpanel" aria-labelledby="tab-phrase" x-show="route === 'today' && tab === 'phrase'" data-eds-phrase>
         <template x-if="phrase()">
           <div class="phrase-grid">
             <article class="block phrase-card">
@@ -201,7 +214,7 @@
                 <template x-for="(definition, i) in phrase()?.word?.dictionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
               </ul>
               <div class="block-foot">
-                <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" x-text="isLearned(phrase()?.word) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.word)" :class="{ active: isLearned(phrase()?.word) }" :aria-pressed="isLearned(phrase()?.word)" x-text="isLearned(phrase()?.word) ? 'Saved ✓' : 'Save word'"></button>
                 <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.word)" :disabled="!canExportAnki(phrase()?.word)" :title="ankiStatus(phrase()?.word)" :aria-label="ankiStatus(phrase()?.word)" @click="exportAnki([phrase()?.word])" x-text="ankiLabel(phrase()?.word)"></button>
                 <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.word)"></span>
               </div>
@@ -219,7 +232,7 @@
                 <template x-for="(definition, i) in phrase()?.expression?.wiktionary?.definitions || []" :key="i"><li x-text="definition"></li></template>
               </ul>
               <div class="block-foot">
-                <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" x-text="isLearned(phrase()?.expression) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.expression)" :class="{ active: isLearned(phrase()?.expression) }" :aria-pressed="isLearned(phrase()?.expression)" x-text="isLearned(phrase()?.expression) ? 'Saved ✓' : 'Save expression'"></button>
                 <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.expression)" :disabled="!canExportAnki(phrase()?.expression)" :title="ankiStatus(phrase()?.expression)" :aria-label="ankiStatus(phrase()?.expression)" @click="exportAnki([phrase()?.expression])" x-text="ankiLabel(phrase()?.expression)"></button>
                 <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.expression)"></span>
               </div>
@@ -234,7 +247,7 @@
               <p class="phrase-fr" x-text="phrase()?.history?.meaning_fr"></p>
               <blockquote x-text="phrase()?.history?.example"></blockquote>
               <div class="block-foot">
-                <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" x-text="isLearned(phrase()?.history) ? 'Learned ✓' : 'Mark learned'"></button>
+                <button class="pill" type="button" @click="toggleLearned(phrase()?.history)" :class="{ active: isLearned(phrase()?.history) }" :aria-pressed="isLearned(phrase()?.history)" x-text="isLearned(phrase()?.history) ? 'Saved ✓' : 'Save term'"></button>
                 <button class="pill anki-button" type="button" :class="ankiClass(phrase()?.history)" :disabled="!canExportAnki(phrase()?.history)" :title="ankiStatus(phrase()?.history)" :aria-label="ankiStatus(phrase()?.history)" @click="exportAnki([phrase()?.history])" x-text="ankiLabel(phrase()?.history)"></button>
                 <span class="anki-status" aria-live="polite" x-text="ankiStatus(phrase()?.history)"></span>
               </div>
@@ -244,7 +257,7 @@
         <div class="block empty" x-show="!phrase() && !loading">No phrase for this level today.</div>
       </main>
 
-      <section class="block exercises" x-show="tab === 'phrase' && exercises().length" data-eds-exercises aria-label="Daily exercises">
+      <section class="block exercises" x-show="route === 'today' && tab === 'phrase' && exercises().length" data-eds-exercises aria-label="Daily exercises">
         <div class="block-head">
           <div>
             <h2>Daily practice</h2>
@@ -269,6 +282,10 @@
             </li>
           </template>
         </ol>
+        <div class="block-foot quiz-actions">
+          <button class="pill" type="button" data-eds-quiz-check :disabled="!quizQuestions().length" @click="checkQuiz()" x-text="t('quiz.check')"></button>
+          <p class="quiz-message" aria-live="polite" x-show="quizMessage" x-text="quizMessage"></p>
+        </div>
       </section>
     </section>
 
@@ -332,15 +349,51 @@
       </section>
     </section>
 
-    <section id="glossary-view" class="view" x-show="route === 'glossary'" aria-labelledby="glossary-title">
+    <section id="semester-view" class="view" x-show="route === 'semester'" aria-labelledby="semester-title" data-eds-semester>
+      <div class="view-head">
+        <p class="eyebrow" x-text="t('semester.title')"></p>
+        <h1 id="semester-title" x-text="t('semester.title')"></h1>
+        <p x-text="t('semester.intro')"></p>
+      </div>
+      <section class="block semester-form" aria-label="Semester plan">
+        <label class="setting-label" for="semester-start" x-text="t('semester.start')"></label>
+        <input id="semester-start" class="setting-input" type="date" x-model="semesterStart" data-eds-semester-start>
+        <label class="setting-label" for="semester-end" x-text="t('semester.end')"></label>
+        <input id="semester-end" class="setting-input" type="date" x-model="semesterEnd" data-eds-semester-end>
+        <label class="setting-label" for="semester-goal" x-text="t('semester.goal')"></label>
+        <input id="semester-goal" class="setting-input" type="number" min="1" max="7" x-model.number="semesterGoal" data-eds-semester-goal>
+        <button class="pill" type="button" data-eds-semester-save @click="saveSemester()" x-text="t('semester.save')"></button>
+      </section>
+      <section class="block semester-progress" aria-label="Semester progress" data-eds-semester-progress>
+        <div class="block-head">
+          <div>
+            <h2 x-text="t('semester.title')"></h2>
+            <p class="byline" x-text="semesterProgress() ? t('semester.progress', { completed: semesterProgress().completed, goal: semesterProgress().goal, percent: semesterProgress().percent }) : ''"></p>
+          </div>
+          <div class="progress-track semester-track" x-show="semesterProgress()">
+            <div class="progress-fill" :style="`width: ${semesterProgress() ? semesterProgress().percent : 0}%`"></div>
+          </div>
+        </div>
+        <ol class="semester-weeks" x-show="semesterProgress()">
+          <template x-for="week in (semesterProgress() ? semesterProgress().weeks : [])" :key="week.index">
+            <li>
+              <span x-text="`${week.index}. ${formatDate(week.start)} — ${formatDate(week.end)}`"></span>
+              <span class="badge" x-text="`${week.count}/${semesterGoal}`"></span>
+            </li>
+          </template>
+        </ol>
+      </section>
+    </section>
+
+    <section id="anki-view" class="view" x-show="route === 'anki'" aria-labelledby="anki-title" data-eds-anki>
       <div class="view-head">
         <p class="eyebrow">Words you chose to keep</p>
-        <h1 id="glossary-title">My glossary</h1>
-        <p>These learned phrases stay in this browser. Export them to Anki whenever you are ready.</p>
+        <h1 id="anki-title">Anki</h1>
+        <p>Saved phrases live in this browser. Check AnkiConnect, send notes, or download a tab-separated fallback file.</p>
       </div>
       <section class="block glossary" x-show="glossary().length" data-eds-glossary>
         <div class="block-head">
-          <h2>Saved phrases</h2>
+          <h2>My glossary</h2>
           <div class="anki-actions">
             <button class="pill anki-button anki-ready" type="button" :disabled="!ankiAvailable() || !glossary().length" :title="ankiAvailable() ? 'Ready for Anki' : 'Anki export unavailable offline'" @click="exportAllAnki()" x-text="ankiAvailable() ? 'Export all to Anki' : 'Anki unavailable'"></button>
             <button class="pill" type="button" data-eds-anki-connect-check :disabled="!glossary().length || ankiConnectBusy" @click="checkAnkiConnect()">Check AnkiConnect</button>
@@ -348,6 +401,8 @@
           </div>
         </div>
         <p class="anki-status" data-eds-anki-connect-status aria-live="polite" x-text="ankiConnectStatus"></p>
+        <p class="hint" data-eds-anki-connect-diagnostic x-show="ankiConnectDiagnostic" x-text="ankiConnectDiagnostic"></p>
+        <p class="meta" data-eds-anki-connect-counts x-show="ankiConnectCounts.total" x-text="`Added ${ankiConnectCounts.added}, duplicates ${ankiConnectCounts.duplicates}, failed ${ankiConnectCounts.failed} of ${ankiConnectCounts.total} note(s).`"></p>
         <ul>
           <template x-for="entry in glossary()" :key="entry.key">
             <li>
@@ -358,7 +413,7 @@
           </template>
         </ul>
       </section>
-      <div class="block empty" x-show="!glossary().length">No saved phrases yet. Mark a word, expression or history term as learned.</div>
+      <div class="block empty" x-show="!glossary().length">No saved phrases yet. Save a word, expression or history term from the Phrase tab.</div>
     </section>
 
     <section id="settings-view" class="view" x-show="route === 'settings'" aria-labelledby="settings-title" data-eds-settings>
@@ -400,6 +455,10 @@
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.showFeedback" @change="setPreference('showFeedback', $event.target.checked)"> Show exercise answers immediately</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.autoMarkRead" @change="setPreference('autoMarkRead', $event.target.checked)"> Mark texts as read while scrolling</label>
           <label class="setting-toggle"><input type="checkbox" :checked="prefs.reduceMotion" @change="setPreference('reduceMotion', $event.target.checked)"> Reduce motion</label>
+          <label class="setting-toggle"><input type="checkbox" data-eds-reading-setting :checked="prefs.readingMode" @change="setPreference('readingMode', $event.target.checked)" x-text="t('control.reading')"></label>
+          <label class="setting-label" for="reminder-time" x-text="t('reminders.time')"></label>
+          <input id="reminder-time" class="setting-input" type="time" data-eds-reminder-time :value="prefs.reminderTime" @change="setPreference('reminderTime', $event.target.value)">
+          <button class="pill" type="button" data-eds-reminders-download @click="downloadReminders()" x-text="t('reminders.download')"></button>
           <label class="setting-label" for="anki-connect-url">AnkiConnect URL</label>
           <input id="anki-connect-url" class="setting-input" type="url" inputmode="url" spellcheck="false" :value="prefs.ankiConnectUrl" @change="setPreference('ankiConnectUrl', $event.target.value)">
           <div class="block-foot">
@@ -407,6 +466,23 @@
             <button class="pill" type="button" @click="resetPreferences()">Reset settings</button>
           </div>
         </fieldset>
+      </div>
+    </section>
+
+    <div class="modal-backdrop" x-show="shortcutHelp" @click="closeShortcuts()"></div>
+    <section class="shortcut-dialog" role="dialog" aria-modal="true" aria-labelledby="shortcut-title"
+             x-show="shortcutHelp" x-ref="shortcutDialog" tabindex="-1" @keydown.tab.stop="trapShortcutTab($event)" data-eds-shortcuts>
+      <div class="block">
+        <p class="eyebrow" x-text="t('shortcuts.title')"></p>
+        <h2 id="shortcut-title" x-text="t('shortcuts.title')"></h2>
+        <ul class="shortcut-list">
+          <template x-for="binding in shortcutBindings()" :key="binding.key">
+            <li><kbd x-text="binding.key"></kbd><span x-text="binding.label"></span></li>
+          </template>
+        </ul>
+        <div class="block-foot">
+          <button class="pill" type="button" x-ref="shortcutClose" data-eds-shortcuts-close @click="closeShortcuts()" x-text="t('shortcuts.close')"></button>
+        </div>
       </div>
     </section>
 

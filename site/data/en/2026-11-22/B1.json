@@ -7,24 +7,24 @@
       "text": null,
       "audio": {
         "id": 2,
-        "title": "7am ET, November 22 | The latest headlines from NPR",
+        "title": "9am ET, November 22 | The latest headlines from NPR",
         "source": "NPR News Now",
         "source_id": "npr_news_now",
         "category": "news",
         "url": "",
-        "published_at": "2026-11-22T12:09:47",
+        "published_at": "2026-11-22T14:09:34",
         "level": "B1",
         "slot_level": "B1",
         "source_level": "B2",
         "word_count": 23,
         "duration_sec": 280,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/3c825a8e-437c-4efa-a3bd-a9e46661c86b/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_3753ee4c06a5aee4769e7958a096b67b_5262975.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=3c825a8e-437c-4efa-a3bd-a9e46661c86b&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-0700-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5262975&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__d7f7e0daa908d3f6aeab26a41c802e8f56581126",
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/dab9bd4d-95c0-4244-be54-f7bfec9ed49b/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_0fe20316ddb7176279f8e9b37290d2fc_4852958.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=dab9bd4d-95c0-4244-be54-f7bfec9ed49b&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-0900-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4852958&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__c0371f4a832b8dfbc30c8bb62593d5de68179ee5",
         "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "c0f67aebc0602854876bab09eaecc53038e202f4",
+        "guid_hash": "26c5fef1d4c80ea1b487e48a4bffef11b6be0aae",
         "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "origin": "adjacent",
         "badges": [
@@ -33,7 +33,7 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "7am ET, November 22 | The latest headlines from NPR — NPR News Now",
+        "alt_text": "9am ET, November 22 | The latest headlines from NPR — NPR News Now",
         "duration_formatted": "4:40",
         "source_url": "https://feeds.npr.org/500005/podcast.xml",
         "reading_time_min": 0
@@ -42,26 +42,26 @@
     "culture": {
       "text": null,
       "audio": {
-        "id": 1255447964,
-        "title": "Lost Princess of Oz - 01 – A Terrible Loss",
+        "id": 1897398818,
+        "title": "Road to Oz - A Queer Village",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/the-lost-princess-of-oz-by-l-frank-baum/",
-        "published_at": "2026-11-22T13:06:03",
+        "url": "https://librivox.org/the-road-to-oz-by-l-frank-baum/",
+        "published_at": "2026-11-22T14:49:33",
         "level": "B1",
         "slot_level": "B1",
         "source_level": "B1",
-        "word_count": 128,
-        "duration_sec": 645,
+        "word_count": 140,
+        "duration_sec": 917,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/lost_princess_oz_librivox/lost_princess_of_oz_01_baum_64kb.mp3",
-        "description": "Lost Princess of Oz by . Who is stealing all the magic in Oz? Dorothy and her friends set out to comb all of Oz, not only for magic stolen from Glinda and the Wizard, but also for the kidnapped princess, Ozma. Along the way, they explore regions never seen in other Oz books, meeting strange and interesting people and animals, and falling into peril more than once. It’s a desperate mission – for if",
+        "audio_url": "https://archive.org/download/road_to_oz/roadtoOz_03_baum_64kb.mp3",
+        "description": "Road to Oz by . The Road to Oz takes Dorothy and her friends on an adventure in Oz to a grand party in honor of Ozma's birthday. It all starts near her home on Uncle Henry's farm in Kansas when she tries to help a shaggy stranger find the road he is seeking. On the way they find a young boy, Button-Bright, and together they get lost, only to find themselves in the fairylands of Oz. \nOnce again in ",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "bb813397e95f363a794e88d6ad486a8353d4f3da",
-        "summary": "Lost Princess of Oz by . Who is stealing all the magic in Oz? Dorothy and her friends set out to comb all of Oz, not only for magic stolen from Glinda and the Wizard, but also for the kidnapped princess, Ozma. Along the way, they explore regions never seen in other Oz books, meeting strange and interesting people and animals, and falling into peril more than once. It’s a desperate mission – for if",
+        "guid_hash": "caddad193584ed3169065ebe373b0f5032a825a1",
+        "summary": "Road to Oz by . The Road to Oz takes Dorothy and her friends on an adventure in Oz to a grand party in honor of Ozma's birthday. It all starts near her home on Uncle Henry's farm in Kansas when she tries to help a shaggy stranger find the road he is seeking. On the way they find a young boy, Button-Bright, and together they get lost, only to find themselves in the fairylands of Oz. \nOnce again in ",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (culture)"
@@ -69,8 +69,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Lost Princess of Oz - 01 – A Terrible Loss — LibriVox (culture)",
-        "duration_formatted": "10:45",
+        "alt_text": "Road to Oz - A Queer Village — LibriVox (culture)",
+        "duration_formatted": "15:17",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -78,56 +78,75 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1591662475,
-        "title": "History of England, from the Accession of James II - (Volume 1, Chapter 05) - Chapter V, Part 2",
+        "id": 1401858018,
+        "title": "Amendments to the United States Constitution - Amendments 1-10: Bill of Rights",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
-        "url": "https://librivox.org/history-of-england-volume-1-chapter-5/",
-        "published_at": "2026-11-22T13:06:22",
+        "url": "https://librivox.org/the-amendments-to-the-constitution-of-the-united-states-of-america/",
+        "published_at": "2026-11-21T18:26:51",
         "level": "B1",
         "slot_level": "B1",
         "source_level": "B1",
-        "word_count": 140,
-        "duration_sec": 1060,
+        "word_count": 114,
+        "duration_sec": 171,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/historyofengland05/historyofengland01ch05_02_macaulay_64kb.mp3",
-        "description": "History of England, from the Accession of James II - (Volume 1, Chapter 05) by . This chapter of Macaulay’s History of England is concerned, for a large part, with insurrection against James II and his manoeuverings to suppress these. Argyle has been sheltering in Holland and returns to raise an army against James. Although brave and quick witted, he was no leader of men and the army became a conf",
+        "audio_url": "https://www.archive.org/download/constitution_amendments_librivox/constitution_amendments_01_64kb.mp3",
+        "description": "Amendments to the United States Constitution by . The Amendments to the Constitution of the USA are a continuously modified document that attempts to secure all basic and other rights for American citizens. The most recent amendment was made in the early 1970's during the Vietnam war; this amendment lowered the voting age to 18. The first ten amendments (A.K.A. the Bill of Rights) was made by the",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "96d2ef24c137dddd0cf3f0029d8f42370c6f13a7",
-        "summary": "History of England, from the Accession of James II - (Volume 1, Chapter 05) by . This chapter of Macaulay’s History of England is concerned, for a large part, with insurrection against James II and his manoeuverings to suppress these. Argyle has been sheltering in Holland and returns to raise an army against James. Although brave and quick witted, he was no leader of men and the army became a conf",
+        "guid_hash": "b96a727302828a2c30cfb9891c8bedf76c90acb6",
+        "summary": "Amendments to the United States Constitution by . The Amendments to the Constitution of the USA are a continuously modified document that attempts to secure all basic and other rights for American citizens. The most recent amendment was made in the early 1970's during the Vietnam war; this amendment lowered the voting age to 18. The first ten amendments (A.K.A. the Bill of Rights) was made by the",
         "origin": "reserve",
         "badges": [
-          "Reserve · LibriVox (history & biography)"
+          "Reserve · LibriVox (history & biography)",
+          "Outside preferred window"
         ],
         "periods": [
-          "General"
+          "General",
+          "18th century"
         ],
         "themes": [
-          "Revolution"
+          "War",
+          "Politics"
         ],
         "history_terms": [
           {
-            "text": "insurrection",
+            "text": "war",
             "aliases": [
-              "insurrection",
-              "insurrections"
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "constitution",
+            "aliases": [
+              "constitution",
+              "charter"
             ],
             "level": "B2",
-            "meaning": "a revolt against authority",
-            "meaning_fr": "insurrection",
-            "period": "General",
-            "theme": "Revolution",
-            "example": "The insurrection began in the capital.",
+            "meaning": "the main set of laws and principles of a state",
+            "meaning_fr": "constitution",
+            "period": "18th century",
+            "theme": "Politics",
+            "example": "The constitution protects citizens' rights.",
             "tags": [
-              "revolution"
+              "law"
             ]
           }
         ],
-        "alt_text": "History of England, from the Accession of James II - (Volume 1, Chapter 05) - Chapter V, Part 2 — LibriVox (history & biography)",
-        "duration_formatted": "17:40",
+        "alt_text": "Amendments to the United States Constitution - Amendments 1-10: Bill of Rights — LibriVox (history & biography)",
+        "duration_formatted": "2:51",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -137,325 +156,332 @@
     "date": "2026-11-22",
     "level": "B1",
     "word": {
-      "text": "explain",
+      "text": "framework",
       "level": "B1",
       "type": "word",
-      "pos": "verb",
-      "phonetic": "/ɪkˈspleɪn/",
-      "meaning": "make something clear to someone",
-      "meaning_fr": "expliquer",
-      "example": "Can you explain this word?",
-      "anki_answer": "expliquer",
+      "pos": "noun",
+      "phonetic": "/ˈfreɪmwɜːrk/",
+      "meaning": "a basic structure that supports something",
+      "meaning_fr": "cadre, structure",
+      "example": "The report provides a useful framework.",
+      "anki_answer": "cadre",
       "tags": [
-        "communication"
+        "structure"
       ],
-      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
+      "key": "987172f3a1717a7f1673ac08d38945e9bde8742d",
       "kind": "word",
-      "dictionary": {},
+      "dictionary": {
+        "phonetic": "/ˈfɹeɪm.wɜːk/",
+        "definitions": [
+          "A support structure comprising joined parts or conglomerated particles and intervening open spaces of similar or larger size.",
+          "The arrangement of support beams that represent a building's general shape and size.",
+          "The larger branches of a tree that determine its shape.",
+          "A basic conceptual structure."
+        ],
+        "audio_url": null
+      },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To make <a rel=\"mw:WikiLink\" href=\"/wiki/plain\" title=\"plain\">plain</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/manifest\" title=\"manifest\">manifest</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/intelligible\" title=\"intelligible\">intelligible</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/clear\" title=\"clear\">clear</a> of <a rel=\"mw:WikiLink\" href=\"/wiki/obscurity\" title=\"obscurity\">obscurity</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/illustrate\" title=\"illustrate\">illustrate</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/meaning\" title=\"meaning\">meaning</a> of.",
-          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> To give the reason for, justification for, or cause of.",
-          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To make <a rel=\"mw:WikiLink\" href=\"/wiki/flat\" title=\"flat\">flat</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/smooth_out\" title=\"smooth out\">smooth out</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/unfold\" title=\"unfold\">unfold</a> or make <a rel=\"mw:WikiLink\" href=\"/wiki/visible\" title=\"visible\">visible</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/support\" title=\"support\">support</a> <a rel=\"mw:WikiLink\" href=\"/wiki/structure\" title=\"structure\">structure</a> comprising joined parts or conglomerated particles and intervening open spaces of similar or larger size.",
+          "<span class=\"usage-label-sense\" about=\"#mwt13\" typeof=\"mw:Transclusion\"></span> The arrangement of <a rel=\"mw:WikiLink\" href=\"/wiki/support\" title=\"support\">support</a> <a rel=\"mw:WikiLink\" href=\"/wiki/beam\" title=\"beam\">beams</a> that represent a building's general <a rel=\"mw:WikiLink\" href=\"/wiki/shape\" title=\"shape\">shape</a> and size.",
+          "<span class=\"usage-label-sense\" about=\"#mwt15\" typeof=\"mw:Transclusion\"></span> The larger branches of a <a rel=\"mw:WikiLink\" href=\"/wiki/tree\" title=\"tree\">tree</a> that <a rel=\"mw:WikiLink\" href=\"/wiki/determine\" title=\"determine\">determine</a> its <a rel=\"mw:WikiLink\" href=\"/wiki/shape\" title=\"shape\">shape</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/basic\" title=\"basic\">basic</a> <a rel=\"mw:WikiLink\" href=\"/wiki/conceptual\" title=\"conceptual\">conceptual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/structure\" title=\"structure\">structure</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "deal with",
+      "expression": "figure out",
       "level": "B1",
       "type": "phrasal verb",
-      "meaning": "handle a problem or person",
-      "meaning_fr": "s'occuper de, gérer",
-      "example": "We need to deal with this issue.",
-      "anki_answer": "gérer",
+      "meaning": "understand something after thinking",
+      "meaning_fr": "comprendre, déduire",
+      "example": "I cannot figure out this question.",
+      "anki_answer": "comprendre",
       "tags": [
-        "problems"
+        "thinking"
       ],
-      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
+      "key": "28552ed03dc0e44a54740ed796cc40dc4be67871",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To handle verbally or in some form of artistic expression; to <a rel=\"mw:WikiLink\" href=\"/wiki/address\" title=\"address\">address</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/discuss\" title=\"discuss\">discuss</a> as a <a rel=\"mw:WikiLink\" href=\"/wiki/subject\" title=\"subject\">subject</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt8\" typeof=\"mw:Transclusion\"></span> To take action with <a rel=\"mw:WikiLink\" href=\"/wiki/respect\" title=\"respect\">respect</a> to (someone or something).",
-          "<span class=\"usage-label-sense\" about=\"#mwt15\" typeof=\"mw:Transclusion\"></span> To consider, as an example.",
-          "<span class=\"usage-label-sense\" about=\"#mwt18\" typeof=\"mw:Transclusion\"></span> To confront or overcome any difficulties presented by."
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To come to <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a>; to discover or find a solution; to <a rel=\"mw:WikiLink\" href=\"/wiki/deduce\" title=\"deduce\">deduce</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To calculate."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "coronation",
+      "text": "frontier",
       "aliases": [
-        "coronation",
-        "coronations"
+        "frontier",
+        "frontiers"
       ],
       "level": "B1",
-      "meaning": "the ceremony of crowning a ruler",
-      "meaning_fr": "couronnement",
-      "period": "Middle Ages",
-      "theme": "Politics",
-      "example": "The coronation took place in the cathedral.",
+      "meaning": "the edge of settled land",
+      "meaning_fr": "frontière",
+      "period": "19th century",
+      "theme": "Empire",
+      "example": "The frontier moved west each year.",
       "tags": [
-        "politics"
+        "empire"
       ],
-      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
+      "key": "434a87ac8832f3e2ee093fa85a3797722301dd0f",
       "kind": "word",
       "level": "A1",
-      "text": "sleep",
-      "meaning": "rest with your eyes closed at night",
-      "meaning_fr": "dormir",
-      "example": "Babies sleep a lot.",
-      "phonetic": "/sliːp/",
-      "anki_answer": "dormir",
+      "text": "quick",
+      "meaning": "moving or happening fast",
+      "meaning_fr": "rapide",
+      "example": "We took a quick walk.",
+      "phonetic": "/kwɪk/",
+      "anki_answer": "rapide",
       "tags": [
-        "daily"
+        "speed"
       ]
     },
     {
-      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e",
       "kind": "expression",
       "level": "A1",
-      "text": "watch TV",
-      "meaning": "look at television programmes",
-      "meaning_fr": "regarder la télé",
-      "example": "They watch TV in the evening.",
+      "text": "work at",
+      "meaning": "be employed in a place",
+      "meaning_fr": "travailler à",
+      "example": "My mother works at a hospital.",
       "phonetic": "",
-      "anki_answer": "regarder télé",
+      "anki_answer": "travailler",
       "tags": [
-        "daily"
+        "work"
       ]
     },
     {
-      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
+      "key": "50d0d4049963964d1a7783cb9396549ff6fddf13",
       "kind": "history",
       "level": "A1",
-      "text": "city",
-      "meaning": "a large place where people live and work",
-      "meaning_fr": "ville",
-      "example": "Rome is an ancient city.",
+      "text": "field",
+      "meaning": "an open area of land",
+      "meaning_fr": "champ",
+      "example": "The farmers worked in the field.",
       "phonetic": "",
-      "anki_answer": "ville",
+      "anki_answer": "champ",
       "tags": [
-        "places"
+        "nature"
       ]
     },
     {
-      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
+      "key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0",
       "kind": "word",
       "level": "A2",
-      "text": "pocket",
-      "meaning": "a small bag in clothing",
-      "meaning_fr": "poche",
-      "example": "The key is in my pocket.",
-      "phonetic": "/ˈpɑːkɪt/",
-      "anki_answer": "poche",
+      "text": "quiet",
+      "meaning": "making little noise",
+      "meaning_fr": "calme, silencieux",
+      "example": "The street was quiet at night.",
+      "phonetic": "/ˈkwaɪət/",
+      "anki_answer": "calme",
       "tags": [
-        "clothes"
+        "sound"
       ]
     },
     {
-      "key": "72c14350149902e62661267191dc176e22669331",
+      "key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b",
       "kind": "expression",
       "level": "A2",
-      "text": "be proud of",
-      "meaning": "feel pleased with an achievement",
-      "meaning_fr": "être fier de",
-      "example": "I am proud of my sister.",
+      "text": "be similar to",
+      "meaning": "almost the same as",
+      "meaning_fr": "être similaire à",
+      "example": "Their answers were similar to mine.",
       "phonetic": "",
-      "anki_answer": "fier",
+      "anki_answer": "similaire",
       "tags": [
-        "feelings"
+        "comparison"
       ]
     },
     {
-      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
+      "key": "94ef431a20b36a5b249b549ee72009aea83d242f",
       "kind": "history",
       "level": "A2",
-      "text": "soldier",
-      "meaning": "a person who fights in an army",
-      "meaning_fr": "soldat",
-      "example": "The soldier returned from the campaign.",
+      "text": "trade",
+      "meaning": "the buying and selling of goods",
+      "meaning_fr": "commerce",
+      "example": "Trade linked the two continents.",
       "phonetic": "",
-      "anki_answer": "soldat",
+      "anki_answer": "commerce",
       "tags": [
-        "war"
+        "economy"
       ]
     },
     {
-      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
+      "key": "987172f3a1717a7f1673ac08d38945e9bde8742d",
       "kind": "word",
       "level": "B1",
-      "text": "explain",
-      "meaning": "make something clear to someone",
-      "meaning_fr": "expliquer",
-      "example": "Can you explain this word?",
-      "phonetic": "/ɪkˈspleɪn/",
-      "anki_answer": "expliquer",
+      "text": "framework",
+      "meaning": "a basic structure that supports something",
+      "meaning_fr": "cadre, structure",
+      "example": "The report provides a useful framework.",
+      "phonetic": "/ˈfreɪmwɜːrk/",
+      "anki_answer": "cadre",
       "tags": [
-        "communication"
+        "structure"
       ]
     },
     {
-      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
+      "key": "28552ed03dc0e44a54740ed796cc40dc4be67871",
       "kind": "expression",
       "level": "B1",
-      "text": "deal with",
-      "meaning": "handle a problem or person",
-      "meaning_fr": "s'occuper de, gérer",
-      "example": "We need to deal with this issue.",
+      "text": "figure out",
+      "meaning": "understand something after thinking",
+      "meaning_fr": "comprendre, déduire",
+      "example": "I cannot figure out this question.",
       "phonetic": "",
-      "anki_answer": "gérer",
+      "anki_answer": "comprendre",
       "tags": [
-        "problems"
+        "thinking"
       ]
     },
     {
-      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f",
       "kind": "history",
       "level": "B1",
-      "text": "coronation",
-      "meaning": "the ceremony of crowning a ruler",
-      "meaning_fr": "couronnement",
-      "example": "The coronation took place in the cathedral.",
+      "text": "frontier",
+      "meaning": "the edge of settled land",
+      "meaning_fr": "frontière",
+      "example": "The frontier moved west each year.",
       "phonetic": "",
-      "anki_answer": "couronnement",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
-      "kind": "word",
-      "level": "B2",
-      "text": "significant",
-      "meaning": "large or important enough to notice",
-      "meaning_fr": "significatif",
-      "example": "The difference is significant.",
-      "phonetic": "/sɪɡˈnɪfɪkənt/",
-      "anki_answer": "significatif",
-      "tags": [
-        "importance"
-      ]
-    },
-    {
-      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
-      "kind": "expression",
-      "level": "B2",
-      "text": "get the hang of",
-      "meaning": "learn how to do something",
-      "meaning_fr": "prendre le coup de main",
-      "example": "I am getting the hang of driving.",
-      "phonetic": "",
-      "anki_answer": "coup de main",
-      "tags": [
-        "learning"
-      ]
-    },
-    {
-      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
-      "kind": "history",
-      "level": "B2",
-      "text": "colonialism",
-      "meaning": "a system in which a powerful country controls other territories",
-      "meaning_fr": "colonialisme",
-      "example": "Colonialism transformed the African map.",
-      "phonetic": "",
-      "anki_answer": "colonialisme",
+      "anki_answer": "frontière",
       "tags": [
         "empire"
       ]
     },
     {
-      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
+      "key": "febefae2f9b3ba53e040797d45c301fcf6bb1053",
       "kind": "word",
-      "level": "C1",
-      "text": "rigorous",
-      "meaning": "extremely thorough and careful",
-      "meaning_fr": "rigoureux",
-      "example": "The study followed a rigorous method.",
-      "phonetic": "/ˈrɪɡərəs/",
-      "anki_answer": "rigoureux",
+      "level": "B2",
+      "text": "examine",
+      "meaning": "look at something closely",
+      "meaning_fr": "examiner",
+      "example": "The doctor examined the patient.",
+      "phonetic": "/ɪɡˈzæmɪn/",
+      "anki_answer": "examiner",
       "tags": [
-        "science"
+        "checking"
       ]
     },
     {
-      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "key": "272afaaf0249aa1275073f8cae647d4653be0949",
       "kind": "expression",
-      "level": "C1",
-      "text": "on the same wavelength",
-      "meaning": "thinking in the same way as someone",
-      "meaning_fr": "sur la même longueur d'onde",
-      "example": "We are on the same wavelength about the plan.",
+      "level": "B2",
+      "text": "go the extra mile",
+      "meaning": "make more effort than expected",
+      "meaning_fr": "aller plus loin que prévu",
+      "example": "She always goes the extra mile for clients.",
       "phonetic": "",
-      "anki_answer": "même longueur onde",
+      "anki_answer": "effort supplémentaire",
       "tags": [
-        "agreement"
+        "work"
       ]
     },
     {
-      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "key": "c49ee110b8867917e965de960cf1d22afbc55515",
       "kind": "history",
-      "level": "C1",
-      "text": "nationalism",
-      "meaning": "loyalty to a nation and belief in its interests",
-      "meaning_fr": "nationalisme",
-      "example": "Nationalism grew across Europe.",
+      "level": "B2",
+      "text": "enlightenment",
+      "meaning": "an eighteenth-century movement of reason and learning",
+      "meaning_fr": "Lumières",
+      "example": "The enlightenment encouraged debate.",
       "phonetic": "",
-      "anki_answer": "nationalisme",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
-      "kind": "word",
-      "level": "C2",
-      "text": "dichotomy",
-      "meaning": "a division into two opposing parts",
-      "meaning_fr": "dichotomie",
-      "example": "The article sets up a false dichotomy.",
-      "phonetic": "/daɪˈkɑːtəmi/",
-      "anki_answer": "dichotomie",
-      "tags": [
-        "reasoning"
-      ]
-    },
-    {
-      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
-      "kind": "expression",
-      "level": "C2",
-      "text": "flog a dead horse",
-      "meaning": "waste effort on a hopeless cause",
-      "meaning_fr": "battre l'eau, perdre son temps",
-      "example": "Arguing now is flogging a dead horse.",
-      "phonetic": "",
-      "anki_answer": "perdre temps",
-      "tags": [
-        "futility"
-      ]
-    },
-    {
-      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
-      "kind": "history",
-      "level": "C2",
-      "text": "discontinuity",
-      "meaning": "a break in the continuity of a process",
-      "meaning_fr": "discontinuité",
-      "example": "The novel emphasised historical discontinuity.",
-      "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "Lumières",
       "tags": [
         "culture"
+      ]
+    },
+    {
+      "key": "20d43eff7db9a5430c4248683909836068a55ff2",
+      "kind": "word",
+      "level": "C1",
+      "text": "inevitable",
+      "meaning": "certain to happen",
+      "meaning_fr": "inévitable",
+      "example": "Some mistakes are inevitable.",
+      "phonetic": "/ɪnˈevɪtəbl/",
+      "anki_answer": "inévitable",
+      "tags": [
+        "certainty"
+      ]
+    },
+    {
+      "key": "bc147c24da12cec629ccd32fb761282703a4be28",
+      "kind": "expression",
+      "level": "C1",
+      "text": "pour cold water on",
+      "meaning": "discourage a plan by finding faults",
+      "meaning_fr": "refroidir l'enthousiasme",
+      "example": "He poured cold water on our idea.",
+      "phonetic": "",
+      "anki_answer": "refroidir enthousiasme",
+      "tags": [
+        "discouragement"
+      ]
+    },
+    {
+      "key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0",
+      "kind": "history",
+      "level": "C1",
+      "text": "philosophe",
+      "meaning": "an eighteenth-century French intellectual",
+      "meaning_fr": "philosophe",
+      "example": "Each philosophe defended reasoned debate.",
+      "phonetic": "",
+      "anki_answer": "philosophe",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "618ee0302adeed989252da900e51c393e4f72536",
+      "kind": "word",
+      "level": "C2",
+      "text": "exculpate",
+      "meaning": "show that someone is not guilty",
+      "meaning_fr": "disculper",
+      "example": "The evidence exculpated the driver.",
+      "phonetic": "/ˈekskʌlpeɪt/",
+      "anki_answer": "disculper",
+      "tags": [
+        "justice"
+      ]
+    },
+    {
+      "key": "fdee05c99313cf315b94c9fd888378cb38e861fb",
+      "kind": "expression",
+      "level": "C2",
+      "text": "gild the lily",
+      "meaning": "spoil something by adding unnecessary decoration",
+      "meaning_fr": "en faire trop",
+      "example": "Another clause would gild the lily.",
+      "phonetic": "",
+      "anki_answer": "en faire trop",
+      "tags": [
+        "excess"
+      ]
+    },
+    {
+      "key": "c9c38d6d214666a4287ed823d6f276dc380f15f6",
+      "kind": "history",
+      "level": "C2",
+      "text": "geopolitics",
+      "meaning": "the study of how geography affects politics and power",
+      "meaning_fr": "géopolitique",
+      "example": "Geopolitics shaped the alliance.",
+      "phonetic": "",
+      "anki_answer": "géopolitique",
+      "tags": [
+        "academic"
       ]
     }
   ],
@@ -465,270 +491,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “sleep” mean?",
+      "prompt": "What does “quick” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dormir",
-      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
+      "answer": "rapide",
+      "item_key": "434a87ac8832f3e2ee093fa85a3797722301dd0f"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ TV",
+      "prompt": "Complete the expression: ____ at",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "watch",
-      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
+      "answer": "work",
+      "item_key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “city” belong to?",
+      "prompt": "Which period does “field” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
+      "item_key": "50d0d4049963964d1a7783cb9396549ff6fddf13"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “pocket” mean?",
+      "prompt": "What does “quiet” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "poche",
-      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
+      "answer": "calme, silencieux",
+      "item_key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ of",
+      "prompt": "Complete the expression: be ____ to",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "proud",
-      "item_key": "72c14350149902e62661267191dc176e22669331"
+      "answer": "similar",
+      "item_key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “soldier” belong to?",
+      "prompt": "Which period does “trade” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
+      "item_key": "94ef431a20b36a5b249b549ee72009aea83d242f"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “explain” mean?",
+      "prompt": "What does “framework” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "expliquer",
-      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
+      "answer": "cadre, structure",
+      "item_key": "987172f3a1717a7f1673ac08d38945e9bde8742d"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ with",
+      "prompt": "Complete the expression: ____ out",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "deal",
-      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
+      "answer": "figure",
+      "item_key": "28552ed03dc0e44a54740ed796cc40dc4be67871"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “coronation” belong to?",
+      "prompt": "Which period does “frontier” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
+      "answer": "19th century",
+      "item_key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “significant” mean?",
+      "prompt": "What does “examine” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "significatif",
-      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
+      "answer": "examiner",
+      "item_key": "febefae2f9b3ba53e040797d45c301fcf6bb1053"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get the ____ of",
+      "prompt": "Complete the expression: go the ____ mile",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "hang",
-      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
+      "answer": "extra",
+      "item_key": "272afaaf0249aa1275073f8cae647d4653be0949"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “colonialism” belong to?",
+      "prompt": "Which period does “enlightenment” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
+      "answer": "18th century",
+      "item_key": "c49ee110b8867917e965de960cf1d22afbc55515"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “rigorous” mean?",
+      "prompt": "What does “inevitable” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "rigoureux",
-      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
+      "answer": "inévitable",
+      "item_key": "20d43eff7db9a5430c4248683909836068a55ff2"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the same ____",
+      "prompt": "Complete the expression: pour cold ____ on",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "wavelength",
-      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
+      "answer": "water",
+      "item_key": "bc147c24da12cec629ccd32fb761282703a4be28"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “nationalism” belong to?",
+      "prompt": "Which period does “philosophe” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
+      "answer": "18th century",
+      "item_key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “dichotomy” mean?",
+      "prompt": "What does “exculpate” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dichotomie",
-      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
+      "answer": "disculper",
+      "item_key": "618ee0302adeed989252da900e51c393e4f72536"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: flog a dead ____",
+      "prompt": "Complete the expression: gild the ____",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "horse",
-      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
+      "answer": "lily",
+      "item_key": "fdee05c99313cf315b94c9fd888378cb38e861fb"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “discontinuity” belong to?",
+      "prompt": "Which period does “geopolitics” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Contemporary",
-      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
+      "answer": "Cold War",
+      "item_key": "c9c38d6d214666a4287ed823d6f276dc380f15f6"
     }
   ],
   "tour": [
@@ -736,7 +762,7 @@
       "id": "home",
       "title": "Start at home",
       "body": "Today is your home base: choose a level, read, listen and practise.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -765,7 +791,7 @@
     {
       "id": "anki",
       "title": "Export learned items",
-      "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
       "target": "[data-eds-anki]"
     },
     {
@@ -788,10 +814,12 @@
     "glossary_count": 18,
     "exercise_count": 18,
     "history_periods": [
+      "18th century",
       "General"
     ],
     "history_themes": [
-      "Revolution"
+      "Politics",
+      "War"
     ],
     "search_path": "./data/en/search/2026-11-22.json"
   }

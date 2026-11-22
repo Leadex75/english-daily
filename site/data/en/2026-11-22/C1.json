@@ -5,123 +5,94 @@
   "slots": {
     "news": {
       "text": {
-        "id": 18,
-        "title": "South Korea education minister resigns over exam cheating scandal",
-        "source": "BBC News - World",
-        "source_id": "bbc_news_world",
+        "id": 32,
+        "title": "European Commission accused of sugarcoating figures to release funds to Egypt",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-22T09:20:45",
+        "url": "https://www.theguardian.com/world/2026/nov/18/european-commission-accused-sugarcoating-figures-egypt-loans",
+        "published_at": "2026-11-18T05:00:32",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 479,
+        "word_count": 1241,
         "duration_sec": null,
-        "body_text": "South Korea's Education Minister Choi Kyo-jin has resigned over an exam cheating scandal that shocked the nation. He said he took full responsibility for the confusion caused by last-minute measures aimed at stopping AI-assisted cheating during Thursday's annual college entrance exam, known as Suneung.",
+        "body_text": "The European Commission has been accused of sugarcoating figures to enable it to release funds to Egypt under a landmark pact with the authoritarian government of Abdel Fatah al-Sisi. The charge relates to a €7.4bn deal promised by Ursula von der Leyen, the European Commission president, to al-Sisi on a high-profile visit to Cairo in 2024.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "e3550ec9dbcbe575a3bc33db07fa400137f2b62c",
-        "summary": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos.",
+        "guid_hash": "cd675820022790b1dd71e21a3effd7545c1781a4",
+        "summary": "Leaked documents raise questions about claims Egypt met welfare targets to qualify for €2.5bn in loans The European Commission has been accused of sugarcoating figures to enable it to release funds to Egypt under a landmark pact with the authoritarian government of Abdel Fatah al-Sisi. The charge relates to a €7.4bn deal promised by Ursula von der Leyen , the European Commission president, to al-Sisi on a high-profile visit to Cairo in 2024. The three-year “strategic and comprehensive partnership” was intended to bolster Egypt’s shaky economy, deter migrants from coming to Europe and shore up a region reeling from the 7 October attacks and Israel’s war on Gaza.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "South Korea education minister resigns over exam cheating scandal — BBC News - World",
+        "alt_text": "European Commission accused of sugarcoating figures to release funds to Egypt — The Guardian - World news",
         "duration_formatted": "",
-        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 3
+        "source_url": "https://www.theguardian.com/world/rss",
+        "reading_time_min": 7
       },
       "audio": {
-        "id": 8,
-        "title": "Ben Shapiro reassesses the president he campaigned for | Newsmakers",
+        "id": 5,
+        "title": "The booming cash advance industry trapping America’s small businesses",
         "source": "NPR Up First",
         "source_id": "npr_up_first",
         "category": "news",
-        "url": "",
-        "published_at": "2026-11-19T18:00:00",
+        "url": "https://www.npr.org/2026/11/22/nx-s1-6048657/the-booming-cash-advance-industry-trapping-americas-small-businesses",
+        "published_at": "2026-11-22T08:00:00",
         "level": "C1",
         "slot_level": "C1",
-        "source_level": "C1",
-        "word_count": 217,
-        "duration_sec": 2349,
+        "source_level": "B2",
+        "word_count": 84,
+        "duration_sec": 2199,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/34cda4cf-7f57-4f56-b7a1-8b512ab7f3b9/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_c217b806843c7f04d711b494a2b8350f_40898168.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=34cda4cf-7f57-4f56-b7a1-8b512ab7f3b9&feed=HMwRVgVt&t=podcast&e=nx-s1-6047447&p=510318&d=2349&size=37611774&hash_redirect=1&x-total-bytes=40898168&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__d94b5fd3a22809e5702ed9a06572ceef1ada4a17",
-        "description": "Conservative host Ben Shapiro says he is holding to his conservative values in the unstable era of President Trump. The host of The Ben Shapiro Show voted against Trump in 2016 but also campaigned for him in 2024. He’s disappointed in the president’s tariffs, alleged corruption and the execution of the Iran war. “I regret the way the president has performed,” Shapiro tells host Steve Inskeep in this episode of Newsmakers . “I don't regret my vote. I don't have a time machine.” Shapiro says Trump’s aggressive immigration enforcement and the general “whiff of corruption” that surrounds the White House — specifically the Trump family’s crypto company World Liberty Financial — all contributed to the Republican Party’s midterm losses in Congress, governor's mansions and state legislatures. He believes that Republicans have an “uphill road in 2028” and that Vice President Vance isn’t the ideal Republican presidential candidate. He argues that Vance would shrink Trump’s winning 2024 voting bloc of Hispanics, the working class, women and college-educated individuals. Shapiro points to Secretary of State Marco Rubio as a potential 2028 Republican candidate with broader appeal and a larger coalition. But he says many within the current White House will likely be damaged by association. Shapiro also unpacks his new movie, Confession — featuring Rob Lowe and James Franco — and the recent decline in his show’s YouTube subscriptions.",
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/babf6e5c-0668-400e-9daf-98fb2d1eacb0/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_7631080f358db9ddffa35a4e670b7e5f_38011348.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=babf6e5c-0668-400e-9daf-98fb2d1eacb0&feed=HMwRVgVt&t=podcast&e=nx-s1-6048657&p=510318&d=2199&size=35193483&hash_redirect=1&x-total-bytes=38011348&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__592f7b6576ad553c86e0d9b47d28bf667af067c8",
+        "description": "What would you do if a financial deal you believed was a lifeline blew up your life? When a California entrepreneur landed in the world of merchant cash advances, he found America’s fastest-growing — and least regulated — source of funding for small businesses. Its daily payments and broken promises left him a changed man, back in his teenage bedroom, over $5 million in debt. NPR business correspondent Alina Selyukh joins The Sunday Story to trace his stubborn battle against an industry where borrowers rarely fight back.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "814df2d16dd89dd005ffe86c665c4b200ff93388",
-        "summary": "Conservative host Ben Shapiro says he is holding to his conservative values in the unstable era of President Trump. The host of The Ben Shapiro Show voted against Trump in 2016 but also campaigned for him in 2024. He’s disappointed in the president’s tariffs, alleged corruption and the execution of the Iran war. “I regret the way the president has performed,” Shapiro tells host Steve Inskeep in this episode of Newsmakers . “I don't regret my vote. I don't have a time machine.” Shapiro says Trump’s aggressive immigration enforcement and the general “whiff of corruption” that surrounds the White House — specifically the Trump family’s crypto company World Liberty Financial — all contributed to the Republican Party’s midterm losses in Congress, governor's mansions and state legislatures. He believes that Republicans have an “uphill road in 2028” and that Vice President Vance isn’t the ideal Republican presidential candidate. He argues that Vance would shrink Trump’s winning 2024 voting bloc of Hispanics, the working class, women and college-educated individuals. Shapiro points to Secretary of State Marco Rubio as a potential 2028 Republican candidate with broader appeal and a larger coalition. But he says many within the current White House will likely be damaged by association. Shapiro also unpacks his new movie, Confession — featuring Rob Lowe and James Franco — and the recent decline in his show’s YouTube subscriptions.",
-        "origin": "fresh",
+        "guid_hash": "7e24b2fd9f148bbb4567f2d11c16a4186361fa7f",
+        "summary": "What would you do if a financial deal you believed was a lifeline blew up your life? When a California entrepreneur landed in the world of merchant cash advances, he found America’s fastest-growing — and least regulated — source of funding for small businesses. Its daily payments and broken promises left him a changed man, back in his teenage bedroom, over $5 million in debt. NPR business correspondent Alina Selyukh joins The Sunday Story to trace his stubborn battle against an industry where borrowers rarely fight back.",
+        "origin": "adjacent",
         "badges": [
+          "Closest level: B2",
           "Outside preferred window"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Ben Shapiro reassesses the president he campaigned for | Newsmakers — NPR Up First",
-        "duration_formatted": "39:09",
+        "alt_text": "The booming cash advance industry trapping America’s small businesses — NPR Up First",
+        "duration_formatted": "36:39",
         "source_url": "https://feeds.npr.org/510318/podcast.xml",
         "reading_time_min": 0
       }
     },
     "culture": {
-      "text": {
-        "id": 52,
-        "title": "An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message",
-        "source": "The Guardian - Science",
-        "source_id": "guardian_science",
-        "category": "culture",
-        "url": "https://www.theguardian.com/science/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment",
-        "published_at": "2026-11-19T23:30:26",
-        "level": "C1",
-        "slot_level": "C1",
-        "source_level": "C1",
-        "word_count": 585,
-        "duration_sec": null,
-        "body_text": "Australian scientists have used gravity as a means of communication, in a proof-of-concept experiment involving a snail-paced 1950s elevator, a brick wall and a men’s bathroom.",
-        "audio_url": null,
-        "description": null,
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": true,
-        "guid_hash": "c410430c53972b9daa9857502a526a855a1f2c7e",
-        "summary": "Australian physicists chose to transmit the word ‘gravity’ in binary code through brick wall Get our breaking news email , free app or daily news podcast Australian scientists have used gravity as a means of communication, in a proof-of-concept experiment involving a snail-paced 1950s elevator, a brick wall and a men’s bathroom. Physicists at the University of Queensland have used gravity to transmit a “practically unblockable” message about 70cm through a brick wall, by sending an elevator up and down between two floors and measuring changes in the gravitational field as a result of the movement.",
-        "origin": "fresh",
-        "badges": [],
-        "periods": [],
-        "themes": [],
-        "history_terms": [],
-        "alt_text": "An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message — The Guardian - Science",
-        "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 3
-      },
+      "text": null,
       "audio": {
-        "id": 1001325675,
-        "title": "Shakespeare's Sonnets - Sonnets 21-30",
+        "id": 1725566019,
+        "title": "War of the Worlds - The War of the Worlds - Book 1 - Chapter 03",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/sonnets-by-william-shakespeare/",
-        "published_at": "2026-11-22T11:50:29",
+        "url": "https://librivox.org/the-war-of-the-worlds-by-h-g-wells-group/",
+        "published_at": "2026-11-22T14:50:05",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 28,
-        "duration_sec": 687,
+        "word_count": 262,
+        "duration_sec": 411,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/sonnets_librivox/sonnets_03_shakespeare_64kb.mp3",
-        "description": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
+        "audio_url": "https://www.archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_03_wells_64kb.mp3",
+        "description": "War of the Worlds by . H. G. Wells wrote The War of the Worlds in 1898, when there was much speculation about life on the planet Mars. The book is considered to be one of the first science fiction novels. In the story, an English gentleman narrates the events of a violent and fast paced Martian invasion. The frightening images of people fleeing from gigantic tripod machines and the prospect of lif",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "8284bfa56acdbc19ee555655978a70e984baee17",
-        "summary": "Shakespeare's Sonnets by . Shakespeare’s sonnets comprise a collection of 154 poems in sonnet form that deal with such themes as love, beauty, politics, and mortality. (Summary from wikipedia.org)",
+        "guid_hash": "86a05f045a8aae8f0a35c279d419b16d33e2ddbb",
+        "summary": "War of the Worlds by . H. G. Wells wrote The War of the Worlds in 1898, when there was much speculation about life on the planet Mars. The book is considered to be one of the first science fiction novels. In the story, an English gentleman narrates the events of a violent and fast paced Martian invasion. The frightening images of people fleeing from gigantic tripod machines and the prospect of lif",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (culture)"
@@ -129,8 +100,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Shakespeare's Sonnets - Sonnets 21-30 — LibriVox (culture)",
-        "duration_formatted": "11:27",
+        "alt_text": "War of the Worlds - The War of the Worlds - Book 1 - Chapter 03 — LibriVox (culture)",
+        "duration_formatted": "6:51",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -138,56 +109,36 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1381496821,
-        "title": "Amendments to the United States Constitution (version 2) - Amendments 14-19",
+        "id": 1043785403,
+        "title": "Autobiography of Mother Jones - A Strike in Virginia",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
-        "url": "https://librivox.org/amendments-to-the-united-states-constitution-version-2/",
-        "published_at": "2026-11-21T18:26:51",
+        "url": "https://librivox.org/the-autobiography-of-mother-jones-by-mary-harris-jones/",
+        "published_at": "2026-11-22T11:49:52",
         "level": "C1",
         "slot_level": "C1",
-        "source_level": "C1",
-        "word_count": 38,
-        "duration_sec": 401,
+        "source_level": "B2",
+        "word_count": 49,
+        "duration_sec": 305,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/amendments_2_librivox/amendments_14-19_64kb.mp3",
-        "description": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
+        "audio_url": "https://www.archive.org/download/autobiography_jones_librivox/autobiography_03_mother_jones_64kb.mp3",
+        "description": "Autobiography of Mother Jones by . Mother Jones (Mary Harris Jones) was a legendary labor organizer. She was a founding member of the International Workers of the World (the IWW, or the Wobblies), and was active in the United Mine Workers and the Socialist Party of America. (Summary by Denny)",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "9ddcedaf5b998fb1ef8ca3b485735535695fb6ea",
-        "summary": "Amendments to the United States Constitution (version 2) by . The Constitution has a total of 27 amendments. The first ten, collectively known as the Bill of Rights, were ratified simultaneously. The following seventeen were ratified separately. (Summary from wikipedia.org)",
-        "origin": "reserve",
+        "guid_hash": "d857381ede20065daa741564545d931dc4fda20f",
+        "summary": "Autobiography of Mother Jones by . Mother Jones (Mary Harris Jones) was a legendary labor organizer. She was a founding member of the International Workers of the World (the IWW, or the Wobblies), and was active in the United Mine Workers and the Socialist Party of America. (Summary by Denny)",
+        "origin": "adjacent",
         "badges": [
-          "Reserve · LibriVox (history & biography)"
+          "Reserve · LibriVox (history & biography)",
+          "Closest level: B2"
         ],
-        "periods": [
-          "18th century"
-        ],
-        "themes": [
-          "Politics"
-        ],
-        "history_terms": [
-          {
-            "text": "constitution",
-            "aliases": [
-              "constitution",
-              "charter"
-            ],
-            "level": "B2",
-            "meaning": "the main set of laws and principles of a state",
-            "meaning_fr": "constitution",
-            "period": "18th century",
-            "theme": "Politics",
-            "example": "The constitution protects citizens' rights.",
-            "tags": [
-              "law"
-            ]
-          }
-        ],
-        "alt_text": "Amendments to the United States Constitution (version 2) - Amendments 14-19 — LibriVox (history & biography)",
-        "duration_formatted": "6:41",
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Autobiography of Mother Jones - A Strike in Virginia — LibriVox (history & biography)",
+        "duration_formatted": "5:05",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -197,328 +148,330 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "rigorous",
+      "text": "inevitable",
       "level": "C1",
       "type": "word",
       "pos": "adjective",
-      "phonetic": "/ˈrɪɡərəs/",
-      "meaning": "extremely thorough and careful",
-      "meaning_fr": "rigoureux",
-      "example": "The study followed a rigorous method.",
-      "anki_answer": "rigoureux",
+      "phonetic": "/ɪnˈevɪtəbl/",
+      "meaning": "certain to happen",
+      "meaning_fr": "inévitable",
+      "example": "Some mistakes are inevitable.",
+      "anki_answer": "inévitable",
       "tags": [
-        "science"
+        "certainty"
       ],
-      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
+      "key": "20d43eff7db9a5430c4248683909836068a55ff2",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ˈɹɪɡəɹəs/",
+        "phonetic": "/ɪnˈɛvɪtəbəl/",
         "definitions": [
-          "Showing, causing, or favoring rigour; scrupulously accurate or strict; thorough.",
-          "Severe; intense."
+          "Something that is predictable, necessary, or cannot be avoided.",
+          "Impossible to avoid or prevent.",
+          "Predictable, or always happening."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/rigorous-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/inevitable-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "Showing, causing, or favoring <a rel=\"mw:WikiLink\" href=\"/wiki/rigour\" title=\"rigour\">rigour</a>/<a rel=\"mw:WikiLink\" href=\"/wiki/rigor\" title=\"rigor\">rigor</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/scrupulous\" title=\"scrupulous\">scrupulously</a> <a rel=\"mw:WikiLink\" href=\"/wiki/accurate\" title=\"accurate\">accurate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/strict\" title=\"strict\">strict</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/thorough\" title=\"thorough\">thorough</a>.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/severe\" title=\"severe\">Severe</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/intense\" title=\"intense\">intense</a>."
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt17\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/impossible#English\" title=\"impossible\">Impossible</a></span> to <a rel=\"mw:WikiLink\" href=\"/wiki/avoid\" title=\"avoid\">avoid</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/prevent\" title=\"prevent\">prevent</a>.",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt21\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/predictable#English\" title=\"predictable\">Predictable</a></span> or <a rel=\"mw:WikiLink\" href=\"/wiki/always\" title=\"always\">always</a> <a rel=\"mw:WikiLink\" href=\"/wiki/happening\" title=\"happening\">happening</a>.",
+          "Something that is <a rel=\"mw:WikiLink\" href=\"/wiki/predictable\" title=\"predictable\">predictable</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/necessary\" title=\"necessary\">necessary</a>, or cannot be avoided.",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt163\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/inevitable#English\" class=\"mw-selflink-fragment\">inevitable</a></span>"
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "on the same wavelength",
+      "expression": "pour cold water on",
       "level": "C1",
       "type": "idiom",
-      "meaning": "thinking in the same way as someone",
-      "meaning_fr": "sur la même longueur d'onde",
-      "example": "We are on the same wavelength about the plan.",
-      "anki_answer": "même longueur onde",
+      "meaning": "discourage a plan by finding faults",
+      "meaning_fr": "refroidir l'enthousiasme",
+      "example": "He poured cold water on our idea.",
+      "anki_answer": "refroidir enthousiasme",
       "tags": [
-        "agreement"
+        "discouragement"
       ],
-      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "key": "bc147c24da12cec629ccd32fb761282703a4be28",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "Thinking in the same <a rel=\"mw:WikiLink\" href=\"/wiki/way\" title=\"way\">way</a>; having similar <a rel=\"mw:WikiLink\" href=\"/wiki/thought_process\" title=\"thought process\">thought processes</a> (in general).",
-          "In complete <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a>; having the same <a rel=\"mw:WikiLink\" href=\"/wiki/perspective\" title=\"perspective\">perspective</a> (on a particular issue)."
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> <span class=\"form-of-definition use-with-mention\" about=\"#mwt5\" typeof=\"mw:Transclusion\">Synonym of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/throw_cold_water_on#English\" title=\"throw cold water on\">throw cold water on</a></i></span></span> <span class=\"mention-gloss-paren\" about=\"#mwt6\" typeof=\"mw:Transclusion\">(</span><span class=\"mention-gloss\" about=\"#mwt6\">“to <a rel=\"mw:WikiLink\" href=\"/wiki/belittle#English\" title=\"belittle\">belittle</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/dismiss#English\" title=\"dismiss\">dismiss</a>”</span><span class=\"mention-gloss-paren\" about=\"#mwt6\">)</span>."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "nationalism",
+      "text": "philosophe",
       "aliases": [
-        "nationalism",
-        "patriotic movement"
+        "philosophe",
+        "philosophes"
       ],
       "level": "C1",
-      "meaning": "loyalty to a nation and belief in its interests",
-      "meaning_fr": "nationalisme",
-      "period": "19th century",
-      "theme": "Politics",
-      "example": "Nationalism grew across Europe.",
+      "meaning": "an eighteenth-century French intellectual",
+      "meaning_fr": "philosophe",
+      "period": "18th century",
+      "theme": "Culture",
+      "example": "Each philosophe defended reasoned debate.",
       "tags": [
-        "politics"
+        "culture"
       ],
-      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
+      "key": "434a87ac8832f3e2ee093fa85a3797722301dd0f",
       "kind": "word",
       "level": "A1",
-      "text": "sleep",
-      "meaning": "rest with your eyes closed at night",
-      "meaning_fr": "dormir",
-      "example": "Babies sleep a lot.",
-      "phonetic": "/sliːp/",
-      "anki_answer": "dormir",
+      "text": "quick",
+      "meaning": "moving or happening fast",
+      "meaning_fr": "rapide",
+      "example": "We took a quick walk.",
+      "phonetic": "/kwɪk/",
+      "anki_answer": "rapide",
       "tags": [
-        "daily"
+        "speed"
       ]
     },
     {
-      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e",
       "kind": "expression",
       "level": "A1",
-      "text": "watch TV",
-      "meaning": "look at television programmes",
-      "meaning_fr": "regarder la télé",
-      "example": "They watch TV in the evening.",
+      "text": "work at",
+      "meaning": "be employed in a place",
+      "meaning_fr": "travailler à",
+      "example": "My mother works at a hospital.",
       "phonetic": "",
-      "anki_answer": "regarder télé",
+      "anki_answer": "travailler",
       "tags": [
-        "daily"
+        "work"
       ]
     },
     {
-      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
+      "key": "50d0d4049963964d1a7783cb9396549ff6fddf13",
       "kind": "history",
       "level": "A1",
-      "text": "city",
-      "meaning": "a large place where people live and work",
-      "meaning_fr": "ville",
-      "example": "Rome is an ancient city.",
+      "text": "field",
+      "meaning": "an open area of land",
+      "meaning_fr": "champ",
+      "example": "The farmers worked in the field.",
       "phonetic": "",
-      "anki_answer": "ville",
+      "anki_answer": "champ",
       "tags": [
-        "places"
+        "nature"
       ]
     },
     {
-      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
+      "key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0",
       "kind": "word",
       "level": "A2",
-      "text": "pocket",
-      "meaning": "a small bag in clothing",
-      "meaning_fr": "poche",
-      "example": "The key is in my pocket.",
-      "phonetic": "/ˈpɑːkɪt/",
-      "anki_answer": "poche",
+      "text": "quiet",
+      "meaning": "making little noise",
+      "meaning_fr": "calme, silencieux",
+      "example": "The street was quiet at night.",
+      "phonetic": "/ˈkwaɪət/",
+      "anki_answer": "calme",
       "tags": [
-        "clothes"
+        "sound"
       ]
     },
     {
-      "key": "72c14350149902e62661267191dc176e22669331",
+      "key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b",
       "kind": "expression",
       "level": "A2",
-      "text": "be proud of",
-      "meaning": "feel pleased with an achievement",
-      "meaning_fr": "être fier de",
-      "example": "I am proud of my sister.",
+      "text": "be similar to",
+      "meaning": "almost the same as",
+      "meaning_fr": "être similaire à",
+      "example": "Their answers were similar to mine.",
       "phonetic": "",
-      "anki_answer": "fier",
+      "anki_answer": "similaire",
       "tags": [
-        "feelings"
+        "comparison"
       ]
     },
     {
-      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
+      "key": "94ef431a20b36a5b249b549ee72009aea83d242f",
       "kind": "history",
       "level": "A2",
-      "text": "soldier",
-      "meaning": "a person who fights in an army",
-      "meaning_fr": "soldat",
-      "example": "The soldier returned from the campaign.",
+      "text": "trade",
+      "meaning": "the buying and selling of goods",
+      "meaning_fr": "commerce",
+      "example": "Trade linked the two continents.",
       "phonetic": "",
-      "anki_answer": "soldat",
+      "anki_answer": "commerce",
       "tags": [
-        "war"
+        "economy"
       ]
     },
     {
-      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
+      "key": "987172f3a1717a7f1673ac08d38945e9bde8742d",
       "kind": "word",
       "level": "B1",
-      "text": "explain",
-      "meaning": "make something clear to someone",
-      "meaning_fr": "expliquer",
-      "example": "Can you explain this word?",
-      "phonetic": "/ɪkˈspleɪn/",
-      "anki_answer": "expliquer",
+      "text": "framework",
+      "meaning": "a basic structure that supports something",
+      "meaning_fr": "cadre, structure",
+      "example": "The report provides a useful framework.",
+      "phonetic": "/ˈfreɪmwɜːrk/",
+      "anki_answer": "cadre",
       "tags": [
-        "communication"
+        "structure"
       ]
     },
     {
-      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
+      "key": "28552ed03dc0e44a54740ed796cc40dc4be67871",
       "kind": "expression",
       "level": "B1",
-      "text": "deal with",
-      "meaning": "handle a problem or person",
-      "meaning_fr": "s'occuper de, gérer",
-      "example": "We need to deal with this issue.",
+      "text": "figure out",
+      "meaning": "understand something after thinking",
+      "meaning_fr": "comprendre, déduire",
+      "example": "I cannot figure out this question.",
       "phonetic": "",
-      "anki_answer": "gérer",
+      "anki_answer": "comprendre",
       "tags": [
-        "problems"
+        "thinking"
       ]
     },
     {
-      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f",
       "kind": "history",
       "level": "B1",
-      "text": "coronation",
-      "meaning": "the ceremony of crowning a ruler",
-      "meaning_fr": "couronnement",
-      "example": "The coronation took place in the cathedral.",
+      "text": "frontier",
+      "meaning": "the edge of settled land",
+      "meaning_fr": "frontière",
+      "example": "The frontier moved west each year.",
       "phonetic": "",
-      "anki_answer": "couronnement",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
-      "kind": "word",
-      "level": "B2",
-      "text": "significant",
-      "meaning": "large or important enough to notice",
-      "meaning_fr": "significatif",
-      "example": "The difference is significant.",
-      "phonetic": "/sɪɡˈnɪfɪkənt/",
-      "anki_answer": "significatif",
-      "tags": [
-        "importance"
-      ]
-    },
-    {
-      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
-      "kind": "expression",
-      "level": "B2",
-      "text": "get the hang of",
-      "meaning": "learn how to do something",
-      "meaning_fr": "prendre le coup de main",
-      "example": "I am getting the hang of driving.",
-      "phonetic": "",
-      "anki_answer": "coup de main",
-      "tags": [
-        "learning"
-      ]
-    },
-    {
-      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
-      "kind": "history",
-      "level": "B2",
-      "text": "colonialism",
-      "meaning": "a system in which a powerful country controls other territories",
-      "meaning_fr": "colonialisme",
-      "example": "Colonialism transformed the African map.",
-      "phonetic": "",
-      "anki_answer": "colonialisme",
+      "anki_answer": "frontière",
       "tags": [
         "empire"
       ]
     },
     {
-      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
+      "key": "febefae2f9b3ba53e040797d45c301fcf6bb1053",
       "kind": "word",
-      "level": "C1",
-      "text": "rigorous",
-      "meaning": "extremely thorough and careful",
-      "meaning_fr": "rigoureux",
-      "example": "The study followed a rigorous method.",
-      "phonetic": "/ˈrɪɡərəs/",
-      "anki_answer": "rigoureux",
+      "level": "B2",
+      "text": "examine",
+      "meaning": "look at something closely",
+      "meaning_fr": "examiner",
+      "example": "The doctor examined the patient.",
+      "phonetic": "/ɪɡˈzæmɪn/",
+      "anki_answer": "examiner",
       "tags": [
-        "science"
+        "checking"
       ]
     },
     {
-      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "key": "272afaaf0249aa1275073f8cae647d4653be0949",
       "kind": "expression",
-      "level": "C1",
-      "text": "on the same wavelength",
-      "meaning": "thinking in the same way as someone",
-      "meaning_fr": "sur la même longueur d'onde",
-      "example": "We are on the same wavelength about the plan.",
+      "level": "B2",
+      "text": "go the extra mile",
+      "meaning": "make more effort than expected",
+      "meaning_fr": "aller plus loin que prévu",
+      "example": "She always goes the extra mile for clients.",
       "phonetic": "",
-      "anki_answer": "même longueur onde",
+      "anki_answer": "effort supplémentaire",
       "tags": [
-        "agreement"
+        "work"
       ]
     },
     {
-      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "key": "c49ee110b8867917e965de960cf1d22afbc55515",
       "kind": "history",
-      "level": "C1",
-      "text": "nationalism",
-      "meaning": "loyalty to a nation and belief in its interests",
-      "meaning_fr": "nationalisme",
-      "example": "Nationalism grew across Europe.",
+      "level": "B2",
+      "text": "enlightenment",
+      "meaning": "an eighteenth-century movement of reason and learning",
+      "meaning_fr": "Lumières",
+      "example": "The enlightenment encouraged debate.",
       "phonetic": "",
-      "anki_answer": "nationalisme",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
-      "kind": "word",
-      "level": "C2",
-      "text": "dichotomy",
-      "meaning": "a division into two opposing parts",
-      "meaning_fr": "dichotomie",
-      "example": "The article sets up a false dichotomy.",
-      "phonetic": "/daɪˈkɑːtəmi/",
-      "anki_answer": "dichotomie",
-      "tags": [
-        "reasoning"
-      ]
-    },
-    {
-      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
-      "kind": "expression",
-      "level": "C2",
-      "text": "flog a dead horse",
-      "meaning": "waste effort on a hopeless cause",
-      "meaning_fr": "battre l'eau, perdre son temps",
-      "example": "Arguing now is flogging a dead horse.",
-      "phonetic": "",
-      "anki_answer": "perdre temps",
-      "tags": [
-        "futility"
-      ]
-    },
-    {
-      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
-      "kind": "history",
-      "level": "C2",
-      "text": "discontinuity",
-      "meaning": "a break in the continuity of a process",
-      "meaning_fr": "discontinuité",
-      "example": "The novel emphasised historical discontinuity.",
-      "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "Lumières",
       "tags": [
         "culture"
+      ]
+    },
+    {
+      "key": "20d43eff7db9a5430c4248683909836068a55ff2",
+      "kind": "word",
+      "level": "C1",
+      "text": "inevitable",
+      "meaning": "certain to happen",
+      "meaning_fr": "inévitable",
+      "example": "Some mistakes are inevitable.",
+      "phonetic": "/ɪnˈevɪtəbl/",
+      "anki_answer": "inévitable",
+      "tags": [
+        "certainty"
+      ]
+    },
+    {
+      "key": "bc147c24da12cec629ccd32fb761282703a4be28",
+      "kind": "expression",
+      "level": "C1",
+      "text": "pour cold water on",
+      "meaning": "discourage a plan by finding faults",
+      "meaning_fr": "refroidir l'enthousiasme",
+      "example": "He poured cold water on our idea.",
+      "phonetic": "",
+      "anki_answer": "refroidir enthousiasme",
+      "tags": [
+        "discouragement"
+      ]
+    },
+    {
+      "key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0",
+      "kind": "history",
+      "level": "C1",
+      "text": "philosophe",
+      "meaning": "an eighteenth-century French intellectual",
+      "meaning_fr": "philosophe",
+      "example": "Each philosophe defended reasoned debate.",
+      "phonetic": "",
+      "anki_answer": "philosophe",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "618ee0302adeed989252da900e51c393e4f72536",
+      "kind": "word",
+      "level": "C2",
+      "text": "exculpate",
+      "meaning": "show that someone is not guilty",
+      "meaning_fr": "disculper",
+      "example": "The evidence exculpated the driver.",
+      "phonetic": "/ˈekskʌlpeɪt/",
+      "anki_answer": "disculper",
+      "tags": [
+        "justice"
+      ]
+    },
+    {
+      "key": "fdee05c99313cf315b94c9fd888378cb38e861fb",
+      "kind": "expression",
+      "level": "C2",
+      "text": "gild the lily",
+      "meaning": "spoil something by adding unnecessary decoration",
+      "meaning_fr": "en faire trop",
+      "example": "Another clause would gild the lily.",
+      "phonetic": "",
+      "anki_answer": "en faire trop",
+      "tags": [
+        "excess"
+      ]
+    },
+    {
+      "key": "c9c38d6d214666a4287ed823d6f276dc380f15f6",
+      "kind": "history",
+      "level": "C2",
+      "text": "geopolitics",
+      "meaning": "the study of how geography affects politics and power",
+      "meaning_fr": "géopolitique",
+      "example": "Geopolitics shaped the alliance.",
+      "phonetic": "",
+      "anki_answer": "géopolitique",
+      "tags": [
+        "academic"
       ]
     }
   ],
@@ -528,270 +481,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “sleep” mean?",
+      "prompt": "What does “quick” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dormir",
-      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
+      "answer": "rapide",
+      "item_key": "434a87ac8832f3e2ee093fa85a3797722301dd0f"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ TV",
+      "prompt": "Complete the expression: ____ at",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "watch",
-      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
+      "answer": "work",
+      "item_key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “city” belong to?",
+      "prompt": "Which period does “field” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
+      "item_key": "50d0d4049963964d1a7783cb9396549ff6fddf13"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “pocket” mean?",
+      "prompt": "What does “quiet” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "poche",
-      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
+      "answer": "calme, silencieux",
+      "item_key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ of",
+      "prompt": "Complete the expression: be ____ to",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "proud",
-      "item_key": "72c14350149902e62661267191dc176e22669331"
+      "answer": "similar",
+      "item_key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “soldier” belong to?",
+      "prompt": "Which period does “trade” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
+      "item_key": "94ef431a20b36a5b249b549ee72009aea83d242f"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “explain” mean?",
+      "prompt": "What does “framework” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "expliquer",
-      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
+      "answer": "cadre, structure",
+      "item_key": "987172f3a1717a7f1673ac08d38945e9bde8742d"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ with",
+      "prompt": "Complete the expression: ____ out",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "deal",
-      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
+      "answer": "figure",
+      "item_key": "28552ed03dc0e44a54740ed796cc40dc4be67871"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “coronation” belong to?",
+      "prompt": "Which period does “frontier” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
+      "answer": "19th century",
+      "item_key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “significant” mean?",
+      "prompt": "What does “examine” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "significatif",
-      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
+      "answer": "examiner",
+      "item_key": "febefae2f9b3ba53e040797d45c301fcf6bb1053"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get the ____ of",
+      "prompt": "Complete the expression: go the ____ mile",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "hang",
-      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
+      "answer": "extra",
+      "item_key": "272afaaf0249aa1275073f8cae647d4653be0949"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “colonialism” belong to?",
+      "prompt": "Which period does “enlightenment” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
+      "answer": "18th century",
+      "item_key": "c49ee110b8867917e965de960cf1d22afbc55515"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “rigorous” mean?",
+      "prompt": "What does “inevitable” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "rigoureux",
-      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
+      "answer": "inévitable",
+      "item_key": "20d43eff7db9a5430c4248683909836068a55ff2"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the same ____",
+      "prompt": "Complete the expression: pour cold ____ on",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "wavelength",
-      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
+      "answer": "water",
+      "item_key": "bc147c24da12cec629ccd32fb761282703a4be28"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “nationalism” belong to?",
+      "prompt": "Which period does “philosophe” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
+      "answer": "18th century",
+      "item_key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “dichotomy” mean?",
+      "prompt": "What does “exculpate” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dichotomie",
-      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
+      "answer": "disculper",
+      "item_key": "618ee0302adeed989252da900e51c393e4f72536"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: flog a dead ____",
+      "prompt": "Complete the expression: gild the ____",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "horse",
-      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
+      "answer": "lily",
+      "item_key": "fdee05c99313cf315b94c9fd888378cb38e861fb"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “discontinuity” belong to?",
+      "prompt": "Which period does “geopolitics” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Contemporary",
-      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
+      "answer": "Cold War",
+      "item_key": "c9c38d6d214666a4287ed823d6f276dc380f15f6"
     }
   ],
   "tour": [
@@ -799,7 +752,7 @@
       "id": "home",
       "title": "Start at home",
       "body": "Today is your home base: choose a level, read, listen and practise.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -828,7 +781,7 @@
     {
       "id": "anki",
       "title": "Export learned items",
-      "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
       "target": "[data-eds-anki]"
     },
     {
@@ -840,22 +793,19 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 5,
+    "filled": 4,
     "total": 6,
     "origins": {
-      "reserve": 2,
-      "fresh": 3
+      "reserve": 1,
+      "adjacent": 2,
+      "fresh": 1
     },
-    "source_count": 5,
+    "source_count": 4,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,
-    "history_periods": [
-      "18th century"
-    ],
-    "history_themes": [
-      "Politics"
-    ],
+    "history_periods": [],
+    "history_themes": [],
     "search_path": "./data/en/search/2026-11-22.json"
   }
 }

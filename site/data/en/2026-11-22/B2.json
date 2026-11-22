@@ -5,26 +5,26 @@
   "slots": {
     "news": {
       "text": {
-        "id": 21,
-        "title": "Three killed and dozens missing after fire at Indonesian factory",
-        "source": "BBC News - World",
-        "source_id": "bbc_news_world",
+        "id": 30,
+        "title": "One in four women globally unable to refuse sex within marriage, says UN",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-22T06:05:00",
+        "url": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
+        "published_at": "2026-11-19T04:00:16",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "C1",
-        "word_count": 296,
+        "word_count": 597,
         "duration_sec": null,
-        "body_text": "At least three people have been killed and 36 are still missing after a fire at a confectionary factory in western Java on Saturday. Firefighters were still tackling some flames on Sunday, while rescuers searched for the missing in parts of the damaged building where workers were believed to be trapped.",
+        "body_text": "One in four women around the world have no power of consent if their husband or partner demands sex, according to a UN report.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "2991acb6a7139ddc2ee4d2b328ea09cdce48c832",
-        "summary": "At least three people were killed and 36 are still missing after a fire at a confectionary factory.",
+        "guid_hash": "a955cd657dbbf8ddded238730b633ba2ee758f0b",
+        "summary": "Almost half of women in west and central Africa cannot withhold consent, with girls worst affected, UNFPA finds One in four women around the world have no power of consent if their husband or partner demands sex, according to a UN report. In west and central Africa, almost half of women (45%) are not able to say no in their own marriage, while a third of women (33%) in east and southern Africa and in Arab states face the same predicament. In Latin America and the Caribbean, one in 10 women are not able to refuse sex, said the report by the UN Population Fund ( UNFPA ) published on Thursday.",
         "origin": "adjacent",
         "badges": [
           "Closest level: C1"
@@ -32,38 +32,38 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Three killed and dozens missing after fire at Indonesian factory — BBC News - World",
+        "alt_text": "One in four women globally unable to refuse sex within marriage, says UN — The Guardian - World news",
         "duration_formatted": "",
-        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 2
+        "source_url": "https://www.theguardian.com/world/rss",
+        "reading_time_min": 3
       },
       "audio": {
         "id": 3,
-        "title": "6am ET, November 22 | The latest headlines from NPR",
+        "title": "8am ET, November 22 | The latest headlines from NPR",
         "source": "NPR News Now",
         "source_id": "npr_news_now",
         "category": "news",
         "url": "",
-        "published_at": "2026-11-22T11:09:43",
+        "published_at": "2026-11-22T13:09:34",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
         "word_count": 23,
         "duration_sec": 280,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/161f459f-a764-4781-9859-11d6e8b87dfb/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_0dd66054573c2d39418021809f17fb3a_5226195.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=161f459f-a764-4781-9859-11d6e8b87dfb&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-0600-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5226195&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__f2330189a61baad1e3b54e4ae925e5cbf9128bd5",
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/0758912e-c780-400b-bc41-18950689c5ad/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_aa36b03243a3137d1fbf013583d5860b_5070713.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=0758912e-c780-400b-bc41-18950689c5ad&feed=O9WlY7a5&t=podcast&e=nx-s1-20261122-0800-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5070713&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_325__b3e41bd6a9c8b5ef09cf4487ab365faa3ebe4b61",
         "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "e41de1f9b9bc2235a16790f5d087979d8f6c0496",
+        "guid_hash": "498f362d003e5880f3071cd13e1026e1852adb06",
         "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "6am ET, November 22 | The latest headlines from NPR — NPR News Now",
+        "alt_text": "8am ET, November 22 | The latest headlines from NPR — NPR News Now",
         "duration_formatted": "4:40",
         "source_url": "https://feeds.npr.org/500005/podcast.xml",
         "reading_time_min": 0
@@ -71,59 +71,60 @@
     },
     "culture": {
       "text": {
-        "id": 55,
-        "title": "CEO of funding agency for UK science and research criticised by union over cuts",
-        "source": "The Guardian - Science",
-        "source_id": "guardian_science",
+        "id": 58,
+        "title": "Mairzy_Doates",
+        "source": "Wikipedia - Featured article",
+        "source_id": "wikipedia_featured",
         "category": "culture",
-        "url": "https://www.theguardian.com/education/2026/nov/22/prospect-union-leader-uk-funding-agency-science-research-ukri",
-        "published_at": "2026-11-22T12:00:28",
+        "url": "https://en.wikipedia.org/wiki/Mairzy_Doates",
+        "published_at": "2026-11-22T00:00:00",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "C1",
-        "word_count": 762,
+        "word_count": 1747,
         "duration_sec": null,
-        "body_text": "A trade union that counts scientists and engineers among its members says it has lost confidence in the leader of the UK’s national funding agency for science and research, citing concerns about plans for major cuts.",
+        "body_text": "Mairzy Doates (April 1, 1976 – May 25, 1998) was an American Thoroughbred racehorse and multiple graded stakes winner, most remembered for her victory at the inaugural Japan Cup in 1981. Owned by New York City art dealer Arno D. Schefler and trained primarily by future U.S. Racing Hall of Fame inductee Horatio Luro, she competed successfully across the United States from 1978 to 1981, including winning the Yerba Buena Handicap twice. In her final race, she traveled to Tokyo to contest the first Japan Cup, an international invitational established by the Japan Racing Association (JRA) to assess Japanese horses' performance against the rest of the world. She defeated the field in a course-record time, which alongside the strength of the other foreign horses, was widely considered as evidence of the disparity between Japanese and international horse-racing standards. Her performance is frequently credited as the catalyst for the JRA's long-term initiative to improve the caliber of Japanese breeding and racing. Following her victory, which made her 1981's highest earning mare globally, Mairzy Doates retired from racing to become a broodmare in Midway, Kentucky. She gave birth to nine foals before dying at the age of 22. == Early life == Mairzy Doates was born April 1, 1976, bred by Preston and Patrick Madden, a pair of horse-training brothers who operated out of Hamburg Place in Kentucky. Her sire was Nodouble, a multiple graded stakes winner who had retired to stud in 1970, and later became the leading sire in North America in 1981. In contrast, her dam, Avalanche Lily, had only raced lightly and never won, but she was a foal of leading sire and 1960 Grass Horse of the Year T. V. Lark, and a descendant of Man o' War. Mairzy Doates's mare line traces directly to Cinq a Sept, winner of the 1927 Irish Oaks, making Mairzy Doates a distant relative of Secretariat. Two years later in 1978, Arno D. Schefler, a New York art dealer and investment banker who had dealt in Thoroughbred horses since 1967, purchased Mairzy Doates as a filly from the Maddens. Schefler was the one to name her, referencing the novelty song \"Mairzy Doats\" made popular in a 1943 recording by bandleader Al Trace. She was briefly trained by Angel Penna and then Mickey Preger, but by winter, Schefler had handed Mairzy Doates over to Horatio Luro, a veteran horse-trainer with whom Schefler had become acquainted in the early 1970s. Mairzy Doates was brought to Luro's stable in Miami, where she had to be closely monitored while training due to the weakness of her ankles. == Racing history == Mairzy Doates raced once as a two-year-old, finishing sixth out of ten at the Aqueduct Racetrack on December 22, 1978. Over two months, Mairzy Doates vied several times for a maiden race victory, eventually winning on her fourth attempt on February 4, 1979. Her first graded race, the Grade 3 Ruthless Stakes on February 18, went poorly; Mairzy Doates remained thoroughly distanced from the other horses for the entirety of the race until her jockey eased her before the finish line. Nevertheless, Mairzy Doates continued to race throughout the rest of the year, winning several allowance races and placing third in the Grade 1 Alabama Stakes. By December, and at her final race of the year at the Busher Handicap, commentators had noted Mairzy Doates's improved performance. The next year, Schefler wished to race Mairzy Doates on the West Coast due to more racing opportunities being available in the area. Luro suggested that Mike Whittingham, the son of the U.S. Racing Hall of Fame trainer Charlie Whittingham, take over as trainer during their Western campaign. Mairzy Doates did not manage to place higher than fifth in both of her next two graded races: the Grade 1 Santa Barbara Handicap on March 23 and the Grade 2 Gamely Handicap on May 4. However, on May 26, 1980, she achieved her first graded victory at the Golden Gate's Grade 3 Yerba Buena Handicap in dominant fashion, beating her opponents \"about as easily as a horse can\" in the 1+3⁄8 mi race by six lengths and with a winning time of 2:15. In July, Mairzy Doates was announced as an entrant in the Grade 2 Matchmaker Stakes, a race so-called as the top three placers' owners were given the choice of several high-end stallions for stud services, but had to withdraw after suffering a high fever. Around this time, Mairzy Doates was injured and returned to train under Luro; she was not able to race again until December 22, where she won an allowance race by three lengths over Quick As Lightning. In her final year of racing in 1981, Mairzy Doates again failed to win a Grade 1 race in her three attempts, her best performance being a narrow defeat by a nose in the Santa Barbara Handicap. In her following races, she subsequently achieved a triple run of graded victories. She repeated her previous win in the Yerba Buena Handicap with a similar large margin of victory, then edged out Love Sign in the Grade 3 New York Handicap. Finally, at the Matchmaker Stakes, she made up for her withdrawal from the previous year's race with a 1+1⁄4 length victory over Honey Fox. Schefler considered using his awarded choice of stallion to pair leading stallion Raja Baba with Mairzy Doates, although this plan ultimately fell through and Raja Baba was instead paired with another of Schefler's mares. By July, Mairzy Doates was considered a leading contender for turf-racing fillies in North America, and placed in her final two Grade 2 races in the year. === Japan Cup === In November 1981, Mairzy Doates was one of several American horses invited to Tokyo to take part in the first running of the Japan Cup, an international race over 2,400m designed by the Japan Racing Association (JRA) to assess the performance of their horses against the rest of the world on home turf. While the JRA had attempted to invite several prominent horses such as John Henry, the final line-up of international horses was ultimately deemed unremarkable, while Japan fielded an \"all star cast\", including the year's autumn Tennō Shō's top three finishers. The most favored entrant of the international group was The Very One, the same horse to whom Mairzy Doates had lost that year's Santa Barbara Handicap by a nose. The Very One had previously run against Mairzy Doates on three other occasions, each time either winning or placing higher than her. While Mairzy Doates's team accepted the invitation, Luro, now 80 years old and recovering from pneumonia, sent John Fulton to cover as trainer. On the morning of the race, November 22, Schefler and Fulton nearly pulled Mairzy Doates, stating to the race's officials that the ground was too firm for her to run on safely and demanding the entire track be watered. Since this was not possible at such short notice and may have provoked objections from the Japanese jockeys, the race's organizers pretended to agree, placating Schefler and Fulton by saying that the track would be watered throughout the day. In reality, the active sprinklers they pointed out as proof were only for the track's flowerbeds, and the track itself was never touched. In the race, Mairzy Doates stayed in the mid-pack until the final turn before surging forward in the home straight, overtaking her rivals to win by one length over the Canadian horse Frost King. The Very One finished third, while the leading Japanese runner, Gold Spencer, placed fifth. Her time was 2:25.3, taking a full second off the previous course record set by Green Grass, and came with a purse prize of $295,455 (equivalent to $1,046,000 in 2025). == Retirement == Following her victory in Japan, Mairzy Doates's team decided against running her in the 1982 Santa Barbara Handicap, and her retirement was announced by the end of January 1982. At the time of her career's end, she was the sixteenth-highest money earner in the world for female horses, as well as the highest-earning mare globally for 1981. When discussing his horse's achievements to The Press of Atlantic City, Schefler praised her tenacity and determination: Mairzy Doates was an all-time wonderful mare. There may have been better fillies in history, but the great thing about her was her enormous courage. She would give you everything she ever had. It is one thing to get a filly, any horse, to give you that courage every once in a while. But Mairzy Doates gave it all of the time. After her retirement, Mairzy Doates was transferred to Hurstland Farm in Midway, Kentucky, to stand as a breeding mare, and was quickly paired with the popular French sire Lyphard. Schefler had hoped for a filly to name her 'Dozy Doates'. Instead, Mairzy Doates's first foal was a colt called Mairzy Dancer, born May 5, 1983. She gave birth to seven more foals in America, before transferring to stand in France in 1994. There she had two more foals, Foam and Nachtigall. Two days after giving birth to Nachtigall, Mairzy Doates died on May 25, 1998, at the age of 22. Mairzy Doates was not considered a successful broodmare. Many of her offspring did not race, and those who did rarely won. However, her final foal, Nachtigall, sired Etoile Nocturne in 2004, a graded winner through the 2009 Grade 3 Hamburg Trophy ran in Hamburg. Divina Preciosa, one of Mairzy Doates' great-granddaughters through Hanging Valley, won several Grade 1 races in Chile in 2013, and retired as a broodmare in Japan. == Legacy == There are no excuses left. Japan's top-class horses were easily defeated by second-rate American horses in a race where all the conditions were advantageous to Japanese horses. The idea of \"raising strong horses\" will have to be started all over again. While described by Japanese racing journalists in retrospective accounts as a \"second-rate mare\", Mairzy Doates won at the Japan Cup in a course-record time. Her victory, alongside the performance of the other foreign horses, greatly shocked the Japanese horse racing industry. Expectations in Japan before the race had been mixed; some in the JRA had anticipated that their horses would not be on par with the rest of the world, while others had felt the Japanese horses would hold the advantage. Regardless, the lopsided end-result was still viewed as a complete defeat. The realization that the nation's best horses had been defeated by a mare considered an unexceptional stakes winner in North America was seen as a profound humiliation. As such, the event has frequently been credited as a turning point in the JRA's efforts to improve the quality of their racing stock, both in breeding and racing ability. === Honors === Since Mairzy Doates's retirement, several one-off races at different racecourses in the United States have been named after her. == Race record == == Pedigree == == Notes == == References == === Bibliography ===",
         "audio_url": null,
         "description": null,
-        "license": "proprietary",
-        "attribution": null,
-        "truncated": true,
-        "guid_hash": "b6e5cdcc9c6e20495067d4a611f6705794878858",
-        "summary": "Exclusive: Prospect’s Mike Clancy tells Ian Chapman at UKRI that union has ‘lost confidence’ in his leadership A trade union that counts scientists and engineers among its members says it has lost confidence in the leader of the UK’s national funding agency for science and research, citing concerns about plans for major cuts. The letter from Mike Clancy, the general secretary of Prospect, to Ian Chapman, the chief executive of UK Research and Innovation (UKRI), is the latest development in a row over changes in funding for projects and research facilities.",
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "8a65265c674846693fdac08f6b98d89633e346b0",
+        "summary": "Mairzy Doates (April 1, 1976 – May 25, 1998) was an American Thoroughbred racehorse and multiple graded stakes winner, most remembered for her victory at the inaugural Japan Cup in 1981. Owned by New York City art dealer Arno D. Schefler and trained primarily by future U.S. Racing Hall of Fame inductee Horatio Luro, she competed successfully across the United States from 1978 to 1981, including wi",
         "origin": "adjacent",
         "badges": [
-          "Closest level: C1"
+          "Closest level: C1",
+          "Outside preferred window"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "CEO of funding agency for UK science and research criticised by union over cuts — The Guardian - Science",
+        "alt_text": "Mairzy_Doates — Wikipedia - Featured article",
         "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 4
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/featured",
+        "reading_time_min": 9
       },
       "audio": {
-        "id": 1186046530,
-        "title": "American Indian Fairy Tales - The Little Boy And Girl In The Clouds",
+        "id": 1116839955,
+        "title": "Short Poetry Collection 004 - The Aged Pilot Man",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/american-indian-fairy-tales-by-william-trowbridge-larned/",
-        "published_at": "2026-11-22T13:06:18",
+        "url": "https://librivox.org/short-poetry-collection-004/",
+        "published_at": "2026-11-22T14:49:49",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 112,
-        "duration_sec": 832,
+        "word_count": 13,
+        "duration_sec": 407,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/american_indian_tales_librivox/american_indian_fairy_tales_03_64kb.mp3",
-        "description": "American Indian Fairy Tales by , . With no written language, Native Americans living in the Lake Superior region passed their cultural identity down through the generations by way of stories. Far more than mere tales to amuse children, they passed along the collective wisdom of the tribes. In the 1830s, government Indian Agent and ethnologist Henry R Schoolcraft learned the language of these peopl",
+        "audio_url": "https://www.archive.org/download/shortpoetry_004_librivox/aged_pilot_man_twain_ep_64kb.mp3",
+        "description": "Short Poetry Collection 004 by . LibriVox’s Short Poetry Collection 004: a collection of 20 public-domain poems.",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "2e599aa76b84d5a1ea0046768b7d847f4d6eef72",
-        "summary": "American Indian Fairy Tales by , . With no written language, Native Americans living in the Lake Superior region passed their cultural identity down through the generations by way of stories. Far more than mere tales to amuse children, they passed along the collective wisdom of the tribes. In the 1830s, government Indian Agent and ethnologist Henry R Schoolcraft learned the language of these peopl",
+        "guid_hash": "72329fbb196aea50284dbe3bb5c9e4e927ae7ab7",
+        "summary": "Short Poetry Collection 004 by . LibriVox’s Short Poetry Collection 004: a collection of 20 public-domain poems.",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (culture)"
@@ -131,8 +132,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "American Indian Fairy Tales - The Little Boy And Girl In The Clouds — LibriVox (culture)",
-        "duration_formatted": "13:52",
+        "alt_text": "Short Poetry Collection 004 - The Aged Pilot Man — LibriVox (culture)",
+        "duration_formatted": "6:47",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -140,8 +141,8 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1704923341,
-        "title": "Autobiography of Mother Jones - The Haymarket Tragedy",
+        "id": 1889963131,
+        "title": "Autobiography of Mother Jones - The Early Years",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
@@ -151,24 +152,45 @@
         "slot_level": "B2",
         "source_level": "B2",
         "word_count": 49,
-        "duration_sec": 577,
+        "duration_sec": 518,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/autobiography_jones_librivox/autobiography_02_mother_jones_64kb.mp3",
+        "audio_url": "https://www.archive.org/download/autobiography_jones_librivox/autobiography_01_mother_jones_64kb.mp3",
         "description": "Autobiography of Mother Jones by . Mother Jones (Mary Harris Jones) was a legendary labor organizer. She was a founding member of the International Workers of the World (the IWW, or the Wobblies), and was active in the United Mine Workers and the Socialist Party of America. (Summary by Denny)",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "673bcef7a20d6a2f7b550c20efebd5f1ec878491",
+        "guid_hash": "b85c4abd01ed3591c7672659577b1dd348cd6920",
         "summary": "Autobiography of Mother Jones by . Mother Jones (Mary Harris Jones) was a legendary labor organizer. She was a founding member of the International Workers of the World (the IWW, or the Wobblies), and was active in the United Mine Workers and the Socialist Party of America. (Summary by Denny)",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (history & biography)"
         ],
-        "periods": [],
-        "themes": [],
-        "history_terms": [],
-        "alt_text": "Autobiography of Mother Jones - The Haymarket Tragedy — LibriVox (history & biography)",
-        "duration_formatted": "9:37",
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "year",
+            "aliases": [
+              "year",
+              "years"
+            ],
+            "level": "A1",
+            "meaning": "a period of twelve months",
+            "meaning_fr": "année",
+            "period": "General",
+            "theme": "Society",
+            "example": "The treaty lasted only one year.",
+            "tags": [
+              "time"
+            ]
+          }
+        ],
+        "alt_text": "Autobiography of Mother Jones - The Early Years — LibriVox (history & biography)",
+        "duration_formatted": "8:38",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -178,330 +200,334 @@
     "date": "2026-11-22",
     "level": "B2",
     "word": {
-      "text": "significant",
+      "text": "examine",
       "level": "B2",
       "type": "word",
-      "pos": "adjective",
-      "phonetic": "/sɪɡˈnɪfɪkənt/",
-      "meaning": "large or important enough to notice",
-      "meaning_fr": "significatif",
-      "example": "The difference is significant.",
-      "anki_answer": "significatif",
+      "pos": "verb",
+      "phonetic": "/ɪɡˈzæmɪn/",
+      "meaning": "look at something closely",
+      "meaning_fr": "examiner",
+      "example": "The doctor examined the patient.",
+      "anki_answer": "examiner",
       "tags": [
-        "importance"
+        "checking"
       ],
-      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
+      "key": "febefae2f9b3ba53e040797d45c301fcf6bb1053",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/sɪɡˈnɪ.fɪ.kənt/",
+        "phonetic": "/ɪɡˈzæmɪn/",
         "definitions": [
-          "That which has significance; a sign; a token; a symbol.",
-          "Signifying something; carrying meaning.",
-          "Having a covert or hidden meaning.",
-          "Having a noticeable or major effect; notable."
+          "To observe or inspect carefully or critically",
+          "To check the health or condition of something or someone",
+          "To determine the aptitude, skills or qualifications of someone by subjecting them to an examination",
+          "To interrogate"
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/significant-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/examine-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/signify\" title=\"signify\">Signifying</a> something; carrying <a rel=\"mw:WikiLink\" href=\"/wiki/meaning\" title=\"meaning\">meaning</a>.",
-          "Having a <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/major\" title=\"major\">major</a> effect.",
-          "Reasonably <a rel=\"mw:WikiLink\" href=\"/wiki/large\" title=\"large\">large</a> in number or amount.",
-          "Having a <a rel=\"mw:WikiLink\" href=\"/wiki/covert\" title=\"covert\">covert</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/hidden\" title=\"hidden\">hidden</a> meaning."
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/observe\" title=\"observe\">observe</a> <a rel=\"mw:WikiLink\" href=\"/wiki/careful\" title=\"careful\">carefully</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/critical\" title=\"critical\">critically</a> to learn about someone or something.",
+          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/check\" title=\"check\">check</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/health\" title=\"health\">health</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/condition\" title=\"condition\">condition</a> of something or someone.",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/determine\" title=\"determine\">determine</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/aptitude\" title=\"aptitude\">aptitude</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/skill\" title=\"skill\">skills</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/qualification\" title=\"qualification\">qualifications</a> of someone by subjecting them to an <a rel=\"mw:WikiLink\" href=\"/wiki/examination\" title=\"examination\">examination</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/interrogate\" title=\"interrogate\">interrogate</a>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "get the hang of",
+      "expression": "go the extra mile",
       "level": "B2",
       "type": "idiom",
-      "meaning": "learn how to do something",
-      "meaning_fr": "prendre le coup de main",
-      "example": "I am getting the hang of driving.",
-      "anki_answer": "coup de main",
+      "meaning": "make more effort than expected",
+      "meaning_fr": "aller plus loin que prévu",
+      "example": "She always goes the extra mile for clients.",
+      "anki_answer": "effort supplémentaire",
       "tags": [
-        "learning"
+        "work"
       ],
-      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
+      "key": "272afaaf0249aa1275073f8cae647d4653be0949",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To begin to <a rel=\"mw:WikiLink\" href=\"/wiki/understand\" title=\"understand\">understand</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/manage\" title=\"manage\">manage</a> at a basic level; to learn to handle with some skill."
+          "<span class=\"usage-label-sense\" about=\"#mwt9\" typeof=\"mw:Transclusion\"></span> To make an extra <a rel=\"mw:WikiLink\" href=\"/wiki/effort\" title=\"effort\">effort</a>; to do a particularly good job."
         ]
       },
-      "audio": null
+      "audio": {
+        "title": "Go the extra mile",
+        "url": "http://www.bbc.co.uk/programmes/p02rs271",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02rs273.mp3"
+      }
     },
     "history": {
-      "text": "colonialism",
+      "text": "enlightenment",
       "aliases": [
-        "colonialism"
+        "enlightenment"
       ],
       "level": "B2",
-      "meaning": "a system in which a powerful country controls other territories",
-      "meaning_fr": "colonialisme",
-      "period": "19th century",
-      "theme": "Empire",
-      "example": "Colonialism transformed the African map.",
+      "meaning": "an eighteenth-century movement of reason and learning",
+      "meaning_fr": "Lumières",
+      "period": "18th century",
+      "theme": "Culture",
+      "example": "The enlightenment encouraged debate.",
       "tags": [
-        "empire"
+        "culture"
       ],
-      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
+      "key": "c49ee110b8867917e965de960cf1d22afbc55515",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "430174216ca7c459382b7bce525cd5d3b6507207",
+      "key": "434a87ac8832f3e2ee093fa85a3797722301dd0f",
       "kind": "word",
       "level": "A1",
-      "text": "sleep",
-      "meaning": "rest with your eyes closed at night",
-      "meaning_fr": "dormir",
-      "example": "Babies sleep a lot.",
-      "phonetic": "/sliːp/",
-      "anki_answer": "dormir",
+      "text": "quick",
+      "meaning": "moving or happening fast",
+      "meaning_fr": "rapide",
+      "example": "We took a quick walk.",
+      "phonetic": "/kwɪk/",
+      "anki_answer": "rapide",
       "tags": [
-        "daily"
+        "speed"
       ]
     },
     {
-      "key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9",
+      "key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e",
       "kind": "expression",
       "level": "A1",
-      "text": "watch TV",
-      "meaning": "look at television programmes",
-      "meaning_fr": "regarder la télé",
-      "example": "They watch TV in the evening.",
+      "text": "work at",
+      "meaning": "be employed in a place",
+      "meaning_fr": "travailler à",
+      "example": "My mother works at a hospital.",
       "phonetic": "",
-      "anki_answer": "regarder télé",
+      "anki_answer": "travailler",
       "tags": [
-        "daily"
+        "work"
       ]
     },
     {
-      "key": "92da38e2632253849bdccbf2c6f1517e0b0031dc",
+      "key": "50d0d4049963964d1a7783cb9396549ff6fddf13",
       "kind": "history",
       "level": "A1",
-      "text": "city",
-      "meaning": "a large place where people live and work",
-      "meaning_fr": "ville",
-      "example": "Rome is an ancient city.",
+      "text": "field",
+      "meaning": "an open area of land",
+      "meaning_fr": "champ",
+      "example": "The farmers worked in the field.",
       "phonetic": "",
-      "anki_answer": "ville",
+      "anki_answer": "champ",
       "tags": [
-        "places"
+        "nature"
       ]
     },
     {
-      "key": "b869bba7829cd29ceca1f2a778b59853799bbcea",
+      "key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0",
       "kind": "word",
       "level": "A2",
-      "text": "pocket",
-      "meaning": "a small bag in clothing",
-      "meaning_fr": "poche",
-      "example": "The key is in my pocket.",
-      "phonetic": "/ˈpɑːkɪt/",
-      "anki_answer": "poche",
+      "text": "quiet",
+      "meaning": "making little noise",
+      "meaning_fr": "calme, silencieux",
+      "example": "The street was quiet at night.",
+      "phonetic": "/ˈkwaɪət/",
+      "anki_answer": "calme",
       "tags": [
-        "clothes"
+        "sound"
       ]
     },
     {
-      "key": "72c14350149902e62661267191dc176e22669331",
+      "key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b",
       "kind": "expression",
       "level": "A2",
-      "text": "be proud of",
-      "meaning": "feel pleased with an achievement",
-      "meaning_fr": "être fier de",
-      "example": "I am proud of my sister.",
+      "text": "be similar to",
+      "meaning": "almost the same as",
+      "meaning_fr": "être similaire à",
+      "example": "Their answers were similar to mine.",
       "phonetic": "",
-      "anki_answer": "fier",
+      "anki_answer": "similaire",
       "tags": [
-        "feelings"
+        "comparison"
       ]
     },
     {
-      "key": "af7a30936fbaead3d630feb5ebdf063023879749",
+      "key": "94ef431a20b36a5b249b549ee72009aea83d242f",
       "kind": "history",
       "level": "A2",
-      "text": "soldier",
-      "meaning": "a person who fights in an army",
-      "meaning_fr": "soldat",
-      "example": "The soldier returned from the campaign.",
+      "text": "trade",
+      "meaning": "the buying and selling of goods",
+      "meaning_fr": "commerce",
+      "example": "Trade linked the two continents.",
       "phonetic": "",
-      "anki_answer": "soldat",
+      "anki_answer": "commerce",
       "tags": [
-        "war"
+        "economy"
       ]
     },
     {
-      "key": "12fea5c0338025c7b364963081cf14f7b90fb015",
+      "key": "987172f3a1717a7f1673ac08d38945e9bde8742d",
       "kind": "word",
       "level": "B1",
-      "text": "explain",
-      "meaning": "make something clear to someone",
-      "meaning_fr": "expliquer",
-      "example": "Can you explain this word?",
-      "phonetic": "/ɪkˈspleɪn/",
-      "anki_answer": "expliquer",
+      "text": "framework",
+      "meaning": "a basic structure that supports something",
+      "meaning_fr": "cadre, structure",
+      "example": "The report provides a useful framework.",
+      "phonetic": "/ˈfreɪmwɜːrk/",
+      "anki_answer": "cadre",
       "tags": [
-        "communication"
+        "structure"
       ]
     },
     {
-      "key": "28e24268b273fbbd95ba4904c6f8a0c40342585c",
+      "key": "28552ed03dc0e44a54740ed796cc40dc4be67871",
       "kind": "expression",
       "level": "B1",
-      "text": "deal with",
-      "meaning": "handle a problem or person",
-      "meaning_fr": "s'occuper de, gérer",
-      "example": "We need to deal with this issue.",
+      "text": "figure out",
+      "meaning": "understand something after thinking",
+      "meaning_fr": "comprendre, déduire",
+      "example": "I cannot figure out this question.",
       "phonetic": "",
-      "anki_answer": "gérer",
+      "anki_answer": "comprendre",
       "tags": [
-        "problems"
+        "thinking"
       ]
     },
     {
-      "key": "e1d213ecb43ecd4f13828c452e10d6677945d614",
+      "key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f",
       "kind": "history",
       "level": "B1",
-      "text": "coronation",
-      "meaning": "the ceremony of crowning a ruler",
-      "meaning_fr": "couronnement",
-      "example": "The coronation took place in the cathedral.",
+      "text": "frontier",
+      "meaning": "the edge of settled land",
+      "meaning_fr": "frontière",
+      "example": "The frontier moved west each year.",
       "phonetic": "",
-      "anki_answer": "couronnement",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "0e521207bc12d30ded619e92fa9d16715d40c9f2",
-      "kind": "word",
-      "level": "B2",
-      "text": "significant",
-      "meaning": "large or important enough to notice",
-      "meaning_fr": "significatif",
-      "example": "The difference is significant.",
-      "phonetic": "/sɪɡˈnɪfɪkənt/",
-      "anki_answer": "significatif",
-      "tags": [
-        "importance"
-      ]
-    },
-    {
-      "key": "0603a9a714217e9848f0698aa815004a521d3fef",
-      "kind": "expression",
-      "level": "B2",
-      "text": "get the hang of",
-      "meaning": "learn how to do something",
-      "meaning_fr": "prendre le coup de main",
-      "example": "I am getting the hang of driving.",
-      "phonetic": "",
-      "anki_answer": "coup de main",
-      "tags": [
-        "learning"
-      ]
-    },
-    {
-      "key": "afb9d9d408755936927a09c7e58fc59ee6de4e91",
-      "kind": "history",
-      "level": "B2",
-      "text": "colonialism",
-      "meaning": "a system in which a powerful country controls other territories",
-      "meaning_fr": "colonialisme",
-      "example": "Colonialism transformed the African map.",
-      "phonetic": "",
-      "anki_answer": "colonialisme",
+      "anki_answer": "frontière",
       "tags": [
         "empire"
       ]
     },
     {
-      "key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71",
+      "key": "febefae2f9b3ba53e040797d45c301fcf6bb1053",
       "kind": "word",
-      "level": "C1",
-      "text": "rigorous",
-      "meaning": "extremely thorough and careful",
-      "meaning_fr": "rigoureux",
-      "example": "The study followed a rigorous method.",
-      "phonetic": "/ˈrɪɡərəs/",
-      "anki_answer": "rigoureux",
+      "level": "B2",
+      "text": "examine",
+      "meaning": "look at something closely",
+      "meaning_fr": "examiner",
+      "example": "The doctor examined the patient.",
+      "phonetic": "/ɪɡˈzæmɪn/",
+      "anki_answer": "examiner",
       "tags": [
-        "science"
+        "checking"
       ]
     },
     {
-      "key": "f609a2e57cbb53655ff832306556090b2c382d87",
+      "key": "272afaaf0249aa1275073f8cae647d4653be0949",
       "kind": "expression",
-      "level": "C1",
-      "text": "on the same wavelength",
-      "meaning": "thinking in the same way as someone",
-      "meaning_fr": "sur la même longueur d'onde",
-      "example": "We are on the same wavelength about the plan.",
+      "level": "B2",
+      "text": "go the extra mile",
+      "meaning": "make more effort than expected",
+      "meaning_fr": "aller plus loin que prévu",
+      "example": "She always goes the extra mile for clients.",
       "phonetic": "",
-      "anki_answer": "même longueur onde",
+      "anki_answer": "effort supplémentaire",
       "tags": [
-        "agreement"
+        "work"
       ]
     },
     {
-      "key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f",
+      "key": "c49ee110b8867917e965de960cf1d22afbc55515",
       "kind": "history",
-      "level": "C1",
-      "text": "nationalism",
-      "meaning": "loyalty to a nation and belief in its interests",
-      "meaning_fr": "nationalisme",
-      "example": "Nationalism grew across Europe.",
+      "level": "B2",
+      "text": "enlightenment",
+      "meaning": "an eighteenth-century movement of reason and learning",
+      "meaning_fr": "Lumières",
+      "example": "The enlightenment encouraged debate.",
       "phonetic": "",
-      "anki_answer": "nationalisme",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "a905d39f82eea18d60a94986c51498cb588201a9",
-      "kind": "word",
-      "level": "C2",
-      "text": "dichotomy",
-      "meaning": "a division into two opposing parts",
-      "meaning_fr": "dichotomie",
-      "example": "The article sets up a false dichotomy.",
-      "phonetic": "/daɪˈkɑːtəmi/",
-      "anki_answer": "dichotomie",
-      "tags": [
-        "reasoning"
-      ]
-    },
-    {
-      "key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef",
-      "kind": "expression",
-      "level": "C2",
-      "text": "flog a dead horse",
-      "meaning": "waste effort on a hopeless cause",
-      "meaning_fr": "battre l'eau, perdre son temps",
-      "example": "Arguing now is flogging a dead horse.",
-      "phonetic": "",
-      "anki_answer": "perdre temps",
-      "tags": [
-        "futility"
-      ]
-    },
-    {
-      "key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf",
-      "kind": "history",
-      "level": "C2",
-      "text": "discontinuity",
-      "meaning": "a break in the continuity of a process",
-      "meaning_fr": "discontinuité",
-      "example": "The novel emphasised historical discontinuity.",
-      "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "Lumières",
       "tags": [
         "culture"
+      ]
+    },
+    {
+      "key": "20d43eff7db9a5430c4248683909836068a55ff2",
+      "kind": "word",
+      "level": "C1",
+      "text": "inevitable",
+      "meaning": "certain to happen",
+      "meaning_fr": "inévitable",
+      "example": "Some mistakes are inevitable.",
+      "phonetic": "/ɪnˈevɪtəbl/",
+      "anki_answer": "inévitable",
+      "tags": [
+        "certainty"
+      ]
+    },
+    {
+      "key": "bc147c24da12cec629ccd32fb761282703a4be28",
+      "kind": "expression",
+      "level": "C1",
+      "text": "pour cold water on",
+      "meaning": "discourage a plan by finding faults",
+      "meaning_fr": "refroidir l'enthousiasme",
+      "example": "He poured cold water on our idea.",
+      "phonetic": "",
+      "anki_answer": "refroidir enthousiasme",
+      "tags": [
+        "discouragement"
+      ]
+    },
+    {
+      "key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0",
+      "kind": "history",
+      "level": "C1",
+      "text": "philosophe",
+      "meaning": "an eighteenth-century French intellectual",
+      "meaning_fr": "philosophe",
+      "example": "Each philosophe defended reasoned debate.",
+      "phonetic": "",
+      "anki_answer": "philosophe",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "618ee0302adeed989252da900e51c393e4f72536",
+      "kind": "word",
+      "level": "C2",
+      "text": "exculpate",
+      "meaning": "show that someone is not guilty",
+      "meaning_fr": "disculper",
+      "example": "The evidence exculpated the driver.",
+      "phonetic": "/ˈekskʌlpeɪt/",
+      "anki_answer": "disculper",
+      "tags": [
+        "justice"
+      ]
+    },
+    {
+      "key": "fdee05c99313cf315b94c9fd888378cb38e861fb",
+      "kind": "expression",
+      "level": "C2",
+      "text": "gild the lily",
+      "meaning": "spoil something by adding unnecessary decoration",
+      "meaning_fr": "en faire trop",
+      "example": "Another clause would gild the lily.",
+      "phonetic": "",
+      "anki_answer": "en faire trop",
+      "tags": [
+        "excess"
+      ]
+    },
+    {
+      "key": "c9c38d6d214666a4287ed823d6f276dc380f15f6",
+      "kind": "history",
+      "level": "C2",
+      "text": "geopolitics",
+      "meaning": "the study of how geography affects politics and power",
+      "meaning_fr": "géopolitique",
+      "example": "Geopolitics shaped the alliance.",
+      "phonetic": "",
+      "anki_answer": "géopolitique",
+      "tags": [
+        "academic"
       ]
     }
   ],
@@ -511,270 +537,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “sleep” mean?",
+      "prompt": "What does “quick” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dormir",
-      "item_key": "430174216ca7c459382b7bce525cd5d3b6507207"
+      "answer": "rapide",
+      "item_key": "434a87ac8832f3e2ee093fa85a3797722301dd0f"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: ____ TV",
+      "prompt": "Complete the expression: ____ at",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "watch",
-      "item_key": "7fdd2c12f7c5160d957075777c7b04d9ed318bd9"
+      "answer": "work",
+      "item_key": "1a0915290f8d8120ab2632b1a4cbfb5fb680996e"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “city” belong to?",
+      "prompt": "Which period does “field” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "92da38e2632253849bdccbf2c6f1517e0b0031dc"
+      "item_key": "50d0d4049963964d1a7783cb9396549ff6fddf13"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “pocket” mean?",
+      "prompt": "What does “quiet” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "poche",
-      "item_key": "b869bba7829cd29ceca1f2a778b59853799bbcea"
+      "answer": "calme, silencieux",
+      "item_key": "7df4dd0a92abf3cc55a561cb3bd8351ddb8342c0"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ of",
+      "prompt": "Complete the expression: be ____ to",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "proud",
-      "item_key": "72c14350149902e62661267191dc176e22669331"
+      "answer": "similar",
+      "item_key": "cb06d2cef8fbc99d4b893eb0ee5f9828834f4b4b"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “soldier” belong to?",
+      "prompt": "Which period does “trade” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
       "answer": "General",
-      "item_key": "af7a30936fbaead3d630feb5ebdf063023879749"
+      "item_key": "94ef431a20b36a5b249b549ee72009aea83d242f"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “explain” mean?",
+      "prompt": "What does “framework” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "expliquer",
-      "item_key": "12fea5c0338025c7b364963081cf14f7b90fb015"
+      "answer": "cadre, structure",
+      "item_key": "987172f3a1717a7f1673ac08d38945e9bde8742d"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ with",
+      "prompt": "Complete the expression: ____ out",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "deal",
-      "item_key": "28e24268b273fbbd95ba4904c6f8a0c40342585c"
+      "answer": "figure",
+      "item_key": "28552ed03dc0e44a54740ed796cc40dc4be67871"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “coronation” belong to?",
+      "prompt": "Which period does “frontier” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e1d213ecb43ecd4f13828c452e10d6677945d614"
+      "answer": "19th century",
+      "item_key": "f7bca5edcca2f5edf57d2ed150c4ee487701d07f"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “significant” mean?",
+      "prompt": "What does “examine” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "significatif",
-      "item_key": "0e521207bc12d30ded619e92fa9d16715d40c9f2"
+      "answer": "examiner",
+      "item_key": "febefae2f9b3ba53e040797d45c301fcf6bb1053"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: get the ____ of",
+      "prompt": "Complete the expression: go the ____ mile",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "hang",
-      "item_key": "0603a9a714217e9848f0698aa815004a521d3fef"
+      "answer": "extra",
+      "item_key": "272afaaf0249aa1275073f8cae647d4653be0949"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “colonialism” belong to?",
+      "prompt": "Which period does “enlightenment” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "afb9d9d408755936927a09c7e58fc59ee6de4e91"
+      "answer": "18th century",
+      "item_key": "c49ee110b8867917e965de960cf1d22afbc55515"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “rigorous” mean?",
+      "prompt": "What does “inevitable” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "rigoureux",
-      "item_key": "9a6360a8ba432595ccc3a29125dbd6e6209b5a71"
+      "answer": "inévitable",
+      "item_key": "20d43eff7db9a5430c4248683909836068a55ff2"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: on the same ____",
+      "prompt": "Complete the expression: pour cold ____ on",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "wavelength",
-      "item_key": "f609a2e57cbb53655ff832306556090b2c382d87"
+      "answer": "water",
+      "item_key": "bc147c24da12cec629ccd32fb761282703a4be28"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “nationalism” belong to?",
+      "prompt": "Which period does “philosophe” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "19th century",
-      "item_key": "d7222e644390dbcc721fb4b51da5abd4fd6a118f"
+      "answer": "18th century",
+      "item_key": "a0d4e82a61cb05542cfe3a69853e90c1c53030c0"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “dichotomy” mean?",
+      "prompt": "What does “exculpate” mean?",
       "options": [
-        "dichotomie",
-        "dormir",
-        "expliquer",
-        "poche"
+        "cadre, structure",
+        "calme, silencieux",
+        "disculper",
+        "examiner"
       ],
-      "answer": "dichotomie",
-      "item_key": "a905d39f82eea18d60a94986c51498cb588201a9"
+      "answer": "disculper",
+      "item_key": "618ee0302adeed989252da900e51c393e4f72536"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: flog a dead ____",
+      "prompt": "Complete the expression: gild the ____",
       "options": [
-        "dead",
-        "deal",
-        "flog",
-        "get"
+        "cold",
+        "extra",
+        "figure",
+        "gild"
       ],
-      "answer": "horse",
-      "item_key": "c9261a328706cb9daec6bc8ba4b36e5ef9fad6ef"
+      "answer": "lily",
+      "item_key": "fdee05c99313cf315b94c9fd888378cb38e861fb"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “discontinuity” belong to?",
+      "prompt": "Which period does “geopolitics” belong to?",
       "options": [
+        "18th century",
         "19th century",
-        "Contemporary",
-        "General",
-        "Middle Ages"
+        "Cold War",
+        "General"
       ],
-      "answer": "Contemporary",
-      "item_key": "84bbe10e5d397ace37cc5ea22f6c5e1c2d9108cf"
+      "answer": "Cold War",
+      "item_key": "c9c38d6d214666a4287ed823d6f276dc380f15f6"
     }
   ],
   "tour": [
@@ -782,7 +808,7 @@
       "id": "home",
       "title": "Start at home",
       "body": "Today is your home base: choose a level, read, listen and practise.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -811,7 +837,7 @@
     {
       "id": "anki",
       "title": "Export learned items",
-      "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
       "target": "[data-eds-anki]"
     },
     {
@@ -834,8 +860,12 @@
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,
-    "history_periods": [],
-    "history_themes": [],
+    "history_periods": [
+      "General"
+    ],
+    "history_themes": [
+      "Society"
+    ],
     "search_path": "./data/en/search/2026-11-22.json"
   }
 }

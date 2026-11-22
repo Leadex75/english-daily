@@ -5,7 +5,7 @@
   "slots": {
     "news": {
       "text": {
-        "id": 1898864368,
+        "id": 1897947581,
         "title": "La ciudad reconstruida tras unas devastadoras riadas que se convirtió en escaparate del gobierno del líder rebelde libio",
         "source": "BBC Mundo (texto)",
         "source_id": "es_bbc_mundo_text",
@@ -23,7 +23,7 @@
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "e1b0efc97758281f91f895eb43520aa485e6d174",
+        "guid_hash": "ea273bd36a0168cdbf1ad4ce664f511f08cc45ab",
         "summary": "La extraordinaria reconstrucción de Derna está siendo utilizada por Khalifa Haftar y sus hijos como ejemplo para el resto de Libia.",
         "origin": "fresh",
         "badges": [
@@ -38,25 +38,25 @@
         "reading_time_min": 9
       },
       "audio": {
-        "id": 1898864381,
-        "title": "24 Horas - Informativo y Análisis información - 20/11/26",
+        "id": 1897947598,
+        "title": "24 Horas - Mirada al mundo con Agus Morales / El diario del corresponsal de Antonio Delgado - 18/11/26",
         "source": "RNE 24 horas",
         "source_id": "es_rne_24_horas",
         "category": "news",
-        "url": "https://www.rtve.es/play/audios/24-horas/22-201126-ptr/17324547/",
-        "published_at": "2026-11-20T21:00:00",
+        "url": "https://www.rtve.es/play/audios/24-horas/mirada-mundo-agus-morales-diario-del-corresponsal-antonio-delgado-18-11-26/17320801/",
+        "published_at": "2026-11-18T20:30:00",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "B2",
         "word_count": 1,
-        "duration_sec": 3605,
+        "duration_sec": 1801,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/9/7/1795212484579.mp3?idasset=17324547&download-token=1795353425_0x041a258e6db41a8a46fc241a58b9a18a1449e5a0",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/8/5/1795036589158.mp3?idasset=17320801&download-token=1795359651_0xe32c02c3b544f73a317b4973ae474dbd9d54f417",
         "description": "null",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "9e9b07b26d9050073b7bcd8effab3953dc4c9a4d",
+        "guid_hash": "aaa1cf15f777723cd315b2bf43f47a9c08ac43ed",
         "summary": "null",
         "origin": "adjacent",
         "badges": [
@@ -66,8 +66,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "24 Horas - Informativo y Análisis información - 20/11/26 — RNE 24 horas",
-        "duration_formatted": "60:05",
+        "alt_text": "24 Horas - Mirada al mundo con Agus Morales / El diario del corresponsal de Antonio Delgado - 18/11/26 — RNE 24 horas",
+        "duration_formatted": "30:01",
         "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
         "reading_time_min": 0
       }
@@ -75,26 +75,26 @@
     "culture": {
       "text": null,
       "audio": {
-        "id": 1898864403,
-        "title": "El Ojo Crítico - Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026",
+        "id": 1897947611,
+        "title": "El arte comprometido de Avelino Sala",
         "source": "RNE El ojo crítico",
         "source_id": "es_rne_el_ojo_critico",
         "category": "culture",
-        "url": "https://www.rtve.es/play/audios/el-ojo-critico/nenas-theatre-premio-ojo-critico-teatro-2026/17324090/",
-        "published_at": "2026-11-20T16:52:43",
+        "url": "https://www.rtve.es/play/audios/el-ojo-critico/arte-comprometido-avelino-sala/17325474/",
+        "published_at": "2026-11-22T12:59:15",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 391,
-        "duration_sec": 2590,
+        "word_count": 91,
+        "duration_sec": 3171,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SELOJO/mp3/4/3/1795191622034.mp3?idasset=17324090&download-token=1795353452_0x3df387680f231eb7fb625b55e7b59f95b36de9ec",
-        "description": "Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 , protagonizan nuestro programa. Conversamos con Ane Sagüés Abad y Cristina Tomás Olaya , integrantes de esta joven compañía navarra fundada en 2022, que ha desarrollado un lenguaje escénico propio a través del humor, la performance, la improvisación y la provocación. El jurado reconoce su capacidad para cuestionar los cánones teatrales, renovar los lenguajes escénicos y conectar con públicos que habitualmente no acuden al teatro. Hablamos de su manera de crear, de su relación con los espectadores y de espectáculos como “ Torcidas” , “ Manual para dos cuerpos desorientadxs” y “ Sexiliadas” , en los que exploran los roles de poder, la feminidad, el cuerpo, las contradicciones sociales y las experiencias de quienes se ven obligados a abandonar su lugar de origen por su sexualidad. Los viernes repasamos las novedades musicales con Carlos García Fernández . Nos detenemos en la banda sonora de “ Grand Theft Auto VI” (GTA VI) , con artistas como Dua Lipa, Lana Del Rey, Travis Scott, Justice, Tame Impala y Rauw Alejandro. Escuchamos también las nuevas propuestas de Ganges, Pau Vallvé, María Pelaé y Raya Real , además del regreso de Sanguijuelas del Guadiana . Carlos nos presenta, además, “ TEBEO” , el pódcast de RTVE que ha realizado junto a Marcos Díaz Martín sobre la historia de la pintora Marisa Roësset Velasco y la soprano Lola Rodríguez Aragón. Viajamos a A Coruña , donde la Fundación MOP presenta “ The Hamster Becomes the Problem” , una exposición dedicada al universo creativo de David Sims , uno de los grandes nombres de la fotografía de moda contemporánea. Nuestra colaboradora Conxita Casanovas , directora de “ Va de cine” en Radio 4 y Radio 5, repasa los estrenos de la cartelera. Hablamos de “ El mal padre” , de Roberto Bueso, con Eduard Fernández; “ El director” , de Dani de la Orden, basada en la novela de David Jiménez; Rose , protagonizada por Sandra Hüller; el thriller “ Adolescencia, sexo y muerte en el",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SELOJO/mp3/4/2/1795352301324.mp3?idasset=17325474&download-token=1795359674_0xf7f2109708f85a9725fd6bd8e4f8100581dc2655",
+        "description": "El artista Avelino Sala nos presenta \"La Tempestad\", una exposición que llega a LABoral Centro de Arte y que reflexiona sobre las tensiones sociales de hoy en día. En la segunda parte del programa, conversamos con Elena Torres, profesora de Musicología de la Universidad Complutense, sobre la figura de Manuel de Falla, con motivo del 150.º aniversario del nacimiento del compositor gaditano. Cerramos el programa con nuestro colaborador Joaquín Pérez Azaústre y su espacio Gentes del 27 , en el que recuperamos la memoria y la obra del poeta Pedro Garfías. Escuchar audio",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "4f140b4032a64642eee6fea891de45d15dd2d065",
-        "summary": "Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 , protagonizan nuestro programa. Conversamos con Ane Sagüés Abad y Cristina Tomás Olaya , integrantes de esta joven compañía navarra fundada en 2022, que ha desarrollado un lenguaje escénico propio a través del humor, la performance, la improvisación y la provocación. El jurado reconoce su capacidad para cuestionar los cánones teatrales, renovar los lenguajes escénicos y conectar con públicos que habitualmente no acuden al teatro. Hablamos de su manera de crear, de su relación con los espectadores y de espectáculos como “ Torcidas” , “ Manual para dos cuerpos desorientadxs” y “ Sexiliadas” , en los que exploran los roles de poder, la feminidad, el cuerpo, las contradicciones sociales y las experiencias de quienes se ven obligados a abandonar su lugar de origen por su sexualidad. Los viernes repasamos las novedades musicales con Carlos García Fernández . Nos detenemos en la banda sonora de “ Grand Theft Auto VI” (GTA VI) , con artistas como Dua Lipa, Lana Del Rey, Travis Scott, Justice, Tame Impala y Rauw Alejandro. Escuchamos también las nuevas propuestas de Ganges, Pau Vallvé, María Pelaé y Raya Real , además del regreso de Sanguijuelas del Guadiana . Carlos nos presenta, además, “ TEBEO” , el pódcast de RTVE que ha realizado junto a Marcos Díaz Martín sobre la historia de la pintora Marisa Roësset Velasco y la soprano Lola Rodríguez Aragón. Viajamos a A Coruña , donde la Fundación MOP presenta “ The Hamster Becomes the Problem” , una exposición dedicada al universo creativo de David Sims , uno de los grandes nombres de la fotografía de moda contemporánea. Nuestra colaboradora Conxita Casanovas , directora de “ Va de cine” en Radio 4 y Radio 5, repasa los estrenos de la cartelera. Hablamos de “ El mal padre” , de Roberto Bueso, con Eduard Fernández; “ El director” , de Dani de la Orden, basada en la novela de David Jiménez; Rose , protagonizada por Sandra Hüller; el thriller “ Adolescencia, sexo y muerte en el",
+        "guid_hash": "70346b3fe7ee424eedf0e31bbe8e6ffc3c0aa3fe",
+        "summary": "El artista Avelino Sala nos presenta \"La Tempestad\", una exposición que llega a LABoral Centro de Arte y que reflexiona sobre las tensiones sociales de hoy en día. En la segunda parte del programa, conversamos con Elena Torres, profesora de Musicología de la Universidad Complutense, sobre la figura de Manuel de Falla, con motivo del 150.º aniversario del nacimiento del compositor gaditano. Cerramos el programa con nuestro colaborador Joaquín Pérez Azaústre y su espacio Gentes del 27 , en el que recuperamos la memoria y la obra del poeta Pedro Garfías. Escuchar audio",
         "origin": "fresh",
         "badges": [
           "Outside preferred window"
@@ -102,8 +102,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "El Ojo Crítico - Las Nenas Theatre, Premio El Ojo Crítico de Teatro 2026 — RNE El ojo crítico",
-        "duration_formatted": "43:10",
+        "alt_text": "El arte comprometido de Avelino Sala — RNE El ojo crítico",
+        "duration_formatted": "52:51",
         "source_url": "https://www.rtve.es/api/programas/1957/audios.rss",
         "reading_time_min": 0
       }
@@ -117,310 +117,311 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "modernización",
+      "text": "nacionalismo",
       "level": "C1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/moðeɾniθaˈθjon/",
-      "meaning": "el proceso de adaptar algo a la época moderna",
-      "meaning_fr": "modernisation",
-      "example": "La modernización del ejército fue costosa.",
-      "anki_answer": "modernización",
+      "phonetic": "/naθjonaˈlismo/",
+      "meaning": "la defensa de la identidad y los intereses de una nación",
+      "meaning_fr": "nationalisme",
+      "example": "El nacionalismo creció en el siglo XIX.",
+      "anki_answer": "nacionalismo",
       "tags": [
-        "sociedad"
+        "política"
       ],
-      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
+      "key": "e55d2707b2aebc7a038a40179fc5442d5958bcee",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "socavar la legitimidad",
+      "expression": "matizar una afirmación",
       "level": "C1",
       "type": "collocation",
-      "meaning": "debilitar el derecho a gobernar",
-      "meaning_fr": "miner la légitimité",
-      "example": "La corrupción socavó la legitimidad.",
-      "anki_answer": "socavar la legitimidad",
+      "meaning": "suavizar o precisar lo dicho",
+      "meaning_fr": "nuancer une affirmation",
+      "example": "Matizó su afirmación posteriormente.",
+      "anki_answer": "matizar una afirmación",
       "tags": [
-        "política"
+        "precisión"
       ],
-      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
+      "key": "0de124a4ce34371301ee16cb15dda35bb2b98372",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "mercantilismo",
+      "text": "modernización",
       "aliases": [
-        "mercantilismo"
+        "modernización",
+        "modernizacion"
       ],
       "level": "C1",
-      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "period": "Edad Moderna",
-      "theme": "Economía",
-      "example": "El mercantilismo guiaba la política colonial.",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "period": "Siglo XIX",
+      "theme": "Sociedad",
+      "example": "La modernización del ejército fue costosa.",
       "tags": [
-        "economía"
+        "sociedad"
       ],
-      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
+      "key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
+      "key": "7e33016591e237aba95df7159df23175446ede6b",
       "kind": "word",
       "level": "A1",
-      "text": "pequeño",
-      "meaning": "que no es grande",
-      "meaning_fr": "petit",
-      "example": "Viven en un piso pequeño.",
-      "phonetic": "/peˈkeɲo/",
-      "anki_answer": "pequeño",
+      "text": "profesor",
+      "meaning": "una persona que enseña",
+      "meaning_fr": "professeur",
+      "example": "Nuestro profesor es muy amable.",
+      "phonetic": "/pɾofeˈsoɾ/",
+      "anki_answer": "profesor",
       "tags": [
-        "tamaño"
+        "educación"
       ]
     },
     {
-      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
+      "key": "86e9623979beb2495ad268a78b92aafcf92e0a16",
       "kind": "expression",
       "level": "A1",
-      "text": "de nada",
-      "meaning": "respuesta a las gracias",
-      "meaning_fr": "de rien",
-      "example": "De nada, me alegra haber ayudado.",
+      "text": "desayunar",
+      "meaning": "comer la primera comida del día",
+      "meaning_fr": "prendre le petit déjeuner",
+      "example": "Desayunamos a las ocho.",
       "phonetic": "",
-      "anki_answer": "de nada",
+      "anki_answer": "desayunar",
       "tags": [
-        "cortesía"
+        "comida"
       ]
     },
     {
-      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
+      "key": "791783ba8853bf9df3fcff967ba0a630c9c79162",
       "kind": "history",
       "level": "A1",
-      "text": "bandera",
-      "meaning": "una tela usada como símbolo",
-      "meaning_fr": "drapeau",
-      "example": "La bandera se izó sobre la ciudad.",
+      "text": "barco",
+      "meaning": "un vehículo que navega por el agua",
+      "meaning_fr": "bateau",
+      "example": "El barco zarpó al amanecer.",
       "phonetic": "",
-      "anki_answer": "drapeau",
-      "tags": [
-        "símbolos"
-      ]
-    },
-    {
-      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
-      "kind": "word",
-      "level": "A2",
-      "text": "viaje",
-      "meaning": "el acto de viajar a otro lugar",
-      "meaning_fr": "voyage",
-      "example": "El viaje duró tres horas.",
-      "phonetic": "/ˈbjaχe/",
-      "anki_answer": "viaje",
+      "anki_answer": "bateau",
       "tags": [
         "viajes"
       ]
     },
     {
-      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
-      "kind": "expression",
+      "key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7",
+      "kind": "word",
       "level": "A2",
-      "text": "echar de menos",
-      "meaning": "sentir la ausencia de alguien",
-      "meaning_fr": "avoir le mal du pays, regretter",
-      "example": "Echo de menos a mi familia.",
-      "phonetic": "",
-      "anki_answer": "echar de menos",
+      "text": "olvidar",
+      "meaning": "no conservar algo en la memoria",
+      "meaning_fr": "oublier",
+      "example": "No olvides las llaves.",
+      "phonetic": "/olbiˈdaɾ/",
+      "anki_answer": "olvidar",
       "tags": [
-        "sentimientos"
+        "memoria"
       ]
     },
     {
-      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
+      "key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0",
+      "kind": "expression",
+      "level": "A2",
+      "text": "encender la luz",
+      "meaning": "poner en funcionamiento una luz",
+      "meaning_fr": "allumer la lumière",
+      "example": "Enciende la luz, está oscuro.",
+      "phonetic": "",
+      "anki_answer": "encender la luz",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7",
       "kind": "history",
       "level": "A2",
-      "text": "monasterio",
-      "meaning": "un lugar donde viven y trabajan los monjes",
-      "meaning_fr": "monastère",
-      "example": "Los monjes copiaban libros en el monasterio.",
+      "text": "puerto",
+      "meaning": "un lugar seguro para los barcos",
+      "meaning_fr": "port",
+      "example": "Los barcos esperaban en el puerto.",
       "phonetic": "",
-      "anki_answer": "monastère",
+      "anki_answer": "port",
+      "tags": [
+        "comercio"
+      ]
+    },
+    {
+      "key": "540524bae30dc97b4bd410c7d1dc7eab226e8675",
+      "kind": "word",
+      "level": "B1",
+      "text": "frontera",
+      "meaning": "el límite entre dos territorios",
+      "meaning_fr": "frontière",
+      "example": "La frontera avanzaba cada año.",
+      "phonetic": "/fɾonˈteɾa/",
+      "anki_answer": "frontera",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "ea86fd6ad303fef94325c8f096c4926d112ea094",
+      "kind": "expression",
+      "level": "B1",
+      "text": "hacer frente a",
+      "meaning": "afrontar una dificultad",
+      "meaning_fr": "faire face à",
+      "example": "Hicieron frente a la sequía.",
+      "phonetic": "",
+      "anki_answer": "hacer frente a",
+      "tags": [
+        "problemas"
+      ]
+    },
+    {
+      "key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronación",
+      "meaning": "la ceremonia de coronar a un soberano",
+      "meaning_fr": "couronnement",
+      "example": "La coronación tuvo lugar en la catedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "7818fca3b3151be48052640f5d60ed2e770db837",
+      "kind": "word",
+      "level": "B2",
+      "text": "laico",
+      "meaning": "que no está vinculado a una religión",
+      "meaning_fr": "laïque",
+      "example": "Las escuelas se volvieron laicas.",
+      "phonetic": "/ˈlaiko/",
+      "anki_answer": "laico",
       "tags": [
         "religión"
       ]
     },
     {
-      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
-      "kind": "word",
-      "level": "B1",
-      "text": "costumbre",
-      "meaning": "una tradición seguida por un grupo",
-      "meaning_fr": "coutume",
-      "example": "La costumbre sobrevivió siglos.",
-      "phonetic": "/kosˈtumbre/",
-      "anki_answer": "costumbre",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
-      "kind": "expression",
-      "level": "B1",
-      "text": "hablar en nombre de",
-      "meaning": "representar a un grupo",
-      "meaning_fr": "parler au nom de",
-      "example": "Habló en nombre de todos.",
-      "phonetic": "",
-      "anki_answer": "hablar en nombre de",
-      "tags": [
-        "representación"
-      ]
-    },
-    {
-      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquista",
-      "meaning": "el acto de tomar un territorio por la fuerza",
-      "meaning_fr": "conquête",
-      "example": "La conquista cambió la región.",
-      "phonetic": "",
-      "anki_answer": "conquête",
-      "tags": [
-        "guerra"
-      ]
-    },
-    {
-      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
-      "kind": "word",
-      "level": "B2",
-      "text": "insurrección",
-      "meaning": "un levantamiento contra la autoridad",
-      "meaning_fr": "insurrection",
-      "example": "La insurrección empezó en la capital.",
-      "phonetic": "/insuɾeˈkθjon/",
-      "anki_answer": "insurrección",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "key": "20b5be911e696631802f36dab5e10d70676d230b",
       "kind": "expression",
       "level": "B2",
-      "text": "estar a la altura",
-      "meaning": "cumplir las expectativas",
-      "meaning_fr": "être à la hauteur",
-      "example": "El equipo estuvo a la altura.",
+      "text": "hacer balance",
+      "meaning": "resumir resultados",
+      "meaning_fr": "faire le bilan",
+      "example": "Hicieron balance del año.",
       "phonetic": "",
-      "anki_answer": "estar a la altura",
+      "anki_answer": "hacer balance",
       "tags": [
-        "expectativas"
+        "evaluación"
       ]
     },
     {
-      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01",
       "kind": "history",
       "level": "B2",
-      "text": "civilización",
-      "meaning": "una sociedad humana avanzada",
-      "meaning_fr": "civilisation",
-      "example": "La civilización dejó grandes monumentos.",
+      "text": "economía",
+      "meaning": "la producción y distribución de bienes",
+      "meaning_fr": "économie",
+      "example": "La economía dependía del comercio.",
       "phonetic": "",
-      "anki_answer": "civilisation",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
-      "kind": "word",
-      "level": "C1",
-      "text": "modernización",
-      "meaning": "el proceso de adaptar algo a la época moderna",
-      "meaning_fr": "modernisation",
-      "example": "La modernización del ejército fue costosa.",
-      "phonetic": "/moðeɾniθaˈθjon/",
-      "anki_answer": "modernización",
-      "tags": [
-        "sociedad"
-      ]
-    },
-    {
-      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
-      "kind": "expression",
-      "level": "C1",
-      "text": "socavar la legitimidad",
-      "meaning": "debilitar el derecho a gobernar",
-      "meaning_fr": "miner la légitimité",
-      "example": "La corrupción socavó la legitimidad.",
-      "phonetic": "",
-      "anki_answer": "socavar la legitimidad",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilismo",
-      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo guiaba la política colonial.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
+      "anki_answer": "économie",
       "tags": [
         "economía"
       ]
     },
     {
-      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "key": "e55d2707b2aebc7a038a40179fc5442d5958bcee",
+      "kind": "word",
+      "level": "C1",
+      "text": "nacionalismo",
+      "meaning": "la defensa de la identidad y los intereses de una nación",
+      "meaning_fr": "nationalisme",
+      "example": "El nacionalismo creció en el siglo XIX.",
+      "phonetic": "/naθjonaˈlismo/",
+      "anki_answer": "nacionalismo",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "0de124a4ce34371301ee16cb15dda35bb2b98372",
+      "kind": "expression",
+      "level": "C1",
+      "text": "matizar una afirmación",
+      "meaning": "suavizar o precisar lo dicho",
+      "meaning_fr": "nuancer une affirmation",
+      "example": "Matizó su afirmación posteriormente.",
+      "phonetic": "",
+      "anki_answer": "matizar una afirmación",
+      "tags": [
+        "precisión"
+      ]
+    },
+    {
+      "key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937",
+      "kind": "history",
+      "level": "C1",
+      "text": "modernización",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "phonetic": "",
+      "anki_answer": "modernisation",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "5a3785b84713b98a75e990e5014ee69cf2962f40",
       "kind": "word",
       "level": "C2",
-      "text": "cartografía",
-      "meaning": "el arte y la ciencia de hacer mapas",
-      "meaning_fr": "cartographie",
-      "example": "La cartografía portuguesa mejoró rápidamente.",
-      "phonetic": "/kaɾtoɣɾaˈfia/",
-      "anki_answer": "cartografía",
+      "text": "causalidad",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Los historiadores debatieron la causalidad de la crisis.",
+      "phonetic": "/kausaˈliðað/",
+      "anki_answer": "causalidad",
       "tags": [
         "ciencia"
       ]
     },
     {
-      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "key": "2e07054bacdfed01eead7031077e75ba541c52c9",
       "kind": "expression",
       "level": "C2",
-      "text": "poner en perspectiva",
-      "meaning": "comparar un hecho con su contexto",
-      "meaning_fr": "mettre en perspective",
-      "example": "Puso el dato en perspectiva.",
+      "text": "rastrear una huella documental",
+      "meaning": "seguir un rastro en los documentos",
+      "meaning_fr": "retracer une trace documentaire",
+      "example": "Rastrearon la huella documental.",
       "phonetic": "",
-      "anki_answer": "poner en perspectiva",
+      "anki_answer": "rastrear una huella documental",
       "tags": [
-        "análisis"
+        "historia"
       ]
     },
     {
-      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "key": "8f88d72b531febe132811fe164d11391448a7649",
       "kind": "history",
       "level": "C2",
-      "text": "discontinuidad",
-      "meaning": "una ruptura en la continuidad de un proceso",
-      "meaning_fr": "discontinuité",
-      "example": "La obra subrayó la discontinuidad.",
+      "text": "epistemología",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
       "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "épistémologie",
       "tags": [
-        "cultura"
+        "ciencia"
       ]
     }
   ],
@@ -430,270 +431,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "¿Qué significa “pequeño”?",
+      "prompt": "¿Qué significa “profesor”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "petit",
-      "item_key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a"
+      "answer": "professeur",
+      "item_key": "7e33016591e237aba95df7159df23175446ede6b"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Completa la expresión: de ____",
+      "prompt": "Completa la expresión: ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nada",
-      "item_key": "3df7c4daec9142ef06b1d480c13faa588cc0650f"
+      "answer": "desayunar",
+      "item_key": "86e9623979beb2495ad268a78b92aafcf92e0a16"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "¿A qué período pertenece “bandera”?",
+      "prompt": "¿A qué período pertenece “barco”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "General",
-      "item_key": "825332468514bbcede1dd4927c73122b64a7bb71"
+      "answer": "Edad Moderna",
+      "item_key": "791783ba8853bf9df3fcff967ba0a630c9c79162"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "¿Qué significa “viaje”?",
+      "prompt": "¿Qué significa “olvidar”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "voyage",
-      "item_key": "46795912b3ee42f36cf5fd776870b1026852abcd"
+      "answer": "oublier",
+      "item_key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Completa la expresión: echar de ____",
+      "prompt": "Completa la expresión: ____ la luz",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "menos",
-      "item_key": "714348c8b4f4782814f0ef78e6ba345271ab5188"
+      "answer": "encender",
+      "item_key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "¿A qué período pertenece “monasterio”?",
+      "prompt": "¿A qué período pertenece “puerto”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Media",
-      "item_key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c"
+      "answer": "General",
+      "item_key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "¿Qué significa “costumbre”?",
+      "prompt": "¿Qué significa “frontera”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "coutume",
-      "item_key": "6ab5f616acf084645298dc16cddde5180d6a0d81"
+      "answer": "frontière",
+      "item_key": "540524bae30dc97b4bd410c7d1dc7eab226e8675"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Completa la expresión: hablar en ____ de",
+      "prompt": "Completa la expresión: hacer ____ a",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nombre",
-      "item_key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6"
+      "answer": "frente",
+      "item_key": "ea86fd6ad303fef94325c8f096c4926d112ea094"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "¿A qué período pertenece “conquista”?",
+      "prompt": "¿A qué período pertenece “coronación”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "950c0cc5d1df2fef68e78e266b0243c978702057"
+      "answer": "Edad Media",
+      "item_key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "¿Qué significa “insurrección”?",
+      "prompt": "¿Qué significa “laico”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "insurrection",
-      "item_key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a"
+      "answer": "laïque",
+      "item_key": "7818fca3b3151be48052640f5d60ed2e770db837"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Completa la expresión: estar a la ____",
+      "prompt": "Completa la expresión: hacer ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "altura",
-      "item_key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c"
+      "answer": "balance",
+      "item_key": "20b5be911e696631802f36dab5e10d70676d230b"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "¿A qué período pertenece “civilización”?",
+      "prompt": "¿A qué período pertenece “economía”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "5286c476c737af93cf9b017f1c116af98eda1482"
+      "answer": "General",
+      "item_key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "¿Qué significa “modernización”?",
+      "prompt": "¿Qué significa “nacionalismo”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "modernisation",
-      "item_key": "891634f2bec28bf34add705d3a28a37d3bc0b94b"
+      "answer": "nationalisme",
+      "item_key": "e55d2707b2aebc7a038a40179fc5442d5958bcee"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Completa la expresión: socavar la ____",
+      "prompt": "Completa la expresión: matizar una ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "legitimidad",
-      "item_key": "880a19665645f476ded6b498c0e9da5584f699f8"
+      "answer": "afirmación",
+      "item_key": "0de124a4ce34371301ee16cb15dda35bb2b98372"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "¿A qué período pertenece “mercantilismo”?",
+      "prompt": "¿A qué período pertenece “modernización”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Moderna",
-      "item_key": "a732dd8e2fef5ea60d559f42893462a496ee8697"
+      "answer": "Siglo XIX",
+      "item_key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "¿Qué significa “cartografía”?",
+      "prompt": "¿Qué significa “causalidad”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "cartographie",
-      "item_key": "ba6275ea6d926358822050ea139ef4b860872029"
+      "answer": "causalité",
+      "item_key": "5a3785b84713b98a75e990e5014ee69cf2962f40"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Completa la expresión: poner en ____",
+      "prompt": "Completa la expresión: rastrear una huella ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "perspectiva",
-      "item_key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864"
+      "answer": "documental",
+      "item_key": "2e07054bacdfed01eead7031077e75ba541c52c9"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "¿A qué período pertenece “discontinuidad”?",
+      "prompt": "¿A qué período pertenece “epistemología”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
       "answer": "Contemporáneo",
-      "item_key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da"
+      "item_key": "8f88d72b531febe132811fe164d11391448a7649"
     }
   ],
   "tour": [
@@ -701,7 +702,7 @@
       "id": "home",
       "title": "Empieza desde casa",
       "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -730,7 +731,7 @@
     {
       "id": "anki",
       "title": "Exporta lo aprendido",
-      "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
       "target": "[data-eds-anki]"
     },
     {

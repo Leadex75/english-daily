@@ -1,4 +1,4 @@
-var CACHE_NAME = 'english-daily-20261122130843';
+var CACHE_NAME = 'english-daily-20261122145227';
 var APP_SHELL = [
   './',
   './index.html',
@@ -8,9 +8,17 @@ var APP_SHELL = [
   './lib/store.js',
   './lib/branding.js',
   './lib/settings.js',
+  './lib/i18n.js',
+  './lib/ics.js',
+  './lib/quiz.js',
+  './lib/annotations.js',
+  './lib/reading.js',
+  './lib/shortcuts.js',
+  './lib/semester.js',
   './lib/links.js',
   './lib/progress.js',
   './lib/anki.js',
+  './js/ankiconnect.js',
   './lib/exercises.js',
   './lib/tour.js',
   './lib/search.js',
@@ -20,7 +28,8 @@ var APP_SHELL = [
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './data/languages.json'
+  './data/languages.json',
+  './data/anki_models.json'
 ];
 
 function assetUrl(path) {

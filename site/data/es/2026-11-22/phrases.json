@@ -3,57 +3,57 @@
     "date": "2026-11-22",
     "level": "A1",
     "word": {
-      "text": "pequeño",
+      "text": "profesor",
       "level": "A1",
       "type": "word",
-      "pos": "adjective",
-      "phonetic": "/peˈkeɲo/",
-      "meaning": "que no es grande",
-      "meaning_fr": "petit",
-      "example": "Viven en un piso pequeño.",
-      "anki_answer": "pequeño",
+      "pos": "noun",
+      "phonetic": "/pɾofeˈsoɾ/",
+      "meaning": "una persona que enseña",
+      "meaning_fr": "professeur",
+      "example": "Nuestro profesor es muy amable.",
+      "anki_answer": "profesor",
       "tags": [
-        "tamaño"
+        "educación"
       ],
-      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
+      "key": "7e33016591e237aba95df7159df23175446ede6b",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "de nada",
+      "expression": "desayunar",
       "level": "A1",
-      "type": "everyday phrase",
-      "meaning": "respuesta a las gracias",
-      "meaning_fr": "de rien",
-      "example": "De nada, me alegra haber ayudado.",
-      "anki_answer": "de nada",
+      "type": "collocation",
+      "meaning": "comer la primera comida del día",
+      "meaning_fr": "prendre le petit déjeuner",
+      "example": "Desayunamos a las ocho.",
+      "anki_answer": "desayunar",
       "tags": [
-        "cortesía"
+        "comida"
       ],
-      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
+      "key": "86e9623979beb2495ad268a78b92aafcf92e0a16",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "bandera",
+      "text": "barco",
       "aliases": [
-        "bandera",
-        "banderas"
+        "barco",
+        "barcos"
       ],
       "level": "A1",
-      "meaning": "una tela usada como símbolo",
-      "meaning_fr": "drapeau",
-      "period": "General",
-      "theme": "Política",
-      "example": "La bandera se izó sobre la ciudad.",
+      "meaning": "un vehículo que navega por el agua",
+      "meaning_fr": "bateau",
+      "period": "Edad Moderna",
+      "theme": "Guerra",
+      "example": "El barco zarpó al amanecer.",
       "tags": [
-        "símbolos"
+        "viajes"
       ],
-      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
+      "key": "791783ba8853bf9df3fcff967ba0a630c9c79162",
       "kind": "history"
     }
   },
@@ -61,57 +61,57 @@
     "date": "2026-11-22",
     "level": "A2",
     "word": {
-      "text": "viaje",
+      "text": "olvidar",
       "level": "A2",
       "type": "word",
-      "pos": "noun",
-      "phonetic": "/ˈbjaχe/",
-      "meaning": "el acto de viajar a otro lugar",
-      "meaning_fr": "voyage",
-      "example": "El viaje duró tres horas.",
-      "anki_answer": "viaje",
+      "pos": "verb",
+      "phonetic": "/olbiˈdaɾ/",
+      "meaning": "no conservar algo en la memoria",
+      "meaning_fr": "oublier",
+      "example": "No olvides las llaves.",
+      "anki_answer": "olvidar",
       "tags": [
-        "viajes"
+        "memoria"
       ],
-      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
+      "key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "echar de menos",
+      "expression": "encender la luz",
       "level": "A2",
       "type": "collocation",
-      "meaning": "sentir la ausencia de alguien",
-      "meaning_fr": "avoir le mal du pays, regretter",
-      "example": "Echo de menos a mi familia.",
-      "anki_answer": "echar de menos",
+      "meaning": "poner en funcionamiento una luz",
+      "meaning_fr": "allumer la lumière",
+      "example": "Enciende la luz, está oscuro.",
+      "anki_answer": "encender la luz",
       "tags": [
-        "sentimientos"
+        "diario"
       ],
-      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
+      "key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "monasterio",
+      "text": "puerto",
       "aliases": [
-        "monasterio",
-        "monasterios"
+        "puerto",
+        "puertos"
       ],
       "level": "A2",
-      "meaning": "un lugar donde viven y trabajan los monjes",
-      "meaning_fr": "monastère",
-      "period": "Edad Media",
-      "theme": "Religión",
-      "example": "Los monjes copiaban libros en el monasterio.",
+      "meaning": "un lugar seguro para los barcos",
+      "meaning_fr": "port",
+      "period": "General",
+      "theme": "Economía",
+      "example": "Los barcos esperaban en el puerto.",
       "tags": [
-        "religión"
+        "comercio"
       ],
-      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
+      "key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7",
       "kind": "history"
     }
   },
@@ -119,57 +119,57 @@
     "date": "2026-11-22",
     "level": "B1",
     "word": {
-      "text": "costumbre",
+      "text": "frontera",
       "level": "B1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/kosˈtumbre/",
-      "meaning": "una tradición seguida por un grupo",
-      "meaning_fr": "coutume",
-      "example": "La costumbre sobrevivió siglos.",
-      "anki_answer": "costumbre",
+      "phonetic": "/fɾonˈteɾa/",
+      "meaning": "el límite entre dos territorios",
+      "meaning_fr": "frontière",
+      "example": "La frontera avanzaba cada año.",
+      "anki_answer": "frontera",
       "tags": [
-        "cultura"
+        "política"
       ],
-      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
+      "key": "540524bae30dc97b4bd410c7d1dc7eab226e8675",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "hablar en nombre de",
+      "expression": "hacer frente a",
       "level": "B1",
       "type": "collocation",
-      "meaning": "representar a un grupo",
-      "meaning_fr": "parler au nom de",
-      "example": "Habló en nombre de todos.",
-      "anki_answer": "hablar en nombre de",
+      "meaning": "afrontar una dificultad",
+      "meaning_fr": "faire face à",
+      "example": "Hicieron frente a la sequía.",
+      "anki_answer": "hacer frente a",
       "tags": [
-        "representación"
+        "problemas"
       ],
-      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
+      "key": "ea86fd6ad303fef94325c8f096c4926d112ea094",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "conquista",
+      "text": "coronación",
       "aliases": [
-        "conquista",
-        "conquistas"
+        "coronación",
+        "coronaciones"
       ],
       "level": "B1",
-      "meaning": "el acto de tomar un territorio por la fuerza",
-      "meaning_fr": "conquête",
-      "period": "Antigüedad",
-      "theme": "Guerra",
-      "example": "La conquista cambió la región.",
+      "meaning": "la ceremonia de coronar a un soberano",
+      "meaning_fr": "couronnement",
+      "period": "Edad Media",
+      "theme": "Política",
+      "example": "La coronación tuvo lugar en la catedral.",
       "tags": [
-        "guerra"
+        "política"
       ],
-      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
+      "key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8",
       "kind": "history"
     }
   },
@@ -177,57 +177,57 @@
     "date": "2026-11-22",
     "level": "B2",
     "word": {
-      "text": "insurrección",
+      "text": "laico",
       "level": "B2",
       "type": "word",
-      "pos": "noun",
-      "phonetic": "/insuɾeˈkθjon/",
-      "meaning": "un levantamiento contra la autoridad",
-      "meaning_fr": "insurrection",
-      "example": "La insurrección empezó en la capital.",
-      "anki_answer": "insurrección",
+      "pos": "adjective",
+      "phonetic": "/ˈlaiko/",
+      "meaning": "que no está vinculado a una religión",
+      "meaning_fr": "laïque",
+      "example": "Las escuelas se volvieron laicas.",
+      "anki_answer": "laico",
       "tags": [
-        "política"
+        "religión"
       ],
-      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
+      "key": "7818fca3b3151be48052640f5d60ed2e770db837",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "estar a la altura",
+      "expression": "hacer balance",
       "level": "B2",
       "type": "collocation",
-      "meaning": "cumplir las expectativas",
-      "meaning_fr": "être à la hauteur",
-      "example": "El equipo estuvo a la altura.",
-      "anki_answer": "estar a la altura",
+      "meaning": "resumir resultados",
+      "meaning_fr": "faire le bilan",
+      "example": "Hicieron balance del año.",
+      "anki_answer": "hacer balance",
       "tags": [
-        "expectativas"
+        "evaluación"
       ],
-      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "key": "20b5be911e696631802f36dab5e10d70676d230b",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "civilización",
+      "text": "economía",
       "aliases": [
-        "civilización",
-        "civilizaciones"
+        "economía",
+        "economias"
       ],
       "level": "B2",
-      "meaning": "una sociedad humana avanzada",
-      "meaning_fr": "civilisation",
-      "period": "Antigüedad",
-      "theme": "Cultura",
-      "example": "La civilización dejó grandes monumentos.",
+      "meaning": "la producción y distribución de bienes",
+      "meaning_fr": "économie",
+      "period": "General",
+      "theme": "Economía",
+      "example": "La economía dependía del comercio.",
       "tags": [
-        "cultura"
+        "economía"
       ],
-      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01",
       "kind": "history"
     }
   },
@@ -235,56 +235,57 @@
     "date": "2026-11-22",
     "level": "C1",
     "word": {
-      "text": "modernización",
+      "text": "nacionalismo",
       "level": "C1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/moðeɾniθaˈθjon/",
-      "meaning": "el proceso de adaptar algo a la época moderna",
-      "meaning_fr": "modernisation",
-      "example": "La modernización del ejército fue costosa.",
-      "anki_answer": "modernización",
+      "phonetic": "/naθjonaˈlismo/",
+      "meaning": "la defensa de la identidad y los intereses de una nación",
+      "meaning_fr": "nationalisme",
+      "example": "El nacionalismo creció en el siglo XIX.",
+      "anki_answer": "nacionalismo",
       "tags": [
-        "sociedad"
+        "política"
       ],
-      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
+      "key": "e55d2707b2aebc7a038a40179fc5442d5958bcee",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "socavar la legitimidad",
+      "expression": "matizar una afirmación",
       "level": "C1",
       "type": "collocation",
-      "meaning": "debilitar el derecho a gobernar",
-      "meaning_fr": "miner la légitimité",
-      "example": "La corrupción socavó la legitimidad.",
-      "anki_answer": "socavar la legitimidad",
+      "meaning": "suavizar o precisar lo dicho",
+      "meaning_fr": "nuancer une affirmation",
+      "example": "Matizó su afirmación posteriormente.",
+      "anki_answer": "matizar una afirmación",
       "tags": [
-        "política"
+        "precisión"
       ],
-      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
+      "key": "0de124a4ce34371301ee16cb15dda35bb2b98372",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "mercantilismo",
+      "text": "modernización",
       "aliases": [
-        "mercantilismo"
+        "modernización",
+        "modernizacion"
       ],
       "level": "C1",
-      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "period": "Edad Moderna",
-      "theme": "Economía",
-      "example": "El mercantilismo guiaba la política colonial.",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "period": "Siglo XIX",
+      "theme": "Sociedad",
+      "example": "La modernización del ejército fue costosa.",
       "tags": [
-        "economía"
+        "sociedad"
       ],
-      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
+      "key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937",
       "kind": "history"
     }
   },
@@ -292,56 +293,57 @@
     "date": "2026-11-22",
     "level": "C2",
     "word": {
-      "text": "cartografía",
+      "text": "causalidad",
       "level": "C2",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/kaɾtoɣɾaˈfia/",
-      "meaning": "el arte y la ciencia de hacer mapas",
-      "meaning_fr": "cartographie",
-      "example": "La cartografía portuguesa mejoró rápidamente.",
-      "anki_answer": "cartografía",
+      "phonetic": "/kausaˈliðað/",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Los historiadores debatieron la causalidad de la crisis.",
+      "anki_answer": "causalidad",
       "tags": [
         "ciencia"
       ],
-      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "key": "5a3785b84713b98a75e990e5014ee69cf2962f40",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "poner en perspectiva",
+      "expression": "rastrear una huella documental",
       "level": "C2",
       "type": "collocation",
-      "meaning": "comparar un hecho con su contexto",
-      "meaning_fr": "mettre en perspective",
-      "example": "Puso el dato en perspectiva.",
-      "anki_answer": "poner en perspectiva",
+      "meaning": "seguir un rastro en los documentos",
+      "meaning_fr": "retracer une trace documentaire",
+      "example": "Rastrearon la huella documental.",
+      "anki_answer": "rastrear una huella documental",
       "tags": [
-        "análisis"
+        "historia"
       ],
-      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "key": "2e07054bacdfed01eead7031077e75ba541c52c9",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "discontinuidad",
+      "text": "epistemología",
       "aliases": [
-        "discontinuidad"
+        "epistemología",
+        "epistemologia"
       ],
       "level": "C2",
-      "meaning": "una ruptura en la continuidad de un proceso",
-      "meaning_fr": "discontinuité",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
       "period": "Contemporáneo",
-      "theme": "Cultura",
-      "example": "La obra subrayó la discontinuidad.",
+      "theme": "Ciencia",
+      "example": "La epistemología histórica examina las fuentes.",
       "tags": [
-        "cultura"
+        "ciencia"
       ],
-      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "key": "8f88d72b531febe132811fe164d11391448a7649",
       "kind": "history"
     }
   }

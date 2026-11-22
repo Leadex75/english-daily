@@ -5,61 +5,63 @@
   "slots": {
     "news": {
       "text": {
-        "id": 1898864370,
-        "title": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI",
+        "id": 1897947576,
+        "title": "Cómo dos neveras abandonadas por el ejército de EE.UU. en Toscana dieron origen al helado italiano",
         "source": "BBC Mundo (texto)",
         "source_id": "es_bbc_mundo_text",
         "category": "news",
-        "url": "https://www.bbc.com/mundo/articles/c9p83kyykr73o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-21T16:56:26",
+        "url": "https://www.bbc.com/mundo/articles/c3d3g9d1rk3o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T13:46:07",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C2",
-        "word_count": 694,
+        "word_count": 1586,
         "duration_sec": null,
-        "body_text": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI - Autor, Tara Mewawalla - Fecha de publicación - Tiempo de lectura: 3 min El \"Chapo Isidro\", un narcotraficante mexicano que figuraba en la lista de los 10 más buscados del FBI fue arrestado tras un tiroteo con las autoridades mexicanas.",
+        "body_text": "Cómo dos neveras abandonadas por el ejército de EE.UU. en Toscana dieron origen al helado italiano - Autor, Amy Bizzarri - Título del autor, BBC Travel* - Fecha de publicación - Tiempo de lectura: 8 min Cada verano, decenas de millones de viajeros internacionales llegan a Italia, y muchos de ellos piden al menos un helado durante su estancia.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "7da5a201898d03732a0e73842c067083a63f5cb8",
-        "summary": "Fausto Isidro \"Chapo Idisro\" Meza Flores, acusado de narcotráfico y tortura, fue detenido tras un enfrentamiento armado con las autoridades.",
+        "guid_hash": "3825912dd71dc4693b8a1cf47bf0e072d1799544",
+        "summary": "El gelato es sinónimo de Italia, pero sus orígenes modernos se remontan a una humilde lechería de la Toscana y a un par de refrigeradores abandonados tras la Segunda Guerra Mundial.",
         "origin": "fresh",
-        "badges": [],
+        "badges": [
+          "Outside preferred window"
+        ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI — BBC Mundo (texto)",
+        "alt_text": "Cómo dos neveras abandonadas por el ejército de EE.UU. en Toscana dieron origen al helado italiano — BBC Mundo (texto)",
         "duration_formatted": "",
         "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-        "reading_time_min": 4
+        "reading_time_min": 8
       },
       "audio": null
     },
     "culture": {
       "text": null,
       "audio": {
-        "id": 1898864404,
-        "title": "El Ojo Crítico - Alianza Editorial: 60 años acercando la literatura a todos",
+        "id": 1897947615,
+        "title": "El Ojo Crítico - Gala Hernández, Premio El Ojo Crítico de Cine 2026",
         "source": "RNE El ojo crítico",
         "source_id": "es_rne_el_ojo_critico",
         "category": "culture",
-        "url": "https://www.rtve.es/play/audios/el-ojo-critico/alianza-editorial-60-anos-acercando-literatura-todos/17322194/",
-        "published_at": "2026-11-19T19:55:44",
+        "url": "https://www.rtve.es/play/audios/el-ojo-critico/gala-hernandez-premio-cine-2026-peligros-cultura-digital/17320466/",
+        "published_at": "2026-11-18T16:31:49",
         "level": "C2",
         "slot_level": "C2",
         "source_level": "C1",
-        "word_count": 380,
-        "duration_sec": 2598,
+        "word_count": 348,
+        "duration_sec": 2525,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SELOJO/mp3/8/2/1795117798528.mp3?idasset=17322194&download-token=1795353454_0x6c86b1c3c0d38471b19e7228a5362d88a9e5bf5f",
-        "description": "Alianza Editorial cumple 60 años . Fundada en 1966 por José Ortega Spottorno, hijo del filósofo José Ortega y Gasset, nació con una vocación: acercar las grandes obras de la literatura y el pensamiento a todos los lectores. Su emblemática colección “ El Libro de Bolsillo” contribuyó a democratizar el acceso a los libros con una idea revolucionaria para su época: que leer no fuese un lujo. Conversamos con Luisa Gutiérrez , directora editorial del Grupo Anaya, sobre seis décadas de historia, el papel de Alianza en la cultura española y la iniciativa con la que 60 personalidades, entre ellas la reina Letizia, Julieta Venegas, José Luis Garci y Juan Luis Arsuaga, seleccionan sus títulos favoritos de su catálogo. Viajamos al Museo Guggenheim Bilbao para descubrir “ Seed Pattern” , una instalación inmersiva de la artista coreano-canadiense Zadie Xa que entrelaza naturaleza, mitología coreana y memoria. Además, Chillida Leku reúne por primera vez en una exposición conjunta la obra de los hermanos Eduardo y Gonzalo Chillida , bajo el título “ Asomar al horizonte. Hermanos Chillida, Eduardo y Gonzalo en Zabalaga .” Los videojuegos también tienen su espacio. Con Rober Álvarez analizamos el fenómeno Grand Theft Auto VI (GTA VI) , las expectativas que rodean a la nueva entrega de Rockstar, sus protagonistas Jason y Lucía y el debate sobre la representación y la diversidad en la industria. En teatro, hablamos del debut de Javier Bardem sobre los escenarios con “ Chéjov, Chéjov” , una propuesta dirigida por Juan Carlos Corazza que reúne distintas piezas del dramaturgo ruso. Nuestra colaboradora Laia Oliver nos acerca al Festival de Otoño de la Comunidad de Madrid , que celebra su 44.ª edición. Repasamos “ Pessoa – Since I've Been Me” , uno de los últimos trabajos de Robert Wilson, protagonizado por María de Medeiros; “ Un tiro cada uno” , sobre la violencia machista; “ The Forest” , de Cristiana Morganti y Claudio Tolcachir; y “ Contra Antígona” , la reinterpretación del mito clá",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SELOJO/mp3/5/1/1795018804215.mp3?idasset=17320466&download-token=1795359682_0xecb50e859e5f9bc95d16f40538dbfc3222386e1f",
+        "description": "Gala Hernández, Premio El Ojo Crítico de Cine 2026 , nos acompaña para celebrar un reconocimiento a su mirada pionera, personal y arriesgada. La cineasta española ha encontrado en el desktop documentary , un formato de ensayo audiovisual que utiliza las pantallas de ordenadores y teléfonos móviles como espacio narrativo, una forma singular de explorar las contradicciones de la cultura digital. Conversamos con ella sobre su trayectoria entre Barcelona y París, su manera de entender el cine documental y su interés por las consecuencias sociales de la tecnología: el aislamiento en internet, las comunidades virtuales, las nuevas masculinidades y las promesas del capitalismo tecnológico. En 2024 recibió el Premio César por su cortometraje documental “ La mecánica de los fluidos” . A este trabajo le siguieron “ For here am I sitting in a tin can far above the world” y “ +10k” , estrenado en el Festival de Cannes. En su último cortometraje, “ Like Moths to Light” , continúa investigando cómo la cultura digital y la tecnología condicionan nuestra manera de imaginar el futuro. Del universo digital viajamos al teatro con Chela De Ferrari y María Morales , directora e intérprete de “ Magda” , una obra que nos sitúa en el búnker de Magda Goebbels el 1 de mayo de 1945. Una propuesta escénica que conecta el pasado con el presente y utiliza la incomodidad, la ironía y la relación con el público para reflexionar sobre el fanatismo, el miedo y la responsabilidad individual. Nuestro colaborador Pedro Torrijos nos descubre una de las historias más sorprendentes de la arquitectura del siglo XX: un hospital giratorio construido en Aix-les-Bains, Francia, en los años treinta . Diseñado por el radiólogo Jean Saidman , el edificio podía girar para seguir la trayectoria del sol y aprovechar sus radiaciones con fines terapéuticos. Una construcción extraordinaria que nos permite explorar la relación entre arquitectura, medicina y salud. Por último, analizamos los datos del Anuario del Español",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "6f5236fdfef4d9cd3dc3c4d9421fdfed103ea65a",
-        "summary": "Alianza Editorial cumple 60 años . Fundada en 1966 por José Ortega Spottorno, hijo del filósofo José Ortega y Gasset, nació con una vocación: acercar las grandes obras de la literatura y el pensamiento a todos los lectores. Su emblemática colección “ El Libro de Bolsillo” contribuyó a democratizar el acceso a los libros con una idea revolucionaria para su época: que leer no fuese un lujo. Conversamos con Luisa Gutiérrez , directora editorial del Grupo Anaya, sobre seis décadas de historia, el papel de Alianza en la cultura española y la iniciativa con la que 60 personalidades, entre ellas la reina Letizia, Julieta Venegas, José Luis Garci y Juan Luis Arsuaga, seleccionan sus títulos favoritos de su catálogo. Viajamos al Museo Guggenheim Bilbao para descubrir “ Seed Pattern” , una instalación inmersiva de la artista coreano-canadiense Zadie Xa que entrelaza naturaleza, mitología coreana y memoria. Además, Chillida Leku reúne por primera vez en una exposición conjunta la obra de los hermanos Eduardo y Gonzalo Chillida , bajo el título “ Asomar al horizonte. Hermanos Chillida, Eduardo y Gonzalo en Zabalaga .” Los videojuegos también tienen su espacio. Con Rober Álvarez analizamos el fenómeno Grand Theft Auto VI (GTA VI) , las expectativas que rodean a la nueva entrega de Rockstar, sus protagonistas Jason y Lucía y el debate sobre la representación y la diversidad en la industria. En teatro, hablamos del debut de Javier Bardem sobre los escenarios con “ Chéjov, Chéjov” , una propuesta dirigida por Juan Carlos Corazza que reúne distintas piezas del dramaturgo ruso. Nuestra colaboradora Laia Oliver nos acerca al Festival de Otoño de la Comunidad de Madrid , que celebra su 44.ª edición. Repasamos “ Pessoa – Since I've Been Me” , uno de los últimos trabajos de Robert Wilson, protagonizado por María de Medeiros; “ Un tiro cada uno” , sobre la violencia machista; “ The Forest” , de Cristiana Morganti y Claudio Tolcachir; y “ Contra Antígona” , la reinterpretación del mito clá",
+        "guid_hash": "5dc407b29ca4a71053aafdcab9b61bd77d0fc8f6",
+        "summary": "Gala Hernández, Premio El Ojo Crítico de Cine 2026 , nos acompaña para celebrar un reconocimiento a su mirada pionera, personal y arriesgada. La cineasta española ha encontrado en el desktop documentary , un formato de ensayo audiovisual que utiliza las pantallas de ordenadores y teléfonos móviles como espacio narrativo, una forma singular de explorar las contradicciones de la cultura digital. Conversamos con ella sobre su trayectoria entre Barcelona y París, su manera de entender el cine documental y su interés por las consecuencias sociales de la tecnología: el aislamiento en internet, las comunidades virtuales, las nuevas masculinidades y las promesas del capitalismo tecnológico. En 2024 recibió el Premio César por su cortometraje documental “ La mecánica de los fluidos” . A este trabajo le siguieron “ For here am I sitting in a tin can far above the world” y “ +10k” , estrenado en el Festival de Cannes. En su último cortometraje, “ Like Moths to Light” , continúa investigando cómo la cultura digital y la tecnología condicionan nuestra manera de imaginar el futuro. Del universo digital viajamos al teatro con Chela De Ferrari y María Morales , directora e intérprete de “ Magda” , una obra que nos sitúa en el búnker de Magda Goebbels el 1 de mayo de 1945. Una propuesta escénica que conecta el pasado con el presente y utiliza la incomodidad, la ironía y la relación con el público para reflexionar sobre el fanatismo, el miedo y la responsabilidad individual. Nuestro colaborador Pedro Torrijos nos descubre una de las historias más sorprendentes de la arquitectura del siglo XX: un hospital giratorio construido en Aix-les-Bains, Francia, en los años treinta . Diseñado por el radiólogo Jean Saidman , el edificio podía girar para seguir la trayectoria del sol y aprovechar sus radiaciones con fines terapéuticos. Una construcción extraordinaria que nos permite explorar la relación entre arquitectura, medicina y salud. Por último, analizamos los datos del Anuario del Español",
         "origin": "adjacent",
         "badges": [
           "Closest level: C1",
@@ -68,8 +70,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "El Ojo Crítico - Alianza Editorial: 60 años acercando la literatura a todos — RNE El ojo crítico",
-        "duration_formatted": "43:18",
+        "alt_text": "El Ojo Crítico - Gala Hernández, Premio El Ojo Crítico de Cine 2026 — RNE El ojo crítico",
+        "duration_formatted": "42:05",
         "source_url": "https://www.rtve.es/api/programas/1957/audios.rss",
         "reading_time_min": 0
       }
@@ -83,310 +85,311 @@
     "date": "2026-11-22",
     "level": "C2",
     "word": {
-      "text": "cartografía",
+      "text": "causalidad",
       "level": "C2",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/kaɾtoɣɾaˈfia/",
-      "meaning": "el arte y la ciencia de hacer mapas",
-      "meaning_fr": "cartographie",
-      "example": "La cartografía portuguesa mejoró rápidamente.",
-      "anki_answer": "cartografía",
+      "phonetic": "/kausaˈliðað/",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Los historiadores debatieron la causalidad de la crisis.",
+      "anki_answer": "causalidad",
       "tags": [
         "ciencia"
       ],
-      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "key": "5a3785b84713b98a75e990e5014ee69cf2962f40",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "poner en perspectiva",
+      "expression": "rastrear una huella documental",
       "level": "C2",
       "type": "collocation",
-      "meaning": "comparar un hecho con su contexto",
-      "meaning_fr": "mettre en perspective",
-      "example": "Puso el dato en perspectiva.",
-      "anki_answer": "poner en perspectiva",
+      "meaning": "seguir un rastro en los documentos",
+      "meaning_fr": "retracer une trace documentaire",
+      "example": "Rastrearon la huella documental.",
+      "anki_answer": "rastrear una huella documental",
       "tags": [
-        "análisis"
+        "historia"
       ],
-      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "key": "2e07054bacdfed01eead7031077e75ba541c52c9",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "discontinuidad",
+      "text": "epistemología",
       "aliases": [
-        "discontinuidad"
+        "epistemología",
+        "epistemologia"
       ],
       "level": "C2",
-      "meaning": "una ruptura en la continuidad de un proceso",
-      "meaning_fr": "discontinuité",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
       "period": "Contemporáneo",
-      "theme": "Cultura",
-      "example": "La obra subrayó la discontinuidad.",
+      "theme": "Ciencia",
+      "example": "La epistemología histórica examina las fuentes.",
       "tags": [
-        "cultura"
+        "ciencia"
       ],
-      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "key": "8f88d72b531febe132811fe164d11391448a7649",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
+      "key": "7e33016591e237aba95df7159df23175446ede6b",
       "kind": "word",
       "level": "A1",
-      "text": "pequeño",
-      "meaning": "que no es grande",
-      "meaning_fr": "petit",
-      "example": "Viven en un piso pequeño.",
-      "phonetic": "/peˈkeɲo/",
-      "anki_answer": "pequeño",
+      "text": "profesor",
+      "meaning": "una persona que enseña",
+      "meaning_fr": "professeur",
+      "example": "Nuestro profesor es muy amable.",
+      "phonetic": "/pɾofeˈsoɾ/",
+      "anki_answer": "profesor",
       "tags": [
-        "tamaño"
+        "educación"
       ]
     },
     {
-      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
+      "key": "86e9623979beb2495ad268a78b92aafcf92e0a16",
       "kind": "expression",
       "level": "A1",
-      "text": "de nada",
-      "meaning": "respuesta a las gracias",
-      "meaning_fr": "de rien",
-      "example": "De nada, me alegra haber ayudado.",
+      "text": "desayunar",
+      "meaning": "comer la primera comida del día",
+      "meaning_fr": "prendre le petit déjeuner",
+      "example": "Desayunamos a las ocho.",
       "phonetic": "",
-      "anki_answer": "de nada",
+      "anki_answer": "desayunar",
       "tags": [
-        "cortesía"
+        "comida"
       ]
     },
     {
-      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
+      "key": "791783ba8853bf9df3fcff967ba0a630c9c79162",
       "kind": "history",
       "level": "A1",
-      "text": "bandera",
-      "meaning": "una tela usada como símbolo",
-      "meaning_fr": "drapeau",
-      "example": "La bandera se izó sobre la ciudad.",
+      "text": "barco",
+      "meaning": "un vehículo que navega por el agua",
+      "meaning_fr": "bateau",
+      "example": "El barco zarpó al amanecer.",
       "phonetic": "",
-      "anki_answer": "drapeau",
-      "tags": [
-        "símbolos"
-      ]
-    },
-    {
-      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
-      "kind": "word",
-      "level": "A2",
-      "text": "viaje",
-      "meaning": "el acto de viajar a otro lugar",
-      "meaning_fr": "voyage",
-      "example": "El viaje duró tres horas.",
-      "phonetic": "/ˈbjaχe/",
-      "anki_answer": "viaje",
+      "anki_answer": "bateau",
       "tags": [
         "viajes"
       ]
     },
     {
-      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
-      "kind": "expression",
+      "key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7",
+      "kind": "word",
       "level": "A2",
-      "text": "echar de menos",
-      "meaning": "sentir la ausencia de alguien",
-      "meaning_fr": "avoir le mal du pays, regretter",
-      "example": "Echo de menos a mi familia.",
-      "phonetic": "",
-      "anki_answer": "echar de menos",
+      "text": "olvidar",
+      "meaning": "no conservar algo en la memoria",
+      "meaning_fr": "oublier",
+      "example": "No olvides las llaves.",
+      "phonetic": "/olbiˈdaɾ/",
+      "anki_answer": "olvidar",
       "tags": [
-        "sentimientos"
+        "memoria"
       ]
     },
     {
-      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
+      "key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0",
+      "kind": "expression",
+      "level": "A2",
+      "text": "encender la luz",
+      "meaning": "poner en funcionamiento una luz",
+      "meaning_fr": "allumer la lumière",
+      "example": "Enciende la luz, está oscuro.",
+      "phonetic": "",
+      "anki_answer": "encender la luz",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7",
       "kind": "history",
       "level": "A2",
-      "text": "monasterio",
-      "meaning": "un lugar donde viven y trabajan los monjes",
-      "meaning_fr": "monastère",
-      "example": "Los monjes copiaban libros en el monasterio.",
+      "text": "puerto",
+      "meaning": "un lugar seguro para los barcos",
+      "meaning_fr": "port",
+      "example": "Los barcos esperaban en el puerto.",
       "phonetic": "",
-      "anki_answer": "monastère",
+      "anki_answer": "port",
+      "tags": [
+        "comercio"
+      ]
+    },
+    {
+      "key": "540524bae30dc97b4bd410c7d1dc7eab226e8675",
+      "kind": "word",
+      "level": "B1",
+      "text": "frontera",
+      "meaning": "el límite entre dos territorios",
+      "meaning_fr": "frontière",
+      "example": "La frontera avanzaba cada año.",
+      "phonetic": "/fɾonˈteɾa/",
+      "anki_answer": "frontera",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "ea86fd6ad303fef94325c8f096c4926d112ea094",
+      "kind": "expression",
+      "level": "B1",
+      "text": "hacer frente a",
+      "meaning": "afrontar una dificultad",
+      "meaning_fr": "faire face à",
+      "example": "Hicieron frente a la sequía.",
+      "phonetic": "",
+      "anki_answer": "hacer frente a",
+      "tags": [
+        "problemas"
+      ]
+    },
+    {
+      "key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronación",
+      "meaning": "la ceremonia de coronar a un soberano",
+      "meaning_fr": "couronnement",
+      "example": "La coronación tuvo lugar en la catedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "7818fca3b3151be48052640f5d60ed2e770db837",
+      "kind": "word",
+      "level": "B2",
+      "text": "laico",
+      "meaning": "que no está vinculado a una religión",
+      "meaning_fr": "laïque",
+      "example": "Las escuelas se volvieron laicas.",
+      "phonetic": "/ˈlaiko/",
+      "anki_answer": "laico",
       "tags": [
         "religión"
       ]
     },
     {
-      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
-      "kind": "word",
-      "level": "B1",
-      "text": "costumbre",
-      "meaning": "una tradición seguida por un grupo",
-      "meaning_fr": "coutume",
-      "example": "La costumbre sobrevivió siglos.",
-      "phonetic": "/kosˈtumbre/",
-      "anki_answer": "costumbre",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
-      "kind": "expression",
-      "level": "B1",
-      "text": "hablar en nombre de",
-      "meaning": "representar a un grupo",
-      "meaning_fr": "parler au nom de",
-      "example": "Habló en nombre de todos.",
-      "phonetic": "",
-      "anki_answer": "hablar en nombre de",
-      "tags": [
-        "representación"
-      ]
-    },
-    {
-      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquista",
-      "meaning": "el acto de tomar un territorio por la fuerza",
-      "meaning_fr": "conquête",
-      "example": "La conquista cambió la región.",
-      "phonetic": "",
-      "anki_answer": "conquête",
-      "tags": [
-        "guerra"
-      ]
-    },
-    {
-      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
-      "kind": "word",
-      "level": "B2",
-      "text": "insurrección",
-      "meaning": "un levantamiento contra la autoridad",
-      "meaning_fr": "insurrection",
-      "example": "La insurrección empezó en la capital.",
-      "phonetic": "/insuɾeˈkθjon/",
-      "anki_answer": "insurrección",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "key": "20b5be911e696631802f36dab5e10d70676d230b",
       "kind": "expression",
       "level": "B2",
-      "text": "estar a la altura",
-      "meaning": "cumplir las expectativas",
-      "meaning_fr": "être à la hauteur",
-      "example": "El equipo estuvo a la altura.",
+      "text": "hacer balance",
+      "meaning": "resumir resultados",
+      "meaning_fr": "faire le bilan",
+      "example": "Hicieron balance del año.",
       "phonetic": "",
-      "anki_answer": "estar a la altura",
+      "anki_answer": "hacer balance",
       "tags": [
-        "expectativas"
+        "evaluación"
       ]
     },
     {
-      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01",
       "kind": "history",
       "level": "B2",
-      "text": "civilización",
-      "meaning": "una sociedad humana avanzada",
-      "meaning_fr": "civilisation",
-      "example": "La civilización dejó grandes monumentos.",
+      "text": "economía",
+      "meaning": "la producción y distribución de bienes",
+      "meaning_fr": "économie",
+      "example": "La economía dependía del comercio.",
       "phonetic": "",
-      "anki_answer": "civilisation",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
-      "kind": "word",
-      "level": "C1",
-      "text": "modernización",
-      "meaning": "el proceso de adaptar algo a la época moderna",
-      "meaning_fr": "modernisation",
-      "example": "La modernización del ejército fue costosa.",
-      "phonetic": "/moðeɾniθaˈθjon/",
-      "anki_answer": "modernización",
-      "tags": [
-        "sociedad"
-      ]
-    },
-    {
-      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
-      "kind": "expression",
-      "level": "C1",
-      "text": "socavar la legitimidad",
-      "meaning": "debilitar el derecho a gobernar",
-      "meaning_fr": "miner la légitimité",
-      "example": "La corrupción socavó la legitimidad.",
-      "phonetic": "",
-      "anki_answer": "socavar la legitimidad",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilismo",
-      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo guiaba la política colonial.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
+      "anki_answer": "économie",
       "tags": [
         "economía"
       ]
     },
     {
-      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "key": "e55d2707b2aebc7a038a40179fc5442d5958bcee",
+      "kind": "word",
+      "level": "C1",
+      "text": "nacionalismo",
+      "meaning": "la defensa de la identidad y los intereses de una nación",
+      "meaning_fr": "nationalisme",
+      "example": "El nacionalismo creció en el siglo XIX.",
+      "phonetic": "/naθjonaˈlismo/",
+      "anki_answer": "nacionalismo",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "0de124a4ce34371301ee16cb15dda35bb2b98372",
+      "kind": "expression",
+      "level": "C1",
+      "text": "matizar una afirmación",
+      "meaning": "suavizar o precisar lo dicho",
+      "meaning_fr": "nuancer une affirmation",
+      "example": "Matizó su afirmación posteriormente.",
+      "phonetic": "",
+      "anki_answer": "matizar una afirmación",
+      "tags": [
+        "precisión"
+      ]
+    },
+    {
+      "key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937",
+      "kind": "history",
+      "level": "C1",
+      "text": "modernización",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "phonetic": "",
+      "anki_answer": "modernisation",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "5a3785b84713b98a75e990e5014ee69cf2962f40",
       "kind": "word",
       "level": "C2",
-      "text": "cartografía",
-      "meaning": "el arte y la ciencia de hacer mapas",
-      "meaning_fr": "cartographie",
-      "example": "La cartografía portuguesa mejoró rápidamente.",
-      "phonetic": "/kaɾtoɣɾaˈfia/",
-      "anki_answer": "cartografía",
+      "text": "causalidad",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Los historiadores debatieron la causalidad de la crisis.",
+      "phonetic": "/kausaˈliðað/",
+      "anki_answer": "causalidad",
       "tags": [
         "ciencia"
       ]
     },
     {
-      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "key": "2e07054bacdfed01eead7031077e75ba541c52c9",
       "kind": "expression",
       "level": "C2",
-      "text": "poner en perspectiva",
-      "meaning": "comparar un hecho con su contexto",
-      "meaning_fr": "mettre en perspective",
-      "example": "Puso el dato en perspectiva.",
+      "text": "rastrear una huella documental",
+      "meaning": "seguir un rastro en los documentos",
+      "meaning_fr": "retracer une trace documentaire",
+      "example": "Rastrearon la huella documental.",
       "phonetic": "",
-      "anki_answer": "poner en perspectiva",
+      "anki_answer": "rastrear una huella documental",
       "tags": [
-        "análisis"
+        "historia"
       ]
     },
     {
-      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "key": "8f88d72b531febe132811fe164d11391448a7649",
       "kind": "history",
       "level": "C2",
-      "text": "discontinuidad",
-      "meaning": "una ruptura en la continuidad de un proceso",
-      "meaning_fr": "discontinuité",
-      "example": "La obra subrayó la discontinuidad.",
+      "text": "epistemología",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
       "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "épistémologie",
       "tags": [
-        "cultura"
+        "ciencia"
       ]
     }
   ],
@@ -396,270 +399,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "¿Qué significa “pequeño”?",
+      "prompt": "¿Qué significa “profesor”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "petit",
-      "item_key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a"
+      "answer": "professeur",
+      "item_key": "7e33016591e237aba95df7159df23175446ede6b"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Completa la expresión: de ____",
+      "prompt": "Completa la expresión: ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nada",
-      "item_key": "3df7c4daec9142ef06b1d480c13faa588cc0650f"
+      "answer": "desayunar",
+      "item_key": "86e9623979beb2495ad268a78b92aafcf92e0a16"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "¿A qué período pertenece “bandera”?",
+      "prompt": "¿A qué período pertenece “barco”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "General",
-      "item_key": "825332468514bbcede1dd4927c73122b64a7bb71"
+      "answer": "Edad Moderna",
+      "item_key": "791783ba8853bf9df3fcff967ba0a630c9c79162"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "¿Qué significa “viaje”?",
+      "prompt": "¿Qué significa “olvidar”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "voyage",
-      "item_key": "46795912b3ee42f36cf5fd776870b1026852abcd"
+      "answer": "oublier",
+      "item_key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Completa la expresión: echar de ____",
+      "prompt": "Completa la expresión: ____ la luz",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "menos",
-      "item_key": "714348c8b4f4782814f0ef78e6ba345271ab5188"
+      "answer": "encender",
+      "item_key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "¿A qué período pertenece “monasterio”?",
+      "prompt": "¿A qué período pertenece “puerto”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Media",
-      "item_key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c"
+      "answer": "General",
+      "item_key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "¿Qué significa “costumbre”?",
+      "prompt": "¿Qué significa “frontera”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "coutume",
-      "item_key": "6ab5f616acf084645298dc16cddde5180d6a0d81"
+      "answer": "frontière",
+      "item_key": "540524bae30dc97b4bd410c7d1dc7eab226e8675"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Completa la expresión: hablar en ____ de",
+      "prompt": "Completa la expresión: hacer ____ a",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nombre",
-      "item_key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6"
+      "answer": "frente",
+      "item_key": "ea86fd6ad303fef94325c8f096c4926d112ea094"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "¿A qué período pertenece “conquista”?",
+      "prompt": "¿A qué período pertenece “coronación”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "950c0cc5d1df2fef68e78e266b0243c978702057"
+      "answer": "Edad Media",
+      "item_key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "¿Qué significa “insurrección”?",
+      "prompt": "¿Qué significa “laico”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "insurrection",
-      "item_key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a"
+      "answer": "laïque",
+      "item_key": "7818fca3b3151be48052640f5d60ed2e770db837"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Completa la expresión: estar a la ____",
+      "prompt": "Completa la expresión: hacer ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "altura",
-      "item_key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c"
+      "answer": "balance",
+      "item_key": "20b5be911e696631802f36dab5e10d70676d230b"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "¿A qué período pertenece “civilización”?",
+      "prompt": "¿A qué período pertenece “economía”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "5286c476c737af93cf9b017f1c116af98eda1482"
+      "answer": "General",
+      "item_key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "¿Qué significa “modernización”?",
+      "prompt": "¿Qué significa “nacionalismo”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "modernisation",
-      "item_key": "891634f2bec28bf34add705d3a28a37d3bc0b94b"
+      "answer": "nationalisme",
+      "item_key": "e55d2707b2aebc7a038a40179fc5442d5958bcee"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Completa la expresión: socavar la ____",
+      "prompt": "Completa la expresión: matizar una ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "legitimidad",
-      "item_key": "880a19665645f476ded6b498c0e9da5584f699f8"
+      "answer": "afirmación",
+      "item_key": "0de124a4ce34371301ee16cb15dda35bb2b98372"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "¿A qué período pertenece “mercantilismo”?",
+      "prompt": "¿A qué período pertenece “modernización”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Moderna",
-      "item_key": "a732dd8e2fef5ea60d559f42893462a496ee8697"
+      "answer": "Siglo XIX",
+      "item_key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "¿Qué significa “cartografía”?",
+      "prompt": "¿Qué significa “causalidad”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "cartographie",
-      "item_key": "ba6275ea6d926358822050ea139ef4b860872029"
+      "answer": "causalité",
+      "item_key": "5a3785b84713b98a75e990e5014ee69cf2962f40"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Completa la expresión: poner en ____",
+      "prompt": "Completa la expresión: rastrear una huella ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "perspectiva",
-      "item_key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864"
+      "answer": "documental",
+      "item_key": "2e07054bacdfed01eead7031077e75ba541c52c9"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "¿A qué período pertenece “discontinuidad”?",
+      "prompt": "¿A qué período pertenece “epistemología”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
       "answer": "Contemporáneo",
-      "item_key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da"
+      "item_key": "8f88d72b531febe132811fe164d11391448a7649"
     }
   ],
   "tour": [
@@ -667,7 +670,7 @@
       "id": "home",
       "title": "Empieza desde casa",
       "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -696,7 +699,7 @@
     {
       "id": "anki",
       "title": "Exporta lo aprendido",
-      "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
       "target": "[data-eds-anki]"
     },
     {

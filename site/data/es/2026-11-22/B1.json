@@ -4,71 +4,107 @@
   "level": "B1",
   "slots": {
     "news": {
-      "text": null,
-      "audio": {
-        "id": 1898864376,
-        "title": "1795. Colombia, el país de los pájaros",
-        "source": "Charlas Hispanas",
-        "source_id": "es_charlas_hispanas",
+      "text": {
+        "id": 1897947572,
+        "title": "Pasé más de 10 años llevando por las montañas de Colombia los mensajes secretos que hicieron posible el acuerdo de paz entre el gobierno y las FARC",
+        "source": "BBC Mundo (texto)",
+        "source_id": "es_bbc_mundo_text",
         "category": "news",
-        "url": "https://charlashispanas.com/1795-colombia-el-pais-de-los-pajaros/?utm_source=rss&utm_medium=rss&utm_campaign=1795-colombia-el-pais-de-los-pajaros",
-        "published_at": "2026-11-17T10:34:42",
+        "url": "https://www.bbc.com/mundo/articles/ckz74v0n4rydo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T14:00:13",
         "level": "B1",
         "slot_level": "B1",
-        "source_level": "B1",
-        "word_count": 15,
-        "duration_sec": 741,
-        "body_text": null,
-        "audio_url": "https://content.blubrry.com/charlashispanas/Episodio_1795-Colombia_el_pai_s_de_los_pa_jaros_mezcla.mp3",
-        "description": "El día de hoy charlaremos sobre por qué Colombia es el paraíso de los pájaros.",
+        "source_level": "B2",
+        "word_count": 3224,
+        "duration_sec": null,
+        "body_text": "Pasé más de 10 años llevando por las montañas de Colombia los mensajes secretos que hicieron posible el acuerdo de paz entre el gobierno y las FARC Henry Acosta Patiño (Génova, 1948) recorrió entre 1999 y 2012 algunas de las zonas más recónditas de las montañas de Colombia.",
+        "audio_url": null,
+        "description": null,
         "license": "proprietary",
         "attribution": null,
-        "truncated": false,
-        "guid_hash": "48d81eddffe3f45469fc460dd708674ac2c4acd6",
-        "summary": "El día de hoy charlaremos sobre por qué Colombia es el paraíso de los pájaros.",
-        "origin": "fresh",
-        "badges": [],
+        "truncated": true,
+        "guid_hash": "7aed4e87ca07d9f8b0431b9ec2defd24fd6f1baa",
+        "summary": "Henry Acosta Patiño fue durante años el mensajero oculto entre el gobierno de Colombia y las FARC. Su papel en el detrás de escenas de las negociaciones fue clave para el acuerdo de paz firmado hace 10 años.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "1795. Colombia, el país de los pájaros — Charlas Hispanas",
-        "duration_formatted": "12:21",
-        "source_url": "https://charlashispanas.com/feed/podcast/",
+        "alt_text": "Pasé más de 10 años llevando por las montañas de Colombia los mensajes secretos que hicieron posible el acuerdo de paz entre el gobierno y las FARC — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 17
+      },
+      "audio": {
+        "id": 1897947593,
+        "title": "24 Horas - La entrevista del día - 20/11/26",
+        "source": "RNE 24 horas",
+        "source_id": "es_rne_24_horas",
+        "category": "news",
+        "url": "https://www.rtve.es/play/audios/24-horas/entrevista-del-dia-20-11-26/17324462/",
+        "published_at": "2026-11-20T19:30:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 1,
+        "duration_sec": 1802,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/5/7/1795205890175.mp3?idasset=17324462&download-token=1795359642_0xe140c93056fa394006d2717cba328112633fba6c",
+        "description": "null",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "c528e4451592f7ed202c11743a618264c4e7bfd4",
+        "summary": "null",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "24 Horas - La entrevista del día - 20/11/26 — RNE 24 horas",
+        "duration_formatted": "30:02",
+        "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
         "reading_time_min": 0
       }
     },
     "culture": {
       "text": null,
       "audio": {
-        "id": 1898864395,
-        "title": "No es un día cualquiera - Tertulia de maduritos interesantes: Robert Pattinson es el nuevo James Bond",
+        "id": 1897947599,
+        "title": "No es un día cualquiera - Alexis Lemes: \" La cosa es siempre perderme y volver. Cuando no vuelves es lo complicado \"",
         "source": "RNE No es un día cualquiera",
         "source_id": "es_rne_no_es_un_dia_cualquiera",
         "category": "culture",
-        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-tertulia-maduritos-interesantes-robert-pattinson-nuevo-james-bond/17325359/",
-        "published_at": "2026-11-22T10:25:19",
+        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-alexis-cosa-perder-volver-lemes/17325422/",
+        "published_at": "2026-11-22T11:56:52",
         "level": "B1",
         "slot_level": "B1",
-        "source_level": "B1",
-        "word_count": 75,
-        "duration_sec": 1997,
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": 881,
         "body_text": null,
-        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SSECNOE/mp3/9/6/1795342555169.mp3?idasset=17325359&download-token=1795353443_0xed18b23623cb310abcdbcd978459270afac0b91f",
-        "description": "Ya sabemos quién será el próximo James Bond . Robert Pattinson ha sido elegido para suceder a Daniel Craig . Hoy en nuestra ` Tertulia de maduritos interesantes ´ hablamos del nuevo fichaje para interpretar al agente 007 con José Luis Garci, Andrés Aberasturi, Pedro Piqueras y Ángeles González-Sinde . También hablamos de pueblos , el tema central de la ` Muestra de Cine de Lanzarote ´, de cómo el cine ha reflejado la vida en los pueblos y a su gente. Escuchar audio",
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SNEDCSD/mp3/4/4/1795347372744.mp3?idasset=17325422&download-token=1795359653_0x8830deee6b4399deb3f4e66e603945a73f46a12f",
+        "description": "El músico Alexis Lemes se ha venido con su timple \"favorito\" a ` No es día cualquiera ´ para despedir el programa de Lanzarote con nosotros. \"Tengo tres timples, pero este es mi favorito\", ha asegurado. Alexis Lemes nos ha regalado dos actuaciones en directo y ha charlado con nosotros sobre su trayectoria y próximos proyectos musicales. \" La cosa es siempre perderme y volver. Cuando no vuelves es lo complicado \", ha dicho. El próximo 6 de diciembre tiene un concierto en e l Aljibe de Los Valles ( Teguise ). Escuchar audio",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "07d15f951a18890641148a5afb4eec87d8ffd8c6",
-        "summary": "Ya sabemos quién será el próximo James Bond . Robert Pattinson ha sido elegido para suceder a Daniel Craig . Hoy en nuestra ` Tertulia de maduritos interesantes ´ hablamos del nuevo fichaje para interpretar al agente 007 con José Luis Garci, Andrés Aberasturi, Pedro Piqueras y Ángeles González-Sinde . También hablamos de pueblos , el tema central de la ` Muestra de Cine de Lanzarote ´, de cómo el cine ha reflejado la vida en los pueblos y a su gente. Escuchar audio",
-        "origin": "fresh",
+        "guid_hash": "f3d8a0c967e979830d6acc2d06ad07ae369a4877",
+        "summary": "El músico Alexis Lemes se ha venido con su timple \"favorito\" a ` No es día cualquiera ´ para despedir el programa de Lanzarote con nosotros. \"Tengo tres timples, pero este es mi favorito\", ha asegurado. Alexis Lemes nos ha regalado dos actuaciones en directo y ha charlado con nosotros sobre su trayectoria y próximos proyectos musicales. \" La cosa es siempre perderme y volver. Cuando no vuelves es lo complicado \", ha dicho. El próximo 6 de diciembre tiene un concierto en e l Aljibe de Los Valles ( Teguise ). Escuchar audio",
+        "origin": "adjacent",
         "badges": [
-          "Outside preferred window"
+          "Closest level: B2"
         ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "No es un día cualquiera - Tertulia de maduritos interesantes: Robert Pattinson es el nuevo James Bond — RNE No es un día cualquiera",
-        "duration_formatted": "33:17",
+        "alt_text": "No es un día cualquiera - Alexis Lemes: \" La cosa es siempre perderme y volver. Cuando no vuelves es lo complicado \" — RNE No es un día cualquiera",
+        "duration_formatted": "14:41",
         "source_url": "https://www.rtve.es/api/programas/2054/audios.rss",
         "reading_time_min": 0
       }
@@ -82,311 +118,311 @@
     "date": "2026-11-22",
     "level": "B1",
     "word": {
-      "text": "costumbre",
+      "text": "frontera",
       "level": "B1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/kosˈtumbre/",
-      "meaning": "una tradición seguida por un grupo",
-      "meaning_fr": "coutume",
-      "example": "La costumbre sobrevivió siglos.",
-      "anki_answer": "costumbre",
+      "phonetic": "/fɾonˈteɾa/",
+      "meaning": "el límite entre dos territorios",
+      "meaning_fr": "frontière",
+      "example": "La frontera avanzaba cada año.",
+      "anki_answer": "frontera",
       "tags": [
-        "cultura"
+        "política"
       ],
-      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
+      "key": "540524bae30dc97b4bd410c7d1dc7eab226e8675",
       "kind": "word",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "expression": {
-      "expression": "hablar en nombre de",
+      "expression": "hacer frente a",
       "level": "B1",
       "type": "collocation",
-      "meaning": "representar a un grupo",
-      "meaning_fr": "parler au nom de",
-      "example": "Habló en nombre de todos.",
-      "anki_answer": "hablar en nombre de",
+      "meaning": "afrontar una dificultad",
+      "meaning_fr": "faire face à",
+      "example": "Hicieron frente a la sequía.",
+      "anki_answer": "hacer frente a",
       "tags": [
-        "representación"
+        "problemas"
       ],
-      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
+      "key": "ea86fd6ad303fef94325c8f096c4926d112ea094",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "conquista",
+      "text": "coronación",
       "aliases": [
-        "conquista",
-        "conquistas"
+        "coronación",
+        "coronaciones"
       ],
       "level": "B1",
-      "meaning": "el acto de tomar un territorio por la fuerza",
-      "meaning_fr": "conquête",
-      "period": "Antigüedad",
-      "theme": "Guerra",
-      "example": "La conquista cambió la región.",
+      "meaning": "la ceremonia de coronar a un soberano",
+      "meaning_fr": "couronnement",
+      "period": "Edad Media",
+      "theme": "Política",
+      "example": "La coronación tuvo lugar en la catedral.",
       "tags": [
-        "guerra"
+        "política"
       ],
-      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
+      "key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a",
+      "key": "7e33016591e237aba95df7159df23175446ede6b",
       "kind": "word",
       "level": "A1",
-      "text": "pequeño",
-      "meaning": "que no es grande",
-      "meaning_fr": "petit",
-      "example": "Viven en un piso pequeño.",
-      "phonetic": "/peˈkeɲo/",
-      "anki_answer": "pequeño",
+      "text": "profesor",
+      "meaning": "una persona que enseña",
+      "meaning_fr": "professeur",
+      "example": "Nuestro profesor es muy amable.",
+      "phonetic": "/pɾofeˈsoɾ/",
+      "anki_answer": "profesor",
       "tags": [
-        "tamaño"
+        "educación"
       ]
     },
     {
-      "key": "3df7c4daec9142ef06b1d480c13faa588cc0650f",
+      "key": "86e9623979beb2495ad268a78b92aafcf92e0a16",
       "kind": "expression",
       "level": "A1",
-      "text": "de nada",
-      "meaning": "respuesta a las gracias",
-      "meaning_fr": "de rien",
-      "example": "De nada, me alegra haber ayudado.",
+      "text": "desayunar",
+      "meaning": "comer la primera comida del día",
+      "meaning_fr": "prendre le petit déjeuner",
+      "example": "Desayunamos a las ocho.",
       "phonetic": "",
-      "anki_answer": "de nada",
+      "anki_answer": "desayunar",
       "tags": [
-        "cortesía"
+        "comida"
       ]
     },
     {
-      "key": "825332468514bbcede1dd4927c73122b64a7bb71",
+      "key": "791783ba8853bf9df3fcff967ba0a630c9c79162",
       "kind": "history",
       "level": "A1",
-      "text": "bandera",
-      "meaning": "una tela usada como símbolo",
-      "meaning_fr": "drapeau",
-      "example": "La bandera se izó sobre la ciudad.",
+      "text": "barco",
+      "meaning": "un vehículo que navega por el agua",
+      "meaning_fr": "bateau",
+      "example": "El barco zarpó al amanecer.",
       "phonetic": "",
-      "anki_answer": "drapeau",
-      "tags": [
-        "símbolos"
-      ]
-    },
-    {
-      "key": "46795912b3ee42f36cf5fd776870b1026852abcd",
-      "kind": "word",
-      "level": "A2",
-      "text": "viaje",
-      "meaning": "el acto de viajar a otro lugar",
-      "meaning_fr": "voyage",
-      "example": "El viaje duró tres horas.",
-      "phonetic": "/ˈbjaχe/",
-      "anki_answer": "viaje",
+      "anki_answer": "bateau",
       "tags": [
         "viajes"
       ]
     },
     {
-      "key": "714348c8b4f4782814f0ef78e6ba345271ab5188",
-      "kind": "expression",
+      "key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7",
+      "kind": "word",
       "level": "A2",
-      "text": "echar de menos",
-      "meaning": "sentir la ausencia de alguien",
-      "meaning_fr": "avoir le mal du pays, regretter",
-      "example": "Echo de menos a mi familia.",
-      "phonetic": "",
-      "anki_answer": "echar de menos",
+      "text": "olvidar",
+      "meaning": "no conservar algo en la memoria",
+      "meaning_fr": "oublier",
+      "example": "No olvides las llaves.",
+      "phonetic": "/olbiˈdaɾ/",
+      "anki_answer": "olvidar",
       "tags": [
-        "sentimientos"
+        "memoria"
       ]
     },
     {
-      "key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c",
+      "key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0",
+      "kind": "expression",
+      "level": "A2",
+      "text": "encender la luz",
+      "meaning": "poner en funcionamiento una luz",
+      "meaning_fr": "allumer la lumière",
+      "example": "Enciende la luz, está oscuro.",
+      "phonetic": "",
+      "anki_answer": "encender la luz",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7",
       "kind": "history",
       "level": "A2",
-      "text": "monasterio",
-      "meaning": "un lugar donde viven y trabajan los monjes",
-      "meaning_fr": "monastère",
-      "example": "Los monjes copiaban libros en el monasterio.",
+      "text": "puerto",
+      "meaning": "un lugar seguro para los barcos",
+      "meaning_fr": "port",
+      "example": "Los barcos esperaban en el puerto.",
       "phonetic": "",
-      "anki_answer": "monastère",
+      "anki_answer": "port",
+      "tags": [
+        "comercio"
+      ]
+    },
+    {
+      "key": "540524bae30dc97b4bd410c7d1dc7eab226e8675",
+      "kind": "word",
+      "level": "B1",
+      "text": "frontera",
+      "meaning": "el límite entre dos territorios",
+      "meaning_fr": "frontière",
+      "example": "La frontera avanzaba cada año.",
+      "phonetic": "/fɾonˈteɾa/",
+      "anki_answer": "frontera",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "ea86fd6ad303fef94325c8f096c4926d112ea094",
+      "kind": "expression",
+      "level": "B1",
+      "text": "hacer frente a",
+      "meaning": "afrontar una dificultad",
+      "meaning_fr": "faire face à",
+      "example": "Hicieron frente a la sequía.",
+      "phonetic": "",
+      "anki_answer": "hacer frente a",
+      "tags": [
+        "problemas"
+      ]
+    },
+    {
+      "key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8",
+      "kind": "history",
+      "level": "B1",
+      "text": "coronación",
+      "meaning": "la ceremonia de coronar a un soberano",
+      "meaning_fr": "couronnement",
+      "example": "La coronación tuvo lugar en la catedral.",
+      "phonetic": "",
+      "anki_answer": "couronnement",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "7818fca3b3151be48052640f5d60ed2e770db837",
+      "kind": "word",
+      "level": "B2",
+      "text": "laico",
+      "meaning": "que no está vinculado a una religión",
+      "meaning_fr": "laïque",
+      "example": "Las escuelas se volvieron laicas.",
+      "phonetic": "/ˈlaiko/",
+      "anki_answer": "laico",
       "tags": [
         "religión"
       ]
     },
     {
-      "key": "6ab5f616acf084645298dc16cddde5180d6a0d81",
-      "kind": "word",
-      "level": "B1",
-      "text": "costumbre",
-      "meaning": "una tradición seguida por un grupo",
-      "meaning_fr": "coutume",
-      "example": "La costumbre sobrevivió siglos.",
-      "phonetic": "/kosˈtumbre/",
-      "anki_answer": "costumbre",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6",
-      "kind": "expression",
-      "level": "B1",
-      "text": "hablar en nombre de",
-      "meaning": "representar a un grupo",
-      "meaning_fr": "parler au nom de",
-      "example": "Habló en nombre de todos.",
-      "phonetic": "",
-      "anki_answer": "hablar en nombre de",
-      "tags": [
-        "representación"
-      ]
-    },
-    {
-      "key": "950c0cc5d1df2fef68e78e266b0243c978702057",
-      "kind": "history",
-      "level": "B1",
-      "text": "conquista",
-      "meaning": "el acto de tomar un territorio por la fuerza",
-      "meaning_fr": "conquête",
-      "example": "La conquista cambió la región.",
-      "phonetic": "",
-      "anki_answer": "conquête",
-      "tags": [
-        "guerra"
-      ]
-    },
-    {
-      "key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a",
-      "kind": "word",
-      "level": "B2",
-      "text": "insurrección",
-      "meaning": "un levantamiento contra la autoridad",
-      "meaning_fr": "insurrection",
-      "example": "La insurrección empezó en la capital.",
-      "phonetic": "/insuɾeˈkθjon/",
-      "anki_answer": "insurrección",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c",
+      "key": "20b5be911e696631802f36dab5e10d70676d230b",
       "kind": "expression",
       "level": "B2",
-      "text": "estar a la altura",
-      "meaning": "cumplir las expectativas",
-      "meaning_fr": "être à la hauteur",
-      "example": "El equipo estuvo a la altura.",
+      "text": "hacer balance",
+      "meaning": "resumir resultados",
+      "meaning_fr": "faire le bilan",
+      "example": "Hicieron balance del año.",
       "phonetic": "",
-      "anki_answer": "estar a la altura",
+      "anki_answer": "hacer balance",
       "tags": [
-        "expectativas"
+        "evaluación"
       ]
     },
     {
-      "key": "5286c476c737af93cf9b017f1c116af98eda1482",
+      "key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01",
       "kind": "history",
       "level": "B2",
-      "text": "civilización",
-      "meaning": "una sociedad humana avanzada",
-      "meaning_fr": "civilisation",
-      "example": "La civilización dejó grandes monumentos.",
+      "text": "economía",
+      "meaning": "la producción y distribución de bienes",
+      "meaning_fr": "économie",
+      "example": "La economía dependía del comercio.",
       "phonetic": "",
-      "anki_answer": "civilisation",
-      "tags": [
-        "cultura"
-      ]
-    },
-    {
-      "key": "891634f2bec28bf34add705d3a28a37d3bc0b94b",
-      "kind": "word",
-      "level": "C1",
-      "text": "modernización",
-      "meaning": "el proceso de adaptar algo a la época moderna",
-      "meaning_fr": "modernisation",
-      "example": "La modernización del ejército fue costosa.",
-      "phonetic": "/moðeɾniθaˈθjon/",
-      "anki_answer": "modernización",
-      "tags": [
-        "sociedad"
-      ]
-    },
-    {
-      "key": "880a19665645f476ded6b498c0e9da5584f699f8",
-      "kind": "expression",
-      "level": "C1",
-      "text": "socavar la legitimidad",
-      "meaning": "debilitar el derecho a gobernar",
-      "meaning_fr": "miner la légitimité",
-      "example": "La corrupción socavó la legitimidad.",
-      "phonetic": "",
-      "anki_answer": "socavar la legitimidad",
-      "tags": [
-        "política"
-      ]
-    },
-    {
-      "key": "a732dd8e2fef5ea60d559f42893462a496ee8697",
-      "kind": "history",
-      "level": "C1",
-      "text": "mercantilismo",
-      "meaning": "una doctrina económica centrada en el comercio y la riqueza",
-      "meaning_fr": "mercantilisme",
-      "example": "El mercantilismo guiaba la política colonial.",
-      "phonetic": "",
-      "anki_answer": "mercantilisme",
+      "anki_answer": "économie",
       "tags": [
         "economía"
       ]
     },
     {
-      "key": "ba6275ea6d926358822050ea139ef4b860872029",
+      "key": "e55d2707b2aebc7a038a40179fc5442d5958bcee",
+      "kind": "word",
+      "level": "C1",
+      "text": "nacionalismo",
+      "meaning": "la defensa de la identidad y los intereses de una nación",
+      "meaning_fr": "nationalisme",
+      "example": "El nacionalismo creció en el siglo XIX.",
+      "phonetic": "/naθjonaˈlismo/",
+      "anki_answer": "nacionalismo",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "0de124a4ce34371301ee16cb15dda35bb2b98372",
+      "kind": "expression",
+      "level": "C1",
+      "text": "matizar una afirmación",
+      "meaning": "suavizar o precisar lo dicho",
+      "meaning_fr": "nuancer une affirmation",
+      "example": "Matizó su afirmación posteriormente.",
+      "phonetic": "",
+      "anki_answer": "matizar una afirmación",
+      "tags": [
+        "precisión"
+      ]
+    },
+    {
+      "key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937",
+      "kind": "history",
+      "level": "C1",
+      "text": "modernización",
+      "meaning": "el proceso de adaptar algo a la época moderna",
+      "meaning_fr": "modernisation",
+      "example": "La modernización del ejército fue costosa.",
+      "phonetic": "",
+      "anki_answer": "modernisation",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "5a3785b84713b98a75e990e5014ee69cf2962f40",
       "kind": "word",
       "level": "C2",
-      "text": "cartografía",
-      "meaning": "el arte y la ciencia de hacer mapas",
-      "meaning_fr": "cartographie",
-      "example": "La cartografía portuguesa mejoró rápidamente.",
-      "phonetic": "/kaɾtoɣɾaˈfia/",
-      "anki_answer": "cartografía",
+      "text": "causalidad",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Los historiadores debatieron la causalidad de la crisis.",
+      "phonetic": "/kausaˈliðað/",
+      "anki_answer": "causalidad",
       "tags": [
         "ciencia"
       ]
     },
     {
-      "key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864",
+      "key": "2e07054bacdfed01eead7031077e75ba541c52c9",
       "kind": "expression",
       "level": "C2",
-      "text": "poner en perspectiva",
-      "meaning": "comparar un hecho con su contexto",
-      "meaning_fr": "mettre en perspective",
-      "example": "Puso el dato en perspectiva.",
+      "text": "rastrear una huella documental",
+      "meaning": "seguir un rastro en los documentos",
+      "meaning_fr": "retracer une trace documentaire",
+      "example": "Rastrearon la huella documental.",
       "phonetic": "",
-      "anki_answer": "poner en perspectiva",
+      "anki_answer": "rastrear una huella documental",
       "tags": [
-        "análisis"
+        "historia"
       ]
     },
     {
-      "key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da",
+      "key": "8f88d72b531febe132811fe164d11391448a7649",
       "kind": "history",
       "level": "C2",
-      "text": "discontinuidad",
-      "meaning": "una ruptura en la continuidad de un proceso",
-      "meaning_fr": "discontinuité",
-      "example": "La obra subrayó la discontinuidad.",
+      "text": "epistemología",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
       "phonetic": "",
-      "anki_answer": "discontinuité",
+      "anki_answer": "épistémologie",
       "tags": [
-        "cultura"
+        "ciencia"
       ]
     }
   ],
@@ -396,270 +432,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "¿Qué significa “pequeño”?",
+      "prompt": "¿Qué significa “profesor”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "petit",
-      "item_key": "0d037d6f68df53a930fab6c60708d579b2ac3e5a"
+      "answer": "professeur",
+      "item_key": "7e33016591e237aba95df7159df23175446ede6b"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Completa la expresión: de ____",
+      "prompt": "Completa la expresión: ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nada",
-      "item_key": "3df7c4daec9142ef06b1d480c13faa588cc0650f"
+      "answer": "desayunar",
+      "item_key": "86e9623979beb2495ad268a78b92aafcf92e0a16"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "¿A qué período pertenece “bandera”?",
+      "prompt": "¿A qué período pertenece “barco”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "General",
-      "item_key": "825332468514bbcede1dd4927c73122b64a7bb71"
+      "answer": "Edad Moderna",
+      "item_key": "791783ba8853bf9df3fcff967ba0a630c9c79162"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "¿Qué significa “viaje”?",
+      "prompt": "¿Qué significa “olvidar”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "voyage",
-      "item_key": "46795912b3ee42f36cf5fd776870b1026852abcd"
+      "answer": "oublier",
+      "item_key": "f273bb953ea2ffbde89ca8be5130e9ea42d75fe7"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Completa la expresión: echar de ____",
+      "prompt": "Completa la expresión: ____ la luz",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "menos",
-      "item_key": "714348c8b4f4782814f0ef78e6ba345271ab5188"
+      "answer": "encender",
+      "item_key": "1b6d150c390c2132e3fd77870fb379b8e8e17cf0"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "¿A qué período pertenece “monasterio”?",
+      "prompt": "¿A qué período pertenece “puerto”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Media",
-      "item_key": "9a3c824e1e03ce7cbe84fef5ced580f8c33df80c"
+      "answer": "General",
+      "item_key": "0057951d1325157bfaa8e57f68b6ccb1c1979fc7"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "¿Qué significa “costumbre”?",
+      "prompt": "¿Qué significa “frontera”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "coutume",
-      "item_key": "6ab5f616acf084645298dc16cddde5180d6a0d81"
+      "answer": "frontière",
+      "item_key": "540524bae30dc97b4bd410c7d1dc7eab226e8675"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Completa la expresión: hablar en ____ de",
+      "prompt": "Completa la expresión: hacer ____ a",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "nombre",
-      "item_key": "5995bd5cfafcc3fb03bd67911cc3b58c6b9cf3d6"
+      "answer": "frente",
+      "item_key": "ea86fd6ad303fef94325c8f096c4926d112ea094"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "¿A qué período pertenece “conquista”?",
+      "prompt": "¿A qué período pertenece “coronación”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "950c0cc5d1df2fef68e78e266b0243c978702057"
+      "answer": "Edad Media",
+      "item_key": "9718ef5d5304c2be2f6596bc7274897df5ccc7e8"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "¿Qué significa “insurrección”?",
+      "prompt": "¿Qué significa “laico”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "insurrection",
-      "item_key": "70f54b6bd23cf96c48312cbefd5dfd8d7d9e153a"
+      "answer": "laïque",
+      "item_key": "7818fca3b3151be48052640f5d60ed2e770db837"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Completa la expresión: estar a la ____",
+      "prompt": "Completa la expresión: hacer ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "altura",
-      "item_key": "28de7e75e9d075c9fa5a62622aca8bdd5e832e0c"
+      "answer": "balance",
+      "item_key": "20b5be911e696631802f36dab5e10d70676d230b"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "¿A qué período pertenece “civilización”?",
+      "prompt": "¿A qué período pertenece “economía”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Antigüedad",
-      "item_key": "5286c476c737af93cf9b017f1c116af98eda1482"
+      "answer": "General",
+      "item_key": "a2342d8ab63d9b1602b891a44c1d43afb22bcf01"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "¿Qué significa “modernización”?",
+      "prompt": "¿Qué significa “nacionalismo”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "modernisation",
-      "item_key": "891634f2bec28bf34add705d3a28a37d3bc0b94b"
+      "answer": "nationalisme",
+      "item_key": "e55d2707b2aebc7a038a40179fc5442d5958bcee"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Completa la expresión: socavar la ____",
+      "prompt": "Completa la expresión: matizar una ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "legitimidad",
-      "item_key": "880a19665645f476ded6b498c0e9da5584f699f8"
+      "answer": "afirmación",
+      "item_key": "0de124a4ce34371301ee16cb15dda35bb2b98372"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "¿A qué período pertenece “mercantilismo”?",
+      "prompt": "¿A qué período pertenece “modernización”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
-      "answer": "Edad Moderna",
-      "item_key": "a732dd8e2fef5ea60d559f42893462a496ee8697"
+      "answer": "Siglo XIX",
+      "item_key": "c6336c5123e8c8a35f8cbc3d30454b300cb1e937"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "¿Qué significa “cartografía”?",
+      "prompt": "¿Qué significa “causalidad”?",
       "options": [
-        "cartographie",
-        "coutume",
-        "insurrection",
-        "modernisation"
+        "causalité",
+        "frontière",
+        "laïque",
+        "nationalisme"
       ],
-      "answer": "cartographie",
-      "item_key": "ba6275ea6d926358822050ea139ef4b860872029"
+      "answer": "causalité",
+      "item_key": "5a3785b84713b98a75e990e5014ee69cf2962f40"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Completa la expresión: poner en ____",
+      "prompt": "Completa la expresión: rastrear una huella ____",
       "options": [
-        "altura",
-        "echar",
-        "estar",
-        "hablar"
+        "afirmación",
+        "balance",
+        "desayunar",
+        "documental"
       ],
-      "answer": "perspectiva",
-      "item_key": "9f0f95fd32c316f0c3bcb12ab79120aaa3f4d864"
+      "answer": "documental",
+      "item_key": "2e07054bacdfed01eead7031077e75ba541c52c9"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "¿A qué período pertenece “discontinuidad”?",
+      "prompt": "¿A qué período pertenece “epistemología”?",
       "options": [
-        "Antigüedad",
         "Contemporáneo",
         "Edad Media",
-        "Edad Moderna"
+        "Edad Moderna",
+        "General"
       ],
       "answer": "Contemporáneo",
-      "item_key": "8fc8ac9176b1a7a98a1ce06e6d61fbaea13c35da"
+      "item_key": "8f88d72b531febe132811fe164d11391448a7649"
     }
   ],
   "tour": [
@@ -667,7 +703,7 @@
       "id": "home",
       "title": "Empieza desde casa",
       "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
-      "target": "[data-eds-hero]"
+      "target": "[data-eds-today]"
     },
     {
       "id": "level",
@@ -696,7 +732,7 @@
     {
       "id": "anki",
       "title": "Exporta lo aprendido",
-      "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
       "target": "[data-eds-anki]"
     },
     {
@@ -708,12 +744,12 @@
   ],
   "meta": {
     "contract_version": 2,
-    "filled": 2,
+    "filled": 3,
     "total": 6,
     "origins": {
-      "fresh": 2
+      "adjacent": 3
     },
-    "source_count": 2,
+    "source_count": 3,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,

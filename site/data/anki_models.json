@@ -1,0 +1,30 @@
+{
+  "models": [
+    {
+      "modelName": "English Daily Phrase",
+      "inOrderFields": ["Front", "Back", "Example", "Source", "Level", "Language", "Date", "Guid"],
+      "css": ".card { font-family:Arial, sans-serif; font-size:18px; text-align:center; color:#23221f; background:#fbfaf7; }\n.ed-front { font-size:26px; font-weight:700; }\n.ed-source, .ed-example, .ed-meta { color:#635f58; font-size:13px; margin-top:12px; }\n.ed-back { font-size:21px; margin-top:14px; }\nhr#answer { border:0; border-top:1px solid #8c887e; margin:18px 0; }",
+      "isCloze": false,
+      "cardTemplates": [
+        {
+          "Name": "English Daily phrase",
+          "Front": "<div class=\"ed-front\">{{Front}}</div><div class=\"ed-source\">{{Source}}</div>",
+          "Back": "{{FrontSide}}<hr id=\"answer\"><div class=\"ed-back\">{{Back}}</div>{{#Example}}<div class=\"ed-example\">{{Example}}</div>{{/Example}}<div class=\"ed-meta\">{{Level}} · {{Language}} · {{Date}}</div>"
+        }
+      ]
+    },
+    {
+      "modelName": "English Daily Cloze",
+      "inOrderFields": ["Text", "Extra", "Source", "Level", "Language", "Date", "Guid"],
+      "css": ".card { font-family:Arial, sans-serif; font-size:18px; text-align:center; color:#23221f; background:#fbfaf7; }\n.ed-cloze { font-size:24px; font-weight:700; }\n.ed-source, .ed-extra, .ed-meta { color:#635f58; font-size:13px; margin-top:12px; }",
+      "isCloze": true,
+      "cardTemplates": [
+        {
+          "Name": "English Daily cloze",
+          "Front": "{{cloze:Text}}",
+          "Back": "{{cloze:Text}}<hr id=\"answer\">{{Extra}}"
+        }
+      ]
+    }
+  ]
+}
