@@ -10,6 +10,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="description" content="A little English, every day.">
+  <meta name="eds-brand-es" content="Spanish Daily">
+  <meta name="eds-tagline-es" content="Un poco de español, cada día.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
@@ -33,7 +35,7 @@
   <a class="skip-link" href="#reading-panel">Skip to content</a>
   <div class="shell" data-eds-route>
     <header class="masthead">
-      <a class="brand" href="#today" data-eds-home aria-label="English Daily home">
+      <a class="brand" href="#today" data-eds-home :aria-label="brand + ' home'" aria-label="English Daily home">
         <span class="brand-mark" x-text="brand">English Daily</span>
         <span class="tagline" x-text="tagline">A little English, every day.</span>
       </a>
@@ -44,6 +46,12 @@
         <a href="#settings" :aria-current="route === 'settings' ? 'page' : null">Settings</a>
       </nav>
       <div class="header-actions">
+        <label class="sr-only" for="language-select">Language</label>
+        <select id="language-select" class="language-select language-picker" data-eds-language-select :value="lang" @change="setLanguage($event.target.value)" aria-label="Language">
+          <template x-for="option in languageOptions()" :key="option.code">
+            <option :value="option.code" x-text="option.label"></option>
+          </template>
+        </select>
         <button class="icon-button" type="button" x-show="updateAvailable" @click="applyUpdate()" aria-label="Install updated app">Update</button>
         <button class="icon-button" type="button" @click="startTour()" aria-label="Start the guided tour">Tour</button>
         <button class="icon-button" type="button" @click="toggleTheme()" :aria-label="prefersDark() ? 'Use light theme' : 'Use dark theme'" x-text="prefersDark() ? 'Light' : 'Dark'"></button>
@@ -60,7 +68,7 @@
       <div class="hero">
         <div>
           <p class="eyebrow" x-text="longDate(selectedDate)"></p>
-          <h1 id="hero-title">A little English, every day.</h1>
+          <h1 id="hero-title" x-text="tagline">A little English, every day.</h1>
           <p class="hero-copy">Choose a level, then read and listen to real-world English selected for today.</p>
         </div>
         <div class="practice-summary" aria-label="Practice summary">

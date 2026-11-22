@@ -6,7 +6,7 @@ from app.db import default_language, load_sources
 from ingest.phrases import annotate_history
 from ingest.pool import save_pool
 from ingest.readability import CATEGORIES, KINDS, LEVELS
-from ingest.reserve.common import Budget
+from ingest.reserve.common import Budget, source_host
 from ingest.reserve.gutenberg import sample_gutenberg
 from ingest.reserve.history import sample_history
 from ingest.reserve.librivox import sample_librivox
@@ -52,6 +52,43 @@ def generate_reserves(
             ("wikinews", lambda: sample_wikinews(scoring_config, budget)),
             ("gutenberg", lambda: sample_gutenberg(scoring_config, budget, state_dir, lang=language)),
         ])
+    elif language == "es":
+        wiki_types = {"wikipedia", "wikipedia_simple", "wikipedia_history", "wikinews", "gutenberg"}
+        for source in sources:
+            if not source.get("enabled", True):
+                continue
+            source_type = str(source.get("type") or "")
+            if source_type not in wiki_types:
+                continue
+            if source_type in {"wikipedia", "wikipedia_simple"}:
+                host = source_host(source, "es.wikipedia.org" if language == "es" else "en.wikipedia.org")
+                generators.append((
+                    f"wikipedia {source['id']}",
+                    lambda source=source, host=host: sample_wikipedia(
+                        scoring_config, budget, host=host, source=source
+                    ),
+                ))
+            elif source_type == "wikipedia_history":
+                generators.append((
+                    f"wikipedia history {source['id']}",
+                    lambda source=source: sample_history(
+                        scoring_config, budget, state_dir, lang=language, source=source
+                    ),
+                ))
+            elif source_type == "wikinews":
+                generators.append((
+                    f"wikinews {source['id']}",
+                    lambda source=source: sample_wikinews(
+                        scoring_config, budget, lang=language, source=source
+                    ),
+                ))
+            elif source_type == "gutenberg":
+                generators.append((
+                    f"gutenberg {source['id']}",
+                    lambda source=source: sample_gutenberg(
+                        scoring_config, budget, state_dir, lang=language, source=source
+                    ),
+                ))
     for source in librivox_sources:
         generators.append((f"librivox {source['id']}", lambda source=source: sample_librivox(
             scoring_config, budget, state_dir, source, int(config.get("new_books_per_run", 25)), lang=language

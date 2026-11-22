@@ -192,3 +192,18 @@
 - Verification: exported HTML contains the AnkiConnect URL setting and check/send controls; `anki-build` produced a valid ZIP-based `.apkg` in a temp directory.
 - Decision: use FNV-1a GUID generation in both Python and JavaScript so browser and backend notes share stable identities without async Web Crypto.
 - Remaining: Phases 5–8.
+
+## New brief — Phase 5 — Spanish (done)
+
+- Added `es` to `languages`, with `Spanish Daily` branding, `Un poco de español, cada día.` tagline, Spanish CEFR thresholds/word bands, Unicode cleaning patterns and language-scoped history keywords, categories, periods and themes.
+- Added 17 Spanish sources: BBC Mundo, five podcast/RSS feeds, five RTVE/RNE feeds, two LibriVox feeds, Project Gutenberg, Wikinews and three Wikipedia generators; all source IDs are `es_`-prefixed and audio remains hotlinked.
+- Added `bank/es/words.yaml`, `bank/es/expressions.yaml`, `bank/es/history_terms.yaml` with 120 level-balanced entries each, plus the `state/es/` scaffold. Expanded `bank/en/history_terms.yaml` to 120 entries.
+- Added `language_setting()` resolution and applied it to source loading, readability, text cleaning, phrase annotation, picker thresholds and reserve generators; Unicode counting and Spanish readability are deterministic and offline.
+- Added Spanish exercise prompts, tour steps, history metadata and CLI stats headings; static export writes `site/data/languages.json` with both languages and `site/data/es/index.json`.
+- Frontend now loads language payloads from static/server sources, scopes day/search/state URLs by language, uses a language selector with `?lang=` synchronization, updates `document.documentElement.lang`, and stores exercise answers under language-scoped keys with English backward compatibility.
+- Added `./data/languages.json` to the service-worker app shell and deterministic helper tests for language options, URLs and answer isolation.
+- Fixed audit findings in the same phase: dead `onthisday_linked()` candidate construction, duplicate Spanish theme keyword, English-only stats heading for `--lang es`, and overly broad `wikipedia_simple` extracts now use short intro-only articles.
+- Tests: 61 unit tests passed in `.venv`, including Spanish bank shape, source registry, language helpers, Unicode metrics, reserve hosts, Wikipedia intro params, localized serialization/stats and Spanish export.
+- Verification: Python compile check passed; `node --check` passed for all JavaScript files; `tests/frontend_helpers.js`, palette check and contrast audit passed; temp public static export confirmed `en`/`es` languages and Spanish index; `run.py reconstruct --lang es --json` returned 36 slots and `run.py doctor --json --lang es` reported 17 sources with 17 OK.
+- Decision: keep repository slug, data paths and storage prefixes as `english-daily`; only user-visible brand/tagline and generated content become Spanish for `es`.
+- Remaining: Phases 6–8.

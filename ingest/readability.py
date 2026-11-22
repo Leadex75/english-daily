@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import functools
 import re
+import warnings
 from typing import Any
 
 import textstat
@@ -12,8 +13,8 @@ from app.db import default_language, level_config, load_config, normalize_langua
 LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"]
 CATEGORIES = ["news", "culture", "history"]
 KINDS = ["text", "audio"]
-_WORD_RE = re.compile(r"[A-Za-z]+(?:['\u2019-][A-Za-z]+)*")
-_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+_WORD_RE = re.compile(r"[^\W\d_]+(?:['\u2019-][^\W\d_]+)*", re.UNICODE)
+_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?…])\s+|(?<=[.!?])(?=[¿¡])")
 
 
 def norm(value: float, low: float, high: float) -> float:
@@ -23,12 +24,34 @@ def norm(value: float, low: float, high: float) -> float:
     return max(0.0, min(1.0, (value - low) / (high - low)))
 
 
+def is_spanish(lang: str | None) -> bool:
+    return str(lang or "").lower().split("-")[0].split("_")[0] == "es"
+
+
 @functools.lru_cache(maxsize=100_000)
 def _zipf(word: str, lang: str = "en") -> float:
     try:
         return wordfreq.zipf_frequency(word, lang)
     except Exception:
-        return wordfreq.zipf_frequency(word, "en")
+        if is_spanish(lang):
+            return 0.0
+        try:
+            return wordfreq.zipf_frequency(word, "en")
+        except Exception:
+            return 0.0
+
+
+@functools.lru_cache(maxsize=50_000)
+def _spanish_syllables(text: str) -> int:
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", DeprecationWarning)
+        return int(textstat.syllable_count(text, lang="es"))
+
+
+def _spanish_grade(words: int, sentences: int, text: str) -> float:
+    syllables = _spanish_syllables(text)
+    grade = 0.39 * (words / sentences) + 11.8 * (syllables / max(1, words)) - 15.59
+    return round(max(0.0, min(20.0, grade)), 3)
 
 
 def rare_word_ratio(text: str, lang: str = "en") -> float:
@@ -50,8 +73,13 @@ def metrics(text: str, lang: str = "en") -> dict[str, float]:
     words = _WORD_RE.findall(clean)
     if not clean or not words:
         return {"fk_grade": 0.0, "avg_sentence_len": 0.0, "rare_word_ratio": 0.0, "score": 0.0}
-    sentences = max(1, textstat.sentence_count(clean))
-    fk_grade = float(textstat.flesch_kincaid_grade(clean))
+    if is_spanish(lang):
+        spans = [part for part in _SENTENCE_SPLIT_RE.split(clean) if part.strip()]
+        sentences = max(1, len(spans) if spans else textstat.sentence_count(clean))
+        fk_grade = _spanish_grade(len(words), sentences, clean)
+    else:
+        sentences = max(1, textstat.sentence_count(clean))
+        fk_grade = float(textstat.flesch_kincaid_grade(clean))
     avg_sentence_len = len(words) / sentences
     rare = rare_word_ratio(clean, lang)
     score = (

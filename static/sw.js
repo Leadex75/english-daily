@@ -19,7 +19,8 @@ var APP_SHELL = [
   './vendor/alpine.min.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icons/icon-512.png',
+  './data/languages.json'
 ];
 
 function assetUrl(path) {

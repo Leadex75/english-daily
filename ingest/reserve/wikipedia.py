@@ -6,7 +6,10 @@ from typing import Any
 from ingest.fetch_feeds import plain_text
 from ingest.reserve.common import Budget, api_get, get_url, is_blocked, make_candidate
 
-SKIP_WORDS = ("disambiguation", "list of", "index of", "outline of", "category:")
+SKIP_WORDS = (
+    "disambiguation", "list of", "index of", "outline of", "category:",
+    "desambiguación", "lista de", "índice de", "esquema de", "categoría:",
+)
 
 
 def _extracts(pages: list[dict[str, Any]]) -> list[dict[str, str]]:
@@ -20,8 +23,21 @@ def _extracts(pages: list[dict[str, Any]]) -> list[dict[str, str]]:
     return result
 
 
-def sample_wikipedia(config: dict[str, Any], budget: Budget, host: str = "en.wikipedia.org", batches: int = 2) -> list[dict[str, Any]]:
+def sample_wikipedia(
+    config: dict[str, Any],
+    budget: Budget,
+    host: str = "en.wikipedia.org",
+    batches: int = 2,
+    source: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
+    if source:
+        source_id = str(source.get("id") or "wikipedia")
+    else:
+        source_id = "wikipedia_simple" if "simple." in host else "wikipedia"
+    source_name = str((source or {}).get("name") or (
+        "Simple English Wikipedia" if "simple." in host else "Wikipedia"
+    ))
     for _ in range(batches):
         if not budget.ok:
             break
@@ -48,13 +64,16 @@ def sample_wikipedia(config: dict[str, Any], budget: Budget, host: str = "en.wik
                     text = plain_text(full_pages[0].get("extract") or text)
             if is_blocked(text, config) or len(text.split()) < int(config["text_hard_min_words"]):
                 continue
+            simple = "simple." in host or str((source or {}).get("type") or "") == "wikipedia_simple"
+            if simple and len(text.split()) > 300:
+                continue
             if len(text.split()) > 800:
                 words = text.split()
                 text = " ".join(words[:800])
-            level_min, level_max = ("A1", "B1") if "simple." in host else ("A1", "C2")
+            level_min, level_max = ("A1", "B1") if simple else ("A1", "C2")
             candidate = make_candidate(
-                title=page["title"], text=text, source_id="wikipedia_simple" if "simple." in host else "wikipedia",
-                source_name="Simple English Wikipedia" if "simple." in host else "Wikipedia",
+                title=page["title"], text=text, source_id=source_id,
+                source_name=source_name,
                 category="culture", kind="text", license_name="cc_by_sa",
                 attribution="Wikipedia, CC BY-SA 4.0", config=config,
                 url=f"https://{host}/wiki/" + page["title"].replace(" ", "_"),
@@ -62,6 +81,6 @@ def sample_wikipedia(config: dict[str, Any], budget: Budget, host: str = "en.wik
             )
             if candidate:
                 candidates.append(candidate)
-        if random.random() < 0.5:
+        if source is None and random.random() < 0.5:
             host = "simple.wikipedia.org" if host == "en.wikipedia.org" and "simple." not in host else "en.wikipedia.org"
     return candidates

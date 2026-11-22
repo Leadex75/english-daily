@@ -24,18 +24,23 @@ from app.db import (
     default_language,
     init_db,
     language_metadata_map,
+    language_setting,
     load_config,
+    load_sources,
     normalize_language,
+    source_registry,
     upsert_sources,
 )
 from app.main import app
-from app.serialize import excerpt, serialize_day
+from app.serialize import _build_exercises, _TOUR_STEPS_BY_LANG, excerpt, serialize_day
 from desktop.main import resolve_site_dir
 from fastapi.testclient import TestClient
 
+from ingest import readability
 from ingest.doctor import check_sources, run_doctor
 from ingest.export_static import export_static
-from ingest.fetch_text import clean_text, extract_article
+from ingest.fetch_feeds import RESERVE_TYPES, _wikipedia_simple
+from ingest.fetch_text import clean_text, extract_article, word_count
 from ingest.pool import pool_dir
 from tools.contrast_check import audit_css, contrast_ratio
 from tools.palette_build import audit_palettes, build_css
@@ -54,8 +59,9 @@ from ingest.paths import (
 from ingest.phrases import annotate_history, generate_phrases, load_bank, load_history_terms, store_phrases
 from ingest.picker import choose_picks
 from ingest.pipeline import run_ingest
-from ingest.readability import band_center
-from ingest.reserve.common import make_candidate
+from ingest.readability import band_center, is_spanish, metrics
+from ingest.reserve.common import make_candidate, source_host
+from ingest.reserve.wikinews import _month_category
 from ingest.search import build_search_index, search_index
 import run
 from tools.build_desktop import build_zipapp
@@ -78,13 +84,40 @@ class BankTests(unittest.TestCase):
         for item in expressions:
             self.assertTrue(str(item.get("meaning_fr") or "").strip())
         terms = load_history_terms()
-        self.assertEqual(len(terms), 36)
+        self.assertGreaterEqual(len(terms), 120)
         self.assertEqual({str(item["level"]) for item in terms}, set(expected_words))
         for item in terms:
             self.assertTrue(str(item.get("meaning_fr") or "").strip())
             self.assertTrue(str(item.get("period") or "").strip())
             self.assertTrue(str(item.get("theme") or "").strip())
             self.assertTrue(list(item.get("aliases") or []))
+
+    def test_spanish_and_expanded_banks_are_shape_compatible(self):
+        for lang in ("en", "es"):
+            words = load_bank("words", lang)
+            expressions = load_bank("expressions", lang)
+            terms = load_history_terms(lang)
+            self.assertGreaterEqual(len(words), 120)
+            self.assertGreaterEqual(len(expressions), 120)
+            self.assertGreaterEqual(len(terms), 120)
+            self.assertEqual(
+                {str(item["level"]) for item in words},
+                {"A1", "A2", "B1", "B2", "C1", "C2"},
+            )
+            self.assertEqual(
+                {str(item["level"]) for item in expressions},
+                {"A1", "A2", "B1", "B2", "C1", "C2"},
+            )
+            self.assertEqual(
+                {str(item["level"]) for item in terms},
+                {"A1", "A2", "B1", "B2", "C1", "C2"},
+            )
+            for item in words + expressions + terms:
+                self.assertTrue(str(item.get("meaning_fr") or "").strip())
+            for item in terms:
+                self.assertTrue(str(item.get("period") or "").strip())
+                self.assertTrue(str(item.get("theme") or "").strip())
+                self.assertTrue(list(item.get("aliases") or []))
 
     def test_history_terms_annotate_history_items(self):
         config = dict(DEFAULTS)
@@ -886,11 +919,14 @@ class SearchApiTests(unittest.TestCase):
 class PhaseOneBrandingAndLayoutTests(unittest.TestCase):
     def test_language_brand_metadata_is_available_from_config(self):
         config = load_config()
-        self.assertEqual(available_languages(config), ["en"])
+        self.assertEqual(available_languages(config), ["en", "es"])
         self.assertEqual(brand_for_language(config, "en"), "English Daily")
+        self.assertEqual(brand_for_language(config, "es"), "Spanish Daily")
         metadata = language_metadata_map(config)
         self.assertEqual(metadata["en"]["label"], "English")
         self.assertEqual(metadata["en"]["tagline"], "A little English, every day.")
+        self.assertEqual(metadata["es"]["label"], "Spanish")
+        self.assertEqual(metadata["es"]["tagline"], "Un poco de español, cada día.")
 
     def test_languages_endpoint_exposes_brand_metadata(self):
         config = load_config()
@@ -899,9 +935,12 @@ class PhaseOneBrandingAndLayoutTests(unittest.TestCase):
             response = client.get("/api/languages")
         self.assertEqual(response.status_code, 200)
         payload = response.json()
-        self.assertEqual(payload["languages"], ["en"])
+        self.assertEqual(payload["languages"], ["en", "es"])
         self.assertEqual(payload["brands"]["en"], "English Daily")
+        self.assertEqual(payload["brands"]["es"], "Spanish Daily")
         self.assertEqual(payload["metadata"]["en"]["brand"], "English Daily")
+        self.assertEqual(payload["metadata"]["es"]["brand"], "Spanish Daily")
+        self.assertEqual(payload["metadata"]["es"]["tagline"], "Un poco de español, cada día.")
 
     def test_user_facing_brand_and_layout_markers_are_updated(self):
         root = Path(__file__).resolve().parents[1]
@@ -923,6 +962,120 @@ class PhaseOneBrandingAndLayoutTests(unittest.TestCase):
             self.assertIn(marker, index)
         self.assertNotIn("class=\"progress-panel\"", index)
         self.assertIn("./lib/branding.js", worker)
+
+
+class PhaseFiveSpanishTests(unittest.TestCase):
+    def test_language_setting_resolves_language_scoped_values(self):
+        config = load_config()
+        keywords = language_setting(config, "history_keywords", "es")
+        self.assertIn("antiguo", keywords)
+        self.assertEqual(language_setting(config, "history_keywords", "en"), config["history_keywords"])
+        custom = {
+            "languages": {"xx": {"tagline": "Etiqueta xx"}},
+            "tagline": "Global tagline",
+            "history_periods_by_lang": {"es": {"Antigüedad": []}},
+        }
+        self.assertEqual(language_setting(custom, "tagline", "xx"), "Etiqueta xx")
+        self.assertEqual(language_setting(custom, "tagline", "es"), "Global tagline")
+        self.assertEqual(language_setting(custom, "history_periods", "es"), {"Antigüedad": []})
+        self.assertEqual(language_setting({}, "tagline", "es", "fallback"), "fallback")
+
+    def test_stats_markdown_uses_language_brand(self):
+        summary = {
+            "days": 3, "lang": "es", "brand": "Spanish Daily", "by_level": {},
+            "phrase_days": 2, "items": 10, "days_published": 3, "weekly_goal": 5,
+        }
+        markdown = run._stats_markdown(summary)
+        self.assertIn("## Spanish Daily stats (3 days, es)", markdown)
+        self.assertNotIn("## English Daily stats", markdown)
+
+    def test_spanish_sources_are_registered_and_language_scoped(self):
+        config = load_config()
+        sources = load_sources(config, "es")
+        source_ids = {str(source["id"]) for source in sources}
+        self.assertGreaterEqual(len(sources), 17)
+        self.assertTrue(all(str(source["lang"]) == "es" for source in sources))
+        for expected in (
+            "es_bbc_mundo_text", "es_charlas_hispanas", "es_rne_documentos_rne",
+            "es_librivox_culture", "es_gutenberg_text", "es_wikinews",
+            "es_wikipedia_history", "es_wikipedia_culture", "es_wikipedia_simple",
+        ):
+            self.assertIn(expected, source_ids)
+        for expected in ("wikipedia", "wikipedia_simple", "wikinews", "gutenberg"):
+            self.assertIn(expected, RESERVE_TYPES)
+        with tempfile.TemporaryDirectory() as temp:
+            local = dict(config)
+            local["data_dir"] = str(Path(temp) / "data")
+            init_db(local)
+            registry = source_registry(local, "es")
+        self.assertEqual(len(registry), len(sources))
+        self.assertTrue(all(item["lang"] == "es" for item in registry))
+
+    def test_spanish_text_metrics_are_unicode_aware(self):
+        self.assertEqual(word_count("El niño corrió por el parque y se durmió."), 9)
+        self.assertTrue(is_spanish("es-ES"))
+        self.assertFalse(is_spanish("en"))
+        values = metrics("El niño corrió por el parque. Después leyó un artículo histórico.", "es")
+        self.assertGreater(values["fk_grade"], 0)
+        self.assertGreater(values["score"], 0)
+
+    def test_spanish_reserve_generators_use_spanish_hosts_and_ids(self):
+        source = {
+            "id": "es_wikinews",
+            "lang": "es",
+            "feed_url": "https://es.wikinews.org/w/api.php",
+        }
+        self.assertEqual(source_host(source, "en.wikinews.org"), "es.wikinews.org")
+        self.assertEqual(_month_category("es", 11, 2026), "Categoría:noviembre de 2026")
+        self.assertEqual(_month_category("en", 11, 2026), "Category:November 2026")
+
+    def test_wikipedia_simple_requests_short_intro_extracts(self):
+        config = dict(DEFAULTS)
+        source = {
+            "id": "es_wikipedia_simple", "lang": "es", "type": "wikipedia_simple",
+        }
+        responses = [
+            {"query": {"random": [{"id": 7, "title": "Madrid"}]}},
+            {"query": {"pages": {"7": {"extract": "Madrid es la capital de España."}}}},
+        ]
+        with patch("ingest.fetch_feeds._wiki_api", side_effect=responses) as mocked:
+            entries = _wikipedia_simple(config, source)
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["guid"], "es_wikipedia_simple:7")
+        self.assertEqual(mocked.call_args_list[0].args[0], "es.wikipedia.org")
+        params = mocked.call_args_list[1].args[1]
+        self.assertEqual(params["exintro"], 1)
+        self.assertEqual(params["exchars"], 4000)
+
+    def test_spanish_serialize_strings_are_localized(self):
+        payloads = {
+            "A1": {
+                "word": {"text": "casa", "meaning_fr": "maison"},
+                "expression": {"expression": "buenos días amigo"},
+                "history": {"text": "romano", "period": "Antigüedad"},
+            }
+        }
+        exercises = _build_exercises(payloads, "es")
+        prompts = [item["prompt"] for item in exercises]
+        self.assertIn("¿Qué significa “casa”?", prompts)
+        self.assertIn("Completa la expresión:", " ".join(prompts))
+        self.assertIn("¿A qué período pertenece", " ".join(prompts))
+        self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Elige tu nivel")
+
+    def test_export_static_writes_spanish_language_index(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            config = dict(load_config())
+            config["languages"] = ["en", "es"]
+            config["default_language"] = "en"
+            config["data_dir"] = str(root / "data")
+            init_db(config)
+            out = root / "site"
+            export_static(out, config, public_mode=True)
+            payload = json.loads(languages_path(out).read_text(encoding="utf-8"))
+            self.assertEqual(payload["languages"], ["en", "es"])
+            self.assertEqual(payload["brands"]["es"], "Spanish Daily")
+            self.assertTrue((site_lang_dir(out, "es") / "index.json").is_file())
 
 
 class DocsTests(unittest.TestCase):
@@ -950,7 +1103,7 @@ class WorkflowTests(unittest.TestCase):
         for name, text in (("daily", daily), ("health", health), ("desktop", desktop)):
             parsed = yaml.safe_load(text)
             self.assertTrue(parsed.get("jobs"), name)
-        for marker in ('cron: "0 5 * * *"', "workflow_dispatch", "unittest discover", "static/lib/*.js", "reconstruct --json", "export-static --out site --public", "deploy-pages@v4"):
+        for marker in ('cron: "0 5 * * *"', "workflow_dispatch", "unittest discover", "static/lib/*.js", "reconstruct --json", "reconstruct --lang es --json", "export-static --out site --public", "deploy-pages@v4"):
             self.assertIn(marker, daily)
         for marker in ("cron:", "workflow_dispatch", "doctor --json", "upload-artifact@v4"):
             self.assertIn(marker, health)
@@ -1151,6 +1304,28 @@ class FrontendAssetTests(unittest.TestCase):
         self.assertIn("request.mode === 'navigate'", worker)
         self.assertIn("offline-banner", index)
         self.assertIn("EDPwa", script)
+
+    def test_language_switching_and_spanish_branding_assets_are_present(self):
+        root = Path(__file__).resolve().parents[1]
+        static = root / "static"
+        index = (static / "index.html").read_text(encoding="utf-8")
+        script = (static / "app.js").read_text(encoding="utf-8")
+        branding = (static / "lib" / "branding.js").read_text(encoding="utf-8")
+        exercises = (static / "lib" / "exercises.js").read_text(encoding="utf-8")
+        self.assertIn("data-eds-language-select", index)
+        self.assertIn("setLanguage(", index)
+        self.assertIn("setLanguage(", script)
+        self.assertIn("languageOptions()", index)
+        for marker in (
+            "languageOptions(", "languageUrl(", "indexUrl(", "updateLanguageUrl(",
+            "loadLanguagePayload(", "loadDays(",
+        ):
+            self.assertIn(marker, script)
+        for marker in ("Spanish Daily", "Un poco de español, cada día."):
+            self.assertIn(marker, index)
+            self.assertIn(marker, branding)
+        self.assertIn("document.documentElement.lang", script)
+        self.assertIn("exercise:${language}:", exercises)
 
     def test_frontend_helpers_run_without_browser(self):
         root = Path(__file__).resolve().parents[1]

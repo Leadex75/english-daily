@@ -34,7 +34,7 @@ def clean_text(value: str | None, config: dict[str, Any] | None = None) -> str:
 
 
 def word_count(text: str) -> int:
-    return len(re.findall(r"[A-Za-z]+(?:['\u2019-][A-Za-z]+)*", text or ""))
+    return len(re.findall(r"[^\W\d_]+(?:['\u2019-][^\W\d_]+)*", text or "", re.UNICODE))
 
 
 def extract_article(url: str, config: dict[str, Any]) -> str:

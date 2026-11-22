@@ -44,7 +44,7 @@ def check_sources(
                 "error": None,
             }
             try:
-                entries = fetch_source(source, config, reference_day)
+                entries = fetch_source(source, config, reference_day, language)
                 durations: list[int] = []
                 for entry in entries:
                     if entry.get("enclosure_url"):

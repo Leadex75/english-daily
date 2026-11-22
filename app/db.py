@@ -15,7 +15,10 @@ CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 SOURCES_PATH = PROJECT_ROOT / "sources.yaml"
 
 DEFAULTS: dict[str, Any] = {
-    "languages": {"en": {"brand": "English Daily", "label": "English"}},
+    "languages": {
+        "en": {"brand": "English Daily", "label": "English", "tagline": "A little English, every day."},
+        "es": {"brand": "Spanish Daily", "label": "Spanish", "tagline": "Un poco de español, cada día."},
+    },
     "default_language": "en",
     "online_site_url": "https://leadex75.github.io/english-daily/",
     "data_dir": "./data",
@@ -62,6 +65,13 @@ DEFAULTS: dict[str, Any] = {
             r"\bLearn more about the standards of our journalism\b.*$",
             r"\bContinue reading\s*(?:\.{3,}|…)?\s*$",
             r"^\s*[-–—]?\s*Published\s+",
+            r"\bSuscríbete a.*$",
+            r"\bSuscribirse a.*$",
+            r"\bInicia sesión\b.*$",
+            r"\bPolítica de privacidad\b.*$",
+            r"\bSigue a BBC Mundo\b.*$",
+            r"\bContinúa leyendo\s*(?:\.{3,}|…)?\s*$",
+            r"^\s*[-–—]?\s*Publicado\s+",
         ]
     },
     "static_retention_days": 365,
@@ -78,6 +88,10 @@ DEFAULTS: dict[str, Any] = {
     "history_categories": [],
     "history_periods": {},
     "history_themes": {},
+    "history_keywords_by_lang": {},
+    "history_categories_by_lang": {},
+    "history_periods_by_lang": {},
+    "history_themes_by_lang": {},
     "word_bands": {},
     "levels": {},
     "phrase_history_days": 400,
@@ -185,6 +199,14 @@ def load_config() -> dict[str, Any]:
                 **values,
             }
     config["levels"] = levels
+    for key in ("history_keywords_by_lang", "history_categories_by_lang",
+                "history_periods_by_lang", "history_themes_by_lang"):
+        scoped = dict(DEFAULTS.get(key) or {})
+        values = raw.get(key)
+        if isinstance(values, dict):
+            for language, scoped_value in values.items():
+                scoped[str(language)] = scoped_value
+        config[key] = scoped
     env_data_dir = os.environ.get("ENGLISH_DAILY_DATA_DIR")
     if env_data_dir:
         config["data_dir"] = env_data_dir
@@ -253,6 +275,24 @@ def default_language(config: dict[str, Any]) -> str:
 def normalize_language(config: dict[str, Any], lang: str | None) -> str:
     value = str(lang or default_language(config))
     return value if value in available_languages(config) else default_language(config)
+
+
+def language_setting(
+    config: dict[str, Any], key: str, lang: str | None = None, default: Any = None
+) -> Any:
+    """Resolve a setting from language metadata, a *_by_lang map, or the top level."""
+    language = str(lang or default_language(config))
+    languages = config.get("languages")
+    if isinstance(languages, dict):
+        entry = languages.get(language)
+        if isinstance(entry, dict) and entry.get(key) is not None:
+            return entry[key]
+    scoped = config.get(f"{key}_by_lang")
+    if isinstance(scoped, dict) and scoped.get(language) is not None:
+        return scoped[language]
+    if config.get(key) is not None:
+        return config[key]
+    return default
 
 
 def level_config(config: dict[str, Any], lang: str | None = None) -> tuple[dict[str, float], dict[str, Any]]:

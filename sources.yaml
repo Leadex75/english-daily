@@ -340,3 +340,210 @@ sources:
     enabled: true
     type: phrase_audio
     license: proprietary
+
+  - id: es_bbc_mundo_text
+    name: BBC Mundo (texto)
+    lang: es
+    feed_url: https://feeds.bbci.co.uk/mundo/rss.xml
+    category: news
+    kind: text
+    level_min: computed
+    level_max: computed
+    enabled: true
+    license: proprietary
+
+  - id: es_charlas_hispanas
+    name: Charlas Hispanas
+    lang: es
+    feed_url: https://charlashispanas.com/feed/podcast/
+    category: news
+    kind: audio
+    level_min: B1
+    level_max: B2
+    enabled: true
+    license: proprietary
+
+  - id: es_how_to_spanish
+    name: How to Spanish
+    lang: es
+    feed_url: https://anchor.fm/s/10594f934/podcast/rss
+    category: culture
+    kind: audio
+    level_min: A2
+    level_max: B1
+    enabled: true
+    license: proprietary
+
+  - id: es_easy_spanish
+    name: Easy Spanish
+    lang: es
+    feed_url: https://www.easyspanish.fm/rss
+    category: culture
+    kind: audio
+    level_min: A2
+    level_max: B1
+    enabled: true
+    license: proprietary
+
+  - id: es_espanol_intermedio
+    name: Español Intermedio
+    lang: es
+    feed_url: https://rss.buzzsprout.com/2381323.rss
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: B2
+    enabled: true
+    license: proprietary
+
+  - id: es_rne_24_horas
+    name: RNE 24 horas
+    lang: es
+    feed_url: https://www.rtve.es/api/programas/1871/audios.rss
+    category: news
+    kind: audio
+    level_min: B2
+    level_max: C1
+    enabled: true
+    max_duration_sec: 3600
+    license: proprietary
+
+  - id: es_rne_no_es_un_dia_cualquiera
+    name: RNE No es un día cualquiera
+    lang: es
+    feed_url: https://www.rtve.es/api/programas/2054/audios.rss
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: C1
+    enabled: true
+    license: proprietary
+
+  - id: es_rne_a_hombros_de_gigantes
+    name: RNE A hombros de gigantes
+    lang: es
+    feed_url: https://www.rtve.es/api/programas/1873/audios.rss
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: C1
+    enabled: true
+    max_duration_sec: 3300
+    license: proprietary
+
+  - id: es_rne_el_ojo_critico
+    name: RNE El ojo crítico
+    lang: es
+    feed_url: https://www.rtve.es/api/programas/1957/audios.rss
+    category: culture
+    kind: audio
+    level_min: B1
+    level_max: C1
+    enabled: true
+    max_duration_sec: 3600
+    license: proprietary
+
+  - id: es_rne_documentos_rne
+    name: RNE Documentos RNE
+    lang: es
+    feed_url: https://www.rtve.es/api/programas/1938/audios.rss
+    category: history
+    kind: audio
+    level_min: B2
+    level_max: C1
+    enabled: true
+    max_duration_sec: 3600
+    license: proprietary
+
+  - id: es_librivox_culture
+    name: LibriVox en español (cultura)
+    lang: es
+    feed_url: https://librivox.org/api/feed/audiobooks/
+    category: culture
+    kind: audio
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: librivox
+    genres: [Literary Fiction, Adventure, Science Fiction, Poetry, Drama, Music, Children]
+    license: public_domain
+    attribution: "LibriVox (grabación de dominio público)"
+
+  - id: es_librivox_history
+    name: LibriVox en español (historia y biografía)
+    lang: es
+    feed_url: https://librivox.org/api/feed/audiobooks/
+    category: history
+    kind: audio
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: librivox
+    genres: [History, Biography, Autobiography, Historical Fiction, Military]
+    license: public_domain
+    attribution: "LibriVox (grabación de dominio público)"
+
+  - id: es_gutenberg_text
+    name: Proyecto Gutenberg
+    lang: es
+    feed_url: https://www.gutenberg.org/cache/epub/
+    category: culture
+    kind: text
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: gutenberg
+    license: public_domain
+    attribution: "Project Gutenberg"
+
+  - id: es_wikinews
+    name: Wikinews en español
+    lang: es
+    feed_url: https://es.wikinews.org/w/api.php
+    category: news
+    kind: text
+    level_min: B1
+    level_max: C2
+    enabled: true
+    type: wikinews
+    license: cc_by
+    attribution: "Wikinews, CC BY 2.5"
+
+  - id: es_wikipedia_history
+    name: Wikipedia en español (historia)
+    lang: es
+    feed_url: https://es.wikipedia.org/w/api.php
+    category: history
+    kind: text
+    level_min: A2
+    level_max: C2
+    enabled: true
+    type: wikipedia_history
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"
+
+  - id: es_wikipedia_culture
+    name: Wikipedia en español (cultura)
+    lang: es
+    feed_url: https://es.wikipedia.org/w/api.php
+    category: culture
+    kind: text
+    level_min: A1
+    level_max: C2
+    enabled: true
+    type: wikipedia
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"
+
+  - id: es_wikipedia_simple
+    name: Wikipedia en español (artículos breves)
+    lang: es
+    feed_url: https://es.wikipedia.org/w/api.php
+    category: culture
+    kind: text
+    level_min: A1
+    level_max: B1
+    enabled: true
+    type: wikipedia_simple
+    license: cc_by_sa
+    attribution: "Wikipedia, CC BY-SA 4.0"

@@ -13,7 +13,7 @@ from urllib.parse import quote
 import feedparser
 import yaml
 
-from app.db import PROJECT_ROOT, default_language
+from app.db import PROJECT_ROOT, default_language, language_setting
 from ingest.paths import state_lang_dir
 from ingest.fetch_feeds import http_get, plain_text
 
@@ -49,6 +49,18 @@ def load_history_terms(lang: str | None = None) -> list[dict[str, Any]]:
     return [dict(item) for item in (data.get("terms") or []) if isinstance(item, dict)]
 
 
+def _history_label(value: str, config: dict[str, Any], key: str, lang: str | None) -> str:
+    raw = str(value or "").strip()
+    if not raw:
+        return ""
+    configured = language_setting(config, key, lang) or {}
+    if isinstance(configured, dict):
+        for label in configured:
+            if str(label).strip().lower() == raw.lower():
+                return str(label)
+    return raw
+
+
 def annotate_history(
     item: dict[str, Any], config: dict[str, Any], lang: str | None = None
 ) -> dict[str, Any]:
@@ -74,8 +86,8 @@ def annotate_history(
         if not any(re.search(pattern, haystack) for pattern in patterns):
             continue
         matched.append(dict(term))
-        period = str(term.get("period") or "")
-        theme = str(term.get("theme") or "")
+        period = _history_label(term.get("period"), config, "history_periods", lang)
+        theme = _history_label(term.get("theme"), config, "history_themes", lang)
         if period and period not in periods:
             periods.append(period)
         if theme and theme not in themes:

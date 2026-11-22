@@ -59,6 +59,9 @@ jobs:
       - name: Verify deterministic reconstruction
         run: python run.py reconstruct --json
 
+      - name: Verify Spanish deterministic reconstruction
+        run: python run.py reconstruct --lang es --json
+
       - name: Write stats to job summary
         run: python run.py stats --days 90 >> "$GITHUB_STEP_SUMMARY"
 

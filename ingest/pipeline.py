@@ -52,7 +52,7 @@ def _insert_fresh_items(
         license_name = str(source.get("license") or "proprietary")
         attribution = source.get("attribution") or None
         try:
-            entries = fetch_source(source, config, day)
+            entries = fetch_source(source, config, day, language)
             for entry in entries:
                 entry["source_kind"] = str(source["kind"])
                 published = str(entry.get("published_at") or "")[:10]

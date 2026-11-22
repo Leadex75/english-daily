@@ -39,8 +39,11 @@ function requestedLanguage() {
   }
 }
 
-function normalizeLanguage(value, languages) {
-  const list = Array.isArray(languages) && languages.length ? languages : ['en'];
+function normalizeLanguage(value, payload) {
+  if (window.EDBrand && typeof window.EDBrand.normalizeLanguage === 'function') {
+    return window.EDBrand.normalizeLanguage(value, payload);
+  }
+  const list = Array.isArray(payload) && payload.length ? payload : ['en'];
   const wanted = String(value || '');
   return list.includes(wanted) ? wanted : (list.includes('en') ? 'en' : list[0]);
 }
@@ -99,6 +102,7 @@ function app() {
     searchQuery: '',
     searchResults: [],
     searching: false,
+    searchToken: 0,
     ankiConnectBusy: false,
     ankiConnectStatus: 'AnkiConnect is not checked yet.',
     storeTick: 0,
@@ -116,37 +120,15 @@ function app() {
       window.addEventListener('hashchange', () => this.syncRoute());
       if (this.mode === 'static') await this.initPwa();
       try {
-        let languagesPayload = {};
-        if (this.mode === 'static') {
-          const languagesResponse = await fetch('./data/languages.json');
-          languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
-          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
-          this.lang = normalizeLanguage(
-            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
-            this.languages,
-          );
-          const response = await fetch(`./data/${encodeURIComponent(this.lang)}/index.json`);
-          if (!response.ok) throw new Error('Could not load index');
-          const index = await response.json();
-          this.days = Array.isArray(index.days) ? index.days : [];
-          this.counts = index.counts || {};
-        } else {
-          const languagesResponse = await fetch(`./${API_SEGMENT}/languages`);
-          languagesPayload = languagesResponse.ok ? await languagesResponse.json() : {};
-          this.languages = Array.isArray(languagesPayload.languages) ? languagesPayload.languages : ['en'];
-          this.lang = normalizeLanguage(
-            requestedLanguage() || Store.get('english-daily:lang') || languagesPayload.default,
-            this.languages,
-          );
-          const response = await fetch(`./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`);
-          if (!response.ok) throw new Error('Could not load dates');
-          this.days = await response.json();
-          const today = new Date().toISOString().slice(0, 10);
-          if (!this.days.includes(today)) this.days.unshift(today);
-        }
-        this.languagePayload = languagesPayload;
+        await this.loadLanguagePayload();
+        this.lang = normalizeLanguage(
+          requestedLanguage() || Store.get('english-daily:lang') || (this.languagePayload && this.languagePayload.default),
+          this.languagePayload,
+        );
         this.applyBranding();
         Store.set('english-daily:lang', this.lang);
+        this.updateLanguageUrl();
+        await this.loadDays();
         this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
         this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
         if (this.selectedDate) await this.loadDay();
@@ -155,6 +137,86 @@ function app() {
       }
       this.observeReading();
       this.syncTour();
+    },
+
+    languageUrl() {
+      if (this.mode === 'static') return './data/languages.json';
+      return `./${API_SEGMENT}/languages`;
+    },
+
+    indexUrl() {
+      if (this.mode === 'static') {
+        return `./data/${encodeURIComponent(this.lang)}/index.json`;
+      }
+      return `./${API_SEGMENT}/days?lang=${encodeURIComponent(this.lang)}`;
+    },
+
+    languageOptions() {
+      if (window.EDBrand && typeof window.EDBrand.languageOptions === 'function') {
+        return window.EDBrand.languageOptions(this.languagePayload);
+      }
+      return (this.languages || []).map((code) => ({ code, label: code }));
+    },
+
+    updateLanguageUrl() {
+      if (!window.history || typeof window.history.replaceState !== 'function') return;
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', this.lang);
+        window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+      } catch (err) {
+        // Ignore URL update failures.
+      }
+    },
+
+    async loadLanguagePayload() {
+      const response = await fetch(this.languageUrl());
+      const payload = response.ok ? await response.json() : {};
+      this.languagePayload = payload && typeof payload === 'object' ? payload : {};
+      this.languages = window.EDBrand && typeof window.EDBrand.languageCodes === 'function'
+        ? window.EDBrand.languageCodes(this.languagePayload)
+        : (Array.isArray(this.languagePayload.languages) ? this.languagePayload.languages : ['en']);
+      return this.languagePayload;
+    },
+
+    async loadDays() {
+      const response = await fetch(this.indexUrl());
+      if (!response.ok) throw new Error(this.mode === 'static' ? 'Could not load index' : 'Could not load dates');
+      const payload = await response.json();
+      if (this.mode === 'static') {
+        this.days = Array.isArray(payload.days) ? payload.days : [];
+        this.counts = payload.counts || {};
+      } else {
+        this.days = Array.isArray(payload) ? payload : [];
+        const today = new Date().toISOString().slice(0, 10);
+        if (!this.days.includes(today)) this.days.unshift(today);
+        this.counts = {};
+      }
+      return this.days;
+    },
+
+    async setLanguage(code) {
+      const next = normalizeLanguage(code, this.languagePayload);
+      if (next === this.lang) return;
+      this.lang = next;
+      this.error = '';
+      this.searchQuery = '';
+      this.searchResults = [];
+      this.searching = false;
+      this.searchToken += 1;
+      this.all = {};
+      this.stop();
+      Store.set('english-daily:lang', this.lang);
+      this.updateLanguageUrl();
+      this.applyBranding();
+      try {
+        await this.loadDays();
+        this.selectedDate = this.days[0] || new Date().toISOString().slice(0, 10);
+        this.archiveMonth = window.EDArchive ? window.EDArchive.monthKey(this.selectedDate) : this.selectedDate.slice(0, 7);
+        if (this.selectedDate) await this.loadDay();
+      } catch (err) {
+        this.error = String(err.message || err);
+      }
     },
 
     loadPreferences() {
@@ -198,9 +260,12 @@ function app() {
     applyBranding() {
       this.brand = window.EDBrand ? window.EDBrand.brand(this.languagePayload, this.lang) : 'English Daily';
       this.tagline = window.EDBrand ? window.EDBrand.tagline(this.languagePayload, this.lang) : 'A little English, every day.';
+      document.documentElement.lang = this.lang || 'en';
       document.title = this.brand;
       const description = document.querySelector('meta[name="description"]');
       if (description) description.setAttribute('content', this.tagline);
+      const home = document.querySelector('[data-eds-home]');
+      if (home) home.setAttribute('aria-label', `${this.brand} home`);
     },
 
     syncRoute() {
@@ -209,7 +274,7 @@ function app() {
         ['today', 'archive', 'glossary', 'settings'].includes(raw) ? raw : 'today'
       );
       if (raw !== this.route && window.history && window.history.replaceState) {
-        window.history.replaceState(null, '', `#${this.route}`);
+        window.history.replaceState(null, '', `${window.location.search}#${this.route}`);
       }
     },
 
@@ -662,18 +727,18 @@ function app() {
     },
     exerciseAnswer(exercise) {
       void this.answerTick;
-      return window.EDExercises ? window.EDExercises.answer(exercise) : null;
+      return window.EDExercises ? window.EDExercises.answer(exercise, this.lang) : null;
     },
     visibleExerciseAnswer(exercise) {
       return this.showFeedback() ? this.exerciseAnswer(exercise) : null;
     },
     exerciseProgress() {
       const exercises = this.exercises();
-      if (window.EDExercises) return window.EDExercises.progress(exercises);
+      if (window.EDExercises) return window.EDExercises.progress(exercises, this.lang);
       return { done: 0, total: exercises.length, percent: 0 };
     },
     answerExercise(exercise, option) {
-      if (window.EDExercises) window.EDExercises.record(exercise, option);
+      if (window.EDExercises) window.EDExercises.record(exercise, option, this.lang);
       this.answerTick += 1;
       this.storeTick += 1;
     },
@@ -745,12 +810,15 @@ function app() {
       const term = this.searchQuery.trim();
       this.searchResults = [];
       if (!term) return;
+      const token = ++this.searchToken;
+      const lang = this.lang;
       this.searching = true;
       this.error = '';
       try {
+        let results = [];
         if (this.mode === 'static') {
           const paths = this.days.slice(0, 120).map((date) => (
-            `./data/${encodeURIComponent(this.lang)}/search/${encodeURIComponent(date)}.json`
+            `./data/${encodeURIComponent(lang)}/search/${encodeURIComponent(date)}.json`
           ));
           const indexes = await Promise.all(paths.map(async (path) => {
             try {
@@ -761,18 +829,21 @@ function app() {
             }
           }));
           const index = window.EDSearch ? window.EDSearch.merge(indexes.filter(Boolean)) : { items: [] };
-          this.searchResults = window.EDSearch ? window.EDSearch.query(index, term, null, 50) : [];
+          results = window.EDSearch ? window.EDSearch.query(index, term, null, 50) : [];
         } else {
           const response = await fetch(
-            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&lang=${encodeURIComponent(this.lang)}&limit=50`,
+            `./${API_SEGMENT}/search?q=${encodeURIComponent(term)}&lang=${encodeURIComponent(lang)}&limit=50`,
           );
           const payload = response.ok ? await response.json() : { results: [] };
-          this.searchResults = Array.isArray(payload.results) ? payload.results : [];
+          results = Array.isArray(payload.results) ? payload.results : [];
+        }
+        if (token === this.searchToken && lang === this.lang) {
+          this.searchResults = results;
         }
       } catch (err) {
-        this.error = String(err.message || err);
+        if (token === this.searchToken && lang === this.lang) this.error = String(err.message || err);
       } finally {
-        this.searching = false;
+        if (token === this.searchToken) this.searching = false;
       }
     },
     clearSearch() {

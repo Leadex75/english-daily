@@ -5,7 +5,7 @@ import html
 import re
 import time
 from typing import Any
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse
 
 from app.db import level_config
 from ingest.fetch_feeds import _wiki_headers, http_get, plain_text
@@ -27,6 +27,12 @@ class Budget:
 
     def tick(self) -> None:
         self.requests += 1
+
+
+def source_host(source: dict[str, Any] | None, default: str) -> str:
+    """Keep the host declared by a reserve source through generator loops."""
+    feed_url = str((source or {}).get("feed_url") or "")
+    return urlparse(feed_url).netloc or default
 
 
 def api_get(host: str, path: str, params: dict[str, Any], config: dict[str, Any], budget: Budget) -> dict[str, Any]:
@@ -82,7 +88,7 @@ def paragraph_cut(text: str, max_words: int) -> str:
         return result
     words = result.split()
     result = " ".join(words[:max_words])
-    sentences = re.split(r"(?<=[.!?])\s+", result)
+    sentences = re.split(r"(?<=[.!?…])\s+|(?<=[.!?])(?=[¿¡])", result)
     if len(sentences) > 1 and word_count(sentences[0]) >= max_words // 2:
         return sentences[0]
     return result
@@ -107,7 +113,7 @@ def make_candidate(
     level_max: str = "C2",
     extra: dict[str, Any] | None = None,
 ) -> dict[str, Any] | None:
-    body = clean_text(text)
+    body = clean_text(text, config)
     if not body or is_blocked(body, config):
         return None
     if kind == "text":
@@ -120,7 +126,7 @@ def make_candidate(
         words = word_count(body)
         if duration_sec is None:
             return None
-    values = metrics(body[:4000])
+    values = metrics(body[:4000], str(config.get("_lang") or "en"))
     thresholds, _ = level_config(config, config.get("_lang"))
     level = clamp_level(classify(values["score"], thresholds), level_min, level_max)
     guid_seed = f"{source_id}:{title}:{url}:{published_at or ''}:{duration_sec or ''}"

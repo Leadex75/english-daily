@@ -1,14 +1,13 @@
 # English Daily
 
-A local, account-free English practice app organised by CEFR level (A1–C2). A Python ingester pulls
-real RSS/podcast/Wikipedia/history content into SQLite, a FastAPI backend serves an offline-capable
-frontend, and the same frontend can be exported as a GitHub Pages site. Content selection is
-deterministic (`textstat` + `wordfreq` + explicit cascade rules) — **no LLM, no API keys, no
-accounts, no telemetry**.
+A local, account-free English and Spanish practice app organised by CEFR level (A1–C2). A Python
+ingester pulls real RSS/podcast/Wikipedia/history content into SQLite, a FastAPI backend serves an
+offline-capable frontend, and the same frontend can be exported as a GitHub Pages site. Content
+selection is deterministic (`textstat` + `wordfreq` + explicit cascade rules) — **no LLM, no API
+keys, no accounts, no telemetry**.
 
-From Phase 6 onward the app also carries a bilingual history-term bank, per-day exercises, an
-offline search index, a guided tour, language-aware paths, deterministic reconstruction, and a
-small local desktop launcher.
+The app also carries bilingual history-term banks, per-day exercises, an offline search index, a
+guided tour, language-aware paths, deterministic reconstruction, and a small local desktop launcher.
 
 ## Brand and navigation
 
@@ -58,14 +57,20 @@ is required.
 ```bash
 python run.py ingest                         # fetch/score/pick today + reserves + phrases
 python run.py ingest --date 2026-11-20 --lang en
+python run.py ingest --lang es               # Spanish content from the es source registry
 python run.py backfill --days 90              # idempotent local re-pick
 python run.py backfill --days 90 --force      # overwrite already-successful days
 python run.py reconstruct --json              # offline rebuild check for today
+python run.py reconstruct --lang es --json    # Spanish offline rebuild check
 python run.py reconstruct --date 2026-11-21 --write
 python run.py stats --days 90 --lang en
+python run.py stats --days 90 --lang es
 python run.py doctor --json                   # structured source health report
+python run.py doctor --json --lang es
 python run.py anki-notes --entries state/anki-entries.json --lang en --json
+python run.py anki-notes --entries state/es/anki-entries.json --lang es --json
 python run.py anki-build --entries state/anki-entries.json --out english-daily.apkg --lang en
+python run.py anki-build --entries state/es/anki-entries.json --out spanish-daily.apkg --lang es
 python run.py export-static --out site --public
 python run.py import-state --site-dir site --state-dir state
 python run.py prune
@@ -145,6 +150,21 @@ site/data/<lang>/search/YYYY-MM-DD.json
 
 Database files also carry `lang` on sources, items, daily picks, phrases, books and ingest runs.
 CLI commands without `--lang` process all configured languages.
+
+### Spanish
+
+`config.yaml` defines Spanish levels, thresholds, brand/tagline, and language-scoped history
+keywords, categories, periods and themes through `language_setting()`. `sources.yaml` includes 17
+Spanish sources (BBC Mundo, Charlas Hispanas, How to Spanish, Easy Spanish, Español Intermedio,
+RTVE/RNE, LibriVox, Project Gutenberg, Wikinews and Wikipedia). All audio stays hotlinked from the
+original publisher.
+
+Spanish banks live in `bank/es/` (`words.yaml`, `expressions.yaml`, `history_terms.yaml`) and state
+in `state/es/`. Unicode-aware token counting and Spanish readability use the same deterministic
+scoring path as English. Generated exercises, tour steps and CLI stats use Spanish text when
+`--lang es` is selected. The frontend language selector and `?lang=es` query switch the loaded
+language payload, brand and tagline, day paths, search URLs and language-scoped exercise answers;
+the document `lang` attribute follows the selection.
 
 ## Search and enriched contract
 

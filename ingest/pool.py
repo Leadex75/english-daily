@@ -139,8 +139,10 @@ def hydrate_db(
         conn.execute(
             """INSERT OR IGNORE INTO sources
                (id, name, feed_url, category, kind, level_min, level_max, enabled, lang)
-               VALUES (?,?,?,?,?,?,?,1,?)""",
-            (source_id, str(item.get("source_name") or source_id), "generated",
+                VALUES (?,?,?,?,?,?,?,1,?)
+                ON CONFLICT(id) DO UPDATE SET lang=excluded.lang""",
+             (source_id, str(item.get("source_name") or source_id), "generated",
+
              str(item.get("category") or "culture"), str(item.get("kind") or "text"),
              str(item.get("level") or "B1"), str(item.get("level") or "B1"), language),
         )

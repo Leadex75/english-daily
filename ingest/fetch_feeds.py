@@ -12,6 +12,8 @@ from urllib.parse import urlparse, urlunparse, urlencode
 import feedparser
 import httpx
 
+from app.db import language_setting
+
 _last_hit: dict[str, float] = {}
 _client: httpx.Client | None = None
 _TAG_RE = re.compile(r"<[^>]+>")
@@ -36,7 +38,10 @@ def _client_for(config: dict[str, Any]) -> httpx.Client:
     return _client
 
 
-RESERVE_TYPES = {"librivox", "gutenberg", "wikinews", "wikipedia_history", "phrase_audio"}
+RESERVE_TYPES = {
+    "librivox", "gutenberg", "wikinews", "wikipedia", "wikipedia_simple",
+    "wikipedia_history", "phrase_audio",
+}
 WIKIMEDIA_HOSTS = ("wikipedia.org", "wikimedia.org", "wikinews.org", "wiktionary.org", "wikisource.org")
 
 
@@ -143,11 +148,16 @@ def _wiki_api(host: str, params: dict[str, Any], config: dict[str, Any]) -> dict
     return response.json()
 
 
-def _wikipedia_simple(config: dict[str, Any]) -> list[dict[str, Any]]:
+def _wikipedia_simple(
+    config: dict[str, Any], source: dict[str, Any] | None = None, lang: str | None = None
+) -> list[dict[str, Any]]:
     # MediaWiki allows only one full-article extract per request, so ask for
     # random titles first and fetch each extract separately.
+    language = str(lang or (source or {}).get("lang") or "en")
+    host = "es.wikipedia.org" if language == "es" else "simple.wikipedia.org"
+    source_id = str((source or {}).get("id") or "wikipedia_simple")
     titles_data = _wiki_api(
-        "simple.wikipedia.org",
+        host,
         {"action": "query", "format": "json", "list": "random", "rnnamespace": 0, "rnlimit": 8},
         config,
     )
@@ -158,28 +168,29 @@ def _wikipedia_simple(config: dict[str, Any]) -> list[dict[str, Any]]:
         if not title:
             continue
         page_data = _wiki_api(
-            "simple.wikipedia.org",
+            host,
             {
                 "action": "query", "format": "json", "prop": "extracts",
-                "explaintext": 1, "redirects": 1, "titles": title,
+                "exintro": 1, "exchars": 4000, "explaintext": 1,
+                "redirects": 1, "titles": title,
             },
             config,
         )
         pages = list((page_data.get("query", {}).get("pages") or {}).values())
         extract = plain_text(pages[0].get("extract") or "") if pages else ""
-        if not extract:
+        if not extract or len(extract.split()) > 300:
             continue
         entries.append(
             {
-                "guid": f"wikipedia_simple:{random_item.get('id', title)}",
+                "guid": f"{source_id}:{random_item.get('id', title)}",
                 "title": title,
-                "url": "https://simple.wikipedia.org/wiki/" + title.replace(" ", "_"),
+                "url": f"https://{host}/wiki/" + title.replace(" ", "_"),
                 "summary": extract[:400],
                 "published_at": today,
                 "enclosure_url": None,
                 "itunes_duration": None,
                 "body_text": extract,
-                "source_id": "wikipedia_simple",
+                "source_id": source_id,
             }
         )
     return entries
@@ -272,30 +283,40 @@ def _wikipedia_onthisday(config: dict[str, Any], day: str) -> list[dict[str, Any
     ]
 
 
-def _matches_history(entry: dict[str, Any], config: dict[str, Any]) -> bool:
-    keywords = [str(word).lower() for word in (config.get("history_keywords") or [])]
+def _matches_history(
+    entry: dict[str, Any], config: dict[str, Any], lang: str | None = None
+) -> bool:
+    keywords = [
+        str(word).lower()
+        for word in (language_setting(config, "history_keywords", lang) or [])
+    ]
     if not keywords:
         return True
     haystack = f"{entry.get('title', '')} {entry.get('summary', '')}".lower()
     return any(word in haystack for word in keywords)
 
 
-def fetch_source(source: dict[str, Any], config: dict[str, Any], day: str) -> list[dict[str, Any]]:
+def fetch_source(
+    source: dict[str, Any], config: dict[str, Any], day: str, lang: str | None = None
+) -> list[dict[str, Any]]:
     """Fetch and normalize entries from one source; raises on network/parse failure."""
     kind = source.get("type") or "rss"
+    language = str(lang or source.get("lang") or "en")
+    scoring_config = dict(config)
+    scoring_config["_lang"] = language
     limit = int(config.get("max_entries_per_source", 10))
     if is_reserve_source(source):
         return []
     if kind == "wikipedia_simple":
-        return _wikipedia_simple(config)[:limit]
+        return _wikipedia_simple(scoring_config, source, language)[:limit]
     if kind == "wikipedia_featured":
-        return _wikipedia_featured(config, day)[:limit]
+        return _wikipedia_featured(scoring_config, day)[:limit]
     if kind == "wikipedia_onthisday":
-        return _wikipedia_onthisday(config, day)[:limit]
-    response = http_get(str(source["feed_url"]), config)
+        return _wikipedia_onthisday(scoring_config, day)[:limit]
+    response = http_get(str(source["feed_url"]), scoring_config)
     response.raise_for_status()
     parsed = feedparser.parse(response.content)
     entries = [_entry(source, item) for item in parsed.entries[:limit]]
     if kind == "history_keywords":
-        entries = [entry for entry in entries if _matches_history(entry, config)]
+        entries = [entry for entry in entries if _matches_history(entry, scoring_config, language)]
     return entries

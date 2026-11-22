@@ -11,7 +11,25 @@ from ingest.readability import CATEGORIES, KINDS, LEVELS
 
 _SENTENCE_END_RE = re.compile(r"(?:[.!?]|…)(?=\s|$)")
 _CLAUSE_END_RE = re.compile(r"[,;:—–](?=\s|$)")
-_CLOZE_STOPWORDS = {"a", "an", "and", "be", "for", "in", "is", "of", "on", "the", "to", "with"}
+_CLOZE_STOPWORDS_BY_LANG = {
+    "en": {"a", "an", "and", "be", "for", "in", "is", "of", "on", "the", "to", "with"},
+    "es": {"a", "al", "con", "de", "del", "el", "en", "es", "la", "las", "los", "para",
+           "por", "que", "se", "su", "un", "una", "y"},
+}
+_EXERCISE_PROMPTS = {
+    "en": {
+        "word": "What does “{text}” mean?",
+        "expression": "Complete the expression: {prompt}",
+        "history": "Which period does “{text}” belong to?",
+        "general": "General",
+    },
+    "es": {
+        "word": "¿Qué significa “{text}”?",
+        "expression": "Completa la expresión: {prompt}",
+        "history": "¿A qué período pertenece “{text}”?",
+        "general": "General",
+    },
+}
 _TOUR_STEPS = (
     {"id": "level", "title": "Choose your level", "body": "Start with a CEFR level, then switch any time.", "target": "[data-eds-level]"},
     {"id": "tabs", "title": "Browse the day", "body": "Read news, culture and history in both text and audio.", "target": "[data-eds-tabs]"},
@@ -20,6 +38,15 @@ _TOUR_STEPS = (
     {"id": "anki", "title": "Export learned items", "body": "Mark a phrase learned, then use Anki to download a tab-separated deck. This help button reopens the guide.", "target": "[data-eds-anki]"},
     {"id": "glossary", "title": "Build your glossary", "body": "Star items, export them to Anki, and keep your progress.", "target": "[data-eds-glossary]"},
 )
+_TOUR_STEPS_ES = (
+    {"id": "level", "title": "Elige tu nivel", "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.", "target": "[data-eds-level]"},
+    {"id": "tabs", "title": "Explora el día", "body": "Lee noticias, cultura e historia en texto y audio.", "target": "[data-eds-tabs]"},
+    {"id": "phrase", "title": "Aprende la frase", "body": "Cada nivel tiene una palabra, una expresión y un término histórico.", "target": "[data-eds-phrase]"},
+    {"id": "exercises", "title": "Practica activamente", "body": "Responde tres ejercicios breves para repasar lo aprendido.", "target": "[data-eds-exercises]"},
+    {"id": "anki", "title": "Exporta lo aprendido", "body": "Marca una frase como aprendida y usa Anki para descargar una baraja TSV. Este botón vuelve a abrir la guía.", "target": "[data-eds-anki]"},
+    {"id": "glossary", "title": "Crea tu glosario", "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.", "target": "[data-eds-glossary]"},
+)
+_TOUR_STEPS_BY_LANG = {"en": _TOUR_STEPS, "es": _TOUR_STEPS_ES}
 
 
 def _duration(seconds: Any) -> str:
@@ -39,11 +66,12 @@ def _choices(values: list[str], answer: str, count: int = 4) -> list[str]:
     return unique[:count]
 
 
-def _cloze(expression: str) -> tuple[str, str]:
+def _cloze(expression: str, lang: str = "en") -> tuple[str, str]:
     tokens = re.findall(r"[\wÀ-ÿ’'-]+", expression)
+    stopwords = _CLOZE_STOPWORDS_BY_LANG.get(lang, _CLOZE_STOPWORDS_BY_LANG["en"])
     candidates = [
         token for token in tokens
-        if len(token.strip("’'-")) > 2 and token.lower().strip("’'-") not in _CLOZE_STOPWORDS
+        if len(token.strip("’'-")) > 2 and token.lower().strip("’'-") not in stopwords
     ]
     if not candidates:
         candidates = tokens
@@ -76,7 +104,9 @@ def _build_glossary(payloads: dict[str, dict[str, Any]]) -> list[dict[str, Any]]
     return glossary
 
 
-def _build_exercises(payloads: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+def _build_exercises(payloads: dict[str, dict[str, Any]], lang: str = "en") -> list[dict[str, Any]]:
+    prompts = _EXERCISE_PROMPTS.get(lang, _EXERCISE_PROMPTS["en"])
+    stopwords = _CLOZE_STOPWORDS_BY_LANG.get(lang, _CLOZE_STOPWORDS_BY_LANG["en"])
     words = [(level, (payloads.get(level) or {}).get("word") or {}) for level in LEVELS]
     expressions = [(level, (payloads.get(level) or {}).get("expression") or {}) for level in LEVELS]
     histories = [(level, (payloads.get(level) or {}).get("history") or {}) for level in LEVELS]
@@ -85,7 +115,7 @@ def _build_exercises(payloads: dict[str, dict[str, Any]]) -> list[dict[str, Any]
         token
         for _, item in expressions
         for token in re.findall(r"[\wÀ-ÿ’'-]+", str(item.get("expression") or ""))
-        if len(token.strip("’'-")) > 2 and token.lower() not in _CLOZE_STOPWORDS
+        if len(token.strip("’'-")) > 2 and token.lower() not in stopwords
     ]
     period_choices = [str(item.get("period") or "") for _, item in histories]
     exercises: list[dict[str, Any]] = []
@@ -98,24 +128,24 @@ def _build_exercises(payloads: dict[str, dict[str, Any]]) -> list[dict[str, Any]
             answer = str(word.get("meaning_fr") or "")
             exercises.append({
                 "id": f"{level}-word", "type": "multiple-choice", "kind": "word", "level": level,
-                "prompt": f"What does “{word_text}” mean?", "options": _choices(word_choices, answer),
+                "prompt": prompts["word"].format(text=word_text), "options": _choices(word_choices, answer),
                 "answer": answer, "item_key": str(word.get("key") or ""),
             })
         expression_text = str(expression.get("expression") or "")
         if expression_text:
-            prompt, answer = _cloze(expression_text)
+            prompt, answer = _cloze(expression_text, lang)
             exercises.append({
                 "id": f"{level}-expression", "type": "cloze", "kind": "expression", "level": level,
-                "prompt": f"Complete the expression: {prompt}", "options": _choices(expression_choices, answer),
+                "prompt": prompts["expression"].format(prompt=prompt), "options": _choices(expression_choices, answer),
                 "answer": answer, "item_key": str(expression.get("key") or ""),
             })
         history_text = str(history.get("text") or "")
         if history_text:
-            answer = str(history.get("period") or "General")
+            answer = str(history.get("period") or prompts["general"])
             exercises.append({
                 "id": f"{level}-history", "type": "multiple-choice", "kind": "history", "level": level,
-                "prompt": f"Which period does “{history_text}” belong to?",
-                "options": _choices(period_choices or ["General"], answer),
+                "prompt": prompts["history"].format(text=history_text),
+                "options": _choices(period_choices or [prompts["general"]], answer),
                 "answer": answer, "item_key": str(history.get("key") or ""),
             })
     return exercises
@@ -280,7 +310,7 @@ def serialize_day(
     )
     phrase_payloads = load_phrases(conn, day, language)
     glossary = _build_glossary(phrase_payloads)
-    exercises = _build_exercises(phrase_payloads)
+    exercises = _build_exercises(phrase_payloads, language)
     periods: set[str] = set()
     themes: set[str] = set()
     source_ids: set[str] = set()
@@ -308,7 +338,7 @@ def serialize_day(
         "phrase": phrase_payloads.get(level),
         "glossary": glossary,
         "exercises": exercises,
-        "tour": list(_TOUR_STEPS),
+        "tour": list(_TOUR_STEPS_BY_LANG.get(language, _TOUR_STEPS)),
         "meta": {
             "contract_version": 2,
             "filled": filled,

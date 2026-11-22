@@ -11,6 +11,7 @@ from app.anki import DECK_NAME, MODEL_NAME, anki_connect_note, build_notes, load
 from app.db import (
     PROJECT_ROOT,
     available_languages,
+    brand_for_language,
     connect,
     default_language,
     init_db,
@@ -216,6 +217,7 @@ def _stats(config: dict[str, Any], days: int, lang: str | None = None) -> dict[s
         return {
             "days": days,
             "lang": language,
+            "brand": brand_for_language(config, language),
             "weekly_goal": int(config.get("weekly_goal_default", 5)),
             "by_level": by_level,
             "phrase_days": int(conn.execute(
@@ -234,7 +236,7 @@ def _stats(config: dict[str, Any], days: int, lang: str | None = None) -> dict[s
 
 def _stats_markdown(summary: dict[str, Any]) -> str:
     lines = [
-        f"## English Daily stats ({summary['days']} days, {summary['lang']})",
+        f"## {summary['brand']} stats ({summary['days']} days, {summary['lang']})",
         "",
         "| Level | Picks | Days with content | Capacity |",
         "| --- | ---: | ---: | ---: |",

@@ -1,6 +1,7 @@
 const assert = require('assert');
 
 global.window = {};
+require('../static/lib/store.js');
 require('../static/lib/branding.js');
 require('../static/lib/settings.js');
 require('../static/lib/links.js');
@@ -8,7 +9,9 @@ require('../static/lib/search.js');
 require('../static/lib/archive.js');
 require('../static/lib/progress.js');
 require('../static/lib/anki.js');
+require('../static/lib/exercises.js');
 
+const EDStore = global.window.EDStore;
 const EDBrand = global.window.EDBrand;
 const EDSettings = global.window.EDSettings;
 const EDLinks = global.window.EDLinks;
@@ -17,10 +20,37 @@ const EDArchive = global.window.EDArchive;
 const EDProgress = global.window.EDProgress;
 const AnkiExport = global.window.AnkiExport;
 const AnkiConnect = global.window.AnkiConnect;
+const EDExercises = global.window.EDExercises;
 
+const payload = {
+  default: 'en',
+  languages: ['en', 'es'],
+  labels: { en: 'English', es: 'Español' },
+  metadata: {
+    en: { brand: 'English Daily', tagline: 'A little English, every day.' },
+    es: { brand: 'Spanish Daily', tagline: 'Un poco de español, cada día.' },
+  },
+};
+
+assert.deepStrictEqual(EDBrand.languageCodes(payload), ['en', 'es']);
+assert.deepStrictEqual(EDBrand.languageCodes({}), ['en']);
+assert.strictEqual(EDBrand.defaultLanguage(payload), 'en');
+assert.strictEqual(EDBrand.defaultLanguage({ default: 'es', languages: ['es', 'en'] }), 'es');
+assert.strictEqual(EDBrand.normalizeLanguage('es', payload), 'es');
+assert.strictEqual(EDBrand.normalizeLanguage('fr', payload), 'en');
+assert.strictEqual(EDBrand.normalizeLanguage('fr', { default: 'es', languages: ['es'] }), 'es');
+assert.strictEqual(EDBrand.languageLabel(payload, 'es'), 'Español');
+assert.strictEqual(EDBrand.languageLabel({}, 'es'), 'Español');
+assert.deepStrictEqual(EDBrand.languageOptions(payload), [
+  { code: 'en', label: 'English' },
+  { code: 'es', label: 'Español' },
+]);
 assert.strictEqual(EDBrand.brand({ default: 'en' }, 'en'), 'English Daily');
 assert.strictEqual(EDBrand.brand({ default: 'en' }, 'es'), 'Spanish Daily');
 assert.strictEqual(EDBrand.brand({ brands: { en: 'English Daily' }, default: 'en' }, 'en'), 'English Daily');
+assert.strictEqual(EDBrand.tagline({ default: 'en' }, 'en'), 'A little English, every day.');
+assert.strictEqual(EDBrand.tagline({ default: 'en' }, 'es'), 'Un poco de español, cada día.');
+assert.strictEqual(EDBrand.tagline(payload, 'es'), 'Un poco de español, cada día.');
 assert.strictEqual(EDBrand.route('#archive'), 'archive');
 assert.strictEqual(EDBrand.route('settings'), 'settings');
 assert.strictEqual(EDBrand.route('#unknown'), 'today');
@@ -173,6 +203,27 @@ contentItems.slice(0, 5).forEach((item) => { item.done = true; });
 assert.strictEqual(EDProgress.dailyDone(all, levels, categories, (item) => item.done), 5);
 assert.strictEqual(EDProgress.percent(7, 14), 50);
 assert.strictEqual(EDProgress.percent(0, 0), 0);
+
+const exerciseStore = new Map();
+const fakeLocalStorage = {
+  getItem(key) { return exerciseStore.has(key) ? exerciseStore.get(key) : null; },
+  setItem(key, value) { exerciseStore.set(key, String(value)); },
+  removeItem(key) { exerciseStore.delete(key); },
+  key(index) { return Array.from(exerciseStore.keys())[index] || null; },
+  get length() { return exerciseStore.size; },
+};
+global.window.localStorage = fakeLocalStorage;
+global.localStorage = fakeLocalStorage;
+EDStore.keys(EDStore.PREFIX).forEach((key) => EDStore.remove(key));
+const ex = { id: 'ex-1', answer: 'yes' };
+EDExercises.record(ex, 'yes', 'en');
+assert.strictEqual(EDExercises.storageKey(ex, 'en'), 'english-daily:exercise:ex-1');
+assert.strictEqual(EDExercises.answer(ex, 'en').correct, true);
+assert.strictEqual(EDExercises.answer(ex, 'es'), null);
+EDExercises.record(ex, 'no', 'es');
+assert.strictEqual(EDExercises.storageKey(ex, 'es'), 'english-daily:exercise:es:ex-1');
+assert.strictEqual(EDExercises.answer(ex, 'es').correct, false);
+assert.strictEqual(EDExercises.answer(ex, 'en').correct, true);
 
 const practiced = [
   '2026-11-21',
