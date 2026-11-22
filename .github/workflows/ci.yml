@@ -1,0 +1,83 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "site/**"
+      - "state/**"
+      - "data/**"
+      - "*.md"
+  pull_request:
+    paths-ignore:
+      - "site/**"
+      - "state/**"
+      - "data/**"
+      - "*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      ENGLISH_DAILY_AUDIO_MODE: hotlink
+      ENGLISH_DAILY_DATA_DIR: ./.ci-data
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt -r tests/requirements-dev.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
+      - name: Validate configuration
+        run: python run.py validate-config --json
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Python compile check
+        run: python -m compileall -q app ingest desktop tools run.py tests
+
+      - name: Frontend checks
+        run: |
+          node --check static/app.js
+          node --check static/sw.js
+          for file in static/lib/*.js; do node --check "$file"; done
+          node tests/frontend_helpers.js
+
+      - name: Palette and contrast checks
+        run: |
+          python tools/palette_build.py --check --out static/css/themes.css
+          python tools/contrast_check.py --css static/css/themes.css --json > /dev/null
+
+      - name: Demo data smoke test
+        run: python run.py demo-data --out demo-site --data-dir ./.ci-demo-data --state-dir ./.ci-demo-state --date 2026-11-21 --json
+
+      - name: Browser tests
+        run: python -m unittest discover -s tests/e2e -v
+
+      - name: Calibration report
+        run: python run.py calibrate --json

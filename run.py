@@ -30,6 +30,14 @@ from ingest.pipeline import _candidates, run_ingest
 from ingest.pool import pool_dir, write_json
 from ingest.readability import CATEGORIES, KINDS, LEVELS
 from ingest.state import import_site_state, load_entries
+from tools.project_ops import (
+    backup_database,
+    build_demo_data,
+    calibrate_report,
+    default_demo_dates,
+    restore_database,
+    validate_config,
+)
 
 
 def _languages(config: dict[str, Any], lang: str | None) -> list[str]:
@@ -423,11 +431,42 @@ def main() -> int:
     clean_cmd.add_argument("--lang", default=None)
     sub.add_parser("prune", help="delete expired MP3 files")
 
+    validate_cmd = sub.add_parser("validate-config", help="validate configuration and language metadata")
+    validate_cmd.add_argument("--json", dest="json_output", action="store_true")
+
+    demo = sub.add_parser("demo-data", help="write deterministic offline demo data and a static site")
+    demo.add_argument("--out", default="demo-site")
+    demo.add_argument("--state-dir", default="demo-state")
+    demo.add_argument("--data-dir", default=None)
+    demo.add_argument("--date", default=None)
+    demo.add_argument("--json", dest="json_output", action="store_true")
+
+    backup = sub.add_parser("backup-db", help="back up the SQLite database")
+    backup.add_argument("--out", default=None)
+    backup.add_argument("--data-dir", default=None)
+    backup.add_argument("--json", dest="json_output", action="store_true")
+
+    restore = sub.add_parser("restore-db", help="restore the SQLite database from a backup")
+    restore.add_argument("--from", dest="source", required=True)
+    restore.add_argument("--force", action="store_true")
+    restore.add_argument("--data-dir", default=None)
+    restore.add_argument("--json", dest="json_output", action="store_true")
+
+    calibrate = sub.add_parser("calibrate", help="report content calibration by language")
+    calibrate.add_argument("--lang", default=None)
+    calibrate.add_argument("--json", dest="json_output", action="store_true")
+
     args = parser.parse_args()
     command = args.command or "serve"
     config = load_config()
-    init_db(config)
-    upsert_sources(load_sources(), config)
+    data_dir_override = getattr(args, "data_dir", None)
+    if data_dir_override:
+        config["data_dir"] = data_dir_override
+    elif command == "demo-data":
+        config["data_dir"] = "demo-data"
+    if command not in {"restore-db", "validate-config", "calibrate", "demo-data"}:
+        init_db(config)
+        upsert_sources(load_sources(), config)
 
     if command == "ingest":
         day = args.date or today(config)
@@ -519,6 +558,67 @@ def main() -> int:
     if command == "prune":
         removed = prune_audio(config)
         print(f"Pruned {removed} expired audio file(s).")
+        return 0
+
+    if command == "validate-config":
+        report = validate_config(config)
+        if args.json_output:
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif report["ok"]:
+            print("config validation: PASS")
+        else:
+            print("config validation: FAIL", file=sys.stderr)
+            for issue in report["issues"]:
+                print(f"- {issue}", file=sys.stderr)
+        return 0 if report["ok"] else 1
+
+    if command == "demo-data":
+        dates = [args.date] if args.date else default_demo_dates(config)
+        summary = build_demo_data(config, args.out, args.state_dir, dates)
+        if args.json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
+        else:
+            print(f"Demo data written to {summary['out']}")
+            print(f"Languages: {', '.join(summary['languages'])}")
+            print(f"Dates: {', '.join(summary['dates'])}")
+            print(f"Level files: {summary['level_files']}")
+        return 0
+
+    if command == "backup-db":
+        summary = backup_database(config, args.out)
+        if args.json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
+        else:
+            print(f"Backup written to {summary['backup']} ({summary['bytes']} bytes)")
+        return 0
+
+    if command == "restore-db":
+        try:
+            summary = restore_database(config, args.source, force=args.force)
+        except (FileExistsError, FileNotFoundError) as error:
+            print(str(error), file=sys.stderr)
+            return 1
+        if args.json_output:
+            print(json.dumps(summary, ensure_ascii=False, indent=2))
+        else:
+            print(f"Restored {summary['target']} from {summary['source']}")
+        return 0
+
+    if command == "calibrate":
+        report = calibrate_report(config, lang=args.lang)
+        if args.json_output:
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+        else:
+            for language, values in report["reports"].items():
+                print(f"## {values['brand']} ({language})")
+                print(f"sources: {values['sources']}")
+                print(
+                    "bank: "
+                    f"{values['bank']['words']} words, "
+                    f"{values['bank']['expressions']} expressions, "
+                    f"{values['bank']['history_terms']} history terms"
+                )
+                print(f"warnings: {', '.join(values['warnings']) or 'none'}")
         return 0
 
     if command == "doctor":

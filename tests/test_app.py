@@ -44,6 +44,13 @@ from ingest.fetch_text import clean_text, extract_article, word_count
 from ingest.pool import pool_dir
 from tools.contrast_check import audit_css, contrast_ratio
 from tools.palette_build import audit_palettes, build_css
+from tools.project_ops import (
+    backup_database,
+    build_demo_data,
+    calibrate_report,
+    restore_database,
+    validate_config,
+)
 
 from ingest.paths import (
     languages_path,
@@ -1092,6 +1099,9 @@ class DocsTests(unittest.TestCase):
             "Actions → daily → Run workflow", "contract_version: 2",
             "static/lib/", "no LLM", "python run.py clean-existing",
             "python tools/contrast_check.py", "text_cleaning.patterns",
+            "python run.py validate-config", "python run.py demo-data",
+            "python run.py backup-db", "python run.py restore-db",
+            "python run.py calibrate", "Actions → ci → Run workflow",
         ):
             self.assertIn(marker, readme)
 
@@ -1103,15 +1113,18 @@ class WorkflowTests(unittest.TestCase):
         daily = (workflows / "daily.yml").read_text(encoding="utf-8")
         health = (workflows / "health.yml").read_text(encoding="utf-8")
         desktop = (workflows / "desktop.yml").read_text(encoding="utf-8")
-        for name, text in (("daily", daily), ("health", health), ("desktop", desktop)):
+        ci = (workflows / "ci.yml").read_text(encoding="utf-8")
+        for name, text in (("daily", daily), ("health", health), ("desktop", desktop), ("ci", ci)):
             parsed = yaml.safe_load(text)
             self.assertTrue(parsed.get("jobs"), name)
-        for marker in ('cron: "0 5 * * *"', "workflow_dispatch", "unittest discover", "static/lib/*.js", "reconstruct --json", "reconstruct --lang es --json", "export-static --out site --public", "deploy-pages@v4"):
+        for marker in ('cron: "0 5 * * *"', "workflow_dispatch", "timeout-minutes: 60", "validate-config --json", "unittest discover", "static/lib/*.js", "reconstruct --json", "reconstruct --lang es --json", "export-static --out site --public", "deploy-pages@v4"):
             self.assertIn(marker, daily)
-        for marker in ("cron:", "workflow_dispatch", "doctor --json", "upload-artifact@v4"):
+        for marker in ("cron:", "workflow_dispatch", "timeout-minutes: 20", "doctor --json", "upload-artifact@v4"):
             self.assertIn(marker, health)
-        for marker in ("workflow_dispatch", "matrix:", "build_desktop.py", "upload-artifact@v4"):
+        for marker in ("workflow_dispatch", "timeout-minutes: 30", "matrix:", "build_desktop.py", "upload-artifact@v4"):
             self.assertIn(marker, desktop)
+        for marker in ("paths-ignore", "timeout-minutes: 25", "requirements-dev.txt", "playwright install", "validate-config --json", "palette_build.py", "contrast_check.py", "demo-data", "tests/e2e", "calibrate --json"):
+            self.assertIn(marker, ci)
 
 
 class DesktopTests(unittest.TestCase):
@@ -1394,6 +1407,58 @@ class PhaseSevenE2ETests(unittest.TestCase):
 
         report = (root / "TEST_REPORT.md").read_text(encoding="utf-8")
         self.assertIn("Playwright", report)
+
+
+class PhaseEightWorkflowsTests(unittest.TestCase):
+    def test_config_validation_accepts_repo_defaults_and_reports_issues(self):
+        config = dict(load_config())
+        report = validate_config(config)
+        self.assertTrue(report["ok"], report["issues"])
+
+        languages = {
+            code: dict(metadata) for code, metadata in config["languages"].items()
+        }
+        languages["en"]["brand"] = ""
+        broken = dict(config)
+        broken["languages"] = languages
+        report = validate_config(broken)
+        self.assertFalse(report["ok"])
+        self.assertTrue(any("en: missing brand metadata" in issue for issue in report["issues"]))
+
+    def test_demo_backup_restore_and_calibrate_are_wired(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            config = dict(load_config())
+            config["data_dir"] = str(root / "data")
+            summary = build_demo_data(config, root / "site", root / "state", ["2026-11-21"])
+            self.assertTrue((root / "site" / "index.html").is_file())
+            self.assertEqual(summary["languages"], ["en", "es"])
+
+            backup = backup_database(config, root / "backup.sqlite3")
+            self.assertTrue(Path(backup["backup"]).is_file())
+            restore_config = dict(config)
+            restore_config["data_dir"] = str(root / "restore")
+            restored = restore_database(restore_config, backup["backup"])
+            self.assertTrue(Path(restored["target"]).is_file())
+            with self.assertRaises(FileExistsError):
+                restore_database(restore_config, backup["backup"])
+
+            calibration = calibrate_report(config, lang="en")
+            english = calibration["reports"]["en"]
+            self.assertGreaterEqual(english["bank"]["words"], 120)
+            self.assertGreaterEqual(english["sources"], 1)
+            self.assertIn("C2", english["thresholds"])
+
+    def test_validate_config_cli_is_wired(self):
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [sys.executable, str(root / "run.py"), "validate-config", "--json"],
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        payload = json.loads(result.stdout)
+        self.assertTrue(payload["ok"], payload["issues"])
 
 
 if __name__ == "__main__":

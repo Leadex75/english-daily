@@ -37,7 +37,7 @@
 | 5 | Spanish | missing | `languages: [en]`, 28 English-only sources, `site/data/languages.json` only `en`; no `bank/es`, `state/es`, or `site/data/es`; no Spanish source registry, brands, history config, or live source verification. |
 | 6 | Guided tour / home highlight | done | Seven serialized tour steps begin at the home hero; the tour has a positioned spotlight, highlighted target treatment, hidden-view preparation, focus trapping/restoration, Anki-help reopen and first-visit auto-start. |
 | 7 | Tests and E2E | done | 63 Python tests, frontend helper Node checks, contrast audit and static checks exist. Playwright dev requirements, env config, deterministic static-export harness, six E2E specs and `TEST_REPORT.md` are present; E2E blocks external requests and stubs AnkiConnect. |
-| 8 | Workflows and docs | partial | Daily, health and desktop workflows exist; daily runs 05:00 UTC with manual dispatch, has no timeout or push path filters, and commits site/state directly. No `ci.yml`; docs still describe old brand/UI. `demo-data`, `calibrate`, backup/restore and config validation commands are absent. |
+| 8 | Workflows and docs | done | Daily, health, desktop and `ci.yml` exist; CI has push/PR path filters, all workflows have timeouts, and docs describe the English Daily/Spanish Daily UI and new commands. `validate-config`, `demo-data`, `backup-db`, `restore-db` and `calibrate` are wired into the CLI, tests and workflows. |
 
 ## Current UI control inventory
 

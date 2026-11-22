@@ -231,3 +231,17 @@
 - Verification: Python compile check, all JavaScript syntax checks, `tests/frontend_helpers.js`, palette check and contrast audit passed after the E2E changes.
 - Decision: run E2E against a generated static export rather than the live site so tests are offline, deterministic and independent of publisher/network availability.
 - Remaining: Phase 8.
+
+## New brief — Phase 8 — workflows, commands and docs (done)
+
+- Added `.github/workflows/ci.yml` with push/PR path filters for generated `site/`, `state/`, `data/` and markdown-only changes, manual dispatch, concurrency cancellation and a 25-minute timeout.
+- CI now validates configuration, runs unit tests, checks Python/JavaScript syntax, runs frontend helpers, audits palettes/contrast, builds deterministic demo data, installs Playwright Chromium, runs browser tests and prints a calibration report.
+- Added `timeout-minutes` to daily and desktop workflows, and wired `validate-config --json` into the daily workflow.
+- Added `tools/project_ops.py` with deterministic `validate-config`, `demo-data`, `backup-db`, `restore-db` and `calibrate` operations; `run.py` exposes all five commands with JSON output.
+- `demo-data` seeds two offline bilingual days in an isolated data directory and exports a public static site without touching the live database.
+- `restore-db` refuses to overwrite an existing database unless `--force` is passed, and writes a timestamped safety backup before restoring.
+- Updated `README.md`, `AUDIT.md` and `TEST_REPORT.md` for the new commands, CI workflow and final results.
+- Tests: 66 unit tests passed in `.venv` and 6 Playwright E2E tests passed after the Phase 8 changes.
+- Verification: Python compile check, all JavaScript syntax checks, frontend helpers, palette check, contrast audit, config validation, calibration, demo data, backup/restore and temp public static export passed.
+- Decision: keep generated site/state commits out of CI triggers via path filters while preserving the scheduled daily publish path.
+- Remaining: publish and push.

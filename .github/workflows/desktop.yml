@@ -13,6 +13,7 @@ jobs:
   zipapp:
     name: zipapp (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
@@ -43,6 +44,7 @@ jobs:
   executable:
     name: executable (windows-latest)
     runs-on: windows-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4

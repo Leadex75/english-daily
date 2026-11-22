@@ -74,6 +74,11 @@ python run.py anki-build --entries state/es/anki-entries.json --out spanish-dail
 python run.py export-static --out site --public
 python run.py import-state --site-dir site --state-dir state
 python run.py prune
+python run.py validate-config --json
+python run.py demo-data --out demo-site --data-dir demo-data --state-dir demo-state --json
+python run.py backup-db --out english-daily.sqlite3.bak
+python run.py restore-db --from english-daily.sqlite3.bak --force
+python run.py calibrate --json
 python -m unittest discover -s tests -v
 python -m compileall -q app ingest desktop tools run.py tests
 python tools/contrast_check.py --css static/css/themes.css
@@ -91,6 +96,12 @@ python -m unittest discover -s tests/e2e -v
 
 The E2E suite exports a deterministic static site, serves it on localhost, blocks external requests and
 stubs AnkiConnect. Results are recorded in `TEST_REPORT.md`.
+
+`validate-config` checks required keys, language metadata, CEFR thresholds and polite-network settings.
+`demo-data` builds a two-day bilingual offline preview without touching the live database. `backup-db`
+and `restore-db` copy the SQLite database safely; restore requires `--force` to replace an existing
+database and writes its own safety backup. `calibrate` reports source counts, bank coverage and
+readability thresholds per language.
 
 `ffmpeg` is optional: re-encoding only happens when `reencode_audio: true` and `ffmpeg` is installed.
 Otherwise MP3s are kept exactly as downloaded. Audio is always hotlinked from the original publisher;
@@ -217,6 +228,13 @@ GET /audio/YYYY-MM-DD/<sha1>.mp3   (HTTP Range supported)
 `/` serves `static/`. Alpine.js is vendored; there are no CDN requests.
 
 ## GitHub Actions
+
+### ci
+
+`.github/workflows/ci.yml` runs on pushes to `main`, pull requests and manual dispatch via
+**Actions → ci → Run workflow**. Generated `site/`, `state/` and `data/` changes and markdown-only
+changes are ignored. It validates configuration, runs unit and browser tests, checks Python and
+JavaScript syntax, audits palettes, builds demo data and prints a calibration report.
 
 ### daily
 
