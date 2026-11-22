@@ -46,6 +46,9 @@ folder is ignored by Git; regenerate it after UI or palette changes.
 - Addendum Phase 11 storage checks: new `eds.<lang>.*` keys are covered by frontend helpers and E2E cleanup; legacy `english-daily:*` keys remain unchanged.
 - Addendum Phase 12: 79 unit tests passed; 16 Playwright tests passed, including persisted annotation highlight tones and translated tour copy.
 - Addendum Phase 12 static checks: compileall, all JavaScript syntax checks, frontend helpers, palette build and 72-pair contrast audit passed.
+- Addendum Phase 13 final rerun: 79 unit tests and 16 Playwright tests passed after the Phase 12 commit, with responsive screenshots regenerated in Paper and Ink at 360/768/1280 px.
+- Addendum Phase 13 final static checks: compileall, all JavaScript syntax checks, frontend helpers, palette check and 72-pair contrast audit passed.
+- Addendum Phase 13 CLI smoke: `validate-config --json` returned `ok: true`; `calibrate --json`, `demo-data`, `backup-db`, `restore-db` and a temp public static export all succeeded for `en` and `es`.
 
 ## Environment
 

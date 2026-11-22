@@ -288,3 +288,12 @@
 - Done: extended frontend helpers and E2E coverage for stored annotation tones and the contrast audit; added a separate Phase 12 unit class and docs markers.
 - Remaining: Phase 13 final verification, docs and publish; local Phase 12 commit, then final push only after the last phase.
 - Decisions: keep the existing seven serialized tour steps and translate them in the client instead of changing backend contract data; keep highlight colours local and contrast-audited rather than introducing new runtime dependencies.
+
+## Addendum Phase 13 — final verification and publish (done / remaining / decisions)
+
+- Done: final rerun of 79 unit tests and 16 Playwright tests passed after the Phase 12 commit.
+- Done: compileall, all JavaScript syntax checks, frontend helpers, palette generation check, 72-pair contrast audit and CLI smoke checks passed.
+- Done: CLI smoke covered `validate-config --json`, `calibrate --json`, `demo-data`, `backup-db`, `restore-db` and a temp public `export-static` with `en`/`es` and 12 level files; screenshots were regenerated in two palettes at 360/768/1280 px.
+- Done: docs now record the completed addendum phases, local storage keys, tour translations, highlight-token audit and final verification results.
+- Remaining: final Phase 13 commit and push to `origin/main`, then manual `daily` and `desktop` workflow runs to refresh the published site and Windows zip.
+- Decisions: keep generated `site/` output out of this change set; the daily workflow remains the publishing path, and the desktop workflow remains the packaged-binary path.

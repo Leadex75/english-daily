@@ -146,3 +146,9 @@
 - Annotation notes store their selected highlight tone per item, and note text uses `--fg` so it stays readable on every highlight in Paper, Sepia, Ink, High contrast and both System modes.
 - Guided-tour copy is resolved through `static/lib/i18n.js`; the serialized seven-step contract remains stable while titles and bodies follow the selected language and `eds.<lang>.i18n` overrides.
 - Tour target outlines rotate through the audited highlight tokens without changing target backgrounds, so the tour spotlight does not reduce reading contrast.
+
+## Addendum Phase 13 resolution
+
+- Final verification after the Phase 12 commit passed 79 unit tests, 16 Playwright tests, all static syntax/helper checks and the 72-pair palette audit.
+- The CLI smoke path remained healthy: configuration validation, calibration, demo data, database backup/restore and a temporary public static export all succeeded for English and Spanish.
+- Generated `site/` output is intentionally not hand-edited in the addendum commit; publishing remains the daily workflow's responsibility, with the desktop workflow responsible for refreshable Windows artifacts.
