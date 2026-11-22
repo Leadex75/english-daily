@@ -1368,5 +1368,33 @@ class PhaseSixTourTests(unittest.TestCase):
         self.assertEqual(_TOUR_STEPS_BY_LANG["es"][0]["title"], "Empieza desde casa")
 
 
+class PhaseSevenE2ETests(unittest.TestCase):
+    def test_playwright_e2e_tooling_is_present(self):
+        root = Path(__file__).resolve().parents[1]
+        dev_requirements = (root / "tests" / "requirements-dev.txt").read_text(encoding="utf-8")
+        self.assertIn("playwright==", dev_requirements)
+
+        e2e_dir = root / "tests" / "e2e"
+        required = (
+            "config.py",
+            "e2e_harness.py",
+            "test_brand_layout.py",
+            "test_themes_settings.py",
+            "test_archive_search.py",
+            "test_anki_connect.py",
+            "test_spanish_switch.py",
+            "test_tour_home_highlight.py",
+        )
+        for name in required:
+            self.assertTrue((e2e_dir / name).is_file(), name)
+
+        harness = (e2e_dir / "e2e_harness.py").read_text(encoding="utf-8")
+        for marker in ("export_static", "http.server", "127.0.0.1:8765", "route.abort"):
+            self.assertIn(marker, harness)
+
+        report = (root / "TEST_REPORT.md").read_text(encoding="utf-8")
+        self.assertIn("Playwright", report)
+
+
 if __name__ == "__main__":
     unittest.main()

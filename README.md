@@ -81,6 +81,17 @@ python tools/palette_build.py --check --out static/css/themes.css
 python -m ingest.readability
 ```
 
+Install browser-test dependencies separately:
+
+```powershell
+python -m pip install -r tests/requirements-dev.txt
+$env:E2E_CHROMIUM_PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+python -m unittest discover -s tests/e2e -v
+```
+
+The E2E suite exports a deterministic static site, serves it on localhost, blocks external requests and
+stubs AnkiConnect. Results are recorded in `TEST_REPORT.md`.
+
 `ffmpeg` is optional: re-encoding only happens when `reencode_audio: true` and `ffmpeg` is installed.
 Otherwise MP3s are kept exactly as downloaded. Audio is always hotlinked from the original publisher;
 the app never re-hosts MP3s.

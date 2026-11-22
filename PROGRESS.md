@@ -218,3 +218,16 @@
 - Verification: Python compile check, all JavaScript syntax checks, palette check and contrast audit passed; temp public static export confirmed `data-eds-hero`, the spotlight element and the cached tour module.
 - Decision: keep `english-daily:tour` state compatible; store the first-visit flag separately as `english-daily:tour:seen` so older sessions resume normally.
 - Remaining: Phases 7–8.
+
+## New brief — Phase 7 — E2E and test tooling (done)
+
+- Added `tests/requirements-dev.txt` with `playwright==1.65.2`, keeping browser tooling out of runtime requirements.
+- Added `tests/e2e/config.py` for browser, headless, executable, base URL, timeout and viewport overrides via environment variables.
+- Added `tests/e2e/e2e_harness.py`: seeds two deterministic EN/ES days, exports a public static site, serves it on an ephemeral localhost port, clears app storage, blocks all external requests except a stubbed `127.0.0.1:8765` AnkiConnect endpoint, and closes browser/server resources per test.
+- Added six Playwright specs: brand/layout, theme/settings persistence, calendar/search/open edition, AnkiConnect success/failure plus TSV fallback, Spanish brand/content-path/exercise-key isolation, and first-visit tour/home spotlight with focus trapping and seen-state reload.
+- Added a unit marker for the dev requirements, E2E files, harness markers and test report so missing E2E tooling fails the standard unit suite.
+- Added `TEST_REPORT.md` with exact unit, static, frontend and E2E commands and final results.
+- Tests: 63 unit tests passed in `.venv` and 6 Playwright E2E tests passed with `E2E_CHROMIUM_PATH` set to the installed Chrome binary.
+- Verification: Python compile check, all JavaScript syntax checks, `tests/frontend_helpers.js`, palette check and contrast audit passed after the E2E changes.
+- Decision: run E2E against a generated static export rather than the live site so tests are offline, deterministic and independent of publisher/network availability.
+- Remaining: Phase 8.

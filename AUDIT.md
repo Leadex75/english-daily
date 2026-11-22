@@ -36,7 +36,7 @@
 | 4 | Anki | partial | Browser TSV download, learned-only gating, status labels and Anki tour step exist. Missing persistent note model, deterministic note fields/tags, AnkiConnect client, backend note builder/export path, and dedicated tests. |
 | 5 | Spanish | missing | `languages: [en]`, 28 English-only sources, `site/data/languages.json` only `en`; no `bank/es`, `state/es`, or `site/data/es`; no Spanish source registry, brands, history config, or live source verification. |
 | 6 | Guided tour / home highlight | done | Seven serialized tour steps begin at the home hero; the tour has a positioned spotlight, highlighted target treatment, hidden-view preparation, focus trapping/restoration, Anki-help reopen and first-visit auto-start. |
-| 7 | Tests and E2E | partial | 41 Python tests, frontend helper Node checks, contrast audit and static checks exist. No `tests/requirements-dev.txt`, no Playwright dependency/config, no `tests/e2e/`, no `TEST_REPORT.md`. |
+| 7 | Tests and E2E | done | 63 Python tests, frontend helper Node checks, contrast audit and static checks exist. Playwright dev requirements, env config, deterministic static-export harness, six E2E specs and `TEST_REPORT.md` are present; E2E blocks external requests and stubs AnkiConnect. |
 | 8 | Workflows and docs | partial | Daily, health and desktop workflows exist; daily runs 05:00 UTC with manual dispatch, has no timeout or push path filters, and commits site/state directly. No `ci.yml`; docs still describe old brand/UI. `demo-data`, `calibrate`, backup/restore and config validation commands are absent. |
 
 ## Current UI control inventory
