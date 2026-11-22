@@ -10,25 +10,25 @@
     "culture": {
       "text": {
         "id": 59,
-        "title": "21st German Bundestag",
+        "title": "National Congress",
         "source": "Simple English Wikipedia",
         "source_id": "wikipedia_simple",
         "category": "culture",
-        "url": "https://simple.wikipedia.org/wiki/21st_German_Bundestag",
-        "published_at": "2026-11-21T18:25:45",
+        "url": "https://simple.wikipedia.org/wiki/National_Congress",
+        "published_at": "2026-11-21T21:53:49",
         "level": "A1",
         "slot_level": "A1",
         "source_level": "A2",
-        "word_count": 77,
+        "word_count": 50,
         "duration_sec": null,
-        "body_text": "The 21st Bundestag of Germany was elected on 23 February 2025. The President of the Bundestag is currently Julia Klöckner (CDU). It has 630 members (down from 733 in the previous Bundestag). On 6 May 2025 Friedrich Merz (CDU) was chosen as Chancellor of Germany and sworn in. He failed to win enough support in a first round of voting – a first in German history for a chancellor candidate. == Parties == This is the composition of the 21st Bundestag as of May 2025: == References ==",
+        "body_text": "National Congress is a word used in the names of many political parties and legislatures. == Political parties == India: Indian National Congress South Africa: African National Congress == National legislatures == Argentine National Congress National Congress of Brazil National Congress of Chile National People's Congress National Congress of Ecuador National Congress of Honduras",
         "audio_url": null,
         "description": null,
         "license": "cc_by_sa",
         "attribution": "Wikipedia, CC BY-SA 4.0",
         "truncated": false,
-        "guid_hash": "776c2911a586d01cbc44264895ef69fdefb32b98",
-        "summary": "The 21st Bundestag of Germany was elected on 23 February 2025. The President of the Bundestag is currently Julia Klöckner (CDU). It has 630 members (down from 733 in the previous Bundestag). On 6 May 2025 Friedrich Merz (CDU) was chosen as Chancellor of Germany and sworn in. He failed to win enough support in a first round of voting – a first in German history for a chancellor candidate. == Partie",
+        "guid_hash": "07b2d7dceb051de940f50d36185c0c9860fdfd39",
+        "summary": "National Congress is a word used in the names of many political parties and legislatures. == Political parties == India: Indian National Congress South Africa: African National Congress == National legislatures == Argentine National Congress National Congress of Brazil National Congress of Chile National People's Congress National Congress of Ecuador National Congress of Honduras",
         "origin": "adjacent",
         "badges": [
           "Closest level: A2",
@@ -37,14 +37,14 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "21st German Bundestag — Simple English Wikipedia",
+        "alt_text": "National Congress — Simple English Wikipedia",
         "duration_formatted": "",
         "source_url": "https://simple.wikipedia.org/w/api.php",
         "reading_time_min": 1
       },
       "audio": {
-        "id": 1454688059,
-        "title": "Voice of the Ancient Bard - Version 1",
+        "id": 1642247901,
+        "title": "Voice of the Ancient Bard - Version 2",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
@@ -54,14 +54,14 @@
         "slot_level": "A1",
         "source_level": "A2",
         "word_count": 33,
-        "duration_sec": 70,
+        "duration_sec": 53,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/bard_librivox/ancient_bard_blake_hm_64kb.mp3",
+        "audio_url": "https://www.archive.org/download/bard_librivox/ancient_bard_blake_jbb_64kb.mp3",
         "description": "Voice of the Ancient Bard by . LibriVox volunteers bring you six different readings of The Voice of the Ancient Bard , by William Blake. This is a weekly poetry project. (Summary by Annie Coleman)",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "1a36a2d31c5f3d9ad4026650b9cd80546c27dd45",
+        "guid_hash": "b028d0e1b2046a9be32e58f5d712cbbd2e456212",
         "summary": "Voice of the Ancient Bard by . LibriVox volunteers bring you six different readings of The Voice of the Ancient Bard , by William Blake. This is a weekly poetry project. (Summary by Annie Coleman)",
         "origin": "adjacent",
         "badges": [
@@ -72,8 +72,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Voice of the Ancient Bard - Version 1 — LibriVox (culture)",
-        "duration_formatted": "1:10",
+        "alt_text": "Voice of the Ancient Bard - Version 2 — LibriVox (culture)",
+        "duration_formatted": "0:53",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -87,327 +87,334 @@
     "date": "2026-11-21",
     "level": "A1",
     "word": {
-      "text": "walk",
+      "text": "water",
       "level": "A1",
       "type": "word",
-      "pos": "verb",
-      "phonetic": "/wɔːk/",
-      "meaning": "move on foot",
-      "meaning_fr": "marcher",
-      "example": "We walk to the station.",
-      "anki_answer": "marcher",
+      "pos": "noun",
+      "phonetic": "/ˈwɔːtər/",
+      "meaning": "a clear liquid used for drinking",
+      "meaning_fr": "eau",
+      "example": "Can I have a glass of water?",
+      "anki_answer": "eau",
       "tags": [
-        "movement"
+        "food"
       ],
-      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
+      "key": "4281452816c6514f9de206484d0dcd0b2395120a",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/wɔːk/",
+        "phonetic": "/ˈwoːtə/",
         "definitions": [
-          "To move on the feet by alternately setting each foot (or pair or group of feet, in the case of animals with four or more feet) forward, with at least one foot on the ground at all times. Compare run.",
-          "To \"walk free\", i.e. to win, or avoid, a criminal court case, particularly when actually guilty.",
-          "Of an object, to go missing or be stolen.",
-          "(of a batsman) To walk off the field, as if given out, after the fielding side appeals and before the umpire has ruled; done as a matter of sportsmanship when the batsman believes he is out."
+          "A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+          "The aforementioned liquid, considered one of the Classical elements or basic elements of alchemy.",
+          "Water in a body; an area of open water.",
+          "A body of water, almost always a river."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/walk-au.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/water-uk.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt51\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/move\" title=\"move\">move</a> on the <a rel=\"mw:WikiLink\" href=\"/wiki/feet\" title=\"feet\">feet</a> by <a rel=\"mw:WikiLink\" href=\"/wiki/alternately\" title=\"alternately\">alternately</a> <a rel=\"mw:WikiLink\" href=\"/wiki/setting\" title=\"setting\">setting</a> each <a rel=\"mw:WikiLink\" href=\"/wiki/foot\" title=\"foot\">foot</a> (or pair or group of feet: in the case of some non-human <a rel=\"mw:WikiLink\" href=\"/wiki/animals\" title=\"animals\">animals</a> with four or more feet) <a rel=\"mw:WikiLink\" href=\"/wiki/forward\" title=\"forward\">forward</a>, with at least one foot on the <a rel=\"mw:WikiLink\" href=\"/wiki/ground\" title=\"ground\">ground</a> at all times. Compare <b><a rel=\"mw:WikiLink\" href=\"/wiki/run\" title=\"run\">run</a></b>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> To \"<a rel=\"mw:WikiLink\" href=\"/wiki/walk_free\" title=\"walk free\">walk free</a>\", i.e. to win, or avoid, a criminal court case, particularly when <a rel=\"mw:WikiLink\" href=\"/wiki/actually\" title=\"actually\">actually</a> <a rel=\"mw:WikiLink\" href=\"/wiki/guilty\" title=\"guilty\">guilty</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt57\" typeof=\"mw:Transclusion\"></span> Of an object, to go <a rel=\"mw:WikiLink\" href=\"/wiki/missing\" title=\"missing\">missing</a> or be <a rel=\"mw:WikiLink\" href=\"/wiki/stolen\" title=\"stolen\">stolen</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt59\" typeof=\"mw:Transclusion\"></span> To walk off the field, as if <a rel=\"mw:WikiLink\" href=\"/wiki/given\" title=\"given\">given</a> <a rel=\"mw:WikiLink\" href=\"/wiki/out\" title=\"out\">out</a>, after the <a rel=\"mw:WikiLink\" href=\"/wiki/fielding\" title=\"fielding\">fielding</a> <a rel=\"mw:WikiLink\" href=\"/wiki/side\" title=\"side\">side</a> <a rel=\"mw:WikiLink\" href=\"/wiki/appeal\" title=\"appeal\">appeals</a> and before the <a rel=\"mw:WikiLink\" href=\"/wiki/umpire\" title=\"umpire\">umpire</a> has <a rel=\"mw:WikiLink\" href=\"/wiki/ruled\" title=\"ruled\">ruled</a>; done as a matter of <a rel=\"mw:WikiLink\" href=\"/wiki/sportsmanship\" title=\"sportsmanship\">sportsmanship</a> when the batsman believes he is out."
+          "<span class=\"usage-label-sense\"></span> An inorganic compound (of molecular formula <style data-mw-deduplicate=\"TemplateStyles:r77195254\" typeof=\"mw:Extension/templatestyles\" about=\"#mwt103\">.mw-parser-output .template-chem2-su{display:inline-block;font-size:80%;line-height:1;vertical-align:-0.35em}.mw-parser-output .template-chem2-su>span{display:block;text-align:left}.mw-parser-output sub.template-chem2-sub{font-size:80%;vertical-align:-0.35em}.mw-parser-output sup.template-chem2-sup{font-size:80%;vertical-align:0.65em}</style><span class=\"chemf nowrap\">H<sub class=\"template-chem2-sub\">2</sub>O</span>) found at <a rel=\"mw:WikiLink\" href=\"/wiki/room_temperature\" title=\"room temperature\">room temperature</a> and pressure as a clear <a rel=\"mw:WikiLink\" href=\"/wiki/liquid\" title=\"liquid\">liquid</a>; it is present naturally as <a rel=\"mw:WikiLink\" href=\"/wiki/rain#Noun\" title=\"rain\">rain</a>, and found in <a rel=\"mw:WikiLink\" href=\"/wiki/river\" title=\"river\">rivers</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/lake\" title=\"lake\">lakes</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/sea\" title=\"sea\">seas</a>; its solid form is <a rel=\"mw:WikiLink\" href=\"/wiki/ice#Noun\" title=\"ice\">ice</a> and its gaseous form is <a rel=\"mw:WikiLink\" href=\"/wiki/steam#Noun\" title=\"steam\">steam</a>.",
+          "<span class=\"usage-label-sense\"></span> The liquid form of this substance: liquid <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r77195254\" about=\"#mwt112\" typeof=\"mw:Extension/templatestyles\"><span class=\"chemf nowrap\">H<sub class=\"template-chem2-sub\">2</sub>O</span>.",
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/serving#Noun\" title=\"serving\">serving</a> of liquid water.",
+          "<span class=\"usage-label-sense\" about=\"#mwt124\" typeof=\"mw:Transclusion\"></span> The aforementioned liquid, considered one of the <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Classical%20elements\" title=\"w:Classical elements\" about=\"#mwt125\" typeof=\"mw:Transclusion\" class=\"extiw\">Classical elements</a> or basic elements of alchemy."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "be tired",
+      "expression": "come back",
       "level": "A1",
-      "type": "collocation",
-      "meaning": "need rest or sleep",
-      "meaning_fr": "être fatigué",
-      "example": "I am tired after the walk.",
-      "anki_answer": "fatigué",
+      "type": "phrasal verb",
+      "meaning": "return to a place",
+      "meaning_fr": "revenir",
+      "example": "Please come back tomorrow.",
+      "anki_answer": "revenir",
       "tags": [
-        "feelings"
+        "movement"
       ],
-      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
+      "key": "da54f7f224abe062797d08a80f76586ca53cfc11",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/return\" title=\"return\">return</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/place\" title=\"place\">place</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/return\" title=\"return\">return</a> to one's <a rel=\"mw:WikiLink\" href=\"/wiki/possession\" title=\"possession\">possession</a>, especially of <a rel=\"mw:WikiLink\" href=\"/wiki/memory\" title=\"memory\">memories</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt9\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/return\" title=\"return\">return</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/relationship\" title=\"relationship\">relationship</a> with a <a rel=\"mw:WikiLink\" href=\"/wiki/former\" title=\"former\">former</a> <a rel=\"mw:WikiLink\" href=\"/wiki/romantic\" title=\"romantic\">romantic</a> <a rel=\"mw:WikiLink\" href=\"/wiki/partner\" title=\"partner\">partner</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt11\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/return\" title=\"return\">return</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/former\" title=\"former\">former</a> <a rel=\"mw:WikiLink\" href=\"/wiki/state\" title=\"state\">state</a>, usually a <a rel=\"mw:WikiLink\" href=\"/wiki/desirable\" title=\"desirable\">desirable</a> one; to become <a rel=\"mw:WikiLink\" href=\"/wiki/fashionable\" title=\"fashionable\">fashionable</a> once more."
+        ]
+      },
       "audio": null
     },
     "history": {
-      "text": "war",
+      "text": "temple",
       "aliases": [
-        "war",
-        "wars"
+        "temple",
+        "shrine"
       ],
       "level": "A1",
-      "meaning": "fighting between countries or groups",
-      "meaning_fr": "guerre",
-      "period": "General",
-      "theme": "War",
-      "example": "The war ended many years ago.",
+      "meaning": "a building used for religious worship",
+      "meaning_fr": "temple",
+      "period": "Antiquity",
+      "theme": "Religion",
+      "example": "The temple is very old.",
       "tags": [
-        "conflict"
+        "religion"
       ],
-      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
+      "key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
+      "key": "4281452816c6514f9de206484d0dcd0b2395120a",
       "kind": "word",
       "level": "A1",
-      "text": "walk",
-      "meaning": "move on foot",
-      "meaning_fr": "marcher",
-      "example": "We walk to the station.",
-      "phonetic": "/wɔːk/",
-      "anki_answer": "marcher",
+      "text": "water",
+      "meaning": "a clear liquid used for drinking",
+      "meaning_fr": "eau",
+      "example": "Can I have a glass of water?",
+      "phonetic": "/ˈwɔːtər/",
+      "anki_answer": "eau",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "da54f7f224abe062797d08a80f76586ca53cfc11",
+      "kind": "expression",
+      "level": "A1",
+      "text": "come back",
+      "meaning": "return to a place",
+      "meaning_fr": "revenir",
+      "example": "Please come back tomorrow.",
+      "phonetic": "",
+      "anki_answer": "revenir",
       "tags": [
         "movement"
       ]
     },
     {
-      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
-      "kind": "expression",
+      "key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a",
+      "kind": "history",
       "level": "A1",
-      "text": "be tired",
-      "meaning": "need rest or sleep",
-      "meaning_fr": "être fatigué",
-      "example": "I am tired after the walk.",
+      "text": "temple",
+      "meaning": "a building used for religious worship",
+      "meaning_fr": "temple",
+      "example": "The temple is very old.",
       "phonetic": "",
-      "anki_answer": "fatigué",
+      "anki_answer": "temple",
       "tags": [
-        "feelings"
+        "religion"
       ]
     },
     {
-      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
-      "kind": "history",
-      "level": "A1",
-      "text": "war",
-      "meaning": "fighting between countries or groups",
-      "meaning_fr": "guerre",
-      "example": "The war ended many years ago.",
+      "key": "5db4828b4e314ed059567d1f1d17f1b123594a58",
+      "kind": "word",
+      "level": "A2",
+      "text": "early",
+      "meaning": "before the usual or expected time",
+      "meaning_fr": "tôt",
+      "example": "We took an early train.",
+      "phonetic": "/ˈɜːrli/",
+      "anki_answer": "tôt",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "9d58a99b72c50e9829fc16112f63e3e948a9b619",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be famous for",
+      "meaning": "known because of something",
+      "meaning_fr": "être célèbre pour",
+      "example": "The city is famous for its bridge.",
       "phonetic": "",
-      "anki_answer": "guerre",
+      "anki_answer": "célèbre",
+      "tags": [
+        "fame"
+      ]
+    },
+    {
+      "key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d",
+      "kind": "history",
+      "level": "A2",
+      "text": "century",
+      "meaning": "a period of one hundred years",
+      "meaning_fr": "siècle",
+      "example": "This bridge is from the nineteenth century.",
+      "phonetic": "",
+      "anki_answer": "siècle",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169",
+      "kind": "word",
+      "level": "B1",
+      "text": "compare",
+      "meaning": "examine how things are similar or different",
+      "meaning_fr": "comparer",
+      "example": "Compare the two answers.",
+      "phonetic": "/kəmˈper/",
+      "anki_answer": "comparer",
+      "tags": [
+        "thinking"
+      ]
+    },
+    {
+      "key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff",
+      "kind": "expression",
+      "level": "B1",
+      "text": "come up with",
+      "meaning": "think of an idea or solution",
+      "meaning_fr": "trouver, proposer",
+      "example": "She came up with a good plan.",
+      "phonetic": "",
+      "anki_answer": "trouver, idée",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "0825841f5f069e376bd5f2dc513cab364fea263e",
+      "kind": "history",
+      "level": "B1",
+      "text": "invasion",
+      "meaning": "an attack by an army entering another land",
+      "meaning_fr": "invasion",
+      "example": "The invasion began in spring.",
+      "phonetic": "",
+      "anki_answer": "invasion",
       "tags": [
         "conflict"
       ]
     },
     {
-      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
-      "kind": "word",
-      "level": "A2",
-      "text": "decide",
-      "meaning": "choose after thinking",
-      "meaning_fr": "décider",
-      "example": "You must decide today.",
-      "phonetic": "/dɪˈsaɪd/",
-      "anki_answer": "décider",
-      "tags": [
-        "choices"
-      ]
-    },
-    {
-      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be excited about",
-      "meaning": "feel happy and eager about a future event",
-      "meaning_fr": "être impatient à l'idée de",
-      "example": "She is excited about the trip.",
-      "phonetic": "",
-      "anki_answer": "impatient",
-      "tags": [
-        "feelings"
-      ]
-    },
-    {
-      "key": "8391409731bf858babbdef8315d9bd81155e390c",
-      "kind": "history",
-      "level": "A2",
-      "text": "castle",
-      "meaning": "a strong building from the Middle Ages",
-      "meaning_fr": "château",
-      "example": "The castle stands on a hill.",
-      "phonetic": "",
-      "anki_answer": "château",
-      "tags": [
-        "places"
-      ]
-    },
-    {
-      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
-      "kind": "word",
-      "level": "B1",
-      "text": "border",
-      "meaning": "the line separating two countries",
-      "meaning_fr": "frontière",
-      "example": "They crossed the border at night.",
-      "phonetic": "/ˈbɔːrdər/",
-      "anki_answer": "frontière",
-      "tags": [
-        "travel"
-      ]
-    },
-    {
-      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
-      "kind": "expression",
-      "level": "B1",
-      "text": "call it a day",
-      "meaning": "stop working on something",
-      "meaning_fr": "arrêter pour la journée",
-      "example": "We are tired, let us call it a day.",
-      "phonetic": "",
-      "anki_answer": "arrêter journée",
-      "tags": [
-        "work"
-      ]
-    },
-    {
-      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
-      "kind": "history",
-      "level": "B1",
-      "text": "dynasty",
-      "meaning": "a family of rulers from the same line",
-      "meaning_fr": "dynastie",
-      "example": "The dynasty ruled for two centuries.",
-      "phonetic": "",
-      "anki_answer": "dynastie",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
+      "key": "8707e3915e27316ae35eea420a01aa8e578b9862",
       "kind": "word",
       "level": "B2",
-      "text": "reasonable",
-      "meaning": "based on good sense",
-      "meaning_fr": "raisonnable",
-      "example": "That is a reasonable price.",
-      "phonetic": "/ˈriːznəbl/",
-      "anki_answer": "raisonnable",
+      "text": "recognise",
+      "meaning": "identify someone or something you know",
+      "meaning_fr": "reconnaître",
+      "example": "I recognised her voice.",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "anki_answer": "reconnaître",
       "tags": [
-        "judgement"
+        "seeing"
       ]
     },
     {
-      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
+      "key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70",
       "kind": "expression",
       "level": "B2",
-      "text": "look on the bright side",
-      "meaning": "think about the positive part",
-      "meaning_fr": "voir le bon côté",
-      "example": "Look on the bright side: the train was late, not cancelled.",
+      "text": "make ends meet",
+      "meaning": "have enough money to live",
+      "meaning_fr": "joindre les deux bouts",
+      "example": "Many families struggle to make ends meet.",
       "phonetic": "",
-      "anki_answer": "bon côté",
+      "anki_answer": "joindre bouts",
       "tags": [
-        "optimism"
+        "money"
       ]
     },
     {
-      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "key": "00cf0339fcb37038453f314f05ee8e72dbe3908b",
       "kind": "history",
       "level": "B2",
-      "text": "renaissance",
-      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
-      "meaning_fr": "renaissance",
-      "example": "The renaissance produced great art.",
+      "text": "constitution",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "example": "The constitution protects citizens' rights.",
       "phonetic": "",
-      "anki_answer": "renaissance",
+      "anki_answer": "constitution",
       "tags": [
-        "art"
+        "law"
       ]
     },
     {
-      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
+      "key": "caa42870f26eb49d6711faced35756753063dd75",
       "kind": "word",
       "level": "C1",
-      "text": "consensus",
-      "meaning": "general agreement among a group",
-      "meaning_fr": "consensus",
-      "example": "The committee reached a consensus.",
-      "phonetic": "/kənˈsensəs/",
-      "anki_answer": "consensus",
+      "text": "constraint",
+      "meaning": "a limitation on what can be done",
+      "meaning_fr": "contrainte",
+      "example": "Time is our main constraint.",
+      "phonetic": "/kənˈstreɪnt/",
+      "anki_answer": "contrainte",
       "tags": [
-        "agreement"
+        "limits"
       ]
     },
     {
-      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
+      "key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc",
       "kind": "expression",
       "level": "C1",
-      "text": "take something in stride",
-      "meaning": "deal calmly with a difficulty",
-      "meaning_fr": "prendre avec calme",
-      "example": "She took the delay in stride.",
+      "text": "the tip of the iceberg",
+      "meaning": "a small visible part of a larger problem",
+      "meaning_fr": "la pointe de l'iceberg",
+      "example": "These complaints are just the tip of the iceberg.",
       "phonetic": "",
-      "anki_answer": "calme, difficulté",
+      "anki_answer": "pointe iceberg",
       "tags": [
-        "calm"
+        "problems"
       ]
     },
     {
-      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "key": "a11f17fe48a90899c8912981c2dc94f62b21335f",
       "kind": "history",
       "level": "C1",
-      "text": "suffrage",
-      "meaning": "the right to vote in elections",
-      "meaning_fr": "suffrage",
-      "example": "Women's suffrage expanded democracy.",
+      "text": "absolutism",
+      "meaning": "a system where a ruler has unlimited power",
+      "meaning_fr": "absolutisme",
+      "example": "Absolutism shaped the French state.",
       "phonetic": "",
-      "anki_answer": "suffrage",
+      "anki_answer": "absolutisme",
       "tags": [
-        "rights"
+        "government"
       ]
     },
     {
-      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
+      "key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96",
       "kind": "word",
       "level": "C2",
-      "text": "recondite",
-      "meaning": "dealing with difficult or obscure subjects",
-      "meaning_fr": "ésotérique",
-      "example": "He has recondite knowledge of manuscripts.",
-      "phonetic": "/ˈrekəndaɪt/",
-      "anki_answer": "ésotérique",
+      "text": "soporific",
+      "meaning": "making you feel sleepy",
+      "meaning_fr": "soporifique",
+      "example": "The lecture was soporific.",
+      "phonetic": "/ˌsɑːpəˈrɪfɪk/",
+      "anki_answer": "soporifique",
       "tags": [
-        "knowledge"
+        "sleep"
       ]
     },
     {
-      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
+      "key": "2db99174a912758ed955baa3b5dd53518d0c33e8",
       "kind": "expression",
       "level": "C2",
-      "text": "tread water",
-      "meaning": "make no progress while staying active",
-      "meaning_fr": "nager entre deux eaux, stagner",
-      "example": "The economy is merely treading water.",
+      "text": "turn the tide",
+      "meaning": "reverse a situation",
+      "meaning_fr": "inverser la tendance",
+      "example": "A late goal turned the tide of the match.",
       "phonetic": "",
-      "anki_answer": "stagner",
+      "anki_answer": "inverser tendance",
       "tags": [
-        "stagnation"
+        "change"
       ]
     },
     {
-      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26",
       "kind": "history",
       "level": "C2",
-      "text": "hegemony",
-      "meaning": "leadership or dominance by one state or group",
-      "meaning_fr": "hégémonie",
-      "example": "The empire maintained regional hegemony.",
+      "text": "historiography",
+      "meaning": "the study of how history is written and interpreted",
+      "meaning_fr": "historiographie",
+      "example": "Historiography re-examined old sources.",
       "phonetic": "",
-      "anki_answer": "hégémonie",
+      "anki_answer": "historiographie",
       "tags": [
-        "power"
+        "academic"
       ]
     }
   ],
@@ -417,270 +424,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “walk” mean?",
+      "prompt": "What does “water” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "marcher",
-      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
+      "answer": "eau",
+      "item_key": "4281452816c6514f9de206484d0dcd0b2395120a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: be ____",
+      "prompt": "Complete the expression: ____ back",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "tired",
-      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+      "answer": "come",
+      "item_key": "da54f7f224abe062797d08a80f76586ca53cfc11"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “war” belong to?",
+      "prompt": "Which period does “temple” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "General",
-      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
+      "answer": "Antiquity",
+      "item_key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “decide” mean?",
+      "prompt": "What does “early” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "décider",
-      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
+      "answer": "tôt",
+      "item_key": "5db4828b4e314ed059567d1f1d17f1b123594a58"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ about",
+      "prompt": "Complete the expression: be ____ for",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "excited",
-      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+      "answer": "famous",
+      "item_key": "9d58a99b72c50e9829fc16112f63e3e948a9b619"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “castle” belong to?",
+      "prompt": "Which period does “century” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
+      "answer": "General",
+      "item_key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “border” mean?",
+      "prompt": "What does “compare” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "frontière",
-      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
+      "answer": "comparer",
+      "item_key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ it a day",
+      "prompt": "Complete the expression: ____ up with",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "call",
-      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+      "answer": "come",
+      "item_key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “dynasty” belong to?",
+      "prompt": "Which period does “invasion” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
+      "answer": "General",
+      "item_key": "0825841f5f069e376bd5f2dc513cab364fea263e"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “reasonable” mean?",
+      "prompt": "What does “recognise” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "raisonnable",
-      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
+      "answer": "reconnaître",
+      "item_key": "8707e3915e27316ae35eea420a01aa8e578b9862"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: look on the ____ side",
+      "prompt": "Complete the expression: make ends ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "bright",
-      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+      "answer": "meet",
+      "item_key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “renaissance” belong to?",
+      "prompt": "Which period does “constitution” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Early modern",
-      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
+      "answer": "18th century",
+      "item_key": "00cf0339fcb37038453f314f05ee8e72dbe3908b"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “consensus” mean?",
+      "prompt": "What does “constraint” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "consensus",
-      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
+      "answer": "contrainte",
+      "item_key": "caa42870f26eb49d6711faced35756753063dd75"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: take ____ in stride",
+      "prompt": "Complete the expression: the tip of the ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "something",
-      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+      "answer": "iceberg",
+      "item_key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “suffrage” belong to?",
+      "prompt": "Which period does “absolutism” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "19th century",
-      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
+      "answer": "Early modern",
+      "item_key": "a11f17fe48a90899c8912981c2dc94f62b21335f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “recondite” mean?",
+      "prompt": "What does “soporific” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "ésotérique",
-      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
+      "answer": "soporifique",
+      "item_key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: tread ____",
+      "prompt": "Complete the expression: ____ the tide",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "water",
-      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+      "answer": "turn",
+      "item_key": "2db99174a912758ed955baa3b5dd53518d0c33e8"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “hegemony” belong to?",
+      "prompt": "Which period does “historiography” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Cold War",
-      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
+      "answer": "Contemporary",
+      "item_key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26"
     }
   ],
   "tour": [

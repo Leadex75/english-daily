@@ -5,123 +5,121 @@
   "slots": {
     "news": {
       "text": {
-        "id": 22,
-        "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-        "source": "BBC News - World",
-        "source_id": "bbc_news_world",
+        "id": 28,
+        "title": "California’s coastal communities on alert as biggest waves in years hit state",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-21T13:15:21",
+        "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
+        "published_at": "2026-11-20T09:03:20",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 483,
+        "word_count": 330,
         "duration_sec": null,
-        "body_text": "A Mexican drug lord who was on the FBI's 10 most wanted list has been arrested following a shoot-out with Mexican authorities. Fausto Isidro \"Chapo Isidro\" Meza Flores and seven others were detained by Mexican special forces in Guasave, Sinaloa on Friday, Mexico's defence secretariat said.",
+        "body_text": "Multiple coastal hazard warnings were issued this week across California as successive areas of low pressure generated powerful swells and large breaking waves for coastal communities. Beaches and piers were closed last weekend as large waves crashed into California’s coastline. Offshore National Oceanic and Atmospheric Administration buoys recorded wave heights of greater than 30ft (9 metres) last Friday.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "115014a6f9e88a22c655b88cc22f1241ef5f0b59",
-        "summary": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
+        "guid_hash": "e26ae1ea3adee54230baf1268c7aef276dde7426",
+        "summary": "Hazard warnings issued throughout week after powerful swells and waves of more than 9 metres recorded Multiple coastal hazard warnings were issued this week across California as successive areas of low pressure generated powerful swells and large breaking waves for coastal communities. Beaches and piers were closed last weekend as large waves crashed into California’s coastline. Offshore National Oceanic and Atmospheric Administration buoys recorded wave heights of greater than 30ft (9 metres) last Friday. The Monterey, California, buoy recorded a wave height of 34.1ft, which would make it the highest reading in 30 years. Coastal warnings extended from last weekend through this week, with alerts extending until Friday night. Waves of 10-18ft are expected, with local sets of 18-22ft for San Luis Obispo county beaches and Santa Barbara county central coast beaches. These Pacific storm systems are also bringing unsettled conditions across the western US, with heavy rain, mountain snow, and strong winds through the coming days. Already, record-breaking rainfall affected San Fransisco on Wednesday, with heavy rain also causing 32,000 customers to lose power in Sacramento. Into this weekend, a further area of low pressure will bring considerable amounts of moisture for southern Oregon and northern California. By Sunday night, more than 100mm (4in) of rain is expected in places, with further snowfall for areas such as Donner Pass across the northern Sierra Nevada mountains.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out — BBC News - World",
+        "alt_text": "California’s coastal communities on alert as biggest waves in years hit state — The Guardian - World news",
         "duration_formatted": "",
-        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-        "reading_time_min": 3
+        "source_url": "https://www.theguardian.com/world/rss",
+        "reading_time_min": 2
       },
       "audio": {
-        "id": 6,
-        "title": "Government Funding Pressure On Iran War, National Security & Tech, Iowa Detonation",
+        "id": 8,
+        "title": "Trump Trilateral Summit In China, House Democratic Leadership, Anthropic IPO",
         "source": "NPR Up First",
         "source_id": "npr_up_first",
         "category": "news",
-        "url": "https://www.npr.org/2026/11/20/nx-s1-6048392/government-funding-pressure-on-iran-war-national-security-tech-iowa-detonation",
-        "published_at": "2026-11-20T10:54:51",
+        "url": "https://www.npr.org/2026/11/19/nx-s1-6047056/trump-trilateral-summit-in-china-house-democratic-leadership-anthropic-ipo",
+        "published_at": "2026-11-19T11:03:18",
         "level": "C1",
         "slot_level": "C1",
-        "source_level": "B2",
-        "word_count": 242,
-        "duration_sec": 771,
+        "source_level": "C1",
+        "word_count": 88,
+        "duration_sec": 772,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/7f325634-ed4b-4332-8204-e74e770ac411/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_7833a76b26103f0a5eb96242e6b69fa1_15034858.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=7f325634-ed4b-4332-8204-e74e770ac411&feed=HMwRVgVt&t=podcast&e=nx-s1-6048392&p=510318&d=771&size=12349902&hash_redirect=1&x-total-bytes=15034858&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__b6480dc18d440a2a4e9998e1f665b0787bc1cc3f",
-        "description": "Democrats are weighing whether to use the government funding deadline to cut off money for the war in Iran, exposing divisions over how quickly the party should act. The Trump administration approved sales of advanced U.S. chips to Chinese companies, including some the Pentagon has linked to China’s military, fueling a debate over whether those sales help America compete or create new security risks. The Army delayed plans to destroy thousands of pounds of unstable bomb-making material in Iowa after public pressure and a lawsuit, even as officials warn colder weather could make it more dangerous.",
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/d5a5447c-a547-45a6-8612-df73d1b9b56e/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_046e7a76afbe03fe39958c814d474a45_12363266.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=d5a5447c-a547-45a6-8612-df73d1b9b56e&feed=HMwRVgVt&t=podcast&e=nx-s1-6047056&p=510318&d=772&size=12362858&hash_redirect=1&x-total-bytes=12363266&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__9f4828e62f8d6cb308acbb8940a28880eba92063",
+        "description": "President Trump met with Xi Jinping and Vladimir Putin together for the first time, but the meeting produced no major breakthrough as tensions remain over Ukraine, technology and Taiwan. House Democrats nominated Hakeem Jeffries to become the next Speaker and are already laying the groundwork for investigations into President Trump’s inner circle as they prepare to take control of the chamber. Anthropic begins trading publicly after the biggest IPO in history, testing how much appetite investors still have for artificial intelligence amid growing concerns about an AI bubble.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "5e034a2b56359c0015551db8e58893dfc6937667",
-        "summary": "Democrats are weighing whether to use the government funding deadline to cut off money for the war in Iran, exposing divisions over how quickly the party should act. The Trump administration approved sales of advanced U.S. chips to Chinese companies, including some the Pentagon has linked to China’s military, fueling a debate over whether those sales help America compete or create new security risks. The Army delayed plans to destroy thousands of pounds of unstable bomb-making material in Iowa after public pressure and a lawsuit, even as officials warn colder weather could make it more dangerous.",
-        "origin": "adjacent",
-        "badges": [
-          "Closest level: B2"
-        ],
+        "guid_hash": "12d48ccb7a2b298e103cd21447c9ee3037213ee5",
+        "summary": "President Trump met with Xi Jinping and Vladimir Putin together for the first time, but the meeting produced no major breakthrough as tensions remain over Ukraine, technology and Taiwan. House Democrats nominated Hakeem Jeffries to become the next Speaker and are already laying the groundwork for investigations into President Trump’s inner circle as they prepare to take control of the chamber. Anthropic begins trading publicly after the biggest IPO in history, testing how much appetite investors still have for artificial intelligence amid growing concerns about an AI bubble.",
+        "origin": "fresh",
+        "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Government Funding Pressure On Iran War, National Security & Tech, Iowa Detonation — NPR Up First",
-        "duration_formatted": "12:51",
+        "alt_text": "Trump Trilateral Summit In China, House Democratic Leadership, Anthropic IPO — NPR Up First",
+        "duration_formatted": "12:52",
         "source_url": "https://feeds.npr.org/510318/podcast.xml",
         "reading_time_min": 0
       }
     },
     "culture": {
       "text": {
-        "id": 48,
-        "title": "International UN talks on controlling use of autonomous weapons collapse",
-        "source": "The Guardian - Science",
-        "source_id": "guardian_science",
+        "id": 43,
+        "title": "Now get out of that! How can the new James Bond film get around 007’s death in No Time to Die?",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
         "category": "culture",
-        "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
-        "published_at": "2026-11-21T16:36:11",
+        "url": "https://www.theguardian.com/film/2026/nov/20/james-bond-movie-007s-death-in-no-time-to-die-robert-pattinson",
+        "published_at": "2026-11-20T13:12:32",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 663,
+        "word_count": 905,
         "duration_sec": null,
-        "body_text": "Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am after all-night talks failed to overcome Russian objections.",
+        "body_text": "“James Bond will return,” says the closing title on No Time to Die, the most recent James Bond film and the final one to star Daniel Craig. It is just as well: Bond has to all appearances been vaporised by sea-launched missiles, having been infected by nanobots programmed to attack his nearest and dearest at the slightest touch.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "5398e2d2fae545cae42b97f658f3a6300bbf0660",
-        "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to control the use of autonomous weapons collapsed just before 5am after all-night talks failed to overcome Russian objections. Despite an overwhelming majority of states at the UN’s Convention on Certain Conventional Weapons (CCW) in Geneva wanting to agree a negotiating mandate leading to a legally binding treaty, the need for consensus forced the conference to adopt a much weaker option.",
+        "guid_hash": "ca0b10dbf4d5958973cae17778e06c1283e83ca3",
+        "summary": "Was it all a dream? Has Bond been in hiding? Or will Robert Pattinson simply report to HR on his first day? Russell T Davies, David Hare and more give their takes “James Bond will return,” says the closing title on No Time to Die, the most recent James Bond film and the final one to star Daniel Craig. It is just as well: Bond has to all appearances been vaporised by sea-launched missiles, having been infected by nanobots programmed to attack his nearest and dearest at the slightest touch. No one would believe that one of the world’s most successful film series would come to such an abrupt halt, but no doubt a little reassurance helped. Nevertheless, the first order of business for scriptwriter Steven Knight and director Denis Villeneuve will be dealing with it: how to revive and re-energise a character at the heart of the action. Speculation on their best way forward has been rife, and previous examples are not hard to find. Sherlock Holmes was killed off by Arthur Conan Doyle by fighting his arch enemy Professor Moriarty at the Reichenbach Falls in the story The Final Problem, only to resuscitate him a decade later with The Adventure of the Empty House. Superman is apparently killed at the end of Batman v Superman: Dawn of Justice, but resurrected in Justice League for the fight against Steppenwolf. Arguably the most enduring pop-culture return is Bobby Ewing’s famous shower scene in the TV show Dallas in 1986, which attempted to ensure continuity by suggesting Ewing’s death was his wife’s dream. And even Ian Fleming toyed with killing off Bond, with a climactic poison scene at the end of his 1957 novel From Russia with Love, and leaving him amnesiac and vulnerable to Soviet attack at the finish of You Only Live Twice, the last Bond novel published in Fleming’s lifetime.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "International UN talks on controlling use of autonomous weapons collapse — The Guardian - Science",
+        "alt_text": "Now get out of that! How can the new James Bond film get around 007’s death in No Time to Die? — The Guardian - Culture",
         "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/science/rss",
-        "reading_time_min": 4
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 5
       },
       "audio": {
-        "id": 1475926658,
-        "title": "Lost World - \"HE IS A PERFECTLY IMPOSSIBLE PERSON\"",
+        "id": 1579370586,
+        "title": "Congo - The Congo",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/the-lost-world/",
-        "published_at": "2026-11-21T18:27:17",
+        "url": "https://librivox.org/the-congo-by-vachel-lindsay/",
+        "published_at": "2026-11-21T18:27:59",
         "level": "C1",
         "slot_level": "C1",
         "source_level": "C1",
-        "word_count": 87,
-        "duration_sec": 951,
+        "word_count": 99,
+        "duration_sec": 492,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/lost_world_librivox/lostworld_03_doyle_64kb.mp3",
-        "description": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "audio_url": "https://www.archive.org/download/congo_librivox/congo_lindsay_lf_64kb.mp3",
+        "description": "Congo by . The Congo is one of the best-known poems by American poet Vachel Lindsay (1879-1931). It was revolutionary in its use of sounds and rhythms — as sounds and rhythms — and includes elaborate annotations to guide its spoken performance. Lindsay categorized The Congo as “higher Vaudeville” and was famous for his exuberant performances of it. The poem’s imagery is racist, but Lindsay was a p",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "07507b0aa59932652a653eb7667ad6cef28225d4",
-        "summary": "Lost World by . The Lost World is a 1912 novel by Arthur Conan Doyle concerning an expedition to a plateau (native name is Tepuyes) in South America (Venezuela) where prehistoric animals (dinosaurs and other extinct creatures) still survive. The character of Professor Challenger was introduced in this book. Interestingly, for a seminal work of dinosaur-related fiction, the reptiles only occupy a s",
+        "guid_hash": "1b2ec5209a9a2877f061700fef60aea0a9ff01ee",
+        "summary": "Congo by . The Congo is one of the best-known poems by American poet Vachel Lindsay (1879-1931). It was revolutionary in its use of sounds and rhythms — as sounds and rhythms — and includes elaborate annotations to guide its spoken performance. Lindsay categorized The Congo as “higher Vaudeville” and was famous for his exuberant performances of it. The poem’s imagery is racist, but Lindsay was a p",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (culture)"
@@ -129,8 +127,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Lost World - \"HE IS A PERFECTLY IMPOSSIBLE PERSON\" — LibriVox (culture)",
-        "duration_formatted": "15:51",
+        "alt_text": "Congo - The Congo — LibriVox (culture)",
+        "duration_formatted": "8:12",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -138,8 +136,8 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 1107837937,
-        "title": "Our Island Story, Part 2 - The Red Rose and the White",
+        "id": 1290277943,
+        "title": "Our Island Story, Part 2 - Queen Margaret and the Robbers",
         "source": "LibriVox (history & biography)",
         "source_id": "librivox_history",
         "category": "history",
@@ -149,14 +147,14 @@
         "slot_level": "C1",
         "source_level": "C1",
         "word_count": 213,
-        "duration_sec": 681,
+        "duration_sec": 353,
         "body_text": null,
-        "audio_url": "https://archive.org/download/our_island_story_2_librivox/our_island_story_055_marshall_64kb.mp3",
+        "audio_url": "https://archive.org/download/our_island_story_2_librivox/our_island_story_056_marshall_64kb.mp3",
         "description": "Our Island Story, Part 2 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "7130c3a4ff77a9dfe5863d7448a1393f36ae849d",
+        "guid_hash": "9fac8aa583c9292452d1ef30df275f3528ba1c3d",
         "summary": "Our Island Story, Part 2 by . Our Island Story was first published in 1905 and became an instant classic. Beginning with the Romans and following the triumphs and foibles of the good, not so good and the downright despicable figures of history; we are treated to a dazzling montage of kings, queens, barons, knights, explorers, movers and shakers that have played a key role in the history of England",
         "origin": "reserve",
         "badges": [
@@ -165,8 +163,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Our Island Story, Part 2 - The Red Rose and the White — LibriVox (history & biography)",
-        "duration_formatted": "11:21",
+        "alt_text": "Our Island Story, Part 2 - Queen Margaret and the Robbers — LibriVox (history & biography)",
+        "duration_formatted": "5:53",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -176,330 +174,327 @@
     "date": "2026-11-21",
     "level": "C1",
     "word": {
-      "text": "consensus",
+      "text": "constraint",
       "level": "C1",
       "type": "word",
       "pos": "noun",
-      "phonetic": "/kənˈsensəs/",
-      "meaning": "general agreement among a group",
-      "meaning_fr": "consensus",
-      "example": "The committee reached a consensus.",
-      "anki_answer": "consensus",
+      "phonetic": "/kənˈstreɪnt/",
+      "meaning": "a limitation on what can be done",
+      "meaning_fr": "contrainte",
+      "example": "Time is our main constraint.",
+      "anki_answer": "contrainte",
       "tags": [
-        "agreement"
+        "limits"
       ],
-      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
+      "key": "caa42870f26eb49d6711faced35756753063dd75",
       "kind": "word",
       "dictionary": {
-        "phonetic": null,
+        "phonetic": "/kənˈstɹeɪnt/",
         "definitions": [
-          "A process of decision-making that seeks widespread agreement among group members.",
-          "General agreement among the members of a given group or community, each of which exercises some discretion in decision-making and follow-up action.",
-          "Average projected value."
+          "Something that constrains; a restriction.",
+          "An irresistible force or compulsion.",
+          "The repression of one's feelings.",
+          "A condition that a solution to an optimization problem must satisfy."
         ],
-        "audio_url": null
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/constraint-au.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "A process of <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Group%20decision-making#Decision-making_in_social_settings\" title=\"w:Group decision-making\" class=\"extiw\">decision-making</a> that seeks widespread agreement among group members.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/general#Adjective\" title=\"general\">General</a> agreement among the members of a given group or community, each member of which exercises some <a rel=\"mw:WikiLink\" href=\"/wiki/discretion\" title=\"discretion\">discretion</a> in decision-making and follow-up action.",
-          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/agreement\" title=\"agreement\">agreement</a> on some data value that is needed during <a rel=\"mw:WikiLink\" href=\"/wiki/computation\" title=\"computation\">computation</a>.",
-          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> Average projected value."
+          "Something that <a rel=\"mw:WikiLink\" href=\"/wiki/constrain\" title=\"constrain\">constrains</a>; a <a rel=\"mw:WikiLink\" href=\"/wiki/restriction\" title=\"restriction\">restriction</a>.",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/irresistible\" title=\"irresistible\">irresistible</a> <a rel=\"mw:WikiLink\" href=\"/wiki/force\" title=\"force\">force</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/compulsion\" title=\"compulsion\">compulsion</a>.",
+          "The <a rel=\"mw:WikiLink\" href=\"/wiki/repression\" title=\"repression\">repression</a> of one's feelings.",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> A condition that a solution to an <a rel=\"mw:WikiLink\" href=\"/wiki/optimization_problem\" title=\"optimization problem\">optimization problem</a> must satisfy."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "take something in stride",
+      "expression": "the tip of the iceberg",
       "level": "C1",
       "type": "idiom",
-      "meaning": "deal calmly with a difficulty",
-      "meaning_fr": "prendre avec calme",
-      "example": "She took the delay in stride.",
-      "anki_answer": "calme, difficulté",
+      "meaning": "a small visible part of a larger problem",
+      "meaning_fr": "la pointe de l'iceberg",
+      "example": "These complaints are just the tip of the iceberg.",
+      "anki_answer": "pointe iceberg",
       "tags": [
-        "calm"
+        "problems"
       ],
-      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
+      "key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc",
       "kind": "expression",
       "dictionary": {},
-      "wiktionary": {
-        "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/cope\" title=\"cope\">cope</a> with something unfortunate without much <a rel=\"mw:WikiLink\" href=\"/wiki/effort\" title=\"effort\">effort</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/accept\" title=\"accept\">accept</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/manage\" title=\"manage\">manage</a> difficulties well."
-        ]
-      },
+      "wiktionary": {},
       "audio": null
     },
     "history": {
-      "text": "suffrage",
+      "text": "absolutism",
       "aliases": [
-        "suffrage",
-        "voting rights"
+        "absolutism",
+        "absolute monarchy"
       ],
       "level": "C1",
-      "meaning": "the right to vote in elections",
-      "meaning_fr": "suffrage",
-      "period": "19th century",
-      "theme": "Society",
-      "example": "Women's suffrage expanded democracy.",
+      "meaning": "a system where a ruler has unlimited power",
+      "meaning_fr": "absolutisme",
+      "period": "Early modern",
+      "theme": "Politics",
+      "example": "Absolutism shaped the French state.",
       "tags": [
-        "rights"
+        "government"
       ],
-      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "key": "a11f17fe48a90899c8912981c2dc94f62b21335f",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
+      "key": "4281452816c6514f9de206484d0dcd0b2395120a",
       "kind": "word",
       "level": "A1",
-      "text": "walk",
-      "meaning": "move on foot",
-      "meaning_fr": "marcher",
-      "example": "We walk to the station.",
-      "phonetic": "/wɔːk/",
-      "anki_answer": "marcher",
+      "text": "water",
+      "meaning": "a clear liquid used for drinking",
+      "meaning_fr": "eau",
+      "example": "Can I have a glass of water?",
+      "phonetic": "/ˈwɔːtər/",
+      "anki_answer": "eau",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "da54f7f224abe062797d08a80f76586ca53cfc11",
+      "kind": "expression",
+      "level": "A1",
+      "text": "come back",
+      "meaning": "return to a place",
+      "meaning_fr": "revenir",
+      "example": "Please come back tomorrow.",
+      "phonetic": "",
+      "anki_answer": "revenir",
       "tags": [
         "movement"
       ]
     },
     {
-      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
-      "kind": "expression",
+      "key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a",
+      "kind": "history",
       "level": "A1",
-      "text": "be tired",
-      "meaning": "need rest or sleep",
-      "meaning_fr": "être fatigué",
-      "example": "I am tired after the walk.",
+      "text": "temple",
+      "meaning": "a building used for religious worship",
+      "meaning_fr": "temple",
+      "example": "The temple is very old.",
       "phonetic": "",
-      "anki_answer": "fatigué",
+      "anki_answer": "temple",
       "tags": [
-        "feelings"
+        "religion"
       ]
     },
     {
-      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
-      "kind": "history",
-      "level": "A1",
-      "text": "war",
-      "meaning": "fighting between countries or groups",
-      "meaning_fr": "guerre",
-      "example": "The war ended many years ago.",
+      "key": "5db4828b4e314ed059567d1f1d17f1b123594a58",
+      "kind": "word",
+      "level": "A2",
+      "text": "early",
+      "meaning": "before the usual or expected time",
+      "meaning_fr": "tôt",
+      "example": "We took an early train.",
+      "phonetic": "/ˈɜːrli/",
+      "anki_answer": "tôt",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "9d58a99b72c50e9829fc16112f63e3e948a9b619",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be famous for",
+      "meaning": "known because of something",
+      "meaning_fr": "être célèbre pour",
+      "example": "The city is famous for its bridge.",
       "phonetic": "",
-      "anki_answer": "guerre",
+      "anki_answer": "célèbre",
+      "tags": [
+        "fame"
+      ]
+    },
+    {
+      "key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d",
+      "kind": "history",
+      "level": "A2",
+      "text": "century",
+      "meaning": "a period of one hundred years",
+      "meaning_fr": "siècle",
+      "example": "This bridge is from the nineteenth century.",
+      "phonetic": "",
+      "anki_answer": "siècle",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169",
+      "kind": "word",
+      "level": "B1",
+      "text": "compare",
+      "meaning": "examine how things are similar or different",
+      "meaning_fr": "comparer",
+      "example": "Compare the two answers.",
+      "phonetic": "/kəmˈper/",
+      "anki_answer": "comparer",
+      "tags": [
+        "thinking"
+      ]
+    },
+    {
+      "key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff",
+      "kind": "expression",
+      "level": "B1",
+      "text": "come up with",
+      "meaning": "think of an idea or solution",
+      "meaning_fr": "trouver, proposer",
+      "example": "She came up with a good plan.",
+      "phonetic": "",
+      "anki_answer": "trouver, idée",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "0825841f5f069e376bd5f2dc513cab364fea263e",
+      "kind": "history",
+      "level": "B1",
+      "text": "invasion",
+      "meaning": "an attack by an army entering another land",
+      "meaning_fr": "invasion",
+      "example": "The invasion began in spring.",
+      "phonetic": "",
+      "anki_answer": "invasion",
       "tags": [
         "conflict"
       ]
     },
     {
-      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
-      "kind": "word",
-      "level": "A2",
-      "text": "decide",
-      "meaning": "choose after thinking",
-      "meaning_fr": "décider",
-      "example": "You must decide today.",
-      "phonetic": "/dɪˈsaɪd/",
-      "anki_answer": "décider",
-      "tags": [
-        "choices"
-      ]
-    },
-    {
-      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be excited about",
-      "meaning": "feel happy and eager about a future event",
-      "meaning_fr": "être impatient à l'idée de",
-      "example": "She is excited about the trip.",
-      "phonetic": "",
-      "anki_answer": "impatient",
-      "tags": [
-        "feelings"
-      ]
-    },
-    {
-      "key": "8391409731bf858babbdef8315d9bd81155e390c",
-      "kind": "history",
-      "level": "A2",
-      "text": "castle",
-      "meaning": "a strong building from the Middle Ages",
-      "meaning_fr": "château",
-      "example": "The castle stands on a hill.",
-      "phonetic": "",
-      "anki_answer": "château",
-      "tags": [
-        "places"
-      ]
-    },
-    {
-      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
-      "kind": "word",
-      "level": "B1",
-      "text": "border",
-      "meaning": "the line separating two countries",
-      "meaning_fr": "frontière",
-      "example": "They crossed the border at night.",
-      "phonetic": "/ˈbɔːrdər/",
-      "anki_answer": "frontière",
-      "tags": [
-        "travel"
-      ]
-    },
-    {
-      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
-      "kind": "expression",
-      "level": "B1",
-      "text": "call it a day",
-      "meaning": "stop working on something",
-      "meaning_fr": "arrêter pour la journée",
-      "example": "We are tired, let us call it a day.",
-      "phonetic": "",
-      "anki_answer": "arrêter journée",
-      "tags": [
-        "work"
-      ]
-    },
-    {
-      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
-      "kind": "history",
-      "level": "B1",
-      "text": "dynasty",
-      "meaning": "a family of rulers from the same line",
-      "meaning_fr": "dynastie",
-      "example": "The dynasty ruled for two centuries.",
-      "phonetic": "",
-      "anki_answer": "dynastie",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
+      "key": "8707e3915e27316ae35eea420a01aa8e578b9862",
       "kind": "word",
       "level": "B2",
-      "text": "reasonable",
-      "meaning": "based on good sense",
-      "meaning_fr": "raisonnable",
-      "example": "That is a reasonable price.",
-      "phonetic": "/ˈriːznəbl/",
-      "anki_answer": "raisonnable",
+      "text": "recognise",
+      "meaning": "identify someone or something you know",
+      "meaning_fr": "reconnaître",
+      "example": "I recognised her voice.",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "anki_answer": "reconnaître",
       "tags": [
-        "judgement"
+        "seeing"
       ]
     },
     {
-      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
+      "key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70",
       "kind": "expression",
       "level": "B2",
-      "text": "look on the bright side",
-      "meaning": "think about the positive part",
-      "meaning_fr": "voir le bon côté",
-      "example": "Look on the bright side: the train was late, not cancelled.",
+      "text": "make ends meet",
+      "meaning": "have enough money to live",
+      "meaning_fr": "joindre les deux bouts",
+      "example": "Many families struggle to make ends meet.",
       "phonetic": "",
-      "anki_answer": "bon côté",
+      "anki_answer": "joindre bouts",
       "tags": [
-        "optimism"
+        "money"
       ]
     },
     {
-      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "key": "00cf0339fcb37038453f314f05ee8e72dbe3908b",
       "kind": "history",
       "level": "B2",
-      "text": "renaissance",
-      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
-      "meaning_fr": "renaissance",
-      "example": "The renaissance produced great art.",
+      "text": "constitution",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "example": "The constitution protects citizens' rights.",
       "phonetic": "",
-      "anki_answer": "renaissance",
+      "anki_answer": "constitution",
       "tags": [
-        "art"
+        "law"
       ]
     },
     {
-      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
+      "key": "caa42870f26eb49d6711faced35756753063dd75",
       "kind": "word",
       "level": "C1",
-      "text": "consensus",
-      "meaning": "general agreement among a group",
-      "meaning_fr": "consensus",
-      "example": "The committee reached a consensus.",
-      "phonetic": "/kənˈsensəs/",
-      "anki_answer": "consensus",
+      "text": "constraint",
+      "meaning": "a limitation on what can be done",
+      "meaning_fr": "contrainte",
+      "example": "Time is our main constraint.",
+      "phonetic": "/kənˈstreɪnt/",
+      "anki_answer": "contrainte",
       "tags": [
-        "agreement"
+        "limits"
       ]
     },
     {
-      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
+      "key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc",
       "kind": "expression",
       "level": "C1",
-      "text": "take something in stride",
-      "meaning": "deal calmly with a difficulty",
-      "meaning_fr": "prendre avec calme",
-      "example": "She took the delay in stride.",
+      "text": "the tip of the iceberg",
+      "meaning": "a small visible part of a larger problem",
+      "meaning_fr": "la pointe de l'iceberg",
+      "example": "These complaints are just the tip of the iceberg.",
       "phonetic": "",
-      "anki_answer": "calme, difficulté",
+      "anki_answer": "pointe iceberg",
       "tags": [
-        "calm"
+        "problems"
       ]
     },
     {
-      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "key": "a11f17fe48a90899c8912981c2dc94f62b21335f",
       "kind": "history",
       "level": "C1",
-      "text": "suffrage",
-      "meaning": "the right to vote in elections",
-      "meaning_fr": "suffrage",
-      "example": "Women's suffrage expanded democracy.",
+      "text": "absolutism",
+      "meaning": "a system where a ruler has unlimited power",
+      "meaning_fr": "absolutisme",
+      "example": "Absolutism shaped the French state.",
       "phonetic": "",
-      "anki_answer": "suffrage",
+      "anki_answer": "absolutisme",
       "tags": [
-        "rights"
+        "government"
       ]
     },
     {
-      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
+      "key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96",
       "kind": "word",
       "level": "C2",
-      "text": "recondite",
-      "meaning": "dealing with difficult or obscure subjects",
-      "meaning_fr": "ésotérique",
-      "example": "He has recondite knowledge of manuscripts.",
-      "phonetic": "/ˈrekəndaɪt/",
-      "anki_answer": "ésotérique",
+      "text": "soporific",
+      "meaning": "making you feel sleepy",
+      "meaning_fr": "soporifique",
+      "example": "The lecture was soporific.",
+      "phonetic": "/ˌsɑːpəˈrɪfɪk/",
+      "anki_answer": "soporifique",
       "tags": [
-        "knowledge"
+        "sleep"
       ]
     },
     {
-      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
+      "key": "2db99174a912758ed955baa3b5dd53518d0c33e8",
       "kind": "expression",
       "level": "C2",
-      "text": "tread water",
-      "meaning": "make no progress while staying active",
-      "meaning_fr": "nager entre deux eaux, stagner",
-      "example": "The economy is merely treading water.",
+      "text": "turn the tide",
+      "meaning": "reverse a situation",
+      "meaning_fr": "inverser la tendance",
+      "example": "A late goal turned the tide of the match.",
       "phonetic": "",
-      "anki_answer": "stagner",
+      "anki_answer": "inverser tendance",
       "tags": [
-        "stagnation"
+        "change"
       ]
     },
     {
-      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26",
       "kind": "history",
       "level": "C2",
-      "text": "hegemony",
-      "meaning": "leadership or dominance by one state or group",
-      "meaning_fr": "hégémonie",
-      "example": "The empire maintained regional hegemony.",
+      "text": "historiography",
+      "meaning": "the study of how history is written and interpreted",
+      "meaning_fr": "historiographie",
+      "example": "Historiography re-examined old sources.",
       "phonetic": "",
-      "anki_answer": "hégémonie",
+      "anki_answer": "historiographie",
       "tags": [
-        "power"
+        "academic"
       ]
     }
   ],
@@ -509,270 +504,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “walk” mean?",
+      "prompt": "What does “water” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "marcher",
-      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
+      "answer": "eau",
+      "item_key": "4281452816c6514f9de206484d0dcd0b2395120a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: be ____",
+      "prompt": "Complete the expression: ____ back",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "tired",
-      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+      "answer": "come",
+      "item_key": "da54f7f224abe062797d08a80f76586ca53cfc11"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “war” belong to?",
+      "prompt": "Which period does “temple” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "General",
-      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
+      "answer": "Antiquity",
+      "item_key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “decide” mean?",
+      "prompt": "What does “early” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "décider",
-      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
+      "answer": "tôt",
+      "item_key": "5db4828b4e314ed059567d1f1d17f1b123594a58"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ about",
+      "prompt": "Complete the expression: be ____ for",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "excited",
-      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+      "answer": "famous",
+      "item_key": "9d58a99b72c50e9829fc16112f63e3e948a9b619"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “castle” belong to?",
+      "prompt": "Which period does “century” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
+      "answer": "General",
+      "item_key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “border” mean?",
+      "prompt": "What does “compare” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "frontière",
-      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
+      "answer": "comparer",
+      "item_key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ it a day",
+      "prompt": "Complete the expression: ____ up with",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "call",
-      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+      "answer": "come",
+      "item_key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “dynasty” belong to?",
+      "prompt": "Which period does “invasion” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
+      "answer": "General",
+      "item_key": "0825841f5f069e376bd5f2dc513cab364fea263e"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “reasonable” mean?",
+      "prompt": "What does “recognise” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "raisonnable",
-      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
+      "answer": "reconnaître",
+      "item_key": "8707e3915e27316ae35eea420a01aa8e578b9862"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: look on the ____ side",
+      "prompt": "Complete the expression: make ends ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "bright",
-      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+      "answer": "meet",
+      "item_key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “renaissance” belong to?",
+      "prompt": "Which period does “constitution” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Early modern",
-      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
+      "answer": "18th century",
+      "item_key": "00cf0339fcb37038453f314f05ee8e72dbe3908b"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “consensus” mean?",
+      "prompt": "What does “constraint” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "consensus",
-      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
+      "answer": "contrainte",
+      "item_key": "caa42870f26eb49d6711faced35756753063dd75"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: take ____ in stride",
+      "prompt": "Complete the expression: the tip of the ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "something",
-      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+      "answer": "iceberg",
+      "item_key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “suffrage” belong to?",
+      "prompt": "Which period does “absolutism” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "19th century",
-      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
+      "answer": "Early modern",
+      "item_key": "a11f17fe48a90899c8912981c2dc94f62b21335f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “recondite” mean?",
+      "prompt": "What does “soporific” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "ésotérique",
-      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
+      "answer": "soporifique",
+      "item_key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: tread ____",
+      "prompt": "Complete the expression: ____ the tide",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "water",
-      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+      "answer": "turn",
+      "item_key": "2db99174a912758ed955baa3b5dd53518d0c33e8"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “hegemony” belong to?",
+      "prompt": "Which period does “historiography” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Cold War",
-      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
+      "answer": "Contemporary",
+      "item_key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26"
     }
   ],
   "tour": [
@@ -819,8 +814,7 @@
     "total": 6,
     "origins": {
       "reserve": 2,
-      "fresh": 2,
-      "adjacent": 1
+      "fresh": 3
     },
     "source_count": 5,
     "phrase_count": 6,

@@ -5,63 +5,65 @@
   "slots": {
     "news": {
       "text": {
-        "id": 23,
-        "title": "French police officers sentenced for beating of music producer Michel Zecler",
+        "id": 25,
+        "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
         "source": "BBC News - World",
         "source_id": "bbc_news_world",
         "category": "news",
-        "url": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-11-20T22:37:09",
+        "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-21T10:26:36",
         "level": "B2",
         "slot_level": "B2",
-        "source_level": "B2",
-        "word_count": 466,
+        "source_level": "C1",
+        "word_count": 472,
         "duration_sec": null,
-        "body_text": "Three French police officers have been convicted of beating up a black music producer six years ago in Paris in what the court upheld as an aggravated circumstance of racism. The three were also found guilty of signing a falsified police report stating that the producer - Michel Zecler, 47 - had violently resisted their attempt to arrest him.",
+        "body_text": "Denmark has accused Russian intelligence services of plotting to assassinate a Ukrainian-American near Copenhagen, saying they had \"planned\" and \"initiated\" the attempt. Denmark's security and intelligence agency (PET) said it had stopped individuals who were intending to kill the person, named by Danish media as rapper Kyivstoner, at a concert in September.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "45a4267bb577e615379243dfba2c0fe82c3e76c4",
-        "summary": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism.",
-        "origin": "fresh",
-        "badges": [],
+        "guid_hash": "301479fce80f1bb3a38b63ab831c5f5c636c7af3",
+        "summary": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "French police officers sentenced for beating of music producer Michel Zecler — BBC News - World",
+        "alt_text": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper — BBC News - World",
         "duration_formatted": "",
         "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
         "reading_time_min": 3
       },
       "audio": {
-        "id": 4,
-        "title": "11am ET, November 21 | The latest headlines from NPR",
+        "id": 2,
+        "title": "4pm ET, November 21 | The latest headlines from NPR",
         "source": "NPR News Now",
         "source_id": "npr_news_now",
         "category": "news",
         "url": "",
-        "published_at": "2026-11-21T16:09:40",
+        "published_at": "2026-11-21T21:09:55",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 87,
+        "word_count": 23,
         "duration_sec": 280,
         "body_text": null,
-        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4f4ef142-bf46-45c7-9113-f4465c61c40a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_a8b2cfabf5cf1d3e194a567427ef3ac0_5094119.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4f4ef142-bf46-45c7-9113-f4465c61c40a&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1100-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5094119&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__fb8be09749ac782982050eea79cb8630c0374dbf",
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/62428202-dc7b-4a83-a80b-c1fa7de1ac34/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_2184b17c858e46fba64477013b7fd87f_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=62428202-dc7b-4a83-a80b-c1fa7de1ac34&feed=O9WlY7a5&t=podcast&e=nx-s1-20261121-1600-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_324__647cbc8558c5a00918491413195219c7460c5afa",
         "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "79c69331191f2e6918f44c369195517471faaed1",
+        "guid_hash": "6c29ce41a188ae6b71e3ee0c9803338bd052ee1d",
         "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "11am ET, November 21 | The latest headlines from NPR — NPR News Now",
+        "alt_text": "4pm ET, November 21 | The latest headlines from NPR — NPR News Now",
         "duration_formatted": "4:40",
         "source_url": "https://feeds.npr.org/500005/podcast.xml",
         "reading_time_min": 0
@@ -69,57 +71,57 @@
     },
     "culture": {
       "text": {
-        "id": 47,
-        "title": "Grand Theft Auto fans skip work and pull all-nighters to play new instalment",
-        "source": "The Guardian - Culture",
-        "source_id": "guardian_culture",
+        "id": 57,
+        "title": "£10m ‘once-in-a-generation’ study to explore effects of children’s social media ban",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
         "category": "culture",
-        "url": "https://www.theguardian.com/games/2026/nov/19/grand-theft-auto-six-fans-skip-work-pull-all-nighters",
-        "published_at": "2026-11-19T20:07:23",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/18/social-media-ban-once-in-a-generation-study",
+        "published_at": "2026-11-18T07:00:36",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 636,
+        "word_count": 594,
         "duration_sec": null,
-        "body_text": "Grand Theft Auto fans around the world pulled all-nighters, skipped work and school, and attended overnight launch parties to vicariously embark on police chases and coordinate robberies as the latest instalment of the eagerly anticipated series arrived.",
+        "body_text": "Countries around the world are considering social media bans for children, but whether this would work in practice has been hotly debated. Now researchers are seeking answers through a major scientific study led by Wellcome, which will be the first of its kind.",
         "audio_url": null,
         "description": null,
         "license": "proprietary",
         "attribution": null,
         "truncated": true,
-        "guid_hash": "b67092630d325ba84558c69489e68391541ce6a6",
-        "summary": "Hotly anticipated Bonnie and Clyde-inspired adventure GTA VI has gamers glued to their screens around the world Grand Theft Auto fans around the world pulled all-nighters, skipped work and school, and attended overnight launch parties to vicariously embark on police chases and coordinate robberies as the latest instalment of the eagerly anticipated series arrived. GTA VI, a Bonnie and Clyde-inspired crime adventure game set in the fictional US state of Leonida, was launched at midnight on Wednesday after a 13-year wait.",
+        "guid_hash": "d1f3acf113bc560bed092effb1594c6ee23b5628",
+        "summary": "Research to look at whether ban can make meaningful change in mental health and wellbeing for under-16s Countries around the world are considering social media bans for children, but whether this would work in practice has been hotly debated. Now researchers are seeking answers through a major scientific study led by Wellcome, which will be the first of its kind. Ten research projects will explore topics ranging from children’s mental health to their sleep and physical activity, comparing factors before and after the social media ban for children under 16 is introduced in the UK in spring 2027.",
         "origin": "fresh",
         "badges": [],
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Grand Theft Auto fans skip work and pull all-nighters to play new instalment — The Guardian - Culture",
+        "alt_text": "£10m ‘once-in-a-generation’ study to explore effects of children’s social media ban — The Guardian - Science",
         "duration_formatted": "",
-        "source_url": "https://www.theguardian.com/culture/rss",
-        "reading_time_min": 4
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 3
       },
       "audio": {
-        "id": 1757288874,
-        "title": "Enchanted Island of Yew - Chapter 4",
+        "id": 1436720849,
+        "title": "Adventures of Pinocchio - Chapter 03",
         "source": "LibriVox (culture)",
         "source_id": "librivox_culture",
         "category": "culture",
-        "url": "https://librivox.org/the-enchanted-island-of-yew-by-l-frank-baum/",
-        "published_at": "2026-11-21T18:27:22",
+        "url": "https://librivox.org/adventures-of-pinocchio-by-c-collodi/",
+        "published_at": "2026-11-21T21:54:38",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 69,
-        "duration_sec": 835,
+        "word_count": 101,
+        "duration_sec": 434,
         "body_text": null,
-        "audio_url": "https://www.archive.org/download/enchanted_island_yew_librivox/isle_of_yew_04_baum_64kb.mp3",
-        "description": "Enchanted Island of Yew by . A fairy has become bored with her life, and convinces some young girls to transform her into a human boy so she can go on adventures. The adventures come fast and furious, as the newly-named Prince Marvel explores the surrounding kingdoms. A masochistic squire accompanies Marvel, helping him with assorted kings, knights, dragons, and other medieval menaces along the wa",
+        "audio_url": "https://www.archive.org/download/adventures_pinocchio_librivox/adventurespinocchio_03_collodi_64kb.mp3",
+        "description": "Adventures of Pinocchio by . The Adventures of Pinocchio is a novel for children by Italian author Carlo Collodi (here transl. by Carol della Chiesa). The first half was published in serial form between 1881 and 1883, and then completed as a book for children in February 1883. It is about the mischievous adventures of Pinocchio, an animated marionette, and his poor father, a woodcarver named Geppe",
         "license": "public_domain",
         "attribution": "LibriVox (public domain recording)",
         "truncated": false,
-        "guid_hash": "441090fd5c3cb54d5ca9c3931aaf4c272a0454bd",
-        "summary": "Enchanted Island of Yew by . A fairy has become bored with her life, and convinces some young girls to transform her into a human boy so she can go on adventures. The adventures come fast and furious, as the newly-named Prince Marvel explores the surrounding kingdoms. A masochistic squire accompanies Marvel, helping him with assorted kings, knights, dragons, and other medieval menaces along the wa",
+        "guid_hash": "0e63571d7a5145a7bcd9765e62de99e075958569",
+        "summary": "Adventures of Pinocchio by . The Adventures of Pinocchio is a novel for children by Italian author Carlo Collodi (here transl. by Carol della Chiesa). The first half was published in serial form between 1881 and 1883, and then completed as a book for children in February 1883. It is about the mischievous adventures of Pinocchio, an animated marionette, and his poor father, a woodcarver named Geppe",
         "origin": "reserve",
         "badges": [
           "Reserve · LibriVox (culture)"
@@ -127,8 +129,8 @@
         "periods": [],
         "themes": [],
         "history_terms": [],
-        "alt_text": "Enchanted Island of Yew - Chapter 4 — LibriVox (culture)",
-        "duration_formatted": "13:55",
+        "alt_text": "Adventures of Pinocchio - Chapter 03 — LibriVox (culture)",
+        "duration_formatted": "7:14",
         "source_url": "https://librivox.org/api/feed/audiobooks/",
         "reading_time_min": 0
       }
@@ -136,37 +138,55 @@
     "history": {
       "text": null,
       "audio": {
-        "id": 62,
-        "title": "Depraved art: a disturbing history",
+        "id": 66,
+        "title": "Juan Carlos: From people's king to Spain's pariah",
         "source": "HistoryExtra podcast",
         "source_id": "historyextra",
         "category": "history",
         "url": "",
-        "published_at": "2026-11-18T00:00:00",
+        "published_at": "2026-11-17T00:00:00",
         "level": "B2",
         "slot_level": "B2",
         "source_level": "B2",
-        "word_count": 227,
-        "duration_sec": 2417,
+        "word_count": 233,
+        "duration_sec": 2723,
         "body_text": null,
-        "audio_url": "https://dcs-spotify.megaphone.fm/NSR3543667654.mp3?key=49c0e992335177a24bac1411f2889abe&request_event_id=21fa0b27-358b-40f1-9194-6c528a3c284e&session_id=21fa0b27-358b-40f1-9194-6c528a3c284e&timetoken=1795292766_310AA3645FD8E4C60A1C6666695B0231",
-        "description": "For millennia, humans have created art with the power to shock, disturb and offend. But what makes an artwork truly dangerous? And should it ever be censored? From Hitler’s paintings to the racist caricatures of Jim Crow America, Daisy Dixon takes Jon Bauckham on a tour of history’s most depraved art, revealing both its capacity for cruelty and its use as a tool of oppression. Please note, this episode does contain explicit discussions of themes including sexual violence and racism. Listener discretion is advised. ----- GO BEYOND THE PODCAST Discover more about slave trader Edward Colston in this episode featuring historian Richard Stone: https://bit.ly/4rd19W8 ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "audio_url": "https://dcs-spotify.megaphone.fm/NSR9658870995.mp3?key=629b1328c45c991bad4df8f376ed35c6&request_event_id=2f7068c0-f876-4bd7-a7a3-3150159ab27d&session_id=2f7068c0-f876-4bd7-a7a3-3150159ab27d&timetoken=1795305250_ED95158F2FA39A5E9643B1CB04DD84B9",
+        "description": "At just ten years old, Juan Carlos was handed over to General Franco as a hostage – the price his father paid to keep their family's claim to the Spanish throne alive. It was the start of an apprenticeship designed to produce Franco's ideal successor: a king who would keep the dictatorship's ideals alive long after its architect was gone. However, as Paul Preston tells Danny Bird, Juan Carlos would go on to confound expectations by overseeing Spain’s transition to democracy – only to face disgrace in more recent years. ----- GO BEYOND THE PODCAST Explore the history of Spain before the reign of Juan Carlos in this episode on Franco: https://bit.ly/4bc61UL ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
         "license": "proprietary",
         "attribution": null,
         "truncated": false,
-        "guid_hash": "80f7ebe2d8f6a63c80bb84d89418280f8b455668",
-        "summary": "For millennia, humans have created art with the power to shock, disturb and offend. But what makes an artwork truly dangerous? And should it ever be censored? From Hitler’s paintings to the racist caricatures of Jim Crow America, Daisy Dixon takes Jon Bauckham on a tour of history’s most depraved art, revealing both its capacity for cruelty and its use as a tool of oppression. Please note, this episode does contain explicit discussions of themes including sexual violence and racism. Listener discretion is advised. ----- GO BEYOND THE PODCAST Discover more about slave trader Edward Colston in this episode featuring historian Richard Stone: https://bit.ly/4rd19W8 ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "guid_hash": "e2555be741f66a659135cf7ac22b625e4970ea8e",
+        "summary": "At just ten years old, Juan Carlos was handed over to General Franco as a hostage – the price his father paid to keep their family's claim to the Spanish throne alive. It was the start of an apprenticeship designed to produce Franco's ideal successor: a king who would keep the dictatorship's ideals alive long after its architect was gone. However, as Paul Preston tells Danny Bird, Juan Carlos would go on to confound expectations by overseeing Spain’s transition to democracy – only to face disgrace in more recent years. ----- GO BEYOND THE PODCAST Explore the history of Spain before the reign of Juan Carlos in this episode on Franco: https://bit.ly/4bc61UL ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
         "origin": "fresh",
         "badges": [
           "Outside preferred window"
         ],
         "periods": [
+          "Middle Ages",
           "General"
         ],
         "themes": [
+          "Politics",
           "Culture"
         ],
         "history_terms": [
+          {
+            "text": "king",
+            "aliases": [
+              "king",
+              "monarch"
+            ],
+            "level": "A1",
+            "meaning": "a man who rules a kingdom",
+            "meaning_fr": "roi",
+            "period": "Middle Ages",
+            "theme": "Politics",
+            "example": "The king lived in a castle.",
+            "tags": [
+              "people"
+            ]
+          },
           {
             "text": "story",
             "aliases": [
@@ -184,8 +204,8 @@
             ]
           }
         ],
-        "alt_text": "Depraved art: a disturbing history — HistoryExtra podcast",
-        "duration_formatted": "40:17",
+        "alt_text": "Juan Carlos: From people's king to Spain's pariah — HistoryExtra podcast",
+        "duration_formatted": "45:23",
         "source_url": "https://feeds.megaphone.fm/GLT5697813216",
         "reading_time_min": 0
       }
@@ -195,331 +215,328 @@
     "date": "2026-11-21",
     "level": "B2",
     "word": {
-      "text": "reasonable",
+      "text": "recognise",
       "level": "B2",
       "type": "word",
-      "pos": "adjective",
-      "phonetic": "/ˈriːznəbl/",
-      "meaning": "based on good sense",
-      "meaning_fr": "raisonnable",
-      "example": "That is a reasonable price.",
-      "anki_answer": "raisonnable",
+      "pos": "verb",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "meaning": "identify someone or something you know",
+      "meaning_fr": "reconnaître",
+      "example": "I recognised her voice.",
+      "anki_answer": "reconnaître",
       "tags": [
-        "judgement"
+        "seeing"
       ],
-      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
+      "key": "8707e3915e27316ae35eea420a01aa8e578b9862",
       "kind": "word",
       "dictionary": {
-        "phonetic": "/ˈɹiː.zən.ə.bəl/",
+        "phonetic": "/ˈɹɛkənaɪz/",
         "definitions": [
-          "Having the faculty of reason; rational, reasoning.",
-          "Just; fair; agreeable to reason.",
-          "Not excessive or immoderate; within due limits; proper.",
-          "Not expensive; fairly priced."
+          "To match (something or someone which one currently perceives) to a memory of some previous encounter with the same person or thing.",
+          "To acknowledge the existence or legality of; to treat as valid or worthy of consideration.",
+          "(or with clause) To acknowledge or consider (as being a certain thing or having a certain quality or property).",
+          "To realize or discover the nature of something; apprehend quality in."
         ],
-        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/reasonable-us.mp3"
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/recognise-us.mp3"
       },
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> Having the faculty of reason; <a rel=\"mw:WikiLink\" href=\"/wiki/rational\" title=\"rational\">rational</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/reasoning\" title=\"reasoning\">reasoning</a>.",
-          "<a rel=\"mw:WikiLink\" href=\"/wiki/just\" title=\"just\">Just</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/fair\" title=\"fair\">fair</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/agreeable\" title=\"agreeable\">agreeable</a> to reason.",
-          "Not excessive or immoderate; within due limits; <a rel=\"mw:WikiLink\" href=\"/wiki/proper\" title=\"proper\">proper</a>.",
-          "Not <a rel=\"mw:WikiLink\" href=\"/wiki/expensive\" title=\"expensive\">expensive</a>; fairly priced."
+          "<span class=\"form-of-definition use-with-mention\" about=\"#mwt7\" typeof=\"mw:Transclusion\">Non-<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Oxford%20spelling\" title=\"w:Oxford spelling\" class=\"extiw\">Oxford</a> <a rel=\"mw:WikiLink\" href=\"/wiki/British_English\" title=\"British English\">British English</a><link rel=\"mw:PageProp/Category\" href=\"./Category:British_English_forms#RECOGNISE\"> standard spelling of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/recognize#English\" title=\"recognize\">recognize</a></i></span></span>."
         ]
       },
       "audio": null
     },
     "expression": {
-      "expression": "look on the bright side",
+      "expression": "make ends meet",
       "level": "B2",
       "type": "idiom",
-      "meaning": "think about the positive part",
-      "meaning_fr": "voir le bon côté",
-      "example": "Look on the bright side: the train was late, not cancelled.",
-      "anki_answer": "bon côté",
+      "meaning": "have enough money to live",
+      "meaning_fr": "joindre les deux bouts",
+      "example": "Many families struggle to make ends meet.",
+      "anki_answer": "joindre bouts",
       "tags": [
-        "optimism"
+        "money"
       ],
-      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
+      "key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70",
       "kind": "expression",
       "dictionary": {},
       "wiktionary": {
         "definitions": [
-          "<span class=\"usage-label-sense\" about=\"#mwt3\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/examine\" title=\"examine\">examine</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/situation\" title=\"situation\">situation</a>, usually <a rel=\"mw:WikiLink\" href=\"/wiki/unfavorable\" title=\"unfavorable\">unfavorable</a>, from a <a rel=\"mw:WikiLink\" href=\"/wiki/positive\" title=\"positive\">positive</a> <a rel=\"mw:WikiLink\" href=\"/wiki/perspective\" title=\"perspective\">perspective</a>; to be <a rel=\"mw:WikiLink\" href=\"/wiki/cheerful\" title=\"cheerful\">cheerful</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/optimistic\" title=\"optimistic\">optimistic</a>."
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To have <a rel=\"mw:WikiLink\" href=\"/wiki/enough\" title=\"enough\">enough</a> <a rel=\"mw:WikiLink\" href=\"/wiki/money\" title=\"money\">money</a> to cover <a rel=\"mw:WikiLink\" href=\"/wiki/expenses\" title=\"expenses\">expenses</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/get_by\" title=\"get by\">get by</a> financially; to <a rel=\"mw:WikiLink\" href=\"/wiki/get_through\" title=\"get through\">get through</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/pay\" title=\"pay\">pay</a> <a rel=\"mw:WikiLink\" href=\"/wiki/period\" title=\"period\">period</a> (<a rel=\"mw:WikiLink\" href=\"/wiki/sufficient\" title=\"sufficient\">sufficient</a> to <a rel=\"mw:WikiLink\" href=\"/wiki/meet\" title=\"meet\">meet</a> the next <a rel=\"mw:WikiLink\" href=\"/wiki/payday\" title=\"payday\">payday</a>)."
         ]
       },
       "audio": null
     },
     "history": {
-      "text": "renaissance",
+      "text": "constitution",
       "aliases": [
-        "renaissance",
-        "rebirth"
+        "constitution",
+        "charter"
       ],
       "level": "B2",
-      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
-      "meaning_fr": "renaissance",
-      "period": "Early modern",
-      "theme": "Culture",
-      "example": "The renaissance produced great art.",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "period": "18th century",
+      "theme": "Politics",
+      "example": "The constitution protects citizens' rights.",
       "tags": [
-        "art"
+        "law"
       ],
-      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "key": "00cf0339fcb37038453f314f05ee8e72dbe3908b",
       "kind": "history"
     }
   },
   "glossary": [
     {
-      "key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976",
+      "key": "4281452816c6514f9de206484d0dcd0b2395120a",
       "kind": "word",
       "level": "A1",
-      "text": "walk",
-      "meaning": "move on foot",
-      "meaning_fr": "marcher",
-      "example": "We walk to the station.",
-      "phonetic": "/wɔːk/",
-      "anki_answer": "marcher",
+      "text": "water",
+      "meaning": "a clear liquid used for drinking",
+      "meaning_fr": "eau",
+      "example": "Can I have a glass of water?",
+      "phonetic": "/ˈwɔːtər/",
+      "anki_answer": "eau",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "da54f7f224abe062797d08a80f76586ca53cfc11",
+      "kind": "expression",
+      "level": "A1",
+      "text": "come back",
+      "meaning": "return to a place",
+      "meaning_fr": "revenir",
+      "example": "Please come back tomorrow.",
+      "phonetic": "",
+      "anki_answer": "revenir",
       "tags": [
         "movement"
       ]
     },
     {
-      "key": "5a50283958b3cf2a8a343a72a8cfe13372336085",
-      "kind": "expression",
+      "key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a",
+      "kind": "history",
       "level": "A1",
-      "text": "be tired",
-      "meaning": "need rest or sleep",
-      "meaning_fr": "être fatigué",
-      "example": "I am tired after the walk.",
+      "text": "temple",
+      "meaning": "a building used for religious worship",
+      "meaning_fr": "temple",
+      "example": "The temple is very old.",
       "phonetic": "",
-      "anki_answer": "fatigué",
+      "anki_answer": "temple",
       "tags": [
-        "feelings"
+        "religion"
       ]
     },
     {
-      "key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc",
-      "kind": "history",
-      "level": "A1",
-      "text": "war",
-      "meaning": "fighting between countries or groups",
-      "meaning_fr": "guerre",
-      "example": "The war ended many years ago.",
+      "key": "5db4828b4e314ed059567d1f1d17f1b123594a58",
+      "kind": "word",
+      "level": "A2",
+      "text": "early",
+      "meaning": "before the usual or expected time",
+      "meaning_fr": "tôt",
+      "example": "We took an early train.",
+      "phonetic": "/ˈɜːrli/",
+      "anki_answer": "tôt",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "9d58a99b72c50e9829fc16112f63e3e948a9b619",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be famous for",
+      "meaning": "known because of something",
+      "meaning_fr": "être célèbre pour",
+      "example": "The city is famous for its bridge.",
       "phonetic": "",
-      "anki_answer": "guerre",
+      "anki_answer": "célèbre",
+      "tags": [
+        "fame"
+      ]
+    },
+    {
+      "key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d",
+      "kind": "history",
+      "level": "A2",
+      "text": "century",
+      "meaning": "a period of one hundred years",
+      "meaning_fr": "siècle",
+      "example": "This bridge is from the nineteenth century.",
+      "phonetic": "",
+      "anki_answer": "siècle",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169",
+      "kind": "word",
+      "level": "B1",
+      "text": "compare",
+      "meaning": "examine how things are similar or different",
+      "meaning_fr": "comparer",
+      "example": "Compare the two answers.",
+      "phonetic": "/kəmˈper/",
+      "anki_answer": "comparer",
+      "tags": [
+        "thinking"
+      ]
+    },
+    {
+      "key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff",
+      "kind": "expression",
+      "level": "B1",
+      "text": "come up with",
+      "meaning": "think of an idea or solution",
+      "meaning_fr": "trouver, proposer",
+      "example": "She came up with a good plan.",
+      "phonetic": "",
+      "anki_answer": "trouver, idée",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "0825841f5f069e376bd5f2dc513cab364fea263e",
+      "kind": "history",
+      "level": "B1",
+      "text": "invasion",
+      "meaning": "an attack by an army entering another land",
+      "meaning_fr": "invasion",
+      "example": "The invasion began in spring.",
+      "phonetic": "",
+      "anki_answer": "invasion",
       "tags": [
         "conflict"
       ]
     },
     {
-      "key": "b485ce198f530968a37d680dc3c3ec283873f3f9",
-      "kind": "word",
-      "level": "A2",
-      "text": "decide",
-      "meaning": "choose after thinking",
-      "meaning_fr": "décider",
-      "example": "You must decide today.",
-      "phonetic": "/dɪˈsaɪd/",
-      "anki_answer": "décider",
-      "tags": [
-        "choices"
-      ]
-    },
-    {
-      "key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92",
-      "kind": "expression",
-      "level": "A2",
-      "text": "be excited about",
-      "meaning": "feel happy and eager about a future event",
-      "meaning_fr": "être impatient à l'idée de",
-      "example": "She is excited about the trip.",
-      "phonetic": "",
-      "anki_answer": "impatient",
-      "tags": [
-        "feelings"
-      ]
-    },
-    {
-      "key": "8391409731bf858babbdef8315d9bd81155e390c",
-      "kind": "history",
-      "level": "A2",
-      "text": "castle",
-      "meaning": "a strong building from the Middle Ages",
-      "meaning_fr": "château",
-      "example": "The castle stands on a hill.",
-      "phonetic": "",
-      "anki_answer": "château",
-      "tags": [
-        "places"
-      ]
-    },
-    {
-      "key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651",
-      "kind": "word",
-      "level": "B1",
-      "text": "border",
-      "meaning": "the line separating two countries",
-      "meaning_fr": "frontière",
-      "example": "They crossed the border at night.",
-      "phonetic": "/ˈbɔːrdər/",
-      "anki_answer": "frontière",
-      "tags": [
-        "travel"
-      ]
-    },
-    {
-      "key": "f18f597152ed4e21e1a87833e2d63bec58148d05",
-      "kind": "expression",
-      "level": "B1",
-      "text": "call it a day",
-      "meaning": "stop working on something",
-      "meaning_fr": "arrêter pour la journée",
-      "example": "We are tired, let us call it a day.",
-      "phonetic": "",
-      "anki_answer": "arrêter journée",
-      "tags": [
-        "work"
-      ]
-    },
-    {
-      "key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641",
-      "kind": "history",
-      "level": "B1",
-      "text": "dynasty",
-      "meaning": "a family of rulers from the same line",
-      "meaning_fr": "dynastie",
-      "example": "The dynasty ruled for two centuries.",
-      "phonetic": "",
-      "anki_answer": "dynastie",
-      "tags": [
-        "politics"
-      ]
-    },
-    {
-      "key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361",
+      "key": "8707e3915e27316ae35eea420a01aa8e578b9862",
       "kind": "word",
       "level": "B2",
-      "text": "reasonable",
-      "meaning": "based on good sense",
-      "meaning_fr": "raisonnable",
-      "example": "That is a reasonable price.",
-      "phonetic": "/ˈriːznəbl/",
-      "anki_answer": "raisonnable",
+      "text": "recognise",
+      "meaning": "identify someone or something you know",
+      "meaning_fr": "reconnaître",
+      "example": "I recognised her voice.",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "anki_answer": "reconnaître",
       "tags": [
-        "judgement"
+        "seeing"
       ]
     },
     {
-      "key": "3536ea5c358b9213b9cb646e5bd2351152a9d634",
+      "key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70",
       "kind": "expression",
       "level": "B2",
-      "text": "look on the bright side",
-      "meaning": "think about the positive part",
-      "meaning_fr": "voir le bon côté",
-      "example": "Look on the bright side: the train was late, not cancelled.",
+      "text": "make ends meet",
+      "meaning": "have enough money to live",
+      "meaning_fr": "joindre les deux bouts",
+      "example": "Many families struggle to make ends meet.",
       "phonetic": "",
-      "anki_answer": "bon côté",
+      "anki_answer": "joindre bouts",
       "tags": [
-        "optimism"
+        "money"
       ]
     },
     {
-      "key": "abcb5815467737f8d1b664f581c39320e9a38830",
+      "key": "00cf0339fcb37038453f314f05ee8e72dbe3908b",
       "kind": "history",
       "level": "B2",
-      "text": "renaissance",
-      "meaning": "a European cultural revival from the fourteenth to seventeenth century",
-      "meaning_fr": "renaissance",
-      "example": "The renaissance produced great art.",
+      "text": "constitution",
+      "meaning": "the main set of laws and principles of a state",
+      "meaning_fr": "constitution",
+      "example": "The constitution protects citizens' rights.",
       "phonetic": "",
-      "anki_answer": "renaissance",
+      "anki_answer": "constitution",
       "tags": [
-        "art"
+        "law"
       ]
     },
     {
-      "key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15",
+      "key": "caa42870f26eb49d6711faced35756753063dd75",
       "kind": "word",
       "level": "C1",
-      "text": "consensus",
-      "meaning": "general agreement among a group",
-      "meaning_fr": "consensus",
-      "example": "The committee reached a consensus.",
-      "phonetic": "/kənˈsensəs/",
-      "anki_answer": "consensus",
+      "text": "constraint",
+      "meaning": "a limitation on what can be done",
+      "meaning_fr": "contrainte",
+      "example": "Time is our main constraint.",
+      "phonetic": "/kənˈstreɪnt/",
+      "anki_answer": "contrainte",
       "tags": [
-        "agreement"
+        "limits"
       ]
     },
     {
-      "key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17",
+      "key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc",
       "kind": "expression",
       "level": "C1",
-      "text": "take something in stride",
-      "meaning": "deal calmly with a difficulty",
-      "meaning_fr": "prendre avec calme",
-      "example": "She took the delay in stride.",
+      "text": "the tip of the iceberg",
+      "meaning": "a small visible part of a larger problem",
+      "meaning_fr": "la pointe de l'iceberg",
+      "example": "These complaints are just the tip of the iceberg.",
       "phonetic": "",
-      "anki_answer": "calme, difficulté",
+      "anki_answer": "pointe iceberg",
       "tags": [
-        "calm"
+        "problems"
       ]
     },
     {
-      "key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff",
+      "key": "a11f17fe48a90899c8912981c2dc94f62b21335f",
       "kind": "history",
       "level": "C1",
-      "text": "suffrage",
-      "meaning": "the right to vote in elections",
-      "meaning_fr": "suffrage",
-      "example": "Women's suffrage expanded democracy.",
+      "text": "absolutism",
+      "meaning": "a system where a ruler has unlimited power",
+      "meaning_fr": "absolutisme",
+      "example": "Absolutism shaped the French state.",
       "phonetic": "",
-      "anki_answer": "suffrage",
+      "anki_answer": "absolutisme",
       "tags": [
-        "rights"
+        "government"
       ]
     },
     {
-      "key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6",
+      "key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96",
       "kind": "word",
       "level": "C2",
-      "text": "recondite",
-      "meaning": "dealing with difficult or obscure subjects",
-      "meaning_fr": "ésotérique",
-      "example": "He has recondite knowledge of manuscripts.",
-      "phonetic": "/ˈrekəndaɪt/",
-      "anki_answer": "ésotérique",
+      "text": "soporific",
+      "meaning": "making you feel sleepy",
+      "meaning_fr": "soporifique",
+      "example": "The lecture was soporific.",
+      "phonetic": "/ˌsɑːpəˈrɪfɪk/",
+      "anki_answer": "soporifique",
       "tags": [
-        "knowledge"
+        "sleep"
       ]
     },
     {
-      "key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba",
+      "key": "2db99174a912758ed955baa3b5dd53518d0c33e8",
       "kind": "expression",
       "level": "C2",
-      "text": "tread water",
-      "meaning": "make no progress while staying active",
-      "meaning_fr": "nager entre deux eaux, stagner",
-      "example": "The economy is merely treading water.",
+      "text": "turn the tide",
+      "meaning": "reverse a situation",
+      "meaning_fr": "inverser la tendance",
+      "example": "A late goal turned the tide of the match.",
       "phonetic": "",
-      "anki_answer": "stagner",
+      "anki_answer": "inverser tendance",
       "tags": [
-        "stagnation"
+        "change"
       ]
     },
     {
-      "key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc",
+      "key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26",
       "kind": "history",
       "level": "C2",
-      "text": "hegemony",
-      "meaning": "leadership or dominance by one state or group",
-      "meaning_fr": "hégémonie",
-      "example": "The empire maintained regional hegemony.",
+      "text": "historiography",
+      "meaning": "the study of how history is written and interpreted",
+      "meaning_fr": "historiographie",
+      "example": "Historiography re-examined old sources.",
       "phonetic": "",
-      "anki_answer": "hégémonie",
+      "anki_answer": "historiographie",
       "tags": [
-        "power"
+        "academic"
       ]
     }
   ],
@@ -529,270 +546,270 @@
       "type": "multiple-choice",
       "kind": "word",
       "level": "A1",
-      "prompt": "What does “walk” mean?",
+      "prompt": "What does “water” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "marcher",
-      "item_key": "c5ed3c2ba7556da32a57ef70a6115eb17d78d976"
+      "answer": "eau",
+      "item_key": "4281452816c6514f9de206484d0dcd0b2395120a"
     },
     {
       "id": "A1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A1",
-      "prompt": "Complete the expression: be ____",
+      "prompt": "Complete the expression: ____ back",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "tired",
-      "item_key": "5a50283958b3cf2a8a343a72a8cfe13372336085"
+      "answer": "come",
+      "item_key": "da54f7f224abe062797d08a80f76586ca53cfc11"
     },
     {
       "id": "A1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A1",
-      "prompt": "Which period does “war” belong to?",
+      "prompt": "Which period does “temple” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "General",
-      "item_key": "06e0d722958bf6e52398d9dad41f1c952c48e6dc"
+      "answer": "Antiquity",
+      "item_key": "a314f0d5af713e1d8d95aa46ebe80e19bfefdc4a"
     },
     {
       "id": "A2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "A2",
-      "prompt": "What does “decide” mean?",
+      "prompt": "What does “early” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "décider",
-      "item_key": "b485ce198f530968a37d680dc3c3ec283873f3f9"
+      "answer": "tôt",
+      "item_key": "5db4828b4e314ed059567d1f1d17f1b123594a58"
     },
     {
       "id": "A2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "A2",
-      "prompt": "Complete the expression: be ____ about",
+      "prompt": "Complete the expression: be ____ for",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "excited",
-      "item_key": "77adb35b43b0be0fe0f5ed220d6505a36f5f0d92"
+      "answer": "famous",
+      "item_key": "9d58a99b72c50e9829fc16112f63e3e948a9b619"
     },
     {
       "id": "A2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "A2",
-      "prompt": "Which period does “castle” belong to?",
+      "prompt": "Which period does “century” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "8391409731bf858babbdef8315d9bd81155e390c"
+      "answer": "General",
+      "item_key": "6b00fe470acbc616eb65bf1d5ea92ab35ad1c69d"
     },
     {
       "id": "B1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B1",
-      "prompt": "What does “border” mean?",
+      "prompt": "What does “compare” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "frontière",
-      "item_key": "0bdef72dc0ddb627dcd1a2903b5c06329cd90651"
+      "answer": "comparer",
+      "item_key": "b4c814c71f55a7c0b87da39ab33d38aae78a9169"
     },
     {
       "id": "B1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B1",
-      "prompt": "Complete the expression: ____ it a day",
+      "prompt": "Complete the expression: ____ up with",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "call",
-      "item_key": "f18f597152ed4e21e1a87833e2d63bec58148d05"
+      "answer": "come",
+      "item_key": "e96c5b59194c6e12dd5355845a7a4d16a9fea4ff"
     },
     {
       "id": "B1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B1",
-      "prompt": "Which period does “dynasty” belong to?",
+      "prompt": "Which period does “invasion” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Middle Ages",
-      "item_key": "e811aa420ff8a0dc2cdd3f0c8e3ba19efa7b2641"
+      "answer": "General",
+      "item_key": "0825841f5f069e376bd5f2dc513cab364fea263e"
     },
     {
       "id": "B2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "B2",
-      "prompt": "What does “reasonable” mean?",
+      "prompt": "What does “recognise” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "raisonnable",
-      "item_key": "45ec9accbe0b0ce4fab9af49fd3ff950ae975361"
+      "answer": "reconnaître",
+      "item_key": "8707e3915e27316ae35eea420a01aa8e578b9862"
     },
     {
       "id": "B2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "B2",
-      "prompt": "Complete the expression: look on the ____ side",
+      "prompt": "Complete the expression: make ends ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "bright",
-      "item_key": "3536ea5c358b9213b9cb646e5bd2351152a9d634"
+      "answer": "meet",
+      "item_key": "93ba922ab627662507b6b35d6b0ec3bfc5cd6b70"
     },
     {
       "id": "B2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "B2",
-      "prompt": "Which period does “renaissance” belong to?",
+      "prompt": "Which period does “constitution” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Early modern",
-      "item_key": "abcb5815467737f8d1b664f581c39320e9a38830"
+      "answer": "18th century",
+      "item_key": "00cf0339fcb37038453f314f05ee8e72dbe3908b"
     },
     {
       "id": "C1-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C1",
-      "prompt": "What does “consensus” mean?",
+      "prompt": "What does “constraint” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "consensus",
-      "item_key": "e12e2692d51814cd045824ddc5ee9c1cc00c1f15"
+      "answer": "contrainte",
+      "item_key": "caa42870f26eb49d6711faced35756753063dd75"
     },
     {
       "id": "C1-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C1",
-      "prompt": "Complete the expression: take ____ in stride",
+      "prompt": "Complete the expression: the tip of the ____",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "something",
-      "item_key": "5f8cdd4440bcbfc79a92ca17ffbde39de5944b17"
+      "answer": "iceberg",
+      "item_key": "30632aa42f5ae8c81b5952a3b9e4df2aa04e1adc"
     },
     {
       "id": "C1-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C1",
-      "prompt": "Which period does “suffrage” belong to?",
+      "prompt": "Which period does “absolutism” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "19th century",
-      "item_key": "fe85c4e8aeb6fa212e9ee6f384ce41b296e950ff"
+      "answer": "Early modern",
+      "item_key": "a11f17fe48a90899c8912981c2dc94f62b21335f"
     },
     {
       "id": "C2-word",
       "type": "multiple-choice",
       "kind": "word",
       "level": "C2",
-      "prompt": "What does “recondite” mean?",
+      "prompt": "What does “soporific” mean?",
       "options": [
-        "consensus",
-        "décider",
-        "frontière",
-        "marcher"
+        "comparer",
+        "contrainte",
+        "eau",
+        "reconnaître"
       ],
-      "answer": "ésotérique",
-      "item_key": "dcc793febccd1ed91b7eaaaac6fc5dea5ad62da6"
+      "answer": "soporifique",
+      "item_key": "623fc4180e9699af2e7dbdf0f04db7da1b68be96"
     },
     {
       "id": "C2-expression",
       "type": "cloze",
       "kind": "expression",
       "level": "C2",
-      "prompt": "Complete the expression: tread ____",
+      "prompt": "Complete the expression: ____ the tide",
       "options": [
-        "about",
-        "bright",
-        "call",
-        "day"
+        "back",
+        "come",
+        "ends",
+        "famous"
       ],
-      "answer": "water",
-      "item_key": "cf69cc6ce9eb5b9c56007755aebd6bf3c91b24ba"
+      "answer": "turn",
+      "item_key": "2db99174a912758ed955baa3b5dd53518d0c33e8"
     },
     {
       "id": "C2-history",
       "type": "multiple-choice",
       "kind": "history",
       "level": "C2",
-      "prompt": "Which period does “hegemony” belong to?",
+      "prompt": "Which period does “historiography” belong to?",
       "options": [
-        "19th century",
-        "Cold War",
-        "Early modern",
-        "General"
+        "18th century",
+        "Antiquity",
+        "Contemporary",
+        "Early modern"
       ],
-      "answer": "Cold War",
-      "item_key": "83bc272abfd3282bbffcbb88d77dfa56f1703dbc"
+      "answer": "Contemporary",
+      "item_key": "1d3cb88cf608523076fe33e31ec3d8d0ca3abc26"
     }
   ],
   "tour": [
@@ -839,17 +856,20 @@
     "total": 6,
     "origins": {
       "reserve": 1,
-      "fresh": 4
+      "fresh": 3,
+      "adjacent": 1
     },
     "source_count": 5,
     "phrase_count": 6,
     "glossary_count": 18,
     "exercise_count": 18,
     "history_periods": [
-      "General"
+      "General",
+      "Middle Ages"
     ],
     "history_themes": [
-      "Culture"
+      "Culture",
+      "Politics"
     ],
     "search_path": "./data/en/search/2026-11-21.json"
   }
