@@ -1,0 +1,467 @@
+{
+  "A1": {
+    "date": "2026-11-23",
+    "level": "A1",
+    "word": {
+      "text": "black",
+      "level": "A1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/blæk/",
+      "meaning": "the darkest colour",
+      "meaning_fr": "noir",
+      "example": "He has a black cat.",
+      "anki_answer": "noir",
+      "tags": [
+        "colours"
+      ],
+      "key": "5b3b107ef77566dc9b11009566f5b532266cf69b",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/blak/",
+        "definitions": [
+          "The colour/color perceived in the absence of light, but also when no light is reflected, but rather absorbed.",
+          "A black dye or pigment.",
+          "A pen, pencil, crayon, etc., made of black pigment.",
+          "(in the plural) Black cloth hung up at funerals."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/black-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/absorb\" title=\"absorb\">Absorbing</a> all <a rel=\"mw:WikiLink\" href=\"/wiki/light\" title=\"light\">light</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/reflect\" title=\"reflect\">reflecting</a> none; <a rel=\"mw:WikiLink\" href=\"/wiki/dark\" title=\"dark\">dark</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/hue\" title=\"hue\">hueless</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt46\" typeof=\"mw:Transclusion\"></span> Without <a rel=\"mw:WikiLink\" href=\"/wiki/light\" title=\"light\">light</a>.",
+          "<span class=\"usage-label-sense\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/belong\" title=\"belong\">Belonging</a> to or <a rel=\"mw:WikiLink\" href=\"/wiki/descend\" title=\"descend\">descended</a> from any of various (<a rel=\"mw:WikiLink\" href=\"/wiki/African\" title=\"African\">African</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/Aboriginal\" title=\"Aboriginal\">Aboriginal</a>, etc.) <a rel=\"mw:WikiLink\" href=\"/wiki/ethnic_group\" title=\"ethnic group\">ethnic groups</a> which <a rel=\"mw:WikiLink\" href=\"/wiki/typically\" title=\"typically\">typically</a> have <a rel=\"mw:WikiLink\" href=\"/wiki/dark\" title=\"dark\">dark</a> <a rel=\"mw:WikiLink\" href=\"/wiki/pigmentation\" title=\"pigmentation\">pigmentation</a> of the <a rel=\"mw:WikiLink\" href=\"/wiki/skin\" title=\"skin\">skin</a>. \n\n<ol><li><span class=\"usage-label-sense\"></span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/belong#English\" title=\"belong\">Belonging</a></span> to or <a rel=\"mw:WikiLink\" href=\"/wiki/descended\" title=\"descended\">descended</a> from any of various <a rel=\"mw:WikiLink\" href=\"/wiki/sub-Saharan\" title=\"sub-Saharan\">sub-Saharan</a> <a rel=\"mw:WikiLink\" href=\"/wiki/African\" title=\"African\">African</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ethnic_group\" title=\"ethnic group\">ethnic groups</a> which typically have <a rel=\"mw:WikiLink\" href=\"/wiki/dark\" title=\"dark\">dark</a> <a rel=\"mw:WikiLink\" href=\"/wiki/pigmentation\" title=\"pigmentation\">pigmentation</a> of the <a rel=\"mw:WikiLink\" href=\"/wiki/skin\" title=\"skin\">skin</a>.</li></ol>",
+          "<span class=\"usage-label-sense\"></span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/belong#English\" title=\"belong\">Belonging</a></span> to or <a rel=\"mw:WikiLink\" href=\"/wiki/descended\" title=\"descended\">descended</a> from any of various <a rel=\"mw:WikiLink\" href=\"/wiki/sub-Saharan\" title=\"sub-Saharan\">sub-Saharan</a> <a rel=\"mw:WikiLink\" href=\"/wiki/African\" title=\"African\">African</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ethnic_group\" title=\"ethnic group\">ethnic groups</a> which typically have <a rel=\"mw:WikiLink\" href=\"/wiki/dark\" title=\"dark\">dark</a> <a rel=\"mw:WikiLink\" href=\"/wiki/pigmentation\" title=\"pigmentation\">pigmentation</a> of the <a rel=\"mw:WikiLink\" href=\"/wiki/skin\" title=\"skin\">skin</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "talk to",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "speak with someone",
+      "meaning_fr": "parler à",
+      "example": "Can I talk to you for a minute?",
+      "anki_answer": "parler",
+      "tags": [
+        "communication"
+      ],
+      "key": "f8eb7f524f5708c41007e8c1516fccae5ca6d07d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/show\" title=\"show\">show</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/beginning\" title=\"beginning\">beginnings</a> of a <a rel=\"mw:WikiLink\" href=\"/wiki/romantic\" title=\"romantic\">romantic</a> <a rel=\"mw:WikiLink\" href=\"/wiki/interest\" title=\"interest\">interest</a> in; to <a rel=\"mw:WikiLink\" href=\"/wiki/flirt\" title=\"flirt\">flirt</a> with over a period of time in hopes of <a rel=\"mw:WikiLink\" href=\"/wiki/develop\" title=\"develop\">developing</a> a romantic <a rel=\"mw:WikiLink\" href=\"/wiki/relationship\" title=\"relationship\">relationship</a>.",
+          "<span class=\"use-with-mention\" about=\"#mwt4\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/talk#English\" title=\"talk\">talk</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/to#English\" title=\"to\">to</a></span>.</span>"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "sword",
+      "aliases": [
+        "sword",
+        "swords"
+      ],
+      "level": "A1",
+      "meaning": "a weapon with a long blade",
+      "meaning_fr": "épée",
+      "period": "Middle Ages",
+      "theme": "War",
+      "example": "A sword hung on the castle wall.",
+      "tags": [
+        "weapons"
+      ],
+      "key": "49800674284a42615792d5c51fcfe5213aba9301",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-23",
+    "level": "A2",
+    "word": {
+      "text": "share",
+      "level": "A2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ʃer/",
+      "meaning": "give part of something to others",
+      "meaning_fr": "partager",
+      "example": "They share the cake.",
+      "anki_answer": "partager",
+      "tags": [
+        "social"
+      ],
+      "key": "bf2cf0edcb7725a5b1f120677ef3aaeeba425308",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ʃɛə/",
+        "definitions": [
+          "A portion of something, especially a portion given or allotted to someone.",
+          "A financial instrument that shows that one owns a part of a company that provides the benefit of limited liability.",
+          "A configuration enabling a resource to be shared over a network.",
+          "The action of sharing something with other people via social media."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/share-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/portion\" title=\"portion\">portion</a> of something, especially a portion <a rel=\"mw:WikiLink\" href=\"/wiki/given\" title=\"given\">given</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/allot\" title=\"allot\">allotted</a> to someone.",
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/financial_instrument\" title=\"financial instrument\">financial instrument</a> that shows that one <a rel=\"mw:WikiLink\" href=\"/wiki/own\" title=\"own\">owns</a> a part of a <a rel=\"mw:WikiLink\" href=\"/wiki/company\" title=\"company\">company</a> that provides the benefit of <a rel=\"mw:WikiLink\" href=\"/wiki/limited_liability\" title=\"limited liability\">limited liability</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/configuration\" title=\"configuration\">configuration</a> enabling a <a rel=\"mw:WikiLink\" href=\"/wiki/resource\" title=\"resource\">resource</a> to be <a rel=\"mw:WikiLink\" href=\"/wiki/share\" class=\"mw-selflink selflink\">shared</a> over a <a rel=\"mw:WikiLink\" href=\"/wiki/network\" title=\"network\">network</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt42\" typeof=\"mw:Transclusion\"></span> The action of sharing something with other people via <a rel=\"mw:WikiLink\" href=\"/wiki/social_media\" title=\"social media\">social media</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "turn off",
+      "level": "A2",
+      "type": "phrasal verb",
+      "meaning": "stop a device or light",
+      "meaning_fr": "éteindre",
+      "example": "Remember to turn off the TV.",
+      "anki_answer": "éteindre",
+      "tags": [
+        "devices"
+      ],
+      "key": "c8e031c06164f92e96ef03f821ba1015d5649ccb",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt5\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/turn#English\" title=\"turn\">turn</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/off#English\" title=\"off\">off</a></span>.</span>",
+          "<span class=\"usage-label-sense\" about=\"#mwt7\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/power_down\" title=\"power down\">power down</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/switch_off\" title=\"switch off\">switch off</a>, to put out of <a rel=\"mw:WikiLink\" href=\"/wiki/operation\" title=\"operation\">operation</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/deactivate\" title=\"deactivate\">deactivate</a> (an appliance, light, mechanism, functionality etc.).",
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> To deactivate a <a rel=\"mw:WikiLink\" href=\"/wiki/heat\" title=\"heat\">heat</a> <a rel=\"mw:WikiLink\" href=\"/wiki/source\" title=\"source\">source</a> cooking a particular item.",
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To become deactivated; to become powered down."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "captain",
+      "aliases": [
+        "captain",
+        "captains"
+      ],
+      "level": "A2",
+      "meaning": "an officer who leads a group",
+      "meaning_fr": "capitaine",
+      "period": "Early modern",
+      "theme": "War",
+      "example": "The captain commanded the ship.",
+      "tags": [
+        "war"
+      ],
+      "key": "b06b660f24007d3c4fa00d6e881fdcf4fc4c8ee1",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-23",
+    "level": "B1",
+    "word": {
+      "text": "habit",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈhæbɪt/",
+      "meaning": "something you do regularly",
+      "meaning_fr": "habitude",
+      "example": "Reading before bed is a good habit.",
+      "anki_answer": "habitude",
+      "tags": [
+        "daily"
+      ],
+      "key": "54af07f39dc7b1ee4a8dafecda03074bdff5c230",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈhæbət/",
+        "definitions": [
+          "An action performed on a regular basis.",
+          "An action performed repeatedly and automatically, usually without awareness.",
+          "A long piece of clothing worn by monks and nuns.",
+          "A piece of clothing worn uniformly for a specific activity."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/habit-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/action\" title=\"action\">action</a> performed on a <a rel=\"mw:WikiLink\" href=\"/wiki/regular\" title=\"regular\">regular</a> <a rel=\"mw:WikiLink\" href=\"/wiki/basis\" title=\"basis\">basis</a>.",
+          "An action <a rel=\"mw:WikiLink\" href=\"/wiki/perform\" title=\"perform\">performed</a> <a rel=\"mw:WikiLink\" href=\"/wiki/repeatedly\" title=\"repeatedly\">repeatedly</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/automatically\" title=\"automatically\">automatically</a>, usually without <a rel=\"mw:WikiLink\" href=\"/wiki/awareness\" title=\"awareness\">awareness</a>.",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/addiction\" title=\"addiction\">addiction</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt298\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/clothe\" title=\"clothe\">clothe</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "on purpose",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "deliberately",
+      "meaning_fr": "exprès",
+      "example": "She did it on purpose.",
+      "anki_answer": "exprès",
+      "tags": [
+        "manner"
+      ],
+      "key": "8d9295003b1ebc6ff609c33399f0f8605d9c2a2b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> By design, as opposed to by accident; <a rel=\"mw:WikiLink\" href=\"/wiki/intentionally\" title=\"intentionally\">intentionally</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/deliberately\" title=\"deliberately\">deliberately</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt5\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/in_order\" title=\"in order\">In order</a> <i class=\"Latn mention\" lang=\"en\" about=\"#mwt11\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/to#English\" title=\"to\">to</a></i> (do something); with the objective <i class=\"Latn mention\" lang=\"en\" about=\"#mwt12\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/that#English\" title=\"that\">that</a></i>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt13\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "medieval",
+      "aliases": [
+        "medieval",
+        "mediaeval"
+      ],
+      "level": "B1",
+      "meaning": "relating to the Middle Ages",
+      "meaning_fr": "médiéval",
+      "period": "Middle Ages",
+      "theme": "Culture",
+      "example": "The museum has medieval armour.",
+      "tags": [
+        "time"
+      ],
+      "key": "297fda6b4b680c74be63fcbbf4855685aa4e590f",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-23",
+    "level": "B2",
+    "word": {
+      "text": "tradition",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/trəˈdɪʃn/",
+      "meaning": "a custom passed down over time",
+      "meaning_fr": "tradition",
+      "example": "The village keeps an old tradition.",
+      "anki_answer": "tradition",
+      "tags": [
+        "culture"
+      ],
+      "key": "b3d64bf8d8b73eaa7c139e3a97c8815981dbde83",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/tɹəˈdɪʃn̩/",
+        "definitions": [
+          "A part of culture that is passed from person to person or generation to generation, possibly differing in detail from family to family, such as the way to celebrate holidays.",
+          "A commonly held system.",
+          "The act of delivering into the hands of another; delivery.",
+          "To transmit by way of tradition; to hand down."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/tradition-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A part of <a rel=\"mw:WikiLink\" href=\"/wiki/culture\" title=\"culture\">culture</a> that is passed from person to person or generation to generation, possibly differing in detail from family to family, such as the way to celebrate holidays.",
+          "A commonly held system. <span class=\"maintenance-line\" about=\"#mwt23\" typeof=\"mw:Transclusion\">(Can we add an <a rel=\"mw:WikiLink\" href=\"/wiki/Wiktionary:Example_sentences\" title=\"Wiktionary:Example sentences\">example</a> for this sense?)</span><link rel=\"mw:PageProp/Category\" href=\"./Category:Requests_for_example_sentences_in_English#TRADITION\" about=\"#mwt23\">",
+          "An established or distinctive style or method:",
+          "The act of delivering into the hands of another; <a rel=\"mw:WikiLink\" href=\"/wiki/delivery\" title=\"delivery\">delivery</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be over the moon",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "be extremely happy",
+      "meaning_fr": "être aux anges",
+      "example": "She was over the moon about the news.",
+      "anki_answer": "aux anges",
+      "tags": [
+        "happiness"
+      ],
+      "key": "647cd62130bd657257b6425688c2c1b032272097",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "census",
+      "aliases": [
+        "census",
+        "censuses"
+      ],
+      "level": "B2",
+      "meaning": "an official count of a population",
+      "meaning_fr": "recensement",
+      "period": "General",
+      "theme": "Society",
+      "example": "The census listed every household.",
+      "tags": [
+        "society"
+      ],
+      "key": "a7fb6fe8610a64d8f599c8d4eca4ff4cbe61736d",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-23",
+    "level": "C1",
+    "word": {
+      "text": "subtle",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈsʌtl/",
+      "meaning": "not obvious, but still important",
+      "meaning_fr": "subtil",
+      "example": "There is a subtle difference in meaning.",
+      "anki_answer": "subtil",
+      "tags": [
+        "detail"
+      ],
+      "key": "8128c11168ce3aa69c79c8e6e88257dee4dc5bf1",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈsʌt(ə)l/",
+        "definitions": [
+          "Hard to grasp; not obvious or easily understood; barely noticeable.",
+          "(of a thing) Cleverly contrived.",
+          "(of a person or animal) Cunning, skillful.",
+          "Insidious."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/subtle-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt48\" typeof=\"mw:Transclusion\">Senses relating to <a rel=\"mw:WikiLink\" href=\"/wiki/tangible#Adjective\" title=\"tangible\">tangible</a> <a rel=\"mw:WikiLink\" href=\"/wiki/thing#English\" title=\"thing\">things</a>.</span>\n<ol><li>Of an <a rel=\"mw:WikiLink\" href=\"/wiki/action#Noun\" title=\"action\">action</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/movement\" title=\"movement\">movement</a>: very <a rel=\"mw:WikiLink\" href=\"/wiki/delicate#Adjective\" title=\"delicate\">delicate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/slight#Adjective\" title=\"slight\">slight</a>, and thus <a rel=\"mw:WikiLink\" href=\"/wiki/barely\" title=\"barely\">barely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a>; not <a rel=\"mw:WikiLink\" href=\"/wiki/obvious\" title=\"obvious\">obvious</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/inconspicuous\" title=\"inconspicuous\">inconspicuous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/unintrusive\" title=\"unintrusive\">unintrusive</a>.\n</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> Having a delicate or <a rel=\"mw:WikiLink\" href=\"/wiki/fine#Adjective\" title=\"fine\">fine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/substance#Noun\" title=\"substance\">substance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/texture#Noun\" title=\"texture\">texture</a>; hence, <a rel=\"mw:WikiLink\" href=\"/wiki/exquisite#Adjective\" title=\"exquisite\">exquisite</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/refined#Adjective\" title=\"refined\">refined</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt53\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/slender\" title=\"slender\">Slender</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/thin#Adjective\" title=\"thin\">thin</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt54\" typeof=\"mw:Transclusion\"></span> Of a substance: <a rel=\"mw:WikiLink\" href=\"/wiki/finely\" title=\"finely\">finely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/powdered#Adjective\" title=\"powdered\">powdered</a>; also, of <a rel=\"mw:WikiLink\" href=\"/wiki/particle\" title=\"particle\">particles</a> of a substance: very fine or <a rel=\"mw:WikiLink\" href=\"/wiki/small#Adjective\" title=\"small\">small</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> Of <a rel=\"mw:WikiLink\" href=\"/wiki/weight#Noun\" title=\"weight\">weight</a>: after the <span class=\"Latn\" lang=\"en\" about=\"#mwt56\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/tare#English\" title=\"tare\">tare</a></span><span about=\"#mwt56\"> </span><span class=\"mention-gloss-paren annotation-paren\" about=\"#mwt56\">(</span><span class=\"mention-gloss-double-quote\" about=\"#mwt56\">“</span><span class=\"mention-gloss\" about=\"#mwt56\">weight of an <a rel=\"mw:WikiLink\" href=\"/wiki/empty#Adjective\" title=\"empty\">empty</a> <a rel=\"mw:WikiLink\" href=\"/wiki/container\" title=\"container\">container</a></span><span class=\"mention-gloss-double-quote\" about=\"#mwt56\">”</span><span class=\"mention-gloss-paren annotation-paren\" about=\"#mwt56\">)</span> has been <a rel=\"mw:WikiLink\" href=\"/wiki/subtract\" title=\"subtract\">subtracted</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/net#Adjective\" title=\"net\">net</a>.",
+          "Of an <a rel=\"mw:WikiLink\" href=\"/wiki/action#Noun\" title=\"action\">action</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/movement\" title=\"movement\">movement</a>: very <a rel=\"mw:WikiLink\" href=\"/wiki/delicate#Adjective\" title=\"delicate\">delicate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/slight#Adjective\" title=\"slight\">slight</a>, and thus <a rel=\"mw:WikiLink\" href=\"/wiki/barely\" title=\"barely\">barely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a>; not <a rel=\"mw:WikiLink\" href=\"/wiki/obvious\" title=\"obvious\">obvious</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/inconspicuous\" title=\"inconspicuous\">inconspicuous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/unintrusive\" title=\"unintrusive\">unintrusive</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> Having a delicate or <a rel=\"mw:WikiLink\" href=\"/wiki/fine#Adjective\" title=\"fine\">fine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/substance#Noun\" title=\"substance\">substance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/texture#Noun\" title=\"texture\">texture</a>; hence, <a rel=\"mw:WikiLink\" href=\"/wiki/exquisite#Adjective\" title=\"exquisite\">exquisite</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/refined#Adjective\" title=\"refined\">refined</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt53\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/slender\" title=\"slender\">Slender</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/thin#Adjective\" title=\"thin\">thin</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "with a fine-tooth comb",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "very thoroughly",
+      "meaning_fr": "au peigne fin",
+      "example": "The lawyer examined the contract with a fine-tooth comb.",
+      "anki_answer": "peigne fin",
+      "tags": [
+        "checking"
+      ],
+      "key": "57d29350b91830e3e390c69c02c565d631572dce",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "armistice",
+      "aliases": [
+        "armistice",
+        "armistices"
+      ],
+      "level": "C1",
+      "meaning": "an agreement to stop fighting temporarily",
+      "meaning_fr": "armistice",
+      "period": "World War I",
+      "theme": "War",
+      "example": "The armistice was signed in November 1918.",
+      "tags": [
+        "war"
+      ],
+      "key": "79289014f01475a6394e26a55a5610d17bb4937b",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-23",
+    "level": "C2",
+    "word": {
+      "text": "perfunctory",
+      "level": "C2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/pərˈfʌŋktəri/",
+      "meaning": "done quickly without real care",
+      "meaning_fr": "expéditif, superficiel",
+      "example": "She gave a perfunctory smile.",
+      "anki_answer": "superficiel",
+      "tags": [
+        "attitude"
+      ],
+      "key": "37d8ea130bf379e3dba5dab102eb49c98c928873",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/pəˈfʌŋk.t(ə)ɹɪ/",
+        "definitions": [
+          "Done only to fulfil a duty, or in a careless or indifferent manner; performed mechanically and as a thing of rote."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/perfunctory-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "Done only or merely to conform to a minimal standard or to fulfill a <a rel=\"mw:WikiLink\" href=\"/wiki/protocol\" title=\"protocol\">protocol</a> or presumptive duty.",
+          "Performed in a <a rel=\"mw:WikiLink\" href=\"/wiki/careless\" title=\"careless\">careless</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/indifferent\" title=\"indifferent\">indifferent</a> manner as a thing of <a rel=\"mw:WikiLink\" href=\"/wiki/rote\" title=\"rote\">rote</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "steal someone's thunder",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "take attention away from someone else's achievement",
+      "meaning_fr": "éclipser quelqu'un",
+      "example": "The minister stole the announcer's thunder.",
+      "anki_answer": "éclipser",
+      "tags": [
+        "attention"
+      ],
+      "key": "1d0f24aea2a679f2a7f93427a70d385f0c32696e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/appropriate\" title=\"appropriate\">appropriate</a> someone's ideas or information, typically in order to look better at that person's expense.",
+          "<span class=\"usage-label-sense\" about=\"#mwt9\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/detract\" title=\"detract\">detract</a> from someone's <a rel=\"mw:WikiLink\" href=\"/wiki/accomplishment\" title=\"accomplishment\">accomplishments</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/glory\" title=\"glory\">glory</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/undermine\" title=\"undermine\">undermine</a>."
+        ]
+      },
+      "audio": {
+        "title": "Steal someone's thunder",
+        "url": "http://www.bbc.co.uk/programmes/p0dwwrdt",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0dwwq93.mp3"
+      }
+    },
+    "history": {
+      "text": "metanarrative",
+      "aliases": [
+        "metanarrative",
+        "metanarratives"
+      ],
+      "level": "C2",
+      "meaning": "an overarching story used to explain history",
+      "meaning_fr": "métarécit",
+      "period": "Contemporary",
+      "theme": "Culture",
+      "example": "The author rejected the old metanarrative.",
+      "tags": [
+        "culture"
+      ],
+      "key": "cb438664fcc7c11f61738dedea69b181ca5639cb",
+      "kind": "history"
+    }
+  }
+}

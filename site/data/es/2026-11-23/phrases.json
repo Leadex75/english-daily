@@ -1,0 +1,350 @@
+{
+  "A1": {
+    "date": "2026-11-23",
+    "level": "A1",
+    "word": {
+      "text": "caminar",
+      "level": "A1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/kamiˈnaɾ/",
+      "meaning": "moverse a pie",
+      "meaning_fr": "marcher",
+      "example": "Caminamos hasta la estación.",
+      "anki_answer": "caminar",
+      "tags": [
+        "movimiento"
+      ],
+      "key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "todos los días",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "cada día",
+      "meaning_fr": "tous les jours",
+      "example": "Camino al trabajo todos los días.",
+      "anki_answer": "todos los días",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "cf95736e835f06c13662ce970c987f191513c4e1",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "nombre",
+      "aliases": [
+        "nombre",
+        "nombres"
+      ],
+      "level": "A1",
+      "meaning": "la palabra que identifica a alguien o algo",
+      "meaning_fr": "nom",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "La ciudad cambió de nombre.",
+      "tags": [
+        "lenguaje"
+      ],
+      "key": "db7612ad0b7461713e002a6fb16c57adc38057c8",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-23",
+    "level": "A2",
+    "word": {
+      "text": "cocina",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/koˈθina/",
+      "meaning": "la habitación donde se prepara la comida",
+      "meaning_fr": "cuisine",
+      "example": "Está cocinando en la cocina.",
+      "anki_answer": "cocina",
+      "tags": [
+        "hogar"
+      ],
+      "key": "cbbb821401de65df0d0298080c51cff928fd8a6d",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "tener hambre",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "querer comer",
+      "meaning_fr": "avoir faim",
+      "example": "Los niños tienen hambre.",
+      "anki_answer": "tener hambre",
+      "tags": [
+        "comida"
+      ],
+      "key": "f4657549fd148225398194c52e825061efa12f3b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "campesino",
+      "aliases": [
+        "campesino",
+        "campesinos"
+      ],
+      "level": "A2",
+      "meaning": "una persona que trabaja la tierra",
+      "meaning_fr": "paysan",
+      "period": "Edad Media",
+      "theme": "Economía",
+      "example": "El campesino pagaba impuestos por la cosecha.",
+      "tags": [
+        "trabajo"
+      ],
+      "key": "1d141e83710895b20a0f34115fff803d6de62fda",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-23",
+    "level": "B1",
+    "word": {
+      "text": "medieval",
+      "level": "B1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/meðiˈeβal/",
+      "meaning": "relativo a la Edad Media",
+      "meaning_fr": "médiéval",
+      "example": "El museo tiene armaduras medievales.",
+      "anki_answer": "medieval",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "6867ad6688e19c630369f5ed2d5aaa36a6729ca3",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "tomar el relevo",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "suceder a alguien",
+      "meaning_fr": "prendre le relais",
+      "example": "La nueva generación tomó el relevo.",
+      "anki_answer": "tomar el relevo",
+      "tags": [
+        "sucesión"
+      ],
+      "key": "b8bc7ecee9c725f397b879e94fe50c46eed430d6",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "impresor",
+      "aliases": [
+        "impresor",
+        "impresores"
+      ],
+      "level": "B1",
+      "meaning": "una persona que imprime libros",
+      "meaning_fr": "imprimeur",
+      "period": "Edad Moderna",
+      "theme": "Cultura",
+      "example": "El impresor publicó un folleto.",
+      "tags": [
+        "cultura"
+      ],
+      "key": "530ecdf5fa18cc968ade374db24a99676181cc49",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-23",
+    "level": "B2",
+    "word": {
+      "text": "artefacto",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/aɾteˈfakto/",
+      "meaning": "un objeto hecho por una persona",
+      "meaning_fr": "artefact",
+      "example": "El artefacto data del año 300 a. C.",
+      "anki_answer": "artefacto",
+      "tags": [
+        "cultura"
+      ],
+      "key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "constituir una amenaza",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "representar un peligro",
+      "meaning_fr": "constituer une menace",
+      "example": "La inflación constituye una amenaza.",
+      "anki_answer": "constituir una amenaza",
+      "tags": [
+        "riesgo"
+      ],
+      "key": "28e30772486a9dad3a2a59008ff336715a57dde3",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "fábrica",
+      "aliases": [
+        "fábrica",
+        "fábricas"
+      ],
+      "level": "B2",
+      "meaning": "un edificio donde se producen bienes",
+      "meaning_fr": "usine",
+      "period": "Siglo XIX",
+      "theme": "Economía",
+      "example": "La fábrica daba trabajo a cientos de personas.",
+      "tags": [
+        "trabajo"
+      ],
+      "key": "29a4ef7778e45befc721812745b34c9c595f77b7",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-23",
+    "level": "C1",
+    "word": {
+      "text": "diplomacia",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/diplomaˈθia/",
+      "meaning": "la gestión de relaciones entre Estados",
+      "meaning_fr": "diplomatie",
+      "example": "La diplomacia evitó una nueva guerra.",
+      "anki_answer": "diplomacia",
+      "tags": [
+        "política"
+      ],
+      "key": "ef3d091380959c4655feaabf600a1528c69c269a",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "legitimar una reforma",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "dar justificación a una reforma",
+      "meaning_fr": "légitimer une réforme",
+      "example": "El decreto legitimó la reforma.",
+      "anki_answer": "legitimar una reforma",
+      "tags": [
+        "política"
+      ],
+      "key": "92589d7ca095ba6275c2dbaee8e3530d5e16c4c5",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "filósofo",
+      "aliases": [
+        "filósofo",
+        "filósofos"
+      ],
+      "level": "C1",
+      "meaning": "un pensador que analiza ideas y valores",
+      "meaning_fr": "philosophe",
+      "period": "Edad Moderna",
+      "theme": "Cultura",
+      "example": "El filósofo defendía la tolerancia.",
+      "tags": [
+        "cultura"
+      ],
+      "key": "5d49edf73e144e8a82fc0bdbd930f62200e0f6bb",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-23",
+    "level": "C2",
+    "word": {
+      "text": "teleología",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/teleoloˈχia/",
+      "meaning": "la explicación de hechos por su finalidad",
+      "meaning_fr": "téléologie",
+      "example": "La teleología interpretaba el imperio como un destino.",
+      "anki_answer": "teleología",
+      "tags": [
+        "cultura"
+      ],
+      "key": "f367e808a8fd0d7e09a509368b6f334e2f4f479e",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "reconstruir la trama",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "recrear la secuencia de hechos",
+      "meaning_fr": "reconstituer l'intrigue",
+      "example": "Reconstruyeron la trama diplomática.",
+      "anki_answer": "reconstruir la trama",
+      "tags": [
+        "historia"
+      ],
+      "key": "1c4a411f97b8123bb31aef1b7be8c2c52dd58ca0",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "sincronía",
+      "aliases": [
+        "sincronía",
+        "sincronia"
+      ],
+      "level": "C2",
+      "meaning": "el estudio de un fenómeno en un momento dado",
+      "meaning_fr": "synchronie",
+      "period": "General",
+      "theme": "Ciencia",
+      "example": "La sincronía describía la lengua en 1900.",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "86a64716a69c51776b3c2ec479e50507b089ae05",
+      "kind": "history"
+    }
+  }
+}

@@ -1,0 +1,909 @@
+{
+  "date": "2026-11-23",
+  "lang": "es",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 1888177363,
+        "title": "\"Fui coaccionada para tener un hijo\": cómo un multimillonario engañó a la exitosa DJ Liv Nervo para que quedara embarazada",
+        "source": "BBC Mundo (texto)",
+        "source_id": "es_bbc_mundo_text",
+        "category": "news",
+        "url": "https://www.bbc.com/mundo/articles/cqm2ly382ylxo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-22T11:04:08",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 3054,
+        "duration_sec": null,
+        "body_text": "\"Fui coaccionada para tener un hijo\": cómo un multimillonario engañó a la exitosa DJ Liv Nervo para que quedara embarazada - Autor, Alys Harte y Ben Robinson - Título del autor, BBC, Serie \"File on 4 Investigates\" - Fecha de publicación - Tiempo de lectura: 13 min ¿Has oído hablar de Nervo, el dúo australiano de música electrónica?",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "5f6d991e62f34390ceab544f260b1a78470e6b0e",
+        "summary": "Durante años creyó vivir un amor de película. Hasta que, con seis meses de embarazo, descubrió la verdad. Ahora lucha porque eso sea castigado por la ley cuando le ocurra a otras.",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "\"Fui coaccionada para tener un hijo\": cómo un multimillonario engañó a la exitosa DJ Liv Nervo para que quedara embarazada — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 16
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": {
+        "id": 1888177392,
+        "title": "No es un día cualquiera - La Agencia de detectives de José Antonio Marina: El caso de la imposibilidad fraudulenta",
+        "source": "RNE No es un día cualquiera",
+        "source_id": "es_rne_no_es_un_dia_cualquiera",
+        "category": "culture",
+        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-agencia-detectives-jose-antonio-marina-caso-imposibilidad-fraudulenta/17325342/",
+        "published_at": "2026-11-22T10:05:18",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 56,
+        "duration_sec": 824,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SNEDCSD/mp3/3/2/1795340953423.mp3?idasset=17325342&download-token=1795449274_0x423f5e468f25bdb1fccd21ac55de08f7cab08b7a",
+        "description": "El caso de la imposibilidad fraudulenta es el `caso mermelada´ que nos trae hoy José Antonio Marina . La ` Agencia de detectives ´ nos deja una nueva cuestión para la semana que viene: ¿Cuándo se aprobó en España por primera vez una ley que obligaba a vacaciones pagadas?. Podéis mandar las respuestas a noesundiacualquiera@rtve.es Escuchar audio",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "2bc21805e697e60a7b1621fd0c115c0a643f57fa",
+        "summary": "El caso de la imposibilidad fraudulenta es el `caso mermelada´ que nos trae hoy José Antonio Marina . La ` Agencia de detectives ´ nos deja una nueva cuestión para la semana que viene: ¿Cuándo se aprobó en España por primera vez una ley que obligaba a vacaciones pagadas?. Podéis mandar las respuestas a noesundiacualquiera@rtve.es Escuchar audio",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "No es un día cualquiera - La Agencia de detectives de José Antonio Marina: El caso de la imposibilidad fraudulenta — RNE No es un día cualquiera",
+        "duration_formatted": "13:44",
+        "source_url": "https://www.rtve.es/api/programas/2054/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": {
+        "id": 1888177405,
+        "title": "Documentos RNE - Álvaro de Bazán, el almirante de las victorias - 23/11/26",
+        "source": "RNE Documentos RNE",
+        "source_id": "es_rne_documentos_rne",
+        "category": "history",
+        "url": "https://www.rtve.es/play/audios/documentos-rne/alvaro-bazan-almirante-victorias/17324237/",
+        "published_at": "2026-11-22T23:56:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "C1",
+        "word_count": 461,
+        "duration_sec": 3355,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SRDOCU/mp3/5/5/1795193576755.mp3?idasset=17324237&download-token=1795449291_0x5712470accf0282cb330abe3caf3e58809f78e0d",
+        "description": "Su extraordinaria pericia en el mar convirtió a Álvaro de Bazán en el arma secreta de la Monarquía Hispánica. Nacido en Granada en 1526, dominó tanto el Mediterráneo de las galeras como el Atlántico de los galeones, embarcación que él mismo contribuyó a diseñar y mejorar. Su hoja de servicios habla por sí sola: no perdió ninguno del medio centenar de enfrentamientos en los que participó. Además, siempre contó con el favor de sus subordinados: era un \"padre de los soldados\", como lo describió Miguel de Cervantes después de coincidir con él en la batalla de Lepanto. Aquella victoria de la Liga Santa de 1571 resultó decisiva para frenar el avance de las temidas fuerzas del Imperio otomano, previamente derrotadas gracias a Bazán en Malta. También ejecutó exitosas acciones contra la piratería, de protección de la Flota de Indias y de socorro en las plazas norteafricanas de Ceuta y Tánger. Dos de sus éxitos más recordados tuvieron como escenario el archipiélago de las Azores, último bastión –con apoyo francés e inglés– de los contrarios a la incorporación de Portugal a la Corona hispánica. En aguas de la isla Terceira ganó el primer combate de galeones en mar abierto de la historia y, en sus playas, protagonizó un desembarco que sentó las bases de la doctrina anfibia española. En reconocimiento a su entrega y eficacia, Felipe II llegó a nombrarlo Capitán General de la Mar Océana; también le concedió el marquesado de Santa Cruz , título con el que ennobleció su palacio en la localidad manchega de Viso del Marqués . Falleció en Lisboa en 1588, contagiado de tifus por atender a miembros enfermos de su tripulación mientras preparaba la invasión de Inglaterra. Este documental sonoro, con guion de Álvaro Soto y realización de Mayca Aguilera , reconstruye la biografía del navegante desde los últimos años de reinado de Carlos V . Participan Magdalena de Pazzis Pi Corrales , catedrática de Historia Moderna de la Universidad Complutense y autora del libro 'Tercios del mar: historia",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "6a0c01477ef469ace84765ae63cee12b57e79aa0",
+        "summary": "Su extraordinaria pericia en el mar convirtió a Álvaro de Bazán en el arma secreta de la Monarquía Hispánica. Nacido en Granada en 1526, dominó tanto el Mediterráneo de las galeras como el Atlántico de los galeones, embarcación que él mismo contribuyó a diseñar y mejorar. Su hoja de servicios habla por sí sola: no perdió ninguno del medio centenar de enfrentamientos en los que participó. Además, siempre contó con el favor de sus subordinados: era un \"padre de los soldados\", como lo describió Miguel de Cervantes después de coincidir con él en la batalla de Lepanto. Aquella victoria de la Liga Santa de 1571 resultó decisiva para frenar el avance de las temidas fuerzas del Imperio otomano, previamente derrotadas gracias a Bazán en Malta. También ejecutó exitosas acciones contra la piratería, de protección de la Flota de Indias y de socorro en las plazas norteafricanas de Ceuta y Tánger. Dos de sus éxitos más recordados tuvieron como escenario el archipiélago de las Azores, último bastión –con apoyo francés e inglés– de los contrarios a la incorporación de Portugal a la Corona hispánica. En aguas de la isla Terceira ganó el primer combate de galeones en mar abierto de la historia y, en sus playas, protagonizó un desembarco que sentó las bases de la doctrina anfibia española. En reconocimiento a su entrega y eficacia, Felipe II llegó a nombrarlo Capitán General de la Mar Océana; también le concedió el marquesado de Santa Cruz , título con el que ennobleció su palacio en la localidad manchega de Viso del Marqués . Falleció en Lisboa en 1588, contagiado de tifus por atender a miembros enfermos de su tripulación mientras preparaba la invasión de Inglaterra. Este documental sonoro, con guion de Álvaro Soto y realización de Mayca Aguilera , reconstruye la biografía del navegante desde los últimos años de reinado de Carlos V . Participan Magdalena de Pazzis Pi Corrales , catedrática de Historia Moderna de la Universidad Complutense y autora del libro 'Tercios del mar: historia",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1",
+          "Outside preferred window"
+        ],
+        "periods": [
+          "General",
+          "Edad Media",
+          "Edad Moderna",
+          "Antigüedad"
+        ],
+        "themes": [
+          "Sociedad",
+          "Cultura",
+          "Guerra",
+          "Imperio",
+          "Política"
+        ],
+        "history_terms": [
+          {
+            "text": "agua",
+            "aliases": [
+              "agua",
+              "aguas"
+            ],
+            "level": "A1",
+            "meaning": "un líquido claro que se bebe",
+            "meaning_fr": "eau",
+            "period": "General",
+            "theme": "Sociedad",
+            "example": "El agua del pozo era limpia.",
+            "tags": [
+              "diario"
+            ]
+          },
+          {
+            "text": "año",
+            "aliases": [
+              "año",
+              "años"
+            ],
+            "level": "A1",
+            "meaning": "un período de doce meses",
+            "meaning_fr": "année",
+            "period": "General",
+            "theme": "Sociedad",
+            "example": "El tratado duró solo un año.",
+            "tags": [
+              "tiempo"
+            ]
+          },
+          {
+            "text": "libro",
+            "aliases": [
+              "libro",
+              "libros"
+            ],
+            "level": "A1",
+            "meaning": "una obra escrita con páginas",
+            "meaning_fr": "livre",
+            "period": "General",
+            "theme": "Cultura",
+            "example": "El libro describe la Roma antigua.",
+            "tags": [
+              "cultura"
+            ]
+          },
+          {
+            "text": "torre",
+            "aliases": [
+              "torre",
+              "torres"
+            ],
+            "level": "A1",
+            "meaning": "una construcción alta",
+            "meaning_fr": "tour",
+            "period": "Edad Media",
+            "theme": "Cultura",
+            "example": "La torre dominaba el paisaje.",
+            "tags": [
+              "arquitectura"
+            ]
+          },
+          {
+            "text": "soldado",
+            "aliases": [
+              "soldado",
+              "soldados"
+            ],
+            "level": "A2",
+            "meaning": "una persona que lucha en un ejército",
+            "meaning_fr": "soldat",
+            "period": "General",
+            "theme": "Guerra",
+            "example": "El soldado volvió de la campaña.",
+            "tags": [
+              "guerra"
+            ]
+          },
+          {
+            "text": "capitán",
+            "aliases": [
+              "capitán",
+              "capitanes"
+            ],
+            "level": "A2",
+            "meaning": "un oficial que dirige a un grupo",
+            "meaning_fr": "capitaine",
+            "period": "Edad Moderna",
+            "theme": "Guerra",
+            "example": "El capitán dirigía el barco.",
+            "tags": [
+              "guerra"
+            ]
+          },
+          {
+            "text": "batalla",
+            "aliases": [
+              "batalla",
+              "batallas"
+            ],
+            "level": "B1",
+            "meaning": "un combate entre dos ejércitos",
+            "meaning_fr": "bataille",
+            "period": "General",
+            "theme": "Guerra",
+            "example": "La batalla empezó al amanecer.",
+            "tags": [
+              "guerra"
+            ]
+          },
+          {
+            "text": "imperio",
+            "aliases": [
+              "imperio",
+              "imperios"
+            ],
+            "level": "B1",
+            "meaning": "un conjunto de territorios gobernados por un emperador",
+            "meaning_fr": "empire",
+            "period": "Antigüedad",
+            "theme": "Imperio",
+            "example": "El imperio abarcaba tres continentes.",
+            "tags": [
+              "imperio"
+            ]
+          }
+        ],
+        "alt_text": "Documentos RNE - Álvaro de Bazán, el almirante de las victorias - 23/11/26 — RNE Documentos RNE",
+        "duration_formatted": "55:55",
+        "source_url": "https://www.rtve.es/api/programas/1938/audios.rss",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-23",
+    "level": "B2",
+    "word": {
+      "text": "artefacto",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/aɾteˈfakto/",
+      "meaning": "un objeto hecho por una persona",
+      "meaning_fr": "artefact",
+      "example": "El artefacto data del año 300 a. C.",
+      "anki_answer": "artefacto",
+      "tags": [
+        "cultura"
+      ],
+      "key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "constituir una amenaza",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "representar un peligro",
+      "meaning_fr": "constituer une menace",
+      "example": "La inflación constituye una amenaza.",
+      "anki_answer": "constituir una amenaza",
+      "tags": [
+        "riesgo"
+      ],
+      "key": "28e30772486a9dad3a2a59008ff336715a57dde3",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "fábrica",
+      "aliases": [
+        "fábrica",
+        "fábricas"
+      ],
+      "level": "B2",
+      "meaning": "un edificio donde se producen bienes",
+      "meaning_fr": "usine",
+      "period": "Siglo XIX",
+      "theme": "Economía",
+      "example": "La fábrica daba trabajo a cientos de personas.",
+      "tags": [
+        "trabajo"
+      ],
+      "key": "29a4ef7778e45befc721812745b34c9c595f77b7",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8",
+      "kind": "word",
+      "level": "A1",
+      "text": "caminar",
+      "meaning": "moverse a pie",
+      "meaning_fr": "marcher",
+      "example": "Caminamos hasta la estación.",
+      "phonetic": "/kamiˈnaɾ/",
+      "anki_answer": "caminar",
+      "tags": [
+        "movimiento"
+      ]
+    },
+    {
+      "key": "cf95736e835f06c13662ce970c987f191513c4e1",
+      "kind": "expression",
+      "level": "A1",
+      "text": "todos los días",
+      "meaning": "cada día",
+      "meaning_fr": "tous les jours",
+      "example": "Camino al trabajo todos los días.",
+      "phonetic": "",
+      "anki_answer": "todos los días",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "db7612ad0b7461713e002a6fb16c57adc38057c8",
+      "kind": "history",
+      "level": "A1",
+      "text": "nombre",
+      "meaning": "la palabra que identifica a alguien o algo",
+      "meaning_fr": "nom",
+      "example": "La ciudad cambió de nombre.",
+      "phonetic": "",
+      "anki_answer": "nom",
+      "tags": [
+        "lenguaje"
+      ]
+    },
+    {
+      "key": "cbbb821401de65df0d0298080c51cff928fd8a6d",
+      "kind": "word",
+      "level": "A2",
+      "text": "cocina",
+      "meaning": "la habitación donde se prepara la comida",
+      "meaning_fr": "cuisine",
+      "example": "Está cocinando en la cocina.",
+      "phonetic": "/koˈθina/",
+      "anki_answer": "cocina",
+      "tags": [
+        "hogar"
+      ]
+    },
+    {
+      "key": "f4657549fd148225398194c52e825061efa12f3b",
+      "kind": "expression",
+      "level": "A2",
+      "text": "tener hambre",
+      "meaning": "querer comer",
+      "meaning_fr": "avoir faim",
+      "example": "Los niños tienen hambre.",
+      "phonetic": "",
+      "anki_answer": "tener hambre",
+      "tags": [
+        "comida"
+      ]
+    },
+    {
+      "key": "1d141e83710895b20a0f34115fff803d6de62fda",
+      "kind": "history",
+      "level": "A2",
+      "text": "campesino",
+      "meaning": "una persona que trabaja la tierra",
+      "meaning_fr": "paysan",
+      "example": "El campesino pagaba impuestos por la cosecha.",
+      "phonetic": "",
+      "anki_answer": "paysan",
+      "tags": [
+        "trabajo"
+      ]
+    },
+    {
+      "key": "6867ad6688e19c630369f5ed2d5aaa36a6729ca3",
+      "kind": "word",
+      "level": "B1",
+      "text": "medieval",
+      "meaning": "relativo a la Edad Media",
+      "meaning_fr": "médiéval",
+      "example": "El museo tiene armaduras medievales.",
+      "phonetic": "/meðiˈeβal/",
+      "anki_answer": "medieval",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "b8bc7ecee9c725f397b879e94fe50c46eed430d6",
+      "kind": "expression",
+      "level": "B1",
+      "text": "tomar el relevo",
+      "meaning": "suceder a alguien",
+      "meaning_fr": "prendre le relais",
+      "example": "La nueva generación tomó el relevo.",
+      "phonetic": "",
+      "anki_answer": "tomar el relevo",
+      "tags": [
+        "sucesión"
+      ]
+    },
+    {
+      "key": "530ecdf5fa18cc968ade374db24a99676181cc49",
+      "kind": "history",
+      "level": "B1",
+      "text": "impresor",
+      "meaning": "una persona que imprime libros",
+      "meaning_fr": "imprimeur",
+      "example": "El impresor publicó un folleto.",
+      "phonetic": "",
+      "anki_answer": "imprimeur",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14",
+      "kind": "word",
+      "level": "B2",
+      "text": "artefacto",
+      "meaning": "un objeto hecho por una persona",
+      "meaning_fr": "artefact",
+      "example": "El artefacto data del año 300 a. C.",
+      "phonetic": "/aɾteˈfakto/",
+      "anki_answer": "artefacto",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "28e30772486a9dad3a2a59008ff336715a57dde3",
+      "kind": "expression",
+      "level": "B2",
+      "text": "constituir una amenaza",
+      "meaning": "representar un peligro",
+      "meaning_fr": "constituer une menace",
+      "example": "La inflación constituye una amenaza.",
+      "phonetic": "",
+      "anki_answer": "constituir una amenaza",
+      "tags": [
+        "riesgo"
+      ]
+    },
+    {
+      "key": "29a4ef7778e45befc721812745b34c9c595f77b7",
+      "kind": "history",
+      "level": "B2",
+      "text": "fábrica",
+      "meaning": "un edificio donde se producen bienes",
+      "meaning_fr": "usine",
+      "example": "La fábrica daba trabajo a cientos de personas.",
+      "phonetic": "",
+      "anki_answer": "usine",
+      "tags": [
+        "trabajo"
+      ]
+    },
+    {
+      "key": "ef3d091380959c4655feaabf600a1528c69c269a",
+      "kind": "word",
+      "level": "C1",
+      "text": "diplomacia",
+      "meaning": "la gestión de relaciones entre Estados",
+      "meaning_fr": "diplomatie",
+      "example": "La diplomacia evitó una nueva guerra.",
+      "phonetic": "/diplomaˈθia/",
+      "anki_answer": "diplomacia",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "92589d7ca095ba6275c2dbaee8e3530d5e16c4c5",
+      "kind": "expression",
+      "level": "C1",
+      "text": "legitimar una reforma",
+      "meaning": "dar justificación a una reforma",
+      "meaning_fr": "légitimer une réforme",
+      "example": "El decreto legitimó la reforma.",
+      "phonetic": "",
+      "anki_answer": "legitimar una reforma",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "5d49edf73e144e8a82fc0bdbd930f62200e0f6bb",
+      "kind": "history",
+      "level": "C1",
+      "text": "filósofo",
+      "meaning": "un pensador que analiza ideas y valores",
+      "meaning_fr": "philosophe",
+      "example": "El filósofo defendía la tolerancia.",
+      "phonetic": "",
+      "anki_answer": "philosophe",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "f367e808a8fd0d7e09a509368b6f334e2f4f479e",
+      "kind": "word",
+      "level": "C2",
+      "text": "teleología",
+      "meaning": "la explicación de hechos por su finalidad",
+      "meaning_fr": "téléologie",
+      "example": "La teleología interpretaba el imperio como un destino.",
+      "phonetic": "/teleoloˈχia/",
+      "anki_answer": "teleología",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "1c4a411f97b8123bb31aef1b7be8c2c52dd58ca0",
+      "kind": "expression",
+      "level": "C2",
+      "text": "reconstruir la trama",
+      "meaning": "recrear la secuencia de hechos",
+      "meaning_fr": "reconstituer l'intrigue",
+      "example": "Reconstruyeron la trama diplomática.",
+      "phonetic": "",
+      "anki_answer": "reconstruir la trama",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "86a64716a69c51776b3c2ec479e50507b089ae05",
+      "kind": "history",
+      "level": "C2",
+      "text": "sincronía",
+      "meaning": "el estudio de un fenómeno en un momento dado",
+      "meaning_fr": "synchronie",
+      "example": "La sincronía describía la lengua en 1900.",
+      "phonetic": "",
+      "anki_answer": "synchronie",
+      "tags": [
+        "ciencia"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “caminar”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "marcher",
+      "item_key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: ____ los días",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "todos",
+      "item_key": "cf95736e835f06c13662ce970c987f191513c4e1"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “nombre”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "db7612ad0b7461713e002a6fb16c57adc38057c8"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “cocina”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "cuisine",
+      "item_key": "cbbb821401de65df0d0298080c51cff928fd8a6d"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: tener ____",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "hambre",
+      "item_key": "f4657549fd148225398194c52e825061efa12f3b"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “campesino”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "1d141e83710895b20a0f34115fff803d6de62fda"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “medieval”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "médiéval",
+      "item_key": "6867ad6688e19c630369f5ed2d5aaa36a6729ca3"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: tomar el ____",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "relevo",
+      "item_key": "b8bc7ecee9c725f397b879e94fe50c46eed430d6"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “impresor”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "530ecdf5fa18cc968ade374db24a99676181cc49"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “artefacto”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "artefact",
+      "item_key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: ____ una amenaza",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "constituir",
+      "item_key": "28e30772486a9dad3a2a59008ff336715a57dde3"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “fábrica”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "29a4ef7778e45befc721812745b34c9c595f77b7"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “diplomacia”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "diplomatie",
+      "item_key": "ef3d091380959c4655feaabf600a1528c69c269a"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ una reforma",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "legitimar",
+      "item_key": "92589d7ca095ba6275c2dbaee8e3530d5e16c4c5"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “filósofo”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "5d49edf73e144e8a82fc0bdbd930f62200e0f6bb"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “teleología”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "téléologie",
+      "item_key": "f367e808a8fd0d7e09a509368b6f334e2f4f479e"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ la trama",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "reconstruir",
+      "item_key": "1c4a411f97b8123bb31aef1b7be8c2c52dd58ca0"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “sincronía”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "86a64716a69c51776b3c2ec479e50507b089ae05"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 3,
+    "total": 6,
+    "origins": {
+      "fresh": 2,
+      "adjacent": 1
+    },
+    "source_count": 3,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "Antigüedad",
+      "Edad Media",
+      "Edad Moderna",
+      "General"
+    ],
+    "history_themes": [
+      "Cultura",
+      "Guerra",
+      "Imperio",
+      "Política",
+      "Sociedad"
+    ],
+    "search_path": "./data/es/search/2026-11-23.json"
+  }
+}

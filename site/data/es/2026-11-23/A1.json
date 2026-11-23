@@ -1,0 +1,660 @@
+{
+  "date": "2026-11-23",
+  "lang": "es",
+  "level": "A1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-23",
+    "level": "A1",
+    "word": {
+      "text": "caminar",
+      "level": "A1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/kamiˈnaɾ/",
+      "meaning": "moverse a pie",
+      "meaning_fr": "marcher",
+      "example": "Caminamos hasta la estación.",
+      "anki_answer": "caminar",
+      "tags": [
+        "movimiento"
+      ],
+      "key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "todos los días",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "cada día",
+      "meaning_fr": "tous les jours",
+      "example": "Camino al trabajo todos los días.",
+      "anki_answer": "todos los días",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "cf95736e835f06c13662ce970c987f191513c4e1",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "nombre",
+      "aliases": [
+        "nombre",
+        "nombres"
+      ],
+      "level": "A1",
+      "meaning": "la palabra que identifica a alguien o algo",
+      "meaning_fr": "nom",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "La ciudad cambió de nombre.",
+      "tags": [
+        "lenguaje"
+      ],
+      "key": "db7612ad0b7461713e002a6fb16c57adc38057c8",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8",
+      "kind": "word",
+      "level": "A1",
+      "text": "caminar",
+      "meaning": "moverse a pie",
+      "meaning_fr": "marcher",
+      "example": "Caminamos hasta la estación.",
+      "phonetic": "/kamiˈnaɾ/",
+      "anki_answer": "caminar",
+      "tags": [
+        "movimiento"
+      ]
+    },
+    {
+      "key": "cf95736e835f06c13662ce970c987f191513c4e1",
+      "kind": "expression",
+      "level": "A1",
+      "text": "todos los días",
+      "meaning": "cada día",
+      "meaning_fr": "tous les jours",
+      "example": "Camino al trabajo todos los días.",
+      "phonetic": "",
+      "anki_answer": "todos los días",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "db7612ad0b7461713e002a6fb16c57adc38057c8",
+      "kind": "history",
+      "level": "A1",
+      "text": "nombre",
+      "meaning": "la palabra que identifica a alguien o algo",
+      "meaning_fr": "nom",
+      "example": "La ciudad cambió de nombre.",
+      "phonetic": "",
+      "anki_answer": "nom",
+      "tags": [
+        "lenguaje"
+      ]
+    },
+    {
+      "key": "cbbb821401de65df0d0298080c51cff928fd8a6d",
+      "kind": "word",
+      "level": "A2",
+      "text": "cocina",
+      "meaning": "la habitación donde se prepara la comida",
+      "meaning_fr": "cuisine",
+      "example": "Está cocinando en la cocina.",
+      "phonetic": "/koˈθina/",
+      "anki_answer": "cocina",
+      "tags": [
+        "hogar"
+      ]
+    },
+    {
+      "key": "f4657549fd148225398194c52e825061efa12f3b",
+      "kind": "expression",
+      "level": "A2",
+      "text": "tener hambre",
+      "meaning": "querer comer",
+      "meaning_fr": "avoir faim",
+      "example": "Los niños tienen hambre.",
+      "phonetic": "",
+      "anki_answer": "tener hambre",
+      "tags": [
+        "comida"
+      ]
+    },
+    {
+      "key": "1d141e83710895b20a0f34115fff803d6de62fda",
+      "kind": "history",
+      "level": "A2",
+      "text": "campesino",
+      "meaning": "una persona que trabaja la tierra",
+      "meaning_fr": "paysan",
+      "example": "El campesino pagaba impuestos por la cosecha.",
+      "phonetic": "",
+      "anki_answer": "paysan",
+      "tags": [
+        "trabajo"
+      ]
+    },
+    {
+      "key": "6867ad6688e19c630369f5ed2d5aaa36a6729ca3",
+      "kind": "word",
+      "level": "B1",
+      "text": "medieval",
+      "meaning": "relativo a la Edad Media",
+      "meaning_fr": "médiéval",
+      "example": "El museo tiene armaduras medievales.",
+      "phonetic": "/meðiˈeβal/",
+      "anki_answer": "medieval",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "b8bc7ecee9c725f397b879e94fe50c46eed430d6",
+      "kind": "expression",
+      "level": "B1",
+      "text": "tomar el relevo",
+      "meaning": "suceder a alguien",
+      "meaning_fr": "prendre le relais",
+      "example": "La nueva generación tomó el relevo.",
+      "phonetic": "",
+      "anki_answer": "tomar el relevo",
+      "tags": [
+        "sucesión"
+      ]
+    },
+    {
+      "key": "530ecdf5fa18cc968ade374db24a99676181cc49",
+      "kind": "history",
+      "level": "B1",
+      "text": "impresor",
+      "meaning": "una persona que imprime libros",
+      "meaning_fr": "imprimeur",
+      "example": "El impresor publicó un folleto.",
+      "phonetic": "",
+      "anki_answer": "imprimeur",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14",
+      "kind": "word",
+      "level": "B2",
+      "text": "artefacto",
+      "meaning": "un objeto hecho por una persona",
+      "meaning_fr": "artefact",
+      "example": "El artefacto data del año 300 a. C.",
+      "phonetic": "/aɾteˈfakto/",
+      "anki_answer": "artefacto",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "28e30772486a9dad3a2a59008ff336715a57dde3",
+      "kind": "expression",
+      "level": "B2",
+      "text": "constituir una amenaza",
+      "meaning": "representar un peligro",
+      "meaning_fr": "constituer une menace",
+      "example": "La inflación constituye una amenaza.",
+      "phonetic": "",
+      "anki_answer": "constituir una amenaza",
+      "tags": [
+        "riesgo"
+      ]
+    },
+    {
+      "key": "29a4ef7778e45befc721812745b34c9c595f77b7",
+      "kind": "history",
+      "level": "B2",
+      "text": "fábrica",
+      "meaning": "un edificio donde se producen bienes",
+      "meaning_fr": "usine",
+      "example": "La fábrica daba trabajo a cientos de personas.",
+      "phonetic": "",
+      "anki_answer": "usine",
+      "tags": [
+        "trabajo"
+      ]
+    },
+    {
+      "key": "ef3d091380959c4655feaabf600a1528c69c269a",
+      "kind": "word",
+      "level": "C1",
+      "text": "diplomacia",
+      "meaning": "la gestión de relaciones entre Estados",
+      "meaning_fr": "diplomatie",
+      "example": "La diplomacia evitó una nueva guerra.",
+      "phonetic": "/diplomaˈθia/",
+      "anki_answer": "diplomacia",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "92589d7ca095ba6275c2dbaee8e3530d5e16c4c5",
+      "kind": "expression",
+      "level": "C1",
+      "text": "legitimar una reforma",
+      "meaning": "dar justificación a una reforma",
+      "meaning_fr": "légitimer une réforme",
+      "example": "El decreto legitimó la reforma.",
+      "phonetic": "",
+      "anki_answer": "legitimar una reforma",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "5d49edf73e144e8a82fc0bdbd930f62200e0f6bb",
+      "kind": "history",
+      "level": "C1",
+      "text": "filósofo",
+      "meaning": "un pensador que analiza ideas y valores",
+      "meaning_fr": "philosophe",
+      "example": "El filósofo defendía la tolerancia.",
+      "phonetic": "",
+      "anki_answer": "philosophe",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "f367e808a8fd0d7e09a509368b6f334e2f4f479e",
+      "kind": "word",
+      "level": "C2",
+      "text": "teleología",
+      "meaning": "la explicación de hechos por su finalidad",
+      "meaning_fr": "téléologie",
+      "example": "La teleología interpretaba el imperio como un destino.",
+      "phonetic": "/teleoloˈχia/",
+      "anki_answer": "teleología",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "1c4a411f97b8123bb31aef1b7be8c2c52dd58ca0",
+      "kind": "expression",
+      "level": "C2",
+      "text": "reconstruir la trama",
+      "meaning": "recrear la secuencia de hechos",
+      "meaning_fr": "reconstituer l'intrigue",
+      "example": "Reconstruyeron la trama diplomática.",
+      "phonetic": "",
+      "anki_answer": "reconstruir la trama",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "86a64716a69c51776b3c2ec479e50507b089ae05",
+      "kind": "history",
+      "level": "C2",
+      "text": "sincronía",
+      "meaning": "el estudio de un fenómeno en un momento dado",
+      "meaning_fr": "synchronie",
+      "example": "La sincronía describía la lengua en 1900.",
+      "phonetic": "",
+      "anki_answer": "synchronie",
+      "tags": [
+        "ciencia"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “caminar”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "marcher",
+      "item_key": "1cce6c9790fc89feff3218ee3f4a94cdc02543f8"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: ____ los días",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "todos",
+      "item_key": "cf95736e835f06c13662ce970c987f191513c4e1"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “nombre”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "db7612ad0b7461713e002a6fb16c57adc38057c8"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “cocina”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "cuisine",
+      "item_key": "cbbb821401de65df0d0298080c51cff928fd8a6d"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: tener ____",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "hambre",
+      "item_key": "f4657549fd148225398194c52e825061efa12f3b"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “campesino”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "1d141e83710895b20a0f34115fff803d6de62fda"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “medieval”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "médiéval",
+      "item_key": "6867ad6688e19c630369f5ed2d5aaa36a6729ca3"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: tomar el ____",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "relevo",
+      "item_key": "b8bc7ecee9c725f397b879e94fe50c46eed430d6"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “impresor”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "530ecdf5fa18cc968ade374db24a99676181cc49"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “artefacto”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "artefact",
+      "item_key": "c2e68a38f78cc2b21b48e97d0fa5415508b16e14"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: ____ una amenaza",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "constituir",
+      "item_key": "28e30772486a9dad3a2a59008ff336715a57dde3"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “fábrica”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "29a4ef7778e45befc721812745b34c9c595f77b7"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “diplomacia”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "diplomatie",
+      "item_key": "ef3d091380959c4655feaabf600a1528c69c269a"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ una reforma",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "legitimar",
+      "item_key": "92589d7ca095ba6275c2dbaee8e3530d5e16c4c5"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “filósofo”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "5d49edf73e144e8a82fc0bdbd930f62200e0f6bb"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “teleología”?",
+      "options": [
+        "artefact",
+        "cuisine",
+        "diplomatie",
+        "marcher"
+      ],
+      "answer": "téléologie",
+      "item_key": "f367e808a8fd0d7e09a509368b6f334e2f4f479e"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ la trama",
+      "options": [
+        "amenaza",
+        "constituir",
+        "días",
+        "hambre"
+      ],
+      "answer": "reconstruir",
+      "item_key": "1c4a411f97b8123bb31aef1b7be8c2c52dd58ca0"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “sincronía”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "86a64716a69c51776b3c2ec479e50507b089ae05"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 0,
+    "total": 6,
+    "origins": {},
+    "source_count": 0,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-23.json"
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "date": "2026-11-23",
+  "lang": "en",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 24,
+        "title": "Mexican soldiers attacked in wake of drug lord's arrest",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-23T14:54:03",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 629,
+        "duration_sec": null,
+        "body_text": "Mexican soldiers have detained eight alleged members of a drug cartel whose leader was arrested on Friday, sparking a wave of violence in northern Sinaloa state.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "15f3d851ea815fc38ba6c1ade53e0d1ba2a88d07",
+        "summary": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Mexican soldiers attacked in wake of drug lord's arrest — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 5,
+        "title": "AI Impact On Economy, Russia-Ukraine War Spills Into Poland, No Deal At COP31",
+        "source": "NPR Up First",
+        "source_id": "npr_up_first",
+        "category": "news",
+        "url": "https://www.npr.org/2026/11/23/nx-s1-6050781/ai-impact-on-economy-russia-ukraine-war-spills-into-poland-no-deal-at-cop31",
+        "published_at": "2026-11-23T11:01:52",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 69,
+        "duration_sec": 831,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/5ed55f35-ad34-4ac9-9417-564dcf9d6f12/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_d3afe887a13ae94feb1d04af5d380460_13300331.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=5ed55f35-ad34-4ac9-9417-564dcf9d6f12&feed=HMwRVgVt&t=podcast&e=nx-s1-6050781&p=510318&d=831&size=13299923&hash_redirect=1&x-total-bytes=13300331&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_326__1fa0b8d6d6eafce412c5425d5b603abc2ce9de77",
+        "description": "The AI boom is driving huge investment across the economy, but the buildout is also pushing up prices and adding new pressure to inflation. NATO holds an emergency meeting after three Russian cruise missiles entered Poland, as Warsaw pushes the alliance for more air defenses. Global climate talks ended without an agreement on moving away from fossil fuels, leaving countries further from the targets they set a decade ago.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "7215bb9eb1ddfd14409c593452f25e341152f4a7",
+        "summary": "The AI boom is driving huge investment across the economy, but the buildout is also pushing up prices and adding new pressure to inflation. NATO holds an emergency meeting after three Russian cruise missiles entered Poland, as Warsaw pushes the alliance for more air defenses. Global climate talks ended without an agreement on moving away from fossil fuels, leaving countries further from the targets they set a decade ago.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "AI Impact On Economy, Russia-Ukraine War Spills Into Poland, No Deal At COP31 — NPR Up First",
+        "duration_formatted": "13:51",
+        "source_url": "https://feeds.npr.org/510318/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 42,
+        "title": "More sex, different endings: how fan fiction makes our dreams come true",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/books/2026/nov/23/more-sex-different-endings-how-fan-fiction-makes-our-dreams-come-true",
+        "published_at": "2026-11-23T12:30:30",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 1296,
+        "duration_sec": null,
+        "body_text": "Shortly after this year’s London book fair, rumours began to circulate of a seven-figure book deal for a rewrite of the wildly popular work of Harry Potter fan fiction All the Young Dudes.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "060f58eaf8e4cd3554c055e7f476c1f575d2a6a0",
+        "summary": "A Harry Potter-inspired novel has earned its author more than £1m in a bidding war. What does this mean for the writers of fan fiction, and the platforms that host their passionate creations? Shortly after this year’s London book fair , rumours began to circulate of a seven-figure book deal for a rewrite of the wildly popular work of Harry Potter fan fiction All the Young Dudes. First published between 2017 and 2018 by user MsKingBean89 on the online platform Archive of Our Own, All the Young Dudes is arguably the most-read work of fan fiction of all time. Now it will be repackaged as a series under the pen name BN King, with the first novel, Wolfboy, due to be published in autumn 2027. This is by no means the first example of fan fiction crossing over into mainstream publishing: the bestselling debut of 2025, Alchemised, also started off as fan fiction based on the Harry Potter series, with some inspiration from The Handmaid’s Tale too. And nearly 15 years earlier, EL James published Fifty Shades of Grey, which began life as Twilight fan fiction before proceeding, in its new guise, to sell millions of copies worldwide.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "More sex, different endings: how fan fiction makes our dreams come true — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 7
+      },
+      "audio": {
+        "id": 1202124782,
+        "title": "Typee - Chapter 02",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/typee-by-herman-melville/",
+        "published_at": "2026-11-23T15:43:15",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 131,
+        "duration_sec": 1160,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/typee_librivox/typee_02_melville_64kb.mp3",
+        "description": "Typee by . Typee is Herman Melville's first book, recounting his experiences after having jumped ship in the Marquesas Islands in 1842, and becoming a captive of a cannibal island tribe. It was an immediate success in America and England, and was Melville's most popular work during his lifetime. It was not until the end of the 1930's that it was surpassed in popularity by Moby Dick, more than thir",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "785acb51f63bcf6dd988b6fff4dd4d1c40cbca8f",
+        "summary": "Typee by . Typee is Herman Melville's first book, recounting his experiences after having jumped ship in the Marquesas Islands in 1842, and becoming a captive of a cannibal island tribe. It was an immediate success in America and England, and was Melville's most popular work during his lifetime. It was not until the end of the 1930's that it was surpassed in popularity by Moby Dick, more than thir",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Typee - Chapter 02 — LibriVox (culture)",
+        "duration_formatted": "19:20",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-23",
+    "level": "C1",
+    "word": {
+      "text": "subtle",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈsʌtl/",
+      "meaning": "not obvious, but still important",
+      "meaning_fr": "subtil",
+      "example": "There is a subtle difference in meaning.",
+      "anki_answer": "subtil",
+      "tags": [
+        "detail"
+      ],
+      "key": "8128c11168ce3aa69c79c8e6e88257dee4dc5bf1",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈsʌt(ə)l/",
+        "definitions": [
+          "Hard to grasp; not obvious or easily understood; barely noticeable.",
+          "(of a thing) Cleverly contrived.",
+          "(of a person or animal) Cunning, skillful.",
+          "Insidious."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/subtle-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"use-with-mention\" about=\"#mwt48\" typeof=\"mw:Transclusion\">Senses relating to <a rel=\"mw:WikiLink\" href=\"/wiki/tangible#Adjective\" title=\"tangible\">tangible</a> <a rel=\"mw:WikiLink\" href=\"/wiki/thing#English\" title=\"thing\">things</a>.</span>\n<ol><li>Of an <a rel=\"mw:WikiLink\" href=\"/wiki/action#Noun\" title=\"action\">action</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/movement\" title=\"movement\">movement</a>: very <a rel=\"mw:WikiLink\" href=\"/wiki/delicate#Adjective\" title=\"delicate\">delicate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/slight#Adjective\" title=\"slight\">slight</a>, and thus <a rel=\"mw:WikiLink\" href=\"/wiki/barely\" title=\"barely\">barely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a>; not <a rel=\"mw:WikiLink\" href=\"/wiki/obvious\" title=\"obvious\">obvious</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/inconspicuous\" title=\"inconspicuous\">inconspicuous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/unintrusive\" title=\"unintrusive\">unintrusive</a>.\n</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> Having a delicate or <a rel=\"mw:WikiLink\" href=\"/wiki/fine#Adjective\" title=\"fine\">fine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/substance#Noun\" title=\"substance\">substance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/texture#Noun\" title=\"texture\">texture</a>; hence, <a rel=\"mw:WikiLink\" href=\"/wiki/exquisite#Adjective\" title=\"exquisite\">exquisite</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/refined#Adjective\" title=\"refined\">refined</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt53\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/slender\" title=\"slender\">Slender</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/thin#Adjective\" title=\"thin\">thin</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt54\" typeof=\"mw:Transclusion\"></span> Of a substance: <a rel=\"mw:WikiLink\" href=\"/wiki/finely\" title=\"finely\">finely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/powdered#Adjective\" title=\"powdered\">powdered</a>; also, of <a rel=\"mw:WikiLink\" href=\"/wiki/particle\" title=\"particle\">particles</a> of a substance: very fine or <a rel=\"mw:WikiLink\" href=\"/wiki/small#Adjective\" title=\"small\">small</a>.</li>\n<li><span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> Of <a rel=\"mw:WikiLink\" href=\"/wiki/weight#Noun\" title=\"weight\">weight</a>: after the <span class=\"Latn\" lang=\"en\" about=\"#mwt56\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/tare#English\" title=\"tare\">tare</a></span><span about=\"#mwt56\"> </span><span class=\"mention-gloss-paren annotation-paren\" about=\"#mwt56\">(</span><span class=\"mention-gloss-double-quote\" about=\"#mwt56\">“</span><span class=\"mention-gloss\" about=\"#mwt56\">weight of an <a rel=\"mw:WikiLink\" href=\"/wiki/empty#Adjective\" title=\"empty\">empty</a> <a rel=\"mw:WikiLink\" href=\"/wiki/container\" title=\"container\">container</a></span><span class=\"mention-gloss-double-quote\" about=\"#mwt56\">”</span><span class=\"mention-gloss-paren annotation-paren\" about=\"#mwt56\">)</span> has been <a rel=\"mw:WikiLink\" href=\"/wiki/subtract\" title=\"subtract\">subtracted</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/net#Adjective\" title=\"net\">net</a>.",
+          "Of an <a rel=\"mw:WikiLink\" href=\"/wiki/action#Noun\" title=\"action\">action</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/movement\" title=\"movement\">movement</a>: very <a rel=\"mw:WikiLink\" href=\"/wiki/delicate#Adjective\" title=\"delicate\">delicate</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/slight#Adjective\" title=\"slight\">slight</a>, and thus <a rel=\"mw:WikiLink\" href=\"/wiki/barely\" title=\"barely\">barely</a> <a rel=\"mw:WikiLink\" href=\"/wiki/noticeable\" title=\"noticeable\">noticeable</a>; not <a rel=\"mw:WikiLink\" href=\"/wiki/obvious\" title=\"obvious\">obvious</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/inconspicuous\" title=\"inconspicuous\">inconspicuous</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/unintrusive\" title=\"unintrusive\">unintrusive</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> Having a delicate or <a rel=\"mw:WikiLink\" href=\"/wiki/fine#Adjective\" title=\"fine\">fine</a> <a rel=\"mw:WikiLink\" href=\"/wiki/substance#Noun\" title=\"substance\">substance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/texture#Noun\" title=\"texture\">texture</a>; hence, <a rel=\"mw:WikiLink\" href=\"/wiki/exquisite#Adjective\" title=\"exquisite\">exquisite</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/refined#Adjective\" title=\"refined\">refined</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt53\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/slender\" title=\"slender\">Slender</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/thin#Adjective\" title=\"thin\">thin</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "with a fine-tooth comb",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "very thoroughly",
+      "meaning_fr": "au peigne fin",
+      "example": "The lawyer examined the contract with a fine-tooth comb.",
+      "anki_answer": "peigne fin",
+      "tags": [
+        "checking"
+      ],
+      "key": "57d29350b91830e3e390c69c02c565d631572dce",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "armistice",
+      "aliases": [
+        "armistice",
+        "armistices"
+      ],
+      "level": "C1",
+      "meaning": "an agreement to stop fighting temporarily",
+      "meaning_fr": "armistice",
+      "period": "World War I",
+      "theme": "War",
+      "example": "The armistice was signed in November 1918.",
+      "tags": [
+        "war"
+      ],
+      "key": "79289014f01475a6394e26a55a5610d17bb4937b",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "5b3b107ef77566dc9b11009566f5b532266cf69b",
+      "kind": "word",
+      "level": "A1",
+      "text": "black",
+      "meaning": "the darkest colour",
+      "meaning_fr": "noir",
+      "example": "He has a black cat.",
+      "phonetic": "/blæk/",
+      "anki_answer": "noir",
+      "tags": [
+        "colours"
+      ]
+    },
+    {
+      "key": "f8eb7f524f5708c41007e8c1516fccae5ca6d07d",
+      "kind": "expression",
+      "level": "A1",
+      "text": "talk to",
+      "meaning": "speak with someone",
+      "meaning_fr": "parler à",
+      "example": "Can I talk to you for a minute?",
+      "phonetic": "",
+      "anki_answer": "parler",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "49800674284a42615792d5c51fcfe5213aba9301",
+      "kind": "history",
+      "level": "A1",
+      "text": "sword",
+      "meaning": "a weapon with a long blade",
+      "meaning_fr": "épée",
+      "example": "A sword hung on the castle wall.",
+      "phonetic": "",
+      "anki_answer": "épée",
+      "tags": [
+        "weapons"
+      ]
+    },
+    {
+      "key": "bf2cf0edcb7725a5b1f120677ef3aaeeba425308",
+      "kind": "word",
+      "level": "A2",
+      "text": "share",
+      "meaning": "give part of something to others",
+      "meaning_fr": "partager",
+      "example": "They share the cake.",
+      "phonetic": "/ʃer/",
+      "anki_answer": "partager",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "key": "c8e031c06164f92e96ef03f821ba1015d5649ccb",
+      "kind": "expression",
+      "level": "A2",
+      "text": "turn off",
+      "meaning": "stop a device or light",
+      "meaning_fr": "éteindre",
+      "example": "Remember to turn off the TV.",
+      "phonetic": "",
+      "anki_answer": "éteindre",
+      "tags": [
+        "devices"
+      ]
+    },
+    {
+      "key": "b06b660f24007d3c4fa00d6e881fdcf4fc4c8ee1",
+      "kind": "history",
+      "level": "A2",
+      "text": "captain",
+      "meaning": "an officer who leads a group",
+      "meaning_fr": "capitaine",
+      "example": "The captain commanded the ship.",
+      "phonetic": "",
+      "anki_answer": "capitaine",
+      "tags": [
+        "war"
+      ]
+    },
+    {
+      "key": "54af07f39dc7b1ee4a8dafecda03074bdff5c230",
+      "kind": "word",
+      "level": "B1",
+      "text": "habit",
+      "meaning": "something you do regularly",
+      "meaning_fr": "habitude",
+      "example": "Reading before bed is a good habit.",
+      "phonetic": "/ˈhæbɪt/",
+      "anki_answer": "habitude",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "8d9295003b1ebc6ff609c33399f0f8605d9c2a2b",
+      "kind": "expression",
+      "level": "B1",
+      "text": "on purpose",
+      "meaning": "deliberately",
+      "meaning_fr": "exprès",
+      "example": "She did it on purpose.",
+      "phonetic": "",
+      "anki_answer": "exprès",
+      "tags": [
+        "manner"
+      ]
+    },
+    {
+      "key": "297fda6b4b680c74be63fcbbf4855685aa4e590f",
+      "kind": "history",
+      "level": "B1",
+      "text": "medieval",
+      "meaning": "relating to the Middle Ages",
+      "meaning_fr": "médiéval",
+      "example": "The museum has medieval armour.",
+      "phonetic": "",
+      "anki_answer": "médiéval",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "b3d64bf8d8b73eaa7c139e3a97c8815981dbde83",
+      "kind": "word",
+      "level": "B2",
+      "text": "tradition",
+      "meaning": "a custom passed down over time",
+      "meaning_fr": "tradition",
+      "example": "The village keeps an old tradition.",
+      "phonetic": "/trəˈdɪʃn/",
+      "anki_answer": "tradition",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "647cd62130bd657257b6425688c2c1b032272097",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be over the moon",
+      "meaning": "be extremely happy",
+      "meaning_fr": "être aux anges",
+      "example": "She was over the moon about the news.",
+      "phonetic": "",
+      "anki_answer": "aux anges",
+      "tags": [
+        "happiness"
+      ]
+    },
+    {
+      "key": "a7fb6fe8610a64d8f599c8d4eca4ff4cbe61736d",
+      "kind": "history",
+      "level": "B2",
+      "text": "census",
+      "meaning": "an official count of a population",
+      "meaning_fr": "recensement",
+      "example": "The census listed every household.",
+      "phonetic": "",
+      "anki_answer": "recensement",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "8128c11168ce3aa69c79c8e6e88257dee4dc5bf1",
+      "kind": "word",
+      "level": "C1",
+      "text": "subtle",
+      "meaning": "not obvious, but still important",
+      "meaning_fr": "subtil",
+      "example": "There is a subtle difference in meaning.",
+      "phonetic": "/ˈsʌtl/",
+      "anki_answer": "subtil",
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "key": "57d29350b91830e3e390c69c02c565d631572dce",
+      "kind": "expression",
+      "level": "C1",
+      "text": "with a fine-tooth comb",
+      "meaning": "very thoroughly",
+      "meaning_fr": "au peigne fin",
+      "example": "The lawyer examined the contract with a fine-tooth comb.",
+      "phonetic": "",
+      "anki_answer": "peigne fin",
+      "tags": [
+        "checking"
+      ]
+    },
+    {
+      "key": "79289014f01475a6394e26a55a5610d17bb4937b",
+      "kind": "history",
+      "level": "C1",
+      "text": "armistice",
+      "meaning": "an agreement to stop fighting temporarily",
+      "meaning_fr": "armistice",
+      "example": "The armistice was signed in November 1918.",
+      "phonetic": "",
+      "anki_answer": "armistice",
+      "tags": [
+        "war"
+      ]
+    },
+    {
+      "key": "37d8ea130bf379e3dba5dab102eb49c98c928873",
+      "kind": "word",
+      "level": "C2",
+      "text": "perfunctory",
+      "meaning": "done quickly without real care",
+      "meaning_fr": "expéditif, superficiel",
+      "example": "She gave a perfunctory smile.",
+      "phonetic": "/pərˈfʌŋktəri/",
+      "anki_answer": "superficiel",
+      "tags": [
+        "attitude"
+      ]
+    },
+    {
+      "key": "1d0f24aea2a679f2a7f93427a70d385f0c32696e",
+      "kind": "expression",
+      "level": "C2",
+      "text": "steal someone's thunder",
+      "meaning": "take attention away from someone else's achievement",
+      "meaning_fr": "éclipser quelqu'un",
+      "example": "The minister stole the announcer's thunder.",
+      "phonetic": "",
+      "anki_answer": "éclipser",
+      "tags": [
+        "attention"
+      ]
+    },
+    {
+      "key": "cb438664fcc7c11f61738dedea69b181ca5639cb",
+      "kind": "history",
+      "level": "C2",
+      "text": "metanarrative",
+      "meaning": "an overarching story used to explain history",
+      "meaning_fr": "métarécit",
+      "example": "The author rejected the old metanarrative.",
+      "phonetic": "",
+      "anki_answer": "métarécit",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “black” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "noir",
+      "item_key": "5b3b107ef77566dc9b11009566f5b532266cf69b"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ to",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "talk",
+      "item_key": "f8eb7f524f5708c41007e8c1516fccae5ca6d07d"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “sword” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "49800674284a42615792d5c51fcfe5213aba9301"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “share” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "partager",
+      "item_key": "bf2cf0edcb7725a5b1f120677ef3aaeeba425308"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ off",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "turn",
+      "item_key": "c8e031c06164f92e96ef03f821ba1015d5649ccb"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “captain” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "b06b660f24007d3c4fa00d6e881fdcf4fc4c8ee1"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “habit” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "habitude",
+      "item_key": "54af07f39dc7b1ee4a8dafecda03074bdff5c230"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: on ____",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "purpose",
+      "item_key": "8d9295003b1ebc6ff609c33399f0f8605d9c2a2b"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “medieval” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "297fda6b4b680c74be63fcbbf4855685aa4e590f"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “tradition” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "tradition",
+      "item_key": "b3d64bf8d8b73eaa7c139e3a97c8815981dbde83"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be ____ the moon",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "over",
+      "item_key": "647cd62130bd657257b6425688c2c1b032272097"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “census” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "a7fb6fe8610a64d8f599c8d4eca4ff4cbe61736d"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “subtle” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "subtil",
+      "item_key": "8128c11168ce3aa69c79c8e6e88257dee4dc5bf1"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: with a ____ comb",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "fine-tooth",
+      "item_key": "57d29350b91830e3e390c69c02c565d631572dce"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “armistice” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "World War I",
+      "item_key": "79289014f01475a6394e26a55a5610d17bb4937b"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “perfunctory” mean?",
+      "options": [
+        "expéditif, superficiel",
+        "habitude",
+        "noir",
+        "partager"
+      ],
+      "answer": "expéditif, superficiel",
+      "item_key": "37d8ea130bf379e3dba5dab102eb49c98c928873"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: steal ____ thunder",
+      "options": [
+        "comb",
+        "fine-tooth",
+        "moon",
+        "off"
+      ],
+      "answer": "someone's",
+      "item_key": "1d0f24aea2a679f2a7f93427a70d385f0c32696e"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “metanarrative” belong to?",
+      "options": [
+        "Contemporary",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Contemporary",
+      "item_key": "cb438664fcc7c11f61738dedea69b181ca5639cb"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 3
+    },
+    "source_count": 4,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-23.json"
+  }
+}
