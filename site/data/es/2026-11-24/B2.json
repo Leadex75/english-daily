@@ -1,0 +1,756 @@
+{
+  "date": "2026-11-24",
+  "lang": "es",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 1888177359,
+        "title": "\"Quiero destruir el capitalismo, no al país\": así operan los grupos de ultraizquierda que impulsan las protestas violentas en Francia",
+        "source": "BBC Mundo (texto)",
+        "source_id": "es_bbc_mundo_text",
+        "category": "news",
+        "url": "https://www.bbc.com/mundo/articles/cmx27q3w9qjxo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-24T05:01:11",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 2449,
+        "duration_sec": null,
+        "body_text": "\"Quiero destruir el capitalismo, no al país\": así operan los grupos de ultraizquierda que impulsan las protestas violentas en Francia - Autor, Katya Adler - Título del autor, Editora de Europa de BBC News - Fecha de publicación - Tiempo de lectura: 11 min Francia está sumida en el caos.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d755f7ceb9c91829e570a5e2c8ab61f00afd7d8a",
+        "summary": "El pasado sábado se cumplió el sexto fin de semana consecutivo de manifestaciones contra el aumento vertiginoso de precios, el deterioro de los servicios públicos y los presuntos casos de brutalidad policial.",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "\"Quiero destruir el capitalismo, no al país\": así operan los grupos de ultraizquierda que impulsan las protestas violentas en Francia — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 13
+      },
+      "audio": {
+        "id": 1888177372,
+        "title": "24 Horas - La entrevista del día - 23/11/26",
+        "source": "RNE 24 horas",
+        "source_id": "es_rne_24_horas",
+        "category": "news",
+        "url": "https://www.rtve.es/play/audios/24-horas/entrevista-del-dia-23-11-26/17327496/",
+        "published_at": "2026-11-23T19:30:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 1,
+        "duration_sec": 1801,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/9/5/1795464646659.mp3?idasset=17327496&download-token=1795535206_0x5c0c6ae19c6c4e54ab9b387a184008cd3ed85823",
+        "description": "null",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "9608180108bb53a115df632433f217b647a68dff",
+        "summary": "null",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "24 Horas - La entrevista del día - 23/11/26 — RNE 24 horas",
+        "duration_formatted": "30:01",
+        "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": null,
+      "audio": {
+        "id": 1888177390,
+        "title": "No es un día cualquiera - Xosé, Por qué: \" ¿Qué tiene que ver un lápiz con una tele? \"",
+        "source": "RNE No es un día cualquiera",
+        "source_id": "es_rne_no_es_un_dia_cualquiera",
+        "category": "culture",
+        "url": "https://www.rtve.es/play/audios/no-es-un-dia-cualquiera/no-dia-cualquiera-xose-tiene-ver-lapiz-tele/17325310/",
+        "published_at": "2026-11-22T09:28:15",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 30,
+        "duration_sec": 793,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SSECNOE/mp3/3/0/1795338871303.mp3?idasset=17325310&download-token=1795535242_0x37490aa756e65617feb38219273a977aea0ae831",
+        "description": "\" ¿Qué tiene que ver un lápiz con una tele? \", pregunta y responde Xosé Castro en un `Xosé, Por qué´, cargado de consultas, risas y buenos momentos desde Lanzarote. Escuchar audio",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "fcfa2fd6841e8e38fa55d961cdc875877dfb71e8",
+        "summary": "\" ¿Qué tiene que ver un lápiz con una tele? \", pregunta y responde Xosé Castro en un `Xosé, Por qué´, cargado de consultas, risas y buenos momentos desde Lanzarote. Escuchar audio",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "No es un día cualquiera - Xosé, Por qué: \" ¿Qué tiene que ver un lápiz con una tele? \" — RNE No es un día cualquiera",
+        "duration_formatted": "13:13",
+        "source_url": "https://www.rtve.es/api/programas/2054/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-24",
+    "level": "B2",
+    "word": {
+      "text": "levantamiento",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/leβantaˈmjento/",
+      "meaning": "una revuelta repentina de un grupo",
+      "meaning_fr": "soulèvement",
+      "example": "El levantamiento se extendió a otros pueblos.",
+      "anki_answer": "levantamiento",
+      "tags": [
+        "política"
+      ],
+      "key": "ffece8386edd7fb59834ef68bd95f62c3a18e5f4",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "cobrar relevancia",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "volverse más importante",
+      "meaning_fr": "prendre de l'importance",
+      "example": "El tema cobró relevancia.",
+      "anki_answer": "cobrar relevancia",
+      "tags": [
+        "importancia"
+      ],
+      "key": "02d2f993906bf9eb27ca0e5e7a32e2ddd66a6200",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "canal",
+      "aliases": [
+        "canal",
+        "canales"
+      ],
+      "level": "B2",
+      "meaning": "una vía de agua artificial",
+      "meaning_fr": "canal",
+      "period": "Siglo XIX",
+      "theme": "Economía",
+      "example": "El canal unía dos ríos.",
+      "tags": [
+        "economía"
+      ],
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "48ee28a25d2471705499d6fab797544bb7965e3a",
+      "kind": "word",
+      "level": "A1",
+      "text": "abrir",
+      "meaning": "mover algo para que no esté cerrado",
+      "meaning_fr": "ouvrir",
+      "example": "Abre la ventana, por favor.",
+      "phonetic": "/aˈbɾiɾ/",
+      "anki_answer": "abrir",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "932fa16fa879a40d49dca536fa407427cc911112",
+      "kind": "expression",
+      "level": "A1",
+      "text": "por la tarde",
+      "meaning": "en la parte final del día",
+      "meaning_fr": "l'après-midi",
+      "example": "Descansamos por la tarde.",
+      "phonetic": "",
+      "anki_answer": "por la tarde",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "f5f13ccc6bc5828f17977c1ae3476f1e338b7493",
+      "kind": "history",
+      "level": "A1",
+      "text": "escudo",
+      "meaning": "un objeto para protegerse de un ataque",
+      "meaning_fr": "bouclier",
+      "example": "El caballero llevaba un escudo.",
+      "phonetic": "",
+      "anki_answer": "bouclier",
+      "tags": [
+        "armas"
+      ]
+    },
+    {
+      "key": "443108bb923cc27631600d5ecf4231cda442cc8a",
+      "kind": "word",
+      "level": "A2",
+      "text": "respuesta",
+      "meaning": "una réplica a una pregunta",
+      "meaning_fr": "réponse",
+      "example": "No supe la respuesta.",
+      "phonetic": "/resˈpuesta/",
+      "anki_answer": "respuesta",
+      "tags": [
+        "educación"
+      ]
+    },
+    {
+      "key": "77bde6cc5c943be45d7b0126bc1bd7b71e36e618",
+      "kind": "expression",
+      "level": "A2",
+      "text": "apagar la luz",
+      "meaning": "detener una luz o un aparato",
+      "meaning_fr": "éteindre la lumière",
+      "example": "Apaga la luz al salir.",
+      "phonetic": "",
+      "anki_answer": "apagar la luz",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "da94e46ac1aa9e66c158d7b6953ffc1f138cf52a",
+      "kind": "history",
+      "level": "A2",
+      "text": "costumbre",
+      "meaning": "una tradición seguida por un grupo",
+      "meaning_fr": "coutume",
+      "example": "La costumbre sobrevivió siglos.",
+      "phonetic": "",
+      "anki_answer": "coutume",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "3d928d9f3780a0687dc7da5c15c34fbd8a4d7586",
+      "kind": "word",
+      "level": "B1",
+      "text": "artesanía",
+      "meaning": "una actividad manual especializada",
+      "meaning_fr": "artisanat",
+      "example": "La artesanía floreció en el pueblo.",
+      "phonetic": "/aɾtesaˈnia/",
+      "anki_answer": "artesanía",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "f212dfdad5ac5e1c1519fdcb99d946d5bbc814af",
+      "kind": "expression",
+      "level": "B1",
+      "text": "quedar atrás",
+      "meaning": "retrasarse respecto a otros",
+      "meaning_fr": "rester en arrière",
+      "example": "La región quedó atrás.",
+      "phonetic": "",
+      "anki_answer": "quedar atrás",
+      "tags": [
+        "competencia"
+      ]
+    },
+    {
+      "key": "24312f0556713d1e94cd4e1b3dfd3113c796cc3a",
+      "kind": "history",
+      "level": "B1",
+      "text": "sitio",
+      "meaning": "un bloqueo militar de una ciudad",
+      "meaning_fr": "siège",
+      "example": "El sitio duró tres meses.",
+      "phonetic": "",
+      "anki_answer": "siège",
+      "tags": [
+        "guerra"
+      ]
+    },
+    {
+      "key": "ffece8386edd7fb59834ef68bd95f62c3a18e5f4",
+      "kind": "word",
+      "level": "B2",
+      "text": "levantamiento",
+      "meaning": "una revuelta repentina de un grupo",
+      "meaning_fr": "soulèvement",
+      "example": "El levantamiento se extendió a otros pueblos.",
+      "phonetic": "/leβantaˈmjento/",
+      "anki_answer": "levantamiento",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "02d2f993906bf9eb27ca0e5e7a32e2ddd66a6200",
+      "kind": "expression",
+      "level": "B2",
+      "text": "cobrar relevancia",
+      "meaning": "volverse más importante",
+      "meaning_fr": "prendre de l'importance",
+      "example": "El tema cobró relevancia.",
+      "phonetic": "",
+      "anki_answer": "cobrar relevancia",
+      "tags": [
+        "importancia"
+      ]
+    },
+    {
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history",
+      "level": "B2",
+      "text": "canal",
+      "meaning": "una vía de agua artificial",
+      "meaning_fr": "canal",
+      "example": "El canal unía dos ríos.",
+      "phonetic": "",
+      "anki_answer": "canal",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "6f555758e1edc42f2d04c2d43d0956d8d8d55b4a",
+      "kind": "word",
+      "level": "C1",
+      "text": "urbanización",
+      "meaning": "el crecimiento de ciudades",
+      "meaning_fr": "urbanisation",
+      "example": "Las ciudades industriales sufrieron una urbanización rápida.",
+      "phonetic": "/uɾβaniθaˈθjon/",
+      "anki_answer": "urbanización",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "b8b3326233ed925298ff8602875f8e999709c0a5",
+      "kind": "expression",
+      "level": "C1",
+      "text": "desencadenar una crisis",
+      "meaning": "provocar una crisis",
+      "meaning_fr": "déclencher une crise",
+      "example": "La deuda desencadenó una crisis.",
+      "phonetic": "",
+      "anki_answer": "desencadenar una crisis",
+      "tags": [
+        "crisis"
+      ]
+    },
+    {
+      "key": "79628c4c3fec347d8b281dbd4d1634f3c1d5b5d3",
+      "kind": "history",
+      "level": "C1",
+      "text": "suzeranía",
+      "meaning": "la autoridad de un Estado sobre otro",
+      "meaning_fr": "suzeraineté",
+      "example": "El rey ejercía la suzeranía del ducado.",
+      "phonetic": "",
+      "anki_answer": "suzeraineté",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "089fd64b3ee33cff1af9f82c445702c3a2479383",
+      "kind": "word",
+      "level": "C2",
+      "text": "diacronía",
+      "meaning": "el estudio de un fenómeno a lo largo del tiempo",
+      "meaning_fr": "diachronie",
+      "example": "La diacronía reveló cambios en la lengua.",
+      "phonetic": "/djakɾoˈnia/",
+      "anki_answer": "diacronía",
+      "tags": [
+        "ciencia"
+      ]
+    },
+    {
+      "key": "077362a7489f25f4474d3dff744a15a9b60e2402",
+      "kind": "expression",
+      "level": "C2",
+      "text": "contraponer dos narrativas",
+      "meaning": "oponer dos relatos",
+      "meaning_fr": "opposer deux récits",
+      "example": "Contrapusieron dos narrativas del mismo hecho.",
+      "phonetic": "",
+      "anki_answer": "contraponer dos narrativas",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "2da340c3e6bc8b48cb4c5f7edceb3d693c19405a",
+      "kind": "history",
+      "level": "C2",
+      "text": "cartografía",
+      "meaning": "el arte y la ciencia de elaborar mapas",
+      "meaning_fr": "cartographie",
+      "example": "La cartografía portuguesa avanzó rápido.",
+      "phonetic": "",
+      "anki_answer": "cartographie",
+      "tags": [
+        "ciencia"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “abrir”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "ouvrir",
+      "item_key": "48ee28a25d2471705499d6fab797544bb7965e3a"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: por la ____",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "tarde",
+      "item_key": "932fa16fa879a40d49dca536fa407427cc911112"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “escudo”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "f5f13ccc6bc5828f17977c1ae3476f1e338b7493"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “respuesta”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "réponse",
+      "item_key": "443108bb923cc27631600d5ecf4231cda442cc8a"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: ____ la luz",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "apagar",
+      "item_key": "77bde6cc5c943be45d7b0126bc1bd7b71e36e618"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “costumbre”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "da94e46ac1aa9e66c158d7b6953ffc1f138cf52a"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “artesanía”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "artisanat",
+      "item_key": "3d928d9f3780a0687dc7da5c15c34fbd8a4d7586"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: ____ atrás",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "quedar",
+      "item_key": "f212dfdad5ac5e1c1519fdcb99d946d5bbc814af"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “sitio”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "24312f0556713d1e94cd4e1b3dfd3113c796cc3a"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “levantamiento”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "soulèvement",
+      "item_key": "ffece8386edd7fb59834ef68bd95f62c3a18e5f4"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: cobrar ____",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "relevancia",
+      "item_key": "02d2f993906bf9eb27ca0e5e7a32e2ddd66a6200"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “canal”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “urbanización”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "urbanisation",
+      "item_key": "6f555758e1edc42f2d04c2d43d0956d8d8d55b4a"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ una crisis",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "desencadenar",
+      "item_key": "b8b3326233ed925298ff8602875f8e999709c0a5"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “suzeranía”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "79628c4c3fec347d8b281dbd4d1634f3c1d5b5d3"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “diacronía”?",
+      "options": [
+        "artisanat",
+        "diachronie",
+        "ouvrir",
+        "réponse"
+      ],
+      "answer": "diachronie",
+      "item_key": "089fd64b3ee33cff1af9f82c445702c3a2479383"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ dos narrativas",
+      "options": [
+        "apagar",
+        "atrás",
+        "cobrar",
+        "contraponer"
+      ],
+      "answer": "contraponer",
+      "item_key": "077362a7489f25f4474d3dff744a15a9b60e2402"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “cartografía”?",
+      "options": [
+        "Edad Media",
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "2da340c3e6bc8b48cb4c5f7edceb3d693c19405a"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 3,
+    "total": 6,
+    "origins": {
+      "fresh": 3
+    },
+    "source_count": 3,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-24.json"
+  }
+}

@@ -24,6 +24,10 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "05e6daf28dcddb43764422b8c47e75acaeb3d053",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "060f58eaf8e4cd3554c055e7f476c1f575d2a6a0",
     "date": "2026-11-23"
   },
@@ -104,6 +108,10 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "19d9ea727c7fb784e5e7b377775162897dc491d7",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "1a36a2d31c5f3d9ad4026650b9cd80546c27dd45",
     "date": "2026-11-21"
   },
@@ -164,6 +172,10 @@
     "date": "2026-11-23"
   },
   {
+    "guid_hash": "28aa09550e18a1d390e87f92ea06fc1d9adf6c90",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "2991acb6a7139ddc2ee4d2b328ea09cdce48c832",
     "date": "2026-11-22"
   },
@@ -208,6 +220,10 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "3d75880ad8cb4158351cdb98cef026ea494e8191",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "3e3c8e26a2048aa9e124e3b888f2e79c6112649e",
     "date": "2026-11-22"
   },
@@ -248,8 +264,16 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "4bbddbb1ff3595980b37f4109c0b9786c1085e01",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "4c366123c22a29d8cfd3534486a553f998ad1988",
     "date": "2026-11-21"
+  },
+  {
+    "guid_hash": "502923b600c9cfb1c191b36ebdacfc39a7caf4b0",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "52085bacc938595040c2dbffe737889a516018ec",
@@ -328,6 +352,10 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "6da6ff3c01b1c547c8f361d706eb32d0693ae5a9",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "6f117753544c56c2514a00aa985aacaa32f98f2b",
     "date": "2026-11-21"
   },
@@ -356,6 +384,10 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "76c326fcfa0274821dea0c1ccfb1c581e02a830f",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "7758fe9190cec281f27d3c43ec030388212585c9",
     "date": "2026-11-21"
   },
@@ -368,8 +400,16 @@
     "date": "2026-11-23"
   },
   {
+    "guid_hash": "79b5efb515da3f08f1cc18b4bf5bb5dcf9c47627",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "79c69331191f2e6918f44c369195517471faaed1",
     "date": "2026-11-21"
+  },
+  {
+    "guid_hash": "7b3adc000f5cdb52c5d21363a2459d67a7b9a87e",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "7ba626238e20d556bb934ff1a0054e77a6b5ba30",
@@ -424,8 +464,16 @@
     "date": "2026-11-23"
   },
   {
+    "guid_hash": "877c3f3eeec02435dea4b532d4de673735c4b863",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "87d706f732081cfef70cca258c2cf2d812331cd4",
     "date": "2026-11-21"
+  },
+  {
+    "guid_hash": "88792b6f27e868a3ca1d315a890064fb50539852",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "8a65265c674846693fdac08f6b98d89633e346b0",
@@ -434,6 +482,14 @@
   {
     "guid_hash": "8c4d7687567a634f8992986a6ed7e98a568ffa34",
     "date": "2026-11-22"
+  },
+  {
+    "guid_hash": "8d4fe37dc99dde17ce58fe4ebf09dbee8a7af229",
+    "date": "2026-11-24"
+  },
+  {
+    "guid_hash": "8e2c3069feaecee292f68c6a57a6a4881101e44c",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "8e75fc906def25b4e9b05811fe28247b96761712",
@@ -480,12 +536,24 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "9d6b557f066ad380181174ac0be58e19d51a3a5b",
+    "date": "2026-11-24"
+  },
+  {
+    "guid_hash": "9dafe6c129ddbd3183bb8b0a205cce5816430985",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "9ddcedaf5b998fb1ef8ca3b485735535695fb6ea",
     "date": "2026-11-22"
   },
   {
     "guid_hash": "9fac8aa583c9292452d1ef30df275f3528ba1c3d",
     "date": "2026-11-21"
+  },
+  {
+    "guid_hash": "a076ef7b1aa4df8002c6ae8dc4805e7ede4a482a",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "a497947206659cfa6f4ec365b9f61b9bcf1b4214",
@@ -564,12 +632,24 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "bbb58acf49be355800a52946a5eb8d949c4e3fc6",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "c05c9818eeaf1ab9f3b55951c39fa06f55411ff9",
     "date": "2026-11-21"
   },
   {
     "guid_hash": "c0f67aebc0602854876bab09eaecc53038e202f4",
     "date": "2026-11-22"
+  },
+  {
+    "guid_hash": "c20aec4e472f03c72aa60244b7f98af93557777c",
+    "date": "2026-11-24"
+  },
+  {
+    "guid_hash": "c2ad830862f33dc43f1fdf4799085d43a2bec103",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "c393a08d0eda0926a0d96424ae0cb0bb15b157a7",
@@ -624,6 +704,10 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "d2f14b6fcae2f99c464b2a85eace1764004c8e00",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "d33d2911a95538bb2b835043e5d4289eac7913a9",
     "date": "2026-11-21"
   },
@@ -632,12 +716,20 @@
     "date": "2026-11-21"
   },
   {
+    "guid_hash": "d756fddab5e2a152fe959c06b6db602b8983fda0",
+    "date": "2026-11-24"
+  },
+  {
     "guid_hash": "d7b0996df3b93d8e454e4163bf96240696777a0c",
     "date": "2026-11-21"
   },
   {
     "guid_hash": "d857381ede20065daa741564545d931dc4fda20f",
     "date": "2026-11-22"
+  },
+  {
+    "guid_hash": "dae41f187d49238c56cb0522bb94aa7e54ac2f15",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "dafe7e9a5625b212d47ca86b5df3ab7507887770",
@@ -678,6 +770,10 @@
   {
     "guid_hash": "e7b2d18bd9fa694e5b4d4dac5bf6b7265b37c69c",
     "date": "2026-11-22"
+  },
+  {
+    "guid_hash": "e8e9d606983f9f4bd458da1117894f427457b750",
+    "date": "2026-11-24"
   },
   {
     "guid_hash": "e99e115c16a65cba2e94ab1daa6e613cec859812",

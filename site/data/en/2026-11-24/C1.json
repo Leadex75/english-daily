@@ -1,0 +1,984 @@
+{
+  "date": "2026-11-24",
+  "lang": "en",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 28,
+        "title": "Car bomb tears through Colombian city wounding more than 20",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cjqlq2n4np7do?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-24T11:45:52",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 516,
+        "duration_sec": null,
+        "body_text": "A car bomb has exploded in the central Colombian city of Villavicencio, injuring at least 23 people. The explosive device was detonated in front of the offices of the regional government, in the city centre, damaging several buildings.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "8d4fe37dc99dde17ce58fe4ebf09dbee8a7af229",
+        "summary": "The explosion is the latest in a string of attacks on buildings housing the security forces and government offices.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Car bomb tears through Colombian city wounding more than 20 — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 3
+      },
+      "audio": {
+        "id": 6,
+        "title": "Trump's Push To Reinstate Huang, Market Reacts To Nvidia, Russia-Ukraine War Widening",
+        "source": "NPR Up First",
+        "source_id": "npr_up_first",
+        "category": "news",
+        "url": "https://www.npr.org/2026/11/24/nx-s1-6052075/trumps-push-to-reinstate-huang-market-reacts-to-nvidia-russia-ukraine-war-widening",
+        "published_at": "2026-11-24T11:01:14",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 79,
+        "duration_sec": 796,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/5e7452ac-2de2-4336-8d0b-8f08ad9a0495/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_26b7d1bb6499f8bb74c156245ac5f1c3_12746117.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=5e7452ac-2de2-4336-8d0b-8f08ad9a0495&feed=HMwRVgVt&t=podcast&e=nx-s1-6052075&p=510318&d=796&size=12745709&hash_redirect=1&x-total-bytes=12746117&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_327__6eba5c589d25202386faf6511de2da73f8a8a7b8",
+        "description": "President Trump says he pushed Nvidia to bring Jensen Huang back as CEO, raising questions about why the White House is getting involved in who runs a private company. Nvidia gained nearly a trillion dollars in value after Huang returned, showing how much of the A-I economy is tied to one company and one man. Russia’s war in Ukraine is spreading far beyond the battlefield, even as the Trump administration says talks toward a peace deal are making progress.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "88792b6f27e868a3ca1d315a890064fb50539852",
+        "summary": "President Trump says he pushed Nvidia to bring Jensen Huang back as CEO, raising questions about why the White House is getting involved in who runs a private company. Nvidia gained nearly a trillion dollars in value after Huang returned, showing how much of the A-I economy is tied to one company and one man. Russia’s war in Ukraine is spreading far beyond the battlefield, even as the Trump administration says talks toward a peace deal are making progress.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Trump's Push To Reinstate Huang, Market Reacts To Nvidia, Russia-Ukraine War Widening — NPR Up First",
+        "duration_formatted": "13:16",
+        "source_url": "https://feeds.npr.org/510318/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 43,
+        "title": "From Sovereigns to Servants by Alexandra Prokopenko review – Putin and his yes men",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/books/2026/nov/24/from-sovereigns-to-servants-by-alexandra-prokopenko-review-putin-and-his-yes-men",
+        "published_at": "2026-11-24T09:00:11",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 668,
+        "duration_sec": null,
+        "body_text": "When Vladimir Putin launched his full-scale invasion of Ukraine four and a half years ago, it was a shock, but it wasn’t a surprise. The US and the UK had been publicly warning their allies for weeks about what Russia was planning, as well as threatening the Russians with a wave of sanctions unprecedented against a major power.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "bbb58acf49be355800a52946a5eb8d949c4e3fc6",
+        "summary": "A disturbing account of the way Russia’s elites have reduced themselves to craven courtiers When Vladimir Putin launched his full-scale invasion of Ukraine four and a half years ago, it was a shock, but it wasn’t a surprise. The US and the UK had been publicly warning their allies for weeks about what Russia was planning, as well as threatening the Russians with a wave of sanctions unprecedented against a major power. Putin’s foreign policy had long relied on confusion and untruth. By saying that they knew exactly what he was up to, Britain and America were hoping first to deny him his usual ambiguity, and second to pressure the men around him into making him stop, since war would deprive them of the stolen assets they’d stashed in London’s most exclusive neighbourhoods.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "From Sovereigns to Servants by Alexandra Prokopenko review – Putin and his yes men — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 1555996665,
+        "title": "Typee - Chapter 03",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/typee-by-herman-melville/",
+        "published_at": "2026-11-23T15:43:15",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 131,
+        "duration_sec": 585,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/typee_librivox/typee_03_melville_64kb.mp3",
+        "description": "Typee by . Typee is Herman Melville's first book, recounting his experiences after having jumped ship in the Marquesas Islands in 1842, and becoming a captive of a cannibal island tribe. It was an immediate success in America and England, and was Melville's most popular work during his lifetime. It was not until the end of the 1930's that it was surpassed in popularity by Moby Dick, more than thir",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "79b5efb515da3f08f1cc18b4bf5bb5dcf9c47627",
+        "summary": "Typee by . Typee is Herman Melville's first book, recounting his experiences after having jumped ship in the Marquesas Islands in 1842, and becoming a captive of a cannibal island tribe. It was an immediate success in America and England, and was Melville's most popular work during his lifetime. It was not until the end of the 1930's that it was surpassed in popularity by Moby Dick, more than thir",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Typee - Chapter 03 — LibriVox (culture)",
+        "duration_formatted": "9:45",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": {
+        "id": 60,
+        "title": "Why we’re still thinking about the Roman empire",
+        "source": "HistoryExtra podcast",
+        "source_id": "historyextra",
+        "category": "history",
+        "url": "",
+        "published_at": "2026-11-24T00:00:00",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 246,
+        "duration_sec": 2629,
+        "body_text": null,
+        "audio_url": "https://dcs-cached.megaphone.fm/NSR4810194657.mp3?key=dd38996d8ece8a70a75457038c940c4e&request_event_id=d2a23050-f845-4f73-973c-8f133e9ab9de&session_id=d2a23050-f845-4f73-973c-8f133e9ab9de&timetoken=1795541615_34167CDFA26B992AD642B59ACB3B7D89",
+        "description": "Why does Rome loom so large in the popular mindset – arguably more so than any other ancient civilisation – and what can that reveal about how we understand the past? Emily Briffett speaks with historian Rhiannon Garth Jones about her book All Roads Lead to Rome, to explore how the idea of Rome has been endlessly reused, reshaped and repurposed from ancient empire to modern politics and pop culture. Together, they consider the question: does Rome still matter today? ----- GO BEYOND THE PODCAST Curious to find out more about the Abbasid caliphate mentioned in the episode? Check out this episode with Hugh Kennedy, where he answers your questions on the multicultural medieval caliphate that stretched from Tunisia to the frontiers of India: https://bit.ly/3Q5Jcee ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "e8e9d606983f9f4bd458da1117894f427457b750",
+        "summary": "Why does Rome loom so large in the popular mindset – arguably more so than any other ancient civilisation – and what can that reveal about how we understand the past? Emily Briffett speaks with historian Rhiannon Garth Jones about her book All Roads Lead to Rome, to explore how the idea of Rome has been endlessly reused, reshaped and repurposed from ancient empire to modern politics and pop culture. Together, they consider the question: does Rome still matter today? ----- GO BEYOND THE PODCAST Curious to find out more about the Abbasid caliphate mentioned in the episode? Check out this episode with Hugh Kennedy, where he answers your questions on the multicultural medieval caliphate that stretched from Tunisia to the frontiers of India: https://bit.ly/3Q5Jcee ----- GET MORE WITH MEMBERSHIP Become a HistoryExtra podcast member and unlock access to The Full Story podcast, plus enjoy ad-free listening, early access to other podcast episodes, and a member-exclusive newsletter. Find out more and sign up here: ⁠https://historyextra.supportingcast.fm⁠ ----- EXPLORE MORE For more fascinating stories from the past, head to HistoryExtra, the home of ‘History’s Greatest’ podcasts. Find out more at ⁠⁠⁠historyextra.com/podcast⁠⁠⁠. ----- GET IN TOUCH We'd love to know what you think about the podcast, so leave us a review and let us know the topics you think we should be covering. Or, follow us on ⁠Facebook⁠, ⁠X⁠, ⁠Instagram⁠ or ⁠YouTube⁠ to keep in touch. Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [
+          "Antiquity",
+          "General",
+          "Middle Ages",
+          "19th century"
+        ],
+        "themes": [
+          "Culture",
+          "Empire",
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "ancient",
+            "aliases": [
+              "ancient",
+              "antiquity"
+            ],
+            "level": "A1",
+            "meaning": "from a very long time ago",
+            "meaning_fr": "ancien",
+            "period": "Antiquity",
+            "theme": "Culture",
+            "example": "We visited an ancient temple.",
+            "tags": [
+              "time"
+            ]
+          },
+          {
+            "text": "story",
+            "aliases": [
+              "story",
+              "tales"
+            ],
+            "level": "A1",
+            "meaning": "an account of past events",
+            "meaning_fr": "histoire, récit",
+            "period": "General",
+            "theme": "Culture",
+            "example": "She told us a story about the past.",
+            "tags": [
+              "culture"
+            ]
+          },
+          {
+            "text": "empire",
+            "aliases": [
+              "empire",
+              "imperial"
+            ],
+            "level": "A2",
+            "meaning": "a group of lands ruled by one emperor or government",
+            "meaning_fr": "empire",
+            "period": "General",
+            "theme": "Empire",
+            "example": "The empire covered three continents.",
+            "tags": [
+              "politics"
+            ]
+          },
+          {
+            "text": "home",
+            "aliases": [
+              "home",
+              "homes"
+            ],
+            "level": "A1",
+            "meaning": "the place where a person lives",
+            "meaning_fr": "foyer",
+            "period": "General",
+            "theme": "Society",
+            "example": "Families returned home after the war.",
+            "tags": [
+              "daily"
+            ]
+          },
+          {
+            "text": "road",
+            "aliases": [
+              "road",
+              "roads"
+            ],
+            "level": "A1",
+            "meaning": "a route for travelling between places",
+            "meaning_fr": "route",
+            "period": "Antiquity",
+            "theme": "Society",
+            "example": "The old road crossed the mountains.",
+            "tags": [
+              "places"
+            ]
+          },
+          {
+            "text": "book",
+            "aliases": [
+              "book",
+              "books"
+            ],
+            "level": "A1",
+            "meaning": "a written work with pages",
+            "meaning_fr": "livre",
+            "period": "General",
+            "theme": "Culture",
+            "example": "The book describes ancient Rome.",
+            "tags": [
+              "culture"
+            ]
+          },
+          {
+            "text": "medieval",
+            "aliases": [
+              "medieval",
+              "mediaeval"
+            ],
+            "level": "B1",
+            "meaning": "relating to the Middle Ages",
+            "meaning_fr": "médiéval",
+            "period": "Middle Ages",
+            "theme": "Culture",
+            "example": "The museum has medieval armour.",
+            "tags": [
+              "time"
+            ]
+          },
+          {
+            "text": "frontier",
+            "aliases": [
+              "frontier",
+              "frontiers"
+            ],
+            "level": "B1",
+            "meaning": "the edge of settled land",
+            "meaning_fr": "frontière",
+            "period": "19th century",
+            "theme": "Empire",
+            "example": "The frontier moved west each year.",
+            "tags": [
+              "empire"
+            ]
+          }
+        ],
+        "alt_text": "Why we’re still thinking about the Roman empire — HistoryExtra podcast",
+        "duration_formatted": "43:49",
+        "source_url": "https://feeds.megaphone.fm/GLT5697813216",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-24",
+    "level": "C1",
+    "word": {
+      "text": "phenomenon",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/fəˈnɑːmɪnən/",
+      "meaning": "an observable event or fact",
+      "meaning_fr": "phénomène",
+      "example": "Migration is a global phenomenon.",
+      "anki_answer": "phénomène",
+      "tags": [
+        "science"
+      ],
+      "key": "25f23928768d2591aeb09b43cf1105a528c6ce18",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/fɪˈnɒmənɒn/",
+        "definitions": [
+          "A thing or being, event or process, perceptible through senses; or a fact or occurrence thereof.",
+          "(by extension) A knowable thing or event (eg by inference, especially in science)",
+          "A kind or type of phenomenon (sense 1 or 2)",
+          "Appearance; a perceptible aspect of something that is mutable."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/phenomenon-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/thing\" title=\"thing\">thing</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/being\" title=\"being\">being</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/event\" title=\"event\">event</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/process\" title=\"process\">process</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/perception\" title=\"perception\">perceptible</a> through <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/en:sense\" title=\"w:en:sense\" class=\"extiw\">senses</a>; or a <a rel=\"mw:WikiLink\" href=\"/wiki/fact\" title=\"fact\">fact</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/occurrence\" title=\"occurrence\">occurrence</a> thereof.",
+          "<span class=\"usage-label-sense\" about=\"#mwt26\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/knowable\" title=\"knowable\">knowable</a> thing or event .",
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/kind\" title=\"kind\">kind</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/type\" title=\"type\">type</a> of phenomenon .",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt31\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/appearance#English\" title=\"appearance\">Appearance</a></span>; a perceptible aspect of something that is <a rel=\"mw:WikiLink\" href=\"/wiki/mutable\" title=\"mutable\">mutable</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "churn out",
+      "level": "C1",
+      "type": "phrasal verb",
+      "meaning": "produce large quantities quickly",
+      "meaning_fr": "produire en masse",
+      "example": "The factory churns out cheap toys.",
+      "anki_answer": "produire masse",
+      "tags": [
+        "production"
+      ],
+      "key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/produce\" title=\"produce\">produce</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/large\" title=\"large\">large</a> <a rel=\"mw:WikiLink\" href=\"/wiki/quantity\" title=\"quantity\">quantity</a> of (something) <a rel=\"mw:WikiLink\" href=\"/wiki/rapidly\" title=\"rapidly\">rapidly</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/easily\" title=\"easily\">easily</a>."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "egalitarian",
+      "aliases": [
+        "egalitarian",
+        "egalitarianism"
+      ],
+      "level": "C1",
+      "meaning": "believing in equal rights for all people",
+      "meaning_fr": "égalitaire",
+      "period": "19th century",
+      "theme": "Society",
+      "example": "The egalitarian movement grew after 1830.",
+      "tags": [
+        "society"
+      ],
+      "key": "791a0ea1444b60e42d259b4c7cb9fcec05066846",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b",
+      "kind": "word",
+      "level": "A1",
+      "text": "write",
+      "meaning": "produce words with a pen or keyboard",
+      "meaning_fr": "écrire",
+      "example": "I write a letter every week.",
+      "phonetic": "/raɪt/",
+      "anki_answer": "écrire",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "a18429921ba112b9d7935f1713e97b1d80fd19ca",
+      "kind": "expression",
+      "level": "A1",
+      "text": "listen to music",
+      "meaning": "hear music with attention",
+      "meaning_fr": "écouter de la musique",
+      "example": "She listens to music at home.",
+      "phonetic": "",
+      "anki_answer": "écouter musique",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "7b905716a125c00fbb736372640fc762abf20482",
+      "kind": "history",
+      "level": "A1",
+      "text": "flag",
+      "meaning": "a piece of cloth used as a symbol",
+      "meaning_fr": "drapeau",
+      "example": "The flag was raised above the city.",
+      "phonetic": "",
+      "anki_answer": "drapeau",
+      "tags": [
+        "symbols"
+      ]
+    },
+    {
+      "key": "a014430d21e79b307572019b578a2ada596e7e48",
+      "kind": "word",
+      "level": "A2",
+      "text": "problem",
+      "meaning": "a difficulty that needs attention",
+      "meaning_fr": "problème",
+      "example": "We can solve this problem.",
+      "phonetic": "/ˈprɑːbləm/",
+      "anki_answer": "problème",
+      "tags": [
+        "problems"
+      ]
+    },
+    {
+      "key": "ed39de237e76fa71603f675ecb42d1735547f32e",
+      "kind": "expression",
+      "level": "A2",
+      "text": "run out of",
+      "meaning": "have none left",
+      "meaning_fr": "n'avoir plus de",
+      "example": "We have run out of milk.",
+      "phonetic": "",
+      "anki_answer": "plus de",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb",
+      "kind": "history",
+      "level": "A2",
+      "text": "craft",
+      "meaning": "a skilled manual activity",
+      "meaning_fr": "artisanat",
+      "example": "Local craft flourished in the town.",
+      "phonetic": "",
+      "anki_answer": "artisanat",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "key": "191fe366db6fe1cc0379e370142159a3f5c922b6",
+      "kind": "word",
+      "level": "B1",
+      "text": "advice",
+      "meaning": "a suggestion about what to do",
+      "meaning_fr": "conseil",
+      "example": "Can I give you some advice?",
+      "phonetic": "/ədˈvaɪs/",
+      "anki_answer": "conseil",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "d3876e87796606bcf8c30db1127db5b7e43f6798",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look forward to",
+      "meaning": "feel pleased about something future",
+      "meaning_fr": "attendre avec impatience",
+      "example": "We look forward to seeing you.",
+      "phonetic": "",
+      "anki_answer": "impatience, voir",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "cc77550905a0ab2e5ef8342c193f1863116d7089",
+      "kind": "history",
+      "level": "B1",
+      "text": "settler",
+      "meaning": "a person who goes to live in a new land",
+      "meaning_fr": "colon",
+      "example": "The settler built a small house.",
+      "phonetic": "",
+      "anki_answer": "colon",
+      "tags": [
+        "empire"
+      ]
+    },
+    {
+      "key": "ec1905290779e0d9a268c468836c53ebf16e8450",
+      "kind": "word",
+      "level": "B2",
+      "text": "evidence",
+      "meaning": "facts showing whether something is true",
+      "meaning_fr": "preuve",
+      "example": "There is little evidence for that claim.",
+      "phonetic": "/ˈevɪdəns/",
+      "anki_answer": "preuve",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "take the lead",
+      "meaning": "become the person in charge",
+      "meaning_fr": "prendre la tête",
+      "example": "The team took the lead in the second half.",
+      "phonetic": "",
+      "anki_answer": "prendre tête",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history",
+      "level": "B2",
+      "text": "canal",
+      "meaning": "an artificial waterway",
+      "meaning_fr": "canal",
+      "example": "The canal linked two rivers.",
+      "phonetic": "",
+      "anki_answer": "canal",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "25f23928768d2591aeb09b43cf1105a528c6ce18",
+      "kind": "word",
+      "level": "C1",
+      "text": "phenomenon",
+      "meaning": "an observable event or fact",
+      "meaning_fr": "phénomène",
+      "example": "Migration is a global phenomenon.",
+      "phonetic": "/fəˈnɑːmɪnən/",
+      "anki_answer": "phénomène",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70",
+      "kind": "expression",
+      "level": "C1",
+      "text": "churn out",
+      "meaning": "produce large quantities quickly",
+      "meaning_fr": "produire en masse",
+      "example": "The factory churns out cheap toys.",
+      "phonetic": "",
+      "anki_answer": "produire masse",
+      "tags": [
+        "production"
+      ]
+    },
+    {
+      "key": "791a0ea1444b60e42d259b4c7cb9fcec05066846",
+      "kind": "history",
+      "level": "C1",
+      "text": "egalitarian",
+      "meaning": "believing in equal rights for all people",
+      "meaning_fr": "égalitaire",
+      "example": "The egalitarian movement grew after 1830.",
+      "phonetic": "",
+      "anki_answer": "égalitaire",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0",
+      "kind": "word",
+      "level": "C2",
+      "text": "laconic",
+      "meaning": "using very few words",
+      "meaning_fr": "laconique",
+      "example": "His reply was laconic.",
+      "phonetic": "/ləˈkɑːnɪk/",
+      "anki_answer": "laconique",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883",
+      "kind": "expression",
+      "level": "C2",
+      "text": "a Pyrrhic victory",
+      "meaning": "a victory won at too great a cost",
+      "meaning_fr": "une victoire à la Pyrrhus",
+      "example": "The takeover was a Pyrrhic victory.",
+      "phonetic": "",
+      "anki_answer": "victoire Pyrrhus",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0",
+      "kind": "history",
+      "level": "C2",
+      "text": "archival",
+      "meaning": "relating to records kept in an archive",
+      "meaning_fr": "archivistique",
+      "example": "The archival documents were digitised.",
+      "phonetic": "",
+      "anki_answer": "archivistique",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “write” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "écrire",
+      "item_key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ to music",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "listen",
+      "item_key": "a18429921ba112b9d7935f1713e97b1d80fd19ca"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “flag” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "7b905716a125c00fbb736372640fc762abf20482"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “problem” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "problème",
+      "item_key": "a014430d21e79b307572019b578a2ada596e7e48"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ out of",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "run",
+      "item_key": "ed39de237e76fa71603f675ecb42d1735547f32e"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “craft” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “advice” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "conseil",
+      "item_key": "191fe366db6fe1cc0379e370142159a3f5c922b6"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: look ____ to",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "forward",
+      "item_key": "d3876e87796606bcf8c30db1127db5b7e43f6798"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “settler” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "cc77550905a0ab2e5ef8342c193f1863116d7089"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “evidence” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "preuve",
+      "item_key": "ec1905290779e0d9a268c468836c53ebf16e8450"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: ____ the lead",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "take",
+      "item_key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “canal” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “phenomenon” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "phénomène",
+      "item_key": "25f23928768d2591aeb09b43cf1105a528c6ce18"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ out",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "churn",
+      "item_key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “egalitarian” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "791a0ea1444b60e42d259b4c7cb9fcec05066846"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “laconic” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "laconique",
+      "item_key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: a Pyrrhic ____",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "victory",
+      "item_key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “archival” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Contemporary",
+      "item_key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 5,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 4
+    },
+    "source_count": 5,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "19th century",
+      "Antiquity",
+      "General",
+      "Middle Ages"
+    ],
+    "history_themes": [
+      "Culture",
+      "Empire",
+      "Society"
+    ],
+    "search_path": "./data/en/search/2026-11-24.json"
+  }
+}

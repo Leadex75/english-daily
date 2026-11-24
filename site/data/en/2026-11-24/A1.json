@@ -1,0 +1,745 @@
+{
+  "date": "2026-11-24",
+  "lang": "en",
+  "level": "A1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 1,
+        "title": "Real Easy English: Talking about embarrassing moments",
+        "source": "BBC Learning Easy English (text)",
+        "source_id": "bbc_learning_easy_english_text",
+        "category": "culture",
+        "url": "http://www.bbc.co.uk/programmes/p0pplc90",
+        "published_at": "2026-11-24T09:03:00",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 114,
+        "duration_sec": null,
+        "body_text": "Learn about 'going red' and find out some of Neil and Becca's most embarrassing moments! Get a free worksheet at bbclearningenglish.com Becca and Neil have a real conversation in easy English about embarrassing moments – those occasions where you make yourself look silly in front of others.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "9dafe6c129ddbd3183bb8b0a205cce5816430985",
+        "summary": "Becca and Neil have a real conversation in easy English about embarrassing moments – those occasions where you make yourself look silly in front of others. Learn what going red means and find out some of Neil and Becca's most embarrassing moments! Get your free worksheet and transcript here: https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/261120 Hear about more embarrassing stories at a higher level in this episode: https://www.bbc.co.uk/learningenglish/english/features/our-stories/251017 or search 'Our Stories: Locked out and looking silly' wherever you get your podcasts",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: A2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Real Easy English: Talking about embarrassing moments — BBC Learning Easy English (text)",
+        "duration_formatted": "",
+        "source_url": "https://podcasts.files.bbci.co.uk/p0hsrwv5.rss",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1340734901,
+        "title": "I Wandered Lonely as a Cloud - I Wandered Lonely as a Cloud - Read by DJ",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/i-wandered-lonely-as-a-cloud-by-william-wordsworth/",
+        "published_at": "2026-11-23T15:43:32",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 33,
+        "duration_sec": 94,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/wandered_lonely_as_a_cloud_librivox/wandered_lonely_wordsworth_dj_64kb.mp3",
+        "description": "I Wandered Lonely as a Cloud by . This was the weekly poetry project for 14 May 2006. Spring’s flowers come and go all too quickly, but Wordsworth’s classic poem reminds us that their blessings last.",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "dae41f187d49238c56cb0522bb94aa7e54ac2f15",
+        "summary": "I Wandered Lonely as a Cloud by . This was the weekly poetry project for 14 May 2006. Spring’s flowers come and go all too quickly, but Wordsworth’s classic poem reminds us that their blessings last.",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: A2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "I Wandered Lonely as a Cloud - I Wandered Lonely as a Cloud - Read by DJ — LibriVox (culture)",
+        "duration_formatted": "1:34",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-24",
+    "level": "A1",
+    "word": {
+      "text": "write",
+      "level": "A1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/raɪt/",
+      "meaning": "produce words with a pen or keyboard",
+      "meaning_fr": "écrire",
+      "example": "I write a letter every week.",
+      "anki_answer": "écrire",
+      "tags": [
+        "communication"
+      ],
+      "key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɹaɪt/",
+        "definitions": [
+          "The act or style of writing.",
+          "The operation of storing data, as in memory or onto disk.",
+          "To form letters, words or symbols on a surface in order to communicate.",
+          "To be the author of (a book, article, poem, etc.)."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/write-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> To form letters, words or symbols on a surface in order to communicate.",
+          "<span class=\"usage-label-sense\" about=\"#mwt41\" typeof=\"mw:Transclusion\"></span> To be the author of (a book, article, poem, etc.).",
+          "<span class=\"usage-label-sense\" about=\"#mwt45\" typeof=\"mw:Transclusion\"></span> To compose and send written information (to).",
+          "<span class=\"usage-label-sense\" about=\"#mwt50\" typeof=\"mw:Transclusion\"></span> To compose and send (written information or a written message, e.g. a letter) to."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "listen to music",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "hear music with attention",
+      "meaning_fr": "écouter de la musique",
+      "example": "She listens to music at home.",
+      "anki_answer": "écouter musique",
+      "tags": [
+        "daily"
+      ],
+      "key": "a18429921ba112b9d7935f1713e97b1d80fd19ca",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "flag",
+      "aliases": [
+        "flag",
+        "flags"
+      ],
+      "level": "A1",
+      "meaning": "a piece of cloth used as a symbol",
+      "meaning_fr": "drapeau",
+      "period": "General",
+      "theme": "Politics",
+      "example": "The flag was raised above the city.",
+      "tags": [
+        "symbols"
+      ],
+      "key": "7b905716a125c00fbb736372640fc762abf20482",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b",
+      "kind": "word",
+      "level": "A1",
+      "text": "write",
+      "meaning": "produce words with a pen or keyboard",
+      "meaning_fr": "écrire",
+      "example": "I write a letter every week.",
+      "phonetic": "/raɪt/",
+      "anki_answer": "écrire",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "a18429921ba112b9d7935f1713e97b1d80fd19ca",
+      "kind": "expression",
+      "level": "A1",
+      "text": "listen to music",
+      "meaning": "hear music with attention",
+      "meaning_fr": "écouter de la musique",
+      "example": "She listens to music at home.",
+      "phonetic": "",
+      "anki_answer": "écouter musique",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "7b905716a125c00fbb736372640fc762abf20482",
+      "kind": "history",
+      "level": "A1",
+      "text": "flag",
+      "meaning": "a piece of cloth used as a symbol",
+      "meaning_fr": "drapeau",
+      "example": "The flag was raised above the city.",
+      "phonetic": "",
+      "anki_answer": "drapeau",
+      "tags": [
+        "symbols"
+      ]
+    },
+    {
+      "key": "a014430d21e79b307572019b578a2ada596e7e48",
+      "kind": "word",
+      "level": "A2",
+      "text": "problem",
+      "meaning": "a difficulty that needs attention",
+      "meaning_fr": "problème",
+      "example": "We can solve this problem.",
+      "phonetic": "/ˈprɑːbləm/",
+      "anki_answer": "problème",
+      "tags": [
+        "problems"
+      ]
+    },
+    {
+      "key": "ed39de237e76fa71603f675ecb42d1735547f32e",
+      "kind": "expression",
+      "level": "A2",
+      "text": "run out of",
+      "meaning": "have none left",
+      "meaning_fr": "n'avoir plus de",
+      "example": "We have run out of milk.",
+      "phonetic": "",
+      "anki_answer": "plus de",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb",
+      "kind": "history",
+      "level": "A2",
+      "text": "craft",
+      "meaning": "a skilled manual activity",
+      "meaning_fr": "artisanat",
+      "example": "Local craft flourished in the town.",
+      "phonetic": "",
+      "anki_answer": "artisanat",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "key": "191fe366db6fe1cc0379e370142159a3f5c922b6",
+      "kind": "word",
+      "level": "B1",
+      "text": "advice",
+      "meaning": "a suggestion about what to do",
+      "meaning_fr": "conseil",
+      "example": "Can I give you some advice?",
+      "phonetic": "/ədˈvaɪs/",
+      "anki_answer": "conseil",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "d3876e87796606bcf8c30db1127db5b7e43f6798",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look forward to",
+      "meaning": "feel pleased about something future",
+      "meaning_fr": "attendre avec impatience",
+      "example": "We look forward to seeing you.",
+      "phonetic": "",
+      "anki_answer": "impatience, voir",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "cc77550905a0ab2e5ef8342c193f1863116d7089",
+      "kind": "history",
+      "level": "B1",
+      "text": "settler",
+      "meaning": "a person who goes to live in a new land",
+      "meaning_fr": "colon",
+      "example": "The settler built a small house.",
+      "phonetic": "",
+      "anki_answer": "colon",
+      "tags": [
+        "empire"
+      ]
+    },
+    {
+      "key": "ec1905290779e0d9a268c468836c53ebf16e8450",
+      "kind": "word",
+      "level": "B2",
+      "text": "evidence",
+      "meaning": "facts showing whether something is true",
+      "meaning_fr": "preuve",
+      "example": "There is little evidence for that claim.",
+      "phonetic": "/ˈevɪdəns/",
+      "anki_answer": "preuve",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "take the lead",
+      "meaning": "become the person in charge",
+      "meaning_fr": "prendre la tête",
+      "example": "The team took the lead in the second half.",
+      "phonetic": "",
+      "anki_answer": "prendre tête",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history",
+      "level": "B2",
+      "text": "canal",
+      "meaning": "an artificial waterway",
+      "meaning_fr": "canal",
+      "example": "The canal linked two rivers.",
+      "phonetic": "",
+      "anki_answer": "canal",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "25f23928768d2591aeb09b43cf1105a528c6ce18",
+      "kind": "word",
+      "level": "C1",
+      "text": "phenomenon",
+      "meaning": "an observable event or fact",
+      "meaning_fr": "phénomène",
+      "example": "Migration is a global phenomenon.",
+      "phonetic": "/fəˈnɑːmɪnən/",
+      "anki_answer": "phénomène",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70",
+      "kind": "expression",
+      "level": "C1",
+      "text": "churn out",
+      "meaning": "produce large quantities quickly",
+      "meaning_fr": "produire en masse",
+      "example": "The factory churns out cheap toys.",
+      "phonetic": "",
+      "anki_answer": "produire masse",
+      "tags": [
+        "production"
+      ]
+    },
+    {
+      "key": "791a0ea1444b60e42d259b4c7cb9fcec05066846",
+      "kind": "history",
+      "level": "C1",
+      "text": "egalitarian",
+      "meaning": "believing in equal rights for all people",
+      "meaning_fr": "égalitaire",
+      "example": "The egalitarian movement grew after 1830.",
+      "phonetic": "",
+      "anki_answer": "égalitaire",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0",
+      "kind": "word",
+      "level": "C2",
+      "text": "laconic",
+      "meaning": "using very few words",
+      "meaning_fr": "laconique",
+      "example": "His reply was laconic.",
+      "phonetic": "/ləˈkɑːnɪk/",
+      "anki_answer": "laconique",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883",
+      "kind": "expression",
+      "level": "C2",
+      "text": "a Pyrrhic victory",
+      "meaning": "a victory won at too great a cost",
+      "meaning_fr": "une victoire à la Pyrrhus",
+      "example": "The takeover was a Pyrrhic victory.",
+      "phonetic": "",
+      "anki_answer": "victoire Pyrrhus",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0",
+      "kind": "history",
+      "level": "C2",
+      "text": "archival",
+      "meaning": "relating to records kept in an archive",
+      "meaning_fr": "archivistique",
+      "example": "The archival documents were digitised.",
+      "phonetic": "",
+      "anki_answer": "archivistique",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “write” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "écrire",
+      "item_key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ to music",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "listen",
+      "item_key": "a18429921ba112b9d7935f1713e97b1d80fd19ca"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “flag” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "7b905716a125c00fbb736372640fc762abf20482"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “problem” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "problème",
+      "item_key": "a014430d21e79b307572019b578a2ada596e7e48"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ out of",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "run",
+      "item_key": "ed39de237e76fa71603f675ecb42d1735547f32e"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “craft” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “advice” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "conseil",
+      "item_key": "191fe366db6fe1cc0379e370142159a3f5c922b6"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: look ____ to",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "forward",
+      "item_key": "d3876e87796606bcf8c30db1127db5b7e43f6798"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “settler” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "cc77550905a0ab2e5ef8342c193f1863116d7089"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “evidence” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "preuve",
+      "item_key": "ec1905290779e0d9a268c468836c53ebf16e8450"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: ____ the lead",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "take",
+      "item_key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “canal” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “phenomenon” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "phénomène",
+      "item_key": "25f23928768d2591aeb09b43cf1105a528c6ce18"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ out",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "churn",
+      "item_key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “egalitarian” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "791a0ea1444b60e42d259b4c7cb9fcec05066846"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “laconic” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "laconique",
+      "item_key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: a Pyrrhic ____",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "victory",
+      "item_key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “archival” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Contemporary",
+      "item_key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "adjacent": 2
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-24.json"
+  }
+}

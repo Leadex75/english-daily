@@ -1,0 +1,870 @@
+{
+  "date": "2026-11-24",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 20,
+        "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-24T10:53:37",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 912,
+        "duration_sec": null,
+        "body_text": "Jensen Huang has been reinstated as the boss of Nvidia less than two weeks after he was forced to resign following the revelations of extra marital affairs, one of which was with a suspected Chinese spy. The AI chipmaker handed its co-founder his job back, despite rejecting his initial offer to return, after pressure from US President Donald Trump.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "4bbddbb1ff3595980b37f4109c0b9786c1085e01",
+        "summary": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 5
+      },
+      "audio": {
+        "id": 3,
+        "title": "10am ET, November 24 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-24T15:09:38",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/9f9dd313-c785-4a3a-86c2-5d87796da1e3/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_b2dbcdc580150c507cbc6a1a91ca5249_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=9f9dd313-c785-4a3a-86c2-5d87796da1e3&feed=O9WlY7a5&t=podcast&e=nx-s1-20261124-1000-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_327__12ddbc19b9ecb07c1f691f91a7313da77f76c617",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "76c326fcfa0274821dea0c1ccfb1c581e02a830f",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "10am ET, November 24 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 51,
+        "title": "Cop31 failed. What happens now? – podcast",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/science/audio/2026/nov/23/cop31-failed-what-happens-now-podcast",
+        "published_at": "2026-11-23T18:22:29",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 75,
+        "duration_sec": null,
+        "body_text": "Clips: Reuters Cop31 failed. What happens now? – podcast The longest ever Cop climate talks have ended in failure after countries were unable to agree a deal. The key sticking point was the omission of any mention of fossil fuels in the final draft.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d756fddab5e2a152fe959c06b6db602b8983fda0",
+        "summary": "The longest ever Cop climate talks have ended in failure after countries were unable to agree a deal. The key sticking point was the omission of any mention of fossil fuels in the final draft. To find out how it all went so wrong and what could come next, Madeleine Finlay speaks to Guardian environment editor Fiona Harvey, who has been in Antalya, Turkey, covering the talks Clips: Reuters Fill in our podcast survey",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Cop31 failed. What happens now? – podcast — The Guardian - Science",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1129540337,
+        "title": "Alice's Adventures in Wonderland - Chapter 2",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/alices-adventures-in-wonderland-by-lewis-carroll/",
+        "published_at": "2026-11-23T15:43:41",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 103,
+        "duration_sec": 735,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_02_64kb.mp3",
+        "description": "Alice's Adventures in Wonderland by . In this children's classic, a girl named Alice follows falls down a rabbit-hole into a fantasy realm full of talking creatures. She attends a never-ending tea party and plays croquet at the court of the anthropomorphic playing cards. (Summary written by Gesine) \"I loved all the voices in this project and probably wouldn’t have put the time into checking into t",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "28aa09550e18a1d390e87f92ea06fc1d9adf6c90",
+        "summary": "Alice's Adventures in Wonderland by . In this children's classic, a girl named Alice follows falls down a rabbit-hole into a fantasy realm full of talking creatures. She attends a never-ending tea party and plays croquet at the court of the anthropomorphic playing cards. (Summary written by Gesine) \"I loved all the voices in this project and probably wouldn’t have put the time into checking into t",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Alice's Adventures in Wonderland - Chapter 2 — LibriVox (culture)",
+        "duration_formatted": "12:15",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": {
+        "id": 1032604790,
+        "title": "Around the World in Seventy-Two Days - A Proposal to Girdle the Earth",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/around-the-world-in-seventy-two-days-by-nellie-bly/",
+        "published_at": "2026-11-22T13:06:36",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 66,
+        "duration_sec": 939,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/seventy_two_days_librivox/seventy_two_days_01_bly_64kb.mp3",
+        "description": "Around the World in Seventy-Two Days by . This is a true account by American woman journalist who, in 1889, set out to see whether she could beat the fictional journey in Jules Verne’s 1873 novel, Around the World in Eighty Days . Wearing one dress and carrying one handbag, Elizabeth Cochrane Seaman (pen name “Nellie Bly”), reported her travels back to avid readers in America. (Summary by Mary Rea",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "502923b600c9cfb1c191b36ebdacfc39a7caf4b0",
+        "summary": "Around the World in Seventy-Two Days by . This is a true account by American woman journalist who, in 1889, set out to see whether she could beat the fictional journey in Jules Verne’s 1873 novel, Around the World in Eighty Days . Wearing one dress and carrying one handbag, Elizabeth Cochrane Seaman (pen name “Nellie Bly”), reported her travels back to avid readers in America. (Summary by Mary Rea",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (history & biography)",
+          "Closest level: B2"
+        ],
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "name",
+            "aliases": [
+              "name",
+              "names"
+            ],
+            "level": "A1",
+            "meaning": "what a person or place is called",
+            "meaning_fr": "nom",
+            "period": "General",
+            "theme": "Society",
+            "example": "The city changed its name.",
+            "tags": [
+              "language"
+            ]
+          }
+        ],
+        "alt_text": "Around the World in Seventy-Two Days - A Proposal to Girdle the Earth — LibriVox (history & biography)",
+        "duration_formatted": "15:39",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-24",
+    "level": "B1",
+    "word": {
+      "text": "advice",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ədˈvaɪs/",
+      "meaning": "a suggestion about what to do",
+      "meaning_fr": "conseil",
+      "example": "Can I give you some advice?",
+      "anki_answer": "conseil",
+      "tags": [
+        "communication"
+      ],
+      "key": "191fe366db6fe1cc0379e370142159a3f5c922b6",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ədˈvaɪs/",
+        "definitions": [
+          "An opinion offered in an effort to be helpful.",
+          "Deliberate consideration; knowledge.",
+          "(commonly in plural) Information or news given; intelligence",
+          "In language about financial transactions executed by formal documents, an advisory document."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/advice-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/opinion\" title=\"opinion\">opinion</a> <a rel=\"mw:WikiLink\" href=\"/wiki/offer\" title=\"offer\">offered</a> to guide behavior in an effort to be helpful.",
+          "<span class=\"usage-label-sense\" about=\"#mwt37\" typeof=\"mw:Transclusion\"></span> Deliberate <a rel=\"mw:WikiLink\" href=\"/wiki/consideration\" title=\"consideration\">consideration</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/knowledge\" title=\"knowledge\">knowledge</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt39\" typeof=\"mw:Transclusion\"></span> Information or news given; <a rel=\"mw:WikiLink\" href=\"/wiki/intelligence\" title=\"intelligence\">intelligence</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt41\" typeof=\"mw:Transclusion\"></span> In language about financial transactions executed by formal documents, an advisory  document."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "look forward to",
+      "level": "B1",
+      "type": "phrasal verb",
+      "meaning": "feel pleased about something future",
+      "meaning_fr": "attendre avec impatience",
+      "example": "We look forward to seeing you.",
+      "anki_answer": "impatience, voir",
+      "tags": [
+        "feelings"
+      ],
+      "key": "d3876e87796606bcf8c30db1127db5b7e43f6798",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/anticipate\" title=\"anticipate\">anticipate</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/expect\" title=\"expect\">expect</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/wait\" title=\"wait\">wait</a> for, especially with a feeling of <a rel=\"mw:WikiLink\" href=\"/wiki/approval\" title=\"approval\">approval</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/pleasure\" title=\"pleasure\">pleasure</a>; to be <a rel=\"mw:WikiLink\" href=\"/wiki/excite\" title=\"excite\">excited</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/eager\" title=\"eager\">eager</a> to."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "settler",
+      "aliases": [
+        "settler",
+        "settlers"
+      ],
+      "level": "B1",
+      "meaning": "a person who goes to live in a new land",
+      "meaning_fr": "colon",
+      "period": "19th century",
+      "theme": "Empire",
+      "example": "The settler built a small house.",
+      "tags": [
+        "empire"
+      ],
+      "key": "cc77550905a0ab2e5ef8342c193f1863116d7089",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b",
+      "kind": "word",
+      "level": "A1",
+      "text": "write",
+      "meaning": "produce words with a pen or keyboard",
+      "meaning_fr": "écrire",
+      "example": "I write a letter every week.",
+      "phonetic": "/raɪt/",
+      "anki_answer": "écrire",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "a18429921ba112b9d7935f1713e97b1d80fd19ca",
+      "kind": "expression",
+      "level": "A1",
+      "text": "listen to music",
+      "meaning": "hear music with attention",
+      "meaning_fr": "écouter de la musique",
+      "example": "She listens to music at home.",
+      "phonetic": "",
+      "anki_answer": "écouter musique",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "7b905716a125c00fbb736372640fc762abf20482",
+      "kind": "history",
+      "level": "A1",
+      "text": "flag",
+      "meaning": "a piece of cloth used as a symbol",
+      "meaning_fr": "drapeau",
+      "example": "The flag was raised above the city.",
+      "phonetic": "",
+      "anki_answer": "drapeau",
+      "tags": [
+        "symbols"
+      ]
+    },
+    {
+      "key": "a014430d21e79b307572019b578a2ada596e7e48",
+      "kind": "word",
+      "level": "A2",
+      "text": "problem",
+      "meaning": "a difficulty that needs attention",
+      "meaning_fr": "problème",
+      "example": "We can solve this problem.",
+      "phonetic": "/ˈprɑːbləm/",
+      "anki_answer": "problème",
+      "tags": [
+        "problems"
+      ]
+    },
+    {
+      "key": "ed39de237e76fa71603f675ecb42d1735547f32e",
+      "kind": "expression",
+      "level": "A2",
+      "text": "run out of",
+      "meaning": "have none left",
+      "meaning_fr": "n'avoir plus de",
+      "example": "We have run out of milk.",
+      "phonetic": "",
+      "anki_answer": "plus de",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb",
+      "kind": "history",
+      "level": "A2",
+      "text": "craft",
+      "meaning": "a skilled manual activity",
+      "meaning_fr": "artisanat",
+      "example": "Local craft flourished in the town.",
+      "phonetic": "",
+      "anki_answer": "artisanat",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "key": "191fe366db6fe1cc0379e370142159a3f5c922b6",
+      "kind": "word",
+      "level": "B1",
+      "text": "advice",
+      "meaning": "a suggestion about what to do",
+      "meaning_fr": "conseil",
+      "example": "Can I give you some advice?",
+      "phonetic": "/ədˈvaɪs/",
+      "anki_answer": "conseil",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "d3876e87796606bcf8c30db1127db5b7e43f6798",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look forward to",
+      "meaning": "feel pleased about something future",
+      "meaning_fr": "attendre avec impatience",
+      "example": "We look forward to seeing you.",
+      "phonetic": "",
+      "anki_answer": "impatience, voir",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "cc77550905a0ab2e5ef8342c193f1863116d7089",
+      "kind": "history",
+      "level": "B1",
+      "text": "settler",
+      "meaning": "a person who goes to live in a new land",
+      "meaning_fr": "colon",
+      "example": "The settler built a small house.",
+      "phonetic": "",
+      "anki_answer": "colon",
+      "tags": [
+        "empire"
+      ]
+    },
+    {
+      "key": "ec1905290779e0d9a268c468836c53ebf16e8450",
+      "kind": "word",
+      "level": "B2",
+      "text": "evidence",
+      "meaning": "facts showing whether something is true",
+      "meaning_fr": "preuve",
+      "example": "There is little evidence for that claim.",
+      "phonetic": "/ˈevɪdəns/",
+      "anki_answer": "preuve",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "take the lead",
+      "meaning": "become the person in charge",
+      "meaning_fr": "prendre la tête",
+      "example": "The team took the lead in the second half.",
+      "phonetic": "",
+      "anki_answer": "prendre tête",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history",
+      "level": "B2",
+      "text": "canal",
+      "meaning": "an artificial waterway",
+      "meaning_fr": "canal",
+      "example": "The canal linked two rivers.",
+      "phonetic": "",
+      "anki_answer": "canal",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "25f23928768d2591aeb09b43cf1105a528c6ce18",
+      "kind": "word",
+      "level": "C1",
+      "text": "phenomenon",
+      "meaning": "an observable event or fact",
+      "meaning_fr": "phénomène",
+      "example": "Migration is a global phenomenon.",
+      "phonetic": "/fəˈnɑːmɪnən/",
+      "anki_answer": "phénomène",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70",
+      "kind": "expression",
+      "level": "C1",
+      "text": "churn out",
+      "meaning": "produce large quantities quickly",
+      "meaning_fr": "produire en masse",
+      "example": "The factory churns out cheap toys.",
+      "phonetic": "",
+      "anki_answer": "produire masse",
+      "tags": [
+        "production"
+      ]
+    },
+    {
+      "key": "791a0ea1444b60e42d259b4c7cb9fcec05066846",
+      "kind": "history",
+      "level": "C1",
+      "text": "egalitarian",
+      "meaning": "believing in equal rights for all people",
+      "meaning_fr": "égalitaire",
+      "example": "The egalitarian movement grew after 1830.",
+      "phonetic": "",
+      "anki_answer": "égalitaire",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0",
+      "kind": "word",
+      "level": "C2",
+      "text": "laconic",
+      "meaning": "using very few words",
+      "meaning_fr": "laconique",
+      "example": "His reply was laconic.",
+      "phonetic": "/ləˈkɑːnɪk/",
+      "anki_answer": "laconique",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883",
+      "kind": "expression",
+      "level": "C2",
+      "text": "a Pyrrhic victory",
+      "meaning": "a victory won at too great a cost",
+      "meaning_fr": "une victoire à la Pyrrhus",
+      "example": "The takeover was a Pyrrhic victory.",
+      "phonetic": "",
+      "anki_answer": "victoire Pyrrhus",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0",
+      "kind": "history",
+      "level": "C2",
+      "text": "archival",
+      "meaning": "relating to records kept in an archive",
+      "meaning_fr": "archivistique",
+      "example": "The archival documents were digitised.",
+      "phonetic": "",
+      "anki_answer": "archivistique",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “write” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "écrire",
+      "item_key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ to music",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "listen",
+      "item_key": "a18429921ba112b9d7935f1713e97b1d80fd19ca"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “flag” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "7b905716a125c00fbb736372640fc762abf20482"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “problem” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "problème",
+      "item_key": "a014430d21e79b307572019b578a2ada596e7e48"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ out of",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "run",
+      "item_key": "ed39de237e76fa71603f675ecb42d1735547f32e"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “craft” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “advice” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "conseil",
+      "item_key": "191fe366db6fe1cc0379e370142159a3f5c922b6"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: look ____ to",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "forward",
+      "item_key": "d3876e87796606bcf8c30db1127db5b7e43f6798"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “settler” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "cc77550905a0ab2e5ef8342c193f1863116d7089"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “evidence” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "preuve",
+      "item_key": "ec1905290779e0d9a268c468836c53ebf16e8450"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: ____ the lead",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "take",
+      "item_key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “canal” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “phenomenon” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "phénomène",
+      "item_key": "25f23928768d2591aeb09b43cf1105a528c6ce18"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ out",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "churn",
+      "item_key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “egalitarian” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "791a0ea1444b60e42d259b4c7cb9fcec05066846"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “laconic” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "laconique",
+      "item_key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: a Pyrrhic ____",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "victory",
+      "item_key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “archival” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Contemporary",
+      "item_key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 5,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 1,
+      "adjacent": 3
+    },
+    "source_count": 5,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "General"
+    ],
+    "history_themes": [
+      "Society"
+    ],
+    "search_path": "./data/en/search/2026-11-24.json"
+  }
+}

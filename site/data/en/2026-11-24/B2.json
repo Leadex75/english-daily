@@ -1,0 +1,969 @@
+{
+  "date": "2026-11-24",
+  "lang": "en",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 29,
+        "title": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-24T10:48:27",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 500,
+        "duration_sec": null,
+        "body_text": "The Democratic Republic of Congo military says it is searching for one of its aircraft, after rebels said they had shot down a warplane in the east. The military said it had lost contact with a small Cessna 208 cargo plane on Sunday following \"poor weather conditions\". The fate of the plane and its crew remained uncertain, it added.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "c20aec4e472f03c72aa60244b7f98af93557777c",
+        "summary": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "DR Congo says military aircraft missing as rebels claim to shoot down plane — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 3
+      },
+      "audio": {
+        "id": 5,
+        "title": "8am ET, November 24 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-24T13:09:36",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/bf1fcfef-1e48-451a-a6f6-315df3cd49d3/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_7c810ad1eea44426d076c2d331d6e21f_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=bf1fcfef-1e48-451a-a6f6-315df3cd49d3&feed=O9WlY7a5&t=podcast&e=nx-s1-20261124-0800-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_327__ee7b49d33ea162dc0d923b026b72c1042d84580a",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "7b3adc000f5cdb52c5d21363a2459d67a7b9a87e",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "8am ET, November 24 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 42,
+        "title": "Man Theft Auto – why did so few women review GTA VI, the biggest video game of the decade?",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/games/2026/nov/24/man-theft-auto-why-did-so-few-women-review-gta-vi-the-biggest-video-game-of-the-decade",
+        "published_at": "2026-11-24T11:00:43",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 690,
+        "duration_sec": null,
+        "body_text": "Grand Theft Auto VI is now the biggest video game launch of all time, and is likely to become the biggest video game of all time.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "3d75880ad8cb4158351cdb98cef026ea494e8191",
+        "summary": "Given that this is the first Grand Theft Auto in 30 years with a female protagonist, you might have expected to hear from female critics. But you would have expected mostly in vain Grand Theft Auto VI is now the biggest video game launch of all time, and is likely to become the biggest video game of all time. It’s a once-in-a-lifetime event, a phenomenon that will shape games as a medium and pop culture at large for years to come, set against the backdrop of its developers fighting for their rights at studio Rockstar Games . It has snatched sales and streaming records and become the best-reviewed game ever (pulling ahead of 1998’s The Legend of Zelda: Ocarina of Time). It’s also the first GTA game with a female protagonist, who also happens to be a woman of colour. Yet very few women (and seemingly no women of colour) played and reviewed it before release. When GTA IV’s review embargo lifted on 18 November, the gender imbalance was immediately obvious. Out of 156 reviewers, only six appeared to be women. As journalist Lex Luddy noted in a BlueSky post , that is 3.8%.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Man Theft Auto – why did so few women review GTA VI, the biggest video game of the decade? — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 15,
+        "title": "Wild turkeys are in peril again — can researchers save them?",
+        "source": "NPR Short Wave",
+        "source_id": "npr_short_wave",
+        "category": "culture",
+        "url": "https://www.npr.org/2026/11/24/nx-s1-6042518/thanksgiving-american-wild-turkey-science",
+        "published_at": "2026-11-24T08:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 82,
+        "duration_sec": 901,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/72da6803-9aa4-4e2e-a973-3bc436f0e9fa/episodes/61f84333-b405-483b-a331-15d1c2df8c7d/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_5375e364a2e7bb0826a4f0d74b43cf81_14420879.mp3?awCollectionId=72da6803-9aa4-4e2e-a973-3bc436f0e9fa&awEpisodeId=61f84333-b405-483b-a331-15d1c2df8c7d&feed=F0qJcgXZ&t=podcast&e=nx-s1-6042518&p=510351&d=901&size=14420472&hash_redirect=1&x-total-bytes=14420879&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_327__3bcfa83830351c67002b8bca22ed9ff1779a88ec",
+        "description": "As a teen, Mike Chamberlain spent all his free time hunting turkeys. Now, his job is researching everything about them – the birds’ behavior, their genetics and more. And for the past decade, he’s focused on their concerning decline in the American southeast. Today on the show, Emily chats with Mike about what could be driving the loss of turkey territory – and what conservationists – including hunters – are doing about it. Interested in more conservation science? Email us your question at shortwave@npr.org .",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "a076ef7b1aa4df8002c6ae8dc4805e7ede4a482a",
+        "summary": "As a teen, Mike Chamberlain spent all his free time hunting turkeys. Now, his job is researching everything about them – the birds’ behavior, their genetics and more. And for the past decade, he’s focused on their concerning decline in the American southeast. Today on the show, Emily chats with Mike about what could be driving the loss of turkey territory – and what conservationists – including hunters – are doing about it. Interested in more conservation science? Email us your question at shortwave@npr.org .",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Wild turkeys are in peril again — can researchers save them? — NPR Short Wave",
+        "duration_formatted": "15:01",
+        "source_url": "https://feeds.npr.org/510351/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": {
+        "id": 65,
+        "title": "On this day: 24 November",
+        "source": "Wikipedia On this day",
+        "source_id": "wikipedia_onthisday",
+        "category": "history",
+        "url": "https://en.wikipedia.org/wiki/November_24",
+        "published_at": "2026-11-24T00:00:00",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "C1",
+        "word_count": 122,
+        "duration_sec": null,
+        "body_text": "2023 — Hibiscus Rising, commemorating David Oluwale, is unveiled in Leeds.\n\n2022 — Five days after the general elections which resulted in a hung parliament, opposition leader and former deputy prime minister Anwar Ibrahim is officially named as the 10th prime minister of Malaysia.\n\n2017 — A terrorist attack on a Mosque in Al-Rawda, North Sinai, Egypt kills 311 people and injures 128.\n\n2016 — The government of Colombia and the Revolutionary Armed Forces of Colombia–People's Army sign a revised peace deal, bringing an end to the country's more than 50-year-long civil war.\n\n2015 — A Russian Air Force Sukhoi Su-24 fighter jet is shot down by the Turkish Air Force over the Syria–Turkey border, killing one of the two pilots; a Russian marine is also killed during a subsequent rescue effort.",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "19d9ea727c7fb784e5e7b377775162897dc491d7",
+        "summary": "2023 — Hibiscus Rising, commemorating David Oluwale, is unveiled in Leeds.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
+        "periods": [
+          "General",
+          "Early modern"
+        ],
+        "themes": [
+          "War",
+          "Society",
+          "Politics"
+        ],
+        "history_terms": [
+          {
+            "text": "war",
+            "aliases": [
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "invasion",
+            "aliases": [
+              "invasion",
+              "attack"
+            ],
+            "level": "B1",
+            "meaning": "an attack by an army entering another land",
+            "meaning_fr": "invasion",
+            "period": "General",
+            "theme": "War",
+            "example": "The invasion began in spring.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "year",
+            "aliases": [
+              "year",
+              "years"
+            ],
+            "level": "A1",
+            "meaning": "a period of twelve months",
+            "meaning_fr": "année",
+            "period": "General",
+            "theme": "Society",
+            "example": "The treaty lasted only one year.",
+            "tags": [
+              "time"
+            ]
+          },
+          {
+            "text": "parliament",
+            "aliases": [
+              "parliament",
+              "parliaments"
+            ],
+            "level": "B1",
+            "meaning": "a group that makes a country's laws",
+            "meaning_fr": "parlement",
+            "period": "Early modern",
+            "theme": "Politics",
+            "example": "Parliament debated the new tax.",
+            "tags": [
+              "politics"
+            ]
+          }
+        ],
+        "alt_text": "On this day: 24 November — Wikipedia On this day",
+        "duration_formatted": "",
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/MM/DD",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1274590426,
+        "title": "Around the World in Seventy-Two Days - Southampton to Jules Verne's",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/around-the-world-in-seventy-two-days-by-nellie-bly/",
+        "published_at": "2026-11-22T13:06:36",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 66,
+        "duration_sec": 1016,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/seventy_two_days_librivox/seventy_two_days_03_bly_64kb.mp3",
+        "description": "Around the World in Seventy-Two Days by . This is a true account by American woman journalist who, in 1889, set out to see whether she could beat the fictional journey in Jules Verne’s 1873 novel, Around the World in Eighty Days . Wearing one dress and carrying one handbag, Elizabeth Cochrane Seaman (pen name “Nellie Bly”), reported her travels back to avid readers in America. (Summary by Mary Rea",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "c2ad830862f33dc43f1fdf4799085d43a2bec103",
+        "summary": "Around the World in Seventy-Two Days by . This is a true account by American woman journalist who, in 1889, set out to see whether she could beat the fictional journey in Jules Verne’s 1873 novel, Around the World in Eighty Days . Wearing one dress and carrying one handbag, Elizabeth Cochrane Seaman (pen name “Nellie Bly”), reported her travels back to avid readers in America. (Summary by Mary Rea",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (history & biography)"
+        ],
+        "periods": [
+          "General"
+        ],
+        "themes": [
+          "Society"
+        ],
+        "history_terms": [
+          {
+            "text": "name",
+            "aliases": [
+              "name",
+              "names"
+            ],
+            "level": "A1",
+            "meaning": "what a person or place is called",
+            "meaning_fr": "nom",
+            "period": "General",
+            "theme": "Society",
+            "example": "The city changed its name.",
+            "tags": [
+              "language"
+            ]
+          }
+        ],
+        "alt_text": "Around the World in Seventy-Two Days - Southampton to Jules Verne's — LibriVox (history & biography)",
+        "duration_formatted": "16:56",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-24",
+    "level": "B2",
+    "word": {
+      "text": "evidence",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈevɪdəns/",
+      "meaning": "facts showing whether something is true",
+      "meaning_fr": "preuve",
+      "example": "There is little evidence for that claim.",
+      "anki_answer": "preuve",
+      "tags": [
+        "reasoning"
+      ],
+      "key": "ec1905290779e0d9a268c468836c53ebf16e8450",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "[ˈɛvəɾəns]",
+        "definitions": [
+          "Facts or observations presented in support of an assertion.",
+          "Anything admitted by a court to prove or disprove alleged matters of fact in a trial.",
+          "One who bears witness.",
+          "A body of objectively verifiable facts that are positively indicative of, and/or exclusively concordant with, that one conclusion over any other."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/evidence-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/fact\" title=\"fact\">Facts</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/observation\" title=\"observation\">observations</a> presented in support of an <a rel=\"mw:WikiLink\" href=\"/wiki/assertion\" title=\"assertion\">assertion</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt25\" typeof=\"mw:Transclusion\"></span> Anything admitted by a <a rel=\"mw:WikiLink\" href=\"/wiki/court\" title=\"court\">court</a> to prove or disprove alleged matters of fact in a <a rel=\"mw:WikiLink\" href=\"/wiki/trial\" title=\"trial\">trial</a>.",
+          "One who bears witness.",
+          "A body of objectively verifiable facts that are positively indicative of, and/or exclusively <a rel=\"mw:WikiLink\" href=\"/wiki/concordant\" title=\"concordant\">concordant</a> with, that one <a rel=\"mw:WikiLink\" href=\"/wiki/conclusion\" title=\"conclusion\">conclusion</a> over any other."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "take the lead",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "become the person in charge",
+      "meaning_fr": "prendre la tête",
+      "example": "The team took the lead in the second half.",
+      "anki_answer": "prendre tête",
+      "tags": [
+        "leadership"
+      ],
+      "key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To become the <a rel=\"mw:WikiLink\" href=\"/wiki/leader\" title=\"leader\">leader</a>, to advance into <span class=\"new\">first place</span>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt8\" typeof=\"mw:Transclusion\"></span> To assume <a rel=\"mw:WikiLink\" href=\"/wiki/leadership\" title=\"leadership\">leadership</a> over a group."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "canal",
+      "aliases": [
+        "canal",
+        "canals"
+      ],
+      "level": "B2",
+      "meaning": "an artificial waterway",
+      "meaning_fr": "canal",
+      "period": "19th century",
+      "theme": "Economy",
+      "example": "The canal linked two rivers.",
+      "tags": [
+        "economy"
+      ],
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b",
+      "kind": "word",
+      "level": "A1",
+      "text": "write",
+      "meaning": "produce words with a pen or keyboard",
+      "meaning_fr": "écrire",
+      "example": "I write a letter every week.",
+      "phonetic": "/raɪt/",
+      "anki_answer": "écrire",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "a18429921ba112b9d7935f1713e97b1d80fd19ca",
+      "kind": "expression",
+      "level": "A1",
+      "text": "listen to music",
+      "meaning": "hear music with attention",
+      "meaning_fr": "écouter de la musique",
+      "example": "She listens to music at home.",
+      "phonetic": "",
+      "anki_answer": "écouter musique",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "7b905716a125c00fbb736372640fc762abf20482",
+      "kind": "history",
+      "level": "A1",
+      "text": "flag",
+      "meaning": "a piece of cloth used as a symbol",
+      "meaning_fr": "drapeau",
+      "example": "The flag was raised above the city.",
+      "phonetic": "",
+      "anki_answer": "drapeau",
+      "tags": [
+        "symbols"
+      ]
+    },
+    {
+      "key": "a014430d21e79b307572019b578a2ada596e7e48",
+      "kind": "word",
+      "level": "A2",
+      "text": "problem",
+      "meaning": "a difficulty that needs attention",
+      "meaning_fr": "problème",
+      "example": "We can solve this problem.",
+      "phonetic": "/ˈprɑːbləm/",
+      "anki_answer": "problème",
+      "tags": [
+        "problems"
+      ]
+    },
+    {
+      "key": "ed39de237e76fa71603f675ecb42d1735547f32e",
+      "kind": "expression",
+      "level": "A2",
+      "text": "run out of",
+      "meaning": "have none left",
+      "meaning_fr": "n'avoir plus de",
+      "example": "We have run out of milk.",
+      "phonetic": "",
+      "anki_answer": "plus de",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb",
+      "kind": "history",
+      "level": "A2",
+      "text": "craft",
+      "meaning": "a skilled manual activity",
+      "meaning_fr": "artisanat",
+      "example": "Local craft flourished in the town.",
+      "phonetic": "",
+      "anki_answer": "artisanat",
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "key": "191fe366db6fe1cc0379e370142159a3f5c922b6",
+      "kind": "word",
+      "level": "B1",
+      "text": "advice",
+      "meaning": "a suggestion about what to do",
+      "meaning_fr": "conseil",
+      "example": "Can I give you some advice?",
+      "phonetic": "/ədˈvaɪs/",
+      "anki_answer": "conseil",
+      "tags": [
+        "communication"
+      ]
+    },
+    {
+      "key": "d3876e87796606bcf8c30db1127db5b7e43f6798",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look forward to",
+      "meaning": "feel pleased about something future",
+      "meaning_fr": "attendre avec impatience",
+      "example": "We look forward to seeing you.",
+      "phonetic": "",
+      "anki_answer": "impatience, voir",
+      "tags": [
+        "feelings"
+      ]
+    },
+    {
+      "key": "cc77550905a0ab2e5ef8342c193f1863116d7089",
+      "kind": "history",
+      "level": "B1",
+      "text": "settler",
+      "meaning": "a person who goes to live in a new land",
+      "meaning_fr": "colon",
+      "example": "The settler built a small house.",
+      "phonetic": "",
+      "anki_answer": "colon",
+      "tags": [
+        "empire"
+      ]
+    },
+    {
+      "key": "ec1905290779e0d9a268c468836c53ebf16e8450",
+      "kind": "word",
+      "level": "B2",
+      "text": "evidence",
+      "meaning": "facts showing whether something is true",
+      "meaning_fr": "preuve",
+      "example": "There is little evidence for that claim.",
+      "phonetic": "/ˈevɪdəns/",
+      "anki_answer": "preuve",
+      "tags": [
+        "reasoning"
+      ]
+    },
+    {
+      "key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c",
+      "kind": "expression",
+      "level": "B2",
+      "text": "take the lead",
+      "meaning": "become the person in charge",
+      "meaning_fr": "prendre la tête",
+      "example": "The team took the lead in the second half.",
+      "phonetic": "",
+      "anki_answer": "prendre tête",
+      "tags": [
+        "leadership"
+      ]
+    },
+    {
+      "key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2",
+      "kind": "history",
+      "level": "B2",
+      "text": "canal",
+      "meaning": "an artificial waterway",
+      "meaning_fr": "canal",
+      "example": "The canal linked two rivers.",
+      "phonetic": "",
+      "anki_answer": "canal",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "25f23928768d2591aeb09b43cf1105a528c6ce18",
+      "kind": "word",
+      "level": "C1",
+      "text": "phenomenon",
+      "meaning": "an observable event or fact",
+      "meaning_fr": "phénomène",
+      "example": "Migration is a global phenomenon.",
+      "phonetic": "/fəˈnɑːmɪnən/",
+      "anki_answer": "phénomène",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70",
+      "kind": "expression",
+      "level": "C1",
+      "text": "churn out",
+      "meaning": "produce large quantities quickly",
+      "meaning_fr": "produire en masse",
+      "example": "The factory churns out cheap toys.",
+      "phonetic": "",
+      "anki_answer": "produire masse",
+      "tags": [
+        "production"
+      ]
+    },
+    {
+      "key": "791a0ea1444b60e42d259b4c7cb9fcec05066846",
+      "kind": "history",
+      "level": "C1",
+      "text": "egalitarian",
+      "meaning": "believing in equal rights for all people",
+      "meaning_fr": "égalitaire",
+      "example": "The egalitarian movement grew after 1830.",
+      "phonetic": "",
+      "anki_answer": "égalitaire",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0",
+      "kind": "word",
+      "level": "C2",
+      "text": "laconic",
+      "meaning": "using very few words",
+      "meaning_fr": "laconique",
+      "example": "His reply was laconic.",
+      "phonetic": "/ləˈkɑːnɪk/",
+      "anki_answer": "laconique",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883",
+      "kind": "expression",
+      "level": "C2",
+      "text": "a Pyrrhic victory",
+      "meaning": "a victory won at too great a cost",
+      "meaning_fr": "une victoire à la Pyrrhus",
+      "example": "The takeover was a Pyrrhic victory.",
+      "phonetic": "",
+      "anki_answer": "victoire Pyrrhus",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0",
+      "kind": "history",
+      "level": "C2",
+      "text": "archival",
+      "meaning": "relating to records kept in an archive",
+      "meaning_fr": "archivistique",
+      "example": "The archival documents were digitised.",
+      "phonetic": "",
+      "anki_answer": "archivistique",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “write” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "écrire",
+      "item_key": "3d96087a2974bace2b7d3a27dbe04a48c1f60d6b"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ to music",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "listen",
+      "item_key": "a18429921ba112b9d7935f1713e97b1d80fd19ca"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “flag” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "7b905716a125c00fbb736372640fc762abf20482"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “problem” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "problème",
+      "item_key": "a014430d21e79b307572019b578a2ada596e7e48"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ out of",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "run",
+      "item_key": "ed39de237e76fa71603f675ecb42d1735547f32e"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “craft” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "d22b620f9ed3f8cdfc97ef6f3448b23ce8c02eeb"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “advice” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "conseil",
+      "item_key": "191fe366db6fe1cc0379e370142159a3f5c922b6"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: look ____ to",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "forward",
+      "item_key": "d3876e87796606bcf8c30db1127db5b7e43f6798"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “settler” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "cc77550905a0ab2e5ef8342c193f1863116d7089"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “evidence” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "preuve",
+      "item_key": "ec1905290779e0d9a268c468836c53ebf16e8450"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: ____ the lead",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "take",
+      "item_key": "86ca6a06e80ee37efd2b8ce83e6d92f87723f68c"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “canal” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "e7a57aa3ce444e497518ac2975e855cd82ed02f2"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “phenomenon” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "phénomène",
+      "item_key": "25f23928768d2591aeb09b43cf1105a528c6ce18"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ out",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "churn",
+      "item_key": "e6fd264207e0edfb76c1aa57d7064a6b06357d70"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “egalitarian” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "791a0ea1444b60e42d259b4c7cb9fcec05066846"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “laconic” mean?",
+      "options": [
+        "conseil",
+        "laconique",
+        "phénomène",
+        "preuve"
+      ],
+      "answer": "laconique",
+      "item_key": "2f2f0b62e94bb4b5def683e0f9dd0401122a50d0"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: a Pyrrhic ____",
+      "options": [
+        "Pyrrhic",
+        "churn",
+        "forward",
+        "lead"
+      ],
+      "answer": "victory",
+      "item_key": "b87377ca3f5763f27b83ea5b33ff6d9acbae5883"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “archival” belong to?",
+      "options": [
+        "19th century",
+        "Contemporary",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Contemporary",
+      "item_key": "e10a5c0ecbc5df6f8f398b939f93ce4e3bd058c0"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 6,
+    "total": 6,
+    "origins": {
+      "fresh": 4,
+      "reserve": 1,
+      "adjacent": 1
+    },
+    "source_count": 6,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "Early modern",
+      "General"
+    ],
+    "history_themes": [
+      "Politics",
+      "Society",
+      "War"
+    ],
+    "search_path": "./data/en/search/2026-11-24.json"
+  }
+}
