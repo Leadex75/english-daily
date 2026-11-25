@@ -1,0 +1,349 @@
+{
+  "A1": {
+    "date": "2026-11-25",
+    "level": "A1",
+    "word": {
+      "text": "limpio",
+      "level": "A1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈlimpjo/",
+      "meaning": "que no está sucio",
+      "meaning_fr": "propre",
+      "example": "La habitación ya está limpia.",
+      "anki_answer": "limpio",
+      "tags": [
+        "hogar"
+      ],
+      "key": "bb06de0a73f5a5ce3e53e47109008c6cae89bb7e",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "buenas noches",
+      "level": "A1",
+      "type": "everyday phrase",
+      "meaning": "saludo al despedirse por la noche",
+      "meaning_fr": "bonne nuit",
+      "example": "Buenas noches, que descanses.",
+      "anki_answer": "buenas noches",
+      "tags": [
+        "despedidas"
+      ],
+      "key": "d15103dfe185a65580a8b8c2a968a203e6c8430d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "agua",
+      "aliases": [
+        "agua",
+        "aguas"
+      ],
+      "level": "A1",
+      "meaning": "un líquido claro que se bebe",
+      "meaning_fr": "eau",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "El agua del pozo era limpia.",
+      "tags": [
+        "diario"
+      ],
+      "key": "eb9b1d8c2f75fae3c9fde09652f3d770b9215397",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-25",
+    "level": "A2",
+    "word": {
+      "text": "recordar",
+      "level": "A2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/rekoɾˈdaɾ/",
+      "meaning": "tener algo presente en la memoria",
+      "meaning_fr": "se souvenir",
+      "example": "Recuerdo bien el primer día.",
+      "anki_answer": "recordar",
+      "tags": [
+        "memoria"
+      ],
+      "key": "c0e15d148f66bfa6a8aef64aaab3d8b0e97df17c",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "hacer una pregunta",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "formular una pregunta",
+      "meaning_fr": "poser une question",
+      "example": "Puedo hacer una pregunta.",
+      "anki_answer": "hacer una pregunta",
+      "tags": [
+        "comunicación"
+      ],
+      "key": "ece2b2d389fbfcd791333272b0456ae91390829b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "cronista",
+      "aliases": [
+        "cronista",
+        "cronistas"
+      ],
+      "level": "A2",
+      "meaning": "una persona que escribe sobre el pasado",
+      "meaning_fr": "chroniqueur",
+      "period": "Edad Media",
+      "theme": "Cultura",
+      "example": "El cronista registró la batalla.",
+      "tags": [
+        "cultura"
+      ],
+      "key": "edb009a13d33908f5cd419955eac08080db8a644",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-25",
+    "level": "B1",
+    "word": {
+      "text": "parlamento",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/paɾlaˈmento/",
+      "meaning": "un grupo que hace las leyes de un país",
+      "meaning_fr": "parlement",
+      "example": "El parlamento debatió el nuevo impuesto.",
+      "anki_answer": "parlamento",
+      "tags": [
+        "política"
+      ],
+      "key": "deb5567aa8ee8421417f9612f75118fcec434555",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "cerrar filas",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "mostrarse unidos",
+      "meaning_fr": "serrer les rangs",
+      "example": "El partido cerró filas ante la crisis.",
+      "anki_answer": "cerrar filas",
+      "tags": [
+        "grupos"
+      ],
+      "key": "6a5f2ea96d3cbe240a50a1a8e925b59f7d0987e9",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "colonia",
+      "aliases": [
+        "colonia",
+        "colonias"
+      ],
+      "level": "B1",
+      "meaning": "un territorio controlado por otro país",
+      "meaning_fr": "colonie",
+      "period": "Siglo XIX",
+      "theme": "Imperio",
+      "example": "La colonia exportaba azúcar.",
+      "tags": [
+        "imperio"
+      ],
+      "key": "8fa999f03c017151f01cf7b5f5fe5a793d0835c7",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-25",
+    "level": "B2",
+    "word": {
+      "text": "reforma",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/reˈfoɾma/",
+      "meaning": "un cambio que mejora una institución",
+      "meaning_fr": "réforme",
+      "example": "La reforma electoral fue polémica.",
+      "anki_answer": "reforma",
+      "tags": [
+        "política"
+      ],
+      "key": "f1a9d5c2e5de0e785eebaff71194ea8f1d7e203c",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "mirar hacia atrás",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "recordar el pasado",
+      "meaning_fr": "regarder en arrière",
+      "example": "Mirando hacia atrás, todo cambió.",
+      "anki_answer": "mirar hacia atrás",
+      "tags": [
+        "memoria"
+      ],
+      "key": "f76beeb185b4dbff5caa5f779cda4a206490c9dd",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "secularismo",
+      "aliases": [
+        "secularismo",
+        "laicismo"
+      ],
+      "level": "B2",
+      "meaning": "la separación entre religión y vida pública",
+      "meaning_fr": "laïcisme",
+      "period": "Siglo XIX",
+      "theme": "Religión",
+      "example": "El secularismo transformó la escuela.",
+      "tags": [
+        "religión"
+      ],
+      "key": "903d635dcdb254763ce6e96b9691367ba54e2a92",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-25",
+    "level": "C1",
+    "word": {
+      "text": "sufragista",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/suβɾaˈχista/",
+      "meaning": "una mujer que luchaba por el derecho al voto",
+      "meaning_fr": "suffragette",
+      "example": "La sufragista marchó por Londres.",
+      "anki_answer": "sufragista",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "ad153d0af0ba95db417c2b254e3400a86eb8cde1",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "consolidar el poder",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "hacer más firme el poder",
+      "meaning_fr": "consolider le pouvoir",
+      "example": "Consolidó el poder tras la victoria.",
+      "anki_answer": "consolidar el poder",
+      "tags": [
+        "política"
+      ],
+      "key": "63eeb30f09aa71ef8f6573c4a482c50603985f86",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "igualdad",
+      "aliases": [
+        "igualdad"
+      ],
+      "level": "C1",
+      "meaning": "el principio de tratar a todos del mismo modo",
+      "meaning_fr": "égalité",
+      "period": "Siglo XIX",
+      "theme": "Sociedad",
+      "example": "La igualdad ante la ley fue una meta.",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "8b43a00673ed6ea0b01eff762f59baaf578b9993",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-25",
+    "level": "C2",
+    "word": {
+      "text": "epistemología",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/epistemoloˈχia/",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
+      "anki_answer": "epistemología",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "fbe0831be1a8fc4a7036ea32942b5ed3fb9fcd1e",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "desvelar una continuidad",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "revelar una continuidad oculta",
+      "meaning_fr": "révéler une continuité",
+      "example": "Desvelaron una continuidad institucional.",
+      "anki_answer": "desvelar una continuidad",
+      "tags": [
+        "historia"
+      ],
+      "key": "385f2001dd9a752772dd0477a1323dcdfbad8bc8",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "interregno",
+      "aliases": [
+        "interregno",
+        "interregnos"
+      ],
+      "level": "C2",
+      "meaning": "el período entre dos reinados",
+      "meaning_fr": "interrègne",
+      "period": "Edad Media",
+      "theme": "Política",
+      "example": "El interregno duró varios meses.",
+      "tags": [
+        "política"
+      ],
+      "key": "97eedf1ec32968e907ca73500b1b9af6064335d8",
+      "kind": "history"
+    }
+  }
+}

@@ -1,0 +1,955 @@
+{
+  "date": "2026-11-25",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 22,
+        "title": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-25T00:54:13",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 1919,
+        "duration_sec": null,
+        "body_text": "I am sitting on my balcony in Kyiv looking at a photo of a garden in the village I grew up in, in eastern Ukraine. The plot is overgrown with thick grass, and two wooden stakes are planted in the ground. Despite the warm sunshine, I find myself shivering.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "f2e50e6f7f9f3fc0a547975bf56b6d790b66696e",
+        "summary": "BBC journalist Anastasiya Gribanova investigates who killed her father and grandparents in the war.",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 10
+      },
+      "audio": {
+        "id": 5,
+        "title": "9am ET, November 25 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-25T14:09:28",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e2069f44-69df-484e-967c-257a92fb1fcf/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_16d906b103a6fd300c8a371aad7aed95_5142603.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e2069f44-69df-484e-967c-257a92fb1fcf&feed=O9WlY7a5&t=podcast&e=nx-s1-20261125-0900-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=5142603&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_328__55f28298e23a23cfcccafeba1e30c50a69dee7a3",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "6c5aebe2a2db9e87e2309874fe1f273d3f752c4c",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "9am ET, November 25 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 44,
+        "title": "Tell us: what have you been reading this month?",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/books/2022/feb/23/tell-us-what-have-you-been-reading-this-month",
+        "published_at": "2026-11-25T13:02:28",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 109,
+        "duration_sec": null,
+        "body_text": "As part of The Guardian’s “what we’re reading” series, we would like to hear about the books you’ve particularly enjoyed this month. Have you read a book in recent weeks – fiction or non-fiction – that you’d recommend? Tell us all about it below. Share your recommendations You can get in touch by filling in the form below.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "307f3191236b026d0466839a4bf1fccbcd02bdc9",
+        "summary": "We would like to hear about the books you’ve particularly enjoyed this month As part of The Guardian’s “ what we’re reading ” series, we would like to hear about the books you’ve particularly enjoyed this month. Have you read a book in recent weeks – fiction or non-fiction – that you’d recommend? Tell us all about it below.",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Tell us: what have you been reading this month? — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1177455204,
+        "title": "Alice's Adventures in Wonderland - Chapter 3",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/alices-adventures-in-wonderland-by-lewis-carroll/",
+        "published_at": "2026-11-23T15:43:41",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 103,
+        "duration_sec": 1063,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_03_64kb.mp3",
+        "description": "Alice's Adventures in Wonderland by . In this children's classic, a girl named Alice follows falls down a rabbit-hole into a fantasy realm full of talking creatures. She attends a never-ending tea party and plays croquet at the court of the anthropomorphic playing cards. (Summary written by Gesine) \"I loved all the voices in this project and probably wouldn’t have put the time into checking into t",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "5c4576501d1f38c73e1fc12d5ea58beb85ceaa3e",
+        "summary": "Alice's Adventures in Wonderland by . In this children's classic, a girl named Alice follows falls down a rabbit-hole into a fantasy realm full of talking creatures. She attends a never-ending tea party and plays croquet at the court of the anthropomorphic playing cards. (Summary written by Gesine) \"I loved all the voices in this project and probably wouldn’t have put the time into checking into t",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Alice's Adventures in Wonderland - Chapter 3 — LibriVox (culture)",
+        "duration_formatted": "17:43",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": {
+        "id": 65,
+        "title": "On this day: 25 November",
+        "source": "Wikipedia On this day",
+        "source_id": "wikipedia_onthisday",
+        "category": "history",
+        "url": "https://en.wikipedia.org/wiki/November_25",
+        "published_at": "2026-11-25T00:00:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 87,
+        "duration_sec": null,
+        "body_text": "2023 — Three Palestinian students are injured in a shooting in Burlington, Vermont.\n\n2021 — A fire at a coal mine in Kemerovo Oblast kills 51 people.\n\n2009 — Jeddah floods: Freak rains swamp the city of Jeddah, Saudi Arabia, during an ongoing Hajj pilgrimage. Three thousand cars are swept away and 122 people perish in the torrents, with 350 others missing.\n\n2008 — Cyclone Nisha strikes northern Sri Lanka, killing 15 people and displacing 90,000 others while dealing the region the highest rainfall in nine decades.\n\n2000 — The 2000 Baku earthquake, with a Richter magnitude of 7.0 kills 26 people in Baku, Azerbaijan.",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "e264fa47fe5d287888d8b44cc8fffca3c83d2c53",
+        "summary": "2023 — Three Palestinian students are injured in a shooting in Burlington, Vermont.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [
+          "General",
+          "Middle Ages"
+        ],
+        "themes": [
+          "Society",
+          "Religion"
+        ],
+        "history_terms": [
+          {
+            "text": "city",
+            "aliases": [
+              "city",
+              "town"
+            ],
+            "level": "A1",
+            "meaning": "a large place where people live and work",
+            "meaning_fr": "ville",
+            "period": "General",
+            "theme": "Society",
+            "example": "Rome is an ancient city.",
+            "tags": [
+              "places"
+            ]
+          },
+          {
+            "text": "pilgrimage",
+            "aliases": [
+              "pilgrimage",
+              "pilgrimages"
+            ],
+            "level": "B1",
+            "meaning": "a journey to a holy place",
+            "meaning_fr": "pèlerinage",
+            "period": "Middle Ages",
+            "theme": "Religion",
+            "example": "The pilgrimage took many weeks.",
+            "tags": [
+              "religion"
+            ]
+          }
+        ],
+        "alt_text": "On this day: 25 November — Wikipedia On this day",
+        "duration_formatted": "",
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/MM/DD",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1830536316,
+        "title": "History of Holland - General Preface, Prologue",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/history-of-holland/",
+        "published_at": "2026-11-21T21:54:59",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 51,
+        "duration_sec": 404,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/history_of_holland__0707_librivox/historyofholland_00_gedmundson_64kb.mp3",
+        "description": "History of Holland by . The title, \"History of Holland,\" given to this volume is fully justified by the predominant part which the great maritime province of Holland took in the War of Independence and throughout the whole of the subsequent history of the Dutch state and people.(Summary from book prologue)",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "906df4a3adcfe79f6f6dc0059482dbd1dd32f0c6",
+        "summary": "History of Holland by . The title, \"History of Holland,\" given to this volume is fully justified by the predominant part which the great maritime province of Holland took in the War of Independence and throughout the whole of the subsequent history of the Dutch state and people.(Summary from book prologue)",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (history & biography)",
+          "Closest level: B2"
+        ],
+        "periods": [
+          "General",
+          "20th century"
+        ],
+        "themes": [
+          "War",
+          "Politics"
+        ],
+        "history_terms": [
+          {
+            "text": "war",
+            "aliases": [
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "independence",
+            "aliases": [
+              "independence",
+              "freedom"
+            ],
+            "level": "B2",
+            "meaning": "the state of governing oneself",
+            "meaning_fr": "indépendance",
+            "period": "20th century",
+            "theme": "Politics",
+            "example": "Independence came after a long struggle.",
+            "tags": [
+              "politics"
+            ]
+          }
+        ],
+        "alt_text": "History of Holland - General Preface, Prologue — LibriVox (history & biography)",
+        "duration_formatted": "6:44",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-25",
+    "level": "B1",
+    "word": {
+      "text": "mountain",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈmaʊntn/",
+      "meaning": "a large natural height of land",
+      "meaning_fr": "montagne",
+      "example": "We climbed the mountain at dawn.",
+      "anki_answer": "montagne",
+      "tags": [
+        "nature"
+      ],
+      "key": "010b402be6cca03f692bf3c3899e6445ef77c820",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈmaʊntɪn/",
+        "definitions": [
+          "An elevation of land of considerable dimensions rising more or less abruptly, forming a conspicuous figure in the landscape, usually having a small extent of surface at its summit.",
+          "Something very large in size or quantity; a huge amount; a great heap.",
+          "Of, belonging to, relating to, or found on a mountain; like a mountain in size; (of living things) growing or living on a mountain.",
+          "A difficult task or challenge."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/mountain-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/elevation\" title=\"elevation\">elevation</a> of land of considerable dimensions rising more or less <a rel=\"mw:WikiLink\" href=\"/wiki/abruptly\" title=\"abruptly\">abruptly</a>, forming a <a rel=\"mw:WikiLink\" href=\"/wiki/conspicuous\" title=\"conspicuous\">conspicuous</a> figure in the landscape, usually having a small extent of surface at its <a rel=\"mw:WikiLink\" href=\"/wiki/summit\" title=\"summit\">summit</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles\" about=\"#mwt47\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> Something very large in size or quantity; a huge <a rel=\"mw:WikiLink\" href=\"/wiki/amount\" title=\"amount\">amount</a>; a great <a rel=\"mw:WikiLink\" href=\"/wiki/heap\" title=\"heap\">heap</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt56\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt61\" typeof=\"mw:Transclusion\"></span> A difficult <a rel=\"mw:WikiLink\" href=\"/wiki/task\" title=\"task\">task</a> or challenge.",
+          "<span class=\"usage-label-sense\" about=\"#mwt63\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/wine\" title=\"wine\">Wine</a> from <a rel=\"mw:WikiLink\" href=\"/wiki/Malaga\" title=\"Malaga\">Malaga</a> made from <a rel=\"mw:WikiLink\" href=\"/wiki/grape\" title=\"grape\">grapes</a> that grow on a mountain. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt64\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be under the weather",
+      "level": "B1",
+      "type": "idiom",
+      "meaning": "feel slightly ill",
+      "meaning_fr": "ne pas être en forme",
+      "example": "I am a bit under the weather today.",
+      "anki_answer": "pas en forme",
+      "tags": [
+        "health"
+      ],
+      "key": "56e5536c3190fd001e316ec62ef606aeb471979a",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "colony",
+      "aliases": [
+        "colony",
+        "settlement"
+      ],
+      "level": "B1",
+      "meaning": "a land controlled by another country",
+      "meaning_fr": "colonie",
+      "period": "19th century",
+      "theme": "Empire",
+      "example": "The colony became independent in 1960.",
+      "tags": [
+        "politics"
+      ],
+      "key": "a6c327805a4a0c4a77ecc5b78d72c9d125c1f715",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "2e671eb573a066f23b37dbfff2806cf430f2a76d",
+      "kind": "word",
+      "level": "A1",
+      "text": "open",
+      "meaning": "move something so it is not closed",
+      "meaning_fr": "ouvrir",
+      "example": "Open the window, please.",
+      "phonetic": "/ˈoʊpən/",
+      "anki_answer": "ouvrir",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "b0317ab3d199417f690b65d2d0d69a675e3d252d",
+      "kind": "expression",
+      "level": "A1",
+      "text": "a lot of",
+      "meaning": "a large amount of",
+      "meaning_fr": "beaucoup de",
+      "example": "She has a lot of friends.",
+      "phonetic": "",
+      "anki_answer": "beaucoup",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "8ccd8fe7a59f1e044612114cc0e7c4bec34bca87",
+      "kind": "history",
+      "level": "A1",
+      "text": "ancient",
+      "meaning": "from a very long time ago",
+      "meaning_fr": "ancien",
+      "example": "We visited an ancient temple.",
+      "phonetic": "",
+      "anki_answer": "ancien",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "key": "4dc9d3512ebaa08d7e4d16e13611ecb91259b756",
+      "kind": "word",
+      "level": "A2",
+      "text": "weather",
+      "meaning": "the conditions outside such as rain or sun",
+      "meaning_fr": "temps, météo",
+      "example": "The weather is nice today.",
+      "phonetic": "/ˈweðər/",
+      "anki_answer": "météo",
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "key": "9eb99e7d400a9f1b534a9389632562edcaa90b48",
+      "kind": "expression",
+      "level": "A2",
+      "text": "in front of",
+      "meaning": "before something in position",
+      "meaning_fr": "devant",
+      "example": "The car is in front of the house.",
+      "phonetic": "",
+      "anki_answer": "devant",
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "key": "554b7747d7f9155dc3f90acfe4feef6db5103dd9",
+      "kind": "history",
+      "level": "A2",
+      "text": "map",
+      "meaning": "a drawing of an area of land",
+      "meaning_fr": "carte",
+      "example": "The map showed the new colonies.",
+      "phonetic": "",
+      "anki_answer": "carte",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "010b402be6cca03f692bf3c3899e6445ef77c820",
+      "kind": "word",
+      "level": "B1",
+      "text": "mountain",
+      "meaning": "a large natural height of land",
+      "meaning_fr": "montagne",
+      "example": "We climbed the mountain at dawn.",
+      "phonetic": "/ˈmaʊntn/",
+      "anki_answer": "montagne",
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "key": "56e5536c3190fd001e316ec62ef606aeb471979a",
+      "kind": "expression",
+      "level": "B1",
+      "text": "be under the weather",
+      "meaning": "feel slightly ill",
+      "meaning_fr": "ne pas être en forme",
+      "example": "I am a bit under the weather today.",
+      "phonetic": "",
+      "anki_answer": "pas en forme",
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "key": "a6c327805a4a0c4a77ecc5b78d72c9d125c1f715",
+      "kind": "history",
+      "level": "B1",
+      "text": "colony",
+      "meaning": "a land controlled by another country",
+      "meaning_fr": "colonie",
+      "example": "The colony became independent in 1960.",
+      "phonetic": "",
+      "anki_answer": "colonie",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "4b2f70ab4b7df17fe9de36905b5bd9caa71f6acb",
+      "kind": "word",
+      "level": "B2",
+      "text": "opportunity",
+      "meaning": "a chance to do something",
+      "meaning_fr": "occasion",
+      "example": "Do not miss this opportunity.",
+      "phonetic": "/ˌɑːpərˈtuːnəti/",
+      "anki_answer": "occasion",
+      "tags": [
+        "opportunity"
+      ]
+    },
+    {
+      "key": "12c8781b104bc287f10ce35d329a964236430b0f",
+      "kind": "expression",
+      "level": "B2",
+      "text": "sit on the fence",
+      "meaning": "avoid choosing a side",
+      "meaning_fr": "rester sur la clôture, ne pas choisir",
+      "example": "Stop sitting on the fence and decide.",
+      "phonetic": "",
+      "anki_answer": "ne pas choisir",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "e0c5782598acdb91b8dde2a246650d7ccc28190d",
+      "kind": "history",
+      "level": "B2",
+      "text": "secular",
+      "meaning": "not connected with religion",
+      "meaning_fr": "laïque",
+      "example": "The schools became secular.",
+      "phonetic": "",
+      "anki_answer": "laïque",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "7e12c3ab787b6733bd382cb1585930c46778984c",
+      "kind": "word",
+      "level": "C1",
+      "text": "undermine",
+      "meaning": "weaken something gradually",
+      "meaning_fr": "saper, miner",
+      "example": "Corruption undermines trust.",
+      "phonetic": "/ˌʌndərˈmaɪn/",
+      "anki_answer": "saper",
+      "tags": [
+        "weakening"
+      ]
+    },
+    {
+      "key": "c4273064d140fc10de1aa702eddd60e156410c3c",
+      "kind": "expression",
+      "level": "C1",
+      "text": "call a spade a spade",
+      "meaning": "speak plainly about something unpleasant",
+      "meaning_fr": "appeler un chat un chat",
+      "example": "He calls a spade a spade in meetings.",
+      "phonetic": "",
+      "anki_answer": "appeler chat chat",
+      "tags": [
+        "speech"
+      ]
+    },
+    {
+      "key": "123bdc7735ba60f1840d9d2fa3055a7c314183dc",
+      "kind": "history",
+      "level": "C1",
+      "text": "secularization",
+      "meaning": "the process of reducing religious influence in public life",
+      "meaning_fr": "laïcisation",
+      "example": "Secularization changed schools.",
+      "phonetic": "",
+      "anki_answer": "laïcisation",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "685325b4dda5c5993287bcd0d383f63530087d27",
+      "kind": "word",
+      "level": "C2",
+      "text": "obviate",
+      "meaning": "remove the need for something",
+      "meaning_fr": "rendre inutile",
+      "example": "Automation obviates manual entry.",
+      "phonetic": "/ˈɑːbvieɪt/",
+      "anki_answer": "rendre inutile",
+      "tags": [
+        "necessity"
+      ]
+    },
+    {
+      "key": "ea53d0ed5043a2e2ac30b1da26808f4beb658804",
+      "kind": "expression",
+      "level": "C2",
+      "text": "inured to hardship",
+      "meaning": "made used to difficulty so it no longer troubles you",
+      "meaning_fr": "habitué à la difficulté",
+      "example": "Veteran volunteers are inured to hardship.",
+      "phonetic": "",
+      "anki_answer": "habitué difficulté",
+      "tags": [
+        "endurance"
+      ]
+    },
+    {
+      "key": "6d50b3ff44cbf73d1f9f805c524fa11cd66540ee",
+      "kind": "history",
+      "level": "C2",
+      "text": "legitimism",
+      "meaning": "support for a dynasty's traditional right to rule",
+      "meaning_fr": "légitimisme",
+      "example": "Legitimism opposed the new regime.",
+      "phonetic": "",
+      "anki_answer": "légitimisme",
+      "tags": [
+        "politics"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “open” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "ouvrir",
+      "item_key": "2e671eb573a066f23b37dbfff2806cf430f2a76d"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: a ____ of",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "lot",
+      "item_key": "b0317ab3d199417f690b65d2d0d69a675e3d252d"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “ancient” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "Antiquity",
+      "item_key": "8ccd8fe7a59f1e044612114cc0e7c4bec34bca87"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “weather” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "temps, météo",
+      "item_key": "4dc9d3512ebaa08d7e4d16e13611ecb91259b756"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: in ____ of",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "front",
+      "item_key": "9eb99e7d400a9f1b534a9389632562edcaa90b48"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “map” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "Early modern",
+      "item_key": "554b7747d7f9155dc3f90acfe4feef6db5103dd9"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “mountain” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "montagne",
+      "item_key": "010b402be6cca03f692bf3c3899e6445ef77c820"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: be under the ____",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "weather",
+      "item_key": "56e5536c3190fd001e316ec62ef606aeb471979a"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “colony” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "19th century",
+      "item_key": "a6c327805a4a0c4a77ecc5b78d72c9d125c1f715"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “opportunity” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "occasion",
+      "item_key": "4b2f70ab4b7df17fe9de36905b5bd9caa71f6acb"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: sit on the ____",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "fence",
+      "item_key": "12c8781b104bc287f10ce35d329a964236430b0f"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “secular” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "19th century",
+      "item_key": "e0c5782598acdb91b8dde2a246650d7ccc28190d"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “undermine” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "saper, miner",
+      "item_key": "7e12c3ab787b6733bd382cb1585930c46778984c"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: call a ____ a spade",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "spade",
+      "item_key": "c4273064d140fc10de1aa702eddd60e156410c3c"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “secularization” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "19th century",
+      "item_key": "123bdc7735ba60f1840d9d2fa3055a7c314183dc"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “obviate” mean?",
+      "options": [
+        "montagne",
+        "occasion",
+        "ouvrir",
+        "rendre inutile"
+      ],
+      "answer": "rendre inutile",
+      "item_key": "685325b4dda5c5993287bcd0d383f63530087d27"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: inured to ____",
+      "options": [
+        "call",
+        "fence",
+        "front",
+        "hardship"
+      ],
+      "answer": "hardship",
+      "item_key": "ea53d0ed5043a2e2ac30b1da26808f4beb658804"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “legitimism” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "Early modern"
+      ],
+      "answer": "19th century",
+      "item_key": "6d50b3ff44cbf73d1f9f805c524fa11cd66540ee"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 6,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 2,
+      "adjacent": 3
+    },
+    "source_count": 6,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "20th century",
+      "General",
+      "Middle Ages"
+    ],
+    "history_themes": [
+      "Politics",
+      "Religion",
+      "Society",
+      "War"
+    ],
+    "search_path": "./data/en/search/2026-11-25.json"
+  }
+}

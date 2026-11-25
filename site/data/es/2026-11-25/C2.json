@@ -1,0 +1,688 @@
+{
+  "date": "2026-11-25",
+  "lang": "es",
+  "level": "C2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 1888177359,
+        "title": "Las fuerzas especiales de Colombia rescatan a decenas de secuestrados en un supermercado y logran someter a los asaltantes",
+        "source": "BBC Mundo (texto)",
+        "source_id": "es_bbc_mundo_text",
+        "category": "news",
+        "url": "https://www.bbc.com/mundo/articles/cmx2rny0dn17o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-25T07:47:13",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 574,
+        "duration_sec": null,
+        "body_text": "Las fuerzas especiales de Colombia rescatan a decenas de secuestrados en un supermercado y logran someter a los asaltantes - Autor, Santiago Vanegas - Título del autor, BBC News Mundo - Fecha de publicación - Tiempo de lectura: 3 min Fuerzas Especiales del Ejército y la Policía de Colombia irrumpieron en un supermercado en Cartagena, en la Costa Caribe colombiana…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "664cbd1883f9a0223a0950b8aa43fb81206b8cf9",
+        "summary": "Según informó el gobierno, los hombres armados tomaron a los clientes y empleados del supermercado como rehenes, al ser sorprendidos por la Policía en medio de un intento de robo.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Las fuerzas especiales de Colombia rescatan a decenas de secuestrados en un supermercado y logran someter a los asaltantes — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 3
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-25",
+    "level": "C2",
+    "word": {
+      "text": "epistemología",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/epistemoloˈχia/",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
+      "anki_answer": "epistemología",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "fbe0831be1a8fc4a7036ea32942b5ed3fb9fcd1e",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "desvelar una continuidad",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "revelar una continuidad oculta",
+      "meaning_fr": "révéler une continuité",
+      "example": "Desvelaron una continuidad institucional.",
+      "anki_answer": "desvelar una continuidad",
+      "tags": [
+        "historia"
+      ],
+      "key": "385f2001dd9a752772dd0477a1323dcdfbad8bc8",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "interregno",
+      "aliases": [
+        "interregno",
+        "interregnos"
+      ],
+      "level": "C2",
+      "meaning": "el período entre dos reinados",
+      "meaning_fr": "interrègne",
+      "period": "Edad Media",
+      "theme": "Política",
+      "example": "El interregno duró varios meses.",
+      "tags": [
+        "política"
+      ],
+      "key": "97eedf1ec32968e907ca73500b1b9af6064335d8",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "bb06de0a73f5a5ce3e53e47109008c6cae89bb7e",
+      "kind": "word",
+      "level": "A1",
+      "text": "limpio",
+      "meaning": "que no está sucio",
+      "meaning_fr": "propre",
+      "example": "La habitación ya está limpia.",
+      "phonetic": "/ˈlimpjo/",
+      "anki_answer": "limpio",
+      "tags": [
+        "hogar"
+      ]
+    },
+    {
+      "key": "d15103dfe185a65580a8b8c2a968a203e6c8430d",
+      "kind": "expression",
+      "level": "A1",
+      "text": "buenas noches",
+      "meaning": "saludo al despedirse por la noche",
+      "meaning_fr": "bonne nuit",
+      "example": "Buenas noches, que descanses.",
+      "phonetic": "",
+      "anki_answer": "buenas noches",
+      "tags": [
+        "despedidas"
+      ]
+    },
+    {
+      "key": "eb9b1d8c2f75fae3c9fde09652f3d770b9215397",
+      "kind": "history",
+      "level": "A1",
+      "text": "agua",
+      "meaning": "un líquido claro que se bebe",
+      "meaning_fr": "eau",
+      "example": "El agua del pozo era limpia.",
+      "phonetic": "",
+      "anki_answer": "eau",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "c0e15d148f66bfa6a8aef64aaab3d8b0e97df17c",
+      "kind": "word",
+      "level": "A2",
+      "text": "recordar",
+      "meaning": "tener algo presente en la memoria",
+      "meaning_fr": "se souvenir",
+      "example": "Recuerdo bien el primer día.",
+      "phonetic": "/rekoɾˈdaɾ/",
+      "anki_answer": "recordar",
+      "tags": [
+        "memoria"
+      ]
+    },
+    {
+      "key": "ece2b2d389fbfcd791333272b0456ae91390829b",
+      "kind": "expression",
+      "level": "A2",
+      "text": "hacer una pregunta",
+      "meaning": "formular una pregunta",
+      "meaning_fr": "poser une question",
+      "example": "Puedo hacer una pregunta.",
+      "phonetic": "",
+      "anki_answer": "hacer una pregunta",
+      "tags": [
+        "comunicación"
+      ]
+    },
+    {
+      "key": "edb009a13d33908f5cd419955eac08080db8a644",
+      "kind": "history",
+      "level": "A2",
+      "text": "cronista",
+      "meaning": "una persona que escribe sobre el pasado",
+      "meaning_fr": "chroniqueur",
+      "example": "El cronista registró la batalla.",
+      "phonetic": "",
+      "anki_answer": "chroniqueur",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "deb5567aa8ee8421417f9612f75118fcec434555",
+      "kind": "word",
+      "level": "B1",
+      "text": "parlamento",
+      "meaning": "un grupo que hace las leyes de un país",
+      "meaning_fr": "parlement",
+      "example": "El parlamento debatió el nuevo impuesto.",
+      "phonetic": "/paɾlaˈmento/",
+      "anki_answer": "parlamento",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "6a5f2ea96d3cbe240a50a1a8e925b59f7d0987e9",
+      "kind": "expression",
+      "level": "B1",
+      "text": "cerrar filas",
+      "meaning": "mostrarse unidos",
+      "meaning_fr": "serrer les rangs",
+      "example": "El partido cerró filas ante la crisis.",
+      "phonetic": "",
+      "anki_answer": "cerrar filas",
+      "tags": [
+        "grupos"
+      ]
+    },
+    {
+      "key": "8fa999f03c017151f01cf7b5f5fe5a793d0835c7",
+      "kind": "history",
+      "level": "B1",
+      "text": "colonia",
+      "meaning": "un territorio controlado por otro país",
+      "meaning_fr": "colonie",
+      "example": "La colonia exportaba azúcar.",
+      "phonetic": "",
+      "anki_answer": "colonie",
+      "tags": [
+        "imperio"
+      ]
+    },
+    {
+      "key": "f1a9d5c2e5de0e785eebaff71194ea8f1d7e203c",
+      "kind": "word",
+      "level": "B2",
+      "text": "reforma",
+      "meaning": "un cambio que mejora una institución",
+      "meaning_fr": "réforme",
+      "example": "La reforma electoral fue polémica.",
+      "phonetic": "/reˈfoɾma/",
+      "anki_answer": "reforma",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "f76beeb185b4dbff5caa5f779cda4a206490c9dd",
+      "kind": "expression",
+      "level": "B2",
+      "text": "mirar hacia atrás",
+      "meaning": "recordar el pasado",
+      "meaning_fr": "regarder en arrière",
+      "example": "Mirando hacia atrás, todo cambió.",
+      "phonetic": "",
+      "anki_answer": "mirar hacia atrás",
+      "tags": [
+        "memoria"
+      ]
+    },
+    {
+      "key": "903d635dcdb254763ce6e96b9691367ba54e2a92",
+      "kind": "history",
+      "level": "B2",
+      "text": "secularismo",
+      "meaning": "la separación entre religión y vida pública",
+      "meaning_fr": "laïcisme",
+      "example": "El secularismo transformó la escuela.",
+      "phonetic": "",
+      "anki_answer": "laïcisme",
+      "tags": [
+        "religión"
+      ]
+    },
+    {
+      "key": "ad153d0af0ba95db417c2b254e3400a86eb8cde1",
+      "kind": "word",
+      "level": "C1",
+      "text": "sufragista",
+      "meaning": "una mujer que luchaba por el derecho al voto",
+      "meaning_fr": "suffragette",
+      "example": "La sufragista marchó por Londres.",
+      "phonetic": "/suβɾaˈχista/",
+      "anki_answer": "sufragista",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "63eeb30f09aa71ef8f6573c4a482c50603985f86",
+      "kind": "expression",
+      "level": "C1",
+      "text": "consolidar el poder",
+      "meaning": "hacer más firme el poder",
+      "meaning_fr": "consolider le pouvoir",
+      "example": "Consolidó el poder tras la victoria.",
+      "phonetic": "",
+      "anki_answer": "consolidar el poder",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "8b43a00673ed6ea0b01eff762f59baaf578b9993",
+      "kind": "history",
+      "level": "C1",
+      "text": "igualdad",
+      "meaning": "el principio de tratar a todos del mismo modo",
+      "meaning_fr": "égalité",
+      "example": "La igualdad ante la ley fue una meta.",
+      "phonetic": "",
+      "anki_answer": "égalité",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "fbe0831be1a8fc4a7036ea32942b5ed3fb9fcd1e",
+      "kind": "word",
+      "level": "C2",
+      "text": "epistemología",
+      "meaning": "la rama de la filosofía que estudia el conocimiento",
+      "meaning_fr": "épistémologie",
+      "example": "La epistemología histórica examina las fuentes.",
+      "phonetic": "/epistemoloˈχia/",
+      "anki_answer": "epistemología",
+      "tags": [
+        "ciencia"
+      ]
+    },
+    {
+      "key": "385f2001dd9a752772dd0477a1323dcdfbad8bc8",
+      "kind": "expression",
+      "level": "C2",
+      "text": "desvelar una continuidad",
+      "meaning": "revelar una continuidad oculta",
+      "meaning_fr": "révéler une continuité",
+      "example": "Desvelaron una continuidad institucional.",
+      "phonetic": "",
+      "anki_answer": "desvelar una continuidad",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "97eedf1ec32968e907ca73500b1b9af6064335d8",
+      "kind": "history",
+      "level": "C2",
+      "text": "interregno",
+      "meaning": "el período entre dos reinados",
+      "meaning_fr": "interrègne",
+      "example": "El interregno duró varios meses.",
+      "phonetic": "",
+      "anki_answer": "interrègne",
+      "tags": [
+        "política"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “limpio”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "propre",
+      "item_key": "bb06de0a73f5a5ce3e53e47109008c6cae89bb7e"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: buenas ____",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "noches",
+      "item_key": "d15103dfe185a65580a8b8c2a968a203e6c8430d"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “agua”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "eb9b1d8c2f75fae3c9fde09652f3d770b9215397"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “recordar”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "se souvenir",
+      "item_key": "c0e15d148f66bfa6a8aef64aaab3d8b0e97df17c"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: hacer una ____",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "pregunta",
+      "item_key": "ece2b2d389fbfcd791333272b0456ae91390829b"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “cronista”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "edb009a13d33908f5cd419955eac08080db8a644"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “parlamento”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "parlement",
+      "item_key": "deb5567aa8ee8421417f9612f75118fcec434555"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: ____ filas",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "cerrar",
+      "item_key": "6a5f2ea96d3cbe240a50a1a8e925b59f7d0987e9"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “colonia”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "8fa999f03c017151f01cf7b5f5fe5a793d0835c7"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “reforma”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "réforme",
+      "item_key": "f1a9d5c2e5de0e785eebaff71194ea8f1d7e203c"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: ____ hacia atrás",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "mirar",
+      "item_key": "f76beeb185b4dbff5caa5f779cda4a206490c9dd"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “secularismo”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "903d635dcdb254763ce6e96b9691367ba54e2a92"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “sufragista”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "suffragette",
+      "item_key": "ad153d0af0ba95db417c2b254e3400a86eb8cde1"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ el poder",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "consolidar",
+      "item_key": "63eeb30f09aa71ef8f6573c4a482c50603985f86"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “igualdad”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "8b43a00673ed6ea0b01eff762f59baaf578b9993"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “epistemología”?",
+      "options": [
+        "parlement",
+        "propre",
+        "réforme",
+        "se souvenir"
+      ],
+      "answer": "épistémologie",
+      "item_key": "fbe0831be1a8fc4a7036ea32942b5ed3fb9fcd1e"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: desvelar una ____",
+      "options": [
+        "atrás",
+        "buenas",
+        "cerrar",
+        "consolidar"
+      ],
+      "answer": "continuidad",
+      "item_key": "385f2001dd9a752772dd0477a1323dcdfbad8bc8"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “interregno”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "97eedf1ec32968e907ca73500b1b9af6064335d8"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 1,
+    "total": 6,
+    "origins": {
+      "adjacent": 1
+    },
+    "source_count": 1,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-25.json"
+  }
+}

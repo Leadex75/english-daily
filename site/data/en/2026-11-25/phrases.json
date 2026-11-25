@@ -1,0 +1,469 @@
+{
+  "A1": {
+    "date": "2026-11-25",
+    "level": "A1",
+    "word": {
+      "text": "open",
+      "level": "A1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ˈoʊpən/",
+      "meaning": "move something so it is not closed",
+      "meaning_fr": "ouvrir",
+      "example": "Open the window, please.",
+      "anki_answer": "ouvrir",
+      "tags": [
+        "daily"
+      ],
+      "key": "2e671eb573a066f23b37dbfff2806cf430f2a76d",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈəʊ.pən/",
+        "definitions": [
+          "Not closed",
+          "Not physically drawn together, closed, folded or contracted; extended",
+          "Actively conducting or prepared to conduct business.",
+          "Receptive."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/open-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt59\" typeof=\"mw:Transclusion\"></span> Physically <a rel=\"mw:WikiLink\" href=\"/wiki/unobstructed\" title=\"unobstructed\">unobstructed</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/uncovered\" title=\"uncovered\">uncovered</a>, etc.\n<ol><li>Able to have something <a rel=\"mw:WikiLink\" href=\"/wiki/pass\" title=\"pass\">pass</a> through or along it.",
+          "Able to have something <a rel=\"mw:WikiLink\" href=\"/wiki/pass\" title=\"pass\">pass</a> through or along it.",
+          "Not <a rel=\"mw:WikiLink\" href=\"/wiki/covered\" title=\"covered\">covered</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/sealed\" title=\"sealed\">sealed</a>, etc.; having an <a rel=\"mw:WikiLink\" href=\"/wiki/opening\" title=\"opening\">opening</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/aperture\" title=\"aperture\">aperture</a> showing what is <a rel=\"mw:WikiLink\" href=\"/wiki/inside\" title=\"inside\">inside</a>.",
+          "Not physically <a rel=\"mw:WikiLink\" href=\"/wiki/drawn\" title=\"drawn\">drawn</a> <a rel=\"mw:WikiLink\" href=\"/wiki/together\" title=\"together\">together</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/folded\" title=\"folded\">folded</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/contracted\" title=\"contracted\">contracted</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "a lot of",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "a large amount of",
+      "meaning_fr": "beaucoup de",
+      "example": "She has a lot of friends.",
+      "anki_answer": "beaucoup",
+      "tags": [
+        "quantity"
+      ],
+      "key": "b0317ab3d199417f690b65d2d0d69a675e3d252d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> A large amount.",
+          "<!-- Should probably be marked as informal. Chealer 2024&#x2D;10&#x2D;04 -->Many things, <a rel=\"mw:WikiLink\" href=\"/wiki/much\" title=\"much\">much</a>.",
+          "<span class=\"use-with-mention\" about=\"#mwt19\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/a#English\" title=\"a\">a</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/lot#English\" title=\"lot\">lot</a></span>.</span>",
+          "<span class=\"usage-label-sense\" about=\"#mwt226\" typeof=\"mw:Transclusion\"></span> Very much; a great deal; to a large <a rel=\"mw:WikiLink\" href=\"/wiki/extent\" title=\"extent\">extent</a>."
+        ]
+      },
+      "audio": {
+        "title": "Have a lot of plates spinning",
+        "url": "http://www.bbc.co.uk/programmes/p09df5fx",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p09df4gh.mp3"
+      }
+    },
+    "history": {
+      "text": "ancient",
+      "aliases": [
+        "ancient",
+        "antiquity"
+      ],
+      "level": "A1",
+      "meaning": "from a very long time ago",
+      "meaning_fr": "ancien",
+      "period": "Antiquity",
+      "theme": "Culture",
+      "example": "We visited an ancient temple.",
+      "tags": [
+        "time"
+      ],
+      "key": "8ccd8fe7a59f1e044612114cc0e7c4bec34bca87",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-25",
+    "level": "A2",
+    "word": {
+      "text": "weather",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈweðər/",
+      "meaning": "the conditions outside such as rain or sun",
+      "meaning_fr": "temps, météo",
+      "example": "The weather is nice today.",
+      "anki_answer": "météo",
+      "tags": [
+        "nature"
+      ],
+      "key": "4dc9d3512ebaa08d7e4d16e13611ecb91259b756",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈwɛðə/",
+        "definitions": [
+          "The short term state of the atmosphere at a specific time and place, including the temperature, relative humidity, cloud cover, precipitation, wind, etc.",
+          "Unpleasant or destructive atmospheric conditions, and their effects.",
+          "The direction from which the wind is blowing; used attributively to indicate the windward side.",
+          "A situation."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/weather-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "The short-term state of the <a rel=\"mw:WikiLink\" href=\"/wiki/atmosphere\" title=\"atmosphere\">atmosphere</a> at a <a rel=\"mw:WikiLink\" href=\"/wiki/specific\" title=\"specific\">specific</a> <a rel=\"mw:WikiLink\" href=\"/wiki/time\" title=\"time\">time</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/place\" title=\"place\">place</a>, including the <a rel=\"mw:WikiLink\" href=\"/wiki/temperature\" title=\"temperature\">temperature</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/relative_humidity\" title=\"relative humidity\">relative humidity</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/cloud_cover\" title=\"cloud cover\">cloud cover</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/precipitation\" title=\"precipitation\">precipitation</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/wind\" title=\"wind\">wind</a>, etc.",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/unpleasant\" title=\"unpleasant\">Unpleasant</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/destructive\" title=\"destructive\">destructive</a> <a rel=\"mw:WikiLink\" href=\"/wiki/atmospheric\" title=\"atmospheric\">atmospheric</a> <a rel=\"mw:WikiLink\" href=\"/wiki/condition\" title=\"condition\">conditions</a>, and their <a rel=\"mw:WikiLink\" href=\"/wiki/effect\" title=\"effect\">effects</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt51\" typeof=\"mw:Transclusion\"></span> The direction from which the <a rel=\"mw:WikiLink\" href=\"/wiki/wind\" title=\"wind\">wind</a> is blowing; <span class=\"use-with-mention\" about=\"#mwt52\" typeof=\"mw:Transclusion\">used attributively to indicate the <a rel=\"mw:WikiLink\" href=\"/wiki/windward#English\" title=\"windward\">windward</a> side</span>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt54\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/situation\" title=\"situation\">situation</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "in front of",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "before something in position",
+      "meaning_fr": "devant",
+      "example": "The car is in front of the house.",
+      "anki_answer": "devant",
+      "tags": [
+        "place"
+      ],
+      "key": "9eb99e7d400a9f1b534a9389632562edcaa90b48",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "At or <a rel=\"mw:WikiLink\" href=\"/wiki/near\" title=\"near\">near</a> the front part of (something).",
+          "<a rel=\"mw:WikiLink\" href=\"/wiki/in_the_presence_of\" title=\"in the presence of\">In the presence of</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/in_view_of\" title=\"in view of\">in view of</a> (someone).",
+          "Located <a rel=\"mw:WikiLink\" href=\"/wiki/before\" title=\"before\">before</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/ahead_of\" title=\"ahead of\">ahead of</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/previous\" title=\"previous\">previous</a> to (someone or something)."
+        ]
+      },
+      "audio": {
+        "title": "Beating Speaking Anxiety: 4. I'm scared of speaking in front of people",
+        "url": "http://www.bbc.co.uk/programmes/p0n00bx6",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n004ry.mp3"
+      }
+    },
+    "history": {
+      "text": "map",
+      "aliases": [
+        "map",
+        "maps"
+      ],
+      "level": "A2",
+      "meaning": "a drawing of an area of land",
+      "meaning_fr": "carte",
+      "period": "Early modern",
+      "theme": "Science",
+      "example": "The map showed the new colonies.",
+      "tags": [
+        "science"
+      ],
+      "key": "554b7747d7f9155dc3f90acfe4feef6db5103dd9",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-25",
+    "level": "B1",
+    "word": {
+      "text": "mountain",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈmaʊntn/",
+      "meaning": "a large natural height of land",
+      "meaning_fr": "montagne",
+      "example": "We climbed the mountain at dawn.",
+      "anki_answer": "montagne",
+      "tags": [
+        "nature"
+      ],
+      "key": "010b402be6cca03f692bf3c3899e6445ef77c820",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈmaʊntɪn/",
+        "definitions": [
+          "An elevation of land of considerable dimensions rising more or less abruptly, forming a conspicuous figure in the landscape, usually having a small extent of surface at its summit.",
+          "Something very large in size or quantity; a huge amount; a great heap.",
+          "Of, belonging to, relating to, or found on a mountain; like a mountain in size; (of living things) growing or living on a mountain.",
+          "A difficult task or challenge."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/mountain-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> An <a rel=\"mw:WikiLink\" href=\"/wiki/elevation\" title=\"elevation\">elevation</a> of land of considerable dimensions rising more or less <a rel=\"mw:WikiLink\" href=\"/wiki/abruptly\" title=\"abruptly\">abruptly</a>, forming a <a rel=\"mw:WikiLink\" href=\"/wiki/conspicuous\" title=\"conspicuous\">conspicuous</a> figure in the landscape, usually having a small extent of surface at its <a rel=\"mw:WikiLink\" href=\"/wiki/summit\" title=\"summit\">summit</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles\" about=\"#mwt47\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> Something very large in size or quantity; a huge <a rel=\"mw:WikiLink\" href=\"/wiki/amount\" title=\"amount\">amount</a>; a great <a rel=\"mw:WikiLink\" href=\"/wiki/heap\" title=\"heap\">heap</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt56\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">",
+          "<span class=\"usage-label-sense\" about=\"#mwt61\" typeof=\"mw:Transclusion\"></span> A difficult <a rel=\"mw:WikiLink\" href=\"/wiki/task\" title=\"task\">task</a> or challenge.",
+          "<span class=\"usage-label-sense\" about=\"#mwt63\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/wine\" title=\"wine\">Wine</a> from <a rel=\"mw:WikiLink\" href=\"/wiki/Malaga\" title=\"Malaga\">Malaga</a> made from <a rel=\"mw:WikiLink\" href=\"/wiki/grape\" title=\"grape\">grapes</a> that grow on a mountain. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt64\" typeof=\"mw:Extension/templatestyles mw:Transclusion\">"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be under the weather",
+      "level": "B1",
+      "type": "idiom",
+      "meaning": "feel slightly ill",
+      "meaning_fr": "ne pas être en forme",
+      "example": "I am a bit under the weather today.",
+      "anki_answer": "pas en forme",
+      "tags": [
+        "health"
+      ],
+      "key": "56e5536c3190fd001e316ec62ef606aeb471979a",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "colony",
+      "aliases": [
+        "colony",
+        "settlement"
+      ],
+      "level": "B1",
+      "meaning": "a land controlled by another country",
+      "meaning_fr": "colonie",
+      "period": "19th century",
+      "theme": "Empire",
+      "example": "The colony became independent in 1960.",
+      "tags": [
+        "politics"
+      ],
+      "key": "a6c327805a4a0c4a77ecc5b78d72c9d125c1f715",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-25",
+    "level": "B2",
+    "word": {
+      "text": "opportunity",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˌɑːpərˈtuːnəti/",
+      "meaning": "a chance to do something",
+      "meaning_fr": "occasion",
+      "example": "Do not miss this opportunity.",
+      "anki_answer": "occasion",
+      "tags": [
+        "opportunity"
+      ],
+      "key": "4b2f70ab4b7df17fe9de36905b5bd9caa71f6acb",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˌɒp.əˈtjuː.nɪ.tɪ/",
+        "definitions": [
+          "A chance for advancement, progress or profit.",
+          "A favorable circumstance or occasion.",
+          "(Euro-English) opportuneness"
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/opportunity-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/chance\" title=\"chance\">chance</a> for <a rel=\"mw:WikiLink\" href=\"/wiki/advancement\" title=\"advancement\">advancement</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/progress\" title=\"progress\">progress</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/profit\" title=\"profit\">profit</a>.",
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/favorable\" title=\"favorable\">favorable</a> <a rel=\"mw:WikiLink\" href=\"/wiki/circumstance\" title=\"circumstance\">circumstance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/occasion\" title=\"occasion\">occasion</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt28\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/opportuneness\" title=\"opportuneness\">Opportuneness</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "sit on the fence",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "avoid choosing a side",
+      "meaning_fr": "rester sur la clôture, ne pas choisir",
+      "example": "Stop sitting on the fence and decide.",
+      "anki_answer": "ne pas choisir",
+      "tags": [
+        "choices"
+      ],
+      "key": "12c8781b104bc287f10ce35d329a964236430b0f",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To remain <a rel=\"mw:WikiLink\" href=\"/wiki/neutral\" title=\"neutral\">neutral</a> on a certain topic, to not have a <a rel=\"mw:WikiLink\" href=\"/wiki/stance\" title=\"stance\">stance</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/opinion\" title=\"opinion\">opinion</a>."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "secular",
+      "aliases": [
+        "secular",
+        "secularism"
+      ],
+      "level": "B2",
+      "meaning": "not connected with religion",
+      "meaning_fr": "laïque",
+      "period": "19th century",
+      "theme": "Religion",
+      "example": "The schools became secular.",
+      "tags": [
+        "religion"
+      ],
+      "key": "e0c5782598acdb91b8dde2a246650d7ccc28190d",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-25",
+    "level": "C1",
+    "word": {
+      "text": "undermine",
+      "level": "C1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ˌʌndərˈmaɪn/",
+      "meaning": "weaken something gradually",
+      "meaning_fr": "saper, miner",
+      "example": "Corruption undermines trust.",
+      "anki_answer": "saper",
+      "tags": [
+        "weakening"
+      ],
+      "key": "7e12c3ab787b6733bd382cb1585930c46778984c",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ʌndəˈmaɪn/",
+        "definitions": [
+          "To dig underneath (something), to make a passage for destructive or military purposes; to sap.",
+          "To weaken or work against; to hinder, sabotage.",
+          "To erode the base or foundation of something, e.g. by the action of water."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/undermine-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/dig\" title=\"dig\">dig</a> underneath (something), to make a passage for destructive or military purposes; to <a rel=\"mw:WikiLink\" href=\"/wiki/sap\" title=\"sap\">sap</a>. <style data-mw-deduplicate=\"TemplateStyles:r90144991\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" about=\"#mwt9\">.mw-parser-output .defdate{font-size:smaller}</style>",
+          "<span class=\"usage-label-sense\"></span> To weaken or work against; to <a rel=\"mw:WikiLink\" href=\"/wiki/hinder\" title=\"hinder\">hinder</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/sabotage\" title=\"sabotage\">sabotage</a>. <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r90144991\" about=\"#mwt15\" typeof=\"mw:Extension/templatestyles\">",
+          "To erode the base or foundation of something, e.g. by the action of water.",
+          "<span class=\"usage-label-sense\" about=\"#mwt24\" typeof=\"mw:Transclusion\"></span> To regard an object as the sum of the parts that compose it, in <a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/object-oriented%20ontology\" title=\"w:object-oriented ontology\" about=\"#mwt25\" typeof=\"mw:Transclusion\" class=\"extiw\">object-oriented ontology</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "call a spade a spade",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "speak plainly about something unpleasant",
+      "meaning_fr": "appeler un chat un chat",
+      "example": "He calls a spade a spade in meetings.",
+      "anki_answer": "appeler chat chat",
+      "tags": [
+        "speech"
+      ],
+      "key": "c4273064d140fc10de1aa702eddd60e156410c3c",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/put\" title=\"put\">put</a> it <a rel=\"mw:WikiLink\" href=\"/wiki/bluntly\" title=\"bluntly\">bluntly</a>, to be <a rel=\"mw:WikiLink\" href=\"/wiki/outspoken\" title=\"outspoken\">outspoken</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/speak\" title=\"speak\">speak</a> the truth, to describe things as they really are."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "secularization",
+      "aliases": [
+        "secularization",
+        "secularisation"
+      ],
+      "level": "C1",
+      "meaning": "the process of reducing religious influence in public life",
+      "meaning_fr": "laïcisation",
+      "period": "19th century",
+      "theme": "Religion",
+      "example": "Secularization changed schools.",
+      "tags": [
+        "religion"
+      ],
+      "key": "123bdc7735ba60f1840d9d2fa3055a7c314183dc",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-25",
+    "level": "C2",
+    "word": {
+      "text": "obviate",
+      "level": "C2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ˈɑːbvieɪt/",
+      "meaning": "remove the need for something",
+      "meaning_fr": "rendre inutile",
+      "example": "Automation obviates manual entry.",
+      "anki_answer": "rendre inutile",
+      "tags": [
+        "necessity"
+      ],
+      "key": "685325b4dda5c5993287bcd0d383f63530087d27",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈɒbviˌeɪt/",
+        "definitions": [
+          "To anticipate and prevent or bypass (something which would otherwise have been necessary or required).",
+          "To avoid (a future problem or difficult situation)."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/obviate-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/make#Verb\" title=\"make\">make</a> (something) <a rel=\"mw:WikiLink\" href=\"/wiki/unnecessary\" title=\"unnecessary\">unnecessary</a>; to anticipate and prevent or bypass (something which would otherwise have been necessary or required)",
+          "<span class=\"usage-label-sense\" about=\"#mwt20\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/avoid\" title=\"avoid\">avoid</a> (a future <a rel=\"mw:WikiLink\" href=\"/wiki/problem\" title=\"problem\">problem</a> or difficult situation).",
+          "<span class=\"usage-label-sense\" about=\"#mwt72\" typeof=\"mw:Transclusion\"></span> <span class=\"form-of-definition use-with-mention\" about=\"#mwt73\" typeof=\"mw:Transclusion\">Synonym of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/obviative#English\" title=\"obviative\">obviative</a></i></span></span>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt75\" typeof=\"mw:Transclusion\"></span> <span class=\"form-of-definition use-with-mention\" about=\"#mwt76\" typeof=\"mw:Transclusion\">Synonym of <span class=\"form-of-definition-link\"><i class=\"Latn mention\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/obviative#English\" title=\"obviative\">obviative</a></i></span></span>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "inured to hardship",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "made used to difficulty so it no longer troubles you",
+      "meaning_fr": "habitué à la difficulté",
+      "example": "Veteran volunteers are inured to hardship.",
+      "anki_answer": "habitué difficulté",
+      "tags": [
+        "endurance"
+      ],
+      "key": "ea53d0ed5043a2e2ac30b1da26808f4beb658804",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "legitimism",
+      "aliases": [
+        "legitimism"
+      ],
+      "level": "C2",
+      "meaning": "support for a dynasty's traditional right to rule",
+      "meaning_fr": "légitimisme",
+      "period": "19th century",
+      "theme": "Politics",
+      "example": "Legitimism opposed the new regime.",
+      "tags": [
+        "politics"
+      ],
+      "key": "6d50b3ff44cbf73d1f9f805c524fa11cd66540ee",
+      "kind": "history"
+    }
+  }
+}
