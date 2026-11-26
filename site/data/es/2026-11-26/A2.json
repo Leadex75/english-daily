@@ -1,0 +1,715 @@
+{
+  "date": "2026-11-26",
+  "lang": "es",
+  "level": "A2",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": {
+        "id": 1888177370,
+        "title": "1799. Se acaba el año escolar",
+        "source": "Charlas Hispanas",
+        "source_id": "es_charlas_hispanas",
+        "category": "news",
+        "url": "https://charlashispanas.com/1799-se-acaba-el-ano-escolar/?utm_source=rss&utm_medium=rss&utm_campaign=1799-se-acaba-el-ano-escolar",
+        "published_at": "2026-11-23T19:16:57",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "B1",
+        "word_count": 15,
+        "duration_sec": 733,
+        "body_text": null,
+        "audio_url": "https://content.blubrry.com/charlashispanas/Episodio_1799-Se_acaba_el_an_o_escolar_mezcla.mp3",
+        "description": "El día de hoy charlaremos sobre algunas tradiciones de final del año escolar en Colombia.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "9f06021a8f3062100d06c8d33c6cb5c32b2167fb",
+        "summary": "El día de hoy charlaremos sobre algunas tradiciones de final del año escolar en Colombia.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "1799. Se acaba el año escolar — Charlas Hispanas",
+        "duration_formatted": "12:13",
+        "source_url": "https://charlashispanas.com/feed/podcast/",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": null,
+      "audio": {
+        "id": 1888177374,
+        "title": "133r: La tiendita de la esquina",
+        "source": "Easy Spanish",
+        "source_id": "es_easy_spanish",
+        "category": "culture",
+        "url": "https://www.easyspanish.fm/133r",
+        "published_at": "2026-11-25T18:00:00",
+        "level": "A2",
+        "slot_level": "A2",
+        "source_level": "B1",
+        "word_count": 418,
+        "duration_sec": 1203,
+        "body_text": null,
+        "audio_url": "https://cdn.fireside.fm/file/fireside-audio-2024/podcasts/audio/4/40524848-bf9c-4d5e-b211-62c1a0a887c1/episodes/5/53eae666-5cb7-4158-ace0-f07a84a15f0a/53eae666-5cb7-4158-ace0-f07a84a15f0a.mp3",
+        "description": "Hoy, les traemos un episodio que grabaron Pau y José que lanzamos por primera vez hace un par de años 😁 En este divertido episodio, nos sumergimos en la esencia de \"La tiendita de la esquina\". José y Paulina comparten anécdotas sobre estas tiendas cercanas que, aunque varían en nomenclatura, crean un vínculo especial en diferentes partes del mundo hispanohablante. Descubre la relación única que se forma con los dueños, cómo estas tiendas te sacan de apuros y hasta algunas divertidas señales que dicen \"no se fía\". ¡Una charla que te hará recordar tus propias experiencias con las tienditas locales! 🛒👫 Easy Spanish Community Al unirte a la comunidad de Easy Spanish puedes llevar tu experiencia de aprendizaje al siguiente nivel. Nuestros miembros reciben: Vocab Helper: El vocabulario más importante de cada minuto del podcast directamente en la pantalla de tu celular Interactive transcript: Una transcripción interactiva donde podrás leer y escuchar el podcast al mismo tiempo, con una función de traducción en tiempo real Exclusive aftershow: Después de cada episodio, Pau y Cami discuten un poquito más sobre el tema desde un punto de vista un poco más personal. Discord community: Acceso a la comunidad en Discord de Easy Spanish, donde puedes hablar con los miembros de nuestro equipo y otras personas que, como tú, se encuentran en la aventura de aprender nuestro idioma Extra content for our YouTube episodes: Hojas de ejercicios, listas de vocabulario y transcripciones de todos nuestros episodios de YouTube. Si todavía no eres miembro de la comunidad de Easy Spanish, puedes unirte en easy-spanish.org/community Envíanos un mensaje de audio ¡Ya puedes enviarnos mensajes de audio para que los escuchemos en el podcast! Para hacerlo tienes que ir a easyspanish.fm y dar clic en el botón amarillo que aparecerá a la derecha de la página. Transcripción Cami: [0:08] Hola a todos y a todas. Les habla Cami. Seguro me reconocen la voz, obviamente, pero el episodio que les traemos de nuev",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "fb508d86c651869c5911645c092fb7167983ca30",
+        "summary": "Hoy, les traemos un episodio que grabaron Pau y José que lanzamos por primera vez hace un par de años 😁 En este divertido episodio, nos sumergimos en la esencia de \"La tiendita de la esquina\". José y Paulina comparten anécdotas sobre estas tiendas cercanas que, aunque varían en nomenclatura, crean un vínculo especial en diferentes partes del mundo hispanohablante. Descubre la relación única que se forma con los dueños, cómo estas tiendas te sacan de apuros y hasta algunas divertidas señales que dicen \"no se fía\". ¡Una charla que te hará recordar tus propias experiencias con las tienditas locales! 🛒👫 Easy Spanish Community Al unirte a la comunidad de Easy Spanish puedes llevar tu experiencia de aprendizaje al siguiente nivel. Nuestros miembros reciben: Vocab Helper: El vocabulario más importante de cada minuto del podcast directamente en la pantalla de tu celular Interactive transcript: Una transcripción interactiva donde podrás leer y escuchar el podcast al mismo tiempo, con una función de traducción en tiempo real Exclusive aftershow: Después de cada episodio, Pau y Cami discuten un poquito más sobre el tema desde un punto de vista un poco más personal. Discord community: Acceso a la comunidad en Discord de Easy Spanish, donde puedes hablar con los miembros de nuestro equipo y otras personas que, como tú, se encuentran en la aventura de aprender nuestro idioma Extra content for our YouTube episodes: Hojas de ejercicios, listas de vocabulario y transcripciones de todos nuestros episodios de YouTube. Si todavía no eres miembro de la comunidad de Easy Spanish, puedes unirte en easy-spanish.org/community Envíanos un mensaje de audio ¡Ya puedes enviarnos mensajes de audio para que los escuchemos en el podcast! Para hacerlo tienes que ir a easyspanish.fm y dar clic en el botón amarillo que aparecerá a la derecha de la página. Transcripción Cami: [0:08] Hola a todos y a todas. Les habla Cami. Seguro me reconocen la voz, obviamente, pero el episodio que les traemos de nuev",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B1",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "133r: La tiendita de la esquina — Easy Spanish",
+        "duration_formatted": "20:03",
+        "source_url": "https://www.easyspanish.fm/rss",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-26",
+    "level": "A2",
+    "word": {
+      "text": "temprano",
+      "level": "A2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/temˈpɾano/",
+      "meaning": "antes de la hora habitual",
+      "meaning_fr": "tôt",
+      "example": "Tomamos un tren temprano.",
+      "anki_answer": "temprano",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "4563acbf3a49fbc05c3f57887fffe6ae22d2578a",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "cuidar a",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "ocuparse de alguien",
+      "meaning_fr": "s'occuper de",
+      "example": "Cuida a su hermano pequeño.",
+      "anki_answer": "cuidar a",
+      "tags": [
+        "cuidado"
+      ],
+      "key": "0c943b4eefdfe096106a86e0026703bae6860388",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "costa",
+      "aliases": [
+        "costa",
+        "costas"
+      ],
+      "level": "A2",
+      "meaning": "la tierra junto al mar",
+      "meaning_fr": "côte",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "El ejército avanzó por la costa.",
+      "tags": [
+        "naturaleza"
+      ],
+      "key": "0a594a158effd6e72abf94c0fc8088196ce1008d",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "94a473c43a77d698e1d04db1a6d0c8e233ccebfd",
+      "kind": "word",
+      "level": "A1",
+      "text": "amigo",
+      "meaning": "una persona que te gusta y conoces bien",
+      "meaning_fr": "ami",
+      "example": "Es mi mejor amigo.",
+      "phonetic": "/aˈmiɣo/",
+      "anki_answer": "amigo",
+      "tags": [
+        "personas"
+      ]
+    },
+    {
+      "key": "72de282bce0683faab663fb5a33ef6720e1fa618",
+      "kind": "expression",
+      "level": "A1",
+      "text": "por favor",
+      "meaning": "se usa para pedir algo con cortesía",
+      "meaning_fr": "s'il vous plaît",
+      "example": "Un café, por favor.",
+      "phonetic": "",
+      "anki_answer": "por favor",
+      "tags": [
+        "cortesía"
+      ]
+    },
+    {
+      "key": "e175371ac475c0fa2dbd67e739264344f91c6c76",
+      "kind": "history",
+      "level": "A1",
+      "text": "casa",
+      "meaning": "un edificio donde vive la gente",
+      "meaning_fr": "maison",
+      "example": "La familia volvió a casa tras la guerra.",
+      "phonetic": "",
+      "anki_answer": "maison",
+      "tags": [
+        "hogar"
+      ]
+    },
+    {
+      "key": "4563acbf3a49fbc05c3f57887fffe6ae22d2578a",
+      "kind": "word",
+      "level": "A2",
+      "text": "temprano",
+      "meaning": "antes de la hora habitual",
+      "meaning_fr": "tôt",
+      "example": "Tomamos un tren temprano.",
+      "phonetic": "/temˈpɾano/",
+      "anki_answer": "temprano",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "0c943b4eefdfe096106a86e0026703bae6860388",
+      "kind": "expression",
+      "level": "A2",
+      "text": "cuidar a",
+      "meaning": "ocuparse de alguien",
+      "meaning_fr": "s'occuper de",
+      "example": "Cuida a su hermano pequeño.",
+      "phonetic": "",
+      "anki_answer": "cuidar a",
+      "tags": [
+        "cuidado"
+      ]
+    },
+    {
+      "key": "0a594a158effd6e72abf94c0fc8088196ce1008d",
+      "kind": "history",
+      "level": "A2",
+      "text": "costa",
+      "meaning": "la tierra junto al mar",
+      "meaning_fr": "côte",
+      "example": "El ejército avanzó por la costa.",
+      "phonetic": "",
+      "anki_answer": "côte",
+      "tags": [
+        "naturaleza"
+      ]
+    },
+    {
+      "key": "77dc445459a720fe7aaf023da760c01f9b48c997",
+      "kind": "word",
+      "level": "B1",
+      "text": "comerciante",
+      "meaning": "una persona que compra y vende productos",
+      "meaning_fr": "marchand",
+      "example": "El comerciante viajaba con seda.",
+      "phonetic": "/komeɾˈθjante/",
+      "anki_answer": "comerciante",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "782e937c556985b417aa0e44fe293b7c5b0a0de6",
+      "kind": "expression",
+      "level": "B1",
+      "text": "perder terreno",
+      "meaning": "retroceder en una posición",
+      "meaning_fr": "perdre du terrain",
+      "example": "El equipo perdió terreno en la segunda parte.",
+      "phonetic": "",
+      "anki_answer": "perder terreno",
+      "tags": [
+        "competencia"
+      ]
+    },
+    {
+      "key": "36f3faeedbd51e1a2e43e846397bf2500f72f9ed",
+      "kind": "history",
+      "level": "B1",
+      "text": "mercader",
+      "meaning": "una persona que compra y vende productos",
+      "meaning_fr": "marchand",
+      "example": "El mercader viajaba con seda.",
+      "phonetic": "",
+      "anki_answer": "marchand",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "c3e66e3278cf39cfe3a3a5b67f9869067c7d9d7c",
+      "kind": "word",
+      "level": "B2",
+      "text": "monarquía",
+      "meaning": "un sistema gobernado por un rey o una reina",
+      "meaning_fr": "monarchie",
+      "example": "La monarquía perdió poder en 1789.",
+      "phonetic": "/monaɾˈkia/",
+      "anki_answer": "monarquía",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "c46f0d4fb5025fd0f944d15ebd1c4d05f176001a",
+      "kind": "expression",
+      "level": "B2",
+      "text": "abrir un debate",
+      "meaning": "iniciar una discusión pública",
+      "meaning_fr": "ouvrir un débat",
+      "example": "El libro abrió un debate.",
+      "phonetic": "",
+      "anki_answer": "abrir un debate",
+      "tags": [
+        "debate"
+      ]
+    },
+    {
+      "key": "a367b5afbd95673b5d2c0ae3ad2217ffca3b0860",
+      "kind": "history",
+      "level": "B2",
+      "text": "soberanía",
+      "meaning": "el poder supremo de un Estado",
+      "meaning_fr": "souveraineté",
+      "example": "El tratado reconoció la soberanía.",
+      "phonetic": "",
+      "anki_answer": "souveraineté",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "6e8ed0c613cbec10a2d7e0586d2b91dbafda626d",
+      "kind": "word",
+      "level": "C1",
+      "text": "igualitario",
+      "meaning": "que defiende la igualdad de derechos",
+      "meaning_fr": "égalitaire",
+      "example": "El movimiento igualitario creció tras 1830.",
+      "phonetic": "/iɣwaliˈtaɾjo/",
+      "anki_answer": "igualitario",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "1b08efd391a07537b2e753ae60e0c3d245701cb7",
+      "kind": "expression",
+      "level": "C1",
+      "text": "promover la reconciliación",
+      "meaning": "favorecer la paz entre grupos",
+      "meaning_fr": "promouvoir la réconciliation",
+      "example": "Promovieron la reconciliación nacional.",
+      "phonetic": "",
+      "anki_answer": "promover la reconciliación",
+      "tags": [
+        "paz"
+      ]
+    },
+    {
+      "key": "325efc17b257ebff2622879b871eac8fc1704573",
+      "kind": "history",
+      "level": "C1",
+      "text": "absolutismo",
+      "meaning": "un sistema donde el monarca tiene poder sin límites",
+      "meaning_fr": "absolutisme",
+      "example": "El absolutismo se consolidó en el siglo XVII.",
+      "phonetic": "",
+      "anki_answer": "absolutisme",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "834359f676bdca0f5f014f889f573a8330a4f908",
+      "kind": "word",
+      "level": "C2",
+      "text": "palimpsesto",
+      "meaning": "un manuscrito cuyo texto fue raspado y reutilizado",
+      "meaning_fr": "palimpseste",
+      "example": "El palimpsesto guardaba un texto jurídico antiguo.",
+      "phonetic": "/palimpˈsesto/",
+      "anki_answer": "palimpsesto",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "1a7cc87152f155164b9f63f3492d1fe8dc58e758",
+      "kind": "expression",
+      "level": "C2",
+      "text": "desentrañar las causas",
+      "meaning": "descubrir las causas profundas",
+      "meaning_fr": "démêler les causes",
+      "example": "Desentrañaron las causas del conflicto.",
+      "phonetic": "",
+      "anki_answer": "desentrañar las causas",
+      "tags": [
+        "análisis"
+      ]
+    },
+    {
+      "key": "ceafadc4d6ee350bcc76b99633d61b1f2a3066ec",
+      "kind": "history",
+      "level": "C2",
+      "text": "causalidad",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "example": "Analizaron la causalidad de la crisis.",
+      "phonetic": "",
+      "anki_answer": "causalité",
+      "tags": [
+        "ciencia"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “amigo”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "ami",
+      "item_key": "94a473c43a77d698e1d04db1a6d0c8e233ccebfd"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: por ____",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "favor",
+      "item_key": "72de282bce0683faab663fb5a33ef6720e1fa618"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “casa”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "e175371ac475c0fa2dbd67e739264344f91c6c76"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “temprano”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "tôt",
+      "item_key": "4563acbf3a49fbc05c3f57887fffe6ae22d2578a"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: ____ a",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "cuidar",
+      "item_key": "0c943b4eefdfe096106a86e0026703bae6860388"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “costa”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "0a594a158effd6e72abf94c0fc8088196ce1008d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “comerciante”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "marchand",
+      "item_key": "77dc445459a720fe7aaf023da760c01f9b48c997"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: perder ____",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "terreno",
+      "item_key": "782e937c556985b417aa0e44fe293b7c5b0a0de6"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “mercader”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "36f3faeedbd51e1a2e43e846397bf2500f72f9ed"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “monarquía”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "monarchie",
+      "item_key": "c3e66e3278cf39cfe3a3a5b67f9869067c7d9d7c"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: abrir un ____",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "debate",
+      "item_key": "c46f0d4fb5025fd0f944d15ebd1c4d05f176001a"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “soberanía”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "a367b5afbd95673b5d2c0ae3ad2217ffca3b0860"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “igualitario”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "égalitaire",
+      "item_key": "6e8ed0c613cbec10a2d7e0586d2b91dbafda626d"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: promover la ____",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "reconciliación",
+      "item_key": "1b08efd391a07537b2e753ae60e0c3d245701cb7"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “absolutismo”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "325efc17b257ebff2622879b871eac8fc1704573"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “palimpsesto”?",
+      "options": [
+        "ami",
+        "marchand",
+        "monarchie",
+        "palimpseste"
+      ],
+      "answer": "palimpseste",
+      "item_key": "834359f676bdca0f5f014f889f573a8330a4f908"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ las causas",
+      "options": [
+        "abrir",
+        "causas",
+        "cuidar",
+        "debate"
+      ],
+      "answer": "desentrañar",
+      "item_key": "1a7cc87152f155164b9f63f3492d1fe8dc58e758"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “causalidad”?",
+      "options": [
+        "Edad Moderna",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "ceafadc4d6ee350bcc76b99633d61b1f2a3066ec"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "adjacent": 2
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-26.json"
+  }
+}

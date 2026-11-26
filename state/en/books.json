@@ -1769,5 +1769,49 @@
     "url_rss": "https://librivox.org/rss/200",
     "fetched_at": "2026-11-23T15:43:41",
     "level_method": "source"
+  },
+  "380": {
+    "title": "Five Children and It",
+    "author": "",
+    "gutenberg_id": "778",
+    "genre": "Action & Adventure",
+    "level": "B1",
+    "score": 0.3835,
+    "url_rss": "https://librivox.org/rss/380",
+    "fetched_at": "2026-11-26T14:45:05",
+    "level_method": "source"
+  },
+  "381": {
+    "title": "Frankenstein, or The Modern Prometheus",
+    "author": "",
+    "gutenberg_id": "84",
+    "genre": "Science Fiction",
+    "level": "B2",
+    "score": 0.5517,
+    "url_rss": "https://librivox.org/rss/381",
+    "fetched_at": "2026-11-26T14:45:06",
+    "level_method": "source"
+  },
+  "382": {
+    "title": "Gods of Mars",
+    "author": "",
+    "gutenberg_id": "64",
+    "genre": "Science Fiction",
+    "level": "B2",
+    "score": 0.5159,
+    "url_rss": "https://librivox.org/rss/382",
+    "fetched_at": "2026-11-26T14:45:07",
+    "level_method": "source"
+  },
+  "480": {
+    "title": "Don Quixote - Vol. 1",
+    "author": "",
+    "gutenberg_id": "5921",
+    "genre": "Action & Adventure Fiction, General Fiction",
+    "level": "C1",
+    "score": 0.6303,
+    "url_rss": "https://librivox.org/rss/480",
+    "fetched_at": "2026-11-26T14:45:17",
+    "level_method": "source"
   }
 }

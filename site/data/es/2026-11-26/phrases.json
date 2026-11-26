@@ -1,0 +1,349 @@
+{
+  "A1": {
+    "date": "2026-11-26",
+    "level": "A1",
+    "word": {
+      "text": "amigo",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/aˈmiɣo/",
+      "meaning": "una persona que te gusta y conoces bien",
+      "meaning_fr": "ami",
+      "example": "Es mi mejor amigo.",
+      "anki_answer": "amigo",
+      "tags": [
+        "personas"
+      ],
+      "key": "94a473c43a77d698e1d04db1a6d0c8e233ccebfd",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "por favor",
+      "level": "A1",
+      "type": "everyday phrase",
+      "meaning": "se usa para pedir algo con cortesía",
+      "meaning_fr": "s'il vous plaît",
+      "example": "Un café, por favor.",
+      "anki_answer": "por favor",
+      "tags": [
+        "cortesía"
+      ],
+      "key": "72de282bce0683faab663fb5a33ef6720e1fa618",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "casa",
+      "aliases": [
+        "casa",
+        "casas"
+      ],
+      "level": "A1",
+      "meaning": "un edificio donde vive la gente",
+      "meaning_fr": "maison",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "La familia volvió a casa tras la guerra.",
+      "tags": [
+        "hogar"
+      ],
+      "key": "e175371ac475c0fa2dbd67e739264344f91c6c76",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-26",
+    "level": "A2",
+    "word": {
+      "text": "temprano",
+      "level": "A2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/temˈpɾano/",
+      "meaning": "antes de la hora habitual",
+      "meaning_fr": "tôt",
+      "example": "Tomamos un tren temprano.",
+      "anki_answer": "temprano",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "4563acbf3a49fbc05c3f57887fffe6ae22d2578a",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "cuidar a",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "ocuparse de alguien",
+      "meaning_fr": "s'occuper de",
+      "example": "Cuida a su hermano pequeño.",
+      "anki_answer": "cuidar a",
+      "tags": [
+        "cuidado"
+      ],
+      "key": "0c943b4eefdfe096106a86e0026703bae6860388",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "costa",
+      "aliases": [
+        "costa",
+        "costas"
+      ],
+      "level": "A2",
+      "meaning": "la tierra junto al mar",
+      "meaning_fr": "côte",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "El ejército avanzó por la costa.",
+      "tags": [
+        "naturaleza"
+      ],
+      "key": "0a594a158effd6e72abf94c0fc8088196ce1008d",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-26",
+    "level": "B1",
+    "word": {
+      "text": "comerciante",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/komeɾˈθjante/",
+      "meaning": "una persona que compra y vende productos",
+      "meaning_fr": "marchand",
+      "example": "El comerciante viajaba con seda.",
+      "anki_answer": "comerciante",
+      "tags": [
+        "economía"
+      ],
+      "key": "77dc445459a720fe7aaf023da760c01f9b48c997",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "perder terreno",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "retroceder en una posición",
+      "meaning_fr": "perdre du terrain",
+      "example": "El equipo perdió terreno en la segunda parte.",
+      "anki_answer": "perder terreno",
+      "tags": [
+        "competencia"
+      ],
+      "key": "782e937c556985b417aa0e44fe293b7c5b0a0de6",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "mercader",
+      "aliases": [
+        "mercader",
+        "mercaderes"
+      ],
+      "level": "B1",
+      "meaning": "una persona que compra y vende productos",
+      "meaning_fr": "marchand",
+      "period": "General",
+      "theme": "Economía",
+      "example": "El mercader viajaba con seda.",
+      "tags": [
+        "economía"
+      ],
+      "key": "36f3faeedbd51e1a2e43e846397bf2500f72f9ed",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-26",
+    "level": "B2",
+    "word": {
+      "text": "monarquía",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/monaɾˈkia/",
+      "meaning": "un sistema gobernado por un rey o una reina",
+      "meaning_fr": "monarchie",
+      "example": "La monarquía perdió poder en 1789.",
+      "anki_answer": "monarquía",
+      "tags": [
+        "política"
+      ],
+      "key": "c3e66e3278cf39cfe3a3a5b67f9869067c7d9d7c",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "abrir un debate",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "iniciar una discusión pública",
+      "meaning_fr": "ouvrir un débat",
+      "example": "El libro abrió un debate.",
+      "anki_answer": "abrir un debate",
+      "tags": [
+        "debate"
+      ],
+      "key": "c46f0d4fb5025fd0f944d15ebd1c4d05f176001a",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "soberanía",
+      "aliases": [
+        "soberanía",
+        "soberanias"
+      ],
+      "level": "B2",
+      "meaning": "el poder supremo de un Estado",
+      "meaning_fr": "souveraineté",
+      "period": "Edad Moderna",
+      "theme": "Política",
+      "example": "El tratado reconoció la soberanía.",
+      "tags": [
+        "política"
+      ],
+      "key": "a367b5afbd95673b5d2c0ae3ad2217ffca3b0860",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-26",
+    "level": "C1",
+    "word": {
+      "text": "igualitario",
+      "level": "C1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/iɣwaliˈtaɾjo/",
+      "meaning": "que defiende la igualdad de derechos",
+      "meaning_fr": "égalitaire",
+      "example": "El movimiento igualitario creció tras 1830.",
+      "anki_answer": "igualitario",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "6e8ed0c613cbec10a2d7e0586d2b91dbafda626d",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "promover la reconciliación",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "favorecer la paz entre grupos",
+      "meaning_fr": "promouvoir la réconciliation",
+      "example": "Promovieron la reconciliación nacional.",
+      "anki_answer": "promover la reconciliación",
+      "tags": [
+        "paz"
+      ],
+      "key": "1b08efd391a07537b2e753ae60e0c3d245701cb7",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "absolutismo",
+      "aliases": [
+        "absolutismo",
+        "absolutista"
+      ],
+      "level": "C1",
+      "meaning": "un sistema donde el monarca tiene poder sin límites",
+      "meaning_fr": "absolutisme",
+      "period": "Edad Moderna",
+      "theme": "Política",
+      "example": "El absolutismo se consolidó en el siglo XVII.",
+      "tags": [
+        "política"
+      ],
+      "key": "325efc17b257ebff2622879b871eac8fc1704573",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-26",
+    "level": "C2",
+    "word": {
+      "text": "palimpsesto",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/palimpˈsesto/",
+      "meaning": "un manuscrito cuyo texto fue raspado y reutilizado",
+      "meaning_fr": "palimpseste",
+      "example": "El palimpsesto guardaba un texto jurídico antiguo.",
+      "anki_answer": "palimpsesto",
+      "tags": [
+        "cultura"
+      ],
+      "key": "834359f676bdca0f5f014f889f573a8330a4f908",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "desentrañar las causas",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "descubrir las causas profundas",
+      "meaning_fr": "démêler les causes",
+      "example": "Desentrañaron las causas del conflicto.",
+      "anki_answer": "desentrañar las causas",
+      "tags": [
+        "análisis"
+      ],
+      "key": "1a7cc87152f155164b9f63f3492d1fe8dc58e758",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "causalidad",
+      "aliases": [
+        "causalidad"
+      ],
+      "level": "C2",
+      "meaning": "la relación entre una causa y su efecto",
+      "meaning_fr": "causalité",
+      "period": "General",
+      "theme": "Ciencia",
+      "example": "Analizaron la causalidad de la crisis.",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "ceafadc4d6ee350bcc76b99633d61b1f2a3066ec",
+      "kind": "history"
+    }
+  }
+}

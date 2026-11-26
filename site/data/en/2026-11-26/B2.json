@@ -1,0 +1,834 @@
+{
+  "date": "2026-11-26",
+  "lang": "en",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 19,
+        "title": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-26T05:00:24",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 1224,
+        "duration_sec": null,
+        "body_text": "A German boat dealer is suspected by European authorities of being a key supplier to migrant smugglers operating in the English Channel, the BBC can reveal. Nearly a third of small-boat crossings in the first four months of this year allegedly involved boats or engines from MaReBoote, a small firm in western Germany, according to files we have seen.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "6230f0f965544620064135864fcf5aa042677191",
+        "summary": "Nearly a third of crossings in early 2026 allegedly involved boats or engines from the German man's firm.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 7
+      },
+      "audio": {
+        "id": 4,
+        "title": "8am ET, November 26 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-26T13:09:26",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/e5e7f832-1381-4ca0-b085-e526cd779901/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_1dccfccf511082b26c399207037eb012_4820775.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=e5e7f832-1381-4ca0-b085-e526cd779901&feed=O9WlY7a5&t=podcast&e=nx-s1-20261126-0800-long&p=500005&d=280&size=4586728&hash_redirect=1&x-total-bytes=4820775&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_329__b8170e51acf9eb6cbd624a5dcef476e3515d86d8",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "2972b325308448753dbd369ca9bc9b92e3a89e71",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "8am ET, November 26 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 43,
+        "title": "Jimmy Kimmel: ‘America is running like the security system at Jurassic Park’",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/culture/2026/nov/25/jimmy-kimmel-nvidia-jensen-huang",
+        "published_at": "2026-11-25T15:59:59",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 639,
+        "duration_sec": null,
+        "body_text": "Late-night hosts continued to express confusion over the handling of the Nvidia scandal while looking at the many other problems created by the Trump administration. Jimmy Kimmel On Jimmy Kimmel Live!",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "33a5d226d883d67a2f192fb5696c35bae04cb949",
+        "summary": "Late-night hosts discussed dysfunction in the US while also revisiting the ongoing Nvidia scandal Late-night hosts continued to express confusion over the handling of the Nvidia scandal while looking at the many other problems created by the Trump administration.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Jimmy Kimmel: ‘America is running like the security system at Jurassic Park’ — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 1000421742,
+        "title": "Frankenstein, or The Modern Prometheus - 01 - Chapter 1",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/",
+        "published_at": "2026-11-26T14:45:06",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 57,
+        "duration_sec": 630,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/frankenstein_shelley/frankenstein_01_shelley_64kb.mp3",
+        "description": "Frankenstein, or The Modern Prometheus by . Victor Frankenstein discovers the secret of animating lifeless matter and, by assembling body parts, creates the monster who has no name in the book. Rejected by society, the Monster vows revenge on his creator. (Summary written by Gesine)\r\n \r\n Note: Project originally cataloged October 20, 2005. Audio files were volume adjusted and re-uploaded May 3, 20",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "666d15c003ccaaeb45c00ab862a3a9d0647c7620",
+        "summary": "Frankenstein, or The Modern Prometheus by . Victor Frankenstein discovers the secret of animating lifeless matter and, by assembling body parts, creates the monster who has no name in the book. Rejected by society, the Monster vows revenge on his creator. (Summary written by Gesine)\r\n \r\n Note: Project originally cataloged October 20, 2005. Audio files were volume adjusted and re-uploaded May 3, 20",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Frankenstein, or The Modern Prometheus - 01 - Chapter 1 — LibriVox (culture)",
+        "duration_formatted": "10:30",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": {
+        "id": 1364727754,
+        "title": "Merry Adventures of Robin Hood - How Robin Hood Came to be an Outlaw",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/the-merry-adventures-of-robin-hood-by-howard-pyle/",
+        "published_at": "2026-11-21T21:54:25",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 128,
+        "duration_sec": 1655,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/merry_adventures_robin_hood_librivox/robinhood_01_pyle_64kb.mp3",
+        "description": "Merry Adventures of Robin Hood by . Robin Hood is the archetypal English folk hero; a courteous, pious and swashbuckling outlaw of the mediæval era who, in modern versions of the legend, is famous for robbing the rich to feed the poor and fighting against injustice and tyranny. He operates with his \"seven score\" (140 strong) group of fellow outlawed yeomen – named the Merry Men. He and his band ar",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "a93f8d5c946bf16d1102681609d5710371e2d66e",
+        "summary": "Merry Adventures of Robin Hood by . Robin Hood is the archetypal English folk hero; a courteous, pious and swashbuckling outlaw of the mediæval era who, in modern versions of the legend, is famous for robbing the rich to feed the poor and fighting against injustice and tyranny. He operates with his \"seven score\" (140 strong) group of fellow outlawed yeomen – named the Merry Men. He and his band ar",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (history & biography)",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Merry Adventures of Robin Hood - How Robin Hood Came to be an Outlaw — LibriVox (history & biography)",
+        "duration_formatted": "27:35",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-26",
+    "level": "B2",
+    "word": {
+      "text": "careful",
+      "level": "B2",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈkerfl/",
+      "meaning": "giving attention to avoid mistakes",
+      "meaning_fr": "prudent, soigneux",
+      "example": "Be careful with the hot pan.",
+      "anki_answer": "prudent",
+      "tags": [
+        "safety"
+      ],
+      "key": "9f8f39487c4614caec5f2fda466999f61b53f619",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈkɛːfəl/",
+        "definitions": [
+          "Taking care; attentive to potential danger, error or harm; cautious.",
+          "Conscientious and painstaking; meticulous.",
+          "Full of care or grief; sorrowful, sad.",
+          "Full of cares or anxiety; worried, troubled."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/careful-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "Taking care; <a rel=\"mw:WikiLink\" href=\"/wiki/attentive\" title=\"attentive\">attentive</a> to <a rel=\"mw:WikiLink\" href=\"/wiki/potential\" title=\"potential\">potential</a> <a rel=\"mw:WikiLink\" href=\"/wiki/danger\" title=\"danger\">danger</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/error\" title=\"error\">error</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/harm\" title=\"harm\">harm</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/cautious\" title=\"cautious\">cautious</a>.",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt15\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/conscientious#English\" title=\"conscientious\">Conscientious</a></span> and <a rel=\"mw:WikiLink\" href=\"/wiki/painstaking\" title=\"painstaking\">painstaking</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/meticulous\" title=\"meticulous\">meticulous</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt18\" typeof=\"mw:Transclusion\"></span> Full of <a rel=\"mw:WikiLink\" href=\"/wiki/care\" title=\"care\">care</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/grief\" title=\"grief\">grief</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/sorrowful\" title=\"sorrowful\">sorrowful</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/sad\" title=\"sad\">sad</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt19\" typeof=\"mw:Transclusion\"></span> Full of <a rel=\"mw:WikiLink\" href=\"/wiki/cares\" title=\"cares\">cares</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/anxiety\" title=\"anxiety\">anxiety</a>; <a rel=\"mw:WikiLink\" href=\"/wiki/worried\" title=\"worried\">worried</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/troubled\" title=\"troubled\">troubled</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be down to earth",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "practical and modest",
+      "meaning_fr": "être terre à terre",
+      "example": "Despite fame, he stays down to earth.",
+      "anki_answer": "terre à terre",
+      "tags": [
+        "character"
+      ],
+      "key": "1d88ae7538d4d2a58bbc86890e5ff69d30c14bce",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "tariff",
+      "aliases": [
+        "tariff",
+        "tariffs"
+      ],
+      "level": "B2",
+      "meaning": "a tax on imported goods",
+      "meaning_fr": "tarif",
+      "period": "19th century",
+      "theme": "Economy",
+      "example": "The tariff protected local farmers.",
+      "tags": [
+        "economy"
+      ],
+      "key": "3a3abc6854e4161c170341cea2fc46af4f72dbb0",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "8eb169e78b6f6104fa3645add59308c9e231902a",
+      "kind": "word",
+      "level": "A1",
+      "text": "bread",
+      "meaning": "a common food made from flour",
+      "meaning_fr": "pain",
+      "example": "We bought bread and cheese.",
+      "phonetic": "/bred/",
+      "anki_answer": "pain",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "e9cbcbb79092421511c710dbe720eecf3ac68026",
+      "kind": "expression",
+      "level": "A1",
+      "text": "take care",
+      "meaning": "used when saying goodbye",
+      "meaning_fr": "prends soin de toi",
+      "example": "Take care, see you tomorrow!",
+      "phonetic": "",
+      "anki_answer": "soin, au revoir",
+      "tags": [
+        "greeting"
+      ]
+    },
+    {
+      "key": "ad6bbcb76e01dc675f36e6b781461890c05dd31b",
+      "kind": "history",
+      "level": "A1",
+      "text": "home",
+      "meaning": "the place where a person lives",
+      "meaning_fr": "foyer",
+      "example": "Families returned home after the war.",
+      "phonetic": "",
+      "anki_answer": "foyer",
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "key": "2a9a10fe1460ca7beff24d5a18962b5f7487a08a",
+      "kind": "word",
+      "level": "A2",
+      "text": "borrow",
+      "meaning": "take something and return it later",
+      "meaning_fr": "emprunter",
+      "example": "Can I borrow your pen?",
+      "phonetic": "/ˈbɑːroʊ/",
+      "anki_answer": "emprunter",
+      "tags": [
+        "possession"
+      ]
+    },
+    {
+      "key": "73597a822a5e27d99103037b0a9b268747b865b7",
+      "kind": "expression",
+      "level": "A2",
+      "text": "be good at",
+      "meaning": "do something well",
+      "meaning_fr": "être doué pour",
+      "example": "She is good at maths.",
+      "phonetic": "",
+      "anki_answer": "doué, douée",
+      "tags": [
+        "skills"
+      ]
+    },
+    {
+      "key": "41935f987a8bf297de1e9cc1fd53600212b65669",
+      "kind": "history",
+      "level": "A2",
+      "text": "law",
+      "meaning": "a rule made by a government",
+      "meaning_fr": "loi",
+      "example": "The new law protected workers.",
+      "phonetic": "",
+      "anki_answer": "loi",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "1b9f535b599639bc02bd11957f937e7b3b019b56",
+      "kind": "word",
+      "level": "B1",
+      "text": "culture",
+      "meaning": "the ideas, customs and art of a society",
+      "meaning_fr": "culture",
+      "example": "The course explores Roman culture.",
+      "phonetic": "/ˈkʌltʃər/",
+      "anki_answer": "culture",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "1ccf70aed46d418e69384001ed321f484fcbec8a",
+      "kind": "expression",
+      "level": "B1",
+      "text": "once in a while",
+      "meaning": "occasionally",
+      "meaning_fr": "de temps en temps",
+      "example": "I eat cake once in a while.",
+      "phonetic": "",
+      "anki_answer": "de temps en temps",
+      "tags": [
+        "frequency"
+      ]
+    },
+    {
+      "key": "3097446c6f75b7d5327e489c1235fcb876ff185d",
+      "kind": "history",
+      "level": "B1",
+      "text": "pilgrimage",
+      "meaning": "a journey to a holy place",
+      "meaning_fr": "pèlerinage",
+      "example": "The pilgrimage took many weeks.",
+      "phonetic": "",
+      "anki_answer": "pèlerinage",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "9f8f39487c4614caec5f2fda466999f61b53f619",
+      "kind": "word",
+      "level": "B2",
+      "text": "careful",
+      "meaning": "giving attention to avoid mistakes",
+      "meaning_fr": "prudent, soigneux",
+      "example": "Be careful with the hot pan.",
+      "phonetic": "/ˈkerfl/",
+      "anki_answer": "prudent",
+      "tags": [
+        "safety"
+      ]
+    },
+    {
+      "key": "1d88ae7538d4d2a58bbc86890e5ff69d30c14bce",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be down to earth",
+      "meaning": "practical and modest",
+      "meaning_fr": "être terre à terre",
+      "example": "Despite fame, he stays down to earth.",
+      "phonetic": "",
+      "anki_answer": "terre à terre",
+      "tags": [
+        "character"
+      ]
+    },
+    {
+      "key": "3a3abc6854e4161c170341cea2fc46af4f72dbb0",
+      "kind": "history",
+      "level": "B2",
+      "text": "tariff",
+      "meaning": "a tax on imported goods",
+      "meaning_fr": "tarif",
+      "example": "The tariff protected local farmers.",
+      "phonetic": "",
+      "anki_answer": "tarif",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "f7b1e81b0b10453d6f35c234077a94cab256bd90",
+      "kind": "word",
+      "level": "C1",
+      "text": "plausible",
+      "meaning": "seeming reasonable and likely",
+      "meaning_fr": "plausible",
+      "example": "That is a plausible explanation.",
+      "phonetic": "/ˈplɔːzəbl/",
+      "anki_answer": "plausible",
+      "tags": [
+        "belief"
+      ]
+    },
+    {
+      "key": "f44178066d504b85a7a162e66ee3447a99dfd8f4",
+      "kind": "expression",
+      "level": "C1",
+      "text": "give someone the benefit of the doubt",
+      "meaning": "believe someone despite uncertainty",
+      "meaning_fr": "accorder le bénéfice du doute",
+      "example": "Let us give her the benefit of the doubt.",
+      "phonetic": "",
+      "anki_answer": "bénéfice doute",
+      "tags": [
+        "trust"
+      ]
+    },
+    {
+      "key": "65862e7d958be7c181fa68a24829835c6d715b61",
+      "kind": "history",
+      "level": "C1",
+      "text": "absolutist",
+      "meaning": "supporting rule by a monarch with unrestricted power",
+      "meaning_fr": "absolutiste",
+      "example": "The absolutist monarch resisted reform.",
+      "phonetic": "",
+      "anki_answer": "absolutiste",
+      "tags": [
+        "politics"
+      ]
+    },
+    {
+      "key": "6a8d956b935e32880f3909645cc491bd9a73778a",
+      "kind": "word",
+      "level": "C2",
+      "text": "vitiate",
+      "meaning": "spoil the quality or validity of something",
+      "meaning_fr": "vicer",
+      "example": "The error vitiated the whole result.",
+      "phonetic": "/ˈvɪʃieɪt/",
+      "anki_answer": "vicer",
+      "tags": [
+        "validity"
+      ]
+    },
+    {
+      "key": "d1b812cfc14533fdfc92f4765879850ace86620d",
+      "kind": "expression",
+      "level": "C2",
+      "text": "be at loggerheads",
+      "meaning": "be in strong disagreement",
+      "meaning_fr": "être en désaccord total",
+      "example": "The two ministers are at loggerheads.",
+      "phonetic": "",
+      "anki_answer": "désaccord",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "b9f7cae94914ac0ab7d1bd951898ec3a6c38c554",
+      "kind": "history",
+      "level": "C2",
+      "text": "causality",
+      "meaning": "the relationship between a cause and its effect",
+      "meaning_fr": "causalité",
+      "example": "Historians debated the causality of the crash.",
+      "phonetic": "",
+      "anki_answer": "causalité",
+      "tags": [
+        "science"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “bread” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "pain",
+      "item_key": "8eb169e78b6f6104fa3645add59308c9e231902a"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: ____ care",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "take",
+      "item_key": "e9cbcbb79092421511c710dbe720eecf3ac68026"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “home” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "ad6bbcb76e01dc675f36e6b781461890c05dd31b"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “borrow” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "emprunter",
+      "item_key": "2a9a10fe1460ca7beff24d5a18962b5f7487a08a"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: be ____ at",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "good",
+      "item_key": "73597a822a5e27d99103037b0a9b268747b865b7"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “law” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "41935f987a8bf297de1e9cc1fd53600212b65669"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “culture” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "culture",
+      "item_key": "1b9f535b599639bc02bd11957f937e7b3b019b56"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: once in a ____",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "while",
+      "item_key": "1ccf70aed46d418e69384001ed321f484fcbec8a"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “pilgrimage” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "3097446c6f75b7d5327e489c1235fcb876ff185d"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “careful” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "prudent, soigneux",
+      "item_key": "9f8f39487c4614caec5f2fda466999f61b53f619"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be down to ____",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "earth",
+      "item_key": "1d88ae7538d4d2a58bbc86890e5ff69d30c14bce"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “tariff” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "19th century",
+      "item_key": "3a3abc6854e4161c170341cea2fc46af4f72dbb0"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “plausible” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "plausible",
+      "item_key": "f7b1e81b0b10453d6f35c234077a94cab256bd90"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: give ____ the benefit of the doubt",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "someone",
+      "item_key": "f44178066d504b85a7a162e66ee3447a99dfd8f4"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “absolutist” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "65862e7d958be7c181fa68a24829835c6d715b61"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “vitiate” mean?",
+      "options": [
+        "culture",
+        "emprunter",
+        "pain",
+        "plausible"
+      ],
+      "answer": "vicer",
+      "item_key": "6a8d956b935e32880f3909645cc491bd9a73778a"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: be at ____",
+      "options": [
+        "benefit",
+        "care",
+        "doubt",
+        "down"
+      ],
+      "answer": "loggerheads",
+      "item_key": "d1b812cfc14533fdfc92f4765879850ace86620d"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “causality” belong to?",
+      "options": [
+        "19th century",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "b9f7cae94914ac0ab7d1bd951898ec3a6c38c554"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 5,
+    "total": 6,
+    "origins": {
+      "reserve": 2,
+      "fresh": 3
+    },
+    "source_count": 5,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-26.json"
+  }
+}
