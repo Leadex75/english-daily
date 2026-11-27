@@ -24,12 +24,20 @@
     "date": "2026-11-25"
   },
   {
+    "guid_hash": "0f582d68e540b74c77b43f635b1ee34992488973",
+    "date": "2026-11-27"
+  },
+  {
     "guid_hash": "0fd4e4d03e991b50e1a38c874d90e1665febb676",
     "date": "2026-11-22"
   },
   {
     "guid_hash": "1a2306acca4117f9c93c62e9fed432faab7b9cd6",
     "date": "2026-11-26"
+  },
+  {
+    "guid_hash": "1c46f2baeaa79614b37c5ecd0637db60ca370357",
+    "date": "2026-11-27"
   },
   {
     "guid_hash": "2297aa9566ba52d7f7408db5b9ce8712c9626e87",
@@ -72,6 +80,10 @@
     "date": "2026-11-26"
   },
   {
+    "guid_hash": "3d9e46f79b7d244e5ad7e05c8e21210926feec58",
+    "date": "2026-11-27"
+  },
+  {
     "guid_hash": "3e5eb7e4b20f7a75ebf9bcd3334fb0a45459022a",
     "date": "2026-11-22"
   },
@@ -94,6 +106,10 @@
   {
     "guid_hash": "49f38bc96dc4b02dce715e1a36864c2a09746b95",
     "date": "2026-11-24"
+  },
+  {
+    "guid_hash": "4c984b5e65cfde786807237b3c143e47f607e114",
+    "date": "2026-11-27"
   },
   {
     "guid_hash": "4f140b4032a64642eee6fea891de45d15dd2d065",
@@ -164,6 +180,10 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "73865a1124bf9782ed95c04a938cf9ed6480331f",
+    "date": "2026-11-27"
+  },
+  {
     "guid_hash": "7aed4e87ca07d9f8b0431b9ec2defd24fd6f1baa",
     "date": "2026-11-22"
   },
@@ -194,6 +214,10 @@
   {
     "guid_hash": "9a14bc5bdd497e7e8a451c76777e7d2673724915",
     "date": "2026-11-23"
+  },
+  {
+    "guid_hash": "9c5dbeb9150eebf09a022e483fdd540dcd95c394",
+    "date": "2026-11-27"
   },
   {
     "guid_hash": "9e9b07b26d9050073b7bcd8effab3953dc4c9a4d",
@@ -228,6 +252,10 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "c51981984b9fbba4c6306ec5cdc04c7554542e5c",
+    "date": "2026-11-27"
+  },
+  {
     "guid_hash": "c528e4451592f7ed202c11743a618264c4e7bfd4",
     "date": "2026-11-22"
   },
@@ -248,6 +276,10 @@
     "date": "2026-11-22"
   },
   {
+    "guid_hash": "d40d4b8816f21b1cff33dad9e501975da310cb0f",
+    "date": "2026-11-27"
+  },
+  {
     "guid_hash": "d55b352d60e2ca378b3dfbc67c842416103855f5",
     "date": "2026-11-26"
   },
@@ -262,6 +294,18 @@
   {
     "guid_hash": "e1b0efc97758281f91f895eb43520aa485e6d174",
     "date": "2026-11-22"
+  },
+  {
+    "guid_hash": "e1e669e5b8e101ae748cdfb93a813a16edfa1d41",
+    "date": "2026-11-27"
+  },
+  {
+    "guid_hash": "e3be1a4ed37c89d9fc73b8e94209810a196fdccc",
+    "date": "2026-11-27"
+  },
+  {
+    "guid_hash": "e56bae1fdf98cbe9dd59cb889e1ea995667d2365",
+    "date": "2026-11-27"
   },
   {
     "guid_hash": "e5ad4be481eb48b6f2df584ebbfb7ecd13e85f73",

@@ -1813,5 +1813,82 @@
     "url_rss": "https://librivox.org/rss/480",
     "fetched_at": "2026-11-26T14:45:17",
     "level_method": "source"
+  },
+  "514": {
+    "title": "Ballad of Reading Gaol",
+    "author": "",
+    "gutenberg_id": "301",
+    "genre": "Poetry",
+    "level": "B2",
+    "score": 0.4963,
+    "url_rss": "https://librivox.org/rss/514",
+    "fetched_at": "2026-11-27T14:44:17",
+    "level_method": "source"
+  },
+  "515": {
+    "title": "Ballad of Reading Gaol, (version 2)",
+    "author": "",
+    "gutenberg_id": "301",
+    "genre": "Poetry",
+    "level": "C1",
+    "score": 0.7388,
+    "url_rss": "https://librivox.org/rss/515",
+    "fetched_at": "2026-11-27T14:44:18",
+    "level_method": "source"
+  },
+  "516": {
+    "title": "Short Poetry Collection 018",
+    "author": "",
+    "gutenberg_id": "",
+    "genre": "Poetry",
+    "level": "B2",
+    "score": 0.4583,
+    "url_rss": "https://librivox.org/rss/516",
+    "fetched_at": "2026-11-27T14:44:18",
+    "level_method": "source"
+  },
+  "523": {
+    "title": "Prisoner of Zenda",
+    "author": "",
+    "gutenberg_id": "95",
+    "genre": "Action & Adventure Fiction",
+    "level": "B2",
+    "score": 0.5004,
+    "url_rss": "https://librivox.org/rss/523",
+    "fetched_at": "2026-11-27T14:44:19",
+    "level_method": "source"
+  },
+  "526": {
+    "title": "Golden Road",
+    "author": "",
+    "gutenberg_id": "316",
+    "genre": "Children's Fiction",
+    "level": "C1",
+    "score": 0.7164,
+    "url_rss": "https://librivox.org/rss/526",
+    "fetched_at": "2026-11-27T14:44:19",
+    "level_method": "source"
+  },
+  "531": {
+    "title": "Spring and Fall",
+    "author": "",
+    "gutenberg_id": "",
+    "genre": "Multi-version (Weekly and Fortnightly poetry)",
+    "level": "B1",
+    "score": 0.3117,
+    "url_rss": "https://librivox.org/rss/531",
+    "fetched_at": "2026-11-27T14:44:20",
+    "level_method": "source"
+  },
+  "426": {
+    "title": "Invisible Man",
+    "author": "",
+    "gutenberg_id": "5230",
+    "genre": "Science Fiction",
+    "level": "B2",
+    "score": 0.5006,
+    "url_rss": "https://librivox.org/rss/426",
+    "fetched_at": "2026-11-27T14:44:40",
+    "level_method": "source"
   }
 }

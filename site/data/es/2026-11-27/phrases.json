@@ -1,0 +1,350 @@
+{
+  "A1": {
+    "date": "2026-11-27",
+    "level": "A1",
+    "word": {
+      "text": "negro",
+      "level": "A1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈneɣɾo/",
+      "meaning": "del color más oscuro",
+      "meaning_fr": "noir",
+      "example": "Tiene un gato negro.",
+      "anki_answer": "negro",
+      "tags": [
+        "colores"
+      ],
+      "key": "fba366bdadedf332ab1bfe492671374c4fa49fcd",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "es la una",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "la una en punto",
+      "meaning_fr": "il est une heure",
+      "example": "Es la una y ya es hora de comer.",
+      "anki_answer": "es la una",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "ccae796444fccd1830c7b8de3ce55b32f62815f7",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "campo",
+      "aliases": [
+        "campo",
+        "campos"
+      ],
+      "level": "A1",
+      "meaning": "un terreno abierto",
+      "meaning_fr": "champ",
+      "period": "General",
+      "theme": "Economía",
+      "example": "Los campesinos trabajaban en el campo.",
+      "tags": [
+        "naturaleza"
+      ],
+      "key": "1ea11e6e6776cffa4a6e7bd93d71ee0a14c6a0ff",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-27",
+    "level": "A2",
+    "word": {
+      "text": "decidir",
+      "level": "A2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/deθiˈdiɾ/",
+      "meaning": "elegir después de pensar",
+      "meaning_fr": "décider",
+      "example": "Debes decidir hoy.",
+      "anki_answer": "decidir",
+      "tags": [
+        "decisiones"
+      ],
+      "key": "34e4b10355d006623b2fa367e92a18b654dbc57d",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "ser bueno en",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "hacer algo bien",
+      "meaning_fr": "être doué pour",
+      "example": "Es buena en matemáticas.",
+      "anki_answer": "ser bueno en",
+      "tags": [
+        "habilidades"
+      ],
+      "key": "8579b49f6a2b83086690754cb470ffa640011b03",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "cosecha",
+      "aliases": [
+        "cosecha",
+        "cosechas"
+      ],
+      "level": "A2",
+      "meaning": "la recogida de cultivos",
+      "meaning_fr": "récolte",
+      "period": "General",
+      "theme": "Economía",
+      "example": "La cosecha fue abundante.",
+      "tags": [
+        "economía"
+      ],
+      "key": "111889dc340a89f1036aae80a4d220b7d7710e04",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-27",
+    "level": "B1",
+    "word": {
+      "text": "sitio",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈsitio/",
+      "meaning": "un bloqueo militar de una ciudad",
+      "meaning_fr": "siège",
+      "example": "El sitio duró tres meses.",
+      "anki_answer": "sitio",
+      "tags": [
+        "historia"
+      ],
+      "key": "26c7920271b4c12f07a211093db6250f99d09887",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "dejar constancia",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "registrar algo por escrito",
+      "meaning_fr": "laisser une trace",
+      "example": "El acta deja constancia del acuerdo.",
+      "anki_answer": "dejar constancia",
+      "tags": [
+        "registro"
+      ],
+      "key": "49e404fd11673ffbceff0fdd004c99288337da3a",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "parlamento",
+      "aliases": [
+        "parlamento",
+        "parlamentos"
+      ],
+      "level": "B1",
+      "meaning": "un grupo que elabora las leyes de un país",
+      "meaning_fr": "parlement",
+      "period": "Edad Moderna",
+      "theme": "Política",
+      "example": "El parlamento debatió el impuesto.",
+      "tags": [
+        "política"
+      ],
+      "key": "5ce5649df240e232b39b38229a6675cd136dadad",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-27",
+    "level": "B2",
+    "word": {
+      "text": "ferrocarril",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/feɾokaˈril/",
+      "meaning": "una vía para trenes",
+      "meaning_fr": "chemin de fer",
+      "example": "El ferrocarril llegó a la costa.",
+      "anki_answer": "ferrocarril",
+      "tags": [
+        "transporte"
+      ],
+      "key": "3715f2940f4267e1081ba697f9bb1da0c6ba155f",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "tomar partido",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "ponerse de una parte",
+      "meaning_fr": "prendre parti",
+      "example": "Tomó partido en el conflicto.",
+      "anki_answer": "tomar partido",
+      "tags": [
+        "postura"
+      ],
+      "key": "c77dd9c44934eb237f7bd87bb2fd682fd22fabb6",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "insurrección",
+      "aliases": [
+        "insurrección",
+        "insurrecciones"
+      ],
+      "level": "B2",
+      "meaning": "un levantamiento contra la autoridad",
+      "meaning_fr": "insurrection",
+      "period": "General",
+      "theme": "Revolución",
+      "example": "La insurrección estalló en la capital.",
+      "tags": [
+        "revolución"
+      ],
+      "key": "eff3720a50d9acea7ce949ebc6f35ce11aa315fb",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-27",
+    "level": "C1",
+    "word": {
+      "text": "cronología",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/kɾonoloˈχia/",
+      "meaning": "la ordenación de hechos en el tiempo",
+      "meaning_fr": "chronologie",
+      "example": "La cronología se basaba en inscripciones.",
+      "anki_answer": "cronología",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "87d1165098fb09c2570b17a0df41811926e15815",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "interpretar una fuente",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "analizar el sentido de un documento",
+      "meaning_fr": "interpréter une source",
+      "example": "Interpretaron la fuente con cuidado.",
+      "anki_answer": "interpretar una fuente",
+      "tags": [
+        "historia"
+      ],
+      "key": "b1384da4d9c0057535a7022c97e8590777aa5286",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "sufragista",
+      "aliases": [
+        "sufragista",
+        "sufragistas"
+      ],
+      "level": "C1",
+      "meaning": "una persona que luchaba por el sufragio femenino",
+      "meaning_fr": "suffragette",
+      "period": "Siglo XIX",
+      "theme": "Sociedad",
+      "example": "La sufragista fue detenida en la manifestación.",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "2ad216683a4842c70ca97a1c49af1f660bffb269",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-27",
+    "level": "C2",
+    "word": {
+      "text": "metarrelato",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/metaɾreˈlato/",
+      "meaning": "una historia global que sirve para explicar el pasado",
+      "meaning_fr": "métarécit",
+      "example": "El autor rechazó el viejo metarrelato.",
+      "anki_answer": "metarrelato",
+      "tags": [
+        "cultura"
+      ],
+      "key": "a5b1e1a50b41125de8acea85aef6c9b5a42a2d6f",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "interrogar la fuente",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "examinar críticamente un documento",
+      "meaning_fr": "interroger la source",
+      "example": "Interrogaron la fuente antes de citarla.",
+      "anki_answer": "interrogar la fuente",
+      "tags": [
+        "historia"
+      ],
+      "key": "0753cafacb998e154ab358cfcacc06cb2fc468de",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "confederación",
+      "aliases": [
+        "confederación",
+        "confederacion"
+      ],
+      "level": "C2",
+      "meaning": "una unión flexible de Estados o grupos",
+      "meaning_fr": "confédération",
+      "period": "Siglo XIX",
+      "theme": "Política",
+      "example": "La confederación se deshizo tras la guerra.",
+      "tags": [
+        "política"
+      ],
+      "key": "f9256af6f4c21beeba211e78a73c386f37353dff",
+      "kind": "history"
+    }
+  }
+}

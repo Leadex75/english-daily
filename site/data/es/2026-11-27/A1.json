@@ -1,0 +1,654 @@
+{
+  "date": "2026-11-27",
+  "lang": "es",
+  "level": "A1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": null,
+      "audio": null
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-27",
+    "level": "A1",
+    "word": {
+      "text": "negro",
+      "level": "A1",
+      "type": "word",
+      "pos": "adjective",
+      "phonetic": "/ˈneɣɾo/",
+      "meaning": "del color más oscuro",
+      "meaning_fr": "noir",
+      "example": "Tiene un gato negro.",
+      "anki_answer": "negro",
+      "tags": [
+        "colores"
+      ],
+      "key": "fba366bdadedf332ab1bfe492671374c4fa49fcd",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "es la una",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "la una en punto",
+      "meaning_fr": "il est une heure",
+      "example": "Es la una y ya es hora de comer.",
+      "anki_answer": "es la una",
+      "tags": [
+        "tiempo"
+      ],
+      "key": "ccae796444fccd1830c7b8de3ce55b32f62815f7",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "campo",
+      "aliases": [
+        "campo",
+        "campos"
+      ],
+      "level": "A1",
+      "meaning": "un terreno abierto",
+      "meaning_fr": "champ",
+      "period": "General",
+      "theme": "Economía",
+      "example": "Los campesinos trabajaban en el campo.",
+      "tags": [
+        "naturaleza"
+      ],
+      "key": "1ea11e6e6776cffa4a6e7bd93d71ee0a14c6a0ff",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "fba366bdadedf332ab1bfe492671374c4fa49fcd",
+      "kind": "word",
+      "level": "A1",
+      "text": "negro",
+      "meaning": "del color más oscuro",
+      "meaning_fr": "noir",
+      "example": "Tiene un gato negro.",
+      "phonetic": "/ˈneɣɾo/",
+      "anki_answer": "negro",
+      "tags": [
+        "colores"
+      ]
+    },
+    {
+      "key": "ccae796444fccd1830c7b8de3ce55b32f62815f7",
+      "kind": "expression",
+      "level": "A1",
+      "text": "es la una",
+      "meaning": "la una en punto",
+      "meaning_fr": "il est une heure",
+      "example": "Es la una y ya es hora de comer.",
+      "phonetic": "",
+      "anki_answer": "es la una",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "1ea11e6e6776cffa4a6e7bd93d71ee0a14c6a0ff",
+      "kind": "history",
+      "level": "A1",
+      "text": "campo",
+      "meaning": "un terreno abierto",
+      "meaning_fr": "champ",
+      "example": "Los campesinos trabajaban en el campo.",
+      "phonetic": "",
+      "anki_answer": "champ",
+      "tags": [
+        "naturaleza"
+      ]
+    },
+    {
+      "key": "34e4b10355d006623b2fa367e92a18b654dbc57d",
+      "kind": "word",
+      "level": "A2",
+      "text": "decidir",
+      "meaning": "elegir después de pensar",
+      "meaning_fr": "décider",
+      "example": "Debes decidir hoy.",
+      "phonetic": "/deθiˈdiɾ/",
+      "anki_answer": "decidir",
+      "tags": [
+        "decisiones"
+      ]
+    },
+    {
+      "key": "8579b49f6a2b83086690754cb470ffa640011b03",
+      "kind": "expression",
+      "level": "A2",
+      "text": "ser bueno en",
+      "meaning": "hacer algo bien",
+      "meaning_fr": "être doué pour",
+      "example": "Es buena en matemáticas.",
+      "phonetic": "",
+      "anki_answer": "ser bueno en",
+      "tags": [
+        "habilidades"
+      ]
+    },
+    {
+      "key": "111889dc340a89f1036aae80a4d220b7d7710e04",
+      "kind": "history",
+      "level": "A2",
+      "text": "cosecha",
+      "meaning": "la recogida de cultivos",
+      "meaning_fr": "récolte",
+      "example": "La cosecha fue abundante.",
+      "phonetic": "",
+      "anki_answer": "récolte",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "26c7920271b4c12f07a211093db6250f99d09887",
+      "kind": "word",
+      "level": "B1",
+      "text": "sitio",
+      "meaning": "un bloqueo militar de una ciudad",
+      "meaning_fr": "siège",
+      "example": "El sitio duró tres meses.",
+      "phonetic": "/ˈsitio/",
+      "anki_answer": "sitio",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "49e404fd11673ffbceff0fdd004c99288337da3a",
+      "kind": "expression",
+      "level": "B1",
+      "text": "dejar constancia",
+      "meaning": "registrar algo por escrito",
+      "meaning_fr": "laisser une trace",
+      "example": "El acta deja constancia del acuerdo.",
+      "phonetic": "",
+      "anki_answer": "dejar constancia",
+      "tags": [
+        "registro"
+      ]
+    },
+    {
+      "key": "5ce5649df240e232b39b38229a6675cd136dadad",
+      "kind": "history",
+      "level": "B1",
+      "text": "parlamento",
+      "meaning": "un grupo que elabora las leyes de un país",
+      "meaning_fr": "parlement",
+      "example": "El parlamento debatió el impuesto.",
+      "phonetic": "",
+      "anki_answer": "parlement",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "3715f2940f4267e1081ba697f9bb1da0c6ba155f",
+      "kind": "word",
+      "level": "B2",
+      "text": "ferrocarril",
+      "meaning": "una vía para trenes",
+      "meaning_fr": "chemin de fer",
+      "example": "El ferrocarril llegó a la costa.",
+      "phonetic": "/feɾokaˈril/",
+      "anki_answer": "ferrocarril",
+      "tags": [
+        "transporte"
+      ]
+    },
+    {
+      "key": "c77dd9c44934eb237f7bd87bb2fd682fd22fabb6",
+      "kind": "expression",
+      "level": "B2",
+      "text": "tomar partido",
+      "meaning": "ponerse de una parte",
+      "meaning_fr": "prendre parti",
+      "example": "Tomó partido en el conflicto.",
+      "phonetic": "",
+      "anki_answer": "tomar partido",
+      "tags": [
+        "postura"
+      ]
+    },
+    {
+      "key": "eff3720a50d9acea7ce949ebc6f35ce11aa315fb",
+      "kind": "history",
+      "level": "B2",
+      "text": "insurrección",
+      "meaning": "un levantamiento contra la autoridad",
+      "meaning_fr": "insurrection",
+      "example": "La insurrección estalló en la capital.",
+      "phonetic": "",
+      "anki_answer": "insurrection",
+      "tags": [
+        "revolución"
+      ]
+    },
+    {
+      "key": "87d1165098fb09c2570b17a0df41811926e15815",
+      "kind": "word",
+      "level": "C1",
+      "text": "cronología",
+      "meaning": "la ordenación de hechos en el tiempo",
+      "meaning_fr": "chronologie",
+      "example": "La cronología se basaba en inscripciones.",
+      "phonetic": "/kɾonoloˈχia/",
+      "anki_answer": "cronología",
+      "tags": [
+        "tiempo"
+      ]
+    },
+    {
+      "key": "b1384da4d9c0057535a7022c97e8590777aa5286",
+      "kind": "expression",
+      "level": "C1",
+      "text": "interpretar una fuente",
+      "meaning": "analizar el sentido de un documento",
+      "meaning_fr": "interpréter une source",
+      "example": "Interpretaron la fuente con cuidado.",
+      "phonetic": "",
+      "anki_answer": "interpretar una fuente",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "2ad216683a4842c70ca97a1c49af1f660bffb269",
+      "kind": "history",
+      "level": "C1",
+      "text": "sufragista",
+      "meaning": "una persona que luchaba por el sufragio femenino",
+      "meaning_fr": "suffragette",
+      "example": "La sufragista fue detenida en la manifestación.",
+      "phonetic": "",
+      "anki_answer": "suffragette",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "a5b1e1a50b41125de8acea85aef6c9b5a42a2d6f",
+      "kind": "word",
+      "level": "C2",
+      "text": "metarrelato",
+      "meaning": "una historia global que sirve para explicar el pasado",
+      "meaning_fr": "métarécit",
+      "example": "El autor rechazó el viejo metarrelato.",
+      "phonetic": "/metaɾreˈlato/",
+      "anki_answer": "metarrelato",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "0753cafacb998e154ab358cfcacc06cb2fc468de",
+      "kind": "expression",
+      "level": "C2",
+      "text": "interrogar la fuente",
+      "meaning": "examinar críticamente un documento",
+      "meaning_fr": "interroger la source",
+      "example": "Interrogaron la fuente antes de citarla.",
+      "phonetic": "",
+      "anki_answer": "interrogar la fuente",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "f9256af6f4c21beeba211e78a73c386f37353dff",
+      "kind": "history",
+      "level": "C2",
+      "text": "confederación",
+      "meaning": "una unión flexible de Estados o grupos",
+      "meaning_fr": "confédération",
+      "example": "La confederación se deshizo tras la guerra.",
+      "phonetic": "",
+      "anki_answer": "confédération",
+      "tags": [
+        "política"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “negro”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "noir",
+      "item_key": "fba366bdadedf332ab1bfe492671374c4fa49fcd"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: es la ____",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "una",
+      "item_key": "ccae796444fccd1830c7b8de3ce55b32f62815f7"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “campo”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "1ea11e6e6776cffa4a6e7bd93d71ee0a14c6a0ff"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “decidir”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "décider",
+      "item_key": "34e4b10355d006623b2fa367e92a18b654dbc57d"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: ser ____ en",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "bueno",
+      "item_key": "8579b49f6a2b83086690754cb470ffa640011b03"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “cosecha”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "111889dc340a89f1036aae80a4d220b7d7710e04"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “sitio”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "siège",
+      "item_key": "26c7920271b4c12f07a211093db6250f99d09887"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: dejar ____",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "constancia",
+      "item_key": "49e404fd11673ffbceff0fdd004c99288337da3a"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “parlamento”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Moderna",
+      "item_key": "5ce5649df240e232b39b38229a6675cd136dadad"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “ferrocarril”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "chemin de fer",
+      "item_key": "3715f2940f4267e1081ba697f9bb1da0c6ba155f"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: tomar ____",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "partido",
+      "item_key": "c77dd9c44934eb237f7bd87bb2fd682fd22fabb6"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “insurrección”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "eff3720a50d9acea7ce949ebc6f35ce11aa315fb"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “cronología”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "chronologie",
+      "item_key": "87d1165098fb09c2570b17a0df41811926e15815"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ una fuente",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "interpretar",
+      "item_key": "b1384da4d9c0057535a7022c97e8590777aa5286"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “sufragista”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "2ad216683a4842c70ca97a1c49af1f660bffb269"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “metarrelato”?",
+      "options": [
+        "chemin de fer",
+        "chronologie",
+        "décider",
+        "métarécit"
+      ],
+      "answer": "métarécit",
+      "item_key": "a5b1e1a50b41125de8acea85aef6c9b5a42a2d6f"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ la fuente",
+      "options": [
+        "bueno",
+        "constancia",
+        "dejar",
+        "fuente"
+      ],
+      "answer": "interrogar",
+      "item_key": "0753cafacb998e154ab358cfcacc06cb2fc468de"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “confederación”?",
+      "options": [
+        "Edad Moderna",
+        "General",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "f9256af6f4c21beeba211e78a73c386f37353dff"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 0,
+    "total": 6,
+    "origins": {},
+    "source_count": 0,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-27.json"
+  }
+}

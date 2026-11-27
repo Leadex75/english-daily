@@ -1,0 +1,474 @@
+{
+  "A1": {
+    "date": "2026-11-27",
+    "level": "A1",
+    "word": {
+      "text": "river",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈrɪvər/",
+      "meaning": "a long natural flow of water",
+      "meaning_fr": "rivière",
+      "example": "The river is very wide here.",
+      "anki_answer": "rivière",
+      "tags": [
+        "nature"
+      ],
+      "key": "13a2df96ad90eaeab49beca35ae2026f317f7091",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈɹɪvə/",
+        "definitions": [
+          "A large and often winding stream which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea.",
+          "Any large flow of a liquid in a single body.",
+          "The last card dealt in a hand.",
+          "A visually undesirable effect of white space running down a page, caused by spaces between words on consecutive lines happening to coincide."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/river-1-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A large and often winding <a rel=\"mw:WikiLink\" href=\"/wiki/stream\" title=\"stream\">stream</a> which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea.",
+          "Any large flow of a <a rel=\"mw:WikiLink\" href=\"/wiki/liquid\" title=\"liquid\">liquid</a> in a single body.",
+          "<span class=\"usage-label-sense\"></span> The last card <a rel=\"mw:WikiLink\" href=\"/wiki/deal\" title=\"deal\">dealt</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/hand\" title=\"hand\">hand</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> A visually undesirable effect of white space running down a page, caused by spaces between words on consecutive lines happening to coincide."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be hungry",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "want to eat",
+      "meaning_fr": "avoir faim",
+      "example": "The children are hungry.",
+      "anki_answer": "avoir faim",
+      "tags": [
+        "food"
+      ],
+      "key": "6918bba9132f183c0af21ceaa75fc42896af0a4e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "gold",
+      "aliases": [
+        "gold",
+        "golden"
+      ],
+      "level": "A1",
+      "meaning": "a precious yellow metal",
+      "meaning_fr": "or",
+      "period": "Antiquity",
+      "theme": "Economy",
+      "example": "Gold was found in the river.",
+      "tags": [
+        "economy"
+      ],
+      "key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-27",
+    "level": "A2",
+    "word": {
+      "text": "forget",
+      "level": "A2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/fərˈɡet/",
+      "meaning": "fail to keep something in mind",
+      "meaning_fr": "oublier",
+      "example": "Do not forget your keys.",
+      "anki_answer": "oublier",
+      "tags": [
+        "memory"
+      ],
+      "key": "71434316f63fba69a2e40e44bf7658ab4b91ae01",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/fəˈɡɛt/",
+        "definitions": [
+          "To lose remembrance of.",
+          "To unintentionally not do, neglect.",
+          "To unintentionally leave something behind.",
+          "To cease remembering."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/forget-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt44\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/lose\" title=\"lose\">lose</a> <a rel=\"mw:WikiLink\" href=\"/wiki/remembrance\" title=\"remembrance\">remembrance</a> of.",
+          "<span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/unintentionally\" title=\"unintentionally\">unintentionally</a> not <a rel=\"mw:WikiLink\" href=\"/wiki/do\" title=\"do\">do</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/neglect\" title=\"neglect\">neglect</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt55\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/unintentionally\" title=\"unintentionally\">unintentionally</a> leave something behind.",
+          "<span class=\"usage-label-sense\" about=\"#mwt57\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/cease\" title=\"cease\">cease</a> <a rel=\"mw:WikiLink\" href=\"/wiki/remembering\" title=\"remembering\">remembering</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "try on",
+      "level": "A2",
+      "type": "phrasal verb",
+      "meaning": "test clothing by wearing it",
+      "meaning_fr": "essayer",
+      "example": "Can I try on this jacket?",
+      "anki_answer": "essayer",
+      "tags": [
+        "shopping"
+      ],
+      "key": "035b029f15071b7695405d3d77bb361988cb3d77",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt5\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/test\" title=\"test\">test</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/look\" title=\"look\">look</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/fit\" title=\"fit\">fit</a> of (a <a rel=\"mw:WikiLink\" href=\"/wiki/garment\" title=\"garment\">garment</a>) by <a rel=\"mw:WikiLink\" href=\"/wiki/wearing\" title=\"wearing\">wearing</a> it.",
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To attempt; to undertake."
+        ]
+      },
+      "audio": {
+        "title": "The English We Speak: Try one's patience",
+        "url": "http://www.bbc.co.uk/programmes/p0pgdrwh",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pgdrn8.mp3"
+      }
+    },
+    "history": {
+      "text": "harbor",
+      "aliases": [
+        "harbor",
+        "harbours",
+        "harbour"
+      ],
+      "level": "A2",
+      "meaning": "a safe place for ships to stop",
+      "meaning_fr": "port",
+      "period": "General",
+      "theme": "Economy",
+      "example": "Ships waited in the harbor.",
+      "tags": [
+        "travel"
+      ],
+      "key": "7023032008f71f895461956e4150800b0de4ba0d",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-27",
+    "level": "B1",
+    "word": {
+      "text": "reduce",
+      "level": "B1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/rɪˈduːs/",
+      "meaning": "make something smaller",
+      "meaning_fr": "réduire",
+      "example": "We must reduce waste.",
+      "anki_answer": "réduire",
+      "tags": [
+        "quantity"
+      ],
+      "key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɹɪˈdjuːs/",
+        "definitions": [
+          "To bring down the size, quantity, quality, value or intensity of something; to diminish, to lower.",
+          "To lose weight.",
+          "To bring to an inferior rank; to degrade, to demote.",
+          "To humble; to conquer; to subdue; to capture."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/reduce-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> To bring down the size, quantity, quality, value or intensity of something; to <a rel=\"mw:WikiLink\" href=\"/wiki/diminish\" title=\"diminish\">diminish</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/lower\" title=\"lower\">lower</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt29\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/lose\" title=\"lose\">lose</a> weight.",
+          "<span class=\"usage-label-sense\" about=\"#mwt30\" typeof=\"mw:Transclusion\"></span> To bring to an inferior rank; to <a rel=\"mw:WikiLink\" href=\"/wiki/degrade\" title=\"degrade\">degrade</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/demote\" title=\"demote\">demote</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/humble\" title=\"humble\">humble</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/conquer\" title=\"conquer\">conquer</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/subdue\" title=\"subdue\">subdue</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/capture\" title=\"capture\">capture</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "break the ice",
+      "level": "B1",
+      "type": "idiom",
+      "meaning": "make people feel relaxed at the start",
+      "meaning_fr": "briser la glace",
+      "example": "A joke helped to break the ice.",
+      "anki_answer": "briser glace",
+      "tags": [
+        "social"
+      ],
+      "key": "d01b897930f7cf7a07092783dba29b08949b75a9",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To start to <a rel=\"mw:WikiLink\" href=\"/wiki/get_to_know\" title=\"get to know\">get to know</a> people to avoid social <a rel=\"mw:WikiLink\" href=\"/wiki/awkwardness\" title=\"awkwardness\">awkwardness</a> and formality.",
+          "<span class=\"usage-label-sense\" about=\"#mwt8\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/introduce\" title=\"introduce\">introduce</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/conversation\" title=\"conversation\">conversation</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/surmount\" title=\"surmount\">surmount</a> initial difficulties; to <a rel=\"mw:WikiLink\" href=\"/wiki/overcome\" title=\"overcome\">overcome</a> <a rel=\"mw:WikiLink\" href=\"/wiki/obstacle\" title=\"obstacle\">obstacles</a> and make a beginning.",
+          "<span class=\"use-with-mention\" about=\"#mwt11\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/break#English\" title=\"break\">break</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/the#English\" title=\"the\">the</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/ice#English\" title=\"ice\">ice</a></span>.</span>"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "rebellion",
+      "aliases": [
+        "rebellion",
+        "uprising"
+      ],
+      "level": "B1",
+      "meaning": "a fight against a ruler or government",
+      "meaning_fr": "rébellion",
+      "period": "General",
+      "theme": "Revolution",
+      "example": "The rebellion lasted six months.",
+      "tags": [
+        "conflict"
+      ],
+      "key": "fa49edded74ce3e1306513ecf49724696d9ea8cd",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-27",
+    "level": "B2",
+    "word": {
+      "text": "majority",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/məˈdʒɔːrəti/",
+      "meaning": "the larger part of a group",
+      "meaning_fr": "majorité",
+      "example": "The majority voted yes.",
+      "anki_answer": "majorité",
+      "tags": [
+        "quantity"
+      ],
+      "key": "6044496900235a001227dda81e1c4d2a5e862e76",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/məˈd͡ʒɒɹɪti/",
+        "definitions": [
+          "More than half (50%) of some group.",
+          "The difference between the winning vote and the rest of the votes.",
+          "Legal adulthood.",
+          "The office held by a member of the armed forces in the rank of major."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/majority-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "More than <a rel=\"mw:WikiLink\" href=\"/wiki/half\" title=\"half\">half</a> (50%) of some group.",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> Any <a rel=\"mw:WikiLink\" href=\"/wiki/share#Noun\" title=\"share\">share</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/fraction#Noun\" title=\"fraction\">fraction</a> that is bigger than any one of its <a rel=\"mw:WikiLink\" href=\"/wiki/counterpart\" title=\"counterpart\">counterpart</a> shares or fractions (of the same <a rel=\"mw:WikiLink\" href=\"/wiki/whole#Noun\" title=\"whole\">whole</a>).",
+          "In a parliament or legislature, the difference in seats between the ruling party and the opposition; <span class=\"usage-label-sense\" about=\"#mwt25\" typeof=\"mw:Transclusion\"></span> in an election, the difference in votes between the winning candidate and the second-place candidate, or between the winning candidate and all of the other candidates combined.",
+          "<span class=\"usage-label-sense\" about=\"#mwt29\" typeof=\"mw:Transclusion\"></span> Legal adulthood, <a rel=\"mw:WikiLink\" href=\"/wiki/age_of_majority\" title=\"age of majority\">age of majority</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be in the same boat",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "be in the same difficult situation",
+      "meaning_fr": "être dans le même bateau",
+      "example": "We are all in the same boat.",
+      "anki_answer": "même bateau",
+      "tags": [
+        "team"
+      ],
+      "key": "b80e6734aa4ebfb1f00c0b0f7749db62721fc494",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> In the same <a rel=\"mw:WikiLink\" href=\"/wiki/situation\" title=\"situation\">situation</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/predicament\" title=\"predicament\">predicament</a>; having the same problems."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "insurrection",
+      "aliases": [
+        "insurrection",
+        "insurrections"
+      ],
+      "level": "B2",
+      "meaning": "a revolt against authority",
+      "meaning_fr": "insurrection",
+      "period": "General",
+      "theme": "Revolution",
+      "example": "The insurrection began in the capital.",
+      "tags": [
+        "revolution"
+      ],
+      "key": "debce86036c8ee429b34341dea6cd43290ce2ec7",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-27",
+    "level": "C1",
+    "word": {
+      "text": "incentive",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ɪnˈsentɪv/",
+      "meaning": "something that encourages an action",
+      "meaning_fr": "incitation",
+      "example": "Tax breaks are an incentive to invest.",
+      "anki_answer": "incitation",
+      "tags": [
+        "motivation"
+      ],
+      "key": "1caf3e81b13b5595b8ccfa23854fd754414803b9",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɪnˈsɛntɪv/",
+        "definitions": [
+          "Something that motivates, rouses, or encourages.",
+          "A bonus or reward, often monetary, to work harder.",
+          "Inciting; encouraging or moving; rousing to action; stimulating.",
+          "Serving to kindle or set on fire."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/incentive-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "Something that <a rel=\"mw:WikiLink\" href=\"/wiki/motivate\" title=\"motivate\">motivates</a>, <a rel=\"mw:WikiLink\" href=\"/wiki/rouse\" title=\"rouse\">rouses</a>, or <a rel=\"mw:WikiLink\" href=\"/wiki/encourage\" title=\"encourage\">encourages</a>.",
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/bonus\" title=\"bonus\">bonus</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/reward\" title=\"reward\">reward</a>, often <a rel=\"mw:WikiLink\" href=\"/wiki/monetary\" title=\"monetary\">monetary</a>, to work harder.",
+          "Inciting; encouraging or moving; rousing to action; stimulating.",
+          "Serving to <a rel=\"mw:WikiLink\" href=\"/wiki/kindle\" title=\"kindle\">kindle</a> or set on fire."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "put the cart before the horse",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "do things in the wrong order",
+      "meaning_fr": "mettre la charrue avant les bœufs",
+      "example": "Marketing before research puts the cart before the horse.",
+      "anki_answer": "charrue bœufs",
+      "tags": [
+        "order"
+      ],
+      "key": "f62382b6f564a5d55b9c1b8a183f99197e03c087",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To put things in the <a rel=\"mw:WikiLink\" href=\"/wiki/wrong\" title=\"wrong\">wrong</a> <a rel=\"mw:WikiLink\" href=\"/wiki/order\" title=\"order\">order</a> or with the wrong <a rel=\"mw:WikiLink\" href=\"/wiki/priorities\" title=\"priorities\">priorities</a>; to put something <a rel=\"mw:WikiLink\" href=\"/wiki/inconsequential\" title=\"inconsequential\">inconsequential</a> as more important than something more <a rel=\"mw:WikiLink\" href=\"/wiki/essential\" title=\"essential\">essential</a>."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "urbanisation",
+      "aliases": [
+        "urbanisation",
+        "urbanization"
+      ],
+      "level": "C1",
+      "meaning": "the growth of towns and cities",
+      "meaning_fr": "urbanisation",
+      "period": "19th century",
+      "theme": "Society",
+      "example": "Industrial cities underwent rapid urbanisation.",
+      "tags": [
+        "society"
+      ],
+      "key": "2e20839a6e6e449a479f47c4dc868a67d09bb2a9",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-27",
+    "level": "C2",
+    "word": {
+      "text": "subvert",
+      "level": "C2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/səbˈvɜːrt/",
+      "meaning": "undermine the established order",
+      "meaning_fr": "saper, renverser",
+      "example": "The novel subverts traditional values.",
+      "anki_answer": "saper",
+      "tags": [
+        "change"
+      ],
+      "key": "c41ba36b1024418784be26251631ca32948c6958",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/səbˈvɜːt/",
+        "definitions": [
+          "To overturn from the foundation; to overthrow; to ruin utterly.",
+          "To pervert, as the mind, and turn it from the truth; to corrupt; to confound.",
+          "To upturn convention from the foundation by undermining it (literally, to turn from beneath)."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/subvert-1-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/overturn\" title=\"overturn\">overturn</a> from the <a rel=\"mw:WikiLink\" href=\"/wiki/foundation\" title=\"foundation\">foundation</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/overthrow\" title=\"overthrow\">overthrow</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/ruin\" title=\"ruin\">ruin</a> <a rel=\"mw:WikiLink\" href=\"/wiki/utterly\" title=\"utterly\">utterly</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt16\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/pervert\" title=\"pervert\">pervert</a>, as the mind, and turn it from the truth; to <a rel=\"mw:WikiLink\" href=\"/wiki/corrupt\" title=\"corrupt\">corrupt</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/confound\" title=\"confound\">confound</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt19\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/upturn\" title=\"upturn\">upturn</a> <a rel=\"mw:WikiLink\" href=\"/wiki/convention\" title=\"convention\">convention</a> from the foundation by <a rel=\"mw:WikiLink\" href=\"/wiki/undermine\" title=\"undermine\">undermining</a> it (literally, to turn from beneath).",
+          "An <a rel=\"mw:WikiLink\" href=\"/wiki/advertisement\" title=\"advertisement\">advertisement</a> created by <a rel=\"mw:WikiLink\" href=\"/wiki/subvertising\" title=\"subvertising\">subvertising</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "make a virtue of necessity",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "present something unavoidable as a choice",
+      "meaning_fr": "faire une vertu de la nécessité",
+      "example": "They made a virtue of necessity and cancelled the trip.",
+      "anki_answer": "vertu nécessité",
+      "tags": [
+        "attitude"
+      ],
+      "key": "e06ca292effced01cfdc66ef7955c82c2424ed27",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt4\" typeof=\"mw:Transclusion\"></span> To make the best of a <a rel=\"mw:WikiLink\" href=\"/wiki/difficult\" title=\"difficult\">difficult</a> situation; to <a rel=\"mw:WikiLink\" href=\"/wiki/recast\" title=\"recast\">recast</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/portray\" title=\"portray\">portray</a> an <a rel=\"mw:WikiLink\" href=\"/wiki/action\" title=\"action\">action</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/situation\" title=\"situation\">situation</a> in which one has no <a rel=\"mw:WikiLink\" href=\"/wiki/alternative\" title=\"alternative\">alternatives</a> as an action or situation which was <a rel=\"mw:WikiLink\" href=\"/wiki/deliberately\" title=\"deliberately\">deliberately</a> <a rel=\"mw:WikiLink\" href=\"/wiki/chosen\" title=\"chosen\">chosen</a> on its <a rel=\"mw:WikiLink\" href=\"/wiki/merit\" title=\"merit\">merits</a>."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "confederation",
+      "aliases": [
+        "confederation",
+        "confederations"
+      ],
+      "level": "C2",
+      "meaning": "a loose union of states or groups",
+      "meaning_fr": "confédération",
+      "period": "19th century",
+      "theme": "Politics",
+      "example": "The confederation dissolved after the war.",
+      "tags": [
+        "politics"
+      ],
+      "key": "0a263c07dcdb722d6dd72b0c6cf40a45fa2edcaa",
+      "kind": "history"
+    }
+  }
+}

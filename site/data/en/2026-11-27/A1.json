@@ -1,0 +1,738 @@
+{
+  "date": "2026-11-27",
+  "lang": "en",
+  "level": "A1",
+  "slots": {
+    "news": {
+      "text": null,
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 1,
+        "title": "Real Easy English: Talking about tea",
+        "source": "BBC Learning Easy English (text)",
+        "source_id": "bbc_learning_easy_english_text",
+        "category": "culture",
+        "url": "http://www.bbc.co.uk/programmes/p0pq6mng",
+        "published_at": "2026-11-27T09:27:00",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 128,
+        "duration_sec": null,
+        "body_text": "Neil and Becca have a real conversation in easy English about tea – the hot drink that British people love in the mornings… or afternoons! Neil and Becca have a real conversation in easy English about tea – the hot drink that British people love in the mornings… or afternoons!",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "665b2bf5ec71744c5415c088bc9724bb8703b69e",
+        "summary": "Neil and Becca have a real conversation in easy English about tea – the hot drink that British people love in the mornings… or afternoons! Learn how to put the kettle on and find out the surprising way that Becca likes to take her tea! Get the video version of this podcast, plus a free worksheet and transcript here: https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/261127 Sign up to our email newsletter! It comes out weekly out Wednesdays: https://www.bbc.co.uk/send/u178220599 And improve your English with more programmes at your level: https://www.bbc.co.uk/learningenglish/easy_course",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: A2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Real Easy English: Talking about tea — BBC Learning Easy English (text)",
+        "duration_formatted": "",
+        "source_url": "https://podcasts.files.bbci.co.uk/p0hsrwv5.rss",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1207512741,
+        "title": "Anne of Avonlea - An Irate Neighbor",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/anne-of-avonlea-by-lucy-maud-montgomery/",
+        "published_at": "2026-11-22T13:06:19",
+        "level": "A1",
+        "slot_level": "A1",
+        "source_level": "A2",
+        "word_count": 74,
+        "duration_sec": 1460,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/anne_avonlea/anne_of_avonlea_01_montgomery_64kb.mp3",
+        "description": "Anne of Avonlea by . Following Anne of Green Gables, the book covers the second chapter in the life of Anne Shirley. Anne of Avonlea follows Anne from the age of 16 to 18, during the two years that she teaches at Avonlea school. It includes many of the characters from Anne of Green Gables, as well new ones like Mr Harrison, Miss Lavendar Lewis, Paul Irving, and the twins Dora and Davy. (Summary fr",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "902a4fa4c10c7b9d2bd69b771a0652ca18e003f2",
+        "summary": "Anne of Avonlea by . Following Anne of Green Gables, the book covers the second chapter in the life of Anne Shirley. Anne of Avonlea follows Anne from the age of 16 to 18, during the two years that she teaches at Avonlea school. It includes many of the characters from Anne of Green Gables, as well new ones like Mr Harrison, Miss Lavendar Lewis, Paul Irving, and the twins Dora and Davy. (Summary fr",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: A2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Anne of Avonlea - An Irate Neighbor — LibriVox (culture)",
+        "duration_formatted": "24:20",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-27",
+    "level": "A1",
+    "word": {
+      "text": "river",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈrɪvər/",
+      "meaning": "a long natural flow of water",
+      "meaning_fr": "rivière",
+      "example": "The river is very wide here.",
+      "anki_answer": "rivière",
+      "tags": [
+        "nature"
+      ],
+      "key": "13a2df96ad90eaeab49beca35ae2026f317f7091",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈɹɪvə/",
+        "definitions": [
+          "A large and often winding stream which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea.",
+          "Any large flow of a liquid in a single body.",
+          "The last card dealt in a hand.",
+          "A visually undesirable effect of white space running down a page, caused by spaces between words on consecutive lines happening to coincide."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/river-1-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A large and often winding <a rel=\"mw:WikiLink\" href=\"/wiki/stream\" title=\"stream\">stream</a> which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea.",
+          "Any large flow of a <a rel=\"mw:WikiLink\" href=\"/wiki/liquid\" title=\"liquid\">liquid</a> in a single body.",
+          "<span class=\"usage-label-sense\"></span> The last card <a rel=\"mw:WikiLink\" href=\"/wiki/deal\" title=\"deal\">dealt</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/hand\" title=\"hand\">hand</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> A visually undesirable effect of white space running down a page, caused by spaces between words on consecutive lines happening to coincide."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be hungry",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "want to eat",
+      "meaning_fr": "avoir faim",
+      "example": "The children are hungry.",
+      "anki_answer": "avoir faim",
+      "tags": [
+        "food"
+      ],
+      "key": "6918bba9132f183c0af21ceaa75fc42896af0a4e",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "gold",
+      "aliases": [
+        "gold",
+        "golden"
+      ],
+      "level": "A1",
+      "meaning": "a precious yellow metal",
+      "meaning_fr": "or",
+      "period": "Antiquity",
+      "theme": "Economy",
+      "example": "Gold was found in the river.",
+      "tags": [
+        "economy"
+      ],
+      "key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "13a2df96ad90eaeab49beca35ae2026f317f7091",
+      "kind": "word",
+      "level": "A1",
+      "text": "river",
+      "meaning": "a long natural flow of water",
+      "meaning_fr": "rivière",
+      "example": "The river is very wide here.",
+      "phonetic": "/ˈrɪvər/",
+      "anki_answer": "rivière",
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "key": "6918bba9132f183c0af21ceaa75fc42896af0a4e",
+      "kind": "expression",
+      "level": "A1",
+      "text": "be hungry",
+      "meaning": "want to eat",
+      "meaning_fr": "avoir faim",
+      "example": "The children are hungry.",
+      "phonetic": "",
+      "anki_answer": "avoir faim",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83",
+      "kind": "history",
+      "level": "A1",
+      "text": "gold",
+      "meaning": "a precious yellow metal",
+      "meaning_fr": "or",
+      "example": "Gold was found in the river.",
+      "phonetic": "",
+      "anki_answer": "or",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "71434316f63fba69a2e40e44bf7658ab4b91ae01",
+      "kind": "word",
+      "level": "A2",
+      "text": "forget",
+      "meaning": "fail to keep something in mind",
+      "meaning_fr": "oublier",
+      "example": "Do not forget your keys.",
+      "phonetic": "/fərˈɡet/",
+      "anki_answer": "oublier",
+      "tags": [
+        "memory"
+      ]
+    },
+    {
+      "key": "035b029f15071b7695405d3d77bb361988cb3d77",
+      "kind": "expression",
+      "level": "A2",
+      "text": "try on",
+      "meaning": "test clothing by wearing it",
+      "meaning_fr": "essayer",
+      "example": "Can I try on this jacket?",
+      "phonetic": "",
+      "anki_answer": "essayer",
+      "tags": [
+        "shopping"
+      ]
+    },
+    {
+      "key": "7023032008f71f895461956e4150800b0de4ba0d",
+      "kind": "history",
+      "level": "A2",
+      "text": "harbor",
+      "meaning": "a safe place for ships to stop",
+      "meaning_fr": "port",
+      "example": "Ships waited in the harbor.",
+      "phonetic": "",
+      "anki_answer": "port",
+      "tags": [
+        "travel"
+      ]
+    },
+    {
+      "key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f",
+      "kind": "word",
+      "level": "B1",
+      "text": "reduce",
+      "meaning": "make something smaller",
+      "meaning_fr": "réduire",
+      "example": "We must reduce waste.",
+      "phonetic": "/rɪˈduːs/",
+      "anki_answer": "réduire",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d01b897930f7cf7a07092783dba29b08949b75a9",
+      "kind": "expression",
+      "level": "B1",
+      "text": "break the ice",
+      "meaning": "make people feel relaxed at the start",
+      "meaning_fr": "briser la glace",
+      "example": "A joke helped to break the ice.",
+      "phonetic": "",
+      "anki_answer": "briser glace",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "key": "fa49edded74ce3e1306513ecf49724696d9ea8cd",
+      "kind": "history",
+      "level": "B1",
+      "text": "rebellion",
+      "meaning": "a fight against a ruler or government",
+      "meaning_fr": "rébellion",
+      "example": "The rebellion lasted six months.",
+      "phonetic": "",
+      "anki_answer": "rébellion",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "6044496900235a001227dda81e1c4d2a5e862e76",
+      "kind": "word",
+      "level": "B2",
+      "text": "majority",
+      "meaning": "the larger part of a group",
+      "meaning_fr": "majorité",
+      "example": "The majority voted yes.",
+      "phonetic": "/məˈdʒɔːrəti/",
+      "anki_answer": "majorité",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "b80e6734aa4ebfb1f00c0b0f7749db62721fc494",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be in the same boat",
+      "meaning": "be in the same difficult situation",
+      "meaning_fr": "être dans le même bateau",
+      "example": "We are all in the same boat.",
+      "phonetic": "",
+      "anki_answer": "même bateau",
+      "tags": [
+        "team"
+      ]
+    },
+    {
+      "key": "debce86036c8ee429b34341dea6cd43290ce2ec7",
+      "kind": "history",
+      "level": "B2",
+      "text": "insurrection",
+      "meaning": "a revolt against authority",
+      "meaning_fr": "insurrection",
+      "example": "The insurrection began in the capital.",
+      "phonetic": "",
+      "anki_answer": "insurrection",
+      "tags": [
+        "revolution"
+      ]
+    },
+    {
+      "key": "1caf3e81b13b5595b8ccfa23854fd754414803b9",
+      "kind": "word",
+      "level": "C1",
+      "text": "incentive",
+      "meaning": "something that encourages an action",
+      "meaning_fr": "incitation",
+      "example": "Tax breaks are an incentive to invest.",
+      "phonetic": "/ɪnˈsentɪv/",
+      "anki_answer": "incitation",
+      "tags": [
+        "motivation"
+      ]
+    },
+    {
+      "key": "f62382b6f564a5d55b9c1b8a183f99197e03c087",
+      "kind": "expression",
+      "level": "C1",
+      "text": "put the cart before the horse",
+      "meaning": "do things in the wrong order",
+      "meaning_fr": "mettre la charrue avant les bœufs",
+      "example": "Marketing before research puts the cart before the horse.",
+      "phonetic": "",
+      "anki_answer": "charrue bœufs",
+      "tags": [
+        "order"
+      ]
+    },
+    {
+      "key": "2e20839a6e6e449a479f47c4dc868a67d09bb2a9",
+      "kind": "history",
+      "level": "C1",
+      "text": "urbanisation",
+      "meaning": "the growth of towns and cities",
+      "meaning_fr": "urbanisation",
+      "example": "Industrial cities underwent rapid urbanisation.",
+      "phonetic": "",
+      "anki_answer": "urbanisation",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "c41ba36b1024418784be26251631ca32948c6958",
+      "kind": "word",
+      "level": "C2",
+      "text": "subvert",
+      "meaning": "undermine the established order",
+      "meaning_fr": "saper, renverser",
+      "example": "The novel subverts traditional values.",
+      "phonetic": "/səbˈvɜːrt/",
+      "anki_answer": "saper",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "e06ca292effced01cfdc66ef7955c82c2424ed27",
+      "kind": "expression",
+      "level": "C2",
+      "text": "make a virtue of necessity",
+      "meaning": "present something unavoidable as a choice",
+      "meaning_fr": "faire une vertu de la nécessité",
+      "example": "They made a virtue of necessity and cancelled the trip.",
+      "phonetic": "",
+      "anki_answer": "vertu nécessité",
+      "tags": [
+        "attitude"
+      ]
+    },
+    {
+      "key": "0a263c07dcdb722d6dd72b0c6cf40a45fa2edcaa",
+      "kind": "history",
+      "level": "C2",
+      "text": "confederation",
+      "meaning": "a loose union of states or groups",
+      "meaning_fr": "confédération",
+      "example": "The confederation dissolved after the war.",
+      "phonetic": "",
+      "anki_answer": "confédération",
+      "tags": [
+        "politics"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “river” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "rivière",
+      "item_key": "13a2df96ad90eaeab49beca35ae2026f317f7091"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: be ____",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "hungry",
+      "item_key": "6918bba9132f183c0af21ceaa75fc42896af0a4e"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “gold” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "Antiquity",
+      "item_key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “forget” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "oublier",
+      "item_key": "71434316f63fba69a2e40e44bf7658ab4b91ae01"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ on",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "try",
+      "item_key": "035b029f15071b7695405d3d77bb361988cb3d77"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “harbor” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "7023032008f71f895461956e4150800b0de4ba0d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “reduce” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "réduire",
+      "item_key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ the ice",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "break",
+      "item_key": "d01b897930f7cf7a07092783dba29b08949b75a9"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “rebellion” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "fa49edded74ce3e1306513ecf49724696d9ea8cd"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “majority” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "majorité",
+      "item_key": "6044496900235a001227dda81e1c4d2a5e862e76"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be in the ____ boat",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "same",
+      "item_key": "b80e6734aa4ebfb1f00c0b0f7749db62721fc494"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “insurrection” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "debce86036c8ee429b34341dea6cd43290ce2ec7"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “incentive” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "incitation",
+      "item_key": "1caf3e81b13b5595b8ccfa23854fd754414803b9"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: put the cart ____ the horse",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "before",
+      "item_key": "f62382b6f564a5d55b9c1b8a183f99197e03c087"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “urbanisation” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "2e20839a6e6e449a479f47c4dc868a67d09bb2a9"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “subvert” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "saper, renverser",
+      "item_key": "c41ba36b1024418784be26251631ca32948c6958"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: make a virtue of ____",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "necessity",
+      "item_key": "e06ca292effced01cfdc66ef7955c82c2424ed27"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “confederation” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "0a263c07dcdb722d6dd72b0c6cf40a45fa2edcaa"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 2,
+    "total": 6,
+    "origins": {
+      "adjacent": 2
+    },
+    "source_count": 2,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-27.json"
+  }
+}

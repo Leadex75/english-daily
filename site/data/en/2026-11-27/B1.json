@@ -1,0 +1,922 @@
+{
+  "date": "2026-11-27",
+  "lang": "en",
+  "level": "B1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 20,
+        "title": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-27T09:07:48",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 929,
+        "duration_sec": null,
+        "body_text": "Volodymyr Zelensky has voiced deep frustration with the US, criticising Donald Trump for calling Vladimir Putin \"my friend\" and saying delays in delivering vital anti-ballistic missiles were costing Ukrainian lives.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "5cb7dd904a8575688a0cbf6ba0abfd2a65edf818",
+        "summary": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 5
+      },
+      "audio": {
+        "id": 6,
+        "title": "7am ET, November 27 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-27T12:09:59",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/040beb5d-5c45-42dd-bf7d-dcbc652fd65f/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_36135b31e0ea07b7cb8db3890ee0f326_4875109.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=040beb5d-5c45-42dd-bf7d-dcbc652fd65f&feed=O9WlY7a5&t=podcast&e=nx-s1-20261127-0700-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4875109&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_330__684ef508954ad70779ac78c773f16ff687e385e1",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "2f89821c8150e4176cf97566ff9f8f4cd9942619",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "7am ET, November 27 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 53,
+        "title": "Beaver supermoon lights up skylines around the world – video",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/science/video/2026/nov/25/beaver-supermoon-lights-up-skylines-around-the-world-video",
+        "published_at": "2026-11-25T10:59:18",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 79,
+        "duration_sec": null,
+        "body_text": "Beaver supermoon lights up skylines around the world – video A stunning supermoon rose over skylines around the world. Supermoons occur when the full moon coincides with the moon being at or near its closest point to Earth, making it appear larger than usual.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d0e4f1a0099ce92180be97947d93ac65c4c2fa5c",
+        "summary": "A stunning supermoon rose over skylines around the world. Supermoons occur when the full moon coincides with the moon being at or near its closest point to Earth, making it appear larger than usual. The November full moon is also known as the beaver moon, a name thought to date to when hunters traditionally set traps for beavers in autumn to secure a supply of warm fur for the winter",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Beaver supermoon lights up skylines around the world – video — The Guardian - Science",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1770514881,
+        "title": "Spring and Fall - Version 3",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/spring-and-fall-by-gerard-manley-hopkins/",
+        "published_at": "2026-11-27T14:44:20",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B1",
+        "word_count": 31,
+        "duration_sec": 72,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/spring_and_fall_librivox/spring_fall_hopkins_blb_64kb.mp3",
+        "description": "Spring and Fall by . LibriVox volunteers bring you eleven different recordings of Spring and Fall , by Gerard Manley Hopkins. This was the weekly poetry project for the week of November 12th, 2006.",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "adab302afa78e07e79b84f189dbb554c93f84918",
+        "summary": "Spring and Fall by . LibriVox volunteers bring you eleven different recordings of Spring and Fall , by Gerard Manley Hopkins. This was the weekly poetry project for the week of November 12th, 2006.",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Spring and Fall - Version 3 — LibriVox (culture)",
+        "duration_formatted": "1:12",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": {
+        "id": 66,
+        "title": "On this day: 27 November",
+        "source": "Wikipedia On this day",
+        "source_id": "wikipedia_onthisday",
+        "category": "history",
+        "url": "https://en.wikipedia.org/wiki/November_27",
+        "published_at": "2026-11-27T00:00:00",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 95,
+        "duration_sec": null,
+        "body_text": "2024 — Syrian rebel groups led by Hay'at Tahrir al-Sham launch a ground offensive into Syria.\n\n2020 — Iran's top nuclear scientist, Mohsen Fakhrizadeh, is assassinated near Tehran.\n\n2020 — Days after the announcement of its discovery, the Utah monolith is removed by recreationists.\n\n2015 — An active shooter inside a Planned Parenthood facility in Colorado Springs, Colorado, shoots at least four police officers. One officer later dies. Two civilians are also killed, and six injured. The shooter later surrendered.\n\n2009 — Nevsky Express bombing: A bomb explodes on the Nevsky Express train between Moscow and Saint Petersburg, derailing it and causing 28 deaths and 96 injuries.",
+        "audio_url": null,
+        "description": null,
+        "license": "cc_by_sa",
+        "attribution": "Wikipedia, CC BY-SA 4.0",
+        "truncated": false,
+        "guid_hash": "ffdef54e7976fae8dccf323e5c2b97014daec89d",
+        "summary": "2024 — Syrian rebel groups led by Hay'at Tahrir al-Sham launch a ground offensive into Syria.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "On this day: 27 November — Wikipedia On this day",
+        "duration_formatted": "",
+        "source_url": "https://en.wikipedia.org/api/rest_v1/feed/onthisday/events/MM/DD",
+        "reading_time_min": 1
+      },
+      "audio": {
+        "id": 1761485062,
+        "title": "History of Holland - Habsburg Rule in the Netherlands",
+        "source": "LibriVox (history & biography)",
+        "source_id": "librivox_history",
+        "category": "history",
+        "url": "https://librivox.org/history-of-holland/",
+        "published_at": "2026-11-21T21:54:59",
+        "level": "B1",
+        "slot_level": "B1",
+        "source_level": "B2",
+        "word_count": 51,
+        "duration_sec": 2314,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/history_of_holland__0707_librivox/historyofholland_02_gedmundson_64kb.mp3",
+        "description": "History of Holland by . The title, \"History of Holland,\" given to this volume is fully justified by the predominant part which the great maritime province of Holland took in the War of Independence and throughout the whole of the subsequent history of the Dutch state and people.(Summary from book prologue)",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "07b7468d21f43f5ef88ca3a6be38a82cf61ab454",
+        "summary": "History of Holland by . The title, \"History of Holland,\" given to this volume is fully justified by the predominant part which the great maritime province of Holland took in the War of Independence and throughout the whole of the subsequent history of the Dutch state and people.(Summary from book prologue)",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (history & biography)",
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [
+          "General",
+          "20th century"
+        ],
+        "themes": [
+          "War",
+          "Politics"
+        ],
+        "history_terms": [
+          {
+            "text": "war",
+            "aliases": [
+              "war",
+              "wars"
+            ],
+            "level": "A1",
+            "meaning": "fighting between countries or groups",
+            "meaning_fr": "guerre",
+            "period": "General",
+            "theme": "War",
+            "example": "The war ended many years ago.",
+            "tags": [
+              "conflict"
+            ]
+          },
+          {
+            "text": "independence",
+            "aliases": [
+              "independence",
+              "freedom"
+            ],
+            "level": "B2",
+            "meaning": "the state of governing oneself",
+            "meaning_fr": "indépendance",
+            "period": "20th century",
+            "theme": "Politics",
+            "example": "Independence came after a long struggle.",
+            "tags": [
+              "politics"
+            ]
+          }
+        ],
+        "alt_text": "History of Holland - Habsburg Rule in the Netherlands — LibriVox (history & biography)",
+        "duration_formatted": "38:34",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    }
+  },
+  "phrase": {
+    "date": "2026-11-27",
+    "level": "B1",
+    "word": {
+      "text": "reduce",
+      "level": "B1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/rɪˈduːs/",
+      "meaning": "make something smaller",
+      "meaning_fr": "réduire",
+      "example": "We must reduce waste.",
+      "anki_answer": "réduire",
+      "tags": [
+        "quantity"
+      ],
+      "key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɹɪˈdjuːs/",
+        "definitions": [
+          "To bring down the size, quantity, quality, value or intensity of something; to diminish, to lower.",
+          "To lose weight.",
+          "To bring to an inferior rank; to degrade, to demote.",
+          "To humble; to conquer; to subdue; to capture."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/reduce-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt22\" typeof=\"mw:Transclusion\"></span> To bring down the size, quantity, quality, value or intensity of something; to <a rel=\"mw:WikiLink\" href=\"/wiki/diminish\" title=\"diminish\">diminish</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/lower\" title=\"lower\">lower</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt29\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/lose\" title=\"lose\">lose</a> weight.",
+          "<span class=\"usage-label-sense\" about=\"#mwt30\" typeof=\"mw:Transclusion\"></span> To bring to an inferior rank; to <a rel=\"mw:WikiLink\" href=\"/wiki/degrade\" title=\"degrade\">degrade</a>, to <a rel=\"mw:WikiLink\" href=\"/wiki/demote\" title=\"demote\">demote</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt38\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/humble\" title=\"humble\">humble</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/conquer\" title=\"conquer\">conquer</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/subdue\" title=\"subdue\">subdue</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/capture\" title=\"capture\">capture</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "break the ice",
+      "level": "B1",
+      "type": "idiom",
+      "meaning": "make people feel relaxed at the start",
+      "meaning_fr": "briser la glace",
+      "example": "A joke helped to break the ice.",
+      "anki_answer": "briser glace",
+      "tags": [
+        "social"
+      ],
+      "key": "d01b897930f7cf7a07092783dba29b08949b75a9",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To start to <a rel=\"mw:WikiLink\" href=\"/wiki/get_to_know\" title=\"get to know\">get to know</a> people to avoid social <a rel=\"mw:WikiLink\" href=\"/wiki/awkwardness\" title=\"awkwardness\">awkwardness</a> and formality.",
+          "<span class=\"usage-label-sense\" about=\"#mwt8\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/introduce\" title=\"introduce\">introduce</a> a <a rel=\"mw:WikiLink\" href=\"/wiki/conversation\" title=\"conversation\">conversation</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt10\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/surmount\" title=\"surmount\">surmount</a> initial difficulties; to <a rel=\"mw:WikiLink\" href=\"/wiki/overcome\" title=\"overcome\">overcome</a> <a rel=\"mw:WikiLink\" href=\"/wiki/obstacle\" title=\"obstacle\">obstacles</a> and make a beginning.",
+          "<span class=\"use-with-mention\" about=\"#mwt11\" typeof=\"mw:Transclusion\">Used other than figuratively or idiomatically<span typeof=\"mw:Entity\">:</span> <i>see</i> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/break#English\" title=\"break\">break</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/the#English\" title=\"the\">the</a></span>,<span typeof=\"mw:Entity\">‎</span> <span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/ice#English\" title=\"ice\">ice</a></span>.</span>"
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "rebellion",
+      "aliases": [
+        "rebellion",
+        "uprising"
+      ],
+      "level": "B1",
+      "meaning": "a fight against a ruler or government",
+      "meaning_fr": "rébellion",
+      "period": "General",
+      "theme": "Revolution",
+      "example": "The rebellion lasted six months.",
+      "tags": [
+        "conflict"
+      ],
+      "key": "fa49edded74ce3e1306513ecf49724696d9ea8cd",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "13a2df96ad90eaeab49beca35ae2026f317f7091",
+      "kind": "word",
+      "level": "A1",
+      "text": "river",
+      "meaning": "a long natural flow of water",
+      "meaning_fr": "rivière",
+      "example": "The river is very wide here.",
+      "phonetic": "/ˈrɪvər/",
+      "anki_answer": "rivière",
+      "tags": [
+        "nature"
+      ]
+    },
+    {
+      "key": "6918bba9132f183c0af21ceaa75fc42896af0a4e",
+      "kind": "expression",
+      "level": "A1",
+      "text": "be hungry",
+      "meaning": "want to eat",
+      "meaning_fr": "avoir faim",
+      "example": "The children are hungry.",
+      "phonetic": "",
+      "anki_answer": "avoir faim",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83",
+      "kind": "history",
+      "level": "A1",
+      "text": "gold",
+      "meaning": "a precious yellow metal",
+      "meaning_fr": "or",
+      "example": "Gold was found in the river.",
+      "phonetic": "",
+      "anki_answer": "or",
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "key": "71434316f63fba69a2e40e44bf7658ab4b91ae01",
+      "kind": "word",
+      "level": "A2",
+      "text": "forget",
+      "meaning": "fail to keep something in mind",
+      "meaning_fr": "oublier",
+      "example": "Do not forget your keys.",
+      "phonetic": "/fərˈɡet/",
+      "anki_answer": "oublier",
+      "tags": [
+        "memory"
+      ]
+    },
+    {
+      "key": "035b029f15071b7695405d3d77bb361988cb3d77",
+      "kind": "expression",
+      "level": "A2",
+      "text": "try on",
+      "meaning": "test clothing by wearing it",
+      "meaning_fr": "essayer",
+      "example": "Can I try on this jacket?",
+      "phonetic": "",
+      "anki_answer": "essayer",
+      "tags": [
+        "shopping"
+      ]
+    },
+    {
+      "key": "7023032008f71f895461956e4150800b0de4ba0d",
+      "kind": "history",
+      "level": "A2",
+      "text": "harbor",
+      "meaning": "a safe place for ships to stop",
+      "meaning_fr": "port",
+      "example": "Ships waited in the harbor.",
+      "phonetic": "",
+      "anki_answer": "port",
+      "tags": [
+        "travel"
+      ]
+    },
+    {
+      "key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f",
+      "kind": "word",
+      "level": "B1",
+      "text": "reduce",
+      "meaning": "make something smaller",
+      "meaning_fr": "réduire",
+      "example": "We must reduce waste.",
+      "phonetic": "/rɪˈduːs/",
+      "anki_answer": "réduire",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "d01b897930f7cf7a07092783dba29b08949b75a9",
+      "kind": "expression",
+      "level": "B1",
+      "text": "break the ice",
+      "meaning": "make people feel relaxed at the start",
+      "meaning_fr": "briser la glace",
+      "example": "A joke helped to break the ice.",
+      "phonetic": "",
+      "anki_answer": "briser glace",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "key": "fa49edded74ce3e1306513ecf49724696d9ea8cd",
+      "kind": "history",
+      "level": "B1",
+      "text": "rebellion",
+      "meaning": "a fight against a ruler or government",
+      "meaning_fr": "rébellion",
+      "example": "The rebellion lasted six months.",
+      "phonetic": "",
+      "anki_answer": "rébellion",
+      "tags": [
+        "conflict"
+      ]
+    },
+    {
+      "key": "6044496900235a001227dda81e1c4d2a5e862e76",
+      "kind": "word",
+      "level": "B2",
+      "text": "majority",
+      "meaning": "the larger part of a group",
+      "meaning_fr": "majorité",
+      "example": "The majority voted yes.",
+      "phonetic": "/məˈdʒɔːrəti/",
+      "anki_answer": "majorité",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "b80e6734aa4ebfb1f00c0b0f7749db62721fc494",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be in the same boat",
+      "meaning": "be in the same difficult situation",
+      "meaning_fr": "être dans le même bateau",
+      "example": "We are all in the same boat.",
+      "phonetic": "",
+      "anki_answer": "même bateau",
+      "tags": [
+        "team"
+      ]
+    },
+    {
+      "key": "debce86036c8ee429b34341dea6cd43290ce2ec7",
+      "kind": "history",
+      "level": "B2",
+      "text": "insurrection",
+      "meaning": "a revolt against authority",
+      "meaning_fr": "insurrection",
+      "example": "The insurrection began in the capital.",
+      "phonetic": "",
+      "anki_answer": "insurrection",
+      "tags": [
+        "revolution"
+      ]
+    },
+    {
+      "key": "1caf3e81b13b5595b8ccfa23854fd754414803b9",
+      "kind": "word",
+      "level": "C1",
+      "text": "incentive",
+      "meaning": "something that encourages an action",
+      "meaning_fr": "incitation",
+      "example": "Tax breaks are an incentive to invest.",
+      "phonetic": "/ɪnˈsentɪv/",
+      "anki_answer": "incitation",
+      "tags": [
+        "motivation"
+      ]
+    },
+    {
+      "key": "f62382b6f564a5d55b9c1b8a183f99197e03c087",
+      "kind": "expression",
+      "level": "C1",
+      "text": "put the cart before the horse",
+      "meaning": "do things in the wrong order",
+      "meaning_fr": "mettre la charrue avant les bœufs",
+      "example": "Marketing before research puts the cart before the horse.",
+      "phonetic": "",
+      "anki_answer": "charrue bœufs",
+      "tags": [
+        "order"
+      ]
+    },
+    {
+      "key": "2e20839a6e6e449a479f47c4dc868a67d09bb2a9",
+      "kind": "history",
+      "level": "C1",
+      "text": "urbanisation",
+      "meaning": "the growth of towns and cities",
+      "meaning_fr": "urbanisation",
+      "example": "Industrial cities underwent rapid urbanisation.",
+      "phonetic": "",
+      "anki_answer": "urbanisation",
+      "tags": [
+        "society"
+      ]
+    },
+    {
+      "key": "c41ba36b1024418784be26251631ca32948c6958",
+      "kind": "word",
+      "level": "C2",
+      "text": "subvert",
+      "meaning": "undermine the established order",
+      "meaning_fr": "saper, renverser",
+      "example": "The novel subverts traditional values.",
+      "phonetic": "/səbˈvɜːrt/",
+      "anki_answer": "saper",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "e06ca292effced01cfdc66ef7955c82c2424ed27",
+      "kind": "expression",
+      "level": "C2",
+      "text": "make a virtue of necessity",
+      "meaning": "present something unavoidable as a choice",
+      "meaning_fr": "faire une vertu de la nécessité",
+      "example": "They made a virtue of necessity and cancelled the trip.",
+      "phonetic": "",
+      "anki_answer": "vertu nécessité",
+      "tags": [
+        "attitude"
+      ]
+    },
+    {
+      "key": "0a263c07dcdb722d6dd72b0c6cf40a45fa2edcaa",
+      "kind": "history",
+      "level": "C2",
+      "text": "confederation",
+      "meaning": "a loose union of states or groups",
+      "meaning_fr": "confédération",
+      "example": "The confederation dissolved after the war.",
+      "phonetic": "",
+      "anki_answer": "confédération",
+      "tags": [
+        "politics"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “river” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "rivière",
+      "item_key": "13a2df96ad90eaeab49beca35ae2026f317f7091"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: be ____",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "hungry",
+      "item_key": "6918bba9132f183c0af21ceaa75fc42896af0a4e"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “gold” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "Antiquity",
+      "item_key": "417e77ef5a5d6a8d17ef306d364ecd3d76d11c83"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “forget” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "oublier",
+      "item_key": "71434316f63fba69a2e40e44bf7658ab4b91ae01"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: ____ on",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "try",
+      "item_key": "035b029f15071b7695405d3d77bb361988cb3d77"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “harbor” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "7023032008f71f895461956e4150800b0de4ba0d"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “reduce” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "réduire",
+      "item_key": "1f64c0f04a3496dfbfbd6caf5a048a9a5103c82f"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ the ice",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "break",
+      "item_key": "d01b897930f7cf7a07092783dba29b08949b75a9"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “rebellion” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "fa49edded74ce3e1306513ecf49724696d9ea8cd"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “majority” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "majorité",
+      "item_key": "6044496900235a001227dda81e1c4d2a5e862e76"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be in the ____ boat",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "same",
+      "item_key": "b80e6734aa4ebfb1f00c0b0f7749db62721fc494"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “insurrection” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "General",
+      "item_key": "debce86036c8ee429b34341dea6cd43290ce2ec7"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “incentive” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "incitation",
+      "item_key": "1caf3e81b13b5595b8ccfa23854fd754414803b9"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: put the cart ____ the horse",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "before",
+      "item_key": "f62382b6f564a5d55b9c1b8a183f99197e03c087"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “urbanisation” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "2e20839a6e6e449a479f47c4dc868a67d09bb2a9"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “subvert” mean?",
+      "options": [
+        "incitation",
+        "majorité",
+        "oublier",
+        "rivière"
+      ],
+      "answer": "saper, renverser",
+      "item_key": "c41ba36b1024418784be26251631ca32948c6958"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: make a virtue of ____",
+      "options": [
+        "before",
+        "boat",
+        "break",
+        "cart"
+      ],
+      "answer": "necessity",
+      "item_key": "e06ca292effced01cfdc66ef7955c82c2424ed27"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “confederation” belong to?",
+      "options": [
+        "19th century",
+        "Antiquity",
+        "General"
+      ],
+      "answer": "19th century",
+      "item_key": "0a263c07dcdb722d6dd72b0c6cf40a45fa2edcaa"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 6,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 1,
+      "adjacent": 4
+    },
+    "source_count": 6,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [
+      "20th century",
+      "General"
+    ],
+    "history_themes": [
+      "Politics",
+      "War"
+    ],
+    "search_path": "./data/en/search/2026-11-27.json"
+  }
+}
