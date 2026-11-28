@@ -1,0 +1,349 @@
+{
+  "A1": {
+    "date": "2026-11-28",
+    "level": "A1",
+    "word": {
+      "text": "manzana",
+      "level": "A1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/manˈθana/",
+      "meaning": "una fruta redonda de piel roja o verde",
+      "meaning_fr": "pomme",
+      "example": "Comió una manzana después de comer.",
+      "anki_answer": "manzana",
+      "tags": [
+        "comida"
+      ],
+      "key": "1566fba37f30117fee3733f92daffe358f62a59c",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "acostarse",
+      "level": "A1",
+      "type": "phrasal verb",
+      "meaning": "irse a la cama",
+      "meaning_fr": "se coucher",
+      "example": "Me acuesto antes de las diez.",
+      "anki_answer": "acostarse",
+      "tags": [
+        "diario"
+      ],
+      "key": "fa3392c169f4ee3dae82915a13d93bcbed5d6baf",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "torre",
+      "aliases": [
+        "torre",
+        "torres"
+      ],
+      "level": "A1",
+      "meaning": "una construcción alta",
+      "meaning_fr": "tour",
+      "period": "Edad Media",
+      "theme": "Cultura",
+      "example": "La torre dominaba el paisaje.",
+      "tags": [
+        "arquitectura"
+      ],
+      "key": "3330fd6f50012c60e587503f1d48cdeca6f8a3bc",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-28",
+    "level": "A2",
+    "word": {
+      "text": "bolsillo",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/bolˈsiʝo/",
+      "meaning": "una pequeña bolsa en la ropa",
+      "meaning_fr": "poche",
+      "example": "La llave está en mi bolsillo.",
+      "anki_answer": "bolsillo",
+      "tags": [
+        "ropa"
+      ],
+      "key": "44f702d977fb20940969092f3940cc9baa58ffa6",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "por ejemplo",
+      "level": "A2",
+      "type": "everyday phrase",
+      "meaning": "se usa para introducir un caso",
+      "meaning_fr": "par exemple",
+      "example": "Trae fruta, por ejemplo manzanas.",
+      "anki_answer": "por ejemplo",
+      "tags": [
+        "conectores"
+      ],
+      "key": "36c61d5fdae35e49d6ede690f022c10d1aab40bc",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "impuesto",
+      "aliases": [
+        "impuesto",
+        "impuestos"
+      ],
+      "level": "A2",
+      "meaning": "una cantidad que se paga al Estado",
+      "meaning_fr": "impôt",
+      "period": "General",
+      "theme": "Economía",
+      "example": "El impuesto financió las carreteras.",
+      "tags": [
+        "economía"
+      ],
+      "key": "c1d10d0d1bb74348be674c2e22333fd41a203a71",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-28",
+    "level": "B1",
+    "word": {
+      "text": "migración",
+      "level": "B1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/miɣɾaˈθjon/",
+      "meaning": "el movimiento de personas a otro lugar",
+      "meaning_fr": "migration",
+      "example": "La migración transformó las ciudades.",
+      "anki_answer": "migración",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "cd4b60eb4da08fb1d39f47b39926c11aec08fe70",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "tener en cuenta",
+      "level": "B1",
+      "type": "collocation",
+      "meaning": "considerar algo al actuar",
+      "meaning_fr": "prendre en compte",
+      "example": "Hay que tener en cuenta el clima.",
+      "anki_answer": "tener en cuenta",
+      "tags": [
+        "consideración"
+      ],
+      "key": "bb16b371b84ad9fb8aaad2b33b1db18874fa961b",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "migración",
+      "aliases": [
+        "migración",
+        "migraciones"
+      ],
+      "level": "B1",
+      "meaning": "el movimiento de personas a otro lugar",
+      "meaning_fr": "migration",
+      "period": "General",
+      "theme": "Sociedad",
+      "example": "La migración cambió las ciudades.",
+      "tags": [
+        "sociedad"
+      ],
+      "key": "c26612c4589a68f5e974471d4e016641acb54fcd",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-28",
+    "level": "B2",
+    "word": {
+      "text": "ilustración",
+      "level": "B2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ilustɾaˈθjon/",
+      "meaning": "un movimiento del siglo XVIII basado en la razón",
+      "meaning_fr": "Lumières",
+      "example": "La ilustración favoreció el debate.",
+      "anki_answer": "ilustración",
+      "tags": [
+        "cultura"
+      ],
+      "key": "5e81b30175bf1bd9e4e8cec663921a36c07e1c2f",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "recuperar el terreno perdido",
+      "level": "B2",
+      "type": "collocation",
+      "meaning": "volver a la posición anterior",
+      "meaning_fr": "regagner le terrain perdu",
+      "example": "La moneda recuperó el terreno perdido.",
+      "anki_answer": "recuperar el terreno perdido",
+      "tags": [
+        "economía"
+      ],
+      "key": "567cc7bb8448ef439ad981a077c6b89b259b8dcb",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "república",
+      "aliases": [
+        "república",
+        "repúblicas"
+      ],
+      "level": "B2",
+      "meaning": "un sistema político sin monarca",
+      "meaning_fr": "république",
+      "period": "Siglo XIX",
+      "theme": "Política",
+      "example": "Proclamaron la república en 1871.",
+      "tags": [
+        "política"
+      ],
+      "key": "0562710ea7b01a01fb21b5ce152f7f9b9b44ed40",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-28",
+    "level": "C1",
+    "word": {
+      "text": "anales",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/aˈnales/",
+      "meaning": "registros de hechos año por año",
+      "meaning_fr": "annales",
+      "example": "Los anales mencionan un invierno severo.",
+      "anki_answer": "anales",
+      "tags": [
+        "cultura"
+      ],
+      "key": "5f78e8f8040e21cb0ea22dfcfce5ef60486708cd",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "contextualizar un documento",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "situar un texto en su contexto",
+      "meaning_fr": "contextualiser un document",
+      "example": "Contextualizaron el documento antes de citarlo.",
+      "anki_answer": "contextualizar un documento",
+      "tags": [
+        "historia"
+      ],
+      "key": "975de09ea116cd5a333b7e6df82175a60b13884d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "armisticio",
+      "aliases": [
+        "armisticio",
+        "armisticios"
+      ],
+      "level": "C1",
+      "meaning": "un acuerdo para suspender temporalmente la lucha",
+      "meaning_fr": "armistice",
+      "period": "Primera Guerra Mundial",
+      "theme": "Guerra",
+      "example": "El armisticio se firmó en noviembre de 1918.",
+      "tags": [
+        "guerra"
+      ],
+      "key": "4c8a9c038bbbf7ff713734755f6f10778f0e2432",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-28",
+    "level": "C2",
+    "word": {
+      "text": "periodización",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/peɾjoðiθaˈθjon/",
+      "meaning": "la división de la historia en períodos nombrados",
+      "meaning_fr": "périodisation",
+      "example": "La periodización marxista influyó en el plan de estudios.",
+      "anki_answer": "periodización",
+      "tags": [
+        "ciencia"
+      ],
+      "key": "90a3f95413f1208d2a0f98695749cfe871ea2726",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "diseccionar un argumento",
+      "level": "C2",
+      "type": "collocation",
+      "meaning": "analizar un argumento con detalle",
+      "meaning_fr": "disséquer un argument",
+      "example": "Diseccionaron el argumento del ensayo.",
+      "anki_answer": "diseccionar un argumento",
+      "tags": [
+        "análisis"
+      ],
+      "key": "d18b710b196d2e2928dced7c3bcdce242f55f3cf",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "legitimismo",
+      "aliases": [
+        "legitimismo"
+      ],
+      "level": "C2",
+      "meaning": "el apoyo al derecho tradicional de una dinastía a gobernar",
+      "meaning_fr": "légitimisme",
+      "period": "Siglo XIX",
+      "theme": "Política",
+      "example": "El legitimismo se opuso al cambio.",
+      "tags": [
+        "política"
+      ],
+      "key": "e1657e6105a45d78a533836e815e5bccdd813d30",
+      "kind": "history"
+    }
+  }
+}

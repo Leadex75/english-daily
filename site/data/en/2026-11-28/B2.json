@@ -1,0 +1,803 @@
+{
+  "date": "2026-11-28",
+  "lang": "en",
+  "level": "B2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 26,
+        "title": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-28T00:56:55",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 501,
+        "duration_sec": null,
+        "body_text": "The Canadian man who sold toxic chemicals through online suicide forums in 40 countries apologised in court to the families of the victims, saying he deeply regrets his actions and will never repeat them. Kenneth Law made the remarks on Friday during a sentencing hearing where prosecutors asked a judge to give him a 25-year prison term.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "208650de234835d2ef4393d08ebe8e1f3415ee1f",
+        "summary": "The Canadian man, who pleaded guilty to 14 counts of aiding and abetting suicide earlier this year, said he was remorseful for his actions.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "'Poison seller' Kenneth Law apologises in court to the families of his victims — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 3
+      },
+      "audio": {
+        "id": 6,
+        "title": "6am ET, November 28 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-28T11:09:53",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/4f31c308-a687-4067-a78a-d2177f2611c0/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_549ef50f70249d40e683a022405799bc_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=4f31c308-a687-4067-a78a-d2177f2611c0&feed=O9WlY7a5&t=podcast&e=nx-s1-20261128-0600-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_331__39e1fef99867beba8d8e5bead2c10af92d8eb7d9",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "3a696532c2c96fb174e4a20c2f9c6484559298fa",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "6am ET, November 28 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 56,
+        "title": "Three studies link glyphosate to cancer, contradicting claims of Trump EPA",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/us-news/2026/nov/27/glyphosate-cancer-studies-trump-epa",
+        "published_at": "2026-11-27T15:00:13",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "C1",
+        "word_count": 746,
+        "duration_sec": null,
+        "body_text": "The US government’s top medical research agency has released three new studies linking glyphosate, the world’s most widely used pesticide and an active ingredient in Roundup, to cancer.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "d23dabf1bc299ce45d313bfccb23aba5b23a0f78",
+        "summary": "Experts say NIH research raises concerns about chemical companies’ influence on US agency’s pesticide division The US government’s top medical research agency has released three new studies linking glyphosate, the world’s most widely used pesticide and an active ingredient in Roundup, to cancer . The National Institutes of Health (NIH) findings contradict a controversial recent Environmental Protection Agency (EPA) conclusion that the weedkiller is not a carcinogen, and deals a blow to the White House, which has been closely allied with Roundup’s producer, Bayer. The NIH’s three papers could have significant political and legal fallout. The EPA is in the process of a court-ordered re-evaluation of glyphosate’s cancer risks. The NIH findings generate new pressure for the EPA to find that the substance is linked to cancer, which would subject it to a modest increase in regulations.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Three studies link glyphosate to cancer, contradicting claims of Trump EPA — The Guardian - Science",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 1370166676,
+        "title": "Little Princess - Ermengarde",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/a-little-princess-by-frances-hodgson-burnett/",
+        "published_at": "2026-11-28T13:55:32",
+        "level": "B2",
+        "slot_level": "B2",
+        "source_level": "B2",
+        "word_count": 105,
+        "duration_sec": 1010,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/littleprincess_librivox/littleprincess_03_burnett_64kb.mp3",
+        "description": "Little Princess by . The novel tells of the troubles of a wealthy young girl, Sara Crewe, who is sent to an oppressive London boarding school during her father’s campaign in India. Thanks to Capt. Crewe’s money, Sara is treated as a little princess until, one day, word comes of her father’s tragic death. Miss Minchin, the school’s greedy headmistress, wastes no time in putting the now-penniless Sa",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "12fb41a84219f7875c38d0b9a9ef9985a71aaa6e",
+        "summary": "Little Princess by . The novel tells of the troubles of a wealthy young girl, Sara Crewe, who is sent to an oppressive London boarding school during her father’s campaign in India. Thanks to Capt. Crewe’s money, Sara is treated as a little princess until, one day, word comes of her father’s tragic death. Miss Minchin, the school’s greedy headmistress, wastes no time in putting the now-penniless Sa",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Little Princess - Ermengarde — LibriVox (culture)",
+        "duration_formatted": "16:50",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-28",
+    "level": "B2",
+    "word": {
+      "text": "suggest",
+      "level": "B2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/səˈdʒest/",
+      "meaning": "put forward an idea",
+      "meaning_fr": "suggérer",
+      "example": "I suggest we leave early.",
+      "anki_answer": "suggérer",
+      "tags": [
+        "ideas"
+      ],
+      "key": "3da74e842ad37afdf32b5892dc609275660f2be6",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/səˈdʒɛst/",
+        "definitions": [
+          "To imply but stop short of saying explicitly.",
+          "To make one suppose; cause one to suppose (something).",
+          "To mention something as an idea, typically in order to recommend it",
+          "To seduce; to prompt to evil; to tempt."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/suggest-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/imply\" title=\"imply\">imply</a> but stop short of <a rel=\"mw:WikiLink\" href=\"/wiki/explicitly\" title=\"explicitly\">explicitly</a> stating (something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> To cause one to <a rel=\"mw:WikiLink\" href=\"/wiki/suppose\" title=\"suppose\">suppose</a> (something); to bring to one's mind the idea (of something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To explicitly <a rel=\"mw:WikiLink\" href=\"/wiki/mention\" title=\"mention\">mention</a> (something) as a possibility for consideration, often to <a rel=\"mw:WikiLink\" href=\"/wiki/recommend\" title=\"recommend\">recommend</a> it.",
+          "<span class=\"usage-label-sense\" about=\"#mwt30\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/seduce\" title=\"seduce\">seduce</a>; to prompt to evil; to <a rel=\"mw:WikiLink\" href=\"/wiki/tempt\" title=\"tempt\">tempt</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be at a crossroads",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "face an important choice",
+      "meaning_fr": "être à un carrefour",
+      "example": "Her career is at a crossroads.",
+      "anki_answer": "carrefour choix",
+      "tags": [
+        "choices"
+      ],
+      "key": "6a71166afe29e1167de7364eef91c06aeeaf9217",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "reformation",
+      "aliases": [
+        "reformation"
+      ],
+      "level": "B2",
+      "meaning": "the sixteenth-century movement that changed the Christian church",
+      "meaning_fr": "réforme protestante",
+      "period": "Early modern",
+      "theme": "Religion",
+      "example": "The reformation divided Europe.",
+      "tags": [
+        "religion"
+      ],
+      "key": "8e6e5a07d14f8a42a36378c975054db913897538",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "8ca97866342471105eb7fc003334d1448eef7f21",
+      "kind": "word",
+      "level": "A1",
+      "text": "read",
+      "meaning": "look at words and understand them",
+      "meaning_fr": "lire",
+      "example": "They read the sign together.",
+      "phonetic": "/riːd/",
+      "anki_answer": "lire",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950",
+      "kind": "expression",
+      "level": "A1",
+      "text": "a bit of",
+      "meaning": "a small amount of",
+      "meaning_fr": "un peu de",
+      "example": "I would like a bit of sugar.",
+      "phonetic": "",
+      "anki_answer": "un peu",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1",
+      "kind": "history",
+      "level": "A1",
+      "text": "story",
+      "meaning": "an account of past events",
+      "meaning_fr": "histoire, récit",
+      "example": "She told us a story about the past.",
+      "phonetic": "",
+      "anki_answer": "histoire, récit",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "2a301402f83492b3c150185b2b7cb241dbb972c7",
+      "kind": "word",
+      "level": "A2",
+      "text": "answer",
+      "meaning": "a reply to a question",
+      "meaning_fr": "réponse",
+      "example": "I did not know the answer.",
+      "phonetic": "/ˈænsər/",
+      "anki_answer": "réponse",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "a843be910947c22523250db391925de290a2033f",
+      "kind": "expression",
+      "level": "A2",
+      "text": "on the left",
+      "meaning": "on the left side",
+      "meaning_fr": "à gauche",
+      "example": "The station is on the left.",
+      "phonetic": "",
+      "anki_answer": "à gauche",
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "key": "e6c60d6943c7346044bdd367c0431897bada9374",
+      "kind": "history",
+      "level": "A2",
+      "text": "monastery",
+      "meaning": "a place where monks live and work",
+      "meaning_fr": "monastère",
+      "example": "Monks copied books in the monastery.",
+      "phonetic": "",
+      "anki_answer": "monastère",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "8222a5fea834c37b7fd097058cb68ec961f6453f",
+      "kind": "word",
+      "level": "B1",
+      "text": "improve",
+      "meaning": "make something better",
+      "meaning_fr": "améliorer",
+      "example": "I want to improve my English.",
+      "phonetic": "/ɪmˈpruːv/",
+      "anki_answer": "améliorer",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "aa8d1fe8769083a101f6b8d59815f946fc78e931",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look up to",
+      "meaning": "admire and respect someone",
+      "meaning_fr": "admirer, respecter",
+      "example": "She looks up to her grandmother.",
+      "phonetic": "",
+      "anki_answer": "admirer",
+      "tags": [
+        "admiration"
+      ]
+    },
+    {
+      "key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db",
+      "kind": "history",
+      "level": "B1",
+      "text": "printer",
+      "meaning": "a person who prints books",
+      "meaning_fr": "imprimeur",
+      "example": "The printer produced a small booklet.",
+      "phonetic": "",
+      "anki_answer": "imprimeur",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "3da74e842ad37afdf32b5892dc609275660f2be6",
+      "kind": "word",
+      "level": "B2",
+      "text": "suggest",
+      "meaning": "put forward an idea",
+      "meaning_fr": "suggérer",
+      "example": "I suggest we leave early.",
+      "phonetic": "/səˈdʒest/",
+      "anki_answer": "suggérer",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "6a71166afe29e1167de7364eef91c06aeeaf9217",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be at a crossroads",
+      "meaning": "face an important choice",
+      "meaning_fr": "être à un carrefour",
+      "example": "Her career is at a crossroads.",
+      "phonetic": "",
+      "anki_answer": "carrefour choix",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "8e6e5a07d14f8a42a36378c975054db913897538",
+      "kind": "history",
+      "level": "B2",
+      "text": "reformation",
+      "meaning": "the sixteenth-century movement that changed the Christian church",
+      "meaning_fr": "réforme protestante",
+      "example": "The reformation divided Europe.",
+      "phonetic": "",
+      "anki_answer": "réforme protestante",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "c2393cffab3833829eab60e14e9be94bf94ad372",
+      "kind": "word",
+      "level": "C1",
+      "text": "allocate",
+      "meaning": "distribute resources for a purpose",
+      "meaning_fr": "allouer",
+      "example": "The council allocated funds to schools.",
+      "phonetic": "/ˈæləkeɪt/",
+      "anki_answer": "allouer",
+      "tags": [
+        "resources"
+      ]
+    },
+    {
+      "key": "6f54dd61843efe40b0ee4624e82dfd082793d586",
+      "kind": "expression",
+      "level": "C1",
+      "text": "carry the can",
+      "meaning": "take the blame for something",
+      "meaning_fr": "porter le chapeau",
+      "example": "I ended up carrying the can for the error.",
+      "phonetic": "",
+      "anki_answer": "porter chapeau",
+      "tags": [
+        "blame"
+      ]
+    },
+    {
+      "key": "59dea0b9cec51253808dfd85009ef48cacc7308a",
+      "kind": "history",
+      "level": "C1",
+      "text": "archaeology",
+      "meaning": "the study of past societies through material remains",
+      "meaning_fr": "archéologie",
+      "example": "Archaeology uncovered the ancient city.",
+      "phonetic": "",
+      "anki_answer": "archéologie",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "a3ac728495490695eb9ad582bbf17eba30df9396",
+      "kind": "word",
+      "level": "C2",
+      "text": "nuance",
+      "meaning": "a very small difference in meaning or feeling",
+      "meaning_fr": "nuance",
+      "example": "The translation misses the nuance.",
+      "phonetic": "/ˈnuːɑːns/",
+      "anki_answer": "nuance",
+      "tags": [
+        "language"
+      ]
+    },
+    {
+      "key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f",
+      "kind": "expression",
+      "level": "C2",
+      "text": "keep the wolf from the door",
+      "meaning": "earn just enough to avoid poverty",
+      "meaning_fr": "ne pas mourir de faim",
+      "example": "Casual work kept the wolf from the door.",
+      "phonetic": "",
+      "anki_answer": "éviter pauvreté",
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55",
+      "kind": "history",
+      "level": "C2",
+      "text": "palimpsest",
+      "meaning": "a manuscript whose writing has been scraped and reused",
+      "meaning_fr": "palimpseste",
+      "example": "The palimpsest held an older legal text.",
+      "phonetic": "",
+      "anki_answer": "palimpseste",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “read” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "lire",
+      "item_key": "8ca97866342471105eb7fc003334d1448eef7f21"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: a ____ of",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "bit",
+      "item_key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “story” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “answer” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "réponse",
+      "item_key": "2a301402f83492b3c150185b2b7cb241dbb972c7"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: on the ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "left",
+      "item_key": "a843be910947c22523250db391925de290a2033f"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “monastery” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e6c60d6943c7346044bdd367c0431897bada9374"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “improve” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "améliorer",
+      "item_key": "8222a5fea834c37b7fd097058cb68ec961f6453f"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ up to",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "look",
+      "item_key": "aa8d1fe8769083a101f6b8d59815f946fc78e931"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “printer” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “suggest” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "suggérer",
+      "item_key": "3da74e842ad37afdf32b5892dc609275660f2be6"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be at a ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "crossroads",
+      "item_key": "6a71166afe29e1167de7364eef91c06aeeaf9217"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “reformation” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "8e6e5a07d14f8a42a36378c975054db913897538"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “allocate” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "allouer",
+      "item_key": "c2393cffab3833829eab60e14e9be94bf94ad372"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ the can",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "carry",
+      "item_key": "6f54dd61843efe40b0ee4624e82dfd082793d586"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “archaeology” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Antiquity",
+      "item_key": "59dea0b9cec51253808dfd85009ef48cacc7308a"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “nuance” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "nuance",
+      "item_key": "a3ac728495490695eb9ad582bbf17eba30df9396"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: keep the ____ from the door",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "wolf",
+      "item_key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “palimpsest” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "adjacent": 1,
+      "fresh": 2
+    },
+    "source_count": 4,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-28.json"
+  }
+}

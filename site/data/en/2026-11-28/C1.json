@@ -1,0 +1,807 @@
+{
+  "date": "2026-11-28",
+  "lang": "en",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 27,
+        "title": "Turkish officials 'destroyed' pro-opposition TV channel, owner tells BBC",
+        "source": "BBC News - World",
+        "source_id": "bbc_news_world",
+        "category": "news",
+        "url": "https://www.bbc.co.uk/news/articles/cq36gk151xkdo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-28T04:13:45",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 346,
+        "duration_sec": null,
+        "body_text": "Turkish authorities have \"destroyed\" one of the country's most-watched news channels, its London-based owner has told the BBC. Speaking to the BBC's Newshour, Cafer Mahiroğlu said that nine people connected to Halk TV were arrested this week on charges including money laundering, bribery and spreading misleading information.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "8e4faa82fb0cc6b71629ca3bdf411d77bce74529",
+        "summary": "The headquarters of Halk TV were raided last month, the latest in a series of crackdowns on news sources deemed critical of the government.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Turkish officials 'destroyed' pro-opposition TV channel, owner tells BBC — BBC News - World",
+        "duration_formatted": "",
+        "source_url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+        "reading_time_min": 2
+      },
+      "audio": {
+        "id": 4,
+        "title": "8am ET, November 28 | The latest headlines from NPR",
+        "source": "NPR News Now",
+        "source_id": "npr_news_now",
+        "category": "news",
+        "url": "",
+        "published_at": "2026-11-28T13:09:33",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "B2",
+        "word_count": 23,
+        "duration_sec": 280,
+        "body_text": null,
+        "audio_url": "https://npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/c4e38c38-2db2-461d-ad17-9aa54a04d4ce/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_cF9mX3NraXA9aSAg_caa7d1a9c24c980aeb1a6483175bff4d_4587136.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=c4e38c38-2db2-461d-ad17-9aa54a04d4ce&feed=O9WlY7a5&t=podcast&e=nx-s1-20261128-0800-long&p=500005&d=280&size=4586729&hash_redirect=1&x-total-bytes=4587136&x-ais-classified=unclassified&x-access-range=0-1023&listeningSessionID=0CD_382_331__8af85b7e9c3a2ec472dde4c65f20ba09415f9d2b",
+        "description": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "77f8f034a3f183bce5f4c4d4c3a18e60eea825f9",
+        "summary": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists.",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "8am ET, November 28 | The latest headlines from NPR — NPR News Now",
+        "duration_formatted": "4:40",
+        "source_url": "https://feeds.npr.org/500005/podcast.xml",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": {
+        "id": 47,
+        "title": "The Fox review – talking animals are the least weird thing in this delightfully peculiar comedy",
+        "source": "The Guardian - Culture",
+        "source_id": "guardian_culture",
+        "category": "culture",
+        "url": "https://www.theguardian.com/film/2026/nov/26/the-fox-australian-movie-review-olivia-colman-sam-neill-dario-russo-emily-browning-jai-courtney",
+        "published_at": "2026-11-25T14:00:29",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 679,
+        "duration_sec": null,
+        "body_text": "The vibe of writer-director Dario Russo’s delightfully peculiar feature debut is “messed-up fairytale”, pitched somewhere between the Brothers Grimm and Yorgos Lanthimos, with a distinctly Australian je ne sais quoi.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "b989552f3f3593314f52fbdeffb04112fb656fce",
+        "summary": "Dario Russo’s debut feature is Brothers Grimm meets Yorgos Lanthimos, with a standout cast including Olivia Colman, Sam Neill and Emily Browning The vibe of writer-director Dario Russo’s delightfully peculiar feature debut is “messed-up fairytale”, pitched somewhere between the Brothers Grimm and Yorgos Lanthimos, with a distinctly Australian je ne sais quoi . Russo is perhaps best known for co-creating the spy comedy series Danger 5, which had an aesthetic inspired by 60s and 70s men’s magazines; The Fox has a similarly thick retro texture. I love how this film feels as though it was made in consultation with the animal world, taking place in a universe where animals can speak to humans – though that’s perhaps the least weird thing about it.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "The Fox review – talking animals are the least weird thing in this delightfully peculiar comedy — The Guardian - Culture",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/culture/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 1089756877,
+        "title": "War of the Worlds - The War of the Worlds - Book 1 - Chapter 02",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/the-war-of-the-worlds-by-h-g-wells-group/",
+        "published_at": "2026-11-22T14:50:05",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 262,
+        "duration_sec": 501,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_02_wells_64kb.mp3",
+        "description": "War of the Worlds by . H. G. Wells wrote The War of the Worlds in 1898, when there was much speculation about life on the planet Mars. The book is considered to be one of the first science fiction novels. In the story, an English gentleman narrates the events of a violent and fast paced Martian invasion. The frightening images of people fleeing from gigantic tripod machines and the prospect of lif",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "ac946177de4044d2d90749953b9aadb50ade9211",
+        "summary": "War of the Worlds by . H. G. Wells wrote The War of the Worlds in 1898, when there was much speculation about life on the planet Mars. The book is considered to be one of the first science fiction novels. In the story, an English gentleman narrates the events of a violent and fast paced Martian invasion. The frightening images of people fleeing from gigantic tripod machines and the prospect of lif",
+        "origin": "reserve",
+        "badges": [
+          "Reserve · LibriVox (culture)"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "War of the Worlds - The War of the Worlds - Book 1 - Chapter 02 — LibriVox (culture)",
+        "duration_formatted": "8:21",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-28",
+    "level": "C1",
+    "word": {
+      "text": "allocate",
+      "level": "C1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ˈæləkeɪt/",
+      "meaning": "distribute resources for a purpose",
+      "meaning_fr": "allouer",
+      "example": "The council allocated funds to schools.",
+      "anki_answer": "allouer",
+      "tags": [
+        "resources"
+      ],
+      "key": "c2393cffab3833829eab60e14e9be94bf94ad372",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈæl.ə.keɪt/",
+        "definitions": [
+          "To set aside for a purpose.",
+          "To distribute according to a plan, generally followed by the adposition to.",
+          "To reserve a portion of memory for use by a computer program."
+        ],
+        "audio_url": null
+      },
+      "wiktionary": {
+        "definitions": [
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/set_aside\" title=\"set aside\">set aside</a> for a <a rel=\"mw:WikiLink\" href=\"/wiki/purpose\" title=\"purpose\">purpose</a>.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/distribute\" title=\"distribute\">distribute</a> according to a <a rel=\"mw:WikiLink\" href=\"/wiki/plan\" title=\"plan\">plan</a>, generally followed by the <a rel=\"mw:WikiLink\" href=\"/wiki/adposition\" title=\"adposition\">adposition</a> <i class=\"Latn mention\" lang=\"en\" about=\"#mwt24\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/to#English\" title=\"to\">to</a></i>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt26\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/reserve\" title=\"reserve\">reserve</a> a portion of <a rel=\"mw:WikiLink\" href=\"/wiki/memory\" title=\"memory\">memory</a> for use by a computer program.",
+          "<span class=\"usage-label-sense\" about=\"#mwt137\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/allocated\" title=\"allocated\">allocated</a>"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "carry the can",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "take the blame for something",
+      "meaning_fr": "porter le chapeau",
+      "example": "I ended up carrying the can for the error.",
+      "anki_answer": "porter chapeau",
+      "tags": [
+        "blame"
+      ],
+      "key": "6f54dd61843efe40b0ee4624e82dfd082793d586",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/take_responsibility\" title=\"take responsibility\">take responsibility</a>, especially in a <a rel=\"mw:WikiLink\" href=\"/wiki/challenging\" title=\"challenging\">challenging</a> situation."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "archaeology",
+      "aliases": [
+        "archaeology",
+        "archeology"
+      ],
+      "level": "C1",
+      "meaning": "the study of past societies through material remains",
+      "meaning_fr": "archéologie",
+      "period": "Antiquity",
+      "theme": "Science",
+      "example": "Archaeology uncovered the ancient city.",
+      "tags": [
+        "science"
+      ],
+      "key": "59dea0b9cec51253808dfd85009ef48cacc7308a",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "8ca97866342471105eb7fc003334d1448eef7f21",
+      "kind": "word",
+      "level": "A1",
+      "text": "read",
+      "meaning": "look at words and understand them",
+      "meaning_fr": "lire",
+      "example": "They read the sign together.",
+      "phonetic": "/riːd/",
+      "anki_answer": "lire",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950",
+      "kind": "expression",
+      "level": "A1",
+      "text": "a bit of",
+      "meaning": "a small amount of",
+      "meaning_fr": "un peu de",
+      "example": "I would like a bit of sugar.",
+      "phonetic": "",
+      "anki_answer": "un peu",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1",
+      "kind": "history",
+      "level": "A1",
+      "text": "story",
+      "meaning": "an account of past events",
+      "meaning_fr": "histoire, récit",
+      "example": "She told us a story about the past.",
+      "phonetic": "",
+      "anki_answer": "histoire, récit",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "2a301402f83492b3c150185b2b7cb241dbb972c7",
+      "kind": "word",
+      "level": "A2",
+      "text": "answer",
+      "meaning": "a reply to a question",
+      "meaning_fr": "réponse",
+      "example": "I did not know the answer.",
+      "phonetic": "/ˈænsər/",
+      "anki_answer": "réponse",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "a843be910947c22523250db391925de290a2033f",
+      "kind": "expression",
+      "level": "A2",
+      "text": "on the left",
+      "meaning": "on the left side",
+      "meaning_fr": "à gauche",
+      "example": "The station is on the left.",
+      "phonetic": "",
+      "anki_answer": "à gauche",
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "key": "e6c60d6943c7346044bdd367c0431897bada9374",
+      "kind": "history",
+      "level": "A2",
+      "text": "monastery",
+      "meaning": "a place where monks live and work",
+      "meaning_fr": "monastère",
+      "example": "Monks copied books in the monastery.",
+      "phonetic": "",
+      "anki_answer": "monastère",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "8222a5fea834c37b7fd097058cb68ec961f6453f",
+      "kind": "word",
+      "level": "B1",
+      "text": "improve",
+      "meaning": "make something better",
+      "meaning_fr": "améliorer",
+      "example": "I want to improve my English.",
+      "phonetic": "/ɪmˈpruːv/",
+      "anki_answer": "améliorer",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "aa8d1fe8769083a101f6b8d59815f946fc78e931",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look up to",
+      "meaning": "admire and respect someone",
+      "meaning_fr": "admirer, respecter",
+      "example": "She looks up to her grandmother.",
+      "phonetic": "",
+      "anki_answer": "admirer",
+      "tags": [
+        "admiration"
+      ]
+    },
+    {
+      "key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db",
+      "kind": "history",
+      "level": "B1",
+      "text": "printer",
+      "meaning": "a person who prints books",
+      "meaning_fr": "imprimeur",
+      "example": "The printer produced a small booklet.",
+      "phonetic": "",
+      "anki_answer": "imprimeur",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "3da74e842ad37afdf32b5892dc609275660f2be6",
+      "kind": "word",
+      "level": "B2",
+      "text": "suggest",
+      "meaning": "put forward an idea",
+      "meaning_fr": "suggérer",
+      "example": "I suggest we leave early.",
+      "phonetic": "/səˈdʒest/",
+      "anki_answer": "suggérer",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "6a71166afe29e1167de7364eef91c06aeeaf9217",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be at a crossroads",
+      "meaning": "face an important choice",
+      "meaning_fr": "être à un carrefour",
+      "example": "Her career is at a crossroads.",
+      "phonetic": "",
+      "anki_answer": "carrefour choix",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "8e6e5a07d14f8a42a36378c975054db913897538",
+      "kind": "history",
+      "level": "B2",
+      "text": "reformation",
+      "meaning": "the sixteenth-century movement that changed the Christian church",
+      "meaning_fr": "réforme protestante",
+      "example": "The reformation divided Europe.",
+      "phonetic": "",
+      "anki_answer": "réforme protestante",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "c2393cffab3833829eab60e14e9be94bf94ad372",
+      "kind": "word",
+      "level": "C1",
+      "text": "allocate",
+      "meaning": "distribute resources for a purpose",
+      "meaning_fr": "allouer",
+      "example": "The council allocated funds to schools.",
+      "phonetic": "/ˈæləkeɪt/",
+      "anki_answer": "allouer",
+      "tags": [
+        "resources"
+      ]
+    },
+    {
+      "key": "6f54dd61843efe40b0ee4624e82dfd082793d586",
+      "kind": "expression",
+      "level": "C1",
+      "text": "carry the can",
+      "meaning": "take the blame for something",
+      "meaning_fr": "porter le chapeau",
+      "example": "I ended up carrying the can for the error.",
+      "phonetic": "",
+      "anki_answer": "porter chapeau",
+      "tags": [
+        "blame"
+      ]
+    },
+    {
+      "key": "59dea0b9cec51253808dfd85009ef48cacc7308a",
+      "kind": "history",
+      "level": "C1",
+      "text": "archaeology",
+      "meaning": "the study of past societies through material remains",
+      "meaning_fr": "archéologie",
+      "example": "Archaeology uncovered the ancient city.",
+      "phonetic": "",
+      "anki_answer": "archéologie",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "a3ac728495490695eb9ad582bbf17eba30df9396",
+      "kind": "word",
+      "level": "C2",
+      "text": "nuance",
+      "meaning": "a very small difference in meaning or feeling",
+      "meaning_fr": "nuance",
+      "example": "The translation misses the nuance.",
+      "phonetic": "/ˈnuːɑːns/",
+      "anki_answer": "nuance",
+      "tags": [
+        "language"
+      ]
+    },
+    {
+      "key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f",
+      "kind": "expression",
+      "level": "C2",
+      "text": "keep the wolf from the door",
+      "meaning": "earn just enough to avoid poverty",
+      "meaning_fr": "ne pas mourir de faim",
+      "example": "Casual work kept the wolf from the door.",
+      "phonetic": "",
+      "anki_answer": "éviter pauvreté",
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55",
+      "kind": "history",
+      "level": "C2",
+      "text": "palimpsest",
+      "meaning": "a manuscript whose writing has been scraped and reused",
+      "meaning_fr": "palimpseste",
+      "example": "The palimpsest held an older legal text.",
+      "phonetic": "",
+      "anki_answer": "palimpseste",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “read” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "lire",
+      "item_key": "8ca97866342471105eb7fc003334d1448eef7f21"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: a ____ of",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "bit",
+      "item_key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “story” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “answer” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "réponse",
+      "item_key": "2a301402f83492b3c150185b2b7cb241dbb972c7"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: on the ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "left",
+      "item_key": "a843be910947c22523250db391925de290a2033f"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “monastery” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e6c60d6943c7346044bdd367c0431897bada9374"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “improve” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "améliorer",
+      "item_key": "8222a5fea834c37b7fd097058cb68ec961f6453f"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ up to",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "look",
+      "item_key": "aa8d1fe8769083a101f6b8d59815f946fc78e931"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “printer” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “suggest” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "suggérer",
+      "item_key": "3da74e842ad37afdf32b5892dc609275660f2be6"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be at a ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "crossroads",
+      "item_key": "6a71166afe29e1167de7364eef91c06aeeaf9217"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “reformation” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "8e6e5a07d14f8a42a36378c975054db913897538"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “allocate” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "allouer",
+      "item_key": "c2393cffab3833829eab60e14e9be94bf94ad372"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ the can",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "carry",
+      "item_key": "6f54dd61843efe40b0ee4624e82dfd082793d586"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “archaeology” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Antiquity",
+      "item_key": "59dea0b9cec51253808dfd85009ef48cacc7308a"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “nuance” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "nuance",
+      "item_key": "a3ac728495490695eb9ad582bbf17eba30df9396"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: keep the ____ from the door",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "wolf",
+      "item_key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “palimpsest” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 4,
+    "total": 6,
+    "origins": {
+      "reserve": 1,
+      "fresh": 2,
+      "adjacent": 1
+    },
+    "source_count": 4,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-28.json"
+  }
+}

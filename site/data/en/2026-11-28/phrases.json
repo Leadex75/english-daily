@@ -1,0 +1,463 @@
+{
+  "A1": {
+    "date": "2026-11-28",
+    "level": "A1",
+    "word": {
+      "text": "read",
+      "level": "A1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/riːd/",
+      "meaning": "look at words and understand them",
+      "meaning_fr": "lire",
+      "example": "They read the sign together.",
+      "anki_answer": "lire",
+      "tags": [
+        "education"
+      ],
+      "key": "8ca97866342471105eb7fc003334d1448eef7f21",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɹiːd/",
+        "definitions": [
+          "A reading or an act of reading, especially an actor's part of a play.",
+          "(in combination) Something to be read; a written work.",
+          "A person's interpretation or impression of something.",
+          "An instance of reading."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/read-1-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt36\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/look_at\" title=\"look at\">look at</a> and <a rel=\"mw:WikiLink\" href=\"/wiki/interpret\" title=\"interpret\">interpret</a> letters or other information that is <a rel=\"mw:WikiLink\" href=\"/wiki/written\" title=\"written\">written</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt40\" typeof=\"mw:Transclusion\"></span> To be <a rel=\"mw:WikiLink\" href=\"/wiki/understood\" title=\"understood\">understood</a> or physically read in a specific way.",
+          "<span class=\"usage-label-sense\" about=\"#mwt44\" typeof=\"mw:Transclusion\"></span> To read a <a rel=\"mw:WikiLink\" href=\"/wiki/work\" title=\"work\">work</a> or works written by the named <a rel=\"mw:WikiLink\" href=\"/wiki/author\" title=\"author\">author</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt49\" typeof=\"mw:Transclusion\"></span> To speak <a rel=\"mw:WikiLink\" href=\"/wiki/aloud\" title=\"aloud\">aloud</a> words or other information that is written."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "a bit of",
+      "level": "A1",
+      "type": "collocation",
+      "meaning": "a small amount of",
+      "meaning_fr": "un peu de",
+      "example": "I would like a bit of sugar.",
+      "anki_answer": "un peu",
+      "tags": [
+        "quantity"
+      ],
+      "key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": {
+        "title": "The English We Speak: A bit of a stretch",
+        "url": "http://www.bbc.co.uk/programmes/p0n8fnx5",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n8flhs.mp3"
+      }
+    },
+    "history": {
+      "text": "story",
+      "aliases": [
+        "story",
+        "tales"
+      ],
+      "level": "A1",
+      "meaning": "an account of past events",
+      "meaning_fr": "histoire, récit",
+      "period": "General",
+      "theme": "Culture",
+      "example": "She told us a story about the past.",
+      "tags": [
+        "culture"
+      ],
+      "key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1",
+      "kind": "history"
+    }
+  },
+  "A2": {
+    "date": "2026-11-28",
+    "level": "A2",
+    "word": {
+      "text": "answer",
+      "level": "A2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈænsər/",
+      "meaning": "a reply to a question",
+      "meaning_fr": "réponse",
+      "example": "I did not know the answer.",
+      "anki_answer": "réponse",
+      "tags": [
+        "education"
+      ],
+      "key": "2a301402f83492b3c150185b2b7cb241dbb972c7",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈan.sə/",
+        "definitions": [
+          "A response or reply; something said or done in reaction to a statement or question.",
+          "A solution to a problem.",
+          "A document filed in response to a complaint, responding to each point raised in the complaint and raising counterpoints."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/answer-uk.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/response\" title=\"response\">response</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/reply\" title=\"reply\">reply</a>; something <a rel=\"mw:WikiLink\" href=\"/wiki/say\" title=\"say\">said</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/do\" title=\"do\">done</a> in <a rel=\"mw:WikiLink\" href=\"/wiki/reaction\" title=\"reaction\">reaction</a> to a <a rel=\"mw:WikiLink\" href=\"/wiki/statement\" title=\"statement\">statement</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/question\" title=\"question\">question</a>.",
+          "A <a rel=\"mw:WikiLink\" href=\"/wiki/solution\" title=\"solution\">solution</a> to a problem.",
+          "<span class=\"usage-label-sense\" about=\"#mwt52\" typeof=\"mw:Transclusion\"></span> Someone or something that fills a similar role or position.",
+          "<span class=\"usage-label-sense\" about=\"#mwt54\" typeof=\"mw:Transclusion\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/document\" title=\"document\">document</a> filed in response to a <a rel=\"mw:WikiLink\" href=\"/wiki/complaint\" title=\"complaint\">complaint</a>, responding to each point raised in the complaint and raising <a rel=\"mw:WikiLink\" href=\"/wiki/counterpoint\" title=\"counterpoint\">counterpoints</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "on the left",
+      "level": "A2",
+      "type": "collocation",
+      "meaning": "on the left side",
+      "meaning_fr": "à gauche",
+      "example": "The station is on the left.",
+      "anki_answer": "à gauche",
+      "tags": [
+        "place"
+      ],
+      "key": "a843be910947c22523250db391925de290a2033f",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "monastery",
+      "aliases": [
+        "monastery",
+        "monasteries"
+      ],
+      "level": "A2",
+      "meaning": "a place where monks live and work",
+      "meaning_fr": "monastère",
+      "period": "Middle Ages",
+      "theme": "Religion",
+      "example": "Monks copied books in the monastery.",
+      "tags": [
+        "religion"
+      ],
+      "key": "e6c60d6943c7346044bdd367c0431897bada9374",
+      "kind": "history"
+    }
+  },
+  "B1": {
+    "date": "2026-11-28",
+    "level": "B1",
+    "word": {
+      "text": "improve",
+      "level": "B1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ɪmˈpruːv/",
+      "meaning": "make something better",
+      "meaning_fr": "améliorer",
+      "example": "I want to improve my English.",
+      "anki_answer": "améliorer",
+      "tags": [
+        "change"
+      ],
+      "key": "8222a5fea834c37b7fd097058cb68ec961f6453f",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ɪmˈpɹuːv/",
+        "definitions": [
+          "To make (something) better; to increase the value or productivity (of something).",
+          "To become better.",
+          "To disprove or make void; to refute.",
+          "To disapprove of; to find fault with; to reprove; to censure."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/improve-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt13\" typeof=\"mw:Transclusion\"></span> To make (something) <a rel=\"mw:WikiLink\" href=\"/wiki/better\" title=\"better\">better</a>; to <a rel=\"mw:WikiLink\" href=\"/wiki/increase\" title=\"increase\">increase</a> the <a rel=\"mw:WikiLink\" href=\"/wiki/value\" title=\"value\">value</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/productivity\" title=\"productivity\">productivity</a> (of something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> To become better.",
+          "<span class=\"usage-label-sense\" about=\"#mwt21\" typeof=\"mw:Transclusion\"></span> To use or employ to good purpose; to turn to profitable account.",
+          "<span class=\"usage-label-sense\" about=\"#mwt280\" typeof=\"mw:Transclusion\"></span> To disprove or make void; to refute."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "look up to",
+      "level": "B1",
+      "type": "phrasal verb",
+      "meaning": "admire and respect someone",
+      "meaning_fr": "admirer, respecter",
+      "example": "She looks up to her grandmother.",
+      "anki_answer": "admirer",
+      "tags": [
+        "admiration"
+      ],
+      "key": "aa8d1fe8769083a101f6b8d59815f946fc78e931",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt2\" typeof=\"mw:Transclusion\"></span> To show <a rel=\"mw:WikiLink\" href=\"/wiki/respect\" title=\"respect\">respect</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/admiration\" title=\"admiration\">admiration</a> for (someone); to see (someone) as a <a rel=\"mw:WikiLink\" href=\"/wiki/role_model\" title=\"role model\">role model</a>."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "printer",
+      "aliases": [
+        "printer",
+        "printers"
+      ],
+      "level": "B1",
+      "meaning": "a person who prints books",
+      "meaning_fr": "imprimeur",
+      "period": "Early modern",
+      "theme": "Culture",
+      "example": "The printer produced a small booklet.",
+      "tags": [
+        "culture"
+      ],
+      "key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db",
+      "kind": "history"
+    }
+  },
+  "B2": {
+    "date": "2026-11-28",
+    "level": "B2",
+    "word": {
+      "text": "suggest",
+      "level": "B2",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/səˈdʒest/",
+      "meaning": "put forward an idea",
+      "meaning_fr": "suggérer",
+      "example": "I suggest we leave early.",
+      "anki_answer": "suggérer",
+      "tags": [
+        "ideas"
+      ],
+      "key": "3da74e842ad37afdf32b5892dc609275660f2be6",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/səˈdʒɛst/",
+        "definitions": [
+          "To imply but stop short of saying explicitly.",
+          "To make one suppose; cause one to suppose (something).",
+          "To mention something as an idea, typically in order to recommend it",
+          "To seduce; to prompt to evil; to tempt."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/suggest-us.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt14\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/imply\" title=\"imply\">imply</a> but stop short of <a rel=\"mw:WikiLink\" href=\"/wiki/explicitly\" title=\"explicitly\">explicitly</a> stating (something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt17\" typeof=\"mw:Transclusion\"></span> To cause one to <a rel=\"mw:WikiLink\" href=\"/wiki/suppose\" title=\"suppose\">suppose</a> (something); to bring to one's mind the idea (of something).",
+          "<span class=\"usage-label-sense\" about=\"#mwt23\" typeof=\"mw:Transclusion\"></span> To explicitly <a rel=\"mw:WikiLink\" href=\"/wiki/mention\" title=\"mention\">mention</a> (something) as a possibility for consideration, often to <a rel=\"mw:WikiLink\" href=\"/wiki/recommend\" title=\"recommend\">recommend</a> it.",
+          "<span class=\"usage-label-sense\" about=\"#mwt30\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/seduce\" title=\"seduce\">seduce</a>; to prompt to evil; to <a rel=\"mw:WikiLink\" href=\"/wiki/tempt\" title=\"tempt\">tempt</a>."
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "be at a crossroads",
+      "level": "B2",
+      "type": "idiom",
+      "meaning": "face an important choice",
+      "meaning_fr": "être à un carrefour",
+      "example": "Her career is at a crossroads.",
+      "anki_answer": "carrefour choix",
+      "tags": [
+        "choices"
+      ],
+      "key": "6a71166afe29e1167de7364eef91c06aeeaf9217",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "reformation",
+      "aliases": [
+        "reformation"
+      ],
+      "level": "B2",
+      "meaning": "the sixteenth-century movement that changed the Christian church",
+      "meaning_fr": "réforme protestante",
+      "period": "Early modern",
+      "theme": "Religion",
+      "example": "The reformation divided Europe.",
+      "tags": [
+        "religion"
+      ],
+      "key": "8e6e5a07d14f8a42a36378c975054db913897538",
+      "kind": "history"
+    }
+  },
+  "C1": {
+    "date": "2026-11-28",
+    "level": "C1",
+    "word": {
+      "text": "allocate",
+      "level": "C1",
+      "type": "word",
+      "pos": "verb",
+      "phonetic": "/ˈæləkeɪt/",
+      "meaning": "distribute resources for a purpose",
+      "meaning_fr": "allouer",
+      "example": "The council allocated funds to schools.",
+      "anki_answer": "allouer",
+      "tags": [
+        "resources"
+      ],
+      "key": "c2393cffab3833829eab60e14e9be94bf94ad372",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈæl.ə.keɪt/",
+        "definitions": [
+          "To set aside for a purpose.",
+          "To distribute according to a plan, generally followed by the adposition to.",
+          "To reserve a portion of memory for use by a computer program."
+        ],
+        "audio_url": null
+      },
+      "wiktionary": {
+        "definitions": [
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/set_aside\" title=\"set aside\">set aside</a> for a <a rel=\"mw:WikiLink\" href=\"/wiki/purpose\" title=\"purpose\">purpose</a>.",
+          "To <a rel=\"mw:WikiLink\" href=\"/wiki/distribute\" title=\"distribute\">distribute</a> according to a <a rel=\"mw:WikiLink\" href=\"/wiki/plan\" title=\"plan\">plan</a>, generally followed by the <a rel=\"mw:WikiLink\" href=\"/wiki/adposition\" title=\"adposition\">adposition</a> <i class=\"Latn mention\" lang=\"en\" about=\"#mwt24\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/to#English\" title=\"to\">to</a></i>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt26\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/reserve\" title=\"reserve\">reserve</a> a portion of <a rel=\"mw:WikiLink\" href=\"/wiki/memory\" title=\"memory\">memory</a> for use by a computer program.",
+          "<span class=\"usage-label-sense\" about=\"#mwt137\" typeof=\"mw:Transclusion\"></span> <a rel=\"mw:WikiLink\" href=\"/wiki/allocated\" title=\"allocated\">allocated</a>"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "carry the can",
+      "level": "C1",
+      "type": "idiom",
+      "meaning": "take the blame for something",
+      "meaning_fr": "porter le chapeau",
+      "example": "I ended up carrying the can for the error.",
+      "anki_answer": "porter chapeau",
+      "tags": [
+        "blame"
+      ],
+      "key": "6f54dd61843efe40b0ee4624e82dfd082793d586",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt6\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/take_responsibility\" title=\"take responsibility\">take responsibility</a>, especially in a <a rel=\"mw:WikiLink\" href=\"/wiki/challenging\" title=\"challenging\">challenging</a> situation."
+        ]
+      },
+      "audio": null
+    },
+    "history": {
+      "text": "archaeology",
+      "aliases": [
+        "archaeology",
+        "archeology"
+      ],
+      "level": "C1",
+      "meaning": "the study of past societies through material remains",
+      "meaning_fr": "archéologie",
+      "period": "Antiquity",
+      "theme": "Science",
+      "example": "Archaeology uncovered the ancient city.",
+      "tags": [
+        "science"
+      ],
+      "key": "59dea0b9cec51253808dfd85009ef48cacc7308a",
+      "kind": "history"
+    }
+  },
+  "C2": {
+    "date": "2026-11-28",
+    "level": "C2",
+    "word": {
+      "text": "nuance",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈnuːɑːns/",
+      "meaning": "a very small difference in meaning or feeling",
+      "meaning_fr": "nuance",
+      "example": "The translation misses the nuance.",
+      "anki_answer": "nuance",
+      "tags": [
+        "language"
+      ],
+      "key": "a3ac728495490695eb9ad582bbf17eba30df9396",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈnjuː.ɑːns/",
+        "definitions": [
+          "A minor distinction.",
+          "Subtlety or fine detail.",
+          "To apply a nuance to; to change or redefine in a subtle way."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/nuance-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/minor\" title=\"minor\">minor</a> <a rel=\"mw:WikiLink\" href=\"/wiki/distinction\" title=\"distinction\">distinction</a>.",
+          "<span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/subtlety#English\" title=\"subtlety\">Subtlety</a></span> or fine <a rel=\"mw:WikiLink\" href=\"/wiki/detail\" title=\"detail\">detail</a>.",
+          "<span class=\"usage-label-sense\"></span> To apply a nuance to; to <a rel=\"mw:WikiLink\" href=\"/wiki/change\" title=\"change\">change</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/redefine\" title=\"redefine\">redefine</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/subtle\" title=\"subtle\">subtle</a> way.",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt162\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/nuance#English\" class=\"mw-selflink-fragment\">nuance</a></span> <span class=\"mention-gloss-paren\" about=\"#mwt163\" typeof=\"mw:Transclusion\">(</span><span class=\"mention-gloss\" about=\"#mwt163\">minor distinction</span><span class=\"mention-gloss-paren\" about=\"#mwt163\">)</span>"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "keep the wolf from the door",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "earn just enough to avoid poverty",
+      "meaning_fr": "ne pas mourir de faim",
+      "example": "Casual work kept the wolf from the door.",
+      "anki_answer": "éviter pauvreté",
+      "tags": [
+        "money"
+      ],
+      "key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/ward_off\" title=\"ward off\">ward off</a> <a rel=\"mw:WikiLink\" href=\"/wiki/poverty\" title=\"poverty\">poverty</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/hunger\" title=\"hunger\">hunger</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt20\" typeof=\"mw:Transclusion\"></span> To delay <a rel=\"mw:WikiLink\" href=\"/wiki/sexual\" title=\"sexual\">sexual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ejaculation\" title=\"ejaculation\">ejaculation</a>."
+        ]
+      },
+      "audio": {
+        "title": "To keep the wolf from the door",
+        "url": "http://www.bbc.co.uk/programmes/p02zb8nq",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02zb8ny.mp3"
+      }
+    },
+    "history": {
+      "text": "palimpsest",
+      "aliases": [
+        "palimpsest",
+        "palimpsests"
+      ],
+      "level": "C2",
+      "meaning": "a manuscript whose writing has been scraped and reused",
+      "meaning_fr": "palimpseste",
+      "period": "General",
+      "theme": "Culture",
+      "example": "The palimpsest held an older legal text.",
+      "tags": [
+        "culture"
+      ],
+      "key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55",
+      "kind": "history"
+    }
+  }
+}

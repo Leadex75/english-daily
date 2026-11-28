@@ -1,0 +1,780 @@
+{
+  "date": "2026-11-28",
+  "lang": "en",
+  "level": "C2",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 34,
+        "title": "Argentina fails to block oil drilling off Falkland Islands",
+        "source": "The Guardian - World news",
+        "source_id": "guardian_world",
+        "category": "news",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/28/argentina-oil-drilling-falkland-islands-international-tribunal",
+        "published_at": "2026-11-28T13:22:10",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C2",
+        "word_count": 825,
+        "duration_sec": null,
+        "body_text": "The UK has called on Argentina to stop its economic warfare on the Falkland islands after Buenos Aires failed in a legal attempt to terminate an offshore oil project vital to the future of the British overseas territory.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "2cfa646dabafcc9fb8f494d5ad8b7214541f575c",
+        "summary": "UK government calls on Buenos Aires to end ‘economic pressure’ on islands after international tribunal’s ruling The UK has called on Argentina to stop its economic warfare on the Falkland islands after Buenos Aires failed in a legal attempt to terminate an offshore oil project vital to the future of the British overseas territory. An application by the South American country for suspension of the Sea Lion project was rejected on Saturday by the international tribunal for the law of the seas (Itlos) on the grounds that the issue lay outside its jurisdiction.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Argentina fails to block oil drilling off Falkland Islands — The Guardian - World news",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/world/rss",
+        "reading_time_min": 5
+      },
+      "audio": null
+    },
+    "culture": {
+      "text": {
+        "id": 49,
+        "title": "Astronomers ‘disheartened’ by decision allowing SpaceX to deploy satellites for space datacenters",
+        "source": "The Guardian - Science",
+        "source_id": "guardian_science",
+        "category": "culture",
+        "url": "https://www.theguardian.com/science/2026/nov/27/astronomer-decision-spacex-datacenters",
+        "published_at": "2026-11-27T17:43:40",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C2",
+        "word_count": 666,
+        "duration_sec": null,
+        "body_text": "Astronomers are pushing back against Elon Musk’s Starmind program to place a huge number of AI computers in space, which was given the green light to proceed by federal communications regulators earlier this week.",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "084dffdd1ed71c4cf42624b10ad9bb014df5921b",
+        "summary": "American Astronomical Society warned that satellites could disrupt research, while others raised concerns about orbital debris and environmental risks Astronomers are pushing back against Elon Musk’s Starmind program to place a huge number of AI computers in space, which was given the green light to proceed by federal communications regulators earlier this week. The American Astronomical Society said it was “disheartened and dismayed” by the decision by the Federal Communications Commission (FCC) decision to grant SpaceX a license to deploy as many as 1m satellites in low Earth orbit as a way of moving datacenters into space.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Astronomers ‘disheartened’ by decision allowing SpaceX to deploy satellites for space datacenters — The Guardian - Science",
+        "duration_formatted": "",
+        "source_url": "https://www.theguardian.com/science/rss",
+        "reading_time_min": 4
+      },
+      "audio": {
+        "id": 1523278574,
+        "title": "Waste Land - Part 2",
+        "source": "LibriVox (culture)",
+        "source_id": "librivox_culture",
+        "category": "culture",
+        "url": "https://librivox.org/the-waste-land-by-t-s-eliot/",
+        "published_at": "2026-11-22T14:50:06",
+        "level": "C2",
+        "slot_level": "C2",
+        "source_level": "C1",
+        "word_count": 139,
+        "duration_sec": 310,
+        "body_text": null,
+        "audio_url": "https://www.archive.org/download/waste_land_librivox/thewasteland_02_64kb.mp3",
+        "description": "Waste Land by . The Waste Land is a highly influential 433-line modernist poem by T. S. Eliot. It is perhaps the most famous and most written-about long poem of the 20th century, dealing with the decline of civilization and the impossibility of recovering meaning in life. Despite the alleged obscurity of the poem—its shifts between satire and prophecy, its abrupt and unannounced changes of speaker",
+        "license": "public_domain",
+        "attribution": "LibriVox (public domain recording)",
+        "truncated": false,
+        "guid_hash": "9df4eba2635cfa59b52ab1b2a454837e9fbc8201",
+        "summary": "Waste Land by . The Waste Land is a highly influential 433-line modernist poem by T. S. Eliot. It is perhaps the most famous and most written-about long poem of the 20th century, dealing with the decline of civilization and the impossibility of recovering meaning in life. Despite the alleged obscurity of the poem—its shifts between satire and prophecy, its abrupt and unannounced changes of speaker",
+        "origin": "adjacent",
+        "badges": [
+          "Reserve · LibriVox (culture)",
+          "Closest level: C1"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "Waste Land - Part 2 — LibriVox (culture)",
+        "duration_formatted": "5:10",
+        "source_url": "https://librivox.org/api/feed/audiobooks/",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-28",
+    "level": "C2",
+    "word": {
+      "text": "nuance",
+      "level": "C2",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/ˈnuːɑːns/",
+      "meaning": "a very small difference in meaning or feeling",
+      "meaning_fr": "nuance",
+      "example": "The translation misses the nuance.",
+      "anki_answer": "nuance",
+      "tags": [
+        "language"
+      ],
+      "key": "a3ac728495490695eb9ad582bbf17eba30df9396",
+      "kind": "word",
+      "dictionary": {
+        "phonetic": "/ˈnjuː.ɑːns/",
+        "definitions": [
+          "A minor distinction.",
+          "Subtlety or fine detail.",
+          "To apply a nuance to; to change or redefine in a subtle way."
+        ],
+        "audio_url": "https://api.dictionaryapi.dev/media/pronunciations/en/nuance-au.mp3"
+      },
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\"></span> A <a rel=\"mw:WikiLink\" href=\"/wiki/minor\" title=\"minor\">minor</a> <a rel=\"mw:WikiLink\" href=\"/wiki/distinction\" title=\"distinction\">distinction</a>.",
+          "<span class=\"Latn\" lang=\"en\"><a rel=\"mw:WikiLink\" href=\"/wiki/subtlety#English\" title=\"subtlety\">Subtlety</a></span> or fine <a rel=\"mw:WikiLink\" href=\"/wiki/detail\" title=\"detail\">detail</a>.",
+          "<span class=\"usage-label-sense\"></span> To apply a nuance to; to <a rel=\"mw:WikiLink\" href=\"/wiki/change\" title=\"change\">change</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/redefine\" title=\"redefine\">redefine</a> in a <a rel=\"mw:WikiLink\" href=\"/wiki/subtle\" title=\"subtle\">subtle</a> way.",
+          "<span class=\"Latn\" lang=\"en\" about=\"#mwt162\" typeof=\"mw:Transclusion\"><a rel=\"mw:WikiLink\" href=\"/wiki/nuance#English\" class=\"mw-selflink-fragment\">nuance</a></span> <span class=\"mention-gloss-paren\" about=\"#mwt163\" typeof=\"mw:Transclusion\">(</span><span class=\"mention-gloss\" about=\"#mwt163\">minor distinction</span><span class=\"mention-gloss-paren\" about=\"#mwt163\">)</span>"
+        ]
+      },
+      "audio": null
+    },
+    "expression": {
+      "expression": "keep the wolf from the door",
+      "level": "C2",
+      "type": "idiom",
+      "meaning": "earn just enough to avoid poverty",
+      "meaning_fr": "ne pas mourir de faim",
+      "example": "Casual work kept the wolf from the door.",
+      "anki_answer": "éviter pauvreté",
+      "tags": [
+        "money"
+      ],
+      "key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {
+        "definitions": [
+          "<span class=\"usage-label-sense\" about=\"#mwt12\" typeof=\"mw:Transclusion\"></span> To <a rel=\"mw:WikiLink\" href=\"/wiki/ward_off\" title=\"ward off\">ward off</a> <a rel=\"mw:WikiLink\" href=\"/wiki/poverty\" title=\"poverty\">poverty</a> or <a rel=\"mw:WikiLink\" href=\"/wiki/hunger\" title=\"hunger\">hunger</a>.",
+          "<span class=\"usage-label-sense\" about=\"#mwt20\" typeof=\"mw:Transclusion\"></span> To delay <a rel=\"mw:WikiLink\" href=\"/wiki/sexual\" title=\"sexual\">sexual</a> <a rel=\"mw:WikiLink\" href=\"/wiki/ejaculation\" title=\"ejaculation\">ejaculation</a>."
+        ]
+      },
+      "audio": {
+        "title": "To keep the wolf from the door",
+        "url": "http://www.bbc.co.uk/programmes/p02zb8nq",
+        "audio_url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p02zb8ny.mp3"
+      }
+    },
+    "history": {
+      "text": "palimpsest",
+      "aliases": [
+        "palimpsest",
+        "palimpsests"
+      ],
+      "level": "C2",
+      "meaning": "a manuscript whose writing has been scraped and reused",
+      "meaning_fr": "palimpseste",
+      "period": "General",
+      "theme": "Culture",
+      "example": "The palimpsest held an older legal text.",
+      "tags": [
+        "culture"
+      ],
+      "key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "8ca97866342471105eb7fc003334d1448eef7f21",
+      "kind": "word",
+      "level": "A1",
+      "text": "read",
+      "meaning": "look at words and understand them",
+      "meaning_fr": "lire",
+      "example": "They read the sign together.",
+      "phonetic": "/riːd/",
+      "anki_answer": "lire",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950",
+      "kind": "expression",
+      "level": "A1",
+      "text": "a bit of",
+      "meaning": "a small amount of",
+      "meaning_fr": "un peu de",
+      "example": "I would like a bit of sugar.",
+      "phonetic": "",
+      "anki_answer": "un peu",
+      "tags": [
+        "quantity"
+      ]
+    },
+    {
+      "key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1",
+      "kind": "history",
+      "level": "A1",
+      "text": "story",
+      "meaning": "an account of past events",
+      "meaning_fr": "histoire, récit",
+      "example": "She told us a story about the past.",
+      "phonetic": "",
+      "anki_answer": "histoire, récit",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "2a301402f83492b3c150185b2b7cb241dbb972c7",
+      "kind": "word",
+      "level": "A2",
+      "text": "answer",
+      "meaning": "a reply to a question",
+      "meaning_fr": "réponse",
+      "example": "I did not know the answer.",
+      "phonetic": "/ˈænsər/",
+      "anki_answer": "réponse",
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "key": "a843be910947c22523250db391925de290a2033f",
+      "kind": "expression",
+      "level": "A2",
+      "text": "on the left",
+      "meaning": "on the left side",
+      "meaning_fr": "à gauche",
+      "example": "The station is on the left.",
+      "phonetic": "",
+      "anki_answer": "à gauche",
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "key": "e6c60d6943c7346044bdd367c0431897bada9374",
+      "kind": "history",
+      "level": "A2",
+      "text": "monastery",
+      "meaning": "a place where monks live and work",
+      "meaning_fr": "monastère",
+      "example": "Monks copied books in the monastery.",
+      "phonetic": "",
+      "anki_answer": "monastère",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "8222a5fea834c37b7fd097058cb68ec961f6453f",
+      "kind": "word",
+      "level": "B1",
+      "text": "improve",
+      "meaning": "make something better",
+      "meaning_fr": "améliorer",
+      "example": "I want to improve my English.",
+      "phonetic": "/ɪmˈpruːv/",
+      "anki_answer": "améliorer",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "key": "aa8d1fe8769083a101f6b8d59815f946fc78e931",
+      "kind": "expression",
+      "level": "B1",
+      "text": "look up to",
+      "meaning": "admire and respect someone",
+      "meaning_fr": "admirer, respecter",
+      "example": "She looks up to her grandmother.",
+      "phonetic": "",
+      "anki_answer": "admirer",
+      "tags": [
+        "admiration"
+      ]
+    },
+    {
+      "key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db",
+      "kind": "history",
+      "level": "B1",
+      "text": "printer",
+      "meaning": "a person who prints books",
+      "meaning_fr": "imprimeur",
+      "example": "The printer produced a small booklet.",
+      "phonetic": "",
+      "anki_answer": "imprimeur",
+      "tags": [
+        "culture"
+      ]
+    },
+    {
+      "key": "3da74e842ad37afdf32b5892dc609275660f2be6",
+      "kind": "word",
+      "level": "B2",
+      "text": "suggest",
+      "meaning": "put forward an idea",
+      "meaning_fr": "suggérer",
+      "example": "I suggest we leave early.",
+      "phonetic": "/səˈdʒest/",
+      "anki_answer": "suggérer",
+      "tags": [
+        "ideas"
+      ]
+    },
+    {
+      "key": "6a71166afe29e1167de7364eef91c06aeeaf9217",
+      "kind": "expression",
+      "level": "B2",
+      "text": "be at a crossroads",
+      "meaning": "face an important choice",
+      "meaning_fr": "être à un carrefour",
+      "example": "Her career is at a crossroads.",
+      "phonetic": "",
+      "anki_answer": "carrefour choix",
+      "tags": [
+        "choices"
+      ]
+    },
+    {
+      "key": "8e6e5a07d14f8a42a36378c975054db913897538",
+      "kind": "history",
+      "level": "B2",
+      "text": "reformation",
+      "meaning": "the sixteenth-century movement that changed the Christian church",
+      "meaning_fr": "réforme protestante",
+      "example": "The reformation divided Europe.",
+      "phonetic": "",
+      "anki_answer": "réforme protestante",
+      "tags": [
+        "religion"
+      ]
+    },
+    {
+      "key": "c2393cffab3833829eab60e14e9be94bf94ad372",
+      "kind": "word",
+      "level": "C1",
+      "text": "allocate",
+      "meaning": "distribute resources for a purpose",
+      "meaning_fr": "allouer",
+      "example": "The council allocated funds to schools.",
+      "phonetic": "/ˈæləkeɪt/",
+      "anki_answer": "allouer",
+      "tags": [
+        "resources"
+      ]
+    },
+    {
+      "key": "6f54dd61843efe40b0ee4624e82dfd082793d586",
+      "kind": "expression",
+      "level": "C1",
+      "text": "carry the can",
+      "meaning": "take the blame for something",
+      "meaning_fr": "porter le chapeau",
+      "example": "I ended up carrying the can for the error.",
+      "phonetic": "",
+      "anki_answer": "porter chapeau",
+      "tags": [
+        "blame"
+      ]
+    },
+    {
+      "key": "59dea0b9cec51253808dfd85009ef48cacc7308a",
+      "kind": "history",
+      "level": "C1",
+      "text": "archaeology",
+      "meaning": "the study of past societies through material remains",
+      "meaning_fr": "archéologie",
+      "example": "Archaeology uncovered the ancient city.",
+      "phonetic": "",
+      "anki_answer": "archéologie",
+      "tags": [
+        "science"
+      ]
+    },
+    {
+      "key": "a3ac728495490695eb9ad582bbf17eba30df9396",
+      "kind": "word",
+      "level": "C2",
+      "text": "nuance",
+      "meaning": "a very small difference in meaning or feeling",
+      "meaning_fr": "nuance",
+      "example": "The translation misses the nuance.",
+      "phonetic": "/ˈnuːɑːns/",
+      "anki_answer": "nuance",
+      "tags": [
+        "language"
+      ]
+    },
+    {
+      "key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f",
+      "kind": "expression",
+      "level": "C2",
+      "text": "keep the wolf from the door",
+      "meaning": "earn just enough to avoid poverty",
+      "meaning_fr": "ne pas mourir de faim",
+      "example": "Casual work kept the wolf from the door.",
+      "phonetic": "",
+      "anki_answer": "éviter pauvreté",
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55",
+      "kind": "history",
+      "level": "C2",
+      "text": "palimpsest",
+      "meaning": "a manuscript whose writing has been scraped and reused",
+      "meaning_fr": "palimpseste",
+      "example": "The palimpsest held an older legal text.",
+      "phonetic": "",
+      "anki_answer": "palimpseste",
+      "tags": [
+        "culture"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "What does “read” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "lire",
+      "item_key": "8ca97866342471105eb7fc003334d1448eef7f21"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Complete the expression: a ____ of",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "bit",
+      "item_key": "d0f3bf1f679bacaf3e23e2143ac6e6b36626f950"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "Which period does “story” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "0d972cc4d81fea341ea058b4590a76ea36dd15b1"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "What does “answer” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "réponse",
+      "item_key": "2a301402f83492b3c150185b2b7cb241dbb972c7"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Complete the expression: on the ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "left",
+      "item_key": "a843be910947c22523250db391925de290a2033f"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "Which period does “monastery” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Middle Ages",
+      "item_key": "e6c60d6943c7346044bdd367c0431897bada9374"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "What does “improve” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "améliorer",
+      "item_key": "8222a5fea834c37b7fd097058cb68ec961f6453f"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Complete the expression: ____ up to",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "look",
+      "item_key": "aa8d1fe8769083a101f6b8d59815f946fc78e931"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "Which period does “printer” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "0454a18f1b0bcb8e55304a24c3e706236c02b4db"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "What does “suggest” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "suggérer",
+      "item_key": "3da74e842ad37afdf32b5892dc609275660f2be6"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Complete the expression: be at a ____",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "crossroads",
+      "item_key": "6a71166afe29e1167de7364eef91c06aeeaf9217"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "Which period does “reformation” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Early modern",
+      "item_key": "8e6e5a07d14f8a42a36378c975054db913897538"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "What does “allocate” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "allouer",
+      "item_key": "c2393cffab3833829eab60e14e9be94bf94ad372"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Complete the expression: ____ the can",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "carry",
+      "item_key": "6f54dd61843efe40b0ee4624e82dfd082793d586"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "Which period does “archaeology” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "Antiquity",
+      "item_key": "59dea0b9cec51253808dfd85009ef48cacc7308a"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "What does “nuance” mean?",
+      "options": [
+        "allouer",
+        "améliorer",
+        "lire",
+        "nuance"
+      ],
+      "answer": "nuance",
+      "item_key": "a3ac728495490695eb9ad582bbf17eba30df9396"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Complete the expression: keep the ____ from the door",
+      "options": [
+        "bit",
+        "can",
+        "carry",
+        "crossroads"
+      ],
+      "answer": "wolf",
+      "item_key": "bd72e501b0617c4701446206aa8ff9fd6f42d77f"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "Which period does “palimpsest” belong to?",
+      "options": [
+        "Antiquity",
+        "Early modern",
+        "General",
+        "Middle Ages"
+      ],
+      "answer": "General",
+      "item_key": "521d1080b85bf61ccb2c694aa6a05a7fe2385c55"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Start at home",
+      "body": "Today is your home base: choose a level, read, listen and practise.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Choose your level",
+      "body": "Start with a CEFR level, then switch any time.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Browse the day",
+      "body": "Read news, culture and history in both text and audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Learn the phrase",
+      "body": "Each level has one word, expression and history term.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practise actively",
+      "body": "Answer three short exercises to review what you learned.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Export learned items",
+      "body": "Save a phrase, then open the Anki page to send notes or download a tab-separated deck.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Build your glossary",
+      "body": "Star items, export them to Anki, and keep your progress.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 3,
+    "total": 6,
+    "origins": {
+      "adjacent": 1,
+      "fresh": 2
+    },
+    "source_count": 3,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/en/search/2026-11-28.json"
+  }
+}

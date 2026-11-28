@@ -1890,5 +1890,38 @@
     "url_rss": "https://librivox.org/rss/426",
     "fetched_at": "2026-11-27T14:44:40",
     "level_method": "source"
+  },
+  "174": {
+    "title": "Journey to the Interior of the Earth",
+    "author": "",
+    "gutenberg_id": "3748",
+    "genre": "Action & Adventure Fiction, Fantastic Fiction",
+    "level": "B2",
+    "score": 0.444,
+    "url_rss": "https://librivox.org/rss/174",
+    "fetched_at": "2026-11-28T13:55:31",
+    "level_method": "source"
+  },
+  "175": {
+    "title": "Little Princess",
+    "author": "",
+    "gutenberg_id": "146",
+    "genre": "Children's Fiction",
+    "level": "B2",
+    "score": 0.5033,
+    "url_rss": "https://librivox.org/rss/175",
+    "fetched_at": "2026-11-28T13:55:32",
+    "level_method": "source"
+  },
+  "179": {
+    "title": "Noiseless Patient Spider",
+    "author": "",
+    "gutenberg_id": "1322",
+    "genre": "Poetry, Multi-version (Weekly and Fortnightly poetry)",
+    "level": "B2",
+    "score": 0.5289,
+    "url_rss": "https://librivox.org/rss/179",
+    "fetched_at": "2026-11-28T13:55:33",
+    "level_method": "source"
   }
 }

@@ -1,0 +1,758 @@
+{
+  "date": "2026-11-28",
+  "lang": "es",
+  "level": "C1",
+  "slots": {
+    "news": {
+      "text": {
+        "id": 1888177366,
+        "title": "4 movimientos que debes evitar para tener una columna saludable",
+        "source": "BBC Mundo (texto)",
+        "source_id": "es_bbc_mundo_text",
+        "category": "news",
+        "url": "https://www.bbc.com/mundo/articles/cqevr0l23e1vo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-11-27T10:45:22",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 1413,
+        "duration_sec": null,
+        "body_text": "4 movimientos que debes evitar para tener una columna saludable - Autor, Rafael Abuchaibe - Título del autor, BBC News Mundo - Fecha de publicación - Tiempo de lectura: 7 min Nuestra columna vertebral es una maravilla de la evolución: no solo provee la estructura ósea que nos permite pararnos y caminar…",
+        "audio_url": null,
+        "description": null,
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": true,
+        "guid_hash": "ce1923754e09ffc044961d62cdabc8391d212d55",
+        "summary": "Nuestra columna es la estructura principal de nuestro cuerpo. Y, aun así, la mayor parte del tiempo le prestamos poca atención.",
+        "origin": "fresh",
+        "badges": [],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "4 movimientos que debes evitar para tener una columna saludable — BBC Mundo (texto)",
+        "duration_formatted": "",
+        "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+        "reading_time_min": 8
+      },
+      "audio": {
+        "id": 1888177380,
+        "title": "24 Horas - Informativo - 27/11/26",
+        "source": "RNE 24 horas",
+        "source_id": "es_rne_24_horas",
+        "category": "news",
+        "url": "https://www.rtve.es/play/audios/24-horas/informativo-27-11-26/17334958/",
+        "published_at": "2026-11-27T19:00:00",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "B2",
+        "word_count": 1,
+        "duration_sec": 1801,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_S24HOR/mp3/0/0/1795808161000.mp3?idasset=17334958&download-token=1795874774_0x469159d7734caba6534bdeaa001945553e73fd15",
+        "description": "null",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "6d39e85a85104cddfdc4a2cecf3c35273ba6160c",
+        "summary": "null",
+        "origin": "adjacent",
+        "badges": [
+          "Closest level: B2",
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "24 Horas - Informativo - 27/11/26 — RNE 24 horas",
+        "duration_formatted": "30:01",
+        "source_url": "https://www.rtve.es/api/programas/1871/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "culture": {
+      "text": null,
+      "audio": {
+        "id": 1888177395,
+        "title": "A hombros de gigantes - Los trucos de magos, carteristas y artistas enseñan a los neurocientíficos como funciona la mente - 29/11/2026",
+        "source": "RNE A hombros de gigantes",
+        "source_id": "es_rne_a_hombros_de_gigantes",
+        "category": "culture",
+        "url": "https://www.rtve.es/play/audios/a-hombros-de-gigantes/hombros-gigantes-trucos-magos-carteristas-artistas-ensenan-neurocientificos-como-funciona-mente-29-11-2026/17332028/",
+        "published_at": "2026-11-28T03:00:53",
+        "level": "C1",
+        "slot_level": "C1",
+        "source_level": "C1",
+        "word_count": 261,
+        "duration_sec": 3097,
+        "body_text": null,
+        "audio_url": "https://rtve-mediavod-lote3.rtve.es/resources/TE_SAHOMB/mp3/0/5/1795693943550.mp3?idasset=17332028&download-token=1795874793_0x328395fcfda4cca5aab091355baa9b232fe19a51",
+        "description": "Magos, carteristas y artistas son auténticos laboratorios vivos de la mente humana. Sus técnicas perfeccionadas durante siglos revelan los atajos, puntos ciegos y sesgos que el cerebro usa para ahorrar energía y construir la realidad. Su estudio permite a la neurociencia comprobar cómo operan las redes cerebrales en situaciones reales, complejas y engañosas, más allá del laboratorio tradicional. Hemos entrevistado a Susana Martínez-Conde , pionera de la neuromagia y directora del Laboratorio de Neurociencia Integrativa en la universidad de Nueva York. Con Jesús Zamora hemos analizado el último logro de la IA, la demostración formal de la hipótesis de Riemann. Este resultado ilustra el dilema de la «caja negra», la incapacidad de comprender con claridad cómo y por qué estos sistemas llegan a una decisión, aun cuando sus resultados sean precisos o útiles. Con Lluís Montoliu hemos conocido el último informe sobre experimentación animal. Cada vez hay más entidades implicadas en la transparencia de sus investigaciones. Hemos hablado con Montse Villar , comisaria de la exposición “Extraterrestres. ¿Hay vida fuera de la Tierra?”. Después de año y medio en CosmoCaixa Barcelona, cerró sus puertas con gran éxito de público (cerca de un millón de visitantes) y ha comenzado una nueva etapa en CaixaForum Valencia. Isabel Fernández nos ha informado del hallazgo en el Archivo Histórico Nacional de una carta de casi tres metros firmada en oro por el sultán otomano Mehmed IV que revela la insólita embajada que agitó el Madrid de Felipe IV. Con testimonios de Rubén González Cuerva , investigador del Instituto de Historia del CSIC y director del proyecto. Escuchar audio",
+        "license": "proprietary",
+        "attribution": null,
+        "truncated": false,
+        "guid_hash": "520de13055ef5aa7a9362f111cab17018cad102a",
+        "summary": "Magos, carteristas y artistas son auténticos laboratorios vivos de la mente humana. Sus técnicas perfeccionadas durante siglos revelan los atajos, puntos ciegos y sesgos que el cerebro usa para ahorrar energía y construir la realidad. Su estudio permite a la neurociencia comprobar cómo operan las redes cerebrales en situaciones reales, complejas y engañosas, más allá del laboratorio tradicional. Hemos entrevistado a Susana Martínez-Conde , pionera de la neuromagia y directora del Laboratorio de Neurociencia Integrativa en la universidad de Nueva York. Con Jesús Zamora hemos analizado el último logro de la IA, la demostración formal de la hipótesis de Riemann. Este resultado ilustra el dilema de la «caja negra», la incapacidad de comprender con claridad cómo y por qué estos sistemas llegan a una decisión, aun cuando sus resultados sean precisos o útiles. Con Lluís Montoliu hemos conocido el último informe sobre experimentación animal. Cada vez hay más entidades implicadas en la transparencia de sus investigaciones. Hemos hablado con Montse Villar , comisaria de la exposición “Extraterrestres. ¿Hay vida fuera de la Tierra?”. Después de año y medio en CosmoCaixa Barcelona, cerró sus puertas con gran éxito de público (cerca de un millón de visitantes) y ha comenzado una nueva etapa en CaixaForum Valencia. Isabel Fernández nos ha informado del hallazgo en el Archivo Histórico Nacional de una carta de casi tres metros firmada en oro por el sultán otomano Mehmed IV que revela la insólita embajada que agitó el Madrid de Felipe IV. Con testimonios de Rubén González Cuerva , investigador del Instituto de Historia del CSIC y director del proyecto. Escuchar audio",
+        "origin": "fresh",
+        "badges": [
+          "Outside preferred window"
+        ],
+        "periods": [],
+        "themes": [],
+        "history_terms": [],
+        "alt_text": "A hombros de gigantes - Los trucos de magos, carteristas y artistas enseñan a los neurocientíficos como funciona la mente - 29/11/2026 — RNE A hombros de gigantes",
+        "duration_formatted": "51:37",
+        "source_url": "https://www.rtve.es/api/programas/1873/audios.rss",
+        "reading_time_min": 0
+      }
+    },
+    "history": {
+      "text": null,
+      "audio": null
+    }
+  },
+  "phrase": {
+    "date": "2026-11-28",
+    "level": "C1",
+    "word": {
+      "text": "anales",
+      "level": "C1",
+      "type": "word",
+      "pos": "noun",
+      "phonetic": "/aˈnales/",
+      "meaning": "registros de hechos año por año",
+      "meaning_fr": "annales",
+      "example": "Los anales mencionan un invierno severo.",
+      "anki_answer": "anales",
+      "tags": [
+        "cultura"
+      ],
+      "key": "5f78e8f8040e21cb0ea22dfcfce5ef60486708cd",
+      "kind": "word",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "expression": {
+      "expression": "contextualizar un documento",
+      "level": "C1",
+      "type": "collocation",
+      "meaning": "situar un texto en su contexto",
+      "meaning_fr": "contextualiser un document",
+      "example": "Contextualizaron el documento antes de citarlo.",
+      "anki_answer": "contextualizar un documento",
+      "tags": [
+        "historia"
+      ],
+      "key": "975de09ea116cd5a333b7e6df82175a60b13884d",
+      "kind": "expression",
+      "dictionary": {},
+      "wiktionary": {},
+      "audio": null
+    },
+    "history": {
+      "text": "armisticio",
+      "aliases": [
+        "armisticio",
+        "armisticios"
+      ],
+      "level": "C1",
+      "meaning": "un acuerdo para suspender temporalmente la lucha",
+      "meaning_fr": "armistice",
+      "period": "Primera Guerra Mundial",
+      "theme": "Guerra",
+      "example": "El armisticio se firmó en noviembre de 1918.",
+      "tags": [
+        "guerra"
+      ],
+      "key": "4c8a9c038bbbf7ff713734755f6f10778f0e2432",
+      "kind": "history"
+    }
+  },
+  "glossary": [
+    {
+      "key": "1566fba37f30117fee3733f92daffe358f62a59c",
+      "kind": "word",
+      "level": "A1",
+      "text": "manzana",
+      "meaning": "una fruta redonda de piel roja o verde",
+      "meaning_fr": "pomme",
+      "example": "Comió una manzana después de comer.",
+      "phonetic": "/manˈθana/",
+      "anki_answer": "manzana",
+      "tags": [
+        "comida"
+      ]
+    },
+    {
+      "key": "fa3392c169f4ee3dae82915a13d93bcbed5d6baf",
+      "kind": "expression",
+      "level": "A1",
+      "text": "acostarse",
+      "meaning": "irse a la cama",
+      "meaning_fr": "se coucher",
+      "example": "Me acuesto antes de las diez.",
+      "phonetic": "",
+      "anki_answer": "acostarse",
+      "tags": [
+        "diario"
+      ]
+    },
+    {
+      "key": "3330fd6f50012c60e587503f1d48cdeca6f8a3bc",
+      "kind": "history",
+      "level": "A1",
+      "text": "torre",
+      "meaning": "una construcción alta",
+      "meaning_fr": "tour",
+      "example": "La torre dominaba el paisaje.",
+      "phonetic": "",
+      "anki_answer": "tour",
+      "tags": [
+        "arquitectura"
+      ]
+    },
+    {
+      "key": "44f702d977fb20940969092f3940cc9baa58ffa6",
+      "kind": "word",
+      "level": "A2",
+      "text": "bolsillo",
+      "meaning": "una pequeña bolsa en la ropa",
+      "meaning_fr": "poche",
+      "example": "La llave está en mi bolsillo.",
+      "phonetic": "/bolˈsiʝo/",
+      "anki_answer": "bolsillo",
+      "tags": [
+        "ropa"
+      ]
+    },
+    {
+      "key": "36c61d5fdae35e49d6ede690f022c10d1aab40bc",
+      "kind": "expression",
+      "level": "A2",
+      "text": "por ejemplo",
+      "meaning": "se usa para introducir un caso",
+      "meaning_fr": "par exemple",
+      "example": "Trae fruta, por ejemplo manzanas.",
+      "phonetic": "",
+      "anki_answer": "por ejemplo",
+      "tags": [
+        "conectores"
+      ]
+    },
+    {
+      "key": "c1d10d0d1bb74348be674c2e22333fd41a203a71",
+      "kind": "history",
+      "level": "A2",
+      "text": "impuesto",
+      "meaning": "una cantidad que se paga al Estado",
+      "meaning_fr": "impôt",
+      "example": "El impuesto financió las carreteras.",
+      "phonetic": "",
+      "anki_answer": "impôt",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "cd4b60eb4da08fb1d39f47b39926c11aec08fe70",
+      "kind": "word",
+      "level": "B1",
+      "text": "migración",
+      "meaning": "el movimiento de personas a otro lugar",
+      "meaning_fr": "migration",
+      "example": "La migración transformó las ciudades.",
+      "phonetic": "/miɣɾaˈθjon/",
+      "anki_answer": "migración",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "bb16b371b84ad9fb8aaad2b33b1db18874fa961b",
+      "kind": "expression",
+      "level": "B1",
+      "text": "tener en cuenta",
+      "meaning": "considerar algo al actuar",
+      "meaning_fr": "prendre en compte",
+      "example": "Hay que tener en cuenta el clima.",
+      "phonetic": "",
+      "anki_answer": "tener en cuenta",
+      "tags": [
+        "consideración"
+      ]
+    },
+    {
+      "key": "c26612c4589a68f5e974471d4e016641acb54fcd",
+      "kind": "history",
+      "level": "B1",
+      "text": "migración",
+      "meaning": "el movimiento de personas a otro lugar",
+      "meaning_fr": "migration",
+      "example": "La migración cambió las ciudades.",
+      "phonetic": "",
+      "anki_answer": "migration",
+      "tags": [
+        "sociedad"
+      ]
+    },
+    {
+      "key": "5e81b30175bf1bd9e4e8cec663921a36c07e1c2f",
+      "kind": "word",
+      "level": "B2",
+      "text": "ilustración",
+      "meaning": "un movimiento del siglo XVIII basado en la razón",
+      "meaning_fr": "Lumières",
+      "example": "La ilustración favoreció el debate.",
+      "phonetic": "/ilustɾaˈθjon/",
+      "anki_answer": "ilustración",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "567cc7bb8448ef439ad981a077c6b89b259b8dcb",
+      "kind": "expression",
+      "level": "B2",
+      "text": "recuperar el terreno perdido",
+      "meaning": "volver a la posición anterior",
+      "meaning_fr": "regagner le terrain perdu",
+      "example": "La moneda recuperó el terreno perdido.",
+      "phonetic": "",
+      "anki_answer": "recuperar el terreno perdido",
+      "tags": [
+        "economía"
+      ]
+    },
+    {
+      "key": "0562710ea7b01a01fb21b5ce152f7f9b9b44ed40",
+      "kind": "history",
+      "level": "B2",
+      "text": "república",
+      "meaning": "un sistema político sin monarca",
+      "meaning_fr": "république",
+      "example": "Proclamaron la república en 1871.",
+      "phonetic": "",
+      "anki_answer": "république",
+      "tags": [
+        "política"
+      ]
+    },
+    {
+      "key": "5f78e8f8040e21cb0ea22dfcfce5ef60486708cd",
+      "kind": "word",
+      "level": "C1",
+      "text": "anales",
+      "meaning": "registros de hechos año por año",
+      "meaning_fr": "annales",
+      "example": "Los anales mencionan un invierno severo.",
+      "phonetic": "/aˈnales/",
+      "anki_answer": "anales",
+      "tags": [
+        "cultura"
+      ]
+    },
+    {
+      "key": "975de09ea116cd5a333b7e6df82175a60b13884d",
+      "kind": "expression",
+      "level": "C1",
+      "text": "contextualizar un documento",
+      "meaning": "situar un texto en su contexto",
+      "meaning_fr": "contextualiser un document",
+      "example": "Contextualizaron el documento antes de citarlo.",
+      "phonetic": "",
+      "anki_answer": "contextualizar un documento",
+      "tags": [
+        "historia"
+      ]
+    },
+    {
+      "key": "4c8a9c038bbbf7ff713734755f6f10778f0e2432",
+      "kind": "history",
+      "level": "C1",
+      "text": "armisticio",
+      "meaning": "un acuerdo para suspender temporalmente la lucha",
+      "meaning_fr": "armistice",
+      "example": "El armisticio se firmó en noviembre de 1918.",
+      "phonetic": "",
+      "anki_answer": "armistice",
+      "tags": [
+        "guerra"
+      ]
+    },
+    {
+      "key": "90a3f95413f1208d2a0f98695749cfe871ea2726",
+      "kind": "word",
+      "level": "C2",
+      "text": "periodización",
+      "meaning": "la división de la historia en períodos nombrados",
+      "meaning_fr": "périodisation",
+      "example": "La periodización marxista influyó en el plan de estudios.",
+      "phonetic": "/peɾjoðiθaˈθjon/",
+      "anki_answer": "periodización",
+      "tags": [
+        "ciencia"
+      ]
+    },
+    {
+      "key": "d18b710b196d2e2928dced7c3bcdce242f55f3cf",
+      "kind": "expression",
+      "level": "C2",
+      "text": "diseccionar un argumento",
+      "meaning": "analizar un argumento con detalle",
+      "meaning_fr": "disséquer un argument",
+      "example": "Diseccionaron el argumento del ensayo.",
+      "phonetic": "",
+      "anki_answer": "diseccionar un argumento",
+      "tags": [
+        "análisis"
+      ]
+    },
+    {
+      "key": "e1657e6105a45d78a533836e815e5bccdd813d30",
+      "kind": "history",
+      "level": "C2",
+      "text": "legitimismo",
+      "meaning": "el apoyo al derecho tradicional de una dinastía a gobernar",
+      "meaning_fr": "légitimisme",
+      "example": "El legitimismo se opuso al cambio.",
+      "phonetic": "",
+      "anki_answer": "légitimisme",
+      "tags": [
+        "política"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "A1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A1",
+      "prompt": "¿Qué significa “manzana”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "pomme",
+      "item_key": "1566fba37f30117fee3733f92daffe358f62a59c"
+    },
+    {
+      "id": "A1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A1",
+      "prompt": "Completa la expresión: ____",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "acostarse",
+      "item_key": "fa3392c169f4ee3dae82915a13d93bcbed5d6baf"
+    },
+    {
+      "id": "A1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A1",
+      "prompt": "¿A qué período pertenece “torre”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "Edad Media",
+      "item_key": "3330fd6f50012c60e587503f1d48cdeca6f8a3bc"
+    },
+    {
+      "id": "A2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "A2",
+      "prompt": "¿Qué significa “bolsillo”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "poche",
+      "item_key": "44f702d977fb20940969092f3940cc9baa58ffa6"
+    },
+    {
+      "id": "A2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "A2",
+      "prompt": "Completa la expresión: por ____",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "ejemplo",
+      "item_key": "36c61d5fdae35e49d6ede690f022c10d1aab40bc"
+    },
+    {
+      "id": "A2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "A2",
+      "prompt": "¿A qué período pertenece “impuesto”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "c1d10d0d1bb74348be674c2e22333fd41a203a71"
+    },
+    {
+      "id": "B1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B1",
+      "prompt": "¿Qué significa “migración”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "migration",
+      "item_key": "cd4b60eb4da08fb1d39f47b39926c11aec08fe70"
+    },
+    {
+      "id": "B1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B1",
+      "prompt": "Completa la expresión: tener en ____",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "cuenta",
+      "item_key": "bb16b371b84ad9fb8aaad2b33b1db18874fa961b"
+    },
+    {
+      "id": "B1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B1",
+      "prompt": "¿A qué período pertenece “migración”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "General",
+      "item_key": "c26612c4589a68f5e974471d4e016641acb54fcd"
+    },
+    {
+      "id": "B2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "B2",
+      "prompt": "¿Qué significa “ilustración”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "Lumières",
+      "item_key": "5e81b30175bf1bd9e4e8cec663921a36c07e1c2f"
+    },
+    {
+      "id": "B2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "B2",
+      "prompt": "Completa la expresión: ____ el terreno perdido",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "recuperar",
+      "item_key": "567cc7bb8448ef439ad981a077c6b89b259b8dcb"
+    },
+    {
+      "id": "B2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "B2",
+      "prompt": "¿A qué período pertenece “república”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "0562710ea7b01a01fb21b5ce152f7f9b9b44ed40"
+    },
+    {
+      "id": "C1-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C1",
+      "prompt": "¿Qué significa “anales”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "annales",
+      "item_key": "5f78e8f8040e21cb0ea22dfcfce5ef60486708cd"
+    },
+    {
+      "id": "C1-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C1",
+      "prompt": "Completa la expresión: ____ un documento",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "contextualizar",
+      "item_key": "975de09ea116cd5a333b7e6df82175a60b13884d"
+    },
+    {
+      "id": "C1-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C1",
+      "prompt": "¿A qué período pertenece “armisticio”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "Primera Guerra Mundial",
+      "item_key": "4c8a9c038bbbf7ff713734755f6f10778f0e2432"
+    },
+    {
+      "id": "C2-word",
+      "type": "multiple-choice",
+      "kind": "word",
+      "level": "C2",
+      "prompt": "¿Qué significa “periodización”?",
+      "options": [
+        "Lumières",
+        "annales",
+        "migration",
+        "poche"
+      ],
+      "answer": "périodisation",
+      "item_key": "90a3f95413f1208d2a0f98695749cfe871ea2726"
+    },
+    {
+      "id": "C2-expression",
+      "type": "cloze",
+      "kind": "expression",
+      "level": "C2",
+      "prompt": "Completa la expresión: ____ un argumento",
+      "options": [
+        "acostarse",
+        "argumento",
+        "contextualizar",
+        "cuenta"
+      ],
+      "answer": "diseccionar",
+      "item_key": "d18b710b196d2e2928dced7c3bcdce242f55f3cf"
+    },
+    {
+      "id": "C2-history",
+      "type": "multiple-choice",
+      "kind": "history",
+      "level": "C2",
+      "prompt": "¿A qué período pertenece “legitimismo”?",
+      "options": [
+        "Edad Media",
+        "General",
+        "Primera Guerra Mundial",
+        "Siglo XIX"
+      ],
+      "answer": "Siglo XIX",
+      "item_key": "e1657e6105a45d78a533836e815e5bccdd813d30"
+    }
+  ],
+  "tour": [
+    {
+      "id": "home",
+      "title": "Empieza desde casa",
+      "body": "Hoy es tu punto de partida: elige un nivel, lee, escucha y practica.",
+      "target": "[data-eds-today]"
+    },
+    {
+      "id": "level",
+      "title": "Elige tu nivel",
+      "body": "Empieza con un nivel CEFR y cámbialo cuando quieras.",
+      "target": "[data-eds-level]"
+    },
+    {
+      "id": "tabs",
+      "title": "Explora el día",
+      "body": "Lee noticias, cultura e historia en texto y audio.",
+      "target": "[data-eds-tabs]"
+    },
+    {
+      "id": "phrase",
+      "title": "Aprende la frase",
+      "body": "Cada nivel tiene una palabra, una expresión y un término histórico.",
+      "target": "[data-eds-phrase]"
+    },
+    {
+      "id": "exercises",
+      "title": "Practica activamente",
+      "body": "Responde tres ejercicios breves para repasar lo aprendido.",
+      "target": "[data-eds-exercises]"
+    },
+    {
+      "id": "anki",
+      "title": "Exporta lo aprendido",
+      "body": "Guarda una frase y abre la página Anki para enviar notas o descargar una baraja TSV.",
+      "target": "[data-eds-anki]"
+    },
+    {
+      "id": "glossary",
+      "title": "Crea tu glosario",
+      "body": "Marca elementos, expórtalos a Anki y conserva tu progreso.",
+      "target": "[data-eds-glossary]"
+    }
+  ],
+  "meta": {
+    "contract_version": 2,
+    "filled": 3,
+    "total": 6,
+    "origins": {
+      "fresh": 2,
+      "adjacent": 1
+    },
+    "source_count": 3,
+    "phrase_count": 6,
+    "glossary_count": 18,
+    "exercise_count": 18,
+    "history_periods": [],
+    "history_themes": [],
+    "search_path": "./data/es/search/2026-11-28.json"
+  }
+}
